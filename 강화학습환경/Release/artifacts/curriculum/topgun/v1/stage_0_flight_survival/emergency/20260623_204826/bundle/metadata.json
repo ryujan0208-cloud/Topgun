@@ -433,18 +433,6 @@
     "framework": "torch"
   },
   "metadata": {
-    "stage_index": 0,
-    "stage_name": "flight_survival",
-    "algorithm": "sac",
-    "obs_mode": "tactical16",
-    "observation_module": "",
-    "use_lstm": false,
-    "use_lstm_sac": false,
-    "use_lstm_prioritized_replay": null,
-    "lstm_cell_size": null,
-    "max_seq_len": null,
-    "lstm_scope": null,
-    "network_spec": null,
     "model_config": {
       "twin_q": true
     }

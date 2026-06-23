@@ -58,7 +58,7 @@ def get_stages() -> list[CurriculumStage]:
             },
             randomization={
                 "enabled": True,
-                "radius": 0.0,
+                "radius": 1.0,
                 "r_roll": 5.0,
                 "r_pitch": 5.0,
                 "r_heading": 15.0,              # mild heading variation
