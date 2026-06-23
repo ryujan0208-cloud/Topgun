@@ -1,0 +1,25 @@
+# Visual Studio 캐시/임시
+.vs/
+*.ipch
+*.pdb
+*.obj
+
+# 빌드 산출물
+Binaries/
+Intermediate/
+Saved/
+DerivedDataCache/
+*.exe
+*.dll
+*.ucas
+*.utoc
+*.pak
+
+# 파이썬 캐시
+__pycache__/
+*.pyc
+
+# 가상환경
+venv/
+.venv/
+env/

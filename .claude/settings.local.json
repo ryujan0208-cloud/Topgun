@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/TFX5470H/AppData/Roaming/Claude/local-agent-mode-sessions/skills-plugin/d48734bc-6500-4f70-8092-58bb369742a2/12ceffa1-6425-48b0-84f8-7f6bb552a2d5/skills/pptx/**)",
+      "Bash(python scripts/extract_text.py \"C:\\\\Users\\\\TFX5470H\\\\Desktop\\\\2026 AI Pilot Top Gun Challenge \\(2\\).pptx\")",
+      "Bash(python -c ' *)",
+      "mcp__visualize__read_me",
+      "mcp__visualize__show_widget",
+      "Bash(python -m py_compile student/my_reward.py)",
+      "WebSearch"
+    ]
+  }
+}
