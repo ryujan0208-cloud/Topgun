@@ -76,6 +76,12 @@ MY_REWARD_CONFIG = {
 
     # ── Two-Circle 헤드온 가드 실패 패널티 (Stage 4~13에서 사용) ─────────────
     "guard_fail_penalty": -50.0,
+
+    # ── 유리한 위치 선점 ─────────────
+    "positioning_scale": 0.3,
+    "positioning_half_angle_deg": 60.0,   # AA 60° 이내일 때만 보상
+    # ── 불리한 위치 패널티 ─────────────
+    "wez_threat_penalty": 2.0,   # 적 사거리에 조준당하면 매 프레임 -2.0 (wez_bonus의 거울상)
 }
 
 
@@ -116,6 +122,13 @@ def compute_reward(
 
     components["pursuit"] = float(reward_config["pursuit_scale"]) * ata_factor * range_factor
 
+    # ── 3.5. 위치우위 보상 (AA × 거리) ──────────────────────────────────
+    aa = abs(geo_info._get_aspect_angle(ownship_state, target_state, False))
+    positioning_half = float(reward_config["positioning_half_angle_deg"])
+    aa_factor = max(0.0, 1.0 - aa / positioning_half)
+    # range_factor는 위 pursuit에서 이미 계산됨 → 재사용
+    components["positioning"] = float(reward_config["positioning_scale"]) * aa_factor * range_factor
+
     # ── 4. WEZ 진입 보너스 ────────────────────────────────────────────────────
     in_wez = False
     if wez_config:
@@ -125,6 +138,17 @@ def compute_reward(
             and ata <= wez_half_angle
         )
     components["wez"] = float(reward_config.get("wez_bonus", 0.0)) if in_wez else 0.0
+
+    # ── 4.5. 회피 페널티 (적이 나를 WEZ에 잡으면 −) ──────────────────────
+    target_ata = abs(geo_info._get_antenna_train_angle(target_state, ownship_state, False))
+    in_enemy_wez = False
+    if wez_config:
+        enemy_wez_half = float(wez_config.get("angle_deg", 2.0)) / 2.0
+        in_enemy_wez = (
+            float(wez_config["min_range_m"]) <= distance <= float(wez_config["max_range_m"])
+            and target_ata <= enemy_wez_half
+        )
+    components["wez_threat"] = -float(reward_config.get("wez_threat_penalty", 0.0)) if in_enemy_wez else 0.0
 
     # ── 5. 고도 패널티 ────────────────────────────────────────────────────────
     altitude = float(ownship_state[StateIndex.ALT])

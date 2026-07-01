@@ -46,7 +46,7 @@ def get_stages() -> list[CurriculumStage]:
             target_mode="fixed",
             episode_step_limit=3600,    # 60 s
             max_iterations=200,
-            checkpoint_interval=1,
+            checkpoint_interval=10,
             reward_overrides={
                 "survival_bonus": 0.05,         # +0.05 every step alive
                 "pursuit_scale": 0.0,            # no pursuit required
@@ -58,7 +58,7 @@ def get_stages() -> list[CurriculumStage]:
             },
             randomization={
                 "enabled": True,
-                "radius": 1.0,
+                "radius": 0,
                 "r_roll": 5.0,
                 "r_pitch": 5.0,
                 "r_heading": 15.0,              # mild heading variation
@@ -76,7 +76,7 @@ def get_stages() -> list[CurriculumStage]:
             target_mode="fixed",
             episode_step_limit=7200,    # 120 s
             max_iterations=300,
-            checkpoint_interval=1,
+            checkpoint_interval=10,
             reward_overrides={
                 "survival_bonus": 0.01,
                 "pursuit_scale": 0.5,
@@ -109,7 +109,7 @@ def get_stages() -> list[CurriculumStage]:
             target_mode="loiter",
             episode_step_limit=10800,   # 180 s
             max_iterations=400,
-            checkpoint_interval=1,
+            checkpoint_interval=10,
             reward_overrides={
                 "survival_bonus": 0.0,
                 "pursuit_scale": 0.3,
@@ -143,7 +143,7 @@ def get_stages() -> list[CurriculumStage]:
             target_mode="autopilot",
             episode_step_limit=14400,   # 240 s
             max_iterations=500,
-            checkpoint_interval=1,
+            checkpoint_interval=10,
             reward_overrides={
                 "survival_bonus": 0.0,
                 "pursuit_scale": 0.25,
@@ -179,7 +179,7 @@ def get_stages() -> list[CurriculumStage]:
             target_mode="behavior_tree",
             episode_step_limit=18000,   # 300 s
             max_iterations=1000,
-            checkpoint_interval=1,
+            checkpoint_interval=10,
             reward_overrides={},        # use default reward (no overrides)
             randomization={
                 "enabled": True,
@@ -207,7 +207,7 @@ def _build_two_circle_headon_stages(start_index: int) -> list[CurriculumStage]:
                 target_mode="behavior_tree",
                 episode_step_limit=18000,
                 max_iterations=200,
-                checkpoint_interval=1,
+                checkpoint_interval=10,
                 reward_overrides={},
                 randomization={"enabled": False},
                 advance_conditions={

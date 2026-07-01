@@ -7,7 +7,9 @@
       "mcp__visualize__read_me",
       "mcp__visualize__show_widget",
       "Bash(python -m py_compile student/my_reward.py)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(git add *)",
+      "Bash(C:/Users/TFX5470H/anaconda3/envs/aip/python.exe -c ' *)"
     ]
   }
 }
