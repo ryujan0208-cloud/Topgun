@@ -26,7 +26,14 @@ namespace Action
 
 		Vector3 TPM = Proj_MyLocation - TargetLocation;					//프로젝션된 내 위치와 타겟사이의 벡터
 
-		float AA = TPM.angleBetween(TFV);								//두 벡터 사이의 각 구하기 -> AA
+		// 2026-07-11 수정: 기존 코드는 TFV(타겟의 전방벡터)와 TPM(타겟->나 벡터)을
+		// 그대로 비교해서, "내가 타겟의 기수 방향(정면)에 있을 때 AA=0"이 되고 있었다.
+		// 이 파일의 원래 주석("AA: 내가 타겟의 꼬리를 얼마나 잘 물었는지")과 표준 BFM
+		// 관례(AA=0 -> dead six, AA=180 -> head-on) 둘 다에 정반대로 뒤집혀 있던 것.
+		// BFMClassifier/DECO_AspectAngleCheck 등 이 값을 쓰는 모든 소비자가 일관되게
+		// "AA가 작을수록 좋은 위치(상대 뒤)"라고 가정하고 있었으므로, 소스(TFV 부호
+		// 반전)에서 한 번에 고쳐서 모든 소비자가 동시에 올바른 의미를 갖도록 함.
+		float AA = TPM.angleBetween(TFV * -1.0f);							//두 벡터 사이의 각 구하기 -> AA (0=dead six, 180=head-on)
 
 		(*BB)->MyAspectAngle_Degree = AA* 57.2958;						//디그리 값으로 사용하기 위하여 변환
 

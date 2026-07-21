@@ -312,7 +312,10 @@ void VerifyXML(const std::string& xml_text,
         }
         else if (StrEqual(name, "Sequence") ||
                  StrEqual(name, "SequenceStar") ||
-                 StrEqual(name, "Fallback") )
+                 StrEqual(name, "Fallback") ||
+                 StrEqual(name, "ReactiveFallback") ||
+                 StrEqual(name, "ReactiveSequence") ||
+                 StrEqual(name, "Parallel") )
         {
             if (children_count == 0)
             {
@@ -591,7 +594,8 @@ TreeNode::Ptr XMLParser::Pimpl::createNodeFromXML(const XMLElement *element,
             control_parent->addChild(child_node.get());
         }*/
 
-		if (node_parent.get()->name()=="Sequence" || node_parent.get()->name() == "Fallback" || node_parent.get()->name() == "SequenceStar")
+		if (node_parent.get()->name()=="Sequence" || node_parent.get()->name() == "Fallback" || node_parent.get()->name() == "SequenceStar"
+			|| node_parent.get()->name() == "ReactiveFallback" || node_parent.get()->name() == "ReactiveSequence" || node_parent.get()->name() == "Parallel")
 		{
 			auto control_parent = (ControlNode*)(node_parent.get());
 			control_parent->addChild(child_node.get());

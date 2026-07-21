@@ -1,4 +1,5 @@
 #include "DECO_DistanceCheck.h"
+#include <iostream>
 
 namespace Action
 {
@@ -21,7 +22,11 @@ namespace Action
 		std::string UD = UpOrDown.value();
 		float InputDistance = std::stof(Dist.value());
 
-		
+		static int __dbg = 0;
+		if (++__dbg % 30 == 0) std::cerr << "[DECO_Dist] team=" << (int)(*BB)->Team << " UD=" << UD
+			<< " Cur=" << CurrentDistance << " Input=" << InputDistance << std::endl;
+
+
 
 		if (UD == "Greater")
 		{

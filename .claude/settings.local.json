@@ -9,7 +9,14 @@
       "Bash(python -m py_compile student/my_reward.py)",
       "WebSearch",
       "Bash(git add *)",
-      "Bash(C:/Users/TFX5470H/anaconda3/envs/aip/python.exe -c ' *)"
+      "Bash(C:/Users/TFX5470H/anaconda3/envs/aip/python.exe -c ' *)",
+      "Read(//c/Users/TFX5470H/Desktop/**)",
+      "Bash(markitdown \"2026 AI ㅍㅍㅍ.pptx\")",
+      "PowerShell(& 'C:\\\\Users\\\\TFX5470H\\\\anaconda3\\\\envs\\\\aip\\\\python.exe' 'C:\\\\Users\\\\TFX5470H\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-TFX5470H-Desktop--topgun\\\\97309991-e996-4ae8-8440-608e2590bb33\\\\scratchpad\\\\read_ppt.py')",
+      "PowerShell(python \"C:\\\\Users\\\\TFX5470H\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-TFX5470H-Desktop--topgun\\\\97309991-e996-4ae8-8440-608e2590bb33\\\\scratchpad\\\\make_replay.py\")",
+      "PowerShell(python -m http.server 8777 --directory \"C:\\\\Users\\\\TFX5470H\\\\Desktop\")",
+      "PowerShell(python -m http.server 7860 --directory \"C:\\\\Users\\\\TFX5470H\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-TFX5470H-Desktop--topgun\\\\97309991-e996-4ae8-8440-608e2590bb33\\\\scratchpad\\\\replay_site\")",
+      "PowerShell(python \"C:\\\\Users\\\\TFX5470H\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-TFX5470H-Desktop--topgun\\\\97309991-e996-4ae8-8440-608e2590bb33\\\\scratchpad\\\\dump_manuals.py\")"
     ]
   }
 }

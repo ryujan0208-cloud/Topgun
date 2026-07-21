@@ -1,0 +1,23 @@
+<root main_tree_to_execute = "MainTree">
+
+  <BehaviorTree ID="MainTree">
+    <Sequence>
+      <SelectTarget name="SelectTarget" BB="{BB}"/>
+      <DirectionVectorUpdate name="DirectionVectorUpdate" BB="{BB}"/>
+      <DistanceUpdate name="DistanceUpdate" BB="{BB}"/>
+      <AngleOffUpdate name="AngleOffUpdate" BB="{BB}"/>
+      <AspectAngleUpdate name="AspectAngleUpdate" BB="{BB}"/>
+
+      <!-- 순수 추적만: 방어/회피/BFM 전부 제거. Controller 조준능력 격리 측정용 -->
+      <ReactiveFallback>
+        <Sequence>
+          <DECO_DistanceCheck name="d_approach" UpDown="Greater" Distance="700" BB="{BB}"/>
+          <Task_Lead name="Lead" BB="{BB}"/>
+        </Sequence>
+        <Task_Pure name="Pure" BB="{BB}"/>
+      </ReactiveFallback>
+
+    </Sequence>
+  </BehaviorTree>
+
+</root>

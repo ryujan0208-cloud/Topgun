@@ -1,0 +1,33 @@
+RuntimeError: KeyboardInterrupt
+
+Traceback (most recent call last):
+  File "C:\Users\TFX5470H\Desktop\.topgun\강화학습환경\Release\train_curriculum.py", line 704, in _run_stage
+    result = algorithm.train()
+             ^^^^^^^^^^^^^^^^^
+  File "C:\Users\TFX5470H\anaconda3\envs\aip\Lib\site-packages\ray\tune\trainable\trainable.py", line 328, in train
+    result = self.step()
+             ^^^^^^^^^^^
+  File "C:\Users\TFX5470H\anaconda3\envs\aip\Lib\site-packages\ray\rllib\algorithms\algorithm.py", line 1266, in step
+    train_results, train_iter_ctx = self._run_one_training_iteration()
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TFX5470H\anaconda3\envs\aip\Lib\site-packages\ray\rllib\algorithms\algorithm.py", line 3715, in _run_one_training_iteration
+    training_step_return_value = self.training_step()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TFX5470H\anaconda3\envs\aip\Lib\site-packages\ray\rllib\algorithms\dqn\dqn.py", line 646, in training_step
+    return self._training_step_new_api_stack()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TFX5470H\anaconda3\envs\aip\Lib\site-packages\ray\rllib\algorithms\dqn\dqn.py", line 688, in _training_step_new_api_stack
+    episodes = self.local_replay_buffer.sample(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TFX5470H\anaconda3\envs\aip\Lib\site-packages\ray\rllib\utils\replay_buffers\prioritized_episode_buffer.py", line 526, in sample
+    sampled_episode = SingleAgentEpisode(
+                      ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TFX5470H\anaconda3\envs\aip\Lib\site-packages\ray\rllib\env\single_agent_episode.py", line 263, in __init__
+    self.id_ = id_ or uuid.uuid4().hex
+                      ^^^^^^^^^^^^
+  File "C:\Users\TFX5470H\anaconda3\envs\aip\Lib\uuid.py", line 723, in uuid4
+    return UUID(bytes=os.urandom(16), version=4)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TFX5470H\anaconda3\envs\aip\Lib\uuid.py", line 223, in __init__
+    object.__setattr__(self, 'is_safe', is_safe)
+KeyboardInterrupt

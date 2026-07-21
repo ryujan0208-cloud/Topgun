@@ -270,6 +270,9 @@
     <ClInclude Include="BehaviorTree\BT_Content\Service\AspectAngleUpdate.h">
       <Filter>BehaviorTree\Service</Filter>
     </ClInclude>
+    <ClInclude Include="BehaviorTree\BT_Content\Service\BFMClassifier.h">
+      <Filter>BehaviorTree\Service</Filter>
+    </ClInclude>
     <ClInclude Include="BehaviorTree\BT_Content\Service\CheckSight.h">
       <Filter>BehaviorTree\Service</Filter>
     </ClInclude>
@@ -288,6 +291,9 @@
     <ClInclude Include="BehaviorTree\BT_Content\Decorator\DECO_AngleOffCheck.h">
       <Filter>BehaviorTree\Decorator</Filter>
     </ClInclude>
+    <ClInclude Include="BehaviorTree\BT_Content\Decorator\DECO_AspectAngleCheck.h">
+      <Filter>BehaviorTree\Decorator</Filter>
+    </ClInclude>
     <ClInclude Include="BehaviorTree\BT_Content\Decorator\DECO_BFMCheck.h">
       <Filter>BehaviorTree\Decorator</Filter>
     </ClInclude>
@@ -304,6 +310,21 @@
       <Filter>BehaviorTree\Task</Filter>
     </ClInclude>
     <ClInclude Include="BehaviorTree\BT_Content\Task\Task_Empty.h">
+      <Filter>BehaviorTree\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="BehaviorTree\BT_Content\Task\Task_Pure.h">
+      <Filter>BehaviorTree\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="BehaviorTree\BT_Content\Task\Task_TrackHold.h">
+      <Filter>BehaviorTree\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="BehaviorTree\BT_Content\Task\Task_MergeReversal.h">
+      <Filter>BehaviorTree\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="BehaviorTree\BT_Content\Task\Task_Lead.h">
+      <Filter>BehaviorTree\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="BehaviorTree\BT_Content\Task\Task_Evade.h">
       <Filter>BehaviorTree\Task</Filter>
     </ClInclude>
   </ItemGroup>
@@ -440,6 +461,9 @@
     <ClCompile Include="BehaviorTree\BT_Content\Service\AspectAngleUpdate.cpp">
       <Filter>BehaviorTree\Service</Filter>
     </ClCompile>
+    <ClCompile Include="BehaviorTree\BT_Content\Service\BFMClassifier.cpp">
+      <Filter>BehaviorTree\Service</Filter>
+    </ClCompile>
     <ClCompile Include="BehaviorTree\BT_Content\Service\CheckSight.cpp">
       <Filter>BehaviorTree\Service</Filter>
     </ClCompile>
@@ -455,6 +479,9 @@
     <ClCompile Include="BehaviorTree\BT_Content\Decorator\DECO_AngleOffCheck.cpp">
       <Filter>BehaviorTree\Decorator</Filter>
     </ClCompile>
+    <ClCompile Include="BehaviorTree\BT_Content\Decorator\DECO_AspectAngleCheck.cpp">
+      <Filter>BehaviorTree\Decorator</Filter>
+    </ClCompile>
     <ClCompile Include="BehaviorTree\BT_Content\Decorator\DECO_BFMCheck.cpp">
       <Filter>BehaviorTree\Decorator</Filter>
     </ClCompile>
@@ -465,6 +492,21 @@
       <Filter>BehaviorTree\Decorator</Filter>
     </ClCompile>
     <ClCompile Include="BehaviorTree\BT_Content\Task\Task_Empty.cpp">
+      <Filter>BehaviorTree\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="BehaviorTree\BT_Content\Task\Task_Pure.cpp">
+      <Filter>BehaviorTree\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="BehaviorTree\BT_Content\Task\Task_TrackHold.cpp">
+      <Filter>BehaviorTree\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="BehaviorTree\BT_Content\Task\Task_MergeReversal.cpp">
+      <Filter>BehaviorTree\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="BehaviorTree\BT_Content\Task\Task_Lead.cpp">
+      <Filter>BehaviorTree\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="BehaviorTree\BT_Content\Task\Task_Evade.cpp">
       <Filter>BehaviorTree\Task</Filter>
     </ClCompile>
   </ItemGroup>

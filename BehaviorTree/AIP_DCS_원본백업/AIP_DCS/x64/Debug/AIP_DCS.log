@@ -1,0 +1,1 @@
+﻿C:\Users\Codemist\Desktop\AIP_DCS\AIP_DCS.vcxproj(67,5): error MSB4019: 가져온 프로젝트 "C:\Users\Codemist\Desktop\PropertySheets\Essential_debug.props"을(를) 찾을 수 없습니다. "..\PropertySheets\Essential_debug.props"(으)로 평가된 Import 선언 "..\PropertySheets\Essential_debug.props의 식이 올바르고 파일이 디스크에 있는지 확인합니다.

@@ -1,4 +1,5 @@
 #include "SelectTarget.h"
+#include <iostream>
 
 namespace Action
 {
@@ -17,19 +18,24 @@ namespace Action
 
 		//std::cout << "Size : " << (*BB)->Enemy.size() << std::endl;
 
-		//ÇÐ»ýµéÀº 1´ë1¸¸ ¾µ²¨¶ó ±×³É ±øÀ¸·Î Å¸°Ù ÁöÁ¤
+		//ï¿½Ð»ï¿½ï¿½ï¿½ï¿½ï¿½ 1ï¿½ï¿½1ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½×³ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Å¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+		static int __dbg = 0;
+		bool __shouldLog = (++__dbg % 30 == 0);
+
 		if((*BB)->Enemy.size() > 0)
 		{
 			(*BB)->ACM = EF;
-			
+
 			(*BB)->TargetLocaion_Cartesian = (*BB)->Enemy.at(0).Location;
 			(*BB)->TargetRotation_EDegree = (*BB)->Enemy.at(0).Rotation;
 			(*BB)->TargetSpeed_MS = (*BB)->Enemy.at(0).Speed;
 
+			if (__shouldLog) std::cerr << "[SelectTarget] team=" << (int)(*BB)->Team << " EnemyN=" << (*BB)->Enemy.size()
+				<< " TgtZ=" << (*BB)->TargetLocaion_Cartesian.Z << std::endl;
 		}
 		else
-		{ 
-			std::cout << "Target is not Valid!!!!!!" << std::endl;
+		{
+			if (__shouldLog) std::cerr << "[SelectTarget] team=" << (int)(*BB)->Team << " EnemyN=0 (Target is not Valid)" << std::endl;
 		}
 				
 		return NodeStatus::SUCCESS;

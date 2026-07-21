@@ -1,0 +1,65 @@
+﻿<root main_tree_to_execute = "MainTree">
+
+  <BehaviorTree ID="MainTree">
+    <Sequence>
+
+      <!-- 인지 -->
+      <Sequence>
+        <SelectTarget name="SelectTarget" BB="{BB}"/>
+        <DirectionVectorUpdate name="DirectionVectorUpdate" BB="{BB}"/>
+        <DistanceUpdate name="DistanceUpdateService" BB="{BB}"/>
+        <CheckSight name="CheckSight" BB="{BB}"/>
+        <AngleOffUpdate name="AngleOffUpdate" BB="{BB}"/>
+        <AspectAngleUpdate name="AspectAngleUpdate" BB="{BB}"/>
+
+        <ReactiveFallback>
+
+          <!-- 0. 추락 방지 -->
+          <Sequence>
+            <DECO_AltitudeCheck name="AltCheck" MinAlt="3000" BB="{BB}"/>
+            <Task_ClimbOut name="ClimbOut" BB="{BB}"/>
+          </Sequence>
+
+          <!-- 1. 근접 후방위협: 브레이크 후 역전 -->
+          <Task_BreakAndReverse name="BreakAndReverse" BB="{BB}"/>
+
+          <!-- 2. 후방위협(ATA>150, 3000m): 회피 -->
+          <Sequence>
+            <DECO_DistanceCheck name="TailThreat_RangeGate" UpDown="Less" Distance="3000" BB="{BB}"/>
+            <DECO_TailThreatCheck name="TailThreat" ThreatAngle="150" BB="{BB}"/>
+            <Task_Evade name="Evade" BB="{BB}"/>
+          </Sequence>
+
+          <!-- 3. 엇갈림 반전 (v2) -->
+          <Task_MergeReversal name="MergeReversal" BB="{BB}"/>
+
+          <!-- 4. 루프 공격 -->
+          <Task_LoopAttack name="LoopAttack" BB="{BB}"/>
+
+          <!-- 5. 뒤 못 잡음(AA>60): 적 6시로 파고들기 -->
+          <Sequence>
+            <DECO_AspectAngleCheck name="AspectCheck_NotBehind" UpDown="Greater" InputAA="60" BB="{BB}"/>
+            <Task_TailChase name="TailChase" BB="{BB}"/>
+          </Sequence>
+
+          <!-- 6. 원거리 접근(>1500m): Lead Pursuit (원거리는 각 잘 잡힘) -->
+          <Sequence>
+            <DECO_DistanceCheck name="DistanceCheck_Approach" UpDown="Greater" Distance="1500" BB="{BB}"/>
+            <Task_Lead name="Task_Lead" BB="{BB}"/>
+          </Sequence>
+
+          <!-- 7. 사거리 진입+조준(≤1500m): LagEntry (v3 핵심 - 오버슈트 방지) -->
+          <Sequence>
+            <DECO_DistanceCheck name="DistanceCheck_WEZ" UpDown="Less" Distance="1500" BB="{BB}"/>
+            <Task_LagEntry name="LagEntry" BB="{BB}"/>
+          </Sequence>
+
+        </ReactiveFallback>
+
+      </Sequence>
+
+    </Sequence>
+  </BehaviorTree>
+
+</root>
+

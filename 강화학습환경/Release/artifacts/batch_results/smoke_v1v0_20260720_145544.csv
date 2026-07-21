@@ -1,0 +1,3 @@
+seed,outcome,reward,steps,sim_s,end_condition,own_hp,tgt_hp,wall_s
+0,DRAW,-81.74,11999,200.0,max time out,1.0,1.0,29.4
+1,DRAW,-51.98,11999,200.0,max time out,1.0,1.0,30.1

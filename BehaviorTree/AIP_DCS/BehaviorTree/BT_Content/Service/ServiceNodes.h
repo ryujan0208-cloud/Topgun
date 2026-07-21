@@ -5,3 +5,4 @@
 #include "AngleOffUpdate.h"
 #include "AspectAngleUpdate.h"
 #include "SelectTarget.h"
+#include "BFMClassifier.h"

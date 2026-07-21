@@ -480,36 +480,43 @@ def _estimate_object_memory_mb(obj: Any) -> Any:
 
 def _extract_custom_metrics(result: dict) -> dict:
     cm = result.get("env_runners", {}).get("custom_metrics", {})
+
+    # RLlib 2.54 호환: "이름_mean"과 "이름"을, cm/result 두 위치에서 모두 시도
+    def metric(name, default="n/a"):
+        for metrics in (cm, result.get("custom_metrics", {})):
+            for key in (f"{name}_mean", name):
+                if key in metrics and metrics[key] is not None:
+                    return metrics[key]
+        return default
+
     return {
-        "win_rate":          cm.get("win_mean",                    "n/a"),
-        "loss_rate":         cm.get("loss_mean",                   "n/a"),
-        "timeout_rate":      cm.get("timeout_mean",                "n/a"),
-        "crash_rate":        cm.get("crash_mean",                  "n/a"),
-        "ep_wez_steps":      cm.get("ep_wez_steps_mean",           "n/a"),
-        "ep_mean_distance":  cm.get("ep_mean_distance_mean",       "n/a"),
-        "ep_min_distance":   cm.get("ep_min_distance_mean",        "n/a"),
-        "ep_reward_survival":cm.get("ep_reward_survival_mean",     "n/a"),
-        "ep_reward_pursuit": cm.get("ep_reward_pursuit_mean",      "n/a"),
-        "ep_reward_damage":  cm.get("ep_reward_damage_mean",       "n/a"),
-        "ep_altitude_penalty_steps": cm.get(
-            "ep_altitude_penalty_steps_mean", "n/a"
-        ),
-        "action_sat_rate":   cm.get("action_saturation_rate_mean", "n/a"),
-        "action_roll_mean":  cm.get("action_roll_mean_mean",       "n/a"),
-        "action_pitch_mean": cm.get("action_pitch_mean_mean",      "n/a"),
-        "action_rudder_mean":cm.get("action_rudder_mean_mean",     "n/a"),
-        "action_throttle_mean": cm.get("action_throttle_mean_mean", "n/a"),
-        "action_roll_std":   cm.get("action_roll_std_mean",        "n/a"),
-        "action_pitch_std":  cm.get("action_pitch_std_mean",       "n/a"),
-        "action_rudder_std": cm.get("action_rudder_std_mean",      "n/a"),
-        "action_throttle_std": cm.get("action_throttle_std_mean",  "n/a"),
-        "initial_alpha_deg": cm.get("initial_alpha_deg_mean",      "n/a"),
-        "initial_ata_deg":   cm.get("initial_ata_deg_mean",        "n/a"),
-        "initial_aa_deg":    cm.get("initial_aa_deg_mean",         "n/a"),
-        "initial_distance_m":cm.get("initial_distance_m_mean",     "n/a"),
-        "final_ata_deg":     cm.get("final_ata_deg_mean",          "n/a"),
-        "final_aa_deg":      cm.get("final_aa_deg_mean",           "n/a"),
-        "headon_guard_fail": cm.get("headon_guard_fail_mean",      "n/a"),
+        "win_rate":          metric("win"),
+        "loss_rate":         metric("loss"),
+        "timeout_rate":      metric("timeout"),
+        "crash_rate":        metric("crash"),
+        "ep_wez_steps":      metric("ep_wez_steps"),
+        "ep_mean_distance":  metric("ep_mean_distance"),
+        "ep_min_distance":   metric("ep_min_distance"),
+        "ep_reward_survival":metric("ep_reward_survival"),
+        "ep_reward_pursuit": metric("ep_reward_pursuit"),
+        "ep_reward_damage":  metric("ep_reward_damage"),
+        "ep_altitude_penalty_steps": metric("ep_altitude_penalty_steps"),
+        "action_sat_rate":   metric("action_saturation_rate"),
+        "action_roll_mean":  metric("action_roll_mean"),
+        "action_pitch_mean": metric("action_pitch_mean"),
+        "action_rudder_mean":metric("action_rudder_mean"),
+        "action_throttle_mean": metric("action_throttle_mean"),
+        "action_roll_std":   metric("action_roll_std"),
+        "action_pitch_std":  metric("action_pitch_std"),
+        "action_rudder_std": metric("action_rudder_std"),
+        "action_throttle_std": metric("action_throttle_std"),
+        "initial_alpha_deg": metric("initial_alpha_deg"),
+        "initial_ata_deg":   metric("initial_ata_deg"),
+        "initial_aa_deg":    metric("initial_aa_deg"),
+        "initial_distance_m":metric("initial_distance_m"),
+        "final_ata_deg":     metric("final_ata_deg"),
+        "final_aa_deg":      metric("final_aa_deg"),
+        "headon_guard_fail": metric("headon_guard_fail"),
     }
 
 

@@ -3,3 +3,7 @@
 #include "DECO_DistanceCheck.h"
 #include "DECO_LOSCheck.h"
 #include "DECO_AngleOffCheck.h"
+#include "DECO_AspectAngleCheck.h"
+#include "DECO_AltitudeCheck.h"
+#include "DECO_MaxAltitudeCheck.h"
+#include "DECO_TailThreatCheck.h"

@@ -46,7 +46,8 @@ void applyRecursiveVisitor(TreeNode* node, const std::function<void(TreeNode*)>&
 
     visitor(node);
     //if (auto control = dynamic_cast<BT::ControlNode*>(node))
-	if (node->name() == "Sequence" || node->name() == "Fallback" || node->name() == "SequenceStar")
+	if (node->name() == "Sequence" || node->name() == "Fallback" || node->name() == "SequenceStar"
+		|| node->name() == "ReactiveFallback" || node->name() == "ReactiveSequence" || node->name() == "Parallel")
     {
 		auto control = (ControlNode*)(node);
         for (const auto& child : control->children())
