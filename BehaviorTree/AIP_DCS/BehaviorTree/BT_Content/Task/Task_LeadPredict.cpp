@@ -73,37 +73,37 @@ NodeStatus Action::Task_LeadPredict::tick()
 	double speedMargin = mySpd - tgtSpd;
 	double tgtBank = std::fabs((*BB)->TargetRotation_EDegree.Roll);
 
-	// v13: 적응형 스로틀 — 상대 회피 강도에 따라 감속 정책을 연속 전환.
-	//  [근거] 감속의 유불리가 상대에 따라 정반대:
-	//    동급(회피 잘함 v0): 풀스로틀 v7 +28.30 > 감속 v11 -3.87
-	//    약한상대(dummy)   : 감속 v11 +853.28 > 풀스로틀 v7 +499.28
-	//  [감지] 상대 뱅크각 변화량의 지수이동평균. dummy는 완만·일정(작음),
-	//         v0는 급기동으로 뱅크가 요동(큼).
-	//  [전환] 임계값 대신 연속: 회피가 강할수록 감속량을 0으로 수렴시킨다.
-	static double lastTgtRoll[2] = { 0.0, 0.0 }, evas[2] = { 0.0, 0.0 };
-	static bool   evasInit[2] = { false, false };
-	double tgtRollNow = (*BB)->TargetRotation_EDegree.Roll;
-	if (!evasInit[__ti]) { lastTgtRoll[__ti] = tgtRollNow; evasInit[__ti] = true; }
-	double rollDelta = std::fabs(tgtRollNow - lastTgtRoll[__ti]);
-	if (rollDelta > 180.0) rollDelta = 360.0 - rollDelta;      // wrap 보정
-	lastTgtRoll[__ti] = tgtRollNow;
-	evas[__ti] = evas[__ti] * 0.998 + rollDelta * 0.002;       // 느린 EMA(약 8초)
+	// v14: dV(속도차)를 0으로 수렴시키는 속도매칭 폐루프.
+	//  [실측 근거] overshoot.py 틱추적: 뒤를 잡고 ATA 3~5°까지 조준이 완벽한데도
+	//    dV=+38m/s가 시종일관 일정해 233m->0m를 8초에 관통, 사거리를 그냥 통과함.
+	//    => 문제는 조준이 아니라 폐쇄율. 제어 대상은 "스로틀 값"이 아니라 "dV" 자체다.
+	//  [설계] 목표는 감속이 아니라 dV -> 0 (상대와 같은 속도로 뒤에 머물기).
+	//    사거리 밖: 풀스로틀로 최대한 빨리 접근(에너지 유지)
+	//    사거리 안: dV를 0으로 수렴시켜 그 자리 유지 -> ATA를 조일 시간을 번다
+	//    너무 근접: 목표 dV를 음수로 둬 적극적으로 뒤로 빠져 관통·충돌 방지
+	const double WEZ_MAX = 914.0, WEZ_MIN = 152.0;
 
-	double evasNorm = evas[__ti] / 0.5;                        // 0.5deg/tick이면 완전 회피형
-	if (evasNorm > 1.0) evasNorm = 1.0;
+	double dvTarget;                       // 목표 속도차(m/s)
+	if (dist > WEZ_MAX)      dvTarget = 999.0;                 // 사거리 밖: 제한 없음(풀스로틀)
+	else if (dist > 400.0)   dvTarget = 0.0;                   // 사거리 안: 속도 매칭
+	else if (dist > WEZ_MIN) dvTarget = -10.0;                 // 근접: 살짝 뒤로 빠짐
+	else                     dvTarget = -25.0;                 // 과근접: 확실히 뒤로
 
-	double closeFactor = (dist < 2500.0) ? (2500.0 - dist) / 2500.0 : 0.0;
-	double fastFactor = speedMargin / 60.0;
-	if (fastFactor < 0.0) fastFactor = 0.0; if (fastFactor > 1.0) fastFactor = 1.0;
-	double bankFactor = tgtBank / 90.0;
-	if (bankFactor > 1.0) bankFactor = 1.0;
-
-	// 회피 강한 상대일수록 (1-evasNorm)이 0에 가까워져 감속이 사라진다 = v7 거동
-	double reduce = 0.25 * closeFactor * (0.6 * fastFactor + 0.4 * bankFactor) * (1.0 - evasNorm);
-	float target = (float)(1.0 - reduce);
+	double dvErr = speedMargin - dvTarget;  // +면 내가 너무 빠름 -> 줄여야
+	float target;
+	if (dvTarget > 900.0) {
+		target = 1.0f;                      // 사거리 밖은 무조건 풀스로틀
+	} else {
+		// dV 오차에 비례해 스로틀 조정 (0.55~1.0). 폐루프라 dV가 목표에 수렴한다.
+		double u = 1.0 - dvErr * 0.012;     // dvErr +38 -> 0.54 / 0 -> 1.0 / -20 -> 1.0(상한)
+		if (u > 1.0) u = 1.0;
+		if (u < 0.55) u = 0.55;
+		target = (float)u;
+	}
+	(void)tgtBank;
 
 	static float lastThr[2] = { 1.0f, 1.0f };
-	const float STEP = 0.004f;              // 틱당 최대 변화 (60Hz -> 초당 0.24)
+	const float STEP = 0.008f;              // 틱당 최대 변화 (60Hz -> 초당 0.48, 약 1초에 걸쳐 부드럽게)
 	float cur = lastThr[__ti];
 	if (target > cur) { cur += STEP; if (cur > target) cur = target; }
 	else              { cur -= STEP; if (cur < target) cur = target; }
@@ -114,7 +114,7 @@ NodeStatus Action::Task_LeadPredict::tick()
 	int __t = ((*BB)->Team == BLUE) ? 0 : 1;
 	if (++__dbg[__t] % 60 == 0)
 		std::cerr << "[ACTIVE] [" << (((*BB)->Team == BLUE) ? "BLUE" : "RED")
-			<< "] LeadPredict dist=" << dist << std::endl;
+			<< "] LeadPredict dist=" << dist << " dV=" << speedMargin << " thr=" << cur << std::endl;
 
 	return NodeStatus::SUCCESS;
 }
