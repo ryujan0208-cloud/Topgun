@@ -1,0 +1,16 @@
+seed,outcome,reward,steps,sim_s,end_condition,own_hp,tgt_hp,wall_s
+0,DRAW,94.79,11999,200.0,max time out,1.0,1.0,26.6
+1,DRAW,-22.16,11999,200.0,max time out,1.0,1.0,25.3
+2,DRAW,13.28,11999,200.0,max time out,1.0,1.0,24.5
+3,DRAW,-9.29,11999,200.0,max time out,1.0,0.9302741283009399,26.1
+4,DRAW,97.78,11999,200.0,max time out,1.0,1.0,24.2
+5,DRAW,17.88,11999,200.0,max time out,1.0,1.0,25.8
+6,DRAW,147.19,11999,200.0,max time out,1.0,1.0,25.4
+7,DRAW,329.13,11999,200.0,max time out,1.0,1.0,28.5
+8,DRAW,-65.75,11999,200.0,max time out,1.0,1.0,28.1
+9,DRAW,-66.06,11999,200.0,max time out,1.0,1.0,27.2
+10,DRAW,-78.8,11999,200.0,max time out,1.0,1.0,26.7
+11,DRAW,58.09,11999,200.0,max time out,1.0,1.0,26.9
+12,DRAW,-13.98,11999,200.0,max time out,1.0,1.0,61.0
+13,DRAW,-12.61,11999,200.0,max time out,1.0,1.0,64.0
+14,DRAW,-65.0,11999,200.0,max time out,1.0,1.0,66.4
