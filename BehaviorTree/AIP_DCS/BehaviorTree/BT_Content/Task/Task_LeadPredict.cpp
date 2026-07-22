@@ -70,6 +70,21 @@ NodeStatus Action::Task_LeadPredict::tick()
 	double dt = (*BB)->DeltaSecond;
 	if (dt < 1e-4) dt = 1.0 / 60.0;
 
+	// v18: 에피소드 경계에서 static 상태 초기화.
+	//  DLL 전역 static은 reset을 넘어 살아남아, 배치의 다음 판 첫 12틱이 직전 판의
+	//  기수 이력으로 오염되고 스로틀도 직전 판 마지막 값에서 출발했다(배치 신뢰성 문제).
+	//  RunningTime이 되감기면 새 에피소드로 판단한다(되감기지 않는 환경에선 무해).
+	static double lastRunTime[2] = { -1.0, -1.0 };
+	static bool   needThrReset[2] = { false, false };
+	double runTime = (*BB)->RunningTime;
+	if (runTime < lastRunTime[__ti])
+	{
+		histCnt[__ti] = 0;
+		histIdx[__ti] = 0;
+		needThrReset[__ti] = true;
+	}
+	lastRunTime[__ti] = runTime;
+
 	Vector3 fwdOld  = fwdHist[__ti][(histIdx[__ti] + 16 - HIST) % 16];
 	bool haveHist   = (histCnt[__ti] >= HIST);
 	fwdHist[__ti][histIdx[__ti]] = TgtFwd;
@@ -116,14 +131,25 @@ NodeStatus Action::Task_LeadPredict::tick()
 	}
 	// =======================================================================
 
-	// 강하각 클램프 (기존 정책)
+	// ============ v18: 고도 제약 재설계 (조준 불가의 진짜 원인) ============
+	// [실측] v17 vs 권정환 200초 로그(ata_split.py / alt_trace.py):
+	//   사거리 내 수평오차 5.86deg 인데 수직오차 22.88deg. 조준을 막는 건 상하각이다.
+	//   우리 고도가 t=20s 이후 3358~3492m에 고정 = VP Z하한 3500에 붙어 있었음(80% 틱).
+	//   상대는 3066m, 최저 2160m까지 자유롭게 내려가 고도차 -274m가 구조적으로 고정.
+	//   => 사거리 안에 87초를 있어도 내려다보기만 해 사격각이 안 나옴. 데미지 0의 주범.
+	// [근거] 실제 종료 하한은 min_altitude = 300m (config.py). 3500m는 11.7배 과보수적.
+	//   ClimbOut(MinAlt 3000)도 하한 위라 200초간 0회 발동하는 죽은 분기였다.
+	// [수정] 하한 3500 -> 1500 (종료까지 1200m 여유), 강하 클램프를 상승과 대칭으로.
+	//   강하 가속(26.6deg에서 4.4m/s^2)은 v14 dV 폐루프의 스로틀 여유(1.0->0.55,
+	//   약 4.5m/s^2)로 상쇄 가능하다고 보고 감수한다. 안전망은 ClimbOut을 1800m로
+	//   내려 하한보다 위에서 실제로 작동하게 살린다(Rule_v18.xml).
 	double climbSlope = dist * 0.5;
-	double diveSlope  = dist * 0.2;
+	double diveSlope  = dist * 0.5;         // v18: 0.2 -> 0.5 (하강 조준각 11.3->26.6deg)
 	double minZ = MyLocation.Z - diveSlope;
 	double maxZ = MyLocation.Z + climbSlope;
 	if (predicted.Z < minZ) predicted.Z = minZ;
 	if (predicted.Z > maxZ) predicted.Z = maxZ;
-	if (predicted.Z < 3500.0) predicted.Z = 3500.0;
+	if (predicted.Z < 1500.0) predicted.Z = 1500.0;   // v18: 3500 -> 1500
 	(*BB)->VP_Cartesian = predicted;
 
 	// v9: 근접 폐쇄율 관리 — "뒤를 잡고도 추월하는" 문제 해결(리플레이서 확인).
@@ -172,6 +198,7 @@ NodeStatus Action::Task_LeadPredict::tick()
 
 	static float lastThr[2] = { 1.0f, 1.0f };
 	const float STEP = 0.008f;              // 틱당 최대 변화 (60Hz -> 초당 0.48, 약 1초에 걸쳐 부드럽게)
+	if (needThrReset[__ti]) { lastThr[__ti] = 1.0f; needThrReset[__ti] = false; }
 	float cur = lastThr[__ti];
 	if (target > cur) { cur += STEP; if (cur > target) cur = target; }
 	else              { cur -= STEP; if (cur < target) cur = target; }
