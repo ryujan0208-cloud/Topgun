@@ -51,9 +51,10 @@ def main():
     max_t   = float(sys.argv[3]) if len(sys.argv) > 3 else 200.0
     seeds   = int(sys.argv[4]) if len(sys.argv) > 4 else 1   # 1이면 고정스폰 1판(기존 동작)
     start_seed = int(sys.argv[5]) if len(sys.argv) > 5 else 0  # 특정 시드 재현용
+    tgt_dll = sys.argv[6] if len(sys.argv) > 6 else "AIP_kwon.dll"  # 스파링 상대 선택
 
     own = BTActionProvider(dll_name="AIP_DCS_ownship.dll")
-    tgt = BTActionProvider(dll_name="AIP_kwon.dll")
+    tgt = BTActionProvider(dll_name=tgt_dll)
     if own_rep > 1:
         own = RepeatProvider(own, own_rep)
     if tgt_rep > 1:
