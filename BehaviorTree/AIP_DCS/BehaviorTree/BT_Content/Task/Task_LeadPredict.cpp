@@ -163,11 +163,19 @@ NodeStatus Action::Task_LeadPredict::tick()
 	// 영향 없음(연속). 원거리에서만 죄어 "급기동 상대의 다이브 리드를 쫓는 깊은 다이브
 	// 깔때기"를 차단 (seed0 실측: 2.2km 거리에서 939m까지 추락, 종료고도 300m 방향이었다).
 	if (diveSlope > 650.0) diveSlope = 650.0;
+	// v22b: 안전망 ①(2200m부터 diveSlope 고도비례 축소)은 제거.
+	//  [실측 반증] v22 vs 권정환: dealt 5.03->2.23 폭락. 무득점 판(s08/s12)이 사거리 20초
+	//  체류에도 수직오차 23°. 그 판들은 상대가 오히려 위(고도차 +202/+439m)라 하향 억제가
+	//  궤적 전체를 교란해 조준을 망침. => 광범위 하향 억제는 부작용이 과하다. 제거하고
+	//  안전망 ②(강제 상승, 아래)만으로 바닥을 지킨다.
 	double minZ = MyLocation.Z - diveSlope;
 	double maxZ = MyLocation.Z + climbSlope;
 	if (predicted.Z < minZ) predicted.Z = minZ;
 	if (predicted.Z > maxZ) predicted.Z = maxZ;
 	if (predicted.Z < 1500.0) predicted.Z = 1500.0;   // v18: 3500 -> 1500
+	// v22c: LeadPredict 내부 고도 안전망은 제거. 고도<1800이면 ClimbOut이 최우선으로
+	//  잡아 LeadPredict가 실행조차 안 되므로(트리 구조) 여기 안전망은 죽은 코드였다.
+	//  고도 안전은 DECO_AltitudeCheck(예측형) + Task_ClimbOut(풀스로틀) = 트리 레벨에서 처리.
 	(*BB)->VP_Cartesian = predicted;
 
 	// v9: 근접 폐쇄율 관리 — "뒤를 잡고도 추월하는" 문제 해결(리플레이서 확인).
