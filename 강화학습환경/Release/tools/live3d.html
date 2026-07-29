@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<title>실시간 3D 조종 - AI Pilot 스파링</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin:0; background:#0b1020; color:#e8eefc; font-family:Consolas,"맑은 고딕",monospace; overflow:hidden; }
+  #view { position:fixed; inset:0; }
+  .panel { position:fixed; background:rgba(10,16,32,.78); border:1px solid #2a3a5e;
+           border-radius:8px; padding:10px 12px; font-size:13px; line-height:1.6; }
+  #hud   { top:12px; left:12px; min-width:250px; }
+  #ctrl  { bottom:12px; left:12px; min-width:250px; }
+  #help  { top:12px; right:12px; max-width:270px; font-size:12px; color:#9fb3d9; }
+  .big   { font-size:20px; font-weight:bold; }
+  .k     { color:#7fa7e8; }
+  .warn  { color:#ff6b6b; font-weight:bold; }
+  .good  { color:#4ade80; font-weight:bold; }
+  .bar   { display:inline-block; width:120px; height:9px; background:#1b2740;
+           vertical-align:middle; border-radius:5px; position:relative; }
+  .bar > i { position:absolute; top:0; bottom:0; background:#5b8def; border-radius:5px; }
+  #banner { position:fixed; top:44%; left:0; right:0; text-align:center; font-size:34px;
+            font-weight:bold; text-shadow:0 0 18px #000; pointer-events:none; }
+</style>
+</head>
+<body>
+<div id="view"></div>
+
+<div class="panel" id="hud">
+  <div>시간 <span id="t">0.0</span>s</div>
+  <div class="big">거리 <span id="dist">-</span> m</div>
+  <div>내 조준각 <span id="myata" class="big">-</span>°</div>
+  <div>적 조준각 <span id="enata">-</span>°</div>
+  <hr style="border-color:#2a3a5e"/>
+  <div>고도 <span id="alt">-</span> m &nbsp; 고도차 <span id="dalt">-</span> m</div>
+  <div>속도 <span id="kcas">-</span> kt</div>
+  <div>HP 나 <span id="hpr">1.00</span> / 적 <span id="hpb">1.00</span></div>
+</div>
+
+<div class="panel" id="ctrl">
+  <div>롤 <span class="bar"><i id="b_roll"></i></span> <span id="v_roll">0.00</span></div>
+  <div>피치 <span class="bar"><i id="b_pitch"></i></span> <span id="v_pitch">0.00</span></div>
+  <div>러더 <span class="bar"><i id="b_yaw"></i></span> <span id="v_yaw">0.00</span></div>
+  <div>스로틀 <span class="bar"><i id="b_thr"></i></span> <span id="v_thr">1.00</span>
+       <span class="k">(마우스 휠)</span></div>
+</div>
+
+<div class="panel" id="help">
+  <b>조종</b><br/>
+  <span class="k">A/D</span> 좌우 롤 &nbsp; <span class="k">W/S</span> 기수 내림/올림<br/>
+  <span class="k">Q/E</span> 러더 &nbsp; <span class="k">마우스 휠</span> 스로틀<br/>
+  <span class="k">SPACE</span> 스틱 중립 &nbsp; <span class="k">P</span> 일시정지<br/>
+  <span class="k">C</span> 시점 전환(추격/콕핏/전장)<br/>
+  <span class="k">X</span> 종료<br/><br/>
+  키를 떼도 유지되는 <b>트림식</b>입니다.<br/>
+  파란 기체 = 우리 BT(적) / 빨간 기체 = 당신
+</div>
+
+<div id="banner"></div>
+
+<script type="module">
+import * as THREE from "/vendor/three.module.min.js";
+
+// ───────── 씬 ─────────
+const view = document.getElementById("view");
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x88b6e8);
+scene.fog = new THREE.Fog(0x88b6e8, 8000, 40000);
+const camera = new THREE.PerspectiveCamera(55, innerWidth/innerHeight, 1, 80000);
+const renderer = new THREE.WebGLRenderer({ antialias:true });
+renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+view.appendChild(renderer.domElement);
+function fit(){
+  const w = Math.max(1, window.innerWidth||document.documentElement.clientWidth||800);
+  const h = Math.max(1, window.innerHeight||document.documentElement.clientHeight||600);
+  camera.aspect = w/h; camera.updateProjectionMatrix();
+  renderer.setSize(w, h, false);
+  renderer.domElement.style.width = "100%";
+  renderer.domElement.style.height = "100%";
+}
+fit();
+addEventListener("resize", fit);
+// 창이 나중에 표시되는 경우(숨김 상태로 로드) 대비: 크기가 0이면 계속 재시도
+const fitObs = new ResizeObserver(fit); fitObs.observe(document.body);
+scene.add(new THREE.AmbientLight(0xffffff, .7));
+const sun = new THREE.DirectionalLight(0xffffff, 1.1); sun.position.set(.5,1,.4); scene.add(sun);
+
+// 지면 + 그리드(고도감)
+const ground = new THREE.Mesh(new THREE.PlaneGeometry(120000,120000),
+  new THREE.MeshPhongMaterial({color:0x2e4a34}));
+ground.rotation.x = -Math.PI/2; ground.position.y = 0; scene.add(ground);
+const grid = new THREE.GridHelper(120000, 120, 0x5f7fa8, 0x44608a);
+grid.material.opacity=.35; grid.material.transparent=true; scene.add(grid);
+
+// 기체 (간단한 화살표형 — 메시 없이도 자세가 보이게)
+function makePlane(color){
+  const g = new THREE.Group();
+  const body = new THREE.Mesh(new THREE.ConeGeometry(9, 46, 4),
+    new THREE.MeshPhongMaterial({color, shininess:60}));
+  body.rotation.x = Math.PI/2;           // +Z 전방
+  g.add(body);
+  const wing = new THREE.Mesh(new THREE.BoxGeometry(58, 2.5, 13),
+    new THREE.MeshPhongMaterial({color, shininess:40}));
+  wing.position.z = -2; g.add(wing);
+  const tail = new THREE.Mesh(new THREE.BoxGeometry(3, 15, 10),
+    new THREE.MeshPhongMaterial({color, shininess:40}));
+  tail.position.set(0, 7, -18); g.add(tail);
+  return g;
+}
+const me = makePlane(0xff4d4d);      // 나 = 빨강
+const en = makePlane(0x4d9cff);      // 우리 BT = 파랑
+scene.add(me); scene.add(en);
+
+// 궤적
+function trail(color){
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute("position", new THREE.BufferAttribute(new Float32Array(3*1200),3));
+  geo.setDrawRange(0,0);
+  return new THREE.Line(geo, new THREE.LineBasicMaterial({color, transparent:true, opacity:.55}));
+}
+const trMe = trail(0xff8080), trEn = trail(0x80c0ff);
+scene.add(trMe); scene.add(trEn);
+const bufMe=[], bufEn=[];
+
+// 조준선
+const losGeo = new THREE.BufferGeometry();
+losGeo.setAttribute("position", new THREE.BufferAttribute(new Float32Array(6),3));
+const los = new THREE.Line(losGeo, new THREE.LineBasicMaterial({color:0xffd93d, transparent:true, opacity:.5}));
+scene.add(los);
+
+// ───────── 조종 입력 ─────────
+const cmd = { roll:0, pitch:0, yaw:0, thr:1.0 };
+let paused=false, camMode=0;
+const STEP=0.25;
+addEventListener("keydown", e=>{
+  const k = e.key.toLowerCase();
+  if (["a","d","w","s","q","e"," ","p","c","x"].includes(k)) e.preventDefault();
+  if      (k==="a") cmd.roll  = Math.max(-1, cmd.roll  - STEP);
+  else if (k==="d") cmd.roll  = Math.min( 1, cmd.roll  + STEP);
+  else if (k==="w") cmd.pitch = Math.max(-1, cmd.pitch - STEP);
+  else if (k==="s") cmd.pitch = Math.min( 1, cmd.pitch + STEP);
+  else if (k==="q") cmd.yaw   = Math.max(-1, cmd.yaw   - STEP);
+  else if (k==="e") cmd.yaw   = Math.min( 1, cmd.yaw   + STEP);
+  else if (k===" ") { cmd.roll=cmd.pitch=cmd.yaw=0; }
+  else if (k==="p") { paused=!paused; post({paused}); }
+  else if (k==="c") camMode=(camMode+1)%3;
+  else if (k==="x") { post({quit:true}); }
+  push();
+});
+// 마우스 휠 = 스로틀
+addEventListener("wheel", e=>{
+  e.preventDefault();
+  cmd.thr = Math.max(0, Math.min(1, cmd.thr - Math.sign(e.deltaY)*0.05));
+  push();
+}, {passive:false});
+
+let sendTimer=null;
+function push(){ if(!sendTimer) sendTimer=setTimeout(()=>{sendTimer=null; post(cmd);}, 30); }
+async function post(body){
+  try{ await fetch("/api/input",{method:"POST",headers:{"Content-Type":"application/json"},
+       body:JSON.stringify(body)}); }catch(_){}
+}
+
+// ───────── 상태 폴링 & 렌더 ─────────
+const $=id=>document.getElementById(id);
+function setBar(el, v, signed=true){
+  const w=120, p=signed? (v+1)/2 : v;
+  el.style.left = (signed? Math.min(50, p*100) : 0)+"%";
+  el.style.width = (signed? Math.abs(v)*50 : v*100)+"%";
+}
+let st=null;
+async function poll(){
+  try{
+    const r = await fetch("/api/state",{cache:"no-store"});
+    st = await r.json();
+  }catch(_){}
+  setTimeout(poll, 50);          // 초당 20회
+}
+poll();
+
+// yaw(북기준,시계) → three.js
+function applyPose(obj, x,y,z, rollD, pitchD, yawD){
+  obj.position.set(x,y,z);
+  const e = new THREE.Euler(
+    THREE.MathUtils.degToRad(pitchD),
+    THREE.MathUtils.degToRad(90 - yawD),
+    THREE.MathUtils.degToRad(-rollD), "YXZ");
+  obj.quaternion.setFromEuler(e);
+}
+function pushTrail(line, buf, x,y,z){
+  buf.push(x,y,z);
+  if (buf.length > 3*1200) buf.splice(0, buf.length-3*1200);
+  const a = line.geometry.attributes.position;
+  a.array.set(buf); a.needsUpdate=true;
+  line.geometry.setDrawRange(0, buf.length/3);
+}
+
+// rAF는 창이 숨겨지면 멈춘다 -> HUD/조종은 타이머로 별도 보장
+setInterval(()=>{ if (st) updateHUD(); }, 100);
+
+function updateHUD(){
+  if (!st || !st.me) return;
+  $("t").textContent = (st.t||0).toFixed(1);
+  $("dist").textContent = st.dist.toFixed(0);
+  const ma=$("myata"); ma.textContent = st.myATA.toFixed(1);
+  ma.className = "big " + (st.inWEZ ? "good" : "");
+  const ea=$("enata"); ea.textContent = st.enATA.toFixed(1);
+  ea.className = st.hit ? "warn" : "";
+  $("alt").textContent = st.me.alt.toFixed(0);
+  $("dalt").textContent = (st.rel[2]>=0?"+":"") + st.rel[2].toFixed(0);
+  $("kcas").textContent = st.me.kcas.toFixed(0);
+  $("hpr").textContent = st.me.hp.toFixed(2);
+  $("hpb").textContent = st.en.hp.toFixed(2);
+  const c = st.cmd;
+  setBar($("b_roll"),c.roll); $("v_roll").textContent=c.roll.toFixed(2);
+  setBar($("b_pitch"),c.pitch); $("v_pitch").textContent=c.pitch.toFixed(2);
+  setBar($("b_yaw"),c.yaw); $("v_yaw").textContent=c.yaw.toFixed(2);
+  setBar($("b_thr"),c.thr,false); $("v_thr").textContent=c.thr.toFixed(2);
+  let bn="";
+  if (st.inWEZ) bn = '<span class="good">★ 사격 중 ★</span>';
+  else if (st.hit) bn = '<span class="warn">!! 피격 중 !!</span>';
+  else if (paused) bn = "일시정지";
+  else if (!st.running && st.result) bn = `교전 종료 — 우리BT ${st.result.blue} / 당신 ${st.result.red}`;
+  $("banner").innerHTML = bn;
+}
+
+function animate(){
+  requestAnimationFrame(animate);
+  if (st && st.running){
+    // 나 = 원점 기준, 적 = 상대좌표 (E,N,Up) → three(x=E, y=Up, z=-N)
+    const mx=0, my=st.me.alt, mz=0;
+    const ex=st.rel[0], ey=st.me.alt+st.rel[2], ez=-st.rel[1];
+    applyPose(me, mx,my,mz, st.me.roll, st.me.pitch, st.me.yaw);
+    applyPose(en, ex,ey,ez, st.en.roll, st.en.pitch, st.en.yaw);
+    pushTrail(trMe, bufMe, mx,my,mz);
+    pushTrail(trEn, bufEn, ex,ey,ez);
+    const lp = los.geometry.attributes.position;
+    lp.array.set([mx,my,mz, ex,ey,ez]); lp.needsUpdate=true;
+
+    // 카메라
+    const q = me.quaternion;
+    if (camMode===0){        // 추격
+      const off = new THREE.Vector3(0, 26, -95).applyQuaternion(q);
+      camera.position.set(mx+off.x, my+off.y, mz+off.z);
+      camera.lookAt(mx,my,mz);
+    } else if (camMode===1){ // 콕핏
+      const fwd = new THREE.Vector3(0,3,12).applyQuaternion(q);
+      camera.position.set(mx+fwd.x, my+fwd.y, mz+fwd.z);
+      camera.quaternion.copy(q);
+    } else {                 // 전장(둘 다 보기)
+      const cxp=(mx+ex)/2, cyp=(my+ey)/2, czp=(mz+ez)/2;
+      const d = Math.max(600, st.dist*1.4);
+      camera.position.set(cxp+d*.6, cyp+d*.5, czp+d*.6);
+      camera.lookAt(cxp,cyp,czp);
+    }
+
+  }
+  renderer.render(scene, camera);
+}
+animate();
+</script>
+</body>
+</html>
