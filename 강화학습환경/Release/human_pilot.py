@@ -85,7 +85,7 @@ class Stick:
 class HumanProvider(ActionProvider):
     """사람 조종 + 자동 녹화. compute_action 계약만 지키면 BT/RL과 동등하게 꽂힌다."""
 
-    def __init__(self, stick: Stick, speed: float, hud_every: int = 6):
+    def __init__(self, stick: Stick, speed: float, hud_every: int = 3):
         self.stick = stick; self.speed = speed
         self.hud_every = hud_every
         self.frames = []          # 녹화 버퍼 (틱마다 4축)
@@ -114,6 +114,7 @@ class HumanProvider(ActionProvider):
         return ActionResult(action=a, source="human", confidence=1.0)
 
     def _hud(self, context):
+        """레이더 화면 + 계기. 매번 화면을 지우고 다시 그린다(스크롤 방지)."""
         try:
             me = context.sim.get_state()          # RED (내가 조종)
             en = context.opponent_sim.get_state() # BLUE (우리 BT)
@@ -124,21 +125,76 @@ class HumanProvider(ActionProvider):
         dn = (float(en[StateIndex.LAT]) - float(me[StateIndex.LAT])) * MLAT
         du = float(en[StateIndex.ALT]) - float(me[StateIndex.ALT])
         dist = math.sqrt(de*de + dn*dn + du*du)
-        yaw, pit = math.radians(float(me[StateIndex.YAW])), math.radians(float(me[StateIndex.PITCH]))
+        myyaw = float(me[StateIndex.YAW])
+        yaw, pit = math.radians(myyaw), math.radians(float(me[StateIndex.PITCH]))
         fe, fn, fu = math.sin(yaw)*math.cos(pit), math.cos(yaw)*math.cos(pit), math.sin(pit)
         ata = math.degrees(math.acos(max(-1, min(1, (fe*de+fn*dn+fu*du)/max(dist, 1e-6)))))
-        # 상대(BLUE)가 나를 겨누는 각
-        eyaw, epit = math.radians(float(en[StateIndex.YAW])), math.radians(float(en[StateIndex.PITCH]))
+        eyaw_d = float(en[StateIndex.YAW])
+        eyaw, epit = math.radians(eyaw_d), math.radians(float(en[StateIndex.PITCH]))
         ee, en_, eu = math.sin(eyaw)*math.cos(epit), math.cos(eyaw)*math.cos(epit), math.sin(epit)
         eata = math.degrees(math.acos(max(-1, min(1, (ee*-de+en_*-dn+eu*-du)/max(dist, 1e-6)))))
 
-        wez = "★사격!" if (152 <= dist <= 914 and ata <= 1.0) else ("사거리" if 152 <= dist <= 914 else "     ")
-        warn = "!!피격!!" if (152 <= dist <= 914 and eata <= 1.0) else "        "
-        s = (f"\rT{float(me[StateIndex.SIM_TIME]):5.0f}s |적{dist:6.0f}m 내ATA{ata:5.1f}° 적ATA{eata:5.1f}° {wez}{warn}"
-             f"| 고도{float(me[StateIndex.ALT]):5.0f} 속도{float(me[StateIndex.KCAS]):3.0f}kt "
-             f"| R{self.stick.roll:+.2f} P{self.stick.pitch:+.2f} Y{self.stick.yaw:+.2f} T{self.stick.thr:.2f} "
-             f"| HP {float(me[StateIndex.HEALTH]):.2f}v{float(en[StateIndex.HEALTH]):.2f}   ")
-        sys.stdout.write(s); sys.stdout.flush()
+        # ── 레이더: 내 기수를 항상 위(↑)로 두는 상대좌표(body frame) ──
+        W, H = 41, 15                       # 화면 칸수(홀수)
+        grid = [[' '] * W for _ in range(H)]
+        rng = 3000.0                         # 레이더 반경(m). 근접 시 자동 확대
+        if dist < 800: rng = 1000.0
+        elif dist < 2000: rng = 2000.0
+        # 적을 내 기준 좌표로 회전 (전방 = +y화면위)
+        bx =  de * math.cos(yaw) - dn * math.sin(yaw)     # 우측(+)
+        by =  de * math.sin(yaw) + dn * math.cos(yaw)     # 전방(+)
+        cx, cy = W // 2, H // 2
+        px = cx + int(round(bx / rng * cx))
+        py = cy - int(round(by / rng * cy))
+        # 거리 링(1000m)
+        for ang in range(0, 360, 6):
+            rr = 1000.0
+            if rr < rng:
+                gx = cx + int(round(math.sin(math.radians(ang)) * rr / rng * cx))
+                gy = cy - int(round(math.cos(math.radians(ang)) * rr / rng * cy))
+                if 0 <= gx < W and 0 <= gy < H and grid[gy][gx] == ' ': grid[gy][gx] = '·'
+        # 내 기체(중앙, 항상 위 향함)
+        grid[cy][cx] = '^'
+        # 적 기체 + 적 기수 방향
+        if 0 <= px < W and 0 <= py < H:
+            rel = (eyaw_d - myyaw + 360) % 360      # 적 기수(내 기준)
+            arrow = '↑↗→↘↓↙←↖'[int(((rel + 22.5) % 360) // 45)]
+            grid[py][px] = arrow
+        else:  # 화면 밖이면 가장자리에 방향 표시
+            ang = math.degrees(math.atan2(bx, by)) % 360
+            ex = cx + int(round(math.sin(math.radians(ang)) * cx))
+            ey = cy - int(round(math.cos(math.radians(ang)) * cy))
+            ex = max(0, min(W-1, ex)); ey = max(0, min(H-1, ey))
+            grid[ey][ex] = '?'
+
+        wez  = "★★사격중★★" if (152 <= dist <= 914 and ata <= 1.0) else \
+               ("[사거리]" if 152 <= dist <= 914 else "        ")
+        warn = "!!! 피격중 !!!" if (152 <= dist <= 914 and eata <= 1.0) else ""
+        bar  = lambda v: ('=' * int(abs(v) * 8)).rjust(8) if v < 0 else ('=' * int(abs(v) * 8)).ljust(8)
+
+        L = []
+        L.append(f"  T {float(me[StateIndex.SIM_TIME]):5.1f}s   적거리 {dist:6.0f} m   레이더반경 {rng:.0f}m")
+        L.append("  +" + "-" * W + "+")
+        for r in range(H):
+            L.append("  |" + "".join(grid[r]) + "|")
+        L.append("  +" + "-" * W + "+   (^=나, 화살표=적 기수방향, ?=화면밖)")
+        L.append("")
+        L.append(f"  내 조준각 ATA {ata:5.1f}°   {wez}")
+        L.append(f"  적 조준각      {eata:5.1f}°   {warn}")
+        L.append("")
+        L.append(f"  고도 {float(me[StateIndex.ALT]):5.0f}m (적 {float(en[StateIndex.ALT]):5.0f}m, 차 {-du:+5.0f}m)"
+                 f"   속도 {float(me[StateIndex.KCAS]):3.0f}kt")
+        L.append(f"  HP  나 {float(me[StateIndex.HEALTH]):.3f}   적 {float(en[StateIndex.HEALTH]):.3f}")
+        L.append("")
+        L.append(f"  롤   [{bar(self.stick.roll)}] {self.stick.roll:+.2f}   (A/D)")
+        L.append(f"  피치 [{bar(self.stick.pitch)}] {self.stick.pitch:+.2f}   (W/S)")
+        L.append(f"  러더 [{bar(self.stick.yaw)}] {self.stick.yaw:+.2f}   (Q/E)")
+        L.append(f"  스로틀 {self.stick.thr:.2f}  (1~5)   SPACE=중립  P=일시정지  X=종료")
+
+        out = "\n".join(L)
+        # 커서를 홈으로 보내고 덮어쓰기 (스크롤 없음)
+        sys.stdout.write("\033[H\033[J" + out + "\n")
+        sys.stdout.flush()
 
 
 class ReplayProvider(ActionProvider):
@@ -180,6 +236,20 @@ def run_episode(env, seed=None):
     return total, info
 
 
+def _enable_ansi():
+    """Windows 콘솔에서 ANSI 이스케이프(화면 지우기/커서 이동)를 켠다."""
+    if os.name != "nt": return
+    try:
+        import ctypes
+        k = ctypes.windll.kernel32
+        h = k.GetStdHandle(-11)              # STD_OUTPUT_HANDLE
+        mode = ctypes.c_uint32()
+        k.GetConsoleMode(h, ctypes.byref(mode))
+        k.SetConsoleMode(h, mode.value | 0x0004)   # ENABLE_VIRTUAL_TERMINAL_PROCESSING
+    except Exception:
+        pass
+
+
 def _silence_native_logs():
     """네이티브 DLL이 stderr로 뿜는 디버그 출력을 OS 레벨에서 막는다.
     (HUD가 [ACTIVE]/[DIST] 로그에 덮여서 조종이 불가능해지는 문제)"""
@@ -203,6 +273,7 @@ def cmd_live(args):
     print(f"\n[{args.time}초 교전 시작 | 속도 {args.speed}x | 당신=RED, 상대=우리 현역 BT(BLUE)]")
     print("3초 후 시작...")
     time.sleep(3)
+    _enable_ansi()             # 화면 갱신(커서 이동) 활성화
     _silence_native_logs()     # HUD 가림 방지 (반드시 env 생성 후, 교전 직전)
     try:
         total, info = run_episode(env, seed=args.seed)
