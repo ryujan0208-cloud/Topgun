@@ -29,3 +29,4 @@ env/
 # 배치 로그를 판별로 쪼갠 리플레이 (원본이 커밋돼 있어 중복)
 # 필요하면 tools_diag/split_episodes.py 로 언제든 재생성
 **/artifacts/logs/*_s[0-9][0-9]_*.csv
+recordings/
