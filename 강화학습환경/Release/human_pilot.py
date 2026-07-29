@@ -135,7 +135,7 @@ class HumanProvider(ActionProvider):
         eata = math.degrees(math.acos(max(-1, min(1, (ee*-de+en_*-dn+eu*-du)/max(dist, 1e-6)))))
 
         # ── 레이더: 내 기수를 항상 위(↑)로 두는 상대좌표(body frame) ──
-        W, H = 41, 15                       # 화면 칸수(홀수)
+        W, H = 31, 13                       # 화면 칸수(홀수)
         grid = [[' '] * W for _ in range(H)]
         rng = 3000.0                         # 레이더 반경(m). 근접 시 자동 확대
         if dist < 800: rng = 1000.0
@@ -172,24 +172,47 @@ class HumanProvider(ActionProvider):
         warn = "!!! 피격중 !!!" if (152 <= dist <= 914 and eata <= 1.0) else ""
         bar  = lambda v: ('=' * int(abs(v) * 8)).rjust(8) if v < 0 else ('=' * int(abs(v) * 8)).ljust(8)
 
+        # ── 수직 단면(옆에서 본 화면): 가로=수평거리, 세로=고도차 ──
+        VW, VH = 31, 13
+        vgrid = [[' '] * VW for _ in range(VH)]
+        hdist = math.sqrt(de*de + dn*dn)                  # 수평거리
+        vrng_h = max(rng, 500.0)                          # 가로 스케일 = 레이더와 동일
+        vrng_v = 1500.0                                   # 세로 ±1500m
+        if abs(du) > 1200: vrng_v = 3000.0
+        vcx, vcy = 2, VH // 2                             # 내 위치(좌측)
+        # 수평선(내 고도 기준선)
+        for x in range(VW):
+            if vgrid[vcy][x] == ' ': vgrid[vcy][x] = '-'
+        vgrid[vcy][vcx] = '>'                             # 나 (오른쪽 향함)
+        vx = vcx + int(round(hdist / vrng_h * (VW - vcx - 2)))
+        vy = vcy - int(round(du / vrng_v * (VH // 2)))
+        vx = max(0, min(VW - 1, vx)); vy = max(0, min(VH - 1, vy))
+        # 적 피치에 따른 기호
+        epitch = float(en[StateIndex.PITCH])
+        esym = 'A' if epitch > 15 else ('V' if epitch < -15 else 'E')
+        vgrid[vy][vx] = esym
+
         L = []
-        L.append(f"  T {float(me[StateIndex.SIM_TIME]):5.1f}s   적거리 {dist:6.0f} m   레이더반경 {rng:.0f}m")
-        L.append("  +" + "-" * W + "+")
-        for r in range(H):
-            L.append("  |" + "".join(grid[r]) + "|")
-        L.append("  +" + "-" * W + "+   (^=나, 화살표=적 기수방향, ?=화면밖)")
+        L.append(f"  T {float(me[StateIndex.SIM_TIME]):5.1f}s   적거리 {dist:6.0f}m   "
+                 f"고도차 {-du:+5.0f}m   {wez}{warn}")
+        L.append("   [위에서 본 화면]  반경{:.0f}m        [옆에서 본 화면] 상하±{:.0f}m".format(rng, vrng_v))
+        L.append("  +" + "-" * W + "+  +" + "-" * VW + "+")
+        for r in range(max(H, VH)):
+            a = "|" + "".join(grid[r]) + "|" if r < H else " " * (W + 2)
+            b = "|" + "".join(vgrid[r]) + "|" if r < VH else " " * (VW + 2)
+            L.append("  " + a + "  " + b)
+        L.append("  +" + "-" * W + "+  +" + "-" * VW + "+")
+        L.append("   ^=나 화살표=적기수 ?=밖      >=나  E=적(A상승 V하강) 위=적이높음")
         L.append("")
-        L.append(f"  내 조준각 ATA {ata:5.1f}°   {wez}")
-        L.append(f"  적 조준각      {eata:5.1f}°   {warn}")
-        L.append("")
-        L.append(f"  고도 {float(me[StateIndex.ALT]):5.0f}m (적 {float(en[StateIndex.ALT]):5.0f}m, 차 {-du:+5.0f}m)"
-                 f"   속도 {float(me[StateIndex.KCAS]):3.0f}kt")
+        L.append(f"  내 조준각 ATA {ata:5.1f}°      적 조준각 {eata:5.1f}°")
+        L.append(f"  고도 {float(me[StateIndex.ALT]):5.0f}m (적 {float(en[StateIndex.ALT]):5.0f}m)   "
+                 f"속도 {float(me[StateIndex.KCAS]):3.0f}kt   피치 {float(me[StateIndex.PITCH]):+4.0f}°")
         L.append(f"  HP  나 {float(me[StateIndex.HEALTH]):.3f}   적 {float(en[StateIndex.HEALTH]):.3f}")
         L.append("")
-        L.append(f"  롤   [{bar(self.stick.roll)}] {self.stick.roll:+.2f}   (A/D)")
-        L.append(f"  피치 [{bar(self.stick.pitch)}] {self.stick.pitch:+.2f}   (W/S)")
-        L.append(f"  러더 [{bar(self.stick.yaw)}] {self.stick.yaw:+.2f}   (Q/E)")
-        L.append(f"  스로틀 {self.stick.thr:.2f}  (1~5)   SPACE=중립  P=일시정지  X=종료")
+        L.append(f"  롤   [{bar(self.stick.roll)}] {self.stick.roll:+.2f} (A/D)    "
+                 f"피치 [{bar(self.stick.pitch)}] {self.stick.pitch:+.2f} (W/S)")
+        L.append(f"  러더 [{bar(self.stick.yaw)}] {self.stick.yaw:+.2f} (Q/E)    "
+                 f"스로틀 {self.stick.thr:.2f} (1~5)  SPACE=중립 P=정지 X=종료")
 
         out = "\n".join(L)
         # 커서를 홈으로 보내고 덮어쓰기 (스크롤 없음)
