@@ -49,11 +49,16 @@
   <b>조종</b><br/>
   <span class="k">A/D</span> 좌우 롤 &nbsp; <span class="k">W/S</span> 기수 내림/올림<br/>
   <span class="k">Q/E</span> 러더 &nbsp; <span class="k">마우스 휠</span> 스로틀<br/>
-  <span class="k">SPACE</span> 스틱 중립 &nbsp; <span class="k">P</span> 일시정지<br/>
-  <span class="k">C</span> 시점 전환(추격/콕핏/전장)<br/>
-  <span class="k">X</span> 종료<br/><br/>
-  키를 떼도 유지되는 <b>트림식</b>입니다.<br/>
-  파란 기체 = 우리 BT(적) / 빨간 기체 = 당신
+  <span class="k">P</span> 일시정지 &nbsp; <span class="k">X</span> 종료 &nbsp;
+  <span class="k">[ ]</span> 감도 <b><span id="sens">0.08</span></b><br/>
+  <br/>
+  <b>시점</b><br/>
+  <span class="k">마우스 드래그</span> 자유 회전<br/>
+  <span class="k">Shift+휠</span> 확대/축소 &nbsp; <span class="k">더블클릭/R</span> 리셋<br/>
+  <span class="k">C</span> 시점 전환(추격/콕핏/전장)<br/><br/>
+  <b style="color:#4ade80">누르는 동안만</b> 기울고,<br/>
+  손을 떼면 <b>자동으로 수평 직진</b>으로 돌아옵니다.<br/>
+  <span style="color:#ff8080">빨강 = 당신</span> / <span style="color:#80c0ff">파랑 = 우리 BT(적)</span>
 </div>
 
 <div id="banner"></div>
@@ -131,31 +136,76 @@ scene.add(los);
 // ───────── 조종 입력 ─────────
 const cmd = { roll:0, pitch:0, yaw:0, thr:1.0 };
 let paused=false, camMode=0;
-const STEP=0.25;
+let STEP=0.08;                       // 조종 감도 (기존 0.25 -> 0.08). [ ] 키로 조절
+const THR_STEP=0.03;                 // 휠 1클릭당 스로틀 변화
+// ── 누르는 동안만 조작(hold-to-actuate). 손을 떼면 자동으로 0 = 수평 직진 ──
+const held = new Set();
+const CTRL = ["a","d","w","s","q","e"];
 addEventListener("keydown", e=>{
   const k = e.key.toLowerCase();
-  if (["a","d","w","s","q","e"," ","p","c","x"].includes(k)) e.preventDefault();
-  if      (k==="a") cmd.roll  = Math.max(-1, cmd.roll  - STEP);
-  else if (k==="d") cmd.roll  = Math.min( 1, cmd.roll  + STEP);
-  else if (k==="w") cmd.pitch = Math.max(-1, cmd.pitch - STEP);
-  else if (k==="s") cmd.pitch = Math.min( 1, cmd.pitch + STEP);
-  else if (k==="q") cmd.yaw   = Math.max(-1, cmd.yaw   - STEP);
-  else if (k==="e") cmd.yaw   = Math.min( 1, cmd.yaw   + STEP);
-  else if (k===" ") { cmd.roll=cmd.pitch=cmd.yaw=0; }
+  if (CTRL.includes(k) || [" ","p","c","x","[","]","r"].includes(k)) e.preventDefault();
+  if (CTRL.includes(k)) { held.add(k); return; }          // 조종키는 누름 상태만 기록
+  if      (k===" ") { held.clear(); cmd.roll=cmd.pitch=cmd.yaw=0; push(); }
   else if (k==="p") { paused=!paused; post({paused}); }
-  else if (k==="c") camMode=(camMode+1)%3;
+  else if (k==="c") { camMode=(camMode+1)%3; camYaw=0; camPitch=0; }
   else if (k==="x") { post({quit:true}); }
-  push();
+  else if (k==="[") { STEP=Math.max(0.02, +(STEP-0.02).toFixed(2)); showSens(); }
+  else if (k==="]") { STEP=Math.min(0.40, +(STEP+0.02).toFixed(2)); showSens(); }
+  else if (k==="r") { camYaw=0; camPitch=0; camDist=1; }   // 시점 리셋
 });
-// 마우스 휠 = 스로틀
-addEventListener("wheel", e=>{
-  e.preventDefault();
-  cmd.thr = Math.max(0, Math.min(1, cmd.thr - Math.sign(e.deltaY)*0.05));
-  push();
-}, {passive:false});
+addEventListener("keyup", e=>{ held.delete(e.key.toLowerCase()); });
+addEventListener("blur", ()=>{ held.clear(); });           // 포커스 잃으면 전부 해제
 
-let sendTimer=null;
-function push(){ if(!sendTimer) sendTimer=setTimeout(()=>{sendTimer=null; post(cmd);}, 30); }
+// 입력 루프(20Hz): 누르고 있으면 서서히 기울고, 떼면 빠르게 수평으로 복귀
+setInterval(()=>{
+  const RET = 0.25;                                        // 복귀 속도(뗐을 때)
+  const axis = (neg,pos,cur)=>{
+    const d = (held.has(pos)?1:0) - (held.has(neg)?1:0);
+    if (d !== 0) return Math.max(-1, Math.min(1, cur + d*STEP));
+    if (Math.abs(cur) <= RET) return 0;
+    return cur - Math.sign(cur)*RET;
+  };
+  // A=좌롤, D=우롤 (시뮬 롤 부호가 반대라 d/a 순서를 뒤집어 매핑)
+  const r = axis("d","a",cmd.roll), p = axis("w","s",cmd.pitch), y = axis("q","e",cmd.yaw);
+  if (r!==cmd.roll || p!==cmd.pitch || y!==cmd.yaw){
+    cmd.roll=r; cmd.pitch=p; cmd.yaw=y; push();
+  }
+}, 50);
+function showSens(){
+  const el=document.getElementById("sens");
+  if(el) el.textContent = STEP.toFixed(2);
+}
+// 마우스 휠 = 스로틀 (Shift+휠 = 시점 줌)
+function onWheel(e){
+  if (e.cancelable) e.preventDefault();
+  if (e.shiftKey){
+    camDist = Math.max(0.25, Math.min(6, camDist * (e.deltaY>0 ? 1.12 : 0.89)));
+  } else {
+    cmd.thr = Math.max(0, Math.min(1, cmd.thr - Math.sign(e.deltaY)*THR_STEP));
+    push();
+  }
+}
+addEventListener("wheel", onWheel, {passive:false});
+
+// ───────── 마우스 드래그 = 시점 자유 회전 ─────────
+let camYaw=0, camPitch=0, camDist=1, dragging=false, lastX=0, lastY=0;
+const vw = renderer.domElement;
+vw.style.cursor = "grab";
+vw.addEventListener("mousedown", e=>{ dragging=true; lastX=e.clientX; lastY=e.clientY; vw.style.cursor="grabbing"; });
+addEventListener("mouseup", ()=>{ dragging=false; vw.style.cursor="grab"; });
+addEventListener("mousemove", e=>{
+  if(!dragging) return;
+  camYaw   -= (e.clientX-lastX)*0.005;   // 좌우: 원래대로
+  camPitch += (e.clientY-lastY)*0.005;   // 위아래: 반전
+  camPitch = Math.max(-1.3, Math.min(1.3, camPitch));
+  lastX=e.clientX; lastY=e.clientY;
+});
+vw.addEventListener("dblclick", ()=>{ camYaw=0; camPitch=0; camDist=1; });   // 더블클릭 = 리셋
+vw.addEventListener("contextmenu", e=>e.preventDefault());
+
+// 입력은 즉시 전송한다. (디바운스를 쓰면 직전 값이 다음 요청에 실려
+//  휠/키 반응이 한 박자 밀리는 문제가 있었다)
+function push(){ post({roll:cmd.roll, pitch:cmd.pitch, yaw:cmd.yaw, thr:cmd.thr}); }
 async function post(body){
   try{ await fetch("/api/input",{method:"POST",headers:{"Content-Type":"application/json"},
        body:JSON.stringify(body)}); }catch(_){}
@@ -239,18 +289,23 @@ function animate(){
 
     // 카메라
     const q = me.quaternion;
-    if (camMode===0){        // 추격
-      const off = new THREE.Vector3(0, 26, -95).applyQuaternion(q);
+    // 드래그 회전(camYaw/camPitch) + 줌(camDist)을 모든 시점에 적용
+    const orbit = new THREE.Quaternion().setFromEuler(
+      new THREE.Euler(camPitch, camYaw, 0, "YXZ"));
+    if (camMode===0){        // 추격 (기체 뒤 -> 드래그로 자유 회전)
+      const off = new THREE.Vector3(0, 26*camDist, -95*camDist)
+        .applyQuaternion(orbit).applyQuaternion(q);
       camera.position.set(mx+off.x, my+off.y, mz+off.z);
       camera.lookAt(mx,my,mz);
-    } else if (camMode===1){ // 콕핏
+    } else if (camMode===1){ // 콕핏 (드래그로 두리번거리기)
       const fwd = new THREE.Vector3(0,3,12).applyQuaternion(q);
       camera.position.set(mx+fwd.x, my+fwd.y, mz+fwd.z);
-      camera.quaternion.copy(q);
-    } else {                 // 전장(둘 다 보기)
+      camera.quaternion.copy(q.clone().multiply(orbit));
+    } else {                 // 전장 (두 기체 중심 궤도)
       const cxp=(mx+ex)/2, cyp=(my+ey)/2, czp=(mz+ez)/2;
-      const d = Math.max(600, st.dist*1.4);
-      camera.position.set(cxp+d*.6, cyp+d*.5, czp+d*.6);
+      const d = Math.max(600, st.dist*1.4) * camDist;
+      const off = new THREE.Vector3(0, d*0.5, d*0.9).applyQuaternion(orbit);
+      camera.position.set(cxp+off.x, cyp+off.y, czp+off.z);
       camera.lookAt(cxp,cyp,czp);
     }
 
