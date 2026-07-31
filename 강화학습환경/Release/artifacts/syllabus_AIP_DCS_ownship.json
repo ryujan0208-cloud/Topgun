@@ -1,0 +1,15 @@
+[
+ {
+  "scenario": 3,
+  "name": "방어 BFM",
+  "opp": "AIP_v7.dll",
+  "verdict": "FAIL",
+  "note": "계속 물림(35%)",
+  "wez": 0.0,
+  "hit": 202.0,
+  "tail": 0.0,
+  "tailed": 35.4,
+  "min_ata": 176.85146677544577,
+  "min_alt": 5268.5460288
+ }
+]
