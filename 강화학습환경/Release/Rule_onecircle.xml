@@ -1,0 +1,41 @@
+<root main_tree_to_execute = "MainTree">
+
+  <!-- 스파링 전용 상대기체: 원써클(One-Circle) 강제.
+       우리 기체의 코너속도/반경 싸움 약점을 저격하는 드릴 상대.
+       수평면 최대선회 + 코너속도 고정으로 반경 싸움을 강요한다. -->
+
+  <BehaviorTree ID="MainTree">
+    <Sequence>
+
+      <Sequence>
+        <SelectTarget name="SelectTarget" BB="{BB}"/>
+        <DirectionVectorUpdate name="DirectionVectorUpdate" BB="{BB}"/>
+        <DistanceUpdate name="DistanceUpdateService" BB="{BB}"/>
+        <AngleOffUpdate name="AngleOffUpdate" BB="{BB}"/>
+        <AspectAngleUpdate name="AspectAngleUpdate" BB="{BB}"/>
+
+        <ReactiveFallback>
+
+          <!-- 추락 방지 (스파링 상대도 살아있어야 의미가 있다) -->
+          <Sequence>
+            <DECO_AltitudeCheck name="AltCheck" MinAlt="1800" BB="{BB}"/>
+            <Task_ClimbOut name="ClimbOut" BB="{BB}"/>
+          </Sequence>
+
+          <!-- 원거리에서는 일단 접근 -->
+          <Sequence>
+            <DECO_DistanceCheck name="FarCheck" UpDown="Greater" Distance="4000" BB="{BB}"/>
+            <Task_Pure name="Closein" BB="{BB}"/>
+          </Sequence>
+
+          <!-- 교전 거리에 들어오면 원써클 고정 -->
+          <Task_OneCircle name="OneCircle" BB="{BB}"/>
+
+        </ReactiveFallback>
+
+      </Sequence>
+
+    </Sequence>
+  </BehaviorTree>
+
+</root>

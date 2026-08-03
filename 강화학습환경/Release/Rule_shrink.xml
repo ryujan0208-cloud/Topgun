@@ -1,0 +1,29 @@
+<root main_tree_to_execute = "MainTree">
+
+  <!-- 스파링 전용 상대기체: 싱크+반경축소: 원써클 싱크 상태에서 나선형으로 조여든다(사용자 기동 사양 그대로) -->
+
+  <BehaviorTree ID="MainTree">
+    <Sequence>
+      <Sequence>
+        <SelectTarget name="SelectTarget" BB="{BB}"/>
+        <DirectionVectorUpdate name="DirectionVectorUpdate" BB="{BB}"/>
+        <DistanceUpdate name="DistanceUpdateService" BB="{BB}"/>
+        <AngleOffUpdate name="AngleOffUpdate" BB="{BB}"/>
+        <AspectAngleUpdate name="AspectAngleUpdate" BB="{BB}"/>
+
+        <ReactiveFallback>
+          <Sequence>
+            <DECO_AltitudeCheck name="AltCheck" MinAlt="1800" BB="{BB}"/>
+            <Task_ClimbOut name="ClimbOut" BB="{BB}"/>
+          </Sequence>
+          <Sequence>
+            <DECO_DistanceCheck name="FarCheck" UpDown="Greater" Distance="4000" BB="{BB}"/>
+            <Task_Pure name="Closein" BB="{BB}"/>
+          </Sequence>
+          <Task_SyncCircle name="Shrink" Shrink="0.28" BB="{BB}"/>
+        </ReactiveFallback>
+      </Sequence>
+    </Sequence>
+  </BehaviorTree>
+
+</root>

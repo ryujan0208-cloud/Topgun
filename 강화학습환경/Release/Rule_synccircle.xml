@@ -1,0 +1,29 @@
+<root main_tree_to_execute = "MainTree">
+
+  <!-- 스파링 전용 상대기체: 싱크+원써클: 같은 원 반대편에 자리잡고 함께 돈다. 교착 강제 -->
+
+  <BehaviorTree ID="MainTree">
+    <Sequence>
+      <Sequence>
+        <SelectTarget name="SelectTarget" BB="{BB}"/>
+        <DirectionVectorUpdate name="DirectionVectorUpdate" BB="{BB}"/>
+        <DistanceUpdate name="DistanceUpdateService" BB="{BB}"/>
+        <AngleOffUpdate name="AngleOffUpdate" BB="{BB}"/>
+        <AspectAngleUpdate name="AspectAngleUpdate" BB="{BB}"/>
+
+        <ReactiveFallback>
+          <Sequence>
+            <DECO_AltitudeCheck name="AltCheck" MinAlt="1800" BB="{BB}"/>
+            <Task_ClimbOut name="ClimbOut" BB="{BB}"/>
+          </Sequence>
+          <Sequence>
+            <DECO_DistanceCheck name="FarCheck" UpDown="Greater" Distance="4000" BB="{BB}"/>
+            <Task_Pure name="Closein" BB="{BB}"/>
+          </Sequence>
+          <Task_SyncCircle name="SyncCircle" Shrink="0.0" BB="{BB}"/>
+        </ReactiveFallback>
+      </Sequence>
+    </Sequence>
+  </BehaviorTree>
+
+</root>

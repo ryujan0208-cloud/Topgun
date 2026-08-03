@@ -1,0 +1,29 @@
+<root main_tree_to_execute = "MainTree">
+
+  <!-- 스파링 전용 상대기체: 싱크(미러): 상대 선회를 같은 축·같은 각속도로 복제. 속도·고도도 일치. 대칭을 못 깨면 우리가 각도를 못 얻는다 -->
+
+  <BehaviorTree ID="MainTree">
+    <Sequence>
+      <Sequence>
+        <SelectTarget name="SelectTarget" BB="{BB}"/>
+        <DirectionVectorUpdate name="DirectionVectorUpdate" BB="{BB}"/>
+        <DistanceUpdate name="DistanceUpdateService" BB="{BB}"/>
+        <AngleOffUpdate name="AngleOffUpdate" BB="{BB}"/>
+        <AspectAngleUpdate name="AspectAngleUpdate" BB="{BB}"/>
+
+        <ReactiveFallback>
+          <Sequence>
+            <DECO_AltitudeCheck name="AltCheck" MinAlt="1800" BB="{BB}"/>
+            <Task_ClimbOut name="ClimbOut" BB="{BB}"/>
+          </Sequence>
+          <Sequence>
+            <DECO_DistanceCheck name="FarCheck" UpDown="Greater" Distance="4000" BB="{BB}"/>
+            <Task_Pure name="Closein" BB="{BB}"/>
+          </Sequence>
+          <Task_SyncMirror name="Sync" BB="{BB}"/>
+        </ReactiveFallback>
+      </Sequence>
+    </Sequence>
+  </BehaviorTree>
+
+</root>

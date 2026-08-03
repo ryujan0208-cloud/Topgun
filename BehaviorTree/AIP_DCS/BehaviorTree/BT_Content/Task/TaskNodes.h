@@ -20,3 +20,6 @@
 #include "Task_TailChase.h"
 #include "Task_SmoothPursuit.h"
 #include "Task_LeadPredict.h"
+#include "Task_OneCircle.h"
+#include "Task_SyncMirror.h"
+#include "Task_SyncCircle.h"

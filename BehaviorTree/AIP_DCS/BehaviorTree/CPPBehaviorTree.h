@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+﻿// Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
 #include <iostream>
@@ -18,15 +18,15 @@
 #define OriLOn 128.18188127777776
 
 /*
-	Unreal Engien 4 의 비헤비어트리로 만든 RAIP를 C++ 기반의 공짜 비헤비어트리로 구현하기 위한 클래스
+	Unreal Engien 4 ??鍮꾪뿤鍮꾩뼱?몃━濡?留뚮뱺 RAIP瑜?C++ 湲곕컲??怨듭쭨 鍮꾪뿤鍮꾩뼱?몃━濡?援ы쁽?섍린 ?꾪븳 ?대옒??
 
-	init()				: 트리 xml과 각 노드들을 load하고 블랙보드를 초기화 하는 부분
-	RunCPPBT()			: 비헤비어트리를 통하여 추적점 생성
-	Step()				: 생성된 추적점을 쫓아가는 스틱값 생성
-	PreventLandCrash()	: 지상 충돌 방지 기능 함수
-	getBT_Text()		: 비헤비어트리 어너테이션 기능으로 블랙보드에 저장된 비헤비어트리의 결정 과정 String을 불러오는 부분
-	SetACM()			: 유무인 복합에서 인간 조종사가 아군기의 ACM(EF/SF)를 수동으로 결정하기 위한 함수
-	SetTarget()			: 유무인 복합에서 인간 조종사가 아군기의 Target을 수동을 결정하기 위한 함수
+	init()				: ?몃━ xml怨?媛??몃뱶?ㅼ쓣 load?섍퀬 釉붾옓蹂대뱶瑜?珥덇린???섎뒗 遺遺?
+	RunCPPBT()			: 鍮꾪뿤鍮꾩뼱?몃━瑜??듯븯??異붿쟻???앹꽦
+	Step()				: ?앹꽦??異붿쟻?먯쓣 已볦븘媛???ㅽ떛媛??앹꽦
+	PreventLandCrash()	: 吏??異⑸룎 諛⑹? 湲곕뒫 ?⑥닔
+	getBT_Text()		: 鍮꾪뿤鍮꾩뼱?몃━ ?대꼫?뚯씠??湲곕뒫?쇰줈 釉붾옓蹂대뱶????λ맂 鍮꾪뿤鍮꾩뼱?몃━??寃곗젙 怨쇱젙 String??遺덈윭?ㅻ뒗 遺遺?
+	SetACM()			: ?좊Т??蹂듯빀?먯꽌 ?멸컙 議곗쥌?ш? ?꾧뎔湲곗쓽 ACM(EF/SF)瑜??섎룞?쇰줈 寃곗젙?섍린 ?꾪븳 ?⑥닔
+	SetTarget()			: ?좊Т??蹂듯빀?먯꽌 ?멸컙 議곗쥌?ш? ?꾧뎔湲곗쓽 Target???섎룞??寃곗젙?섍린 ?꾪븳 ?⑥닔
 */
 class  UCPPBehaviorTree
 {
@@ -45,47 +45,47 @@ private:
 	bool bInitialized;
 
 private:
-	//Lat, Lon, 고도는 meter
+	//Lat, Lon, 怨좊룄??meter
 	Vector3 LLAtoCartesian(Vector3 LLA, Vector3 BaseLLA);
 
 public:	
-	int ID;			//리눅스환경에서 사용하는 변수
-	int ForceID;		//리숙스환경에서 사용하는 변수
+	int ID;			//由щ늼?ㅽ솚寃쎌뿉???ъ슜?섎뒗 蹂??
+	int ForceID;		//由ъ닕?ㅽ솚寃쎌뿉???ъ슜?섎뒗 蹂??
 	// Sets default values for this component's properties
 	UCPPBehaviorTree();
 	~UCPPBehaviorTree();
 	
-	BT::BehaviorTreeFactory Factory;	//C++ 비헤비어트리 객체 클래스
-	BT::Tree tree;	// C++ 비헤비어트리 트리
-	CPPBlackBoard* BB;	// C++ 비헤비어 트리의 기본 블랙보드 방식이 쓰레기 수준이라 따로 블랙보드 클래스를 구현하여 사용
-	StickController Controller; // 제어기. 비헤비어트리에서 VP(추적점)을 생성하면 그 VP를 향하여 움직이게 하는 Roll Pitch Yaw 커멘드 값을 생성
+	BT::BehaviorTreeFactory Factory;	//C++ 鍮꾪뿤鍮꾩뼱?몃━ 媛앹껜 ?대옒??
+	BT::Tree tree;	// C++ 鍮꾪뿤鍮꾩뼱?몃━ ?몃━
+	CPPBlackBoard* BB;	// C++ 鍮꾪뿤鍮꾩뼱 ?몃━??湲곕낯 釉붾옓蹂대뱶 諛⑹떇???곕젅湲??섏??대씪 ?곕줈 釉붾옓蹂대뱶 ?대옒?ㅻ? 援ы쁽?섏뿬 ?ъ슜
+	StickController Controller; // ?쒖뼱湲? 鍮꾪뿤鍮꾩뼱?몃━?먯꽌 VP(異붿쟻?????앹꽦?섎㈃ 洹?VP瑜??ν븯???吏곸씠寃??섎뒗 Roll Pitch Yaw 而ㅻ찘??媛믪쓣 ?앹꽦
 public:	
 	
 	
-	//트리 xml과 각 노드들을 load하고 블랙보드를 초기화 하는 부분
+	//?몃━ xml怨?媛??몃뱶?ㅼ쓣 load?섍퀬 釉붾옓蹂대뱶瑜?珥덇린???섎뒗 遺遺?
 	void init();	
 	bool IsInitialized() const;
 
 	/*
-	비헤비어트리를 통하여 추적점 생성
-		VP			: Cartesian 좌표계, meter
-		Throttle	: 0~1 사이의 쓰로틀값
-		AimmingMode : 제어기의 조종 모드를 결정
+	鍮꾪뿤鍮꾩뼱?몃━瑜??듯븯??異붿쟻???앹꽦
+		VP			: Cartesian 醫뚰몴怨? meter
+		Throttle	: 0~1 ?ъ씠???곕줈?媛?
+		AimmingMode : ?쒖뼱湲곗쓽 議곗쥌 紐⑤뱶瑜?寃곗젙
 	*/
-	void RunCPPBT(Vector3& VP, float& Throttle, bool& AimmingMode); //서비스 노드 역할, 디시전 트리
+	void RunCPPBT(Vector3& VP, float& Throttle, bool& AimmingMode); //?쒕퉬???몃뱶 ??븷, ?붿떆???몃━
 
 	/*
-	비헤비어트리에서 생성된 VP를 향하여 비행기가 바라보도록 비행기가 움직이게 하는 스틱값을 생성하는 함수
-		MyInfo					: 내 비행기 정보 (위치 자세 속도 팀 정보등)
-		NumofOtherPlane			: 전장에서 내 비행기가 아닌 다른 비행기들의 개수
-		OthersInfo				: 내 비행기가 아닌 다른 비행기들의 정보 리스트(Array)
-		VP						: 디버그용 Ref 변수
-		Throttle				: 디버그용 Ref 변수
+	鍮꾪뿤鍮꾩뼱?몃━?먯꽌 ?앹꽦??VP瑜??ν븯??鍮꾪뻾湲곌? 諛붾씪蹂대룄濡?鍮꾪뻾湲곌? ?吏곸씠寃??섎뒗 ?ㅽ떛媛믪쓣 ?앹꽦?섎뒗 ?⑥닔
+		MyInfo					: ??鍮꾪뻾湲??뺣낫 (?꾩튂 ?먯꽭 ?띾룄 ? ?뺣낫??
+		NumofOtherPlane			: ?꾩옣?먯꽌 ??鍮꾪뻾湲곌? ?꾨땶 ?ㅻⅨ 鍮꾪뻾湲곕뱾??媛쒖닔
+		OthersInfo				: ??鍮꾪뻾湲곌? ?꾨땶 ?ㅻⅨ 鍮꾪뻾湲곕뱾???뺣낫 由ъ뒪??Array)
+		VP						: ?붾쾭洹몄슜 Ref 蹂??
+		Throttle				: ?붾쾭洹몄슜 Ref 蹂??
 	*/
 	StickValue Step(PlaneInfo MyInfo, int NumofOtherPlane, PlaneInfo* OthersInfo, Vector3 & VP, float & Throttle);
 
 	Vector3 GetVP();
 
-	//비헤비어트리 델타타입 설정 함수
+	//鍮꾪뿤鍮꾩뼱?몃━ ?명?????ㅼ젙 ?⑥닔
 	void SetDeltaTime(double DT);
 };
