@@ -54,7 +54,11 @@ def main():
     tgt_dll = sys.argv[6] if len(sys.argv) > 6 else "AIP_kwon.dll"  # 스파링 상대 선택
 
     own = BTActionProvider(dll_name="AIP_DCS_ownship.dll")
-    tgt = BTActionProvider(dll_name=tgt_dll)
+    if tgt_dll.upper() == "ACE":
+        from ace_pilot import AcePilot
+        tgt = AcePilot()
+    else:
+        tgt = BTActionProvider(dll_name=tgt_dll)
     if own_rep > 1:
         own = RepeatProvider(own, own_rep)
     if tgt_rep > 1:
