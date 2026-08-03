@@ -7,3 +7,4 @@
 #include "DECO_AltitudeCheck.h"
 #include "DECO_MaxAltitudeCheck.h"
 #include "DECO_TailThreatCheck.h"
+#include "DECO_ThreatAimCheck.h"

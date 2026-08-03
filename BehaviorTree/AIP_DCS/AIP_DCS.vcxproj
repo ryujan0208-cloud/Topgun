@@ -284,6 +284,7 @@
     <ClCompile Include="BehaviorTree\BT_Content\Decorator\DECO_AspectAngleCheck.cpp" />
     <ClCompile Include="BehaviorTree\BT_Content\Decorator\DECO_AltitudeCheck.cpp" />
     <ClCompile Include="BehaviorTree\BT_Content\Decorator\DECO_MaxAltitudeCheck.cpp" />
+    <ClCompile Include="BehaviorTree\BT_Content\Decorator\DECO_ThreatAimCheck.cpp" />
     <ClCompile Include="BehaviorTree\BT_Content\Decorator\DECO_TailThreatCheck.cpp" />
     <ClCompile Include="BehaviorTree\BT_Content\Decorator\DECO_BFMCheck.cpp" />
     <ClCompile Include="BehaviorTree\BT_Content\Decorator\DECO_DistanceCheck.cpp" />

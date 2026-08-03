@@ -108,6 +108,7 @@ void UCPPBehaviorTree::init()
 		Factory.registerNodeType<Action::Task_Jink>("Task_Jink");
 		Factory.registerNodeType<Action::DECO_AltitudeCheck>("DECO_AltitudeCheck");
 		Factory.registerNodeType<Action::DECO_MaxAltitudeCheck>("DECO_MaxAltitudeCheck");
+		Factory.registerNodeType<Action::DECO_ThreatAimCheck>("DECO_ThreatAimCheck");
 		Factory.registerNodeType<Action::DECO_TailThreatCheck>("DECO_TailThreatCheck");
 
 
