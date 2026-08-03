@@ -69,6 +69,16 @@ NodeStatus Action::Task_LeadPredict::tick()
 	//   겨눠지는 시간 53%). 리드는 만지지 않는다.
 	double leadTime = dist / mySpd;
 	if (leadTime > 3.0) leadTime = 3.0;
+
+	// ※ v25(사거리 내 리드 연속 제거) = **기각**. 리드를 건드리지 말 것.
+	//   [실측] Syllabus 사격틱은 55->89.5로 늘었으나 실전 15시드는 오히려 붕괴:
+	//     dealt 4.34->1.53, taken 0.0->0.57, 격추 2->0, 6승9무0패 -> 4승10무1패.
+	//   [규명] "이 환경엔 총알 비행시간이 없으니 리드 불필요"는 절반만 맞다.
+	//     **리드는 사격이 아니라 '추종 기하'를 위한 것이다.** 선회하는 상대를 계속
+	//     따라가려면 그가 갈 곳으로 돌아야 한다. 순수 조준은 항상 "지금 있는 곳"만
+	//     향하므로 상대 선회 안쪽으로 못 파고들고 뒤로 밀린다(BFM의 pure pursuit
+	//     -> overshoot). 짧은 세트피스는 순간 조준이 좋아져 사격틱이 늘지만,
+	//     긴 실전은 추종이 무너져 데미지가 급감한다. v8(-40)과 동일 메커니즘.
 	Vector3 predicted = TargetLocation + TgtFwd * (tgtSpd * leadTime);
 
 	double rollDeg = (*BB)->TargetRotation_EDegree.Roll;
