@@ -30,6 +30,13 @@ NodeStatus Action::Task_LeadPredict::tick()
 	double mySpd  = (*BB)->MySpeed_MS;   if (mySpd < 1.0) mySpd = 1.0;
 	double tgtSpd = (*BB)->TargetSpeed_MS;
 
+	// 내 기수와 상대 방향의 각(ATA). 리드 게이트와 코너속도 판정이 공용한다.
+	Vector3 myFwdT = (*BB)->MyForwardVector; myFwdT.normalize();
+	Vector3 losT = TargetLocation - MyLocation;
+	double losLenT = losT.length(); if (losLenT < 1.0) losLenT = 1.0;
+	losT = losT / losLenT;
+	double ataDeg = std::acos(std::max(-1.0, std::min(1.0, myFwdT.dot(losT)))) * 57.2957795;
+
 	int __ti = ((*BB)->Team == BLUE) ? 0 : 1;
 
 	double dt = (*BB)->DeltaSecond;
@@ -79,6 +86,24 @@ NodeStatus Action::Task_LeadPredict::tick()
 	//     향하므로 상대 선회 안쪽으로 못 파고들고 뒤로 밀린다(BFM의 pure pursuit
 	//     -> overshoot). 짧은 세트피스는 순간 조준이 좋아져 사격틱이 늘지만,
 	//     긴 실전은 추종이 무너져 데미지가 급감한다. v8(-40)과 동일 메커니즘.
+	//
+	// v27: 종말 조준 게이트 — "이미 거의 조준된 상태"에서만 리드를 끈다.
+	//  [실측 근거] onecircle전: 사거리 체류 311초인데 사격틱 0. 최소 ATA **1.21°**로
+	//    사격조건(1.0°)을 0.21° 차이로 못 넘긴다. 위치·에너지 문제가 아니다 —
+	//    우리 315m/s·11.7°/s vs 상대 289m/s·11.9°/s로 선회 능력이 대등하다.
+	//    선회 중인 상대에게 **직선 리드**를 쓰면 곡선 경로에서 구조적으로 어긋나
+	//    마지막 1°를 못 좁힌다(사격 판정엔 총알 비행시간이 없어 리드가 순이득이 아님).
+	//  [v25(기각)와의 결정적 차이] v25는 "거리"로 리드를 껐다가 추격 국면까지 순수조준이
+	//    되어 추종 기하가 붕괴했다(dealt 4.34->1.53). v27은 **ATA로 게이트**한다:
+	//    ATA가 크면(추격 중) 리드 100% 유지, ATA가 작을 때만(종말 조준) 끈다.
+	//    -> 추종 기하는 보존하고 마지막 조준만 다듬는다.
+	if (dist < 914.0 && ataDeg < 10.0)
+	{
+		double fade = (ataDeg - 3.0) / 7.0;   // ATA 10°:리드유지 -> 3°이하:순수조준
+		if (fade < 0.0) fade = 0.0;
+		if (fade > 1.0) fade = 1.0;
+		leadTime *= fade;
+	}
 	Vector3 predicted = TargetLocation + TgtFwd * (tgtSpd * leadTime);
 
 	double rollDeg = (*BB)->TargetRotation_EDegree.Roll;
@@ -243,11 +268,7 @@ NodeStatus Action::Task_LeadPredict::tick()
 	//   v23은 (a)교전거리 (b)기수를 크게 돌려야 함 (c)과속 상태 — 3조건이 동시에 참일 때만
 	//   감속하고, 정렬되는 즉시 풀스로틀로 복귀한다. 직선 추격 국면은 건드리지 않는다.
 	const double CORNER = 260.0;            // 실측 선회율 최대 구간(210~290)의 중앙
-	Vector3 myFwdT = (*BB)->MyForwardVector; myFwdT.normalize();
-	Vector3 losT = TargetLocation - MyLocation;
-	double losLenT = losT.length(); if (losLenT < 1.0) losLenT = 1.0;
-	losT = losT / losLenT;
-	double ataDeg = std::acos(std::max(-1.0, std::min(1.0, myFwdT.dot(losT)))) * 57.2957795;
+	// (myFwdT / losT / ataDeg 는 함수 상단에서 계산 — v27 리드 게이트와 공용)
 
 	// v23b: 방어 상황에서는 절대 감속하지 않는다 (에너지 보존).
 	//  [실측] v23에서 조준은 극적으로 개선(최소ATA 113->0.8, 51.8->0.3)됐으나
