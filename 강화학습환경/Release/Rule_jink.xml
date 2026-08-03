@@ -1,0 +1,31 @@
+<root main_tree_to_execute = "MainTree">
+
+  <!-- 스파링 전용: 불규칙 저킹 상대(계측용).
+       우리 궤도추종이 유령 원을 쫓는지 반복 측정하기 위한 기체.
+       결정론적 고정 시퀀스로 방향을 뒤집어 매 판 동일하게 재현된다. -->
+
+  <BehaviorTree ID="MainTree">
+    <Sequence>
+      <Sequence>
+        <SelectTarget name="SelectTarget" BB="{BB}"/>
+        <DirectionVectorUpdate name="DirectionVectorUpdate" BB="{BB}"/>
+        <DistanceUpdate name="DistanceUpdateService" BB="{BB}"/>
+        <AngleOffUpdate name="AngleOffUpdate" BB="{BB}"/>
+        <AspectAngleUpdate name="AspectAngleUpdate" BB="{BB}"/>
+
+        <ReactiveFallback>
+          <Sequence>
+            <DECO_AltitudeCheck name="AltCheck" MinAlt="2000" BB="{BB}"/>
+            <Task_ClimbOut name="ClimbOut" BB="{BB}"/>
+          </Sequence>
+          <Sequence>
+            <DECO_DistanceCheck name="FarCheck" UpDown="Greater" Distance="4500" BB="{BB}"/>
+            <Task_Pure name="Closein" BB="{BB}"/>
+          </Sequence>
+          <Task_Jink name="Jink" BB="{BB}"/>
+        </ReactiveFallback>
+      </Sequence>
+    </Sequence>
+  </BehaviorTree>
+
+</root>

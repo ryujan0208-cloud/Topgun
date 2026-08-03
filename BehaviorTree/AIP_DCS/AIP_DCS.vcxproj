@@ -247,6 +247,7 @@
     <ClInclude Include="BehaviorTree\BT_Content\Task\Task_OneCircle.h" />
     <ClInclude Include="BehaviorTree\BT_Content\Task\Task_SyncMirror.h" />
     <ClInclude Include="BehaviorTree\BT_Content\Task\Task_SyncCircle.h" />
+    <ClInclude Include="BehaviorTree\BT_Content\Task\Task_Jink.h" />
     <ClInclude Include="BehaviorTree\BT_Content\Task\Task_Evade.h" />
     <ClInclude Include="BehaviorTree\BT_Content\Task\Task_GetTail.h" />
     <ClInclude Include="BehaviorTree\BT_Content\Task\Task_Engage.h" />
@@ -308,6 +309,7 @@
     <ClCompile Include="BehaviorTree\BT_Content\Task\Task_OneCircle.cpp" />
     <ClCompile Include="BehaviorTree\BT_Content\Task\Task_SyncMirror.cpp" />
     <ClCompile Include="BehaviorTree\BT_Content\Task\Task_SyncCircle.cpp" />
+    <ClCompile Include="BehaviorTree\BT_Content\Task\Task_Jink.cpp" />
     <ClCompile Include="BehaviorTree\BT_Content\Task\Task_Evade.cpp" />
     <ClCompile Include="BehaviorTree\BT_Content\Task\Task_ClimbOut.cpp" />
     <ClCompile Include="BehaviorTree\BT_Content\Task\Task_LevelOff.cpp" />

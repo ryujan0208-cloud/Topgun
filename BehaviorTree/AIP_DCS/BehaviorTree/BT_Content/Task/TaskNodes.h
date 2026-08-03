@@ -23,3 +23,4 @@
 #include "Task_OneCircle.h"
 #include "Task_SyncMirror.h"
 #include "Task_SyncCircle.h"
+#include "Task_Jink.h"

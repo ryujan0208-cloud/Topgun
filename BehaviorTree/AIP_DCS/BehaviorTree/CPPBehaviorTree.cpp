@@ -105,6 +105,7 @@ void UCPPBehaviorTree::init()
 		Factory.registerNodeType<Action::Task_OneCircle>("Task_OneCircle");
 		Factory.registerNodeType<Action::Task_SyncMirror>("Task_SyncMirror");
 		Factory.registerNodeType<Action::Task_SyncCircle>("Task_SyncCircle");
+		Factory.registerNodeType<Action::Task_Jink>("Task_Jink");
 		Factory.registerNodeType<Action::DECO_AltitudeCheck>("DECO_AltitudeCheck");
 		Factory.registerNodeType<Action::DECO_MaxAltitudeCheck>("DECO_MaxAltitudeCheck");
 		Factory.registerNodeType<Action::DECO_TailThreatCheck>("DECO_TailThreatCheck");
