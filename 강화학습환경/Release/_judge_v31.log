@@ -1,1 +1,2320 @@
 ########## v29 vs ACE ##########
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+[SelectTarget] team=1 EnemyN=1 TgtZ=6988.03
+[DIST] team=1 EnemyN=1 MyZ=6960.46 TgtZ=6988.03 Dist=4021
+[DECO_Dist] team=1 UD=Less Cur=4021 Input=1100
+[ROOT] team=1 status=2 Z=6960.46 VP=(4188.94,44.179,6367.95)
+[SelectTarget] team=1 EnemyN=1 TgtZ=6882.92
+[DIST] team=1 EnemyN=1 MyZ=6539.16 TgtZ=6882.92 Dist=3833.26
+[DECO_Dist] team=1 UD=Less Cur=3833.26 Input=1100
+[ROOT] team=1 status=2 Z=6539.16 VP=(3244.75,136.501,6208.43)
+[SelectTarget] team=1 EnemyN=1 TgtZ=6646.43
+[DIST] team=1 EnemyN=1 MyZ=5761.48 TgtZ=6646.43 Dist=3424.12
+[DECO_Dist] team=1 UD=Less Cur=3424.12 Input=1100
+[ROOT] team=1 status=2 Z=5761.48 VP=(2265.81,313.885,5955.06)
+[SelectTarget] team=1 EnemyN=1 TgtZ=6201.63
+[DIST] team=1 EnemyN=1 MyZ=4769.99 TgtZ=6201.63 Dist=2748.79
+[DECO_Dist] team=1 UD=Less Cur=2748.79 Input=1100
+[ROOT] team=1 status=2 Z=4769.99 VP=(1384.21,670.922,5411.48)
+[SelectTarget] team=1 EnemyN=1 TgtZ=5454.57
+[DIST] team=1 EnemyN=1 MyZ=3867.39 TgtZ=5454.57 Dist=1856.95
+[DECO_Dist] team=1 UD=Less Cur=1856.95 Input=1100
+[ROOT] team=1 status=2 Z=3867.39 VP=(904.243,1108.67,4472.42)
+[CLAMP_DIAG] team=1 rawDist=299.794 offBoresightDeg=150.586 clamped=1
+[SelectTarget] team=1 EnemyN=1 TgtZ=4400.15
+[DIST] team=1 EnemyN=1 MyZ=3338.89 TgtZ=4400.15 Dist=1130.37
+[DECO_Dist] team=1 UD=Less Cur=1130.37 Input=1100
+[ROOT] team=1 status=2 Z=3338.89 VP=(1379.1,1364.78,3262.48)
+[SelectTarget] team=1 EnemyN=1 TgtZ=3327.76
+[DIST] team=1 EnemyN=1 MyZ=2850.96 TgtZ=3327.76 Dist=1188.48
+[ROOT] team=1 status=2 Z=2850.96 VP=(4016.44,713.58,7645.06)
+[DECO_Dist] team=1 UD=Less Cur=1260.31 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2591.15
+[DIST] team=1 EnemyN=1 MyZ=2316.41 TgtZ=2591.15 Dist=1284.88
+[ROOT] team=1 status=2 Z=2316.41 VP=(5127.31,871.429,7086.45)
+[CLAMP_DIAG] team=1 rawDist=198.724 offBoresightDeg=168.548 clamped=1
+[DECO_Dist] team=1 UD=Less Cur=1319.94 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2480.15
+[DIST] team=1 EnemyN=1 MyZ=2261.06 TgtZ=2480.15 Dist=1318.99
+[ROOT] team=1 status=2 Z=2261.06 VP=(4519.64,972.576,2653.61)
+[CLAMP_DIAG] team=1 rawDist=459.134 offBoresightDeg=89.6497 clamped=1
+[DECO_Dist] team=1 UD=Less Cur=1149.9 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2758.45
+[DIST] team=1 EnemyN=1 MyZ=2883.66 TgtZ=2758.45 Dist=1126.39
+[ROOT] team=1 status=2 Z=2883.66 VP=(5487.24,1196.08,3056.17)
+[DECO_Dist] team=1 UD=Less Cur=857.558 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3207.24
+[DIST] team=1 EnemyN=1 MyZ=3764.47 TgtZ=3207.24 Dist=849.843
+[ROOT] team=1 status=2 Z=3764.47 VP=(4753.89,-1319.92,3053)
+[DECO_Dist] team=1 UD=Less Cur=839.882 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3820.82
+[DIST] team=1 EnemyN=1 MyZ=4618.22 TgtZ=3820.82 Dist=842.734
+[ROOT] team=1 status=2 Z=4618.22 VP=(4810.5,-1047.94,4064.74)
+[DECO_Dist] team=1 UD=Less Cur=833.327 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=4600.25
+[DIST] team=1 EnemyN=1 MyZ=5394.32 TgtZ=4600.25 Dist=829.392
+[ROOT] team=1 status=2 Z=5394.32 VP=(7658.44,3503.94,3295.66)
+[DECO_Dist] team=1 UD=Less Cur=785.506 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=5402.94
+[DIST] team=1 EnemyN=1 MyZ=6010.17 TgtZ=5402.94 Dist=784.582
+[ROOT] team=1 status=2 Z=6010.17 VP=(8567.7,208.483,3539.56)
+[DECO_Dist] team=1 UD=Less Cur=824.777 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=6079.93
+[DIST] team=1 EnemyN=1 MyZ=6455.62 TgtZ=6079.93 Dist=829.124
+[ROOT] team=1 status=2 Z=6455.62 VP=(7794.43,4485.33,5744.27)
+[DECO_Dist] team=1 UD=Less Cur=883.557 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=6542.84
+[DIST] team=1 EnemyN=1 MyZ=6742.87 TgtZ=6542.84 Dist=886.121
+[ROOT] team=1 status=2 Z=6742.87 VP=(7771.22,2066.58,9415.6)
+[DECO_Dist] team=1 UD=Less Cur=913.982 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=6791.7
+[DIST] team=1 EnemyN=1 MyZ=6898.43 TgtZ=6791.7 Dist=914.973
+[ROOT] team=1 status=2 Z=6898.43 VP=(10317.6,-1102.32,6086.78)
+[DECO_Dist] team=1 UD=Less Cur=921.174 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=6880.46
+[DIST] team=1 EnemyN=1 MyZ=6922.48 TgtZ=6880.46 Dist=921.207
+[ROOT] team=1 status=2 Z=6922.48 VP=(10817.5,966.357,4069.38)
+[DECO_Dist] team=1 UD=Less Cur=914.253 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=6839.49
+[DIST] team=1 EnemyN=1 MyZ=6798.53 TgtZ=6839.49 Dist=914.227
+[ROOT] team=1 status=2 Z=6798.53 VP=(10936.1,2934.06,4011.02)
+[DECO_Dist] team=1 UD=Less Cur=898.85 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=6670.56
+[DIST] team=1 EnemyN=1 MyZ=6469.96 TgtZ=6670.56 Dist=898.056
+[ROOT] team=1 status=2 Z=6469.96 VP=(11501.8,2905.73,3727.62)
+[DECO_Dist] team=1 UD=Less Cur=909.829 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=6408.41
+[DIST] team=1 EnemyN=1 MyZ=5919.92 TgtZ=6408.41 Dist=912.77
+[ROOT] team=1 status=2 Z=5919.92 VP=(12747.7,4557.07,4086.46)
+[DECO_Dist] team=1 UD=Less Cur=946.17 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=5897.24
+[DIST] team=1 EnemyN=1 MyZ=5194.47 TgtZ=5897.24 Dist=947.669
+[ROOT] team=1 status=2 Z=5194.47 VP=(16446.2,500.395,5174.12)
+[DECO_Dist] team=1 UD=Less Cur=942.349 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=5133.26
+[DIST] team=1 EnemyN=1 MyZ=4370.9 TgtZ=5133.26 Dist=940.194
+[ROOT] team=1 status=2 Z=4370.9 VP=(13053.4,2763.89,1925.89)
+[DECO_Dist] team=1 UD=Less Cur=885.766 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=4186
+[DIST] team=1 EnemyN=1 MyZ=3454.96 TgtZ=4186 Dist=879.886
+[ROOT] team=1 status=2 Z=3454.96 VP=(18362.8,2851.92,3412.02)
+[SelectTarget] team=1 EnemyN=1 TgtZ=3153.94
+[DIST] team=1 EnemyN=1 MyZ=2655.31 TgtZ=3153.94 Dist=778.27
+[ROOT] team=1 status=2 Z=2655.31 VP=(17596.9,2981.81,7433.44)
+[SelectTarget] team=1 EnemyN=1 TgtZ=2446.32
+[DIST] team=1 EnemyN=1 MyZ=2253.99 TgtZ=2446.32 Dist=694.953
+[ROOT] team=1 status=2 Z=2253.99 VP=(16448.7,1318.12,1500)
+[DECO_Dist] team=1 UD=Less Cur=688.122 Input=1100
+[CLAMP_DIAG] team=1 rawDist=510.806 offBoresightDeg=85.5062 clamped=1
+[SelectTarget] team=1 EnemyN=1 TgtZ=2544.51
+[DIST] team=1 EnemyN=1 MyZ=2019.98 TgtZ=2544.51 Dist=870.382
+[ROOT] team=1 status=2 Z=2019.98 VP=(18469.8,2808.33,2455.17)
+[DECO_Dist] team=1 UD=Less Cur=982.476 Input=1100
+[CLAMP_DIAG] team=1 rawDist=578.603 offBoresightDeg=35.185 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2965.61
+[DIST] team=1 EnemyN=1 MyZ=2306.34 TgtZ=2965.61 Dist=917.275
+[ROOT] team=1 status=2 Z=2306.34 VP=(19640,2457.14,2764.97)
+[DECO_Dist] team=1 UD=Less Cur=603.713 Input=1100
+[CLAMP_DIAG] team=1 rawDist=300.601 offBoresightDeg=22.4994 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3172.39
+[DIST] team=1 EnemyN=1 MyZ=2997.55 TgtZ=3172.39 Dist=339.476
+[ROOT] team=1 status=2 Z=2997.55 VP=(20102.6,2541.01,3160.02)
+[DECO_Dist] team=1 UD=Less Cur=272.269 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3339.77
+[DIST] team=1 EnemyN=1 MyZ=3775.38 TgtZ=3339.77 Dist=474.383
+[ROOT] team=1 status=2 Z=3775.38 VP=(21201.6,2533.67,3596.28)
+[CLAMP_DIAG] team=1 rawDist=675.616 offBoresightDeg=53.8109 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=474.604 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3939.98
+[DIST] team=1 EnemyN=1 MyZ=4171.92 TgtZ=3939.98 Dist=278.722
+[ROOT] team=1 status=2 Z=4171.92 VP=(21672.5,2538.1,4180.52)
+[CLAMP_DIAG] team=1 rawDist=300.014 offBoresightDeg=0.455389 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=221.656 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=4665.15
+[DIST] team=1 EnemyN=1 MyZ=4219.33 TgtZ=4665.15 Dist=485.428
+[ROOT] team=1 status=2 Z=4219.33 VP=(22442.7,2651.04,4462.04)
+[CLAMP_DIAG] team=1 rawDist=345.633 offBoresightDeg=41.1532 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=638.415 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=4991.94
+[DIST] team=1 EnemyN=1 MyZ=4498.24 TgtZ=4991.94 Dist=563.042
+[ROOT] team=1 status=2 Z=4498.24 VP=(23365.2,2698.67,4779.76)
+[CLAMP_DIAG] team=1 rawDist=394.748 offBoresightDeg=29.3082 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=269.119 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=4918.98
+[DIST] team=1 EnemyN=1 MyZ=4999.94 TgtZ=4918.98 Dist=152.582
+[ROOT] team=1 status=2 Z=4999.94 VP=(23847.1,2603.65,4923.65)
+[CLAMP_DIAG] team=1 rawDist=244.322 offBoresightDeg=74.9154 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=442.272 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=4983.46
+[DIST] team=1 EnemyN=1 MyZ=5478.98 TgtZ=4983.46 Dist=496.556
+[ROOT] team=1 status=2 Z=5478.98 VP=(24986,2779.84,5230.7)
+[CLAMP_DIAG] team=1 rawDist=447.287 offBoresightDeg=23.5629 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=292.872 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=5395.74
+[DIST] team=1 EnemyN=1 MyZ=5431.52 TgtZ=5395.74 Dist=71.9711
+[ROOT] team=1 status=2 Z=5431.52 VP=(25075.3,5506.33,4106.89)
+[CLAMP_DIAG] team=1 rawDist=256.665 offBoresightDeg=66.9695 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=445.101 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=5626.72
+[DIST] team=1 EnemyN=1 MyZ=5051.24 TgtZ=5626.72 Dist=583.775
+[ROOT] team=1 status=2 Z=5051.24 VP=(26574.3,2840.18,5343.12)
+[CLAMP_DIAG] team=1 rawDist=502.324 offBoresightDeg=41.079 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=535.749 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=5343.99
+[DIST] team=1 EnemyN=1 MyZ=4995.86 TgtZ=5343.99 Dist=386.072
+[ROOT] team=1 status=2 Z=4995.86 VP=(27138,2989.45,5133.07)
+[DECO_Dist] team=1 UD=Less Cur=257.953 Input=1100
+[CLAMP_DIAG] team=1 rawDist=144.791 offBoresightDeg=109.354 clamped=1
+[SelectTarget] team=1 EnemyN=1 TgtZ=4840.3
+[DIST] team=1 EnemyN=1 MyZ=5199.1 TgtZ=4840.3 Dist=456.088
+[ROOT] team=1 status=2 Z=5199.1 VP=(27963.2,3252.2,4971.05)
+[DECO_Dist] team=1 UD=Less Cur=616.462 Input=1100
+[CLAMP_DIAG] team=1 rawDist=454.514 offBoresightDeg=16.4622 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=4584.12
+[DIST] team=1 EnemyN=1 MyZ=5041.19 TgtZ=4584.12 Dist=528.083
+[ROOT] team=1 status=2 Z=5041.19 VP=(28932.9,3477.1,4777.15)
+[DECO_Dist] team=1 UD=Less Cur=144.268 Input=1100
+[CLAMP_DIAG] team=1 rawDist=33.6875 offBoresightDeg=125.48 clamped=1
+[SelectTarget] team=1 EnemyN=1 TgtZ=4568.07
+[DIST] team=1 EnemyN=1 MyZ=4381.83 TgtZ=4568.07 Dist=190.657
+[ROOT] team=1 status=2 Z=4381.83 VP=(29500.8,3629.69,4477.16)
+[DECO_Dist] team=1 UD=Less Cur=555.255 Input=1100
+[CLAMP_DIAG] team=1 rawDist=694.723 offBoresightDeg=46.0708 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=4162.12
+[DIST] team=1 EnemyN=1 MyZ=3651.22 TgtZ=4162.12 Dist=569.997
+[ROOT] team=1 status=2 Z=3651.22 VP=(30525.7,3776.53,3733.4)
+[DECO_Dist] team=1 UD=Less Cur=282.404 Input=1100
+[CLAMP_DIAG] team=1 rawDist=81.6417 offBoresightDeg=15.4806 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3350.46
+[DIST] team=1 EnemyN=1 MyZ=3333.11 TgtZ=3350.46 Dist=92.7051
+[ROOT] team=1 status=2 Z=3333.11 VP=(30787.4,3992.69,3286.76)
+[DECO_Dist] team=1 UD=Less Cur=423.087 Input=1100
+[CLAMP_DIAG] team=1 rawDist=319.462 offBoresightDeg=9.26633 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2737.55
+[DIST] team=1 EnemyN=1 MyZ=3107.26 TgtZ=2737.55 Dist=426.281
+[ROOT] team=1 status=2 Z=3107.26 VP=(31966.4,4289.35,2894.12)
+[SelectTarget] team=1 EnemyN=1 TgtZ=2754.89
+[DIST] team=1 EnemyN=1 MyZ=2460.44 TgtZ=2754.89 Dist=304.397
+[ROOT] team=1 status=2 Z=2460.44 VP=(33768.2,5208.18,7238.51)
+[DECO_Dist] team=1 UD=Less Cur=808.792 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3166.58
+[DIST] team=1 EnemyN=1 MyZ=2199.3 TgtZ=3166.58 Dist=989.639
+[ROOT] team=1 status=2 Z=2199.3 VP=(34238.8,4953.01,2694.12)
+[CLAMP_DIAG] team=1 rawDist=581.84 offBoresightDeg=98.0726 clamped=1
+[DECO_Dist] team=1 UD=Less Cur=878.795 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3109.28
+[DIST] team=1 EnemyN=1 MyZ=2522.08 TgtZ=3109.28 Dist=595.734
+[ROOT] team=1 status=2 Z=2522.08 VP=(33911.6,4981.04,2819.94)
+[CLAMP_DIAG] team=1 rawDist=366.921 offBoresightDeg=94.0573 clamped=1
+[DECO_Dist] team=1 UD=Less Cur=142.792 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2841.25
+[DIST] team=1 EnemyN=1 MyZ=3224.04 TgtZ=2841.25 Dist=481.769
+[ROOT] team=1 status=2 Z=3224.04 VP=(35580,5360.5,2983.15)
+[DECO_Dist] team=1 UD=Less Cur=782.82 Input=1100
+[CLAMP_DIAG] team=1 rawDist=491.918 offBoresightDeg=72.1675 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3034.08
+[DIST] team=1 EnemyN=1 MyZ=3645.19 TgtZ=3034.08 Dist=739.649
+[ROOT] team=1 status=2 Z=3645.19 VP=(35840.8,5375.89,3275.37)
+[DECO_Dist] team=1 UD=Less Cur=417.816 Input=1100
+[CLAMP_DIAG] team=1 rawDist=251.479 offBoresightDeg=21.7722 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3564.06
+[DIST] team=1 EnemyN=1 MyZ=3421.52 TgtZ=3564.06 Dist=379.737
+[ROOT] team=1 status=2 Z=3421.52 VP=(36753.7,5353,3562.35)
+[DECO_Dist] team=1 UD=Less Cur=691.907 Input=1100
+[CLAMP_DIAG] team=1 rawDist=458.712 offBoresightDeg=66.6667 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3805.16
+[DIST] team=1 EnemyN=1 MyZ=3160.73 TgtZ=3805.16 Dist=745.415
+[ROOT] team=1 status=2 Z=3160.73 VP=(37398.9,5288.41,3533.44)
+[DECO_Dist] team=1 UD=Less Cur=512.557 Input=1100
+[CLAMP_DIAG] team=1 rawDist=309.646 offBoresightDeg=27.0071 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3480.24
+[DIST] team=1 EnemyN=1 MyZ=3374.57 TgtZ=3480.24 Dist=293.706
+[ROOT] team=1 status=2 Z=3374.57 VP=(38319,5193.98,3444.56)
+[DECO_Dist] team=1 UD=Less Cur=440.348 Input=1100
+[CLAMP_DIAG] team=1 rawDist=321.499 offBoresightDeg=46.7301 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3033.01
+[DIST] team=1 EnemyN=1 MyZ=3569.35 TgtZ=3033.01 Dist=580.93
+[ROOT] team=1 status=2 Z=3569.35 VP=(38859,4848.29,3278.88)
+[DECO_Dist] team=1 UD=Less Cur=504.422 Input=1100
+[CLAMP_DIAG] team=1 rawDist=299.445 offBoresightDeg=21.1662 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2935.46
+[DIST] team=1 EnemyN=1 MyZ=3140.17 TgtZ=2935.46 Dist=391.197
+[ROOT] team=1 status=2 Z=3140.17 VP=(39774.3,4463.4,2944.57)
+[DECO_Dist] team=1 UD=Less Cur=658.139 Input=1100
+[CLAMP_DIAG] team=1 rawDist=719.118 offBoresightDeg=84.6592 clamped=1
+[SelectTarget] team=1 EnemyN=1 TgtZ=3008.94
+[DIST] team=1 EnemyN=1 MyZ=2513.74 TgtZ=3008.94 Dist=877.745
+[ROOT] team=1 status=2 Z=2513.74 VP=(40523.2,4510.92,2952.62)
+[DECO_Dist] team=1 UD=Less Cur=1061.87 Input=1100
+[CLAMP_DIAG] team=1 rawDist=798.603 offBoresightDeg=55.3295 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3028.75
+[DIST] team=1 EnemyN=1 MyZ=2252.62 TgtZ=3028.75 Dist=995.295
+[ROOT] team=1 status=2 Z=2252.62 VP=(41353.1,4344.14,2750.27)
+[DECO_Dist] team=1 UD=Less Cur=510.384 Input=1100
+[CLAMP_DIAG] team=1 rawDist=395.003 offBoresightDeg=43.0521 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2621.88
+[DIST] team=1 EnemyN=1 MyZ=2457.28 TgtZ=2621.88 Dist=482.325
+[ROOT] team=1 status=2 Z=2457.28 VP=(42098.6,3997.36,2674.67)
+[DECO_Dist] team=1 UD=Less Cur=709.781 Input=1100
+[CLAMP_DIAG] team=1 rawDist=628.005 offBoresightDeg=52.9073 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2485.73
+[DIST] team=1 EnemyN=1 MyZ=2846.96 TgtZ=2485.73 Dist=716.577
+[ROOT] team=1 status=2 Z=2846.96 VP=(42947.1,3853.11,2488.7)
+[DECO_Dist] team=1 UD=Less Cur=531.74 Input=1100
+[CLAMP_DIAG] team=1 rawDist=427.927 offBoresightDeg=26.5969 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2726.16
+[DIST] team=1 EnemyN=1 MyZ=2707.96 TgtZ=2726.16 Dist=538.721
+[ROOT] team=1 status=2 Z=2707.96 VP=(43803.7,4083.03,2684.03)
+[DECO_Dist] team=1 UD=Less Cur=882.728 Input=1100
+[CLAMP_DIAG] team=1 rawDist=787.103 offBoresightDeg=62.0291 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3111.68
+[DIST] team=1 EnemyN=1 MyZ=2488.81 TgtZ=3111.68 Dist=958.734
+[ROOT] team=1 status=2 Z=2488.81 VP=(44329.6,4649.73,2968.18)
+[DECO_Dist] team=1 UD=Less Cur=934.562 Input=1100
+[CLAMP_DIAG] team=1 rawDist=637.184 offBoresightDeg=22.7524 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3322.37
+[DIST] team=1 EnemyN=1 MyZ=2628.2 TgtZ=3322.37 Dist=853.63
+[ROOT] team=1 status=2 Z=2628.2 VP=(45015.2,4972.69,3055.01)
+[DECO_Dist] team=1 UD=Less Cur=669.372 Input=1100
+[CLAMP_DIAG] team=1 rawDist=583.875 offBoresightDeg=41.2899 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3216.54
+[DIST] team=1 EnemyN=1 MyZ=3103.15 TgtZ=3216.54 Dist=718.866
+[ROOT] team=1 status=2 Z=3103.15 VP=(45802.5,4859.8,3235.93)
+[DECO_Dist] team=1 UD=Less Cur=1065.05 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3065.45
+[DIST] team=1 EnemyN=1 MyZ=3437.6 TgtZ=3065.45 Dist=1106.33
+[ROOT] team=1 status=2 Z=3437.6 VP=(46468.3,4495.96,3072.35)
+[DECO_Dist] team=1 UD=Less Cur=1181.17 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2921.02
+[DIST] team=1 EnemyN=1 MyZ=3313.04 TgtZ=2921.02 Dist=1201
+[ROOT] team=1 status=2 Z=3313.04 VP=(47239.4,4207.87,2996.14)
+[CLAMP_DIAG] team=1 rawDist=905.581 offBoresightDeg=7.0977 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=1210.27 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2787.89
+[DIST] team=1 EnemyN=1 MyZ=3003.7 TgtZ=2787.89 Dist=1190.54
+[ROOT] team=1 status=2 Z=3003.7 VP=(48166.7,3758.37,2795.9)
+[DECO_Dist] team=1 UD=Less Cur=1049.46 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2840.97
+[DIST] team=1 EnemyN=1 MyZ=2828.86 TgtZ=2840.97 Dist=1004.28
+[ROOT] team=1 status=2 Z=2828.86 VP=(48980.6,4042.51,2821.85)
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[11999] | total rewards=[12.2121] | termination= [max time out]
+[seed 0] reward=    12.21 ownHP=0.9088 tgtHP=1.0000 max time out
+total: 2
+[DECO_Dist] team=1 UD=Less Cur=5070.06 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=7004.47
+[DIST] team=1 EnemyN=1 MyZ=7250.08 TgtZ=7004.47 Dist=4931.5
+[ROOT] team=1 status=2 Z=7250.08 VP=(4811.21,35.1819,7034.72)
+[DECO_Dist] team=1 UD=Less Cur=4246.56 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=6978.2
+[DIST] team=1 EnemyN=1 MyZ=7098.47 TgtZ=6978.2 Dist=4041
+[ROOT] team=1 status=2 Z=7098.47 VP=(3853.77,-164.097,6448.47)
+[DECO_Dist] team=1 UD=Less Cur=3111.49 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=6884.07
+[DIST] team=1 EnemyN=1 MyZ=6790.57 TgtZ=6884.07 Dist=2857.83
+[ROOT] team=1 status=2 Z=6790.57 VP=(2900.48,70.0038,6193.45)
+[DECO_Dist] team=1 UD=Less Cur=1789.41 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=6665.1
+[DIST] team=1 EnemyN=1 MyZ=6346.07 TgtZ=6665.1 Dist=1517.49
+[ROOT] team=1 status=2 Z=6346.07 VP=(3088.19,-115.43,6697.81)
+[DECO_Dist] team=1 UD=Less Cur=627.075 Input=1100
+[CLAMP_DIAG] team=1 rawDist=557.59 offBoresightDeg=133.86 clamped=1
+[SelectTarget] team=1 EnemyN=1 TgtZ=6228.89
+[DIST] team=1 EnemyN=1 MyZ=5937.01 TgtZ=6228.89 Dist=611.585
+[ROOT] team=1 status=2 Z=5937.01 VP=(1786.06,-966.759,5783.26)
+[DECO_Dist] team=1 UD=Less Cur=1194.98 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=5564.52
+[DIST] team=1 EnemyN=1 MyZ=5233.39 TgtZ=5564.52 Dist=1320.3
+[ROOT] team=1 status=2 Z=5233.39 VP=(1673.68,-1749.74,4583.39)
+[DECO_Dist] team=1 UD=Less Cur=1431.49 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=4725.24
+[DIST] team=1 EnemyN=1 MyZ=4258.17 TgtZ=4725.24 Dist=1355.01
+[ROOT] team=1 status=2 Z=4258.17 VP=(2206.55,-2077,3680.94)
+[DECO_Dist] team=1 UD=Less Cur=734.78 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3781.53
+[DIST] team=1 EnemyN=1 MyZ=3387.43 TgtZ=3781.53 Dist=534.172
+[ROOT] team=1 status=2 Z=3387.43 VP=(2224.74,-2127.47,3654.52)
+[CLAMP_DIAG] team=1 rawDist=325.972 offBoresightDeg=114.826 clamped=1
+[SelectTarget] team=1 EnemyN=1 TgtZ=2672.37
+[DIST] team=1 EnemyN=1 MyZ=2760.89 TgtZ=2672.37 Dist=587.95
+[ROOT] team=1 status=2 Z=2760.89 VP=(885.017,-3419.31,7565.28)
+[DECO_Dist] team=1 UD=Less Cur=812.852 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=1763.23
+[DIST] team=1 EnemyN=1 MyZ=2249.17 TgtZ=1763.23 Dist=979.894
+[ROOT] team=1 status=2 Z=2249.17 VP=(435.447,-4487.01,7019.51)
+[SelectTarget] team=1 EnemyN=1 TgtZ=1548.14
+[DIST] team=1 EnemyN=1 MyZ=2042.58 TgtZ=1548.14 Dist=958.507
+[ROOT] team=1 status=2 Z=2042.58 VP=(2763.62,-4656.42,1500)
+[CLAMP_DIAG] team=1 rawDist=633.058 offBoresightDeg=118.734 clamped=1
+[DECO_Dist] team=1 UD=Less Cur=934.184 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2017.33
+[DIST] team=1 EnemyN=1 MyZ=1926.49 TgtZ=2017.33 Dist=1015.9
+[ROOT] team=1 status=2 Z=1926.49 VP=(264.759,-5045.42,2434.44)
+[DECO_Dist] team=1 UD=Less Cur=1151.4 Input=1100
+[CLAMP_DIAG] team=1 rawDist=642.254 offBoresightDeg=80.8034 clamped=1
+[SelectTarget] team=1 EnemyN=1 TgtZ=2622.29
+[DIST] team=1 EnemyN=1 MyZ=2302.15 TgtZ=2622.29 Dist=1149.76
+[ROOT] team=1 status=2 Z=2302.15 VP=(15.9997,-6031.17,2877.03)
+[DECO_Dist] team=1 UD=Less Cur=976.388 Input=1100
+[CLAMP_DIAG] team=1 rawDist=521.129 offBoresightDeg=34.3973 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3067.72
+[DIST] team=1 EnemyN=1 MyZ=3088.23 TgtZ=3067.72 Dist=717.453
+[ROOT] team=1 status=2 Z=3088.23 VP=(2165.56,-5188.83,3032.47)
+[DECO_Dist] team=1 UD=Less Cur=499.551 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3445.43
+[DIST] team=1 EnemyN=1 MyZ=3933.09 TgtZ=3445.43 Dist=519.058
+[ROOT] team=1 status=2 Z=3933.09 VP=(-871.049,-7111.97,3774.97)
+[CLAMP_DIAG] team=1 rawDist=443.41 offBoresightDeg=61.0407 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=593.744 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=4096.02
+[DIST] team=1 EnemyN=1 MyZ=4608.37 TgtZ=4096.02 Dist=518.633
+[ROOT] team=1 status=2 Z=4608.37 VP=(-1213,-7554.98,4554.88)
+[DECO_Dist] team=1 UD=Less Cur=308.252 Input=1100
+[CLAMP_DIAG] team=1 rawDist=171.958 offBoresightDeg=129.776 clamped=1
+[SelectTarget] team=1 EnemyN=1 TgtZ=4831.27
+[DIST] team=1 EnemyN=1 MyZ=4782.25 TgtZ=4831.27 Dist=314.024
+[ROOT] team=1 status=2 Z=4782.25 VP=(-1492.08,-7874.23,4939.27)
+[DECO_Dist] team=1 UD=Less Cur=546.454 Input=1100
+[CLAMP_DIAG] team=1 rawDist=383.386 offBoresightDeg=42.1284 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=5292.9
+[DIST] team=1 EnemyN=1 MyZ=4929.83 TgtZ=5292.9 Dist=586.768
+[ROOT] team=1 status=2 Z=4929.83 VP=(-1866.36,-8842.4,5223.22)
+[DECO_Dist] team=1 UD=Less Cur=470.624 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=5357.22
+[DIST] team=1 EnemyN=1 MyZ=5374.47 TgtZ=5357.22 Dist=307.725
+[ROOT] team=1 status=2 Z=5374.47 VP=(685.663,-8811.96,5219.46)
+[CLAMP_DIAG] team=1 rawDist=194.224 offBoresightDeg=99.1515 clamped=1
+[DECO_Dist] team=1 UD=Less Cur=394.733 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=5303.3
+[DIST] team=1 EnemyN=1 MyZ=5894.88 TgtZ=5303.3 Dist=595.818
+[ROOT] team=1 status=2 Z=5894.88 VP=(-2811.38,-10260.6,5596.97)
+[CLAMP_DIAG] team=1 rawDist=685.521 offBoresightDeg=34.3956 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=637.617 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=5576.56
+[DIST] team=1 EnemyN=1 MyZ=6040.58 TgtZ=5576.56 Dist=468.576
+[ROOT] team=1 status=2 Z=6040.58 VP=(-3146.06,-10717.5,5854.53)
+[CLAMP_DIAG] team=1 rawDist=230.325 offBoresightDeg=6.57156 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=113.807 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=5945.36
+[DIST] team=1 EnemyN=1 MyZ=5694.33 TgtZ=5945.36 Dist=259.334
+[ROOT] team=1 status=2 Z=5694.33 VP=(-3457.91,-11143.8,5823.99)
+[CLAMP_DIAG] team=1 rawDist=519.527 offBoresightDeg=51.5001 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=518.199 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=5875.02
+[DIST] team=1 EnemyN=1 MyZ=5360.72 TgtZ=5875.02 Dist=528.639
+[ROOT] team=1 status=2 Z=5360.72 VP=(-3941,-11937.1,5595.89)
+[CLAMP_DIAG] team=1 rawDist=247.975 offBoresightDeg=25.4272 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=346.968 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=5421.87
+[DIST] team=1 EnemyN=1 MyZ=5386.44 TgtZ=5421.87 Dist=158.178
+[ROOT] team=1 status=2 Z=5386.44 VP=(-1224.84,-13073.7,6089.28)
+[DECO_Dist] team=1 UD=Less Cur=332.742 Input=1100
+[CLAMP_DIAG] team=1 rawDist=298.101 offBoresightDeg=33.018 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=5086.19
+[DIST] team=1 EnemyN=1 MyZ=5451.12 TgtZ=5086.19 Dist=406.781
+[ROOT] team=1 status=2 Z=5451.12 VP=(-4603.42,-13313,5247.73)
+[DECO_Dist] team=1 UD=Less Cur=247.246 Input=1100
+[CLAMP_DIAG] team=1 rawDist=107.047 offBoresightDeg=3.9133 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=5087.5
+[DIST] team=1 EnemyN=1 MyZ=5026.35 TgtZ=5087.5 Dist=63.3975
+[ROOT] team=1 status=2 Z=5026.35 VP=(-4894.05,-13762.8,5058.05)
+[DECO_Dist] team=1 UD=Less Cur=381.694 Input=1100
+[CLAMP_DIAG] team=1 rawDist=555.252 offBoresightDeg=47.4765 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=4865.89
+[DIST] team=1 EnemyN=1 MyZ=4445.15 TgtZ=4865.89 Dist=443.369
+[ROOT] team=1 status=2 Z=4445.15 VP=(-5430.04,-14782.9,4595.6)
+[DECO_Dist] team=1 UD=Less Cur=255.965 Input=1100
+[CLAMP_DIAG] team=1 rawDist=76.3899 offBoresightDeg=23.1007 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=4199.59
+[DIST] team=1 EnemyN=1 MyZ=4259.25 TgtZ=4199.59 Dist=118.525
+[ROOT] team=1 status=2 Z=4259.25 VP=(-5721.58,-15114.8,4199.99)
+[DECO_Dist] team=1 UD=Less Cur=445.624 Input=1100
+[CLAMP_DIAG] team=1 rawDist=378.435 offBoresightDeg=20.4118 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3649.71
+[DIST] team=1 EnemyN=1 MyZ=4116.78 TgtZ=3649.71 Dist=524.814
+[ROOT] team=1 status=2 Z=4116.78 VP=(-6312.59,-16225.3,3854.37)
+[DECO_Dist] team=1 UD=Less Cur=319.333 Input=1100
+[CLAMP_DIAG] team=1 rawDist=69.8864 offBoresightDeg=5.00037 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3521.37
+[DIST] team=1 EnemyN=1 MyZ=3484.27 TgtZ=3521.37 Dist=40.4891
+[ROOT] team=1 status=2 Z=3484.27 VP=(-6547.3,-16671.9,3504.51)
+[DECO_Dist] team=1 UD=Less Cur=611.438 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3283.43
+[DIST] team=1 EnemyN=1 MyZ=2701.28 TgtZ=3283.43 Dist=623.148
+[ROOT] team=1 status=2 Z=2701.28 VP=(-7120.4,-17917.2,2919.26)
+[CLAMP_DIAG] team=1 rawDist=609.468 offBoresightDeg=36.9329 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=224.49 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2565.27
+[DIST] team=1 EnemyN=1 MyZ=2443.76 TgtZ=2565.27 Dist=149.266
+[ROOT] team=1 status=2 Z=2443.76 VP=(-7423.74,-18186.4,2474.6)
+[CLAMP_DIAG] team=1 rawDist=103.117 offBoresightDeg=89.5163 clamped=1
+[SelectTarget] team=1 EnemyN=1 TgtZ=2136.8
+[DIST] team=1 EnemyN=1 MyZ=2368.56 TgtZ=2136.8 Dist=277.871
+[ROOT] team=1 status=2 Z=2368.56 VP=(-8190.85,-20512.5,7138.92)
+[DECO_Dist] team=1 UD=Less Cur=194.449 Input=1100
+[CLAMP_DIAG] team=1 rawDist=174.724 offBoresightDeg=74.0112 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2366.18
+[DIST] team=1 EnemyN=1 MyZ=2125.72 TgtZ=2366.18 Dist=318.905
+[ROOT] team=1 status=2 Z=2125.72 VP=(-8302.95,-20017.9,2285.17)
+[DECO_Dist] team=1 UD=Less Cur=526.317 Input=1100
+[CLAMP_DIAG] team=1 rawDist=433.498 offBoresightDeg=39.5238 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2991.51
+[DIST] team=1 EnemyN=1 MyZ=2371.99 TgtZ=2991.51 Dist=728.738
+[ROOT] team=1 status=2 Z=2371.99 VP=(-8727.55,-21065,2736.36)
+[DECO_Dist] team=1 UD=Less Cur=699.42 Input=1100
+[CLAMP_DIAG] team=1 rawDist=550.692 offBoresightDeg=94.2663 clamped=1
+[SelectTarget] team=1 EnemyN=1 TgtZ=3325.06
+[DIST] team=1 EnemyN=1 MyZ=2997.46 TgtZ=3325.06 Dist=383.4
+[ROOT] team=1 status=2 Z=2997.46 VP=(-8852.16,-20969.2,3189.16)
+[DECO_Dist] team=1 UD=Less Cur=45.615 Input=1100
+[CLAMP_DIAG] team=1 rawDist=725.785 offBoresightDeg=85.1776 clamped=1
+[SelectTarget] team=1 EnemyN=1 TgtZ=3378.7
+[DIST] team=1 EnemyN=1 MyZ=3806.51 TgtZ=3378.7 Dist=602.077
+[ROOT] team=1 status=2 Z=3806.51 VP=(-9888.76,-22503,3585.39)
+[DECO_Dist] team=1 UD=Less Cur=828.571 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3801.47
+[DIST] team=1 EnemyN=1 MyZ=4335.75 TgtZ=3801.47 Dist=812.458
+[ROOT] team=1 status=2 Z=4335.75 VP=(-9902.99,-22567.9,3929.52)
+[CLAMP_DIAG] team=1 rawDist=473.799 offBoresightDeg=37.3794 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=608.698 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=4448.65
+[DIST] team=1 EnemyN=1 MyZ=4264.19 TgtZ=4448.65 Dist=434.832
+[ROOT] team=1 status=2 Z=4264.19 VP=(-10265.9,-23123.5,4418.61)
+[CLAMP_DIAG] team=1 rawDist=382.421 offBoresightDeg=60.5621 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=610.341 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=4791.74
+[DIST] team=1 EnemyN=1 MyZ=4078.94 TgtZ=4791.74 Dist=773.328
+[ROOT] team=1 status=2 Z=4078.94 VP=(-10712.2,-23525.4,4465.61)
+[CLAMP_DIAG] team=1 rawDist=409.744 offBoresightDeg=43.3491 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=687.827 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=4604.69
+[DIST] team=1 EnemyN=1 MyZ=4380.22 TgtZ=4604.69 Dist=405.32
+[ROOT] team=1 status=2 Z=4380.22 VP=(-11338.7,-24075.6,4582.88)
+[CLAMP_DIAG] team=1 rawDist=405.674 offBoresightDeg=40.5884 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=385.986 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=4133.15
+[DIST] team=1 EnemyN=1 MyZ=4699.59 TgtZ=4133.15 Dist=663.852
+[ROOT] team=1 status=2 Z=4699.59 VP=(-11974.2,-24262.8,4367.67)
+[CLAMP_DIAG] team=1 rawDist=452.355 offBoresightDeg=39.0287 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=778.45 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3756.37
+[DIST] team=1 EnemyN=1 MyZ=4430.66 TgtZ=3756.37 Dist=820.11
+[ROOT] team=1 status=2 Z=4430.66 VP=(-12787.9,-24338.9,4020.6)
+[CLAMP_DIAG] team=1 rawDist=585.394 offBoresightDeg=0.513191 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=842.788 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3212.75
+[DIST] team=1 EnemyN=1 MyZ=3830.78 TgtZ=3212.75 Dist=861.339
+[ROOT] team=1 status=2 Z=3830.78 VP=(-13496.9,-24143.8,3400.11)
+[CLAMP_DIAG] team=1 rawDist=652.362 offBoresightDeg=2.41572 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=851.193 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2620.77
+[DIST] team=1 EnemyN=1 MyZ=3153.78 TgtZ=2620.77 Dist=845.823
+[ROOT] team=1 status=2 Z=3153.78 VP=(-13940.6,-23512,2730.87)
+[CLAMP_DIAG] team=1 rawDist=673.411 offBoresightDeg=2.82009 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2184.22
+[DIST] team=1 EnemyN=1 MyZ=2495.63 TgtZ=2184.22 Dist=764.272
+[DECO_Dist] team=1 UD=Less Cur=764.272 Input=1100
+[ROOT] team=1 status=2 Z=2495.63 VP=(-14607.1,-22955.8,2224.63)
+[SelectTarget] team=1 EnemyN=1 TgtZ=2145.12
+[DIST] team=1 EnemyN=1 MyZ=2146.16 TgtZ=2145.12 Dist=852.66
+[ROOT] team=1 status=2 Z=2146.16 VP=(-15556.4,-22850.4,2135.22)
+[CLAMP_DIAG] team=1 rawDist=856.183 offBoresightDeg=55.7194 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=1016.68 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2506.44
+[DIST] team=1 EnemyN=1 MyZ=2013.95 TgtZ=2506.44 Dist=1127.95
+[ROOT] team=1 status=2 Z=2013.95 VP=(-16392.9,-23057.8,2424.68)
+[DECO_Dist] team=1 UD=Less Cur=1165.02 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3148.35
+[DIST] team=1 EnemyN=1 MyZ=2171.49 TgtZ=3148.35 Dist=1211.22
+[ROOT] team=1 status=2 Z=2171.49 VP=(-17053.5,-23282,2777.1)
+[DECO_Dist] team=1 UD=Less Cur=1232.13 Input=1100
+[CLAMP_DIAG] team=1 rawDist=785.305 offBoresightDeg=4.18889 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3757.49
+[DIST] team=1 EnemyN=1 MyZ=2724.15 TgtZ=3757.49 Dist=1170.55
+[ROOT] team=1 status=2 Z=2724.15 VP=(-17570.9,-23605.7,3309.42)
+[DECO_Dist] team=1 UD=Less Cur=1058.2 Input=1100
+[CLAMP_DIAG] team=1 rawDist=725.83 offBoresightDeg=3.18549 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=4011.36
+[DIST] team=1 EnemyN=1 MyZ=3375.95 TgtZ=4011.36 Dist=925.119
+[ROOT] team=1 status=2 Z=3375.95 VP=(-18297.2,-23556.9,3838.51)
+[DECO_Dist] team=1 UD=Less Cur=802.159 Input=1100
+[CLAMP_DIAG] team=1 rawDist=685.72 offBoresightDeg=5.77084 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3888.9
+[DIST] team=1 EnemyN=1 MyZ=3847.53 TgtZ=3888.9 Dist=732.025
+[ROOT] team=1 status=2 Z=3847.53 VP=(-18886.4,-23044.1,3919.5)
+[DECO_Dist] team=1 UD=Less Cur=733.314 Input=1100
+[CLAMP_DIAG] team=1 rawDist=627.362 offBoresightDeg=22.4882 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3505.61
+[DIST] team=1 EnemyN=1 MyZ=3891.15 TgtZ=3505.61 Dist=796.637
+[ROOT] team=1 status=2 Z=3891.15 VP=(-18967.2,-22325.4,3562.31)
+[DECO_Dist] team=1 UD=Less Cur=902.261 Input=1100
+[CLAMP_DIAG] team=1 rawDist=807.448 offBoresightDeg=35.5611 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3001.28
+[DIST] team=1 EnemyN=1 MyZ=3519.19 TgtZ=3001.28 Dist=1024.1
+[ROOT] team=1 status=2 Z=3519.19 VP=(-18502.6,-21837.6,3067.28)
+[DECO_Dist] team=1 UD=Less Cur=1151.63 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2476.42
+[DIST] team=1 EnemyN=1 MyZ=2949.26 TgtZ=2476.42 Dist=1229.16
+[ROOT] team=1 status=2 Z=2949.26 VP=(-17791.9,-21665,2541.09)
+[DECO_Dist] team=1 UD=Less Cur=1187.58 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2239.63
+[DIST] team=1 EnemyN=1 MyZ=2482.82 TgtZ=2239.63 Dist=1093.79
+[ROOT] team=1 status=2 Z=2482.82 VP=(-17161.7,-21081.4,2255.4)
+[DECO_Dist] team=1 UD=Less Cur=1001.39 Input=1100
+[CLAMP_DIAG] team=1 rawDist=861.317 offBoresightDeg=7.57764 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2404.07
+[DIST] team=1 EnemyN=1 MyZ=2273.8 TgtZ=2404.07 Dist=919.206
+[ROOT] team=1 status=2 Z=2273.8 VP=(-16922.5,-20205.8,2367.67)
+[DECO_Dist] team=1 UD=Less Cur=865.876 Input=1100
+[CLAMP_DIAG] team=1 rawDist=743.756 offBoresightDeg=19.2535 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2775.96
+[DIST] team=1 EnemyN=1 MyZ=2358.08 TgtZ=2775.96 Dist=849.149
+[ROOT] team=1 status=2 Z=2358.08 VP=(-17259.9,-19496.2,2718.86)
+[DECO_Dist] team=1 UD=Less Cur=872.992 Input=1100
+[CLAMP_DIAG] team=1 rawDist=772.676 offBoresightDeg=31.257 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3138.33
+[DIST] team=1 EnemyN=1 MyZ=2671.69 TgtZ=3138.33 Dist=937.461
+[ROOT] team=1 status=2 Z=2671.69 VP=(-17824.1,-19261.4,2974.79)
+[DECO_Dist] team=1 UD=Less Cur=995.196 Input=1100
+[CLAMP_DIAG] team=1 rawDist=882.047 offBoresightDeg=14.6559 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3356.61
+[DIST] team=1 EnemyN=1 MyZ=3022.99 TgtZ=3356.61 Dist=929.356
+[ROOT] team=1 status=2 Z=3022.99 VP=(-18720.2,-19205.8,3334.63)
+[DECO_Dist] team=1 UD=Less Cur=822.609 Input=1100
+[CLAMP_DIAG] team=1 rawDist=703.286 offBoresightDeg=18.786 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3290.74
+[DIST] team=1 EnemyN=1 MyZ=3279.95 TgtZ=3290.74 Dist=796.983
+[ROOT] team=1 status=2 Z=3279.95 VP=(-19236.7,-18607.4,3307.64)
+[DECO_Dist] team=1 UD=Less Cur=870.142 Input=1100
+[CLAMP_DIAG] team=1 rawDist=796.479 offBoresightDeg=40.8226 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3054.35
+[DIST] team=1 EnemyN=1 MyZ=3319.57 TgtZ=3054.35 Dist=1013.97
+[ROOT] team=1 status=2 Z=3319.57 VP=(-19180.4,-17865.6,3092.46)
+[DECO_Dist] team=1 UD=Less Cur=1186.68 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2732.75
+[DIST] team=1 EnemyN=1 MyZ=3083.22 TgtZ=2732.75 Dist=1263.7
+[ROOT] team=1 status=2 Z=3083.22 VP=(-18833.4,-17136,2770.77)
+[DECO_Dist] team=1 UD=Less Cur=1162.02 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2674.28
+[DIST] team=1 EnemyN=1 MyZ=2762.6 TgtZ=2674.28 Dist=972.428
+[ROOT] team=1 status=2 Z=2762.6 VP=(-18968.1,-16327.4,2662.65)
+[CLAMP_DIAG] team=1 rawDist=782.713 offBoresightDeg=8.65357 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=815.36 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2852.09
+[DIST] team=1 EnemyN=1 MyZ=2640.82 TgtZ=2852.09 Dist=753.108
+[ROOT] team=1 status=2 Z=2640.82 VP=(-19561.6,-15809.5,2815.8)
+[CLAMP_DIAG] team=1 rawDist=665.485 offBoresightDeg=39.2261 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=819.861 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3090.22
+[DIST] team=1 EnemyN=1 MyZ=2716.47 TgtZ=3090.22 Dist=984.576
+[ROOT] team=1 status=2 Z=2716.47 VP=(-20308.1,-15874,3054.62)
+[DECO_Dist] team=1 UD=Less Cur=1081.02 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3248.07
+[DIST] team=1 EnemyN=1 MyZ=2900.06 TgtZ=3248.07 Dist=966.626
+[ROOT] team=1 status=2 Z=2900.06 VP=(-21048.4,-15857.8,3232.76)
+[CLAMP_DIAG] team=1 rawDist=856.442 offBoresightDeg=6.61418 clamped=0
+runner:local/env:0	num_steps=[11999] | total rewards=[215.8541] | termination= [max time out]
+[seed 1] reward=   215.85 ownHP=0.9678 tgtHP=0.9880 max time out
+total: 2
+[DECO_Dist] team=1 UD=Less Cur=4636.27 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=7022.22
+[DIST] team=1 EnemyN=1 MyZ=8421.08 TgtZ=7022.22 Dist=3843.63
+[ROOT] team=1 status=2 Z=8421.08 VP=(4549.43,547.934,7771.08)
+[DECO_Dist] team=1 UD=Less Cur=3026.46 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=7143.74
+[DIST] team=1 EnemyN=1 MyZ=8175.25 TgtZ=7143.74 Dist=2184.91
+[ROOT] team=1 status=2 Z=8175.25 VP=(4856.21,191.997,7525.25)
+[DECO_Dist] team=1 UD=Less Cur=1332.93 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=7334.15
+[DIST] team=1 EnemyN=1 MyZ=7789.12 TgtZ=7334.15 Dist=578.462
+[ROOT] team=1 status=2 Z=7789.12 VP=(4009.76,536.956,7499.89)
+[DECO_Dist] team=1 UD=Less Cur=681.066 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=7457.69
+[DIST] team=1 EnemyN=1 MyZ=7224.15 TgtZ=7457.69 Dist=1424.83
+[ROOT] team=1 status=2 Z=7224.15 VP=(2369.4,1726.86,7263.7)
+[DECO_Dist] team=1 UD=Less Cur=2184.28 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=7292.72
+[DIST] team=1 EnemyN=1 MyZ=6379.05 TgtZ=7292.72 Dist=2840.92
+[ROOT] team=1 status=2 Z=6379.05 VP=(1671.59,2085.06,6783.57)
+[DECO_Dist] team=1 UD=Less Cur=3326.74 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=6705.06
+[DIST] team=1 EnemyN=1 MyZ=5384.44 TgtZ=6705.06 Dist=3595.54
+[ROOT] team=1 status=2 Z=5384.44 VP=(2405.71,3031.8,5842.11)
+[DECO_Dist] team=1 UD=Less Cur=3606.7 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=5815.5
+[DIST] team=1 EnemyN=1 MyZ=4498.72 TgtZ=5815.5 Dist=3343.68
+[ROOT] team=1 status=2 Z=4498.72 VP=(2412.86,2856.04,4796.26)
+[DECO_Dist] team=1 UD=Less Cur=2809.64 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=4835.94
+[DIST] team=1 EnemyN=1 MyZ=4061.45 TgtZ=4835.94 Dist=2045.71
+[ROOT] team=1 status=2 Z=4061.45 VP=(1985.39,2492.73,5084.31)
+[DECO_Dist] team=1 UD=Less Cur=1151.63 Input=1100
+[CLAMP_DIAG] team=1 rawDist=502.373 offBoresightDeg=35.544 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3879.29
+[DIST] team=1 EnemyN=1 MyZ=4210.17 TgtZ=3879.29 Dist=489.585
+[ROOT] team=1 status=2 Z=4210.17 VP=(2172.41,2057.4,3993.46)
+[DECO_Dist] team=1 UD=Less Cur=971.635 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2926.35
+[DIST] team=1 EnemyN=1 MyZ=4172.88 TgtZ=2926.35 Dist=1621.67
+[ROOT] team=1 status=2 Z=4172.88 VP=(1588.06,1500.12,3522.88)
+[DECO_Dist] team=1 UD=Less Cur=2015.46 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2100.65
+[DIST] team=1 EnemyN=1 MyZ=3642.35 TgtZ=2100.65 Dist=2073.36
+[ROOT] team=1 status=2 Z=3642.35 VP=(1412.93,1518.12,2992.35)
+[DECO_Dist] team=1 UD=Less Cur=1781.68 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=1799.05
+[DIST] team=1 EnemyN=1 MyZ=2829.07 TgtZ=1799.05 Dist=1249.31
+[ROOT] team=1 status=2 Z=2829.07 VP=(-617.493,1834.4,7642.07)
+[SelectTarget] team=1 EnemyN=1 TgtZ=2166.76
+[DIST] team=1 EnemyN=1 MyZ=2286.88 TgtZ=2166.76 Dist=364.896
+[ROOT] team=1 status=2 Z=2286.88 VP=(-1320.56,1044.45,7057.56)
+[CLAMP_DIAG] team=1 rawDist=780.103 offBoresightDeg=79.2926 clamped=1
+[DECO_Dist] team=1 UD=Less Cur=938.441 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2896.45
+[DIST] team=1 EnemyN=1 MyZ=2131.43 TgtZ=2896.45 Dist=1047.76
+[ROOT] team=1 status=2 Z=2131.43 VP=(-1901.82,1818.31,2655.31)
+[DECO_Dist] team=1 UD=Less Cur=1155.93 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3318.24
+[DIST] team=1 EnemyN=1 MyZ=2333.03 TgtZ=3318.24 Dist=1086.14
+[ROOT] team=1 status=2 Z=2333.03 VP=(-1700.52,1763.56,2876.11)
+[CLAMP_DIAG] team=1 rawDist=758.569 offBoresightDeg=86.9229 clamped=1
+[DECO_Dist] team=1 UD=Less Cur=539.861 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3222.17
+[DIST] team=1 EnemyN=1 MyZ=2915.19 TgtZ=3222.17 Dist=388.451
+[ROOT] team=1 status=2 Z=2915.19 VP=(-2457.13,1348.07,3109.42)
+[CLAMP_DIAG] team=1 rawDist=344.839 offBoresightDeg=85.8864 clamped=1
+[DECO_Dist] team=1 UD=Less Cur=524.676 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3168.02
+[DIST] team=1 EnemyN=1 MyZ=3673.25 TgtZ=3168.02 Dist=632.05
+[ROOT] team=1 status=2 Z=3673.25 VP=(-3989.09,1678.9,3388.82)
+[CLAMP_DIAG] team=1 rawDist=474.723 offBoresightDeg=72.6622 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=638.111 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3576.16
+[DIST] team=1 EnemyN=1 MyZ=4029.48 TgtZ=3576.16 Dist=534.21
+[ROOT] team=1 status=2 Z=4029.48 VP=(-3938.11,1609.53,3762.37)
+[CLAMP_DIAG] team=1 rawDist=122.527 offBoresightDeg=28.8206 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=238.285 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=4168.85
+[DIST] team=1 EnemyN=1 MyZ=3805.9 TgtZ=4168.85 Dist=399.229
+[ROOT] team=1 status=2 Z=3805.9 VP=(-4903.93,1893.78,4005.51)
+[CLAMP_DIAG] team=1 rawDist=820.627 offBoresightDeg=28.5672 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=774.436 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=4458.41
+[DIST] team=1 EnemyN=1 MyZ=3705.79 TgtZ=4458.41 Dist=762.068
+[ROOT] team=1 status=2 Z=3705.79 VP=(-5158.15,2034.51,4086.83)
+[CLAMP_DIAG] team=1 rawDist=326.065 offBoresightDeg=78.301 clamped=1
+[DECO_Dist] team=1 UD=Less Cur=355.605 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=4233.22
+[DIST] team=1 EnemyN=1 MyZ=4055.69 TgtZ=4233.22 Dist=212.606
+[ROOT] team=1 status=2 Z=4055.69 VP=(-5834.17,2315.13,4161.99)
+[CLAMP_DIAG] team=1 rawDist=594.765 offBoresightDeg=66.8766 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=583.138 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3990.57
+[DIST] team=1 EnemyN=1 MyZ=4595.41 TgtZ=3990.57 Dist=683.71
+[ROOT] team=1 status=2 Z=4595.41 VP=(-6957.41,3481.11,4253.55)
+[CLAMP_DIAG] team=1 rawDist=423.825 offBoresightDeg=38.6454 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=663.03 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=4229.75
+[DIST] team=1 EnemyN=1 MyZ=4689.82 TgtZ=4229.75 Dist=571.707
+[ROOT] team=1 status=2 Z=4689.82 VP=(-6883.24,3287.06,4403.96)
+[CLAMP_DIAG] team=1 rawDist=423.449 offBoresightDeg=28.0519 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=374.078 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=4558.89
+[DIST] team=1 EnemyN=1 MyZ=4365.14 TgtZ=4558.89 Dist=415.696
+[ROOT] team=1 status=2 Z=4365.14 VP=(-7319.19,4015.62,4531.95)
+[CLAMP_DIAG] team=1 rawDist=398.727 offBoresightDeg=37.6597 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=520.674 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=4598.9
+[DIST] team=1 EnemyN=1 MyZ=4353.32 TgtZ=4598.9 Dist=526.212
+[ROOT] team=1 status=2 Z=4353.32 VP=(-7322.92,4583.2,4608.15)
+[CLAMP_DIAG] team=1 rawDist=497.498 offBoresightDeg=37.2174 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=626.104 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=4340.17
+[DIST] team=1 EnemyN=1 MyZ=4585.37 TgtZ=4340.17 Dist=674.857
+[ROOT] team=1 status=2 Z=4585.37 VP=(-6923.15,5109.94,4394.73)
+[CLAMP_DIAG] team=1 rawDist=715.434 offBoresightDeg=33.5712 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=897.794 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3854.49
+[DIST] team=1 EnemyN=1 MyZ=4535.5 TgtZ=3854.49 Dist=950.647
+[ROOT] team=1 status=2 Z=4535.5 VP=(-6385.52,5155.82,4060.18)
+[CLAMP_DIAG] team=1 rawDist=859.957 offBoresightDeg=26.9657 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=1123.97 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3286.89
+[DIST] team=1 EnemyN=1 MyZ=4144.1 TgtZ=3286.89 Dist=1153.81
+[ROOT] team=1 status=2 Z=4144.1 VP=(-6171.88,4743.03,3567.19)
+[DECO_Dist] team=1 UD=Less Cur=1206.84 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2788.17
+[DIST] team=1 EnemyN=1 MyZ=3601.16 TgtZ=2788.17 Dist=1215.99
+[ROOT] team=1 status=2 Z=3601.16 VP=(-6477.44,4306.84,2993.16)
+[DECO_Dist] team=1 UD=Less Cur=1242.16 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2372.55
+[DIST] team=1 EnemyN=1 MyZ=3051.02 TgtZ=2372.55 Dist=1224.37
+[ROOT] team=1 status=2 Z=3051.02 VP=(-6988.37,3797.41,2438.83)
+[DECO_Dist] team=1 UD=Less Cur=1061.18 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2294.19
+[DIST] team=1 EnemyN=1 MyZ=2561.33 TgtZ=2294.19 Dist=1004.18
+[ROOT] team=1 status=2 Z=2561.33 VP=(-6963.29,2990.24,2282.06)
+[CLAMP_DIAG] team=1 rawDist=747.373 offBoresightDeg=8.95722 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=788.033 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2550
+[DIST] team=1 EnemyN=1 MyZ=2328.28 TgtZ=2550 Dist=754.489
+[ROOT] team=1 status=2 Z=2328.28 VP=(-6466.77,2406.1,2496.9)
+[CLAMP_DIAG] team=1 rawDist=628.219 offBoresightDeg=37.4995 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=777.611 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2909.01
+[DIST] team=1 EnemyN=1 MyZ=2442.48 TgtZ=2909.01 Dist=826.223
+[ROOT] team=1 status=2 Z=2442.48 VP=(-5920.85,2413.28,2799.92)
+[CLAMP_DIAG] team=1 rawDist=877.997 offBoresightDeg=49.3932 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=1006.99 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3336.39
+[DIST] team=1 EnemyN=1 MyZ=2777.49 TgtZ=3336.39 Dist=1002.4
+[ROOT] team=1 status=2 Z=2777.49 VP=(-5409.12,2731.21,3146)
+[CLAMP_DIAG] team=1 rawDist=793.913 offBoresightDeg=4.58258 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=882.03 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3712.13
+[DIST] team=1 EnemyN=1 MyZ=3173.57 TgtZ=3712.13 Dist=838.432
+[ROOT] team=1 status=2 Z=3173.57 VP=(-4646.8,2770.37,3592.78)
+[CLAMP_DIAG] team=1 rawDist=638.603 offBoresightDeg=7.76875 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=712.986 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3729.92
+[DIST] team=1 EnemyN=1 MyZ=3589.15 TgtZ=3729.92 Dist=703.748
+[ROOT] team=1 status=2 Z=3589.15 VP=(-3990.07,2501.75,3746.1)
+[CLAMP_DIAG] team=1 rawDist=623.375 offBoresightDeg=22.7327 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=759.523 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3483.42
+[DIST] team=1 EnemyN=1 MyZ=3746.86 TgtZ=3483.42 Dist=788.7
+[ROOT] team=1 status=2 Z=3746.86 VP=(-3702.05,1887.55,3527.69)
+[CLAMP_DIAG] team=1 rawDist=781.331 offBoresightDeg=29.2673 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=929.526 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3122.03
+[DIST] team=1 EnemyN=1 MyZ=3563.22 TgtZ=3122.03 Dist=964.264
+[ROOT] team=1 status=2 Z=3563.22 VP=(-3983.17,1324.78,3174.14)
+[CLAMP_DIAG] team=1 rawDist=795.943 offBoresightDeg=19.0845 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=1085.48 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2749.36
+[DIST] team=1 EnemyN=1 MyZ=3190.26 TgtZ=2749.36 Dist=1118.38
+[ROOT] team=1 status=2 Z=3190.26 VP=(-4629.85,1184.25,2796.32)
+[DECO_Dist] team=1 UD=Less Cur=1110.92 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2508.89
+[DIST] team=1 EnemyN=1 MyZ=2820.29 TgtZ=2508.89 Dist=1075.3
+[ROOT] team=1 status=2 Z=2820.29 VP=(-5258.82,826.997,2521.42)
+[DECO_Dist] team=1 UD=Less Cur=868.262 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2604.61
+[DIST] team=1 EnemyN=1 MyZ=2566.73 TgtZ=2604.61 Dist=812.629
+[ROOT] team=1 status=2 Z=2566.73 VP=(-5479.15,99.8199,2567.92)
+[CLAMP_DIAG] team=1 rawDist=662.473 offBoresightDeg=9.13686 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=679.402 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2861.81
+[DIST] team=1 EnemyN=1 MyZ=2566.29 TgtZ=2861.81 Dist=680.859
+[ROOT] team=1 status=2 Z=2566.29 VP=(-5133.81,-493.19,2813.93)
+[CLAMP_DIAG] team=1 rawDist=587.086 offBoresightDeg=35.1207 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=813.886 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3113.38
+[DIST] team=1 EnemyN=1 MyZ=2771.68 TgtZ=3113.38 Dist=867.326
+[ROOT] team=1 status=2 Z=2771.68 VP=(-4610.9,-685.509,2968.94)
+[CLAMP_DIAG] team=1 rawDist=811.671 offBoresightDeg=39.1867 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=957.62 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3260.22
+[DIST] team=1 EnemyN=1 MyZ=3019.8 TgtZ=3260.22 Dist=915.78
+[ROOT] team=1 status=2 Z=3019.8 VP=(-3790.1,-575.976,3247.48)
+[CLAMP_DIAG] team=1 rawDist=772.564 offBoresightDeg=2.75809 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=705.774 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3175.17
+[DIST] team=1 EnemyN=1 MyZ=3187.73 TgtZ=3175.17 Dist=687.195
+[ROOT] team=1 status=2 Z=3187.73 VP=(-3242.64,-1031.75,3193.7)
+[CLAMP_DIAG] team=1 rawDist=587.294 offBoresightDeg=25.0031 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=783.54 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2980.19
+[DIST] team=1 EnemyN=1 MyZ=3178.67 TgtZ=2980.19 Dist=836.92
+[ROOT] team=1 status=2 Z=3178.67 VP=(-3189.4,-1728.73,3007.24)
+[CLAMP_DIAG] team=1 rawDist=613.403 offBoresightDeg=44.6545 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=1077.82 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2767.05
+[DIST] team=1 EnemyN=1 MyZ=2975.23 TgtZ=2767.05 Dist=1093.88
+[ROOT] team=1 status=2 Z=2975.23 VP=(-3507.19,-2401.77,2786.21)
+[DECO_Dist] team=1 UD=Less Cur=920.662 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2772.33
+[DIST] team=1 EnemyN=1 MyZ=2755.38 TgtZ=2772.33 Dist=856.509
+[ROOT] team=1 status=2 Z=2755.38 VP=(-3347.65,-3135.97,2751.69)
+[CLAMP_DIAG] team=1 rawDist=705.863 offBoresightDeg=5.74666 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=687.87 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2931.01
+[DIST] team=1 EnemyN=1 MyZ=2736.55 TgtZ=2931.01 Dist=676.551
+[ROOT] team=1 status=2 Z=2736.55 VP=(-2754.4,-3553.68,2898.45)
+[CLAMP_DIAG] team=1 rawDist=573.121 offBoresightDeg=26.1427 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=769.085 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3087.71
+[DIST] team=1 EnemyN=1 MyZ=2859 TgtZ=3087.71 Dist=820.187
+[ROOT] team=1 status=2 Z=2859 VP=(-2049.47,-3409.92,3061.31)
+[CLAMP_DIAG] team=1 rawDist=755.549 offBoresightDeg=32.6772 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=866.474 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3128.58
+[DIST] team=1 EnemyN=1 MyZ=3001.18 TgtZ=3128.58 Dist=821.999
+[ROOT] team=1 status=2 Z=3001.18 VP=(-1336.84,-3232.12,3129.06)
+[CLAMP_DIAG] team=1 rawDist=680.507 offBoresightDeg=8.73258 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=695.093 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3011.82
+[DIST] team=1 EnemyN=1 MyZ=3078.67 TgtZ=3011.82 Dist=713.563
+[ROOT] team=1 status=2 Z=3078.67 VP=(-724.931,-3626.31,3029.69)
+[CLAMP_DIAG] team=1 rawDist=643.424 offBoresightDeg=39.0217 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=939.838 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2846.39
+[DIST] team=1 EnemyN=1 MyZ=3003.82 TgtZ=2846.39 Dist=982.279
+[ROOT] team=1 status=2 Z=3003.82 VP=(-458.956,-4343.93,2858.95)
+[CLAMP_DIAG] team=1 rawDist=898.665 offBoresightDeg=26.742 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=861.895 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2828.61
+[DIST] team=1 EnemyN=1 MyZ=2819.46 TgtZ=2828.61 Dist=796.708
+[ROOT] team=1 status=2 Z=2819.46 VP=(139.388,-4816.3,2814.64)
+[CLAMP_DIAG] team=1 rawDist=644.429 offBoresightDeg=5.44404 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=648.007 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2948.28
+[DIST] team=1 EnemyN=1 MyZ=2780.2 TgtZ=2948.28 Dist=652.216
+[ROOT] team=1 status=2 Z=2780.2 VP=(878.917,-4731.19,2921.24)
+[CLAMP_DIAG] team=1 rawDist=567.625 offBoresightDeg=34.586 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=829.078 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3079.48
+[DIST] team=1 EnemyN=1 MyZ=2872.77 TgtZ=3079.48 Dist=890.809
+[ROOT] team=1 status=2 Z=2872.77 VP=(1323.84,-4133.85,3061.11)
+[CLAMP_DIAG] team=1 rawDist=831.422 offBoresightDeg=36.1024 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=877.464 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3079.02
+[DIST] team=1 EnemyN=1 MyZ=2967.94 TgtZ=3079.02 Dist=816.783
+[ROOT] team=1 status=2 Z=2967.94 VP=(1871.27,-3622.99,3083.86)
+[CLAMP_DIAG] team=1 rawDist=668.239 offBoresightDeg=15.0767 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=736.338 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2951.61
+[DIST] team=1 EnemyN=1 MyZ=3026.98 TgtZ=2951.61 Dist=795.183
+[ROOT] team=1 status=2 Z=3026.98 VP=(2458.04,-3611.35,3031.48)
+[CLAMP_DIAG] team=1 rawDist=775.882 offBoresightDeg=51.3266 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=1057.98 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2960.57
+[DIST] team=1 EnemyN=1 MyZ=2948.65 TgtZ=2960.57 Dist=1055.55
+[ROOT] team=1 status=2 Z=2948.65 VP=(3389.04,-3832.34,2936.67)
+[DECO_Dist] team=1 UD=Less Cur=806.229 Input=1100
+[CLAMP_DIAG] team=1 rawDist=696.317 offBoresightDeg=21.6037 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3043.82
+[DIST] team=1 EnemyN=1 MyZ=2869.68 TgtZ=3043.82 Dist=775.991
+[ROOT] team=1 status=2 Z=2869.68 VP=(4100.1,-3486.79,3032.05)
+[DECO_Dist] team=1 UD=Less Cur=821.438 Input=1100
+[CLAMP_DIAG] team=1 rawDist=699.409 offBoresightDeg=6.69996 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3020.03
+[DIST] team=1 EnemyN=1 MyZ=2952.27 TgtZ=3020.03 Dist=795.389
+[ROOT] team=1 status=2 Z=2952.27 VP=(4869.84,-3268.21,3025.64)
+[DECO_Dist] team=1 UD=Less Cur=730.288 Input=1100
+[CLAMP_DIAG] team=1 rawDist=635.012 offBoresightDeg=28.0879 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2904.26
+[DIST] team=1 EnemyN=1 MyZ=2978.47 TgtZ=2904.26 Dist=756.638
+[ROOT] team=1 status=2 Z=2978.47 VP=(5647.31,-3569.36,2913.04)
+[DECO_Dist] team=1 UD=Less Cur=679.715 Input=1100
+[CLAMP_DIAG] team=1 rawDist=541.256 offBoresightDeg=9.45529 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2872.91
+[DIST] team=1 EnemyN=1 MyZ=2868.17 TgtZ=2872.91 Dist=637.194
+[ROOT] team=1 status=2 Z=2868.17 VP=(6465.17,-3517.59,2865.92)
+[DECO_Dist] team=1 UD=Less Cur=629.809 Input=1100
+[CLAMP_DIAG] team=1 rawDist=547.23 offBoresightDeg=41.8898 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2957.91
+[DIST] team=1 EnemyN=1 MyZ=2811.28 TgtZ=2957.91 Dist=672.808
+[ROOT] team=1 status=2 Z=2811.28 VP=(6987.35,-2910.66,2937.22)
+[DECO_Dist] team=1 UD=Less Cur=907.587 Input=1100
+[CLAMP_DIAG] team=1 rawDist=830.135 offBoresightDeg=42.9798 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3106.28
+[DIST] team=1 EnemyN=1 MyZ=2827.14 TgtZ=3106.28 Dist=932.497
+[ROOT] team=1 status=2 Z=2827.14 VP=(7040.86,-2110.95,3083.72)
+[DECO_Dist] team=1 UD=Less Cur=725.753 Input=1100
+[CLAMP_DIAG] team=1 rawDist=589.929 offBoresightDeg=13.9664 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3089.89
+[DIST] team=1 EnemyN=1 MyZ=2953.36 TgtZ=3089.89 Dist=666.721
+[ROOT] team=1 status=2 Z=2953.36 VP=(7441.11,-1419.2,3097.56)
+[DECO_Dist] team=1 UD=Less Cur=752.63 Input=1100
+[CLAMP_DIAG] team=1 rawDist=532.644 offBoresightDeg=49.0327 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2936.19
+[DIST] team=1 EnemyN=1 MyZ=3099.57 TgtZ=2936.19 Dist=844.581
+[ROOT] team=1 status=2 Z=3099.57 VP=(8035.22,-1096.34,3007.89)
+runner:local/env:0	num_steps=[11999] | total rewards=[360.8480] | termination= [max time out]
+[seed 2] reward=   360.85 ownHP=1.0000 tgtHP=0.9964 max time out
+total: 2
+[DECO_Dist] team=1 UD=Less Cur=4160.1 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=7094.71
+[DIST] team=1 EnemyN=1 MyZ=9539.75 TgtZ=7094.71 Dist=3882.51
+[ROOT] team=1 status=2 Z=9539.75 VP=(4294.81,-141.185,8889.75)
+[DECO_Dist] team=1 UD=Less Cur=2714.52 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=7400.71
+[DIST] team=1 EnemyN=1 MyZ=9227.07 TgtZ=7400.71 Dist=2412.89
+[ROOT] team=1 status=2 Z=9227.07 VP=(4561.89,-51.5559,8577.07)
+[DECO_Dist] team=1 UD=Less Cur=1221.67 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=7851.27
+[DIST] team=1 EnemyN=1 MyZ=8744.09 TgtZ=7851.27 Dist=966.23
+[ROOT] team=1 status=2 Z=8744.09 VP=(3745.38,-187.187,8260.98)
+[DECO_Dist] team=1 UD=Less Cur=990.864 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=8301.89
+[DIST] team=1 EnemyN=1 MyZ=8051.17 TgtZ=8301.89 Dist=1234.75
+[ROOT] team=1 status=2 Z=8051.17 VP=(2550.85,-1224.57,8561.31)
+[DECO_Dist] team=1 UD=Less Cur=2310.53 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=8689.91
+[DIST] team=1 EnemyN=1 MyZ=7093.85 TgtZ=8689.91 Dist=2560.9
+[ROOT] team=1 status=2 Z=7093.85 VP=(2144.02,-1897.66,8374.3)
+[DECO_Dist] team=1 UD=Less Cur=3357.91 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=8778.71
+[DIST] team=1 EnemyN=1 MyZ=6063.9 TgtZ=8778.71 Dist=3491.22
+[ROOT] team=1 status=2 Z=6063.9 VP=(2113.84,-2491.51,7809.51)
+[DECO_Dist] team=1 UD=Less Cur=3687.74 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=8463.52
+[DIST] team=1 EnemyN=1 MyZ=5266.53 TgtZ=8463.52 Dist=3647.84
+[ROOT] team=1 status=2 Z=5266.53 VP=(2180.52,-2917.38,7090.45)
+[DECO_Dist] team=1 UD=Less Cur=3148.9 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=7796.77
+[DIST] team=1 EnemyN=1 MyZ=4994.16 TgtZ=7796.77 Dist=2950.63
+[ROOT] team=1 status=2 Z=4994.16 VP=(3302.68,-2776.15,6469.47)
+[DECO_Dist] team=1 UD=Less Cur=1952.05 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=6925.03
+[DIST] team=1 EnemyN=1 MyZ=5296.9 TgtZ=6925.03 Dist=1665.8
+[ROOT] team=1 status=2 Z=5296.9 VP=(2690.05,-3057.96,6129.79)
+[CLAMP_DIAG] team=1 rawDist=764.512 offBoresightDeg=55.6974 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=546.165 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=6007.35
+[DIST] team=1 EnemyN=1 MyZ=5952.68 TgtZ=6007.35 Dist=422.004
+[ROOT] team=1 status=2 Z=5952.68 VP=(2266.93,-3434.03,5741.68)
+[CLAMP_DIAG] team=1 rawDist=659.45 offBoresightDeg=88.2992 clamped=1
+[DECO_Dist] team=1 UD=Less Cur=1166.2 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=5238.61
+[DIST] team=1 EnemyN=1 MyZ=6512.51 TgtZ=5238.61 Dist=1369.02
+[ROOT] team=1 status=2 Z=6512.51 VP=(1395.62,-4469.6,5862.51)
+[DECO_Dist] team=1 UD=Less Cur=1838.44 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=4881.33
+[DIST] team=1 EnemyN=1 MyZ=6651.51 TgtZ=4881.33 Dist=1859.77
+[ROOT] team=1 status=2 Z=6651.51 VP=(883.944,-5386.84,6001.51)
+[DECO_Dist] team=1 UD=Less Cur=1558.72 Input=1100
+[CLAMP_DIAG] team=1 rawDist=894.706 offBoresightDeg=86.893 clamped=1
+[SelectTarget] team=1 EnemyN=1 TgtZ=5001.14
+[DIST] team=1 EnemyN=1 MyZ=6339.51 TgtZ=5001.14 Dist=1394.9
+[ROOT] team=1 status=2 Z=6339.51 VP=(1022.94,-5090.04,5689.51)
+[DECO_Dist] team=1 UD=Less Cur=499.754 Input=1100
+[CLAMP_DIAG] team=1 rawDist=320.754 offBoresightDeg=62.3051 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=5375.12
+[DIST] team=1 EnemyN=1 MyZ=5632.03 TgtZ=5375.12 Dist=257.547
+[ROOT] team=1 status=2 Z=5632.03 VP=(472.618,-6053.49,5503.25)
+[DECO_Dist] team=1 UD=Less Cur=716.036 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=5445.75
+[DIST] team=1 EnemyN=1 MyZ=4738.21 TgtZ=5445.75 Dist=869.548
+[ROOT] team=1 status=2 Z=4738.21 VP=(-572.641,-7368.15,5165.76)
+[DECO_Dist] team=1 UD=Less Cur=1061.58 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=4996.29
+[DIST] team=1 EnemyN=1 MyZ=4113.12 TgtZ=4996.29 Dist=1001.21
+[ROOT] team=1 status=2 Z=4113.12 VP=(-636.84,-7161.4,4613.72)
+[CLAMP_DIAG] team=1 rawDist=585.824 offBoresightDeg=72.1124 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=415.445 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=4194.71
+[DIST] team=1 EnemyN=1 MyZ=3991.19 TgtZ=4194.71 Dist=212.112
+[ROOT] team=1 status=2 Z=3991.19 VP=(-1011.78,-7563.98,4097.25)
+[CLAMP_DIAG] team=1 rawDist=149.435 offBoresightDeg=126.353 clamped=1
+[DECO_Dist] team=1 UD=Less Cur=560.985 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3487.77
+[DIST] team=1 EnemyN=1 MyZ=4113.54 TgtZ=3487.77 Dist=658.311
+[ROOT] team=1 status=2 Z=4113.54 VP=(-1939.98,-8800.01,3784.38)
+[CLAMP_DIAG] team=1 rawDist=608.402 offBoresightDeg=21.7627 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=564.514 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3285.02
+[DIST] team=1 EnemyN=1 MyZ=3714.34 TgtZ=3285.02 Dist=432.971
+[ROOT] team=1 status=2 Z=3714.34 VP=(-1954.45,-8838.33,3497.86)
+[CLAMP_DIAG] team=1 rawDist=386.338 offBoresightDeg=95.8237 clamped=1
+[SelectTarget] team=1 EnemyN=1 TgtZ=3256.69
+[DIST] team=1 EnemyN=1 MyZ=2880.73 TgtZ=3256.69 Dist=582.953
+[ROOT] team=1 status=2 Z=2880.73 VP=(-2890.91,-10699.9,7733.09)
+[SelectTarget] team=1 EnemyN=1 TgtZ=2714.71
+[DIST] team=1 EnemyN=1 MyZ=2249.24 TgtZ=2714.71 Dist=669.022
+[ROOT] team=1 status=2 Z=2249.24 VP=(-3109.56,-10499.4,2583.75)
+[DECO_Dist] team=1 UD=Less Cur=627.928 Input=1100
+[CLAMP_DIAG] team=1 rawDist=415.663 offBoresightDeg=54.1594 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2311.29
+[DIST] team=1 EnemyN=1 MyZ=2213.55 TgtZ=2311.29 Dist=306.28
+[ROOT] team=1 status=2 Z=2213.55 VP=(-3305.69,-11586.8,2305.99)
+[DECO_Dist] team=1 UD=Less Cur=322.641 Input=1100
+[CLAMP_DIAG] team=1 rawDist=428.045 offBoresightDeg=56.6726 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2363.03
+[DIST] team=1 EnemyN=1 MyZ=2372.04 TgtZ=2363.03 Dist=582.864
+[ROOT] team=1 status=2 Z=2372.04 VP=(-3253.18,-12352.3,2336.88)
+[DECO_Dist] team=1 UD=Less Cur=581.136 Input=1100
+[CLAMP_DIAG] team=1 rawDist=465.649 offBoresightDeg=48.1403 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2855.03
+[DIST] team=1 EnemyN=1 MyZ=2383.34 TgtZ=2855.03 Dist=627.02
+[ROOT] team=1 status=2 Z=2383.34 VP=(-3121.89,-13222.9,2696.85)
+[DECO_Dist] team=1 UD=Less Cur=648.222 Input=1100
+[CLAMP_DIAG] team=1 rawDist=428.294 offBoresightDeg=27.8795 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3454.68
+[DIST] team=1 EnemyN=1 MyZ=2766.03 TgtZ=3454.68 Dist=741.491
+[ROOT] team=1 status=2 Z=2766.03 VP=(-2687.06,-13739.1,3136.77)
+[DECO_Dist] team=1 UD=Less Cur=733.925 Input=1100
+[CLAMP_DIAG] team=1 rawDist=420.792 offBoresightDeg=3.18957 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3839.28
+[DIST] team=1 EnemyN=1 MyZ=3461.77 TgtZ=3839.28 Dist=652.295
+[ROOT] team=1 status=2 Z=3461.77 VP=(-2424.41,-14397.3,3787.92)
+[DECO_Dist] team=1 UD=Less Cur=653.35 Input=1100
+[CLAMP_DIAG] team=1 rawDist=541.982 offBoresightDeg=9.86623 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3879.81
+[DIST] team=1 EnemyN=1 MyZ=3888.02 TgtZ=3879.81 Dist=688.957
+[ROOT] team=1 status=2 Z=3888.02 VP=(-2653.8,-15146.1,3888.85)
+[DECO_Dist] team=1 UD=Less Cur=694.122 Input=1100
+[CLAMP_DIAG] team=1 rawDist=591.651 offBoresightDeg=6.99872 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3614.47
+[DIST] team=1 EnemyN=1 MyZ=3859.04 TgtZ=3614.47 Dist=730.037
+[ROOT] team=1 status=2 Z=3859.04 VP=(-3276.63,-15544.2,3661.23)
+[DECO_Dist] team=1 UD=Less Cur=732.232 Input=1100
+[CLAMP_DIAG] team=1 rawDist=622.693 offBoresightDeg=3.51424 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3200.03
+[DIST] team=1 EnemyN=1 MyZ=3544.64 TgtZ=3200.03 Dist=727.301
+[ROOT] team=1 status=2 Z=3544.64 VP=(-3913.2,-15343.5,3256.73)
+[DECO_Dist] team=1 UD=Less Cur=725.755 Input=1100
+[CLAMP_DIAG] team=1 rawDist=609.8 offBoresightDeg=4.65456 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2779.45
+[DIST] team=1 EnemyN=1 MyZ=3101.99 TgtZ=2779.45 Dist=725.725
+[ROOT] team=1 status=2 Z=3101.99 VP=(-4166.72,-14686.7,2828.22)
+[DECO_Dist] team=1 UD=Less Cur=732.783 Input=1100
+[CLAMP_DIAG] team=1 rawDist=623.701 offBoresightDeg=4.88742 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2455.74
+[DIST] team=1 EnemyN=1 MyZ=2665.8 TgtZ=2455.74 Dist=695.149
+[ROOT] team=1 status=2 Z=2665.8 VP=(-4491.74,-13987.9,2484.82)
+[DECO_Dist] team=1 UD=Less Cur=683.998 Input=1100
+[CLAMP_DIAG] team=1 rawDist=545.981 offBoresightDeg=5.71979 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2445.94
+[DIST] team=1 EnemyN=1 MyZ=2390.96 TgtZ=2445.94 Dist=616.803
+[ROOT] team=1 status=2 Z=2390.96 VP=(-5258.2,-13643.2,2428.79)
+[DECO_Dist] team=1 UD=Less Cur=615.795 Input=1100
+[CLAMP_DIAG] team=1 rawDist=500.341 offBoresightDeg=20.6688 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2697.69
+[DIST] team=1 EnemyN=1 MyZ=2388.03 TgtZ=2697.69 Dist=668.475
+[ROOT] team=1 status=2 Z=2388.03 VP=(-6010.16,-13868.6,2648.71)
+[DECO_Dist] team=1 UD=Less Cur=680.916 Input=1100
+[CLAMP_DIAG] team=1 rawDist=594.055 offBoresightDeg=32.6798 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3062.26
+[DIST] team=1 EnemyN=1 MyZ=2628.98 TgtZ=3062.26 Dist=810.411
+[ROOT] team=1 status=2 Z=2628.98 VP=(-6291.53,-14493.6,3002.6)
+[DECO_Dist] team=1 UD=Less Cur=825.45 Input=1100
+[CLAMP_DIAG] team=1 rawDist=741.88 offBoresightDeg=27.2369 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3355.63
+[DIST] team=1 EnemyN=1 MyZ=2974.04 TgtZ=3355.63 Dist=848.762
+[ROOT] team=1 status=2 Z=2974.04 VP=(-6236.65,-15202.9,3322.6)
+[DECO_Dist] team=1 UD=Less Cur=830.585 Input=1100
+[CLAMP_DIAG] team=1 rawDist=693.206 offBoresightDeg=8.91525 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3358.83
+[DIST] team=1 EnemyN=1 MyZ=3295.05 TgtZ=3358.83 Dist=733.778
+[ROOT] team=1 status=2 Z=3295.05 VP=(-6630.3,-15824.5,3370.94)
+[DECO_Dist] team=1 UD=Less Cur=746.188 Input=1100
+[CLAMP_DIAG] team=1 rawDist=675.315 offBoresightDeg=38.1795 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3159.29
+[DIST] team=1 EnemyN=1 MyZ=3423.72 TgtZ=3159.29 Dist=988.19
+[ROOT] team=1 status=2 Z=3423.72 VP=(-7162.07,-15992.8,3233.83)
+[DECO_Dist] team=1 UD=Less Cur=1025.9 Input=1100
+[CLAMP_DIAG] team=1 rawDist=893.414 offBoresightDeg=40.7559 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2870.19
+[DIST] team=1 EnemyN=1 MyZ=3264.84 TgtZ=2870.19 Dist=1309.46
+[ROOT] team=1 status=2 Z=3264.84 VP=(-7971.1,-15854.4,3002.17)
+[DECO_Dist] team=1 UD=Less Cur=1329.26 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2640.64
+[DIST] team=1 EnemyN=1 MyZ=2975.24 TgtZ=2640.64 Dist=1321.05
+[ROOT] team=1 status=2 Z=2975.24 VP=(-8914.15,-15678.3,2656.77)
+[DECO_Dist] team=1 UD=Less Cur=1304.78 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2695.91
+[DIST] team=1 EnemyN=1 MyZ=2739.58 TgtZ=2695.91 Dist=1080.46
+[ROOT] team=1 status=2 Z=2739.58 VP=(-9614.78,-16129.8,2671.35)
+[DECO_Dist] team=1 UD=Less Cur=1050.96 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2906.96
+[DIST] team=1 EnemyN=1 MyZ=2686.25 TgtZ=2906.96 Dist=825.823
+[ROOT] team=1 status=2 Z=2686.25 VP=(-9805.72,-16884.8,2868.8)
+[DECO_Dist] team=1 UD=Less Cur=810.785 Input=1100
+[CLAMP_DIAG] team=1 rawDist=693.354 offBoresightDeg=17.1863 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3094.16
+[DIST] team=1 EnemyN=1 MyZ=2820.67 TgtZ=3094.16 Dist=829.965
+[ROOT] team=1 status=2 Z=2820.67 VP=(-9403.89,-17541,3068.92)
+[DECO_Dist] team=1 UD=Less Cur=848.952 Input=1100
+[CLAMP_DIAG] team=1 rawDist=754.998 offBoresightDeg=30.7166 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3142.86
+[DIST] team=1 EnemyN=1 MyZ=2995.86 TgtZ=3142.86 Dist=806.666
+[ROOT] team=1 status=2 Z=2995.86 VP=(-9029.94,-18233.3,3141.79)
+[DECO_Dist] team=1 UD=Less Cur=783.588 Input=1100
+[CLAMP_DIAG] team=1 rawDist=663.335 offBoresightDeg=11.4329 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3016.83
+[DIST] team=1 EnemyN=1 MyZ=3104.14 TgtZ=3016.83 Dist=776.718
+[ROOT] team=1 status=2 Z=3104.14 VP=(-9265.55,-18974.1,3035.27)
+[DECO_Dist] team=1 UD=Less Cur=806.336 Input=1100
+[CLAMP_DIAG] team=1 rawDist=556.765 offBoresightDeg=50.6569 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2804.24
+[DIST] team=1 EnemyN=1 MyZ=3022.66 TgtZ=2804.24 Dist=1118.9
+[ROOT] team=1 status=2 Z=3022.66 VP=(-9848.51,-19513.8,2824.78)
+[DECO_Dist] team=1 UD=Less Cur=1127.59 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2813.57
+[DIST] team=1 EnemyN=1 MyZ=2781.35 TgtZ=2813.57 Dist=872.409
+[ROOT] team=1 status=2 Z=2781.35 VP=(-10058.7,-20274.8,2795.08)
+[DECO_Dist] team=1 UD=Less Cur=832.938 Input=1100
+[CLAMP_DIAG] team=1 rawDist=681.754 offBoresightDeg=12.991 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2962.12
+[DIST] team=1 EnemyN=1 MyZ=2735.47 TgtZ=2962.12 Dist=731.549
+[ROOT] team=1 status=2 Z=2735.47 VP=(-9759.32,-21028.4,2934.33)
+[DECO_Dist] team=1 UD=Less Cur=751.572 Input=1100
+[CLAMP_DIAG] team=1 rawDist=625.053 offBoresightDeg=49.5961 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3147.45
+[DIST] team=1 EnemyN=1 MyZ=2832.44 TgtZ=3147.45 Dist=1053.53
+[ROOT] team=1 status=2 Z=2832.44 VP=(-9085.1,-21433.3,3117.92)
+[DECO_Dist] team=1 UD=Less Cur=1068.87 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3172.38
+[DIST] team=1 EnemyN=1 MyZ=2974.51 TgtZ=3172.38 Dist=854.381
+[ROOT] team=1 status=2 Z=2974.51 VP=(-8677.87,-22077.5,3175.12)
+[DECO_Dist] team=1 UD=Less Cur=816.313 Input=1100
+[CLAMP_DIAG] team=1 rawDist=734.111 offBoresightDeg=7.43711 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3021.27
+[DIST] team=1 EnemyN=1 MyZ=3174.82 TgtZ=3021.27 Dist=869.872
+[ROOT] team=1 status=2 Z=3174.82 VP=(-8665.52,-22727.5,3063.39)
+[DECO_Dist] team=1 UD=Less Cur=917.729 Input=1100
+[CLAMP_DIAG] team=1 rawDist=717.726 offBoresightDeg=46.4083 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2903.38
+[DIST] team=1 EnemyN=1 MyZ=3152 TgtZ=2903.38 Dist=1202.31
+[ROOT] team=1 status=2 Z=3152 VP=(-8918.97,-23703.6,2904.37)
+[DECO_Dist] team=1 UD=Less Cur=1192.77 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2949.12
+[DIST] team=1 EnemyN=1 MyZ=2950.21 TgtZ=2949.12 Dist=889.504
+[ROOT] team=1 status=2 Z=2950.21 VP=(-8538.24,-24425.1,2932.3)
+[DECO_Dist] team=1 UD=Less Cur=856.99 Input=1100
+[CLAMP_DIAG] team=1 rawDist=670.939 offBoresightDeg=13.9181 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3041.07
+[DIST] team=1 EnemyN=1 MyZ=2890.22 TgtZ=3041.07 Dist=767.2
+[ROOT] team=1 status=2 Z=2890.22 VP=(-7805.99,-24781.9,3018.32)
+[DECO_Dist] team=1 UD=Less Cur=785.577 Input=1100
+[CLAMP_DIAG] team=1 rawDist=729.826 offBoresightDeg=25.4185 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3030.48
+[DIST] team=1 EnemyN=1 MyZ=2930.54 TgtZ=3030.48 Dist=794.48
+[ROOT] team=1 status=2 Z=2930.54 VP=(-7054.79,-25135.9,3034.47)
+[DECO_Dist] team=1 UD=Less Cur=774.844 Input=1100
+[CLAMP_DIAG] team=1 rawDist=573.456 offBoresightDeg=25.298 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2912.93
+[DIST] team=1 EnemyN=1 MyZ=3040.05 TgtZ=2912.93 Dist=846.874
+[ROOT] team=1 status=2 Z=3040.05 VP=(-6688.28,-25894,2925.82)
+[DECO_Dist] team=1 UD=Less Cur=874.851 Input=1100
+[CLAMP_DIAG] team=1 rawDist=822.525 offBoresightDeg=27.2674 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2870.48
+[DIST] team=1 EnemyN=1 MyZ=3001.61 TgtZ=2870.48 Dist=816.744
+[ROOT] team=1 status=2 Z=3001.61 VP=(-6110.4,-26488.6,2865.24)
+[DECO_Dist] team=1 UD=Less Cur=785.719 Input=1100
+[CLAMP_DIAG] team=1 rawDist=584.05 offBoresightDeg=23.8808 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2960.35
+[DIST] team=1 EnemyN=1 MyZ=2829.64 TgtZ=2960.35 Dist=726.082
+[ROOT] team=1 status=2 Z=2829.64 VP=(-5308.58,-26509.1,2939.34)
+[DECO_Dist] team=1 UD=Less Cur=756.18 Input=1100
+[CLAMP_DIAG] team=1 rawDist=819.096 offBoresightDeg=57.8297 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3122.92
+[DIST] team=1 EnemyN=1 MyZ=2770.59 TgtZ=3122.92 Dist=1057
+[ROOT] team=1 status=2 Z=2770.59 VP=(-4579,-26175.2,3097.31)
+[DECO_Dist] team=1 UD=Less Cur=1058.09 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3085.64
+[DIST] team=1 EnemyN=1 MyZ=2864.3 TgtZ=3085.64 Dist=742.273
+[ROOT] team=1 status=2 Z=2864.3 VP=(-3799.43,-26294.5,3095.68)
+[DECO_Dist] team=1 UD=Less Cur=709.425 Input=1100
+[CLAMP_DIAG] team=1 rawDist=600.16 offBoresightDeg=18.8145 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2928.46
+[DIST] team=1 EnemyN=1 MyZ=3069.94 TgtZ=2928.46 Dist=839.152
+[ROOT] team=1 status=2 Z=3069.94 VP=(-3209.11,-26760.3,2991.89)
+[DECO_Dist] team=1 UD=Less Cur=888.402 Input=1100
+[CLAMP_DIAG] team=1 rawDist=819.033 offBoresightDeg=53.9135 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2905.06
+[DIST] team=1 EnemyN=1 MyZ=3011.26 TgtZ=2905.06 Dist=1062.24
+[ROOT] team=1 status=2 Z=3011.26 VP=(-2604.88,-27483.1,2890.04)
+[DECO_Dist] team=1 UD=Less Cur=1037.43 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3002.03
+[DIST] team=1 EnemyN=1 MyZ=2871.78 TgtZ=3002.03 Dist=722.217
+[ROOT] team=1 status=2 Z=2871.78 VP=(-1788.55,-27574.4,2981.95)
+[CLAMP_DIAG] team=1 rawDist=623.217 offBoresightDeg=16.7954 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=707.769 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3060.14
+[DIST] team=1 EnemyN=1 MyZ=2900.93 TgtZ=3060.14 Dist=822.832
+[ROOT] team=1 status=2 Z=2900.93 VP=(-977.515,-27326.8,3055.99)
+[CLAMP_DIAG] team=1 rawDist=716.403 offBoresightDeg=29.6504 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=823.304 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2978.43
+[DIST] team=1 EnemyN=1 MyZ=2970.73 TgtZ=2978.43 Dist=674.713
+[ROOT] team=1 status=2 Z=2970.73 VP=(-208.64,-27551.9,2992.37)
+[CLAMP_DIAG] team=1 rawDist=518.208 offBoresightDeg=28.6566 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=683.157 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2943.4
+[DIST] team=1 EnemyN=1 MyZ=3090.18 TgtZ=2943.4 Dist=1011.58
+[ROOT] team=1 status=2 Z=3090.18 VP=(520.69,-28042.3,2930.99)
+[DECO_Dist] team=1 UD=Less Cur=1019.16 Input=1100
+[CLAMP_DIAG] team=1 rawDist=905.929 offBoresightDeg=31.4106 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3052.46
+[DIST] team=1 EnemyN=1 MyZ=3028.3 TgtZ=3052.46 Dist=779.851
+[ROOT] team=1 status=2 Z=3028.3 VP=(1357.47,-28080.6,3035.88)
+[DECO_Dist] team=1 UD=Less Cur=763.879 Input=1100
+[CLAMP_DIAG] team=1 rawDist=645.596 offBoresightDeg=17.783 clamped=0
+runner:local/env:0	num_steps=[11999] | total rewards=[417.0440] | termination= [max time out]
+[seed 3] reward=   417.04 ownHP=1.0000 tgtHP=0.9776 max time out
+total: 2
+[SelectTarget] team=1 EnemyN=1 TgtZ=7006.68
+[DIST] team=1 EnemyN=1 MyZ=8178.99 TgtZ=7006.68 Dist=3412.18
+[ROOT] team=1 status=2 Z=8178.99 VP=(4822.18,68.723,7528.99)
+[DECO_Dist] team=1 UD=Less Cur=3346.14 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=7061.42
+[DIST] team=1 EnemyN=1 MyZ=7899.56 TgtZ=7061.42 Dist=2585.81
+[ROOT] team=1 status=2 Z=7899.56 VP=(3898.72,192.892,7249.56)
+[DECO_Dist] team=1 UD=Less Cur=2486.2 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=7116.05
+[DIST] team=1 EnemyN=1 MyZ=7421.56 TgtZ=7116.05 Dist=1515.76
+[ROOT] team=1 status=2 Z=7421.56 VP=(4122.68,94.1036,7074.44)
+[DECO_Dist] team=1 UD=Less Cur=1405.82 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=7014.72
+[DIST] team=1 EnemyN=1 MyZ=6806.62 TgtZ=7014.72 Dist=697.541
+[ROOT] team=1 status=2 Z=6806.62 VP=(2417.52,-334.267,6739.7)
+[DECO_Dist] team=1 UD=Less Cur=700.463 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=6670.16
+[DIST] team=1 EnemyN=1 MyZ=5968.14 TgtZ=6670.16 Dist=1185.03
+[ROOT] team=1 status=2 Z=5968.14 VP=(1700.69,-984.651,5932.84)
+[DECO_Dist] team=1 UD=Less Cur=1234.87 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=6010.41
+[DIST] team=1 EnemyN=1 MyZ=5011.48 TgtZ=6010.41 Dist=1337.87
+[ROOT] team=1 status=2 Z=5011.48 VP=(1557.46,-1478.71,5059.75)
+[DECO_Dist] team=1 UD=Less Cur=1310.21 Input=1100
+[CLAMP_DIAG] team=1 rawDist=306.61 offBoresightDeg=41.4704 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=5104.07
+[DIST] team=1 EnemyN=1 MyZ=4294.09 TgtZ=5104.07 Dist=834.102
+[ROOT] team=1 status=2 Z=4294.09 VP=(1322.75,725.372,2781.58)
+[DECO_Dist] team=1 UD=Less Cur=780.126 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=4060.98
+[DIST] team=1 EnemyN=1 MyZ=3742.78 TgtZ=4060.98 Dist=688.543
+[ROOT] team=1 status=2 Z=3742.78 VP=(1171.04,-2058.26,3476.72)
+[DECO_Dist] team=1 UD=Less Cur=717.305 Input=1100
+[CLAMP_DIAG] team=1 rawDist=467.059 offBoresightDeg=76.2169 clamped=1
+[SelectTarget] team=1 EnemyN=1 TgtZ=3179.99
+[DIST] team=1 EnemyN=1 MyZ=2956.4 TgtZ=3179.99 Dist=767.038
+[ROOT] team=1 status=2 Z=2956.4 VP=(-1005.58,-3072.41,7775.46)
+[SelectTarget] team=1 EnemyN=1 TgtZ=2664.89
+[DIST] team=1 EnemyN=1 MyZ=2347.36 TgtZ=2664.89 Dist=780.376
+[ROOT] team=1 status=2 Z=2347.36 VP=(-836,-2760.61,2617.91)
+[DECO_Dist] team=1 UD=Less Cur=845.159 Input=1100
+[CLAMP_DIAG] team=1 rawDist=517.299 offBoresightDeg=60.7206 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2746.33
+[DIST] team=1 EnemyN=1 MyZ=2297.95 TgtZ=2746.33 Dist=933.847
+[ROOT] team=1 status=2 Z=2297.95 VP=(-1745.95,-3585.04,2764.88)
+[DECO_Dist] team=1 UD=Less Cur=900.369 Input=1100
+[CLAMP_DIAG] team=1 rawDist=362.707 offBoresightDeg=21.788 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3057.65
+[DIST] team=1 EnemyN=1 MyZ=2841.9 TgtZ=3057.65 Dist=648.148
+[ROOT] team=1 status=2 Z=2841.9 VP=(-2402.34,-4070.79,3162.76)
+[DECO_Dist] team=1 UD=Less Cur=477.602 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3337.43
+[DIST] team=1 EnemyN=1 MyZ=3654.38 TgtZ=3337.43 Dist=337.175
+[ROOT] team=1 status=2 Z=3654.38 VP=(-3062.28,-4260.83,3485.79)
+[DECO_Dist] team=1 UD=Less Cur=440.5 Input=1100
+[CLAMP_DIAG] team=1 rawDist=463.588 offBoresightDeg=63.6061 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3864.79
+[DIST] team=1 EnemyN=1 MyZ=4259.39 TgtZ=3864.79 Dist=402.787
+[ROOT] team=1 status=2 Z=4259.39 VP=(-3769.99,-4574.23,4192.03)
+[DECO_Dist] team=1 UD=Less Cur=260.136 Input=1100
+[CLAMP_DIAG] team=1 rawDist=164.935 offBoresightDeg=14.5949 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=4542.4
+[DIST] team=1 EnemyN=1 MyZ=4298.68 TgtZ=4542.4 Dist=292.996
+[ROOT] team=1 status=2 Z=4298.68 VP=(-4353.79,-4794.99,4445.18)
+[DECO_Dist] team=1 UD=Less Cur=467.169 Input=1100
+[CLAMP_DIAG] team=1 rawDist=476.814 offBoresightDeg=34.1431 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=4827.59
+[DIST] team=1 EnemyN=1 MyZ=4329.01 TgtZ=4827.59 Dist=540.011
+[ROOT] team=1 status=2 Z=4329.01 VP=(-5238.23,-5454.81,4599.02)
+[DECO_Dist] team=1 UD=Less Cur=451.099 Input=1100
+[CLAMP_DIAG] team=1 rawDist=267.305 offBoresightDeg=24.0659 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=4646.81
+[DIST] team=1 EnemyN=1 MyZ=4667.18 TgtZ=4646.81 Dist=116.936
+[ROOT] team=1 status=2 Z=4667.18 VP=(-5688.85,-5566.48,4612.56)
+[DECO_Dist] team=1 UD=Less Cur=237.495 Input=1100
+[CLAMP_DIAG] team=1 rawDist=489.086 offBoresightDeg=49.7182 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=4574.08
+[DIST] team=1 EnemyN=1 MyZ=5084.98 TgtZ=4574.08 Dist=512.882
+[ROOT] team=1 status=2 Z=5084.98 VP=(-6769.52,-6240.01,4828.54)
+[DECO_Dist] team=1 UD=Less Cur=488.374 Input=1100
+[CLAMP_DIAG] team=1 rawDist=351.88 offBoresightDeg=5.83139 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=4905.34
+[DIST] team=1 EnemyN=1 MyZ=5018.23 TgtZ=4905.34 Dist=113.304
+[ROOT] team=1 status=2 Z=5018.23 VP=(-7115.84,-6431.95,4964.04)
+[DECO_Dist] team=1 UD=Less Cur=137.149 Input=1100
+[CLAMP_DIAG] team=1 rawDist=480.582 offBoresightDeg=54.645 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=5223.28
+[DIST] team=1 EnemyN=1 MyZ=4604.71 TgtZ=5223.28 Dist=622.379
+[ROOT] team=1 status=2 Z=4604.71 VP=(-8291.93,-6859.02,4915.9)
+[DECO_Dist] team=1 UD=Less Cur=694.738 Input=1100
+[CLAMP_DIAG] team=1 rawDist=585.531 offBoresightDeg=32.6114 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=5018.38
+[DIST] team=1 EnemyN=1 MyZ=4484.2 TgtZ=5018.38 Dist=547.631
+[ROOT] team=1 status=2 Z=4484.2 VP=(-8881.04,-7186.9,4717.31)
+[DECO_Dist] team=1 UD=Less Cur=389.044 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=4551.14
+[DIST] team=1 EnemyN=1 MyZ=4715.76 TgtZ=4551.14 Dist=275.423
+[ROOT] team=1 status=2 Z=4715.76 VP=(-9349.47,-7611.83,4578.04)
+[CLAMP_DIAG] team=1 rawDist=163.029 offBoresightDeg=88.29 clamped=1
+[DECO_Dist] team=1 UD=Less Cur=420.961 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=4358.73
+[DIST] team=1 EnemyN=1 MyZ=4830.43 TgtZ=4358.73 Dist=516.216
+[ROOT] team=1 status=2 Z=4830.43 VP=(-10389.9,-8111.62,4572.32)
+[CLAMP_DIAG] team=1 rawDist=416.899 offBoresightDeg=20.5494 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=417.256 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=4469.18
+[DIST] team=1 EnemyN=1 MyZ=4384.65 TgtZ=4469.18 Dist=101.291
+[ROOT] team=1 status=2 Z=4384.65 VP=(-10841.6,-8330.89,4435.29)
+[CLAMP_DIAG] team=1 rawDist=193.736 offBoresightDeg=76.5611 clamped=1
+[DECO_Dist] team=1 UD=Less Cur=289.784 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=4221.3
+[DIST] team=1 EnemyN=1 MyZ=3688.52 TgtZ=4221.3 Dist=552.111
+[ROOT] team=1 status=2 Z=3688.52 VP=(-11815.1,-8995.27,3880.72)
+[CLAMP_DIAG] team=1 rawDist=532.005 offBoresightDeg=45.5162 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=513.714 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3512.11
+[DIST] team=1 EnemyN=1 MyZ=3357.95 TgtZ=3512.11 Dist=199.06
+[ROOT] team=1 status=2 Z=3357.95 VP=(-10945.1,-11350.1,1880.04)
+[DECO_Dist] team=1 UD=Less Cur=248.485 Input=1100
+[CLAMP_DIAG] team=1 rawDist=168.127 offBoresightDeg=103.875 clamped=1
+[SelectTarget] team=1 EnemyN=1 TgtZ=2788.25
+[DIST] team=1 EnemyN=1 MyZ=3140.63 TgtZ=2788.25 Dist=523.933
+[ROOT] team=1 status=2 Z=3140.63 VP=(-13151,-9672.85,2878.66)
+[SelectTarget] team=1 EnemyN=1 TgtZ=2602.57
+[DIST] team=1 EnemyN=1 MyZ=2482.23 TgtZ=2602.57 Dist=249.849
+[ROOT] team=1 status=2 Z=2482.23 VP=(-14971.4,-10884.6,7259.93)
+[DECO_Dist] team=1 UD=Less Cur=403.045 Input=1100
+[CLAMP_DIAG] team=1 rawDist=277.883 offBoresightDeg=69.1918 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2952.47
+[DIST] team=1 EnemyN=1 MyZ=2221.93 TgtZ=2952.47 Dist=805.62
+[ROOT] team=1 status=2 Z=2221.93 VP=(-14857.5,-10804.1,2624.74)
+[DECO_Dist] team=1 UD=Less Cur=888.579 Input=1100
+[CLAMP_DIAG] team=1 rawDist=661.02 offBoresightDeg=31.7732 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3181.94
+[DIST] team=1 EnemyN=1 MyZ=2575.76 TgtZ=3181.94 Dist=714.71
+[ROOT] team=1 status=2 Z=2575.76 VP=(-15586.1,-11391.1,2933.12)
+[DECO_Dist] team=1 UD=Less Cur=535.56 Input=1100
+[CLAMP_DIAG] team=1 rawDist=245.277 offBoresightDeg=16.2374 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3074.47
+[DIST] team=1 EnemyN=1 MyZ=3217.65 TgtZ=3074.47 Dist=191.685
+[ROOT] team=1 status=2 Z=3217.65 VP=(-16041,-11543.4,3121.81)
+[DECO_Dist] team=1 UD=Less Cur=376.248 Input=1100
+[CLAMP_DIAG] team=1 rawDist=761.756 offBoresightDeg=62.6878 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3208.59
+[DIST] team=1 EnemyN=1 MyZ=3863.9 TgtZ=3208.59 Dist=687.99
+[ROOT] team=1 status=2 Z=3863.9 VP=(-17149.5,-12319.9,3599.32)
+[DECO_Dist] team=1 UD=Less Cur=658.065 Input=1100
+[CLAMP_DIAG] team=1 rawDist=535.411 offBoresightDeg=5.1666 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3756.95
+[DIST] team=1 EnemyN=1 MyZ=3987.63 TgtZ=3756.95 Dist=246.063
+[ROOT] team=1 status=2 Z=3987.63 VP=(-17405,-12420.8,3923.02)
+[DECO_Dist] team=1 UD=Less Cur=16.3343 Input=1100
+[CLAMP_DIAG] team=1 rawDist=299.207 offBoresightDeg=61.2865 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=4245.86
+[DIST] team=1 EnemyN=1 MyZ=3797.5 TgtZ=4245.86 Dist=493.347
+[ROOT] team=1 status=2 Z=3797.5 VP=(-18310.8,-12803.5,4044.18)
+[DECO_Dist] team=1 UD=Less Cur=549.654 Input=1100
+[CLAMP_DIAG] team=1 rawDist=416.739 offBoresightDeg=28.6098 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=4211.05
+[DIST] team=1 EnemyN=1 MyZ=3880.06 TgtZ=4211.05 Dist=357.106
+[ROOT] team=1 status=2 Z=3880.06 VP=(-18805.6,-13288.5,4058.61)
+[DECO_Dist] team=1 UD=Less Cur=185.383 Input=1100
+[CLAMP_DIAG] team=1 rawDist=223.079 offBoresightDeg=63.5456 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3955.12
+[DIST] team=1 EnemyN=1 MyZ=4293.38 TgtZ=3955.12 Dist=339.127
+[ROOT] team=1 status=2 Z=4293.38 VP=(-19579,-13723.9,4123.82)
+[DECO_Dist] team=1 UD=Less Cur=450.749 Input=1100
+[CLAMP_DIAG] team=1 rawDist=452.954 offBoresightDeg=15.6269 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=4125.1
+[DIST] team=1 EnemyN=1 MyZ=4445.94 TgtZ=4125.1 Dist=321.818
+[ROOT] team=1 status=2 Z=4445.94 VP=(-20257.8,-14131.7,4290.1)
+[DECO_Dist] team=1 UD=Less Cur=123.877 Input=1100
+[CLAMP_DIAG] team=1 rawDist=273.838 offBoresightDeg=58.5674 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=4529.27
+[DIST] team=1 EnemyN=1 MyZ=4086.59 TgtZ=4529.27 Dist=445.923
+[ROOT] team=1 status=2 Z=4086.59 VP=(-21078.9,-14460.8,4309.55)
+[DECO_Dist] team=1 UD=Less Cur=616.949 Input=1100
+[CLAMP_DIAG] team=1 rawDist=630.854 offBoresightDeg=34.9496 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=4512.69
+[DIST] team=1 EnemyN=1 MyZ=3872.82 TgtZ=4512.69 Dist=646.793
+[ROOT] team=1 status=2 Z=3872.82 VP=(-21968,-14822.7,4196.21)
+[DECO_Dist] team=1 UD=Less Cur=524.571 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=4089.49
+[DIST] team=1 EnemyN=1 MyZ=4078.67 TgtZ=4089.49 Dist=197.942
+[ROOT] team=1 status=2 Z=4078.67 VP=(-22237,-15200.9,3982.97)
+[CLAMP_DIAG] team=1 rawDist=128.134 offBoresightDeg=115.819 clamped=1
+[DECO_Dist] team=1 UD=Less Cur=309.33 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3808.31
+[DIST] team=1 EnemyN=1 MyZ=4280.9 TgtZ=3808.31 Dist=517.395
+[ROOT] team=1 status=2 Z=4280.9 VP=(-23328.8,-15771.3,4022.2)
+[CLAMP_DIAG] team=1 rawDist=428.332 offBoresightDeg=22.8164 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=456.008 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3908.53
+[DIST] team=1 EnemyN=1 MyZ=3908.35 TgtZ=3908.53 Dist=70.0778
+[ROOT] team=1 status=2 Z=3908.35 VP=(-21977.3,-17504,1990.24)
+[CLAMP_DIAG] team=1 rawDist=131.975 offBoresightDeg=78.3932 clamped=1
+[DECO_Dist] team=1 UD=Less Cur=220.619 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3719.44
+[DIST] team=1 EnemyN=1 MyZ=3247.5 TgtZ=3719.44 Dist=489.346
+[ROOT] team=1 status=2 Z=3247.5 VP=(-24719.5,-16655.8,3425.37)
+[CLAMP_DIAG] team=1 rawDist=472.943 offBoresightDeg=39.6098 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=439.744 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3034.15
+[DIST] team=1 EnemyN=1 MyZ=2989.13 TgtZ=3034.15 Dist=134.823
+[ROOT] team=1 status=2 Z=2989.13 VP=(-25120.2,-16775.2,2925.55)
+[DECO_Dist] team=1 UD=Less Cur=275.107 Input=1100
+[CLAMP_DIAG] team=1 rawDist=165.506 offBoresightDeg=72.2948 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2435.98
+[DIST] team=1 EnemyN=1 MyZ=2730.56 TgtZ=2435.98 Dist=403.08
+[ROOT] team=1 status=2 Z=2730.56 VP=(-26991.9,-18292.3,7524.77)
+[SelectTarget] team=1 EnemyN=1 TgtZ=2434.39
+[DIST] team=1 EnemyN=1 MyZ=2248.59 TgtZ=2434.39 Dist=285.675
+[ROOT] team=1 status=2 Z=2248.59 VP=(-26711.4,-17934.9,2391.43)
+[DECO_Dist] team=1 UD=Less Cur=316.68 Input=1100
+[CLAMP_DIAG] team=1 rawDist=254.52 offBoresightDeg=65.5505 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2937.8
+[DIST] team=1 EnemyN=1 MyZ=2268.84 TgtZ=2937.8 Dist=747.331
+[ROOT] team=1 status=2 Z=2268.84 VP=(-27547,-18836,2642.5)
+[DECO_Dist] team=1 UD=Less Cur=765.451 Input=1100
+[CLAMP_DIAG] team=1 rawDist=530.025 offBoresightDeg=31.0451 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3258.25
+[DIST] team=1 EnemyN=1 MyZ=2754.4 TgtZ=3258.25 Dist=574.361
+[ROOT] team=1 status=2 Z=2754.4 VP=(-27651.1,-18692.6,3041.58)
+[DECO_Dist] team=1 UD=Less Cur=530.221 Input=1100
+[CLAMP_DIAG] team=1 rawDist=366.49 offBoresightDeg=25.8352 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3231.51
+[DIST] team=1 EnemyN=1 MyZ=3408.59 TgtZ=3231.51 Dist=191.276
+[ROOT] team=1 status=2 Z=3408.59 VP=(-28803.3,-19464.1,3312.95)
+[DECO_Dist] team=1 UD=Less Cur=236.082 Input=1100
+[CLAMP_DIAG] team=1 rawDist=452.796 offBoresightDeg=54.524 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3493.41
+[DIST] team=1 EnemyN=1 MyZ=3754.37 TgtZ=3493.41 Dist=323.767
+[ROOT] team=1 status=2 Z=3754.37 VP=(-29261.3,-19851.9,3592.49)
+[DECO_Dist] team=1 UD=Less Cur=291.085 Input=1100
+[CLAMP_DIAG] team=1 rawDist=135.194 offBoresightDeg=57.9939 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3969.55
+[DIST] team=1 EnemyN=1 MyZ=3598.9 TgtZ=3969.55 Dist=388.413
+[ROOT] team=1 status=2 Z=3598.9 VP=(-30102.2,-20745.9,3793.11)
+[DECO_Dist] team=1 UD=Less Cur=412.416 Input=1100
+[CLAMP_DIAG] team=1 rawDist=236.904 offBoresightDeg=89.7707 clamped=1
+[SelectTarget] team=1 EnemyN=1 TgtZ=3941.21
+[DIST] team=1 EnemyN=1 MyZ=3724.91 TgtZ=3941.21 Dist=240.782
+[ROOT] team=1 status=2 Z=3724.91 VP=(-30422.7,-20994.9,3845.3)
+[DECO_Dist] team=1 UD=Less Cur=204.35 Input=1100
+[CLAMP_DIAG] team=1 rawDist=272.839 offBoresightDeg=39.8114 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3597.19
+[DIST] team=1 EnemyN=1 MyZ=4086.56 TgtZ=3597.19 Dist=537.166
+[ROOT] team=1 status=2 Z=4086.56 VP=(-30991.2,-21544.1,3817.97)
+[DECO_Dist] team=1 UD=Less Cur=556.209 Input=1100
+[CLAMP_DIAG] team=1 rawDist=306.677 offBoresightDeg=65.9718 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3595.23
+[DIST] team=1 EnemyN=1 MyZ=3884.04 TgtZ=3595.23 Dist=454.365
+[ROOT] team=1 status=2 Z=3884.04 VP=(-31547.1,-22138,3656.86)
+[DECO_Dist] team=1 UD=Less Cur=447.922 Input=1100
+[CLAMP_DIAG] team=1 rawDist=417.983 offBoresightDeg=19.1167 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3508.23
+[DIST] team=1 EnemyN=1 MyZ=3353.42 TgtZ=3508.23 Dist=583.966
+[ROOT] team=1 status=2 Z=3353.42 VP=(-32359.8,-22737.4,3525.68)
+[DECO_Dist] team=1 UD=Less Cur=592.073 Input=1100
+[CLAMP_DIAG] team=1 rawDist=485.064 offBoresightDeg=38.9214 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3198.84
+[DIST] team=1 EnemyN=1 MyZ=3216.37 TgtZ=3198.84 Dist=716.575
+[ROOT] team=1 status=2 Z=3216.37 VP=(-33217,-22742.1,3244.17)
+[DECO_Dist] team=1 UD=Less Cur=732.921 Input=1100
+[CLAMP_DIAG] team=1 rawDist=634.254 offBoresightDeg=42.4082 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2744.19
+[DIST] team=1 EnemyN=1 MyZ=3138.68 TgtZ=2744.19 Dist=1032.49
+[ROOT] team=1 status=2 Z=3138.68 VP=(-33869.9,-22259.8,2820.71)
+[DECO_Dist] team=1 UD=Less Cur=1050.72 Input=1100
+[CLAMP_DIAG] team=1 rawDist=898.475 offBoresightDeg=2.94148 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2444.16
+[DIST] team=1 EnemyN=1 MyZ=2808.02 TgtZ=2444.16 Dist=1005.43
+[ROOT] team=1 status=2 Z=2808.02 VP=(-34616.5,-21776.2,2473.41)
+[DECO_Dist] team=1 UD=Less Cur=990.822 Input=1100
+[CLAMP_DIAG] team=1 rawDist=754.234 offBoresightDeg=20.137 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2516.72
+[DIST] team=1 EnemyN=1 MyZ=2458.18 TgtZ=2516.72 Dist=877.769
+[ROOT] team=1 status=2 Z=2458.18 VP=(-35557.2,-21775.1,2491.5)
+[DECO_Dist] team=1 UD=Less Cur=879.002 Input=1100
+[CLAMP_DIAG] team=1 rawDist=869.713 offBoresightDeg=36.7595 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2807.3
+[DIST] team=1 EnemyN=1 MyZ=2367.7 TgtZ=2807.3 Dist=993.582
+[ROOT] team=1 status=2 Z=2367.7 VP=(-36234.3,-22298.6,2760.84)
+[DECO_Dist] team=1 UD=Less Cur=1006.08 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3136.25
+[DIST] team=1 EnemyN=1 MyZ=2544.94 TgtZ=3136.25 Dist=1194.97
+[ROOT] team=1 status=2 Z=2544.94 VP=(-36390.6,-22932.5,2981.56)
+[DECO_Dist] team=1 UD=Less Cur=1208.94 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3330.71
+[DIST] team=1 EnemyN=1 MyZ=2856.1 TgtZ=3330.71 Dist=1193.69
+[ROOT] team=1 status=2 Z=2856.1 VP=(-36347.6,-23862.1,3311.6)
+[DECO_Dist] team=1 UD=Less Cur=1176.53 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3250.85
+[DIST] team=1 EnemyN=1 MyZ=3156.65 TgtZ=3250.85 Dist=963.925
+[ROOT] team=1 status=2 Z=3156.65 VP=(-36883.5,-24463.7,3268.29)
+[DECO_Dist] team=1 UD=Less Cur=957.789 Input=1100
+[CLAMP_DIAG] team=1 rawDist=850.001 offBoresightDeg=29.139 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3022.25
+[DIST] team=1 EnemyN=1 MyZ=3255.81 TgtZ=3022.25 Dist=1046.85
+[ROOT] team=1 status=2 Z=3255.81 VP=(-37666.4,-24518.6,3052.02)
+[DECO_Dist] team=1 UD=Less Cur=1063.72 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2788.57
+[DIST] team=1 EnemyN=1 MyZ=3075.12 TgtZ=2788.57 Dist=1363.73
+[ROOT] team=1 status=2 Z=3075.12 VP=(-38396.4,-24128,2804.55)
+[DECO_Dist] team=1 UD=Less Cur=1375.38 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2770.28
+[DIST] team=1 EnemyN=1 MyZ=2778.7 TgtZ=2770.28 Dist=1210.56
+[ROOT] team=1 status=2 Z=2778.7 VP=(-39229,-24142.2,2758.17)
+[DECO_Dist] team=1 UD=Less Cur=1184.45 Input=1100
+[CLAMP_DIAG] team=1 rawDist=820.064 offBoresightDeg=8.54462 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2924.15
+[DIST] team=1 EnemyN=1 MyZ=2726.48 TgtZ=2924.15 Dist=864.867
+[ROOT] team=1 status=2 Z=2726.48 VP=(-39836.7,-24670.7,2894.48)
+[DECO_Dist] team=1 UD=Less Cur=849.577 Input=1100
+runner:local/env:0	num_steps=[11999] | total rewards=[-7.9016] | termination= [max time out]
+[seed 4] reward=    -7.90 ownHP=1.0000 tgtHP=1.0000 max time out
+total: 2
+[SelectTarget] team=1 EnemyN=1 TgtZ=7035.66
+[DIST] team=1 EnemyN=1 MyZ=8871.26 TgtZ=7035.66 Dist=2572.16
+[ROOT] team=1 status=2 Z=8871.26 VP=(4563.43,359.088,8221.26)
+[DECO_Dist] team=1 UD=Less Cur=2554.01 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=7211.74
+[DIST] team=1 EnemyN=1 MyZ=8382.9 TgtZ=7211.74 Dist=2115.66
+[ROOT] team=1 status=2 Z=8382.9 VP=(3626.98,515.665,7732.9)
+[DECO_Dist] team=1 UD=Less Cur=2073.28 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=7341.94
+[DIST] team=1 EnemyN=1 MyZ=7556.24 TgtZ=7341.94 Dist=1407.16
+[ROOT] team=1 status=2 Z=7556.24 VP=(2997.56,1144.02,7298.14)
+[DECO_Dist] team=1 UD=Less Cur=1359.75 Input=1100
+[CLAMP_DIAG] team=1 rawDist=379.776 offBoresightDeg=83.4988 clamped=1
+[SelectTarget] team=1 EnemyN=1 TgtZ=7190.31
+[DIST] team=1 EnemyN=1 MyZ=6522.62 TgtZ=7190.31 Dist=932.065
+[ROOT] team=1 status=2 Z=6522.62 VP=(2530.94,-1675.89,5232.79)
+[DECO_Dist] team=1 UD=Less Cur=933.102 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=6623.03
+[DIST] team=1 EnemyN=1 MyZ=5385.89 TgtZ=6623.03 Dist=1242.7
+[ROOT] team=1 status=2 Z=5385.89 VP=(1777.3,1410.86,5777.4)
+[CLAMP_DIAG] team=1 rawDist=751.677 offBoresightDeg=106.078 clamped=1
+[DECO_Dist] team=1 UD=Less Cur=1268.83 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=5742.18
+[DIST] team=1 EnemyN=1 MyZ=4349.54 TgtZ=5742.18 Dist=1395.74
+[ROOT] team=1 status=2 Z=4349.54 VP=(1518.76,926.997,4663.96)
+[CLAMP_DIAG] team=1 rawDist=332.429 offBoresightDeg=124.471 clamped=1
+[DECO_Dist] team=1 UD=Less Cur=1388.61 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=4732.33
+[DIST] team=1 EnemyN=1 MyZ=3805.12 TgtZ=4732.33 Dist=1148.18
+[ROOT] team=1 status=2 Z=3805.12 VP=(640.377,1432.54,3843.79)
+[CLAMP_DIAG] team=1 rawDist=49.4473 offBoresightDeg=142.463 clamped=1
+[DECO_Dist] team=1 UD=Less Cur=1127.86 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3927.14
+[DIST] team=1 EnemyN=1 MyZ=3782.41 TgtZ=3927.14 Dist=1066.57
+[ROOT] team=1 status=2 Z=3782.41 VP=(-474.744,1868.76,1500)
+[DECO_Dist] team=1 UD=Less Cur=1074.32 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3521.27
+[DIST] team=1 EnemyN=1 MyZ=3552.73 TgtZ=3521.27 Dist=1118.04
+[ROOT] team=1 status=2 Z=3552.73 VP=(-1568.06,1987.97,3145.02)
+[DECO_Dist] team=1 UD=Less Cur=1108.6 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3126.05
+[DIST] team=1 EnemyN=1 MyZ=2769.39 TgtZ=3126.05 Dist=956.366
+[ROOT] team=1 status=2 Z=2769.39 VP=(-3872.06,2576.66,7557.08)
+[SelectTarget] team=1 EnemyN=1 TgtZ=2656.05
+[DIST] team=1 EnemyN=1 MyZ=2284.73 TgtZ=2656.05 Dist=937.052
+[ROOT] team=1 status=2 Z=2284.73 VP=(-4803.78,3313.55,7055.12)
+[CLAMP_DIAG] team=1 rawDist=456.792 offBoresightDeg=93.9571 clamped=1
+[DECO_Dist] team=1 UD=Less Cur=950.211 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2755.89
+[DIST] team=1 EnemyN=1 MyZ=2260.9 TgtZ=2755.89 Dist=1005.77
+[ROOT] team=1 status=2 Z=2260.9 VP=(-4586.89,3212.36,2763.79)
+[CLAMP_DIAG] team=1 rawDist=508.259 offBoresightDeg=44.8878 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=975.04 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3063.6
+[DIST] team=1 EnemyN=1 MyZ=2901.22 TgtZ=3063.6 Dist=646.862
+[ROOT] team=1 status=2 Z=2901.22 VP=(-5287.78,3606.33,3128.64)
+[CLAMP_DIAG] team=1 rawDist=247.612 offBoresightDeg=14.1447 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=496.689 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3376.83
+[DIST] team=1 EnemyN=1 MyZ=3777.71 TgtZ=3376.83 Dist=402.273
+[ROOT] team=1 status=2 Z=3777.71 VP=(-5876.89,4026.82,3583.49)
+[DECO_Dist] team=1 UD=Less Cur=512.532 Input=1100
+[CLAMP_DIAG] team=1 rawDist=700.684 offBoresightDeg=41.8423 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3981.93
+[DIST] team=1 EnemyN=1 MyZ=4470.15 TgtZ=3981.93 Dist=547.916
+[ROOT] team=1 status=2 Z=4470.15 VP=(-6467.77,4446.77,4494.74)
+[DECO_Dist] team=1 UD=Less Cur=444.189 Input=1100
+[CLAMP_DIAG] team=1 rawDist=153.89 offBoresightDeg=3.07042 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=4770.85
+[DIST] team=1 EnemyN=1 MyZ=4654.11 TgtZ=4770.85 Dist=146.901
+[ROOT] team=1 status=2 Z=4654.11 VP=(-6643.9,4636.89,4727.56)
+[DECO_Dist] team=1 UD=Less Cur=331.947 Input=1100
+[CLAMP_DIAG] team=1 rawDist=474.548 offBoresightDeg=38.3662 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=5279.96
+[DIST] team=1 EnemyN=1 MyZ=4727.63 TgtZ=5279.96 Dist=625.713
+[ROOT] team=1 status=2 Z=4727.63 VP=(-7524.16,5428.14,5040.48)
+[DECO_Dist] team=1 UD=Less Cur=610.504 Input=1100
+[CLAMP_DIAG] team=1 rawDist=343.009 offBoresightDeg=14.036 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=5294.62
+[DIST] team=1 EnemyN=1 MyZ=5050.11 TgtZ=5294.62 Dist=327.779
+[ROOT] team=1 status=2 Z=5050.11 VP=(-8034.06,5630.41,5192.23)
+[DECO_Dist] team=1 UD=Less Cur=205.138 Input=1100
+[CLAMP_DIAG] team=1 rawDist=375.863 offBoresightDeg=55.5534 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=5180.15
+[DIST] team=1 EnemyN=1 MyZ=5551.07 TgtZ=5180.15 Dist=374.62
+[ROOT] team=1 status=2 Z=5551.07 VP=(-8834.07,6080.25,5363.76)
+[DECO_Dist] team=1 UD=Less Cur=443.08 Input=1100
+[CLAMP_DIAG] team=1 rawDist=335.938 offBoresightDeg=6.63579 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=5420.12
+[DIST] team=1 EnemyN=1 MyZ=5712.72 TgtZ=5420.12 Dist=295.966
+[ROOT] team=1 status=2 Z=5712.72 VP=(-9384.46,6470.91,5589.77)
+[DECO_Dist] team=1 UD=Less Cur=153.481 Input=1100
+[CLAMP_DIAG] team=1 rawDist=434.737 offBoresightDeg=62.8848 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=5806.95
+[DIST] team=1 EnemyN=1 MyZ=5386.03 TgtZ=5806.95 Dist=430.917
+[ROOT] team=1 status=2 Z=5386.03 VP=(-10022.2,7055,5601.49)
+[DECO_Dist] team=1 UD=Less Cur=568.862 Input=1100
+[CLAMP_DIAG] team=1 rawDist=585.194 offBoresightDeg=40.2927 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=5762.15
+[DIST] team=1 EnemyN=1 MyZ=5104.06 TgtZ=5762.15 Dist=664.965
+[ROOT] team=1 status=2 Z=5104.06 VP=(-10914.5,7374.93,5436.54)
+[DECO_Dist] team=1 UD=Less Cur=598.407 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=5315.09
+[DIST] team=1 EnemyN=1 MyZ=5191.94 TgtZ=5315.09 Dist=241.293
+[ROOT] team=1 status=2 Z=5191.94 VP=(-9130.62,9816.38,4478.34)
+[DECO_Dist] team=1 UD=Less Cur=240.911 Input=1100
+[CLAMP_DIAG] team=1 rawDist=139.935 offBoresightDeg=115.446 clamped=1
+[SelectTarget] team=1 EnemyN=1 TgtZ=4843.47
+[DIST] team=1 EnemyN=1 MyZ=5374.47 TgtZ=4843.47 Dist=608.469
+[ROOT] team=1 status=2 Z=5374.47 VP=(-12202.7,8335.39,5070.24)
+[DECO_Dist] team=1 UD=Less Cur=644.948 Input=1100
+[CLAMP_DIAG] team=1 rawDist=513.695 offBoresightDeg=20.2614 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=4734.5
+[DIST] team=1 EnemyN=1 MyZ=5087.66 TgtZ=4734.5 Dist=405.646
+[ROOT] team=1 status=2 Z=5087.66 VP=(-12792.6,8722.51,4884.84)
+[DECO_Dist] team=1 UD=Less Cur=252.978 Input=1100
+[CLAMP_DIAG] team=1 rawDist=130.641 offBoresightDeg=5.04398 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=4714.63
+[DIST] team=1 EnemyN=1 MyZ=4387.97 TgtZ=4714.63 Dist=347.183
+[ROOT] team=1 status=2 Z=4387.97 VP=(-13487.6,9197.17,4561.56)
+[DECO_Dist] team=1 UD=Less Cur=468.549 Input=1100
+[CLAMP_DIAG] team=1 rawDist=631.742 offBoresightDeg=55.8754 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=4211.51
+[DIST] team=1 EnemyN=1 MyZ=3776.14 TgtZ=4211.51 Dist=453.758
+[ROOT] team=1 status=2 Z=3776.14 VP=(-14214.7,9481.99,3871.55)
+[DECO_Dist] team=1 UD=Less Cur=338.005 Input=1100
+[CLAMP_DIAG] team=1 rawDist=151.325 offBoresightDeg=21.0549 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3403.64
+[DIST] team=1 EnemyN=1 MyZ=3584.98 TgtZ=3403.64 Dist=302.356
+[ROOT] team=1 status=2 Z=3584.98 VP=(-14686.4,9803.77,3433.81)
+[DECO_Dist] team=1 UD=Less Cur=413.022 Input=1100
+[CLAMP_DIAG] team=1 rawDist=262.538 offBoresightDeg=24.4624 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2886.9
+[DIST] team=1 EnemyN=1 MyZ=3090.04 TgtZ=2886.9 Dist=296.949
+[ROOT] team=1 status=2 Z=3090.04 VP=(-16569.5,10607.9,7948.08)
+[SelectTarget] team=1 EnemyN=1 TgtZ=2962.47
+[DIST] team=1 EnemyN=1 MyZ=2377.08 TgtZ=2962.47 Dist=586.716
+[ROOT] team=1 status=2 Z=2377.08 VP=(-17528.5,11172.7,7146.94)
+[DECO_Dist] team=1 UD=Less Cur=824.427 Input=1100
+[CLAMP_DIAG] team=1 rawDist=551.328 offBoresightDeg=100.043 clamped=1
+[SelectTarget] team=1 EnemyN=1 TgtZ=3236.59
+[DIST] team=1 EnemyN=1 MyZ=2260.64 TgtZ=3236.59 Dist=984.465
+[ROOT] team=1 status=2 Z=2260.64 VP=(-16881.1,10881.9,2752.87)
+[DECO_Dist] team=1 UD=Less Cur=853.052 Input=1100
+[CLAMP_DIAG] team=1 rawDist=371.943 offBoresightDeg=101.74 clamped=1
+[SelectTarget] team=1 EnemyN=1 TgtZ=3009.54
+[DIST] team=1 EnemyN=1 MyZ=2740.87 TgtZ=3009.54 Dist=275.127
+[ROOT] team=1 status=2 Z=2740.87 VP=(-17602.4,11151.5,2878.43)
+[DECO_Dist] team=1 UD=Less Cur=138.65 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2634.63
+[DIST] team=1 EnemyN=1 MyZ=3511.92 TgtZ=2634.63 Dist=972.413
+[ROOT] team=1 status=2 Z=3511.92 VP=(-19763.9,11574,3025.71)
+[DECO_Dist] team=1 UD=Less Cur=1262.52 Input=1100
+[CLAMP_DIAG] team=1 rawDist=843.934 offBoresightDeg=59.1006 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2678.89
+[DIST] team=1 EnemyN=1 MyZ=3931.4 TgtZ=2678.89 Dist=1438.78
+[ROOT] team=1 status=2 Z=3931.4 VP=(-19583.3,11586.2,3281.4)
+[DECO_Dist] team=1 UD=Less Cur=1324.18 Input=1100
+[CLAMP_DIAG] team=1 rawDist=799.8 offBoresightDeg=3.39067 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3157.19
+[DIST] team=1 EnemyN=1 MyZ=3713.31 TgtZ=3157.19 Dist=908.965
+[ROOT] team=1 status=2 Z=3713.31 VP=(-20301,11682.5,3258.83)
+[DECO_Dist] team=1 UD=Less Cur=772.619 Input=1100
+[CLAMP_DIAG] team=1 rawDist=696.075 offBoresightDeg=39.504 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3574.98
+[DIST] team=1 EnemyN=1 MyZ=3211.59 TgtZ=3574.98 Dist=855.972
+[ROOT] team=1 status=2 Z=3211.59 VP=(-21157,11878.9,3526.39)
+[DECO_Dist] team=1 UD=Less Cur=946.62 Input=1100
+[CLAMP_DIAG] team=1 rawDist=773.776 offBoresightDeg=47.8056 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3657.21
+[DIST] team=1 EnemyN=1 MyZ=3107.45 TgtZ=3657.21 Dist=1037.79
+[ROOT] team=1 status=2 Z=3107.45 VP=(-21811.8,12406.2,3626.34)
+[DECO_Dist] team=1 UD=Less Cur=1032.74 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3444.72
+[DIST] team=1 EnemyN=1 MyZ=3348.45 TgtZ=3444.72 Dist=1007.88
+[ROOT] team=1 status=2 Z=3348.45 VP=(-22260.6,13099.3,3479.81)
+[DECO_Dist] team=1 UD=Less Cur=1009.14 Input=1100
+[CLAMP_DIAG] team=1 rawDist=895.884 offBoresightDeg=9.44665 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3043.29
+[DIST] team=1 EnemyN=1 MyZ=3390.68 TgtZ=3043.29 Dist=1014.45
+[ROOT] team=1 status=2 Z=3390.68 VP=(-22133.5,13851.6,3098.89)
+[DECO_Dist] team=1 UD=Less Cur=1012.47 Input=1100
+[CLAMP_DIAG] team=1 rawDist=901.071 offBoresightDeg=7.27223 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2608.22
+[DIST] team=1 EnemyN=1 MyZ=3055.23 TgtZ=2608.22 Dist=1038.82
+[ROOT] team=1 status=2 Z=3055.23 VP=(-21606.8,14459.8,2659.63)
+[DECO_Dist] team=1 UD=Less Cur=1029.35 Input=1100
+[CLAMP_DIAG] team=1 rawDist=837.442 offBoresightDeg=3.06543 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2363.64
+[DIST] team=1 EnemyN=1 MyZ=2635.69 TgtZ=2363.64 Dist=952.469
+[ROOT] team=1 status=2 Z=2635.69 VP=(-21422.4,15296.2,2383.39)
+[DECO_Dist] team=1 UD=Less Cur=900.483 Input=1100
+[CLAMP_DIAG] team=1 rawDist=689.367 offBoresightDeg=6.97588 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2452.07
+[DIST] team=1 EnemyN=1 MyZ=2384.25 TgtZ=2452.07 Dist=796.737
+[ROOT] team=1 status=2 Z=2384.25 VP=(-21773.9,16133.9,2425.39)
+[DECO_Dist] team=1 UD=Less Cur=755.736 Input=1100
+[CLAMP_DIAG] team=1 rawDist=600.98 offBoresightDeg=21.2892 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2763.58
+[DIST] team=1 EnemyN=1 MyZ=2440.7 TgtZ=2763.58 Dist=716.78
+[ROOT] team=1 status=2 Z=2440.7 VP=(-22493.5,16515,2712.36)
+[DECO_Dist] team=1 UD=Less Cur=727 Input=1100
+[CLAMP_DIAG] team=1 rawDist=584.512 offBoresightDeg=38.1221 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3117.39
+[DIST] team=1 EnemyN=1 MyZ=2726.03 TgtZ=3117.39 Dist=805.58
+[ROOT] team=1 status=2 Z=2726.03 VP=(-23059.7,16352.1,2957.61)
+[DECO_Dist] team=1 UD=Less Cur=856.566 Input=1100
+[CLAMP_DIAG] team=1 rawDist=710.612 offBoresightDeg=3.13673 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3344.98
+[DIST] team=1 EnemyN=1 MyZ=3061.48 TgtZ=3344.98 Dist=785.348
+[ROOT] team=1 status=2 Z=3061.48 VP=(-23829.4,15855.8,3322.58)
+[DECO_Dist] team=1 UD=Less Cur=707.666 Input=1100
+[CLAMP_DIAG] team=1 rawDist=608.574 offBoresightDeg=40.5545 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3281.84
+[DIST] team=1 EnemyN=1 MyZ=3321.63 TgtZ=3281.84 Dist=739.177
+[ROOT] team=1 status=2 Z=3321.63 VP=(-24612.4,15958.8,3298.23)
+[DECO_Dist] team=1 UD=Less Cur=863.108 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3089.11
+[DIST] team=1 EnemyN=1 MyZ=3360.98 TgtZ=3089.11 Dist=1092.13
+[ROOT] team=1 status=2 Z=3360.98 VP=(-25299.6,16407.4,3107.91)
+[DECO_Dist] team=1 UD=Less Cur=1114.03 Input=1100
+[CLAMP_DIAG] team=1 rawDist=855.659 offBoresightDeg=13.8203 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2835.54
+[DIST] team=1 EnemyN=1 MyZ=3137.59 TgtZ=2835.54 Dist=1109.67
+[ROOT] team=1 status=2 Z=3137.59 VP=(-26109.1,16723.2,2875.17)
+[DECO_Dist] team=1 UD=Less Cur=1073.19 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2692.99
+[DIST] team=1 EnemyN=1 MyZ=2853.54 TgtZ=2692.99 Dist=964.985
+[ROOT] team=1 status=2 Z=2853.54 VP=(-26978.3,16819,2697.38)
+[DECO_Dist] team=1 UD=Less Cur=908.103 Input=1100
+[CLAMP_DIAG] team=1 rawDist=768.924 offBoresightDeg=8.11296 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2782.55
+[DIST] team=1 EnemyN=1 MyZ=2678.71 TgtZ=2782.55 Dist=815.573
+[ROOT] team=1 status=2 Z=2678.71 VP=(-27701.9,16356.4,2758.1)
+[DECO_Dist] team=1 UD=Less Cur=791.774 Input=1100
+[CLAMP_DIAG] team=1 rawDist=673.791 offBoresightDeg=22.7253 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2980.79
+[DIST] team=1 EnemyN=1 MyZ=2699.29 TgtZ=2980.79 Dist=807.437
+[ROOT] team=1 status=2 Z=2699.29 VP=(-27887.8,15582.6,2946.74)
+[DECO_Dist] team=1 UD=Less Cur=848.133 Input=1100
+[CLAMP_DIAG] team=1 rawDist=682.144 offBoresightDeg=31.5076 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3150.36
+[DIST] team=1 EnemyN=1 MyZ=2856.91 TgtZ=3150.36 Dist=937.772
+[ROOT] team=1 status=2 Z=2856.91 VP=(-27579.3,14833.7,3133.2)
+[DECO_Dist] team=1 UD=Less Cur=898.066 Input=1100
+[CLAMP_DIAG] team=1 rawDist=758.486 offBoresightDeg=0.855328 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3130.11
+[DIST] team=1 EnemyN=1 MyZ=3046.8 TgtZ=3130.11 Dist=746.504
+[ROOT] team=1 status=2 Z=3046.8 VP=(-27650,14029.4,3138.49)
+[DECO_Dist] team=1 UD=Less Cur=744.382 Input=1100
+[CLAMP_DIAG] team=1 rawDist=662.815 offBoresightDeg=38.966 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2959.04
+[DIST] team=1 EnemyN=1 MyZ=3123.23 TgtZ=2959.04 Dist=926.87
+[ROOT] team=1 status=2 Z=3123.23 VP=(-28079.2,13535,3017.96)
+[DECO_Dist] team=1 UD=Less Cur=1060.75 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2856.09
+[DIST] team=1 EnemyN=1 MyZ=2975.65 TgtZ=2856.09 Dist=1106.28
+[ROOT] team=1 status=2 Z=2975.65 VP=(-28924.9,12992.8,2853.41)
+[DECO_Dist] team=1 UD=Less Cur=999.086 Input=1100
+[CLAMP_DIAG] team=1 rawDist=790.449 offBoresightDeg=9.27537 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2926.73
+[DIST] team=1 EnemyN=1 MyZ=2809.71 TgtZ=2926.73 Dist=768.048
+[ROOT] team=1 status=2 Z=2809.71 VP=(-29127.7,12190,2906.68)
+[DECO_Dist] team=1 UD=Less Cur=727.947 Input=1100
+[CLAMP_DIAG] team=1 rawDist=636.272 offBoresightDeg=36.4865 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3043.42
+[DIST] team=1 EnemyN=1 MyZ=2828.91 TgtZ=3043.42 Dist=843.132
+[ROOT] team=1 status=2 Z=2828.91 VP=(-28896.5,11575,2944.96)
+[DECO_Dist] team=1 UD=Less Cur=957.71 Input=1100
+[CLAMP_DIAG] team=1 rawDist=912.084 offBoresightDeg=39.9344 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3050.74
+[DIST] team=1 EnemyN=1 MyZ=2897.92 TgtZ=3050.74 Dist=975.797
+[ROOT] team=1 status=2 Z=2897.92 VP=(-28309.6,10786.7,3054.08)
+[DECO_Dist] team=1 UD=Less Cur=866.95 Input=1100
+[CLAMP_DIAG] team=1 rawDist=533.922 offBoresightDeg=20.2913 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2931.31
+[DIST] team=1 EnemyN=1 MyZ=2985.12 TgtZ=2931.31 Dist=783.385
+[ROOT] team=1 status=2 Z=2985.12 VP=(-28361.1,9953.6,2945.56)
+[DECO_Dist] team=1 UD=Less Cur=886.336 Input=1100
+[CLAMP_DIAG] team=1 rawDist=848.915 offBoresightDeg=25.2129 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2850.93
+[DIST] team=1 EnemyN=1 MyZ=3013.33 TgtZ=2850.93 Dist=927.202
+[ROOT] team=1 status=2 Z=3013.33 VP=(-28330.3,9116.03,2851.98)
+[DECO_Dist] team=1 UD=Less Cur=835.898 Input=1100
+[CLAMP_DIAG] team=1 rawDist=597.478 offBoresightDeg=13.3319 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2919.52
+[DIST] team=1 EnemyN=1 MyZ=2859.02 TgtZ=2919.52 Dist=676.6
+[ROOT] team=1 status=2 Z=2859.02 VP=(-27743.2,8547.32,2899.23)
+[DECO_Dist] team=1 UD=Less Cur=678.142 Input=1100
+[CLAMP_DIAG] team=1 rawDist=556.045 offBoresightDeg=52.7694 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3045.63
+[DIST] team=1 EnemyN=1 MyZ=2811.66 TgtZ=3045.63 Dist=854.744
+[ROOT] team=1 status=2 Z=2811.66 VP=(-27094.7,8477.67,2956.58)
+[DECO_Dist] team=1 UD=Less Cur=970.695 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3065.88
+[DIST] team=1 EnemyN=1 MyZ=2857.38 TgtZ=3065.88 Dist=949.511
+[ROOT] team=1 status=2 Z=2857.38 VP=(-26135.2,8665.35,3069.09)
+[CLAMP_DIAG] team=1 rawDist=862.523 offBoresightDeg=18.9801 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=824.296 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2946.62
+[DIST] team=1 EnemyN=1 MyZ=2992.5 TgtZ=2946.62 Dist=748.051
+[ROOT] team=1 status=2 Z=2992.5 VP=(-25548.8,8370.99,2992.54)
+[CLAMP_DIAG] team=1 rawDist=516.527 offBoresightDeg=28.0417 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=867.172 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2880.62
+[DIST] team=1 EnemyN=1 MyZ=3039.78 TgtZ=2880.62 Dist=982.145
+[ROOT] team=1 status=2 Z=3039.78 VP=(-24736.5,7749.39,2873.96)
+[CLAMP_DIAG] team=1 rawDist=889.78 offBoresightDeg=27.7327 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=905.936 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2953.38
+[DIST] team=1 EnemyN=1 MyZ=2896.36 TgtZ=2953.38 Dist=698.603
+[ROOT] team=1 status=2 Z=2896.36 VP=(-23919,7830.84,2934.16)
+[CLAMP_DIAG] team=1 rawDist=597.33 offBoresightDeg=13.5545 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=667.81 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3054.18
+[DIST] team=1 EnemyN=1 MyZ=2865.16 TgtZ=3054.18 Dist=808.677
+[ROOT] team=1 status=2 Z=2865.16 VP=(-23358.7,8426.75,3039.02)
+runner:local/env:0	num_steps=[11999] | total rewards=[260.5020] | termination= [max time out]
+[seed 5] reward=   260.50 ownHP=0.9879 tgtHP=0.9973 max time out
+total: 2
+[DECO_Dist] team=1 UD=Less Cur=2754.43 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=7055.59
+[DIST] team=1 EnemyN=1 MyZ=8209 TgtZ=7055.59 Dist=2167.08
+[ROOT] team=1 status=2 Z=8209 VP=(5318.05,75.3255,7559)
+[DECO_Dist] team=1 UD=Less Cur=1922.31 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=7180.3
+[DIST] team=1 EnemyN=1 MyZ=7790.32 TgtZ=7180.3 Dist=1617.78
+[ROOT] team=1 status=2 Z=7790.32 VP=(4539.82,443.435,7142.29)
+[DECO_Dist] team=1 UD=Less Cur=1591.55 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=7254.56
+[DIST] team=1 EnemyN=1 MyZ=7127.12 TgtZ=7254.56 Dist=1775.58
+[ROOT] team=1 status=2 Z=7127.12 VP=(3758.21,2057.23,6819.02)
+[DECO_Dist] team=1 UD=Less Cur=1930.63 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=7120.08
+[DIST] team=1 EnemyN=1 MyZ=6177.51 TgtZ=7120.08 Dist=2215.61
+[ROOT] team=1 status=2 Z=6177.51 VP=(3827.89,2732.07,6366.27)
+[DECO_Dist] team=1 UD=Less Cur=2300.89 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=6674.54
+[DIST] team=1 EnemyN=1 MyZ=5162.11 TgtZ=6674.54 Dist=2288.97
+[ROOT] team=1 status=2 Z=5162.11 VP=(4087.11,3209.55,5738.24)
+[DECO_Dist] team=1 UD=Less Cur=2180.36 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=5925.25
+[DIST] team=1 EnemyN=1 MyZ=4410.27 TgtZ=5925.25 Dist=1772.08
+[ROOT] team=1 status=2 Z=4410.27 VP=(4424.86,3032.92,5296.31)
+[DECO_Dist] team=1 UD=Less Cur=1496.2 Input=1100
+[CLAMP_DIAG] team=1 rawDist=896.272 offBoresightDeg=66.4459 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=4967.89
+[DIST] team=1 EnemyN=1 MyZ=4172.09 TgtZ=4967.89 Dist=910.937
+[ROOT] team=1 status=2 Z=4172.09 VP=(4643.44,3220.92,4627.56)
+[DECO_Dist] team=1 UD=Less Cur=693.454 Input=1100
+[CLAMP_DIAG] team=1 rawDist=399.366 offBoresightDeg=100.362 clamped=1
+[SelectTarget] team=1 EnemyN=1 TgtZ=4045.07
+[DIST] team=1 EnemyN=1 MyZ=4224.61 TgtZ=4045.07 Dist=718.989
+[ROOT] team=1 status=2 Z=4224.61 VP=(3886.05,3798.64,3865.12)
+[DECO_Dist] team=1 UD=Less Cur=807.875 Input=1100
+[CLAMP_DIAG] team=1 rawDist=412.164 offBoresightDeg=63.6191 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3454.81
+[DIST] team=1 EnemyN=1 MyZ=3795.66 TgtZ=3454.81 Dist=771.217
+[ROOT] team=1 status=2 Z=3795.66 VP=(3368.02,4691.31,3410.05)
+[DECO_Dist] team=1 UD=Less Cur=628.202 Input=1100
+[CLAMP_DIAG] team=1 rawDist=315.159 offBoresightDeg=35.5935 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3041.01
+[DIST] team=1 EnemyN=1 MyZ=2913.21 TgtZ=3041.01 Dist=276.487
+[ROOT] team=1 status=2 Z=2913.21 VP=(2347.01,5991.18,7770.49)
+[SelectTarget] team=1 EnemyN=1 TgtZ=2656.66
+[DIST] team=1 EnemyN=1 MyZ=2258.84 TgtZ=2656.66 Dist=480.212
+[ROOT] team=1 status=2 Z=2258.84 VP=(2582.79,6261.56,2498.94)
+[DECO_Dist] team=1 UD=Less Cur=664.776 Input=1100
+[CLAMP_DIAG] team=1 rawDist=653.976 offBoresightDeg=19.1776 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2833.19
+[DIST] team=1 EnemyN=1 MyZ=2183.82 TgtZ=2833.19 Dist=691.478
+[ROOT] team=1 status=2 Z=2183.82 VP=(1816.13,7102.3,2529.56)
+[DECO_Dist] team=1 UD=Less Cur=671.511 Input=1100
+[CLAMP_DIAG] team=1 rawDist=349.806 offBoresightDeg=65.7583 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3224.31
+[DIST] team=1 EnemyN=1 MyZ=2643.08 TgtZ=3224.31 Dist=582.27
+[ROOT] team=1 status=2 Z=2643.08 VP=(1746.35,7256.98,2934.21)
+[DECO_Dist] team=1 UD=Less Cur=347.117 Input=1100
+[CLAMP_DIAG] team=1 rawDist=430.006 offBoresightDeg=52.8746 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3285.34
+[DIST] team=1 EnemyN=1 MyZ=3390.11 TgtZ=3285.34 Dist=428.964
+[ROOT] team=1 status=2 Z=3390.11 VP=(1391.02,8365.85,3249.11)
+[DECO_Dist] team=1 UD=Less Cur=667.281 Input=1100
+[CLAMP_DIAG] team=1 rawDist=485.32 offBoresightDeg=44.8164 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3439.52
+[DIST] team=1 EnemyN=1 MyZ=3750.18 TgtZ=3439.52 Dist=668.324
+[ROOT] team=1 status=2 Z=3750.18 VP=(1241.51,8906.32,3416.02)
+[DECO_Dist] team=1 UD=Less Cur=677.316 Input=1100
+[CLAMP_DIAG] team=1 rawDist=561.052 offBoresightDeg=10.4521 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3622.93
+[DIST] team=1 EnemyN=1 MyZ=3577.87 TgtZ=3622.93 Dist=698.469
+[ROOT] team=1 status=2 Z=3577.87 VP=(1284,9943.88,3602.02)
+[DECO_Dist] team=1 UD=Less Cur=722.212 Input=1100
+[CLAMP_DIAG] team=1 rawDist=595.807 offBoresightDeg=2.71209 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3542.92
+[DIST] team=1 EnemyN=1 MyZ=3557.84 TgtZ=3542.92 Dist=716.609
+[ROOT] team=1 status=2 Z=3557.84 VP=(1767.81,10673,3560.42)
+[DECO_Dist] team=1 UD=Less Cur=690.543 Input=1100
+[CLAMP_DIAG] team=1 rawDist=563.315 offBoresightDeg=5.53521 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3243.84
+[DIST] team=1 EnemyN=1 MyZ=3446.31 TgtZ=3243.84 Dist=685.405
+[ROOT] team=1 status=2 Z=3446.31 VP=(2546.94,10934.2,3288.19)
+[DECO_Dist] team=1 UD=Less Cur=685.725 Input=1100
+[CLAMP_DIAG] team=1 rawDist=408.602 offBoresightDeg=16.0617 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2839.46
+[DIST] team=1 EnemyN=1 MyZ=3111.02 TgtZ=2839.46 Dist=698.518
+[ROOT] team=1 status=2 Z=3111.02 VP=(3180.71,10743.3,2964.3)
+[DECO_Dist] team=1 UD=Less Cur=695.684 Input=1100
+[CLAMP_DIAG] team=1 rawDist=554.904 offBoresightDeg=5.57926 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2494.26
+[DIST] team=1 EnemyN=1 MyZ=2699.17 TgtZ=2494.26 Dist=673.628
+[ROOT] team=1 status=2 Z=2699.17 VP=(4035,10248.7,2532.26)
+[DECO_Dist] team=1 UD=Less Cur=637.347 Input=1100
+[CLAMP_DIAG] team=1 rawDist=509.715 offBoresightDeg=17.933 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2439.93
+[DIST] team=1 EnemyN=1 MyZ=2395.41 TgtZ=2439.93 Dist=641.788
+[ROOT] team=1 status=2 Z=2395.41 VP=(4929.09,10393.8,2432.94)
+[DECO_Dist] team=1 UD=Less Cur=704.734 Input=1100
+[CLAMP_DIAG] team=1 rawDist=599.371 offBoresightDeg=30.737 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2653.77
+[DIST] team=1 EnemyN=1 MyZ=2341.69 TgtZ=2653.77 Dist=732.456
+[ROOT] team=1 status=2 Z=2341.69 VP=(5536.56,11023.2,2613.84)
+[DECO_Dist] team=1 UD=Less Cur=827.494 Input=1100
+[CLAMP_DIAG] team=1 rawDist=722.473 offBoresightDeg=31.2168 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3011.27
+[DIST] team=1 EnemyN=1 MyZ=2550.41 TgtZ=3011.27 Dist=854.694
+[ROOT] team=1 status=2 Z=2550.41 VP=(5551.61,11779.9,2953.89)
+[DECO_Dist] team=1 UD=Less Cur=920.654 Input=1100
+[CLAMP_DIAG] team=1 rawDist=806.669 offBoresightDeg=11.9974 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3335.53
+[DIST] team=1 EnemyN=1 MyZ=2903.14 TgtZ=3335.53 Dist=901.169
+[ROOT] team=1 status=2 Z=2903.14 VP=(5152.34,12415.5,3296.56)
+[DECO_Dist] team=1 UD=Less Cur=779.804 Input=1100
+[CLAMP_DIAG] team=1 rawDist=671.724 offBoresightDeg=23.5235 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3391.74
+[DIST] team=1 EnemyN=1 MyZ=3262.86 TgtZ=3391.74 Dist=772.952
+[ROOT] team=1 status=2 Z=3262.86 VP=(5132.04,13196.6,3396.19)
+[DECO_Dist] team=1 UD=Less Cur=901.541 Input=1100
+[CLAMP_DIAG] team=1 rawDist=814.629 offBoresightDeg=42.609 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3213.72
+[DIST] team=1 EnemyN=1 MyZ=3441.4 TgtZ=3213.72 Dist=970.826
+[ROOT] team=1 status=2 Z=3441.4 VP=(5648.17,13763,3243.13)
+[DECO_Dist] team=1 UD=Less Cur=1248.63 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2919.5
+[DIST] team=1 EnemyN=1 MyZ=3318.76 TgtZ=2919.5 Dist=1317.96
+[ROOT] team=1 status=2 Z=3318.76 VP=(6314.07,13908.6,2980.27)
+[DECO_Dist] team=1 UD=Less Cur=1380.89 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2651.6
+[DIST] team=1 EnemyN=1 MyZ=3000.69 TgtZ=2651.6 Dist=1344.03
+[ROOT] team=1 status=2 Z=3000.69 VP=(7185.59,14380.3,2676.94)
+[DECO_Dist] team=1 UD=Less Cur=1158.63 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2675.52
+[DIST] team=1 EnemyN=1 MyZ=2740.25 TgtZ=2675.52 Dist=1094.07
+[ROOT] team=1 status=2 Z=2740.25 VP=(7618.74,15152.3,2656.69)
+[DECO_Dist] team=1 UD=Less Cur=901.854 Input=1100
+[CLAMP_DIAG] team=1 rawDist=796.5 offBoresightDeg=12.5218 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2880.43
+[DIST] team=1 EnemyN=1 MyZ=2664.89 TgtZ=2880.43 Dist=860.287
+[ROOT] team=1 status=2 Z=2664.89 VP=(7462.27,15950.2,2843.19)
+[DECO_Dist] team=1 UD=Less Cur=843.725 Input=1100
+[CLAMP_DIAG] team=1 rawDist=683.233 offBoresightDeg=34.2272 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3081.77
+[DIST] team=1 EnemyN=1 MyZ=2772.91 TgtZ=3081.77 Dist=885.492
+[ROOT] team=1 status=2 Z=2772.91 VP=(6873.12,16384.2,3017.29)
+[DECO_Dist] team=1 UD=Less Cur=962.581 Input=1100
+[CLAMP_DIAG] team=1 rawDist=863.338 offBoresightDeg=18.6967 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3158.85
+[DIST] team=1 EnemyN=1 MyZ=2946.24 TgtZ=3158.85 Dist=915.23
+[ROOT] team=1 status=2 Z=2946.24 VP=(6105.55,16762.2,3153.05)
+[DECO_Dist] team=1 UD=Less Cur=740.255 Input=1100
+[CLAMP_DIAG] team=1 rawDist=637.167 offBoresightDeg=22.0632 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3048.71
+[DIST] team=1 EnemyN=1 MyZ=3078.39 TgtZ=3048.71 Dist=741.085
+[ROOT] team=1 status=2 Z=3078.39 VP=(5854.75,17523.8,3065.65)
+[DECO_Dist] team=1 UD=Less Cur=951.281 Input=1100
+[CLAMP_DIAG] team=1 rawDist=848.223 offBoresightDeg=47.8654 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2871.27
+[DIST] team=1 EnemyN=1 MyZ=3048.49 TgtZ=2871.27 Dist=1038.88
+[ROOT] team=1 status=2 Z=3048.49 VP=(6142.49,18299.8,2887.77)
+[DECO_Dist] team=1 UD=Less Cur=1055.78 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2863.44
+[DIST] team=1 EnemyN=1 MyZ=2843.19 TgtZ=2863.44 Dist=976.776
+[ROOT] team=1 status=2 Z=2843.19 VP=(6181.42,19115.8,2852.24)
+[DECO_Dist] team=1 UD=Less Cur=736.404 Input=1100
+[CLAMP_DIAG] team=1 rawDist=641.251 offBoresightDeg=16.4711 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2968.82
+[DIST] team=1 EnemyN=1 MyZ=2787.22 TgtZ=2968.82 Dist=716.359
+[ROOT] team=1 status=2 Z=2787.22 VP=(5692.52,19771.3,2945.72)
+[DECO_Dist] team=1 UD=Less Cur=871.433 Input=1100
+[CLAMP_DIAG] team=1 rawDist=754.52 offBoresightDeg=45.7974 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3067.29
+[DIST] team=1 EnemyN=1 MyZ=2866.56 TgtZ=3067.29 Dist=946.723
+[ROOT] team=1 status=2 Z=2866.56 VP=(4901.51,19969.3,3056.03)
+[DECO_Dist] team=1 UD=Less Cur=920.815 Input=1100
+[CLAMP_DIAG] team=1 rawDist=841.917 offBoresightDeg=12.1786 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3022.04
+[DIST] team=1 EnemyN=1 MyZ=2938.49 TgtZ=3022.04 Dist=842.497
+[ROOT] team=1 status=2 Z=2938.49 VP=(4227.66,20400.5,3030.45)
+[DECO_Dist] team=1 UD=Less Cur=797.629 Input=1100
+[CLAMP_DIAG] team=1 rawDist=685.788 offBoresightDeg=41.8742 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2895.02
+[DIST] team=1 EnemyN=1 MyZ=2969.96 TgtZ=2895.02 Dist=874.571
+[ROOT] team=1 status=2 Z=2969.96 VP=(3862.07,21175.2,2903.48)
+[DECO_Dist] team=1 UD=Less Cur=900.842 Input=1100
+[CLAMP_DIAG] team=1 rawDist=818.294 offBoresightDeg=21.624 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2868.65
+[DIST] team=1 EnemyN=1 MyZ=2863.79 TgtZ=2868.65 Dist=823.685
+[ROOT] team=1 status=2 Z=2863.79 VP=(3228.14,21703.3,2860.99)
+[DECO_Dist] team=1 UD=Less Cur=635.31 Input=1100
+[CLAMP_DIAG] team=1 rawDist=530.162 offBoresightDeg=23.9487 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2964.37
+[DIST] team=1 EnemyN=1 MyZ=2811.28 TgtZ=2964.37 Dist=652.363
+[ROOT] team=1 status=2 Z=2811.28 VP=(2423.98,21675.5,2941.92)
+[DECO_Dist] team=1 UD=Less Cur=909.392 Input=1100
+[CLAMP_DIAG] team=1 rawDist=786.277 offBoresightDeg=53.7962 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3113.9
+[DIST] team=1 EnemyN=1 MyZ=2852.71 TgtZ=3113.9 Dist=982.861
+[ROOT] team=1 status=2 Z=2852.71 VP=(1817.91,21155.2,3091.13)
+[DECO_Dist] team=1 UD=Less Cur=892.932 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3121.99
+[DIST] team=1 EnemyN=1 MyZ=2939.21 TgtZ=3121.99 Dist=793.989
+[ROOT] team=1 status=2 Z=2939.21 VP=(1090,20915.2,3125.15)
+[CLAMP_DIAG] team=1 rawDist=682.471 offBoresightDeg=4.98054 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=718.574 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2974.18
+[DIST] team=1 EnemyN=1 MyZ=3109.6 TgtZ=2974.18 Dist=802.813
+[ROOT] team=1 status=2 Z=3109.6 VP=(465.48,21094.7,3010.09)
+[CLAMP_DIAG] team=1 rawDist=564.576 offBoresightDeg=47.2697 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=1127.54 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2886.65
+[DIST] team=1 EnemyN=1 MyZ=3055.39 TgtZ=2886.65 Dist=1145.16
+[ROOT] team=1 status=2 Z=3055.39 VP=(-417.493,21611.8,2880.85)
+[DECO_Dist] team=1 UD=Less Cur=914.581 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2958.86
+[DIST] team=1 EnemyN=1 MyZ=2869.16 TgtZ=2958.86 Dist=828.387
+[ROOT] team=1 status=2 Z=2869.16 VP=(-1222.88,21504.7,2938.53)
+[CLAMP_DIAG] team=1 rawDist=684.911 offBoresightDeg=12.192 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=745.897 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3048.59
+[DIST] team=1 EnemyN=1 MyZ=2868.79 TgtZ=3048.59 Dist=796.524
+[ROOT] team=1 status=2 Z=2868.79 VP=(-1840.36,20942.1,3036.06)
+[CLAMP_DIAG] team=1 rawDist=722.913 offBoresightDeg=34.1084 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=830.927 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3019.03
+[DIST] team=1 EnemyN=1 MyZ=2934.08 TgtZ=3019.03 Dist=778.65
+[ROOT] team=1 status=2 Z=2934.08 VP=(-2538.33,20507.6,3024.97)
+[CLAMP_DIAG] team=1 rawDist=639.752 offBoresightDeg=10.6844 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=769.562 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2902.06
+[DIST] team=1 EnemyN=1 MyZ=2982.98 TgtZ=2902.06 Dist=847.22
+[ROOT] team=1 status=2 Z=2982.98 VP=(-3381.82,20558.1,2908.7)
+[CLAMP_DIAG] team=1 rawDist=795.34 offBoresightDeg=44.3234 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=862.724 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2921.01
+[DIST] team=1 EnemyN=1 MyZ=2878.32 TgtZ=2921.01 Dist=781.339
+[ROOT] team=1 status=2 Z=2878.32 VP=(-4160.62,20298.3,2907.45)
+[CLAMP_DIAG] team=1 rawDist=606.475 offBoresightDeg=10.4003 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=614.686 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3017.18
+[DIST] team=1 EnemyN=1 MyZ=2857.04 TgtZ=3017.18 Dist=655.813
+[ROOT] team=1 status=2 Z=2857.04 VP=(-4568.27,19592.9,2996.61)
+[CLAMP_DIAG] team=1 rawDist=468.671 offBoresightDeg=46.8538 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=907.562 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3047.61
+[DIST] team=1 EnemyN=1 MyZ=2909.09 TgtZ=3047.61 Dist=910.819
+[ROOT] team=1 status=2 Z=2909.09 VP=(-4727.63,18767.3,3047.39)
+[CLAMP_DIAG] team=1 rawDist=786.914 offBoresightDeg=27.2672 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=675.283 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2941.88
+[DIST] team=1 EnemyN=1 MyZ=2953.24 TgtZ=2941.88 Dist=659.307
+[ROOT] team=1 status=2 Z=2953.24 VP=(-5217.06,18186.1,2976.5)
+[CLAMP_DIAG] team=1 rawDist=599.183 offBoresightDeg=40.0011 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=833.513 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2860.54
+[DIST] team=1 EnemyN=1 MyZ=2998.28 TgtZ=2860.54 Dist=820.909
+[ROOT] team=1 status=2 Z=2998.28 VP=(-5868.83,17521.8,2862.03)
+[CLAMP_DIAG] team=1 rawDist=684.439 offBoresightDeg=9.38496 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=627.052 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2922.35
+[DIST] team=1 EnemyN=1 MyZ=2854.21 TgtZ=2922.35 Dist=610.368
+[ROOT] team=1 status=2 Z=2854.21 VP=(-5839.98,16694.8,2902.93)
+[CLAMP_DIAG] team=1 rawDist=518.077 offBoresightDeg=37.1623 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=801.901 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3069.46
+[DIST] team=1 EnemyN=1 MyZ=2797.17 TgtZ=3069.46 Dist=891.198
+[ROOT] team=1 status=2 Z=2797.17 VP=(-5287.28,16111.5,3047.12)
+[CLAMP_DIAG] team=1 rawDist=850.987 offBoresightDeg=50.7011 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=900.766 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3104.88
+[DIST] team=1 EnemyN=1 MyZ=2857.9 TgtZ=3104.88 Dist=809.153
+[ROOT] team=1 status=2 Z=2857.9 VP=(-4868.46,15458.7,3104.27)
+[CLAMP_DIAG] team=1 rawDist=625.857 offBoresightDeg=6.30935 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=644.863 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2973.25
+[DIST] team=1 EnemyN=1 MyZ=3058.85 TgtZ=2973.25 Dist=705.491
+[ROOT] team=1 status=2 Z=3058.85 VP=(-4942.85,14638.5,2991.66)
+[CLAMP_DIAG] team=1 rawDist=517.179 offBoresightDeg=47.8283 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=1031.08 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2887.8
+[DIST] team=1 EnemyN=1 MyZ=3046.84 TgtZ=2887.8 Dist=1064.02
+[ROOT] team=1 status=2 Z=3046.84 VP=(-5283.44,13843.2,2882.23)
+[DECO_Dist] team=1 UD=Less Cur=860.876 Input=1100
+[CLAMP_DIAG] team=1 rawDist=695.018 offBoresightDeg=12.1191 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2970.01
+[DIST] team=1 EnemyN=1 MyZ=2866.8 TgtZ=2970.01 Dist=772.55
+[ROOT] team=1 status=2 Z=2866.8 VP=(-5118.23,13044.2,2948.98)
+[DECO_Dist] team=1 UD=Less Cur=733.392 Input=1100
+[CLAMP_DIAG] team=1 rawDist=667.827 offBoresightDeg=38.7839 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3057.07
+[DIST] team=1 EnemyN=1 MyZ=2875.72 TgtZ=3057.07 Dist=793.018
+[ROOT] team=1 status=2 Z=2875.72 VP=(-4525.65,12438.8,3046.99)
+[DECO_Dist] team=1 UD=Less Cur=786.792 Input=1100
+[CLAMP_DIAG] team=1 rawDist=644.449 offBoresightDeg=2.41583 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3013.36
+[DIST] team=1 EnemyN=1 MyZ=2943.71 TgtZ=3013.36 Dist=723.813
+[ROOT] team=1 status=2 Z=2943.71 VP=(-4150.83,11700.9,3021.49)
+[DECO_Dist] team=1 UD=Less Cur=759.471 Input=1100
+[CLAMP_DIAG] team=1 rawDist=706.655 offBoresightDeg=46.1369 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2897.62
+[DIST] team=1 EnemyN=1 MyZ=2980.46 TgtZ=2897.62 Dist=830.64
+[ROOT] team=1 status=2 Z=2980.46 VP=(-4232.5,10846.7,2904.01)
+[DECO_Dist] team=1 UD=Less Cur=787.256 Input=1100
+[CLAMP_DIAG] team=1 rawDist=627.942 offBoresightDeg=7.87383 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2919.47
+[DIST] team=1 EnemyN=1 MyZ=2865.89 TgtZ=2919.47 Dist=699.821
+[ROOT] team=1 status=2 Z=2865.89 VP=(-3944.41,10070.6,2906.13)
+[DECO_Dist] team=1 UD=Less Cur=618.096 Input=1100
+[CLAMP_DIAG] team=1 rawDist=479.05 offBoresightDeg=53.6509 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3021.84
+[DIST] team=1 EnemyN=1 MyZ=2857.28 TgtZ=3021.84 Dist=690.963
+[ROOT] team=1 status=2 Z=2857.28 VP=(-3353.55,9748.72,2966.76)
+[DECO_Dist] team=1 UD=Less Cur=940.085 Input=1100
+[CLAMP_DIAG] team=1 rawDist=850.928 offBoresightDeg=38.7456 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=3065.53
+[DIST] team=1 EnemyN=1 MyZ=2907.61 TgtZ=3065.53 Dist=923.501
+[ROOT] team=1 status=2 Z=2907.61 VP=(-2410,9490.8,3062.85)
+runner:local/env:0	num_steps=[11999] | total rewards=[429.0777] | termination= [max time out]
+[seed 6] reward=   429.08 ownHP=1.0000 tgtHP=0.9652 max time out
+total: 2
+[DECO_Dist] team=1 UD=Less Cur=2825.73 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=7005.24
+[DIST] team=1 EnemyN=1 MyZ=7216.85 TgtZ=7005.24 Dist=2584.34
+[ROOT] team=1 status=2 Z=7216.85 VP=(4824.45,97.445,7077.95)
+[DECO_Dist] team=1 UD=Less Cur=1610.15 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=6961.04
+[DIST] team=1 EnemyN=1 MyZ=6969.1 TgtZ=6961.04 Dist=1265.84
+[ROOT] team=1 status=2 Z=6969.1 VP=(4979.74,146.208,6961.03)
+[CLAMP_DIAG] team=1 rawDist=464.652 offBoresightDeg=9.21175 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=248.04 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=6646.46
+[DIST] team=1 EnemyN=1 MyZ=6808.59 TgtZ=6646.46 Dist=460.188
+[ROOT] team=1 status=2 Z=6808.59 VP=(3852.64,828.616,6578.49)
+[DECO_Dist] team=1 UD=Less Cur=1540.85 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=5979.89
+[DIST] team=1 EnemyN=1 MyZ=6514.21 TgtZ=5979.89 Dist=1817.91
+[ROOT] team=1 status=2 Z=6514.21 VP=(3543.88,1237.84,5864.21)
+[DECO_Dist] team=1 UD=Less Cur=2433.65 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=5101.65
+[DIST] team=1 EnemyN=1 MyZ=5874.92 TgtZ=5101.65 Dist=2512.05
+[ROOT] team=1 status=2 Z=5874.92 VP=(3300.12,677.553,5224.92)
+[DECO_Dist] team=1 UD=Less Cur=2360.04 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=4269.69
+[DIST] team=1 EnemyN=1 MyZ=5001.68 TgtZ=4269.69 Dist=2184.02
+[ROOT] team=1 status=2 Z=5001.68 VP=(3073.88,528.591,4409.68)
+[DECO_Dist] team=1 UD=Less Cur=1258.66 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3671.18
+[DIST] team=1 EnemyN=1 MyZ=4146.68 TgtZ=3671.18 Dist=930.355
+[ROOT] team=1 status=2 Z=4146.68 VP=(3088.48,-281.031,3755.42)
+[CLAMP_DIAG] team=1 rawDist=367.364 offBoresightDeg=59.1166 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=650.328 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3085.11
+[DIST] team=1 EnemyN=1 MyZ=3459.96 TgtZ=3085.11 Dist=878.714
+[ROOT] team=1 status=2 Z=3459.96 VP=(2965.63,-1084.44,3203.52)
+[SelectTarget] team=1 EnemyN=1 TgtZ=2409.14
+[DIST] team=1 EnemyN=1 MyZ=2648.65 TgtZ=2409.14 Dist=1529.23
+[ROOT] team=1 status=2 Z=2648.65 VP=(839.123,-218.56,7428.41)
+[SelectTarget] team=1 EnemyN=1 TgtZ=1974.47
+[DIST] team=1 EnemyN=1 MyZ=2213.61 TgtZ=1974.47 Dist=1530.65
+[DECO_Dist] team=1 UD=Less Cur=1530.65 Input=1100
+[ROOT] team=1 status=2 Z=2213.61 VP=(1512.72,-1870.4,2009.75)
+[SelectTarget] team=1 EnemyN=1 TgtZ=2113.86
+[DIST] team=1 EnemyN=1 MyZ=1988.74 TgtZ=2113.86 Dist=705.003
+[ROOT] team=1 status=2 Z=1988.74 VP=(553.69,-1544.53,2082.58)
+[DECO_Dist] team=1 UD=Less Cur=459.136 Input=1100
+[CLAMP_DIAG] team=1 rawDist=413.847 offBoresightDeg=70.771 clamped=0
+[SelectTarget] team=1 EnemyN=1 TgtZ=2766.86
+[DIST] team=1 EnemyN=1 MyZ=2012.98 TgtZ=2766.86 Dist=850.901
+[ROOT] team=1 status=2 Z=2012.98 VP=(-847.765,-1422.83,2438.43)
+[DECO_Dist] team=1 UD=Less Cur=1143.16 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3369.06
+[DIST] team=1 EnemyN=1 MyZ=2351.93 TgtZ=3369.06 Dist=1275.53
+[ROOT] team=1 status=2 Z=2351.93 VP=(-726.374,-1534.47,2989.7)
+[DECO_Dist] team=1 UD=Less Cur=1131.87 Input=1100
+[CLAMP_DIAG] team=1 rawDist=821.817 offBoresightDeg=75.7493 clamped=1
+[SelectTarget] team=1 EnemyN=1 TgtZ=3443.02
+[DIST] team=1 EnemyN=1 MyZ=2902.4 TgtZ=3443.02 Dist=641.84
+[ROOT] team=1 status=2 Z=2902.4 VP=(-1267.79,-2024.37,3223.32)
+[DECO_Dist] team=1 UD=Less Cur=246.402 Input=1100
+[CLAMP_DIAG] team=1 rawDist=445.661 offBoresightDeg=99.4986 clamped=1
+[SelectTarget] team=1 EnemyN=1 TgtZ=3311.47
+[DIST] team=1 EnemyN=1 MyZ=3577.13 TgtZ=3311.47 Dist=478.596
+[ROOT] team=1 status=2 Z=3577.13 VP=(-2662.47,-2575.22,3337.83)
+[DECO_Dist] team=1 UD=Less Cur=752.921 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3451.81
+[DIST] team=1 EnemyN=1 MyZ=4031.87 TgtZ=3451.81 Dist=819.058
+[ROOT] team=1 status=2 Z=4031.87 VP=(-2887.1,-2567.16,3622.34)
+[CLAMP_DIAG] team=1 rawDist=557.286 offBoresightDeg=49.5057 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=634.598 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3907.49
+[DIST] team=1 EnemyN=1 MyZ=3960.53 TgtZ=3907.49 Dist=294.589
+[ROOT] team=1 status=2 Z=3960.53 VP=(-3685,-2262.34,3901.79)
+[CLAMP_DIAG] team=1 rawDist=473.247 offBoresightDeg=77.9834 clamped=1
+[DECO_Dist] team=1 UD=Less Cur=478.218 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=4162.65
+[DIST] team=1 EnemyN=1 MyZ=3671.64 TgtZ=4162.65 Dist=809.386
+[ROOT] team=1 status=2 Z=3671.64 VP=(-4197.98,-1994.74,4076.34)
+[CLAMP_DIAG] team=1 rawDist=738.852 offBoresightDeg=66.352 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=822.746 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3957.52
+[DIST] team=1 EnemyN=1 MyZ=3622.52 TgtZ=3957.52 Dist=526.406
+[ROOT] team=1 status=2 Z=3622.52 VP=(-4963.54,-1939.66,3885.72)
+[CLAMP_DIAG] team=1 rawDist=298.656 offBoresightDeg=9.72667 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=259.325 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3343.01
+[DIST] team=1 EnemyN=1 MyZ=3786.14 TgtZ=3343.01 Dist=487.655
+[ROOT] team=1 status=2 Z=3786.14 VP=(-5564.21,-1885.01,3542.32)
+[CLAMP_DIAG] team=1 rawDist=365.106 offBoresightDeg=77.8372 clamped=1
+[DECO_Dist] team=1 UD=Less Cur=644.45 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2982.48
+[DIST] team=1 EnemyN=1 MyZ=3539.6 TgtZ=2982.48 Dist=567.681
+[ROOT] team=1 status=2 Z=3539.6 VP=(-6097.09,-1508.37,3255.76)
+[CLAMP_DIAG] team=1 rawDist=241.371 offBoresightDeg=20.5244 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=429.214 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2861.33
+[DIST] team=1 EnemyN=1 MyZ=2851.98 TgtZ=2861.33 Dist=383.833
+[ROOT] team=1 status=2 Z=2851.98 VP=(-7091.76,-1163.28,2851.35)
+[CLAMP_DIAG] team=1 rawDist=419.043 offBoresightDeg=55.2232 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=480.013 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=2955.3
+[DIST] team=1 EnemyN=1 MyZ=2438.07 TgtZ=2955.3 Dist=694.949
+[ROOT] team=1 status=2 Z=2438.07 VP=(-7771.94,-1304.2,2785.55)
+[CLAMP_DIAG] team=1 rawDist=474.628 offBoresightDeg=60.6845 clamped=0
+[DECO_Dist] team=1 UD=Less Cur=784.987 Input=1100
+[SelectTarget] team=1 EnemyN=1 TgtZ=3203.62
+[DIST] team=1 EnemyN=1 MyZ=2539.49 TgtZ=3203.62 Dist=727.578
+[ROOT] team=1 status=2 Z=2539.49 VP
