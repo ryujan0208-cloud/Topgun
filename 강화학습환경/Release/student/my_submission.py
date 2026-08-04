@@ -63,7 +63,7 @@ SERVER_IP = "221.151.77.208"                       # TODO: 경진대회 서버 I
 SERVER_PORT = 9999
 
 # 사용할 백엔드 모드 선택: "rl" | "bt" | "hybrid"
-MODE = "rl"
+MODE = "bt"
 
 # RL 모드 설정
 BUNDLE_DIR = "artifacts/models/team01/v1"          # TODO: 학습된 모델 경로
@@ -73,8 +73,8 @@ OBSERVATION_MODULE = ""                            # custom 관측이면 "studen
 # BT 모드 설정
 # - 기본 배포 Rule은 Rule_forTraining.xml입니다.
 # - 팀별 BT DLL/XML을 제출하는 경우 파일을 Release 루트에 두고 아래 이름을 바꾸세요.
-BT_DLL = "AIP_BASE.dll"
-BT_RULE_XML = "Rule_forTraining.xml"  # 예: "Rule_team01.xml"
+BT_DLL = "AIP_final.dll"
+BT_RULE_XML = "Rule_v27.xml"  # activate_rule_xml이 이걸 Rule_forTraining.xml로 복사하고, AIP_final.dll이 그 이름을 읽는다
 
 # Hybrid 모드 설정 (MODE="hybrid" 일 때만 사용)
 HYBRID_MODE = "residual"   # "residual" | "blend" | "switch"
