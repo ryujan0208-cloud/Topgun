@@ -29,13 +29,17 @@ NodeStatus Action::Task_Jink::tick()
 	static double nextFlip[2] = { 0.0, 0.0 };
 	static int    seqIdx[2]   = { 0, 0 };
 	static double sign[2]     = { 1.0, 1.0 };
-	static double lastRun[2]  = { -1.0, -1.0 };
-
-	if (runTime < lastRun[__ti])           // 에피소드 경계 초기화
+	// v29 수정: RunningTime은 에피소드 경계에서 되감기지 않는다(생성자에서만 0, 매 틱 증가).
+	//  따라서 기존 판정은 한 번도 발동하지 않았고, 저킹 시퀀스가 판을 넘어 이어져
+	//  "결정론적 재현" 주장이 성립하지 않았다. 위치 점프(1틱에 2km+)로 교체한다.
+	static Vector3 lastPos[2];
+	static bool    havePos[2] = { false, false };
+	if (havePos[__ti] && MyLocation.distance(lastPos[__ti]) > 2000.0)
 	{
-		nextFlip[__ti] = 0.0; seqIdx[__ti] = 0; sign[__ti] = 1.0;
+		nextFlip[__ti] = runTime; seqIdx[__ti] = 0; sign[__ti] = 1.0;
 	}
-	lastRun[__ti] = runTime;
+	lastPos[__ti] = MyLocation;
+	havePos[__ti] = true;
 
 	if (runTime >= nextFlip[__ti])
 	{

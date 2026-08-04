@@ -86,7 +86,15 @@ NodeStatus Action::Task_Evade::tick()
 	// (2) 코너속도 확보: 과속이면 감속해 선회율을 얻는다. 이미 느리면 그대로 둔다.
 	//     Evade는 원래 스로틀을 안 건드려 직전 값(대개 1.0)이 유지되고 있었다.
 	{
-		static float lastEvThr[2] = { 1.0f, 1.0f };
+		// v29: 에피소드 경계(위치 점프)에서 스로틀 상태 초기화.
+		//  RunningTime 기반 판정이 작동하지 않아 직전 판의 스로틀을 물려받고 있었다.
+		static float   lastEvThr[2] = { 1.0f, 1.0f };
+		static Vector3 evLastPos[2];
+		static bool    evHavePos[2] = { false, false };
+		if (evHavePos[__t] && MyLocation.distance(evLastPos[__t]) > 2000.0)
+			lastEvThr[__t] = 1.0f;
+		evLastPos[__t] = MyLocation;
+		evHavePos[__t] = true;
 		float tgt = 1.0f;
 		if (mySpd > CORNER_D + 30.0)
 		{

@@ -49,16 +49,24 @@ NodeStatus Action::Task_LeadPredict::tick()
 	const int      HIST = 12;
 
 	// v18: 에피소드 경계에서 static 상태 초기화 (RunningTime 되감김 = 새 에피소드)
-	static double lastRunTime[2] = { -1.0, -1.0 };
-	static bool   needThrReset[2] = { false, false };
-	double runTime = (*BB)->RunningTime;
-	if (runTime < lastRunTime[__ti])
+	// v29: 에피소드 경계 감지를 **위치 점프**로 교체.
+	//  [버그] 기존엔 RunningTime 되감김으로 판정했는데, RunningTime은 BlackBoard 생성자에서만
+	//    0이고 매 틱 증가만 한다. BTActionProvider.reset()이 BT를 재생성하지 않으므로
+	//    ("Keep native BT alive across episode resets") 되감기는 일이 없어 **이 리셋은
+	//    한 번도 발동한 적이 없다.** 새 판이 직전 판의 기수 이력/스로틀을 물려받고 있었다.
+	//  [해법] 리셋 시 기체는 km 단위로 순간이동한다. 1틱에 2km 이상 움직이면 새 에피소드다
+	//    (정상 비행으론 불가능: 60Hz에서 2km = 120km/s).
+	static Vector3 lastPos[2];
+	static bool    havePos[2] = { false, false };
+	static bool    needThrReset[2] = { false, false };
+	if (havePos[__ti] && MyLocation.distance(lastPos[__ti]) > 2000.0)
 	{
 		histCnt[__ti] = 0;
 		histIdx[__ti] = 0;
 		needThrReset[__ti] = true;
 	}
-	lastRunTime[__ti] = runTime;
+	lastPos[__ti] = MyLocation;
+	havePos[__ti] = true;
 
 	Vector3 fwdOld  = fwdHist[__ti][(histIdx[__ti] + 16 - HIST) % 16];
 	bool haveHist   = (histCnt[__ti] >= HIST);
