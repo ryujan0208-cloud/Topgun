@@ -226,24 +226,37 @@ def main():
             for k in range(a.repeats):
                 r = run_scenario(sid, a.own, opp, a.time, not a.no_jitter, seed=1000*sid+k)
                 agg.append(r)
-            # 대표값: 최악(가장 나쁜 판정)을 취해 보수적으로
+            # ★ 2026-08-06 수정: 판정과 표시가 어긋나 있었다.
+            #  [문제] 판정은 **최악 1판**으로 하면서 표시는 **평균**이라
+            #    'FAIL(전환 실패) 사격187.5'처럼 모순돼 보이는 줄이 나온다
+            #    (평균 187.5면 기준 30틱을 한 판은 확실히 넘었다는 뜻).
+            #    게다가 repeats 기본이 2라 **우리 자체 규칙(15시드 이상)을 위반**한다.
+            #    한 판만 나빠도 FAIL로 찍혀 'PASS 0'이 실제보다 과장된다.
+            #  [수정] 판정 분포를 함께 표시한다. 헤드라인은 보수적으로 최악을 유지하되
+            #    'PASS 3/8' 같은 형태로 몇 판이 통과했는지 보이게 한다.
             vs = [verdict(sid, r) for r in agg]
             order = {"FAIL": 0, "WEAK": 1, "PASS": 2}
             worst = min(vs, key=lambda v: order[v[0]])
+            npass_r = sum(1 for v in vs if v[0] == "PASS")
+            nfail_r = sum(1 for v in vs if v[0] == "FAIL")
+            dist = f"P{npass_r}/W{len(vs)-npass_r-nfail_r}/F{nfail_r}"
             wez = sum(r["wez"] for r in agg) / len(agg)
             hit = sum(r["hit"] for r in agg) / len(agg)
             tail = sum(r["tail_pct"] for r in agg) / len(agg)
             tailed = sum(r["tailed_pct"] for r in agg) / len(agg)
             mnalt = min(r["min_alt"] for r in agg)
             mnata = min((r["min_ata"] or 999) for r in agg)
-            print(f"     vs {opp:20} {worst[0]:5} ({worst[1]})   "
+            print(f"     vs {opp:20} {worst[0]:5} [{dist}] ({worst[1]})   "
                   f"사격{wez:5.1f} 피격{hit:5.1f} 뒤{tail:4.0f}% 물림{tailed:4.0f}% "
                   f"최소ATA{mnata:5.1f}° 최저고도{mnalt:5.0f}m")
             table.append(dict(scenario=sid, name=sc["name"], opp=opp, verdict=worst[0],
-                              note=worst[1], wez=wez, hit=hit, tail=tail, tailed=tailed,
+                              note=worst[1], dist=dist, npass_r=npass_r, nrep=len(vs),
+                              wez=wez, hit=hit, tail=tail, tailed=tailed,
                               min_ata=mnata, min_alt=mnalt))
         print()
     # 요약
+    tot_r  = sum(t.get("nrep", 0) for t in table)
+    pass_r = sum(t.get("npass_r", 0) for t in table)
     npass = sum(1 for t in table if t["verdict"] == "PASS")
     nweak = sum(1 for t in table if t["verdict"] == "WEAK")
     nfail = sum(1 for t in table if t["verdict"] == "FAIL")

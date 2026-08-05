@@ -146,6 +146,11 @@ def run(opp, seed, t0, t1, act, horizons):
 
     # 지평선별 스냅샷을 trace에서 뽑는다(창이 끝난 시점 기준).
     snaps = {}
+    # ★ 창 **시작** 기하 — 이게 있어야 "어떤 상황에서 어떤 기동이 이겼나"를 짝지을 수 있다.
+    #   (초판에는 없어서 승자 기동과 상황을 연결할 수 없었다)
+    for (t, d, ata, du) in ov.trace:
+        if t >= t0:
+            snaps["t0"] = (d, ata, du); break
     for h in horizons:
         want = t1 + h
         best = None
