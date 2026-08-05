@@ -185,6 +185,59 @@ NodeStatus Action::Task_LeadPredict::tick()
 	}
 	// =======================================================================
 
+	// ============ v33: 관통 임박 감지 -> lag pursuit 전환 ============
+	// [왜] 오버슈트는 "나쁜 조준점"이 아니라 **물리적으로 못 도는 코너**다.
+	//   LOS 회전율 w = V_perp / r 이라 근접에서 발산한다. 실측: 153m 관통 순간 필요 110deg/s,
+	//   우리 능력은 순간 최대 42.8deg/s(turn_perf2). 3배 차이라 **어떤 VP를 골라도 못 돈다.**
+	//   -> 못 돌 걸 알면서 리드(앞)를 겨누면 안쪽으로 파고들다 그대로 관통한다.
+	//      BFM 정석은 이때 **lag pursuit**(상대 뒤쪽을 겨눔): 선회 여유를 벌고 폐쇄율을 낮춰
+	//      상대 원 바깥에 남았다가 기하가 돌아오면 다시 붙는다.
+	// [근거] 이건 예측(MPC)이 아니라 **규칙 하나**다. 과거 MPC 검토에서 내린 결론이기도 하다
+	//   ("예측 엔진 정교화 대신 아는 행동을 규칙으로"). Syllabus S2 '전환 실패'(뒤를 잡고도
+	//   사격 1틱)와 원 계열 교착이 같은 증상이다.
+	// [리드는 건드리지 않는다] v20a/v25가 리드 자체를 줄였다가 두 번 다 기각됐다.
+	//   여기서는 리드 계산을 그대로 두고, **관통이 임박한 순간에만** 최종 조준점을 뒤로 옮긴다.
+	//   조건이 풀리면 즉시 원래 리드 추적으로 복귀한다(상태를 남기지 않는다).
+	bool lagActive = false;      // 스로틀은 아래 v9/v23b 로직이 최종 대입하므로 플래그로 넘긴다
+	{
+		// LOS 단위벡터 이력으로 시선 회전율을 잰다(요만이 아니라 3D 전체 각).
+		static Vector3 losHist[2][16];
+		static int     losIdx[2] = { 0, 0 };
+		static int     losCnt[2] = { 0, 0 };
+		const int      LHIST = 6;                 // 0.1초 창(60Hz 기준)
+		Vector3 losNow = TargetLocation - MyLocation;
+		double  losLen = losNow.length();
+		if (losLen < 1.0) losLen = 1.0;
+		losNow = losNow / losLen;
+
+		// v29와 동일한 위치점프 기반 에피소드 경계 처리(RunningTime은 작동하지 않는다)
+		if (needThrReset[__ti]) { losCnt[__ti] = 0; losIdx[__ti] = 0; }
+
+		Vector3 losOld = losHist[__ti][(losIdx[__ti] + 16 - LHIST) % 16];
+		bool haveLos = (losCnt[__ti] >= LHIST);
+		losHist[__ti][losIdx[__ti]] = losNow;
+		losIdx[__ti] = (losIdx[__ti] + 1) % 16;
+		if (losCnt[__ti] < 100) losCnt[__ti]++;
+
+		if (haveLos)
+		{
+			double losRate = losOld.angleBetween(losNow) * 57.2957795 / (LHIST * dt);  // deg/s
+			// 우리가 지속적으로 낼 수 있는 선회율(turn_perf2 실측: 하강나선 지속 25.4deg/s가 최대).
+			// 이걸 넘는 시선 회전율은 구조적으로 추종 불가 = 관통 확정.
+			const double TURN_CAP = 25.0;
+			if (losRate > TURN_CAP && dist < 900.0 && tgtSpd > 30.0)
+			{
+				double excess = (losRate - TURN_CAP) / TURN_CAP;   // 0~
+				if (excess > 1.0) excess = 1.0;
+				// 초과분에 비례해 조준점을 상대 뒤쪽으로. 최대 0.6초분(약 150~180m).
+				double lagT = 0.6 * excess;
+				predicted = TargetLocation - TgtFwd * (tgtSpd * lagT);
+				lagActive = true;          // 폐쇄율도 죽여야 관통이 막힌다(아래에서 적용)
+			}
+		}
+	}
+	// =================================================================
+
 	// (v19 에너지 요격 블록은 전제 반증으로 제거 — 이 시뮬은 상승이 속도를 안 깎는다.
 	//  기록: 상대기체 공유파일/2026-07-23_v19_에너지요격_실패/README.md)
 
@@ -329,6 +382,10 @@ NodeStatus Action::Task_LeadPredict::tick()
 	float stepUp = (stepUse > 0.008f) ? stepUse : 0.030f;
 	if (target > cur) { cur += stepUp;  if (cur > target) cur = target; }
 	else              { cur -= stepUse; if (cur < target) cur = target; }
+	// v33: 관통 임박(lag pursuit)이면 폐쇄율을 죽인다. 조준점만 뒤로 옮겨선 부족하다 —
+	//  속도가 그대로면 결국 지나친다. 램프를 타지 않고 즉시 적용하되 상태(lastThr)에는
+	//  남겨 조건 해제 시 위 로직이 정상적으로 램프업으로 복귀하게 한다.
+	if (lagActive && cur > 0.30f) cur = 0.30f;
 	lastThr[__ti] = cur;
 	(*BB)->Throttle = cur;
 
