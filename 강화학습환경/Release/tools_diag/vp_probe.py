@@ -62,6 +62,15 @@ CANDIDATES = [
     ("감속+당김",        ( 0.0, -1.0, 0.0, 0.20)),
 ]
 
+# 초점 모드: 특정 후보만 돌려 구간 수를 늘린다(--focus).
+#  1차 스윕에서 '감속+당김'이 득점 4구간 중 3번 1위(최대 1.001=격추)로 두드러졌으나
+#  같은 기동이 다른 구간에선 최악이었다(피격 0.374). "언제 통하는가"가 트리거 조건이므로
+#  기준 대비로 구간을 많이 보는 게 낫다.
+FOCUS = [
+    ("BT(기준)",        None),
+    ("감속+당김",        ( 0.0, -1.0, 0.0, 0.20)),
+]
+
 
 def _geom(me, en):
     """거리 / 우리 ATA / 고도차(상대-나). ace_pilot.py와 동일한 상태 접근 규약을 쓴다."""
@@ -180,7 +189,8 @@ def main():
     print(hdr); print("-" * len(hdr))
 
     rows = []
-    for name, act in CANDIDATES:
+    cand = FOCUS if os.environ.get("PROBE_FOCUS") else CANDIDATES
+    for name, act in cand:
         snaps, oh, th = run(opp, seed, t0, t1, act, HOR)
         line = f"{name:<16}"
         for h in HOR:
@@ -194,6 +204,12 @@ def main():
         line += f"{1-th:>8.4f}{1-oh:>8.4f}"
         print(line, flush=True)
         rows.append((name, snaps, 1-th, 1-oh))
+        if name.startswith("BT") and "t0" in snaps:
+            # 창 시작 상황 — 패턴 분석에서 이 값과 승자 기동을 짝짓는다.
+            # (기준 후보는 덮어쓰기가 없으므로 이 값이 '개입 전 원래 상황'이다)
+            g = snaps["t0"]
+            print(f"  [창시작] 거리 {g[0]:.0f}m / 우리ATA {g[1]:.0f}도 / "
+                  f"고도차(상대-나) {g[2]:+.0f}m", flush=True)
 
     # 지평선별 순위가 유지되는지 = 이 진단을 믿어도 되는지의 핵심 판정
     print("-" * len(hdr))
