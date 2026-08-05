@@ -610,24 +610,73 @@ class DogFightEnv(gym.Env):
         )
 
     def update_damage(self):
+        """대미지 판정.
+
+        ★ 2026-08-06: 대회 공식 자료(오리엔테이션 PPT 슬라이드 7)와 대조한 결과
+        **로컬 시뮬은 대회의 Phase 1만 구현하고 그것을 200초 내내 적용**하고 있었다.
+        대회는 교전 경과 시간에 따라 판정이 단계적으로 **완화(추가)**된다:
+
+            Phase 1 (0~100s)   : LOS < 1도, 500~3000ft, 대미지 계수 1.0
+            Phase 2 (100~150s) : LOS < 2도, 500~3500ft, 대미지 계수 0.3
+            Phase 3 (150~200s) : LOS < 3도, 500~4000ft, 대미지 계수 0.1
+
+        "하위 Phase에 적이 위치하는 경우 하위 phase의 대미지 적용"
+          -> 시간이 지나도 **더 좁은 콘 안에 있으면 그 높은 계수를 그대로 받는다.**
+             즉 시각 t에 활성화된 phase들 중 **최대 대미지**를 채택한다.
+
+        콘 부피비 1 : 6.36 : 21.37 (PPT 명시)이므로 기대 대미지는
+        1.0 : 1.9 : 2.1 로 **후반 phase가 오히려 유리**하다(정밀도보다 물량).
+
+        [가정 - 대회가 공개하지 않은 부분]
+        거리 감쇠 공식은 대회 자료에 없다("거리에 비례하여 더 높은 데미지"만 명시).
+        기존 로컬 공식 (max-d)/(max-min) 을 phase별 사거리로 일반화해 적용한다.
+        정확한 공식이 공개되면 이 부분만 교체하면 된다.
+
+        config의 wez.phases 가 없으면 기존 단일 판정으로 동작한다(하위 호환).
+        """
         sim_state = self._sim.get_state()
         target_sim_state = self._target_sim.get_state()
         dis_m = self._geo_info._get_distance(sim_state, target_sim_state)
         ownship_ata_deg = self._geo_info._get_antenna_train_angle(sim_state, target_sim_state, False)
         target_ata_deg = self._geo_info._get_antenna_train_angle(target_sim_state, sim_state, False)
 
-        max_range_m = self._wez["max_range_m"]
-        min_range_m = self._wez["min_range_m"]
-        base_range_m = max_range_m - min_range_m
-        half_wez_angle_deg = self._wez["angle_deg"] / 2.0
+        phases = self._wez.get("phases")
+        if phases:
+            t_now = float(sim_state[StateIndex.SIM_TIME])
 
-        target_damage = 0.0
-        ownship_damage = 0.0
-        if base_range_m != 0 and min_range_m <= dis_m <= max_range_m:
-            if half_wez_angle_deg >= abs(ownship_ata_deg):
-                target_damage = ((max_range_m - dis_m) / base_range_m) * self._delta_t
-            if half_wez_angle_deg >= abs(target_ata_deg):
-                ownship_damage = ((max_range_m - dis_m) / base_range_m) * self._delta_t
+            def dmg(ata_deg):
+                best = 0.0
+                for ph in phases:
+                    if t_now < ph["start_s"]:
+                        continue                      # 아직 활성화되지 않은 phase
+                    lo, hi = ph["min_range_m"], ph["max_range_m"]
+                    if not (lo <= dis_m <= hi):
+                        continue
+                    if abs(ata_deg) > ph["los_deg"]:
+                        continue
+                    base = hi - lo
+                    if base <= 0:
+                        continue
+                    d = ph["coeff"] * ((hi - dis_m) / base) * self._delta_t
+                    if d > best:
+                        best = d                      # 하위(좁은) phase가 이기면 그 계수 채택
+                return best
+
+            target_damage = dmg(ownship_ata_deg)
+            ownship_damage = dmg(target_ata_deg)
+        else:
+            max_range_m = self._wez["max_range_m"]
+            min_range_m = self._wez["min_range_m"]
+            base_range_m = max_range_m - min_range_m
+            half_wez_angle_deg = self._wez["angle_deg"] / 2.0
+
+            target_damage = 0.0
+            ownship_damage = 0.0
+            if base_range_m != 0 and min_range_m <= dis_m <= max_range_m:
+                if half_wez_angle_deg >= abs(ownship_ata_deg):
+                    target_damage = ((max_range_m - dis_m) / base_range_m) * self._delta_t
+                if half_wez_angle_deg >= abs(target_ata_deg):
+                    ownship_damage = ((max_range_m - dis_m) / base_range_m) * self._delta_t
 
         self.ownship_damage = ownship_damage
         self.target_damage = target_damage

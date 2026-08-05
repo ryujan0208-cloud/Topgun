@@ -34,9 +34,25 @@ DEFAULT_ENV_CONFIG = {
         "guard_fail_penalty": -50.0,
     },
     "wez": {
+        # ── 하위 호환용 단일 판정(phases 가 없을 때만 사용) ──
         "angle_deg": 2.0,
         "min_range_m": 500 * FEET_TO_METER,
         "max_range_m": 3000 * FEET_TO_METER,
+        # ── ★ 대회 공식 규칙(오리엔테이션 PPT 슬라이드 7) ──
+        #  교전 경과 시간에 따라 판정이 단계적으로 완화(추가)된다.
+        #  "하위 Phase에 적이 위치하는 경우 하위 phase의 대미지 적용"
+        #    -> 활성 phase 중 최대 대미지를 채택(좁은 콘에 있으면 높은 계수 유지).
+        #  콘 부피비 1 : 6.36 : 21.37 이므로 기대 대미지는 1.0 : 1.9 : 2.1
+        #    = 후반 phase가 오히려 유리하다(정밀도보다 물량).
+        #  ※ 이걸 넣기 전까지 로컬은 Phase 1만 200초 내내 적용하고 있었다.
+        "phases": [
+            {"name": "P1", "start_s":   0.0, "los_deg": 1.0, "coeff": 1.0,
+             "min_range_m": 500 * FEET_TO_METER, "max_range_m": 3000 * FEET_TO_METER},
+            {"name": "P2", "start_s": 100.0, "los_deg": 2.0, "coeff": 0.3,
+             "min_range_m": 500 * FEET_TO_METER, "max_range_m": 3500 * FEET_TO_METER},
+            {"name": "P3", "start_s": 150.0, "los_deg": 3.0, "coeff": 0.1,
+             "min_range_m": 500 * FEET_TO_METER, "max_range_m": 4000 * FEET_TO_METER},
+        ],
     },
     "ownship": [1000.0, 0.0, -7000.0, 0.0, 0.0, 0.0, 300.0],
     "target": [6000.0, 0.0, -7000.0, 0.0, 0.0, 180.0, 300.0],
