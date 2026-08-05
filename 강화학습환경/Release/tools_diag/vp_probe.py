@@ -219,8 +219,14 @@ def main():
     mn = sorted([(r[0], r[1]["minATA"]) for r in rows if r[1].get("minATA") is not None],
                 key=lambda x: x[1])
     if mn: print(f"  창後 최소ATA 순위: " + " > ".join(f"{n}({v:.1f}°)" for n, v in mn[:4]))
-    bd = sorted(rows, key=lambda r: -r[2])[:4]
-    print(f"  최종 준데미지 순위: " + " > ".join(f"{n}({d:.3f})" for n, _, d, _ in bd))
+    # ★ 순위는 반드시 **순이득(준 − 받은)**으로. 규정상 승패는 HP 비교다.
+    #   (2026-08-06: 준 데미지만 정렬해 '감속+당김 1위'라는 틀린 결론을 낸 전례.
+    #    그 기동은 같은 구간에서 0.36을 얻어맞고 있었다.)
+    bd = sorted(rows, key=lambda r: -(r[2] - r[3]))[:4]
+    print(f"  ★최종 순이득(준-받은) 순위: "
+          + " > ".join(f"{n}({d-h:+.3f})" for n, _, d, h in bd))
+    bdd = sorted(rows, key=lambda r: -r[2])[:3]
+    print(f"   (참고) 준 데미지만: " + " > ".join(f"{n}({d:.3f})" for n, _, d, _ in bdd))
     print("\n  ※ 지평선마다 순위가 크게 다르면 그 구간 목표함수가 틀린 것이다 — 그 자체가 발견.")
     print("  ※ 여기서 나온 '최적'은 이 상대에 대한 최적이다. 학습 목표로 쓰면 과적합.")
     print("  ※ 구간별 탐욕 탐색이라 진짜 최적이 아니다. 가설 생성용이지 채택 근거가 아니다.")
