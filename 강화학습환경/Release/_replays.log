@@ -1,0 +1,28 @@
+### ACE
+[seed 0] reward=   341.58 ownHP=0.9955 tgtHP=0.9955 max time out
+SUMMARY dealt=0.0045 taken=0.0045 mean_reward=341.58
+STAMP ACE 2026_8_5_20_29_49
+### AIP_onecircle.dll
+[seed 0] reward=   180.84 ownHP=0.6596 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.3404 mean_reward=180.84
+STAMP AIP_onecircle.dll 2026_8_5_20_30_51
+### AIP_sync.dll
+[seed 0] reward=   345.07 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=345.07
+STAMP AIP_sync.dll 2026_8_5_20_31_53
+### AIP_synccircle.dll
+[seed 0] reward=   -72.46 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-72.46
+STAMP AIP_synccircle.dll 2026_8_5_20_32_57
+### AIP_shrink.dll
+[seed 0] reward=   -64.28 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-64.28
+STAMP AIP_shrink.dll 2026_8_5_20_34_1
+### AIP_jink.dll
+[seed 0] reward=  1345.90 ownHP=1.0000 tgtHP=0.6792 max time out
+SUMMARY dealt=0.3208 taken=0.0000 mean_reward=1345.90
+STAMP AIP_jink.dll 2026_8_5_20_35_13
+### AIP_kwon.dll
+[seed 0] reward=   235.18 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=235.18
+STAMP AIP_kwon.dll 2026_8_5_20_36_37
