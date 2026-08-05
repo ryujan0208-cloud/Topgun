@@ -224,7 +224,10 @@ NodeStatus Action::Task_LeadPredict::tick()
 			double losRate = losOld.angleBetween(losNow) * 57.2957795 / (LHIST * dt);  // deg/s
 			// 우리가 지속적으로 낼 수 있는 선회율(turn_perf2 실측: 하강나선 지속 25.4deg/s가 최대).
 			// 이걸 넘는 시선 회전율은 구조적으로 추종 불가 = 관통 확정.
-			const double TURN_CAP = 25.0;
+			const double TURN_CAP = 40.0;   // v33b: 25.0 -> 40.0. v33(25)은 ACE 13승->2승 폭락.
+			//  25는 **지속** 선회율 기준인데 순간 최대는 42.8deg/s다. 버스트로는 따라갈 수 있는
+			//  구간까지 lag로 빠져 쏠 기회를 버렸다(평균보상 331->763으로 위치는 좋아졌는데
+			//  준데미지 0.379->0.042로 전환 실패). 40이면 발동률 22%->9.5%로 좁혀진다.
 			if (losRate > TURN_CAP && dist < 900.0 && tgtSpd > 30.0)
 			{
 				double excess = (losRate - TURN_CAP) / TURN_CAP;   // 0~

@@ -1,1 +1,19 @@
 ########## v33 vs ACE ##########
+[seed 0] reward=   277.89 ownHP=1.0000 tgtHP=1.0000 max time out
+[seed 1] reward=   626.93 ownHP=1.0000 tgtHP=1.0000 max time out
+[seed 2] reward=   840.41 ownHP=1.0000 tgtHP=1.0000 max time out
+[seed 3] reward=   873.94 ownHP=1.0000 tgtHP=1.0000 max time out
+[seed 4] reward=   832.67 ownHP=1.0000 tgtHP=1.0000 max time out
+[seed 5] reward=   475.04 ownHP=0.9771 tgtHP=1.0000 max time out
+[seed 6] reward=   570.05 ownHP=1.0000 tgtHP=1.0000 max time out
+[seed 7] reward=   969.38 ownHP=1.0000 tgtHP=0.9721 max time out
+[seed 8] reward=   717.02 ownHP=1.0000 tgtHP=1.0000 max time out
+[seed 9] reward=   760.67 ownHP=1.0000 tgtHP=1.0000 max time out
+[seed 10] reward=   974.14 ownHP=1.0000 tgtHP=1.0000 max time out
+[seed 11] reward=   928.19 ownHP=1.0000 tgtHP=0.9862 max time out
+[seed 12] reward=   918.01 ownHP=0.9833 tgtHP=1.0000 max time out
+[seed 13] reward=  1055.77 ownHP=1.0000 tgtHP=1.0000 max time out
+[seed 14] reward=   626.78 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0417 taken=0.0397 mean_reward=763.13
+
+########## v33 vs AIP_onecircle.dll ##########
