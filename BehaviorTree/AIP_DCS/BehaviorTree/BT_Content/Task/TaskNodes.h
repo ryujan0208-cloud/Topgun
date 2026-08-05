@@ -3,6 +3,7 @@
 #include "Task_Pure.h"
 #include "Task_Lead.h"
 #include "Task_Evade.h"
+#include "Task_SnapDecel.h"
 #include "Task_ClimbOut.h"
 #include "Task_LevelOff.h"
 #include "Task_BreakAndReverse.h"

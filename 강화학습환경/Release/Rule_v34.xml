@@ -1,0 +1,59 @@
+<root main_tree_to_execute = "MainTree">
+
+  <BehaviorTree ID="MainTree">
+    <Sequence>
+
+      <!-- 인지 -->
+      <Sequence>
+        <SelectTarget name="SelectTarget" BB="{BB}"/>
+        <DirectionVectorUpdate name="DirectionVectorUpdate" BB="{BB}"/>
+        <DistanceUpdate name="DistanceUpdateService" BB="{BB}"/>
+        <AngleOffUpdate name="AngleOffUpdate" BB="{BB}"/>
+        <AspectAngleUpdate name="AspectAngleUpdate" BB="{BB}"/>
+
+        <ReactiveFallback>
+
+          <!-- 0. 추락 방지.
+               v18: MinAlt 3000 -> 1800.
+               [근거] VP Z하한이 3500이던 v17까지는 고도가 3358m 아래로 내려갈 일이
+               없어 이 분기가 200초간 0회 발동하는 죽은 코드였다. 하한을 1500m로
+               내리면서, 그보다 위인 1800m에서 발동하도록 옮겨 실제 안전망으로 살린다.
+               (실제 종료 하한은 min_altitude=300m이므로 1800m는 충분한 여유) -->
+          <Sequence>
+            <DECO_AltitudeCheck name="AltCheck" MinAlt="1800" BB="{BB}"/>
+            <Task_ClimbOut name="ClimbOut" BB="{BB}"/>
+          </Sequence>
+
+          <!-- ★ v34 신설: 급감속 스냅샷.
+               [실측 근거] 상대가 우리 6시 1350m에 붙어 70초간 완전 교착하는 구간이 있는데
+               Evade는 거리<1100m에서만 발동해 **아무 분기도 안 걸렸다**(구조적 공백).
+               오프라인 기동 탐색(vp_probe, 대회규칙 8구간x8후보): 우리 ATA>=136도인
+               3구간에서 '감속+당김'이 3/3 1위, 순이득 +0.646~+0.925
+               (다른 후보 최고 +0.388). ATA<110도인 5구간에서는 0/5.
+               [원리] 뒤를 잡힌 상태에서 감속하면 추적자가 폐쇄율을 못 죽여 앞질러 나간다
+               (오버슈트 강요). 동시에 당겨 기수를 되돌린다. BFM 정석이라 상대 불문.
+               [안전장치] 지속 발동하면 에너지를 다 잃으므로 5초 유지 + 8초 쿨다운.
+               Evade보다 위에 두되 거리대가 겹치지 않는다(Evade <1100, 여기 1100~2500). -->
+          <Task_SnapDecel name="SnapDecel" AtaMin="130" DistMin="1100" DistMax="2500"
+                          HoldSec="5.0" BB="{BB}"/>
+
+          <!-- 1. 생존(v15 신설): AA>120 = 내가 적 앞쪽 -> 적이 나를 겨눌 수 있는 상태.
+               사거리 근처(1500m)면 급선회 회피로 벗어난다.
+               (권정환에게 일방 격추당한 원인 = 방어 전무. 생존이 최우선) -->
+          <Sequence>
+            <DECO_DistanceCheck name="Threat_Range" UpDown="Less" Distance="1100" BB="{BB}"/>
+            <DECO_ThreatAimCheck name="Threat_Aim" AimAngle="25" BB="{BB}"/>
+            <Task_Evade name="Evade" BB="{BB}"/>
+          </Sequence>
+
+          <!-- 2. 추격: v14 dV 속도매칭 + v17 궤도추종 + v18 고도제약 해제 -->
+          <Task_LeadPredict name="LeadPredict" BB="{BB}"/>
+
+        </ReactiveFallback>
+
+      </Sequence>
+
+    </Sequence>
+  </BehaviorTree>
+
+</root>

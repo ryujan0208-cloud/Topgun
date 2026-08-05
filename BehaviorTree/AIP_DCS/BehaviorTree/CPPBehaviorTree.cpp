@@ -85,6 +85,7 @@ void UCPPBehaviorTree::init()
 		Factory.registerNodeType<Action::Task_Pure>("Task_Pure");
 		Factory.registerNodeType<Action::Task_Lead>("Task_Lead");
 		Factory.registerNodeType<Action::Task_Evade>("Task_Evade");
+		Factory.registerNodeType<Action::Task_SnapDecel>("Task_SnapDecel");
 		Factory.registerNodeType<Action::Task_ClimbOut>("Task_ClimbOut");
 		Factory.registerNodeType<Action::Task_LevelOff>("Task_LevelOff");
 		Factory.registerNodeType<Action::Task_BreakAndReverse>("Task_BreakAndReverse");
@@ -116,7 +117,7 @@ void UCPPBehaviorTree::init()
 		//파일로 트리 구조 정의
 		//자신의 팀 이름으로	xml 파일 만들어서 입력해주세요!!!!!! (Rule_forTraining.xml은 예시입니다)
 		// 개발용. 제출 빌드 시 "./Rule_forTraining.xml"로 바꿔 AIP_final.dll 생성할 것.
-		tree = Factory.createTreeFromFile("./Rule_v32.xml");
+		tree = Factory.createTreeFromFile("./Rule_v34.xml");
 
 
 		//블랙보드 연결 : 원래는 블랙보드 내에 있는 모든 변수를 하나하나 이런식으로 입력해줘야하는 미친 비효율을 보이는 방식이지만 커스텀 블랙보드를 만들어 해당 블랙보드를 입력시킴
