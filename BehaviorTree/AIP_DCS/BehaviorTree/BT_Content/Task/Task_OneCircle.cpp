@@ -43,6 +43,20 @@ NodeStatus Action::Task_OneCircle::tick()
 	int __ti = ((*BB)->Team == BLUE) ? 0 : 1;
 	static float lastThr[2] = { 1.0f, 1.0f };
 
+	// ★ 2026-08-06: 에피소드 경계 리셋 추가 (스파링 세트 정화).
+	//  [문제] lastThr는 static이라 판이 바뀌어도 직전 판의 스로틀을 그대로 물려받았다.
+	//    우리 BT는 v29에서 이걸 고쳤는데 **스파링 상대는 안 고쳐서**, 상대의 초반 거동이
+	//    직전 판에 의존했다 = 배치 결과가 시드 순서에 오염된다.
+	//    (교착 결과를 "구조적 교착"으로 해석해 왔는데 그 근거 자체가 흔들린다)
+	//  [방식] RunningTime은 되감기지 않으므로(생성자에서만 0, 매 틱 증가) 쓸 수 없다.
+	//    리셋 시 기체는 km 단위로 순간이동하므로 1틱 2km 이상 이동 = 새 에피소드.
+	static Vector3 ocLastPos[2];
+	static bool    ocHavePos[2] = { false, false };
+	if (ocHavePos[__ti] && MyLocation.distance(ocLastPos[__ti]) > 2000.0)
+		lastThr[__ti] = 1.0f;
+	ocLastPos[__ti] = MyLocation;
+	ocHavePos[__ti] = true;
+
 	double err = mySpd - CORNER;                 // +면 과속
 	double u = 0.85 - err * 0.005;               // 255->0.85 / 355->0.35 / 155->1.0
 	if (u > 1.0) u = 1.0;

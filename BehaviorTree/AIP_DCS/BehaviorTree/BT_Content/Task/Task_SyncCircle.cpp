@@ -73,6 +73,15 @@ NodeStatus Action::Task_SyncCircle::tick()
 	const double CORNER_CAP = 300.0;
 	double refSpd = (tgtSpd < CORNER_CAP) ? tgtSpd : CORNER_CAP;
 	static float lastThr[2] = { 1.0f, 1.0f };
+	// ★ 2026-08-06: 에피소드 경계 리셋 신설 (스파링 세트 정화).
+	//  lastThr가 static이라 판이 바뀌어도 직전 판 스로틀을 물려받고 있었다.
+	//  RunningTime은 되감기지 않으므로 위치 점프(1틱 2km+)로 판정한다(우리 v29와 동일 방식).
+	static Vector3 scLastPos[2];
+	static bool    scHavePos[2] = { false, false };
+	if (scHavePos[__ti] && MyLocation.distance(scLastPos[__ti]) > 2000.0)
+		lastThr[__ti] = 1.0f;
+	scLastPos[__ti] = MyLocation;
+	scHavePos[__ti] = true;
 	double err = mySpd - refSpd;                // +면 내가 빠름
 	double u = 0.75 - err * 0.008;
 	if (u > 1.0) u = 1.0;

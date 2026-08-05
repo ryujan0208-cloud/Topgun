@@ -30,12 +30,27 @@ NodeStatus Action::Task_SyncMirror::tick()
 	static Vector3 fwdHist[2][16];
 	static int     histIdx[2] = { 0, 0 };
 	static int     histCnt[2] = { 0, 0 };
-	static double  lastRun[2] = { -1.0, -1.0 };
 	const int      HIST = 12;
 
-	double runTime = (*BB)->RunningTime;
-	if (runTime < lastRun[__ti]) { histCnt[__ti] = 0; histIdx[__ti] = 0; }  // 에피소드 경계
-	lastRun[__ti] = runTime;
+	// ★ 2026-08-06: 에피소드 경계 판정을 **위치 점프**로 교체 (스파링 세트 정화).
+	//  [버그] 기존 `if (runTime < lastRun)`은 **한 번도 발동한 적이 없다.**
+	//    RunningTime은 BlackBoard 생성자에서만 0이고 매 틱 증가하며,
+	//    BTActionProvider.reset()이 BT를 재생성하지 않으므로 되감기는 일이 없다.
+	//    우리 BT에서 v29로 고친 바로 그 버그인데 **스파링 상대는 안 고쳤다.**
+	//    -> sync는 판이 바뀌어도 직전 판의 선회 이력과 스로틀을 물려받고 있었다.
+	//       "sync는 구조적으로 교착"이라는 해석의 근거 자체가 오염돼 있었다.
+	//  [해법] 리셋 시 기체는 km 단위로 순간이동한다(60Hz에서 2km = 120km/s = 정상 비행 불가).
+	static Vector3 smLastPos[2];
+	static bool    smHavePos[2] = { false, false };
+	bool smEpisodeReset = false;
+	if (smHavePos[__ti] && MyLocation.distance(smLastPos[__ti]) > 2000.0)
+	{
+		histCnt[__ti] = 0;
+		histIdx[__ti] = 0;
+		smEpisodeReset = true;          // 아래 스로틀도 함께 초기화
+	}
+	smLastPos[__ti] = MyLocation;
+	smHavePos[__ti] = true;
 
 	Vector3 fwdOld = fwdHist[__ti][(histIdx[__ti] + 16 - HIST) % 16];
 	bool haveHist  = (histCnt[__ti] >= HIST);
@@ -79,6 +94,7 @@ NodeStatus Action::Task_SyncMirror::tick()
 
 	// ── 속도도 상대와 일치시킨다(에너지 우위를 주지 않는다) ──
 	static float lastThr[2] = { 1.0f, 1.0f };
+	if (smEpisodeReset) lastThr[__ti] = 1.0f;  // 2026-08-06: 판 경계에서 스로틀도 초기화
 	double dv = mySpd - tgtSpd;                // +면 내가 빠름
 	double u = 0.75 - dv * 0.010;              // 같은 속도면 0.75 유지, 빠르면 줄임
 	if (u > 1.0) u = 1.0;
