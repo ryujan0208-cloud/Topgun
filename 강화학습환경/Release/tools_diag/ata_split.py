@@ -15,9 +15,16 @@ import csv, math, sys, os
 R = r"C:\Users\TFX5470H\Desktop\.topgun\강화학습환경\Release\artifacts\logs"
 MLAT = 111320.0
 MINR, MAXR = 152.4, 914.4
-SLOPE = float(sys.argv[2]) if len(sys.argv) > 2 else 0.5   # 코드의 climbSlope/diveSlope 계수
+# ★ 2026-08-04 3차 수정: climb과 dive를 **따로** 받는다.
+#   v32에서 climbSlope만 3.0으로 풀고 diveSlope는 0.5로 뒀는데,
+#   도구에 slope 하나만 넘기다 보니 **강하 한계까지 같이 완화해서 재는 실수**를 했다.
+#   그 결과 '아래로 잘림 3.5%'라는 과소평가된 값이 나왔다.
+#   사용: python ata_split.py <stamp> [climb_slope] [dive_slope]
+CLIMB = float(sys.argv[2]) if len(sys.argv) > 2 else 0.5
+DIVE  = float(sys.argv[3]) if len(sys.argv) > 3 else 0.5
 DIVE_CAP = 650.0                                            # v20: 강하만 절대 상한
-CLAMP_DEG = math.degrees(math.atan(SLOPE))
+CLIMB_DEG = math.degrees(math.atan(CLIMB))
+DIVE_DEG  = math.degrees(math.atan(DIVE))
 
 def load(p):
     rows = []
@@ -49,9 +56,9 @@ for i in range(n):
     el = math.degrees(tgtElev - myPit)
     fe, fn, fu = math.sin(myYaw)*math.cos(myPit), math.cos(myYaw)*math.cos(myPit), math.sin(myPit)
     ata = math.degrees(math.acos(max(-1, min(1, (fe*de+fn*dn+fu*du)/d))))
-    # 위쪽 한계 = +d*SLOPE (상한 없음) / 아래쪽 한계 = -min(d*SLOPE, 650) (v20 절대 상한)
-    up_lim = d * SLOPE
-    dn_lim = min(d * SLOPE, DIVE_CAP)
+    # 위쪽 한계 = +d*CLIMB (상한 없음) / 아래쪽 한계 = -min(d*DIVE, 650) (v20 절대 상한)
+    up_lim = d * CLIMB
+    dn_lim = min(d * DIVE, DIVE_CAP)
     rows.append((o[0], d, ata, az, el, du, up_lim, dn_lim))
 
 inr = [r for r in rows if MINR <= r[1] <= MAXR]
@@ -67,7 +74,7 @@ print(f"  고도차(상대-나) 중앙값 {st.median(r[5] for r in inr):+7.1f}m 
 # Z 클램프: 고도차가 한계를 넘으면 VP가 그 방향을 못 가리킨다. 위/아래를 나눠 센다.
 up_clip = [r for r in inr if r[5] >  r[6]]     # 상대가 위쪽 한계보다 더 위
 dn_clip = [r for r in inr if r[5] < -r[7]]     # 상대가 아래쪽 한계보다 더 아래
-print(f"  ★VP Z클램프 (한계 앙각 {CLAMP_DEG:.1f}deg, slope {SLOPE})")
+print(f"  ★VP Z클램프 (위 {CLIMB_DEG:.1f}deg / 아래 {DIVE_DEG:.1f}deg, 강하 절대상한 {DIVE_CAP:.0f}m)")
 print(f"     위로 잘림(상대가 더 위) : {len(up_clip):5d}/{len(inr)}틱 "
       f"({100*len(up_clip)/len(inr):5.1f}%)")
 print(f"     아래로 잘림(상대가 더 아래): {len(dn_clip):5d}/{len(inr)}틱 "
