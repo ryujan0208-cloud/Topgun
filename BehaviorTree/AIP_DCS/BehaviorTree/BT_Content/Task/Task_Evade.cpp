@@ -80,6 +80,11 @@ NodeStatus Action::Task_Evade::tick()
 	//  [설계] 그래서 **고도 게이트 필수**. 3000m 위에서만 하강 나선을 쓰고,
 	//    그 아래에서는 기존의 완만한 out-of-plane(느리지만 안전)으로 되돌아간다.
 	//    규정상 고도 300m는 즉시 패배이므로 안전 여유를 크게 둔다.
+	// ★ 2026-08-06 DUTY 계측: 기각한 v31 코드가 소스에 남아 v32에 들어가 있다.
+	//  DLL만 v29로 되돌리고 소스를 안 되돌린 결과다(v22c와 같은 사고 반복).
+	//  실제로 발동하는지부터 재고 제거 여부를 정한다.
+	static long long EV_tick[2]={0,0}, EV_spiral[2]={0,0}, EV_mid[2]={0,0}, EV_climb[2]={0,0};
+	EV_tick[__t]++;
 	double downMix;
 	if (myAlt > 3000.0)
 	{
@@ -87,14 +92,17 @@ NodeStatus Action::Task_Evade::tick()
 		double head = (myAlt - 3000.0) / 2000.0;      // 3000m:0 -> 5000m:1
 		if (head > 1.0) head = 1.0;
 		downMix = 0.55 + head * 1.25;                 // 0.55 ~ 1.80
+		EV_spiral[__t]++;
 	}
 	else if (myAlt > 2200.0)
 	{
 		downMix = 0.55 * ((myAlt - 2200.0) / 800.0);  // 2200~3000m: 0 -> 0.55
+		EV_mid[__t]++;
 	}
 	else
 	{
 		downMix = -0.25;                              // 저고도: 상승 성분으로 전환
+		EV_climb[__t]++;
 	}
 
 	Vector3 WorldDown(0.0, 0.0, -1.0);
@@ -160,6 +168,15 @@ NodeStatus Action::Task_Evade::tick()
 			<< " headingXAngle=" << (*BB)->MyAngleOff_Degree
 			<< " aa=" << (*BB)->MyAspectAngle_Degree
 			<< std::endl;
+	}
+
+	if (EV_tick[__t] % 300 == 0)
+	{
+		double n=(double)EV_tick[__t];
+		std::cerr << "[DUTY_EV] team=" << (*BB)->Team << " evadeTicks=" << EV_tick[__t]
+			<< " v31하강나선(>3000m)=" << (100.0*EV_spiral[__t]/n) << "%"
+			<< " 중간(2200~3000)=" << (100.0*EV_mid[__t]/n) << "%"
+			<< " 상승(<2200)=" << (100.0*EV_climb[__t]/n) << "%" << std::endl;
 	}
 
 	return NodeStatus::SUCCESS;

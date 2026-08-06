@@ -39,6 +39,21 @@ NodeStatus Action::Task_LeadPredict::tick()
 
 	int __ti = ((*BB)->Team == BLUE) ? 0 : 1;
 
+	// ★ 2026-08-06 진단 계측 (DUTY): 우리가 켜져 있다고 믿는 기능이 실제로 몇 % 발동하나.
+	//  계기: v23b 코너속도가 6상대 중 5상대에서 아예 안 걸린다는 게 v36에서 드러났고,
+	//        기각한 v31 코드가 소스에 남아 v32에 들어가 있는 것도 발견됐다.
+	//  트리거 발동만 보고 판정하던 관행을 끝내기 위한 계측이다.
+	static long long DUTY_tick[2]  = {0,0};   // 이 노드가 tick된 횟수
+	static long long DUTY_lead[2]  = {0,0};   // v27 종말조준 게이트
+	static long long DUTY_bank[2]  = {0,0};   // v21 뱅크 횡예측
+	static long long DUTY_orbit[2] = {0,0};   // v17 궤도추종(조건 통과)
+	static long long DUTY_slot[2]  = {0,0};   // v17 궤도추종(슬롯 실제 적용)
+	static long long DUTY_clmpU[2] = {0,0};   // 상승 클램프 발동
+	static long long DUTY_clmpD[2] = {0,0};   // 강하 클램프 발동
+	static long long DUTY_corner[2]= {0,0};   // v23b 코너속도: 조건 만족
+	static long long DUTY_capp[2]  = {0,0};   // v23b 코너속도: **실제 적용**(u<target)
+	DUTY_tick[__ti]++;
+
 	double dt = (*BB)->DeltaSecond;
 	if (dt < 1e-4) dt = 1.0 / 60.0;
 
@@ -107,6 +122,7 @@ NodeStatus Action::Task_LeadPredict::tick()
 	//    -> 추종 기하는 보존하고 마지막 조준만 다듬는다.
 	if (dist < 914.0 && ataDeg < 10.0)
 	{
+		DUTY_lead[__ti]++;
 		double fade = (ataDeg - 3.0) / 7.0;   // ATA 10°:리드유지 -> 3°이하:순수조준
 		if (fade < 0.0) fade = 0.0;
 		if (fade > 1.0) fade = 1.0;
@@ -124,6 +140,7 @@ NodeStatus Action::Task_LeadPredict::tick()
 	//   회피 = 머지 무기 훼손 없음). omega>0.06rad/s = 3.4deg/s (궤도블록과 동일 임계).
 	if (std::fabs(rollDeg) > 10.0 && omegaNow > 0.06)
 	{
+		DUTY_bank[__ti]++;
 		double s = (rollDeg > 0.0) ? 1.0 : -1.0;
 		double bankFactor = std::fabs(rollDeg) / 90.0;
 		if (bankFactor > 1.0) bankFactor = 1.0;
@@ -155,6 +172,7 @@ NodeStatus Action::Task_LeadPredict::tick()
 		// 선회 중(3.4deg/s 이상) + 교전거리일 때만 궤도 모드
 		if (axisLen > 1e-9 && omega > 0.06 && dist < 2500.0 && tgtSpd > 30.0)
 		{
+			DUTY_orbit[__ti]++;
 			Vector3 a = axis; a.normalize();
 			double R = tgtSpd / omega;              // 선회 반경
 			if (R < 200.0)  R = 200.0;
@@ -176,6 +194,7 @@ NodeStatus Action::Task_LeadPredict::tick()
 			Vector3 toSlot = tailSlot - MyLocation;
 			if (toSlot.dot(myFwd) > 0.0)            // 슬롯이 내 앞일 때만 유효
 			{
+				DUTY_slot[__ti]++;
 				// 슬롯에서 멀면 슬롯으로, 슬롯에 붙으면 요격 lead로 연속 전환
 				double w = toSlot.length() / 400.0;
 				if (w > 1.0) w = 1.0;
@@ -299,8 +318,8 @@ NodeStatus Action::Task_LeadPredict::tick()
 	//  안전망 ②(강제 상승, 아래)만으로 바닥을 지킨다.
 	double minZ = MyLocation.Z - diveSlope;
 	double maxZ = MyLocation.Z + climbSlope;
-	if (predicted.Z < minZ) predicted.Z = minZ;
-	if (predicted.Z > maxZ) predicted.Z = maxZ;
+	if (predicted.Z < minZ) { predicted.Z = minZ; DUTY_clmpD[__ti]++; }
+	if (predicted.Z > maxZ) { predicted.Z = maxZ; DUTY_clmpU[__ti]++; }
 	if (predicted.Z < 1500.0) predicted.Z = 1500.0;   // v18: 3500 -> 1500
 	// v22c: LeadPredict 내부 고도 안전망은 제거. 고도<1800이면 ClimbOut이 최우선으로
 	//  잡아 LeadPredict가 실행조차 안 되므로(트리 구조) 여기 안전망은 죽은 코드였다.
@@ -346,7 +365,15 @@ NodeStatus Action::Task_LeadPredict::tick()
 		// dV 오차에 비례해 스로틀 조정 (0.55~1.0). 폐루프라 dV가 목표에 수렴한다.
 		double u = 1.0 - dvErr * 0.012;     // dvErr +38 -> 0.54 / 0 -> 1.0 / -20 -> 1.0(상한)
 		if (u > 1.0) u = 1.0;
+		// ※ v37(스로틀 하한을 거리별로 0.15/0.35/0.55) = **기각**. 되돌렸다.
+		//   [실측] 하한을 0.15까지 풀었는데 거리 프로필이 소수점까지 동일했고
+		//     kwon전 dealt는 10.9943 -> 10.9942로 사실상 무변화.
+		//   [원인] 스로틀 계통 계측 결과 **실제 최저값이 0.545~0.66**이라
+		//     0.55 하한에 애초에 닿지 않았다. 하한은 병목이 아니었다.
 		if (u < 0.55) u = 0.55;
+
+		// ★ v38: 코너속도 감속의 **거리 게이트를 제거**한다(아래 needTurn).
+		//   진짜 병목은 하한이 아니라 **원거리 풀스로틀**이다.
 		target = (float)u;
 	}
 	(void)tgtBank;
@@ -388,9 +415,26 @@ NodeStatus Action::Task_LeadPredict::tick()
 	double enemyAtaDeg = std::acos(std::max(-1.0, std::min(1.0, TgtFwd.dot(tgtToMe)))) * 57.2957795;
 	bool beingChased = (enemyAtaDeg < 35.0) && (dist < 2500.0);   // 적이 나를 겨누는 중
 
-	bool needTurn = (dist < 2500.0) && (ataDeg > 12.0)
+	// ★ v38: `dist < 2500` 게이트 제거. 돌아야 하는데 너무 빠르면 **거리와 무관하게** 줄인다.
+	//  [실측 근거 2026-08-06, 직진 상대 200초]
+	//    t=10s 거리 1322m -> t=20s 거리 **5744m** (10초 만에 5.7km 이탈)
+	//    그 뒤 160초를 들여 654m까지 겨우 복귀. 경기 대부분이 '따라잡기'였다.
+	//    우리 속도 중앙 **496m/s** vs 상대 453m/s (우리가 44 빠름).
+	//    그런데 요 변화율은 0.6~5deg/s뿐 -> 선회반경 r = v/w ≈ **28km**.
+	//    롤은 84도로 세게 눕히고 있는데도 못 돈다. **속도가 선회를 막는다.**
+	//  [스로틀 계측] 직진 상대전 dvTarget 평균 986(=999 풀스로틀 분기), 실제 스로틀 0.98~0.99.
+	//    200초 내내 사실상 풀스로틀이다. 그래서 500m/s까지 가속된다.
+	//  [원인] `dist > WEZ_MAX`면 dvTarget=999(무제한 접근)이고,
+	//    코너속도 감속은 `dist < 2500`에서만 걸린다.
+	//    즉 **가장 크게 돌아야 하는 원거리 구간에서 감속이 차단**되어 있었다.
+	//  [v5 교훈과의 충돌] 주석의 '원거리 감속은 에너지 손실로 뒤처진다'와 정면으로 반대다.
+	//    그러나 오늘 데이터는 그 교훈을 반증한다 — 44m/s 더 빠른데도 못 따라잡는다.
+	//    **빠른 것이 이득이 아니라 손해였다.** 이 시험으로 그 가정이 결판난다.
+	bool needTurn = (ataDeg > 12.0)
 	                && (mySpd > CORNER + 30.0) && !beingChased;
 	float stepUse = 0.008f;                 // 기본 변화율(부드럽게)
+	float targetBeforeCorner = target;      // 코너속도 적용 전 값(추적용)
+	if (needTurn) DUTY_corner[__ti]++;
 	if (needTurn)
 	{
 		// 코너속도까지 적극 감속. 남은 초과속도에 비례해 스로틀을 내린다(연속).
@@ -398,10 +442,23 @@ NodeStatus Action::Task_LeadPredict::tick()
 		if (over > 1.0) over = 1.0;
 		double u = 1.0 - over * 0.85;             // 초과 클수록 0.15까지
 		if (u < 0.15) u = 0.15;
-		if ((float)u < target) target = (float)u;  // 기존 목표보다 낮을 때만 적용
+		if ((float)u < target) { target = (float)u; DUTY_capp[__ti]++; }  // 기존 목표보다 낮을 때만
 		stepUse = 0.040f;                          // 전술 기동이므로 빠르게(10Hz에서 0.4/s)
 	}
 	// ==============================================================================
+
+	// ★ 2026-08-06 스로틀 계통 추적: 명령이 어느 단계에서 사라지는지 본다.
+	//  [계기] 스로틀을 세 번 건드렸는데 세 번 다 궤적이 소수점까지 동일했다:
+	//    v36 CORNER 260->287 (5상대 동일) / v37 하한 0.55->0.15 (거리 프로필 완전 동일)
+	//    -> 우리가 믿는 스로틀 제어가 실제로는 작동하지 않고 있다.
+	//  [방법] 상수를 바꿔 결과를 보는 대신, **각 단계의 값을 직접 기록**한다.
+	static double THR_dvT[2]={0,0}, THR_u[2]={0,0}, THR_after[2]={0,0}, THR_final[2]={0,0};
+	static long long THR_n[2]={0,0};
+	static double THR_min[2]={9,9}, THR_max[2]={0,0};
+	THR_n[__ti]++;
+	THR_dvT[__ti]  += dvTarget > 900.0 ? 999.0 : dvTarget;
+	THR_u[__ti]    += targetBeforeCorner;   // 코너속도 적용 **전** 목표
+	THR_after[__ti]+= target;               // 코너속도 적용 **후** 목표
 
 	static float lastThr[2] = { 1.0f, 1.0f };
 	if (needThrReset[__ti]) { lastThr[__ti] = 1.0f; needThrReset[__ti] = false; }
@@ -416,6 +473,20 @@ NodeStatus Action::Task_LeadPredict::tick()
 	if (lagActive && cur > 0.30f) cur = 0.30f;
 	lastThr[__ti] = cur;
 	(*BB)->Throttle = cur;
+	THR_final[__ti] += cur;
+	if (cur < THR_min[__ti]) THR_min[__ti] = cur;
+	if (cur > THR_max[__ti]) THR_max[__ti] = cur;
+	if (THR_n[__ti] % 600 == 0)
+	{
+		double n = (double)THR_n[__ti];
+		std::cerr << "[THR] team=" << (*BB)->Team
+			<< " dvTarget평균=" << (THR_dvT[__ti]/n)
+			<< " 코너전목표=" << (THR_u[__ti]/n)
+			<< " 코너후목표=" << (THR_after[__ti]/n)
+			<< " 실제스로틀평균=" << (THR_final[__ti]/n)
+			<< " 최저=" << THR_min[__ti] << " 최고=" << THR_max[__ti]
+			<< std::endl;
+	}
 
 	static int __dbg[2] = { 0, 0 };
 	int __t = ((*BB)->Team == BLUE) ? 0 : 1;
@@ -423,6 +494,22 @@ NodeStatus Action::Task_LeadPredict::tick()
 		std::cerr << "[ACTIVE] [" << (((*BB)->Team == BLUE) ? "BLUE" : "RED")
 			<< "] LeadPredict dist=" << dist << " dV=" << speedMargin << " thr=" << cur
 			<< " om=" << omegaNow << " lt=" << leadTime << std::endl;
+
+	// ── DUTY 요약: 10초(600틱)마다 각 기능의 발동률을 낸다 ──
+	if (DUTY_tick[__ti] % 600 == 0)
+	{
+		double n = (double)DUTY_tick[__ti];
+		std::cerr << "[DUTY] team=" << (*BB)->Team << " ticks=" << DUTY_tick[__ti]
+			<< " v27종말조준=" << (100.0*DUTY_lead[__ti]/n) << "%"
+			<< " v21뱅크예측=" << (100.0*DUTY_bank[__ti]/n) << "%"
+			<< " v17궤도조건=" << (100.0*DUTY_orbit[__ti]/n) << "%"
+			<< " v17슬롯적용=" << (100.0*DUTY_slot[__ti]/n) << "%"
+			<< " 상승클램프=" << (100.0*DUTY_clmpU[__ti]/n) << "%"
+			<< " 강하클램프=" << (100.0*DUTY_clmpD[__ti]/n) << "%"
+			<< " v23b조건=" << (100.0*DUTY_corner[__ti]/n) << "%"
+			<< " v23b실제적용=" << (100.0*DUTY_capp[__ti]/n) << "%"
+			<< std::endl;
+	}
 
 	return NodeStatus::SUCCESS;
 }
