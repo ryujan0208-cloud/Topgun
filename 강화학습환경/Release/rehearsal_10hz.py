@@ -57,6 +57,10 @@ def main():
     if tgt_dll.upper() == "ACE":
         from ace_pilot import AcePilot
         tgt = AcePilot()
+    elif tgt_dll.upper() == "SEARCH":
+        # 탐색형 상대: 매 틱 후보 조종안을 짧게 예측해보고 최선을 고른다(search_pilot.py).
+        from search_pilot import SearchPilot
+        tgt = SearchPilot()
     else:
         tgt = BTActionProvider(dll_name=tgt_dll)
     if own_rep > 1:
