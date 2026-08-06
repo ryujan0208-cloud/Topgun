@@ -117,7 +117,7 @@ void UCPPBehaviorTree::init()
 		//파일로 트리 구조 정의
 		//자신의 팀 이름으로	xml 파일 만들어서 입력해주세요!!!!!! (Rule_forTraining.xml은 예시입니다)
 		// 개발용. 제출 빌드 시 "./Rule_forTraining.xml"로 바꿔 AIP_final.dll 생성할 것.
-		tree = Factory.createTreeFromFile("./Rule_v34.xml");
+		tree = Factory.createTreeFromFile("./Rule_v35.xml");
 
 
 		//블랙보드 연결 : 원래는 블랙보드 내에 있는 모든 변수를 하나하나 이런식으로 입력해줘야하는 미친 비효율을 보이는 방식이지만 커스텀 블랙보드를 만들어 해당 블랙보드를 입력시킴
@@ -225,7 +225,7 @@ StickValue UCPPBehaviorTree::Step(PlaneInfo MyInfo, int NumofOtherPlane, PlaneIn
 	// 만큼 자연스럽게 VP가 원래 목표 방향으로 수렴한다. Controller_CY.cpp/.h는 완전히
 	// 미변경(2026-07-09, [[session-2026-07-09-aip-dogfight-ata-vs-aa]] 우회 시도).
 	{
-		const double MAX_OFFBORESIGHT_DEG = 75.0;   // v28(89로 상향)은 no-op으로 판명 - 실전에서 off-boresight가 15~38도라 클램프 자체가 발동하지 않는다(clamped=0 실측). 원복.
+		const double MAX_OFFBORESIGHT_DEG = 110.0;   // v35 시험: 75 -> 110   // v28(89로 상향)은 no-op으로 판명 - 실전에서 off-boresight가 15~38도라 클램프 자체가 발동하지 않는다(clamped=0 실측). 원복.
 
 		EulerAngle EA;
 		EA.Roll = BB->MyRotation_EDegree.Roll * DEG2RAD;
