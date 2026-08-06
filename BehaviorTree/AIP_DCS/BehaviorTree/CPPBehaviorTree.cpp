@@ -117,7 +117,7 @@ void UCPPBehaviorTree::init()
 		//파일로 트리 구조 정의
 		//자신의 팀 이름으로	xml 파일 만들어서 입력해주세요!!!!!! (Rule_forTraining.xml은 예시입니다)
 		// 개발용. 제출 빌드 시 "./Rule_forTraining.xml"로 바꿔 AIP_final.dll 생성할 것.
-		tree = Factory.createTreeFromFile("./Rule_v35.xml");
+		tree = Factory.createTreeFromFile("./Rule_v32.xml");
 
 
 		//블랙보드 연결 : 원래는 블랙보드 내에 있는 모든 변수를 하나하나 이런식으로 입력해줘야하는 미친 비효율을 보이는 방식이지만 커스텀 블랙보드를 만들어 해당 블랙보드를 입력시킴
@@ -225,7 +225,15 @@ StickValue UCPPBehaviorTree::Step(PlaneInfo MyInfo, int NumofOtherPlane, PlaneIn
 	// 만큼 자연스럽게 VP가 원래 목표 방향으로 수렴한다. Controller_CY.cpp/.h는 완전히
 	// 미변경(2026-07-09, [[session-2026-07-09-aip-dogfight-ata-vs-aa]] 우회 시도).
 	{
-		const double MAX_OFFBORESIGHT_DEG = 110.0;   // v35 시험: 75 -> 110   // v28(89로 상향)은 no-op으로 판명 - 실전에서 off-boresight가 15~38도라 클램프 자체가 발동하지 않는다(clamped=0 실측). 원복.
+		const double MAX_OFFBORESIGHT_DEG = 75.0;
+		// ★ 이 값은 병목이 아니라 **필수 안전장치**다. 올리지 말 것.
+		//  [v35 실측 2026-08-06] 75 -> 110 으로 올렸더니 6상대 15시드에서
+		//    승 58 -> 23, 패 3 -> 10, 순이득 +30.07 -> +4.56 으로 붕괴.
+		//    ACE 14->7승, kwon 11->4승, v7 14->5승, jink 15->5승.
+		//  [원인] Controller_CY가 LOS>90도에서 오작동하므로 이 클램프가 항상 그 아래로
+		//    유지시킨다(위 주석의 설계 의도 그대로). 110도는 90도를 넘어 파탄 영역에 들어간다.
+		//  [주의] 아래 v28 주석의 'clamped=0이라 no-op'은 **v32(상승 클램프 해제) 이전** 측정이다.
+		//    v32 이후 실측 발동률은 **79%**(중앙 140.5도)다. 자주 걸리는 건 정상 동작이지 병목이 아니다.   // v28(89로 상향)은 no-op으로 판명 - 실전에서 off-boresight가 15~38도라 클램프 자체가 발동하지 않는다(clamped=0 실측). 원복.
 
 		EulerAngle EA;
 		EA.Roll = BB->MyRotation_EDegree.Roll * DEG2RAD;
