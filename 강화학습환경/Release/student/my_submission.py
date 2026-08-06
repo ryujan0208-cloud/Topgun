@@ -59,7 +59,8 @@ from dogfight.unreal import AIType, ProviderCommandPolicy, UnrealAIPilotUDPClien
 # =============================================================================
 
 TEAM_NAME = "team01"                               # TODO: 팀 이름
-SERVER_IP = "221.151.77.208"                       # TODO: 경진대회 서버 IP
+SERVER_IP = "172.20.10.2"    # 모의경기: 서버(DogFightViewer) 돌리는 PC의 IPv4
+#SERVER_IP = "221.151.77.208"  # 대회 본서버 (대회 당일 이 줄로 복귀)
 SERVER_PORT = 9999
 
 # 사용할 백엔드 모드 선택: "rl" | "bt" | "hybrid"
@@ -82,7 +83,7 @@ RESIDUAL_SCALE = 0.35      # residual 모드 강도 (0~1, 클수록 RL 비중 �
 ALPHA = 0.5                # blend 모드 비율 (alpha × RL + (1-alpha) × BT)
 
 # 연결 설정
-AI_TYPE = AIType.ReinforcementLearning
+AI_TYPE = AIType.RuleBased   # 우리는 BT(규칙기반)다. 기존 ReinforcementLearning은 오설정이었다
 HEARTBEAT_SEC = 1.0
 COMMAND_DELAY_SEC = 0.0
 RECV_TIMEOUT_SEC = 0.2
