@@ -134,6 +134,7 @@ extern "C"
     Flare_Lunch_Possible    : 현재 플레어 사용 가능 여부. true가 되면 LunchFlare() 함수 호출해줘야함
     */
     __declspec(dllexport) ControlValue Step(oPlaneData& MyData, int NumOfOthers, oPlaneData* Others, bool isLockedOn, bool& MSL_Lunch_Possible, bool& Flare_Lunch_Possible);
+	__declspec(dllexport) ControlValue StepWithVPOverride(oPlaneData& MyData, int NumOfOthers, oPlaneData* Others, bool isLockedOn, bool& MSL_Lunch_Possible, bool& Flare_Lunch_Possible, float VP_X, float VP_Y, float VP_Z);
     __declspec(dllexport) const char* GetAnnotation(int id);
 
     //2대2를 위해 비행기 배열을 만들기위한 함수 
@@ -213,7 +214,7 @@ void RemoveBT(int OwnerID)
     }
 }
 
-ControlValue Step(oPlaneData& MyData, int NumOfOthers, oPlaneData* Others, bool isLockedOn, bool & MSL_Lunch_Possible, bool & Flare_Lunch_Possible)
+static ControlValue StepInternal(oPlaneData& MyData, int NumOfOthers, oPlaneData* Others, bool isLockedOn, bool & MSL_Lunch_Possible, bool & Flare_Lunch_Possible, const Vector3* VPOverride)
 {
     ControlValue value;
 	value.RollCMD = 0;
@@ -265,7 +266,7 @@ ControlValue Step(oPlaneData& MyData, int NumOfOthers, oPlaneData* Others, bool 
 
     if(BT_item != BTList.end())
     {
-        StickValue v = BT_item->second->Step(my, NumOfOthers, others, VP, throttle);
+        StickValue v = BT_item->second->Step(my, NumOfOthers, others, VP, throttle, VPOverride);
         value.RollCMD = v.RollCMD;
         value.PitchCMD = v.PitchCMD;
         value.RudderCMD = v.RudderCMD;
@@ -281,6 +282,17 @@ ControlValue Step(oPlaneData& MyData, int NumOfOthers, oPlaneData* Others, bool 
     }
     
     return value;
+}
+
+ControlValue Step(oPlaneData& MyData, int NumOfOthers, oPlaneData* Others, bool isLockedOn, bool & MSL_Lunch_Possible, bool & Flare_Lunch_Possible)
+{
+	return StepInternal(MyData, NumOfOthers, Others, isLockedOn, MSL_Lunch_Possible, Flare_Lunch_Possible, nullptr);
+}
+
+ControlValue StepWithVPOverride(oPlaneData& MyData, int NumOfOthers, oPlaneData* Others, bool isLockedOn, bool & MSL_Lunch_Possible, bool & Flare_Lunch_Possible, float VP_X, float VP_Y, float VP_Z)
+{
+	Vector3 OverrideVP(VP_X, VP_Y, VP_Z);
+	return StepInternal(MyData, NumOfOthers, Others, isLockedOn, MSL_Lunch_Possible, Flare_Lunch_Possible, &OverrideVP);
 }
 
 ControlValue GetStick(oPlaneData& MyData, float VP_X, float VP_Y, float VP_Z)

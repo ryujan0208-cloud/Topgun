@@ -145,7 +145,13 @@ bool UCPPBehaviorTree::IsInitialized() const
 	return bInitialized;
 }
 
-StickValue UCPPBehaviorTree::Step(PlaneInfo MyInfo, int NumofOtherPlane, PlaneInfo* OthersInfo, Vector3& VP, float& Throttle)
+StickValue UCPPBehaviorTree::Step(
+	PlaneInfo MyInfo,
+	int NumofOtherPlane,
+	PlaneInfo* OthersInfo,
+	Vector3& VP,
+	float& Throttle,
+	const Vector3* VPOverride)
 {
 	PlaneInfo Myinfo;
 	Myinfo.Location = MyInfo.Location;
@@ -215,6 +221,15 @@ StickValue UCPPBehaviorTree::Step(PlaneInfo MyInfo, int NumofOtherPlane, PlaneIn
 
 	//블랙보드에 입력된 정보를 바탕으로 비헤비어트리 Run
 	RunCPPBT(VP, Throttle, AimmingMode);
+
+	// State-policy lab hook. The normal Step path passes nullptr and remains
+	// byte-for-byte equivalent in behavior. A research fork still ticks the BT
+	// above, but replaces only its VP before the stateful controller is advanced
+	// exactly once below.
+	if (VPOverride != nullptr)
+	{
+		VP = *VPOverride;
+	}
 
 	// Controller_CY의 LOS>=90도 이진 피치 고착(2026-07-06 세션에 텔레메트리로 확정,
 	// 근본 수정 3연속 시도 전부 기준선 악화로 실패)을 Controller_CY 자체를 건드리지

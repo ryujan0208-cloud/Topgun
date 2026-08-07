@@ -124,6 +124,26 @@ class AIPilot:
         self.AIPilotDLL.Step.argtypes = [ct.POINTER(OPlaneData), ct.c_int, ct.c_void_p, ct.c_bool, ct.c_void_p, ct.c_void_p]
         self.AIPilotDLL.Step.restype = ControlValue
 
+        # Optional state-policy laboratory API. Production and legacy DLLs do not
+        # export it, so normal loading must remain backward compatible.
+        try:
+            self._step_with_vp_override = self.AIPilotDLL.StepWithVPOverride
+        except AttributeError:
+            self._step_with_vp_override = None
+        else:
+            self._step_with_vp_override.argtypes = [
+                ct.POINTER(OPlaneData),
+                ct.c_int,
+                ct.c_void_p,
+                ct.c_bool,
+                ct.c_void_p,
+                ct.c_void_p,
+                ct.c_float,
+                ct.c_float,
+                ct.c_float,
+            ]
+            self._step_with_vp_override.restype = ControlValue
+
         self.AIPilotDLL.GetVP.argtypes = [ct.POINTER(OPlaneData)]
         self.AIPilotDLL.GetVP.restype = VP
 
@@ -230,6 +250,50 @@ class AIPilot:
                 f"force={my_plane.Team} target_id={target_plane.Resv0} "
                 f"target_force={target_plane.Team}"
             ) from exc
+
+    def StepWithVPOverride(
+        self,
+        my_id,
+        my_force_id,
+        tgt_id,
+        tgt_force_id,
+        my_navi,
+        tgt_navi,
+        vp_xyz,
+    ):
+        if self._step_with_vp_override is None:
+            raise RuntimeError(
+                f"DLL does not provide StepWithVPOverride: {self.dll_path}"
+            )
+        b_lockon = False
+        b_flare = ct.c_bool()
+        b_launch_missile = ct.c_bool()
+        my_opd = self.AIPilotDLL.ChangeData(
+            my_id,
+            my_force_id,
+            100.0,
+            0,
+            ct.POINTER(J_NavigationData)(my_navi),
+        )
+        tgt_opd = self.AIPilotDLL.ChangeData(
+            tgt_id,
+            tgt_force_id,
+            100.0,
+            0,
+            ct.POINTER(J_NavigationData)(tgt_navi),
+        )
+        target_buffer = self._pack_plane_data_buffer(tgt_opd)
+        return self._step_with_vp_override(
+            ct.byref(my_opd),
+            1,
+            ct.cast(target_buffer, ct.c_void_p),
+            b_lockon,
+            ct.byref(b_flare),
+            ct.byref(b_launch_missile),
+            ct.c_float(float(vp_xyz[0])),
+            ct.c_float(float(vp_xyz[1])),
+            ct.c_float(float(vp_xyz[2])),
+        )
 
     @staticmethod
     def _pack_plane_data_buffer(plane: OPlaneData):

@@ -82,7 +82,13 @@ public:
 		VP						: ?붾쾭洹몄슜 Ref 蹂??
 		Throttle				: ?붾쾭洹몄슜 Ref 蹂??
 	*/
-	StickValue Step(PlaneInfo MyInfo, int NumofOtherPlane, PlaneInfo* OthersInfo, Vector3 & VP, float & Throttle);
+	StickValue Step(
+		PlaneInfo MyInfo,
+		int NumofOtherPlane,
+		PlaneInfo* OthersInfo,
+		Vector3& VP,
+		float& Throttle,
+		const Vector3* VPOverride = nullptr);
 
 	Vector3 GetVP();
 

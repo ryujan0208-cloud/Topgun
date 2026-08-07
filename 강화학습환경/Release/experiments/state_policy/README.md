@@ -66,6 +66,37 @@ The default burst gap is 0.5 seconds and is configurable with
 `--merge-gap-s`. A candidate result should be checked across reasonable gap
 values so that an arbitrary grouping threshold does not create the conclusion.
 
+## Stage 3: matched-prefix VP fork
+
+`prefix_fork.py` uses the lab-only `StepWithVPOverride` DLL export. Before the
+fork the normal v32 path runs unchanged. Inside the window, the BT still ticks,
+its throttle remains active, the candidate replaces only VP, the 75-degree
+off-boresight safety clamp still applies, and the stateful controller advances
+once per 10 Hz update.
+
+```powershell
+& $py experiments/state_policy/prefix_fork.py `
+  --candidate baseline --seed 0 --opponent ACE
+
+& $py experiments/state_policy/prefix_fork.py `
+  --candidate pure --fork-start 152.75 --fork-duration 3 `
+  --seed 0 --opponent ACE
+
+& $py tools_diag/prefix_compare.py `
+  --logdir artifacts/logs `
+  --baseline-stamp BASELINE_STAMP `
+  --candidate-stamp CANDIDATE_STAMP `
+  --fork-start 152.75
+```
+
+The baseline lab DLL must first reproduce the ordinary v32 track exactly. The
+comparison must then report `pre_fork_equal=True` for both aircraft. A fork that
+fails either check is invalid regardless of its score.
+
+Available candidate VPs are deliberately small and interpretable: current
+target position (`pure`), constant-velocity prediction (`lead`), and fixed
+vertical offsets (`up` / `down`). They are experimental actions, not BT rules.
+
 ## Interpretation boundary
 
 These labels describe what happened under the policy that generated the log.
