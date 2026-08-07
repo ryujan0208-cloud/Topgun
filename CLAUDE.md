@@ -44,6 +44,43 @@ cd 강화학습환경/Release
 - **배치 3개 이상 병렬 금지** (PC 다운 전례). PC 다운 시 `aircraft/f16/f16_init.xml` 손상 확인.
 - git push는 사용자 승인 후.
 
+## ★ 사격 판정은 **3단계 phase**다 (2026-08-06 대회 자료 대조로 발견)
+| Phase | 시각 | LOS | 거리 | 계수 |
+|---|---|---|---|---|
+| P1 | 0~100s | <1° | 500~3000ft | 1.0 |
+| P2 | 100~150s | <2° | 500~3500ft | 0.3 |
+| P3 | 150~200s | <3° | 500~4000ft | 0.1 |
+활성 phase 중 **최대값** 채택. 콘 부피비 1:6.36:21.37 → 기대 대미지 1.0:1.9:2.1
+= **후반이 오히려 유리**하다. 규칙은 `tools_diag/wez_rule.py` 한 곳에 모았다.
+**v0~v32의 판정은 전부 P1 고정 기준이었다.**
+
+## ★ 판정 전에 반드시 확인할 것 (2026-08-06에 전부 당함)
+1. **트리거 발동률**만 보지 말고 **기동이 실제로 일어났는지** 재라 → `tools_diag/maneuver_check.py`
+2. **스로틀은 세 번 건드려 세 번 다 무효였다**(v36/v37/v38). 상수 대신 **각 단계 값을 직접 기록**하라
+3. **순위는 순이득(준−받은)**으로. 준 데미지만 정렬하면 얻어맞는 기동이 1위가 된다
+4. **배치 도는 중에 시뮬/도구를 수정하지 마라** — 앞뒤가 다른 규칙으로 측정된다
+5. **기각 시 DLL만 되돌리지 말고 소스도 되돌려라** — v31 코드가 v32에 섞여 들어갔다
+
+## 스파링 상대 (유형별)
+`ACE`(3D공세) `AIP_onecircle`(수평선회·최약) `AIP_sync`(거울) `AIP_jink`(불규칙)
+`AIP_kwon` `AIP_v7`(실제BT) `SEARCH`(탐색형) `STRAIGHT`(직진) `AIP_junghwan`(팀원 실기체)
+⚠ **`AIP_dummy.dll`은 직선이 아니다**(80도 뱅크 선회). 직진 대조군은 `STRAIGHT`.
+⚠ 팀원 파일은 원래 `AIP_DCS.dll`이라 **그대로 복사하면 우리 파일을 덮어쓴다.**
+
+## 뷰어 모의경기 (BattleViewer)
+```
+서버: BattleViewer/BattleServer_V0.2/DogFightViewer.exe   (한 대만)
+클라: student/my_submission.py            (우리, Rule_v32)
+      student/my_submission_junghwan.py   (팀원, Rule_mine 직접 읽음)
+      student/my_submission_straight.py   (직진 표적, DLL 안 씀)
+```
+- **한 PC면 `SERVER_IP="127.0.0.1"` 필수.** 실제 IP를 쓰면 `udp_mode=connected`가 되어
+  서버가 루프백으로 응답할 때 패킷을 전부 버린다.
+- **서버가 포트를 연 뒤에** 클라이언트를 띄워라. 먼저 띄우면 ICMP port-unreachable →
+  `OSError` → 클라이언트가 **즉시 종료**된다. `netstat -an | findstr 9999`로 확인.
+- `activate_rule_xml`이 `Rule_forTraining.xml`을 덮어쓰므로 **한 폴더에서 두 클라이언트를
+  돌릴 땐** 한쪽을 `BT_RULE_XML="Rule_forTraining.xml"`로 둬서 no-op으로 만들 것.
+
 ## 환경 규칙 (규정집)
 - 사격: 거리 **152.4~914.4m** AND **|ATA| ≤ 1.0°**. 데미지 계수 = (914.4−dist)/762 → **가까울수록 큼**
 - 200초/판, 타임아웃 시 HP 비교. **고도 < 300m 즉시 패배.** 무한회피 30+30초 → 무승부

@@ -58,7 +58,7 @@ from dogfight.unreal import AIType, ProviderCommandPolicy, UnrealAIPilotUDPClien
 # TODO: 아래 설정을 팀에 맞게 수정하세요.
 # =============================================================================
 
-TEAM_NAME = "team01"                               # TODO: 팀 이름
+TEAM_NAME = "straight"      # 직선 비행 표적용 클라이언트(진단용)
 SERVER_IP = "127.0.0.1"   # 한 PC에서 서버+양쪽 클라이언트를 다 돌릴 때는 **반드시 루프백**.
 #  client.py가 루프백일 때만 udp_mode="local-unconnected"(recvfrom)로 열어
 #  어느 주소에서 오든 수신한다. 실제 IP(172.20.10.2)를 쓰면 "connected"가 되어
@@ -68,7 +68,7 @@ SERVER_IP = "127.0.0.1"   # 한 PC에서 서버+양쪽 클라이언트를 다 �
 SERVER_PORT = 9999
 
 # 사용할 백엔드 모드 선택: "rl" | "bt" | "hybrid"
-MODE = "bt"
+MODE = "straight"
 
 # RL 모드 설정
 BUNDLE_DIR = "artifacts/models/team01/v1"          # TODO: 학습된 모델 경로
@@ -79,7 +79,10 @@ OBSERVATION_MODULE = ""                            # custom 관측이면 "studen
 # - 기본 배포 Rule은 Rule_forTraining.xml입니다.
 # - 팀별 BT DLL/XML을 제출하는 경우 파일을 Release 루트에 두고 아래 이름을 바꾸세요.
 BT_DLL = "AIP_final.dll"
-BT_RULE_XML = "Rule_v32.xml"  # activate_rule_xml이 이걸 Rule_forTraining.xml로 복사하고, AIP_final.dll이 그 이름을 읽는다
+BT_RULE_XML = "Rule_forTraining.xml"
+# ★ 이 클라이언트는 BT DLL을 안 쓴다(파이썬 프로바이더). activate_rule_xml이
+#   Rule_forTraining.xml을 덮어쓰지 않도록 source==target으로 둬서 무동작(no-op)으로 만든다.
+#   -> 같은 폴더에서 도는 우리 기체 클라이언트의 트리를 건드리지 않는다.
 
 # Hybrid 모드 설정 (MODE="hybrid" 일 때만 사용)
 HYBRID_MODE = "residual"   # "residual" | "blend" | "switch"
@@ -111,6 +114,16 @@ DEBUG_ACTION_REPEAT = False
 # =============================================================================
 
 def build_action_provider():
+    # ★ 직선 비행 표적. 회피도 추격도 하지 않는 순수 대조군이다.
+    #   우리 기체의 "순수 추격/조준 능력"만 분리해서 보기 위한 진단용 상대.
+    #   (AIP_dummy.dll은 직선이 아니라 80도 뱅크로 계속 선회하는 기체였다 — 실측 확인)
+    if MODE == "straight":
+        print(f"[{TEAM_NAME}] 직선 비행 표적 사용 (straight_pilot.StraightPilot)")
+        import sys as _sys
+        _sys.path.insert(0, str(ROOT))
+        from straight_pilot import StraightPilot
+        return StraightPilot(throttle=0.75)
+
     if MODE == "bt":
         print(f"[{TEAM_NAME}] BT 백엔드 사용: {BT_DLL}")
         return BTActionProvider(dll_name=BT_DLL)

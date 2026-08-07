@@ -19,7 +19,21 @@ class StraightPilot(ActionProvider):
         self.thr = throttle
 
     def compute_action(self, context):
-        s = context.sim.get_state()
+        # ★ 로컬 시뮬과 네트워크 접속기 양쪽에서 동작해야 한다.
+        #   로컬(rehearsal_10hz): context.sim.get_state()로 상태를 얻는다.
+        #   네트워크(my_submission): 접속기가 **sim=None**으로 넘기고
+        #     대신 context.ownship_state / target_state 배열을 준다(policies.py 참조).
+        #   초판은 로컬만 가정해 네트워크에서 AttributeError로 죽었다.
+        s = None
+        if getattr(context, "sim", None) is not None:
+            s = context.sim.get_state()
+        elif getattr(context, "ownship_state", None) is not None:
+            s = context.ownship_state
+        if s is None:
+            # 상태를 못 얻으면 안전하게 수평 유지만 한다.
+            return ActionResult(
+                action=np.array([0.0, 0.0, 0.0, self.thr], dtype=np.float32),
+                source="straight")
         roll  = float(s[StateIndex.ROLL])
         pitch = float(s[StateIndex.PITCH])
         # 날개를 수평으로, 피치를 0으로 되돌리는 약한 비례 제어

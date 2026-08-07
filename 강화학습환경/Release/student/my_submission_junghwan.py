@@ -58,7 +58,7 @@ from dogfight.unreal import AIType, ProviderCommandPolicy, UnrealAIPilotUDPClien
 # TODO: 아래 설정을 팀에 맞게 수정하세요.
 # =============================================================================
 
-TEAM_NAME = "team01"                               # TODO: 팀 이름
+TEAM_NAME = "junghwan"      # 팀원 기체용 클라이언트
 SERVER_IP = "127.0.0.1"   # 한 PC에서 서버+양쪽 클라이언트를 다 돌릴 때는 **반드시 루프백**.
 #  client.py가 루프백일 때만 udp_mode="local-unconnected"(recvfrom)로 열어
 #  어느 주소에서 오든 수신한다. 실제 IP(172.20.10.2)를 쓰면 "connected"가 되어
@@ -78,8 +78,13 @@ OBSERVATION_MODULE = ""                            # custom 관측이면 "studen
 # BT 모드 설정
 # - 기본 배포 Rule은 Rule_forTraining.xml입니다.
 # - 팀별 BT DLL/XML을 제출하는 경우 파일을 Release 루트에 두고 아래 이름을 바꾸세요.
-BT_DLL = "AIP_final.dll"
-BT_RULE_XML = "Rule_v32.xml"  # activate_rule_xml이 이걸 Rule_forTraining.xml로 복사하고, AIP_final.dll이 그 이름을 읽는다
+BT_DLL = "AIP_junghwan.dll"
+BT_RULE_XML = "Rule_forTraining.xml"
+# ★ 충돌 방지: activate_rule_xml은 지정 XML을 **Rule_forTraining.xml로 덮어쓴다.**
+#   한 PC에서 두 클라이언트를 돌리면 서로 덮어써 엉뚱한 트리로 싸우게 된다.
+#   팀원 DLL(AIP_junghwan.dll)은 **Rule_mine.xml을 직접** 읽으므로 여기서는
+#   source==target이 되게 해서 activate를 **무동작(no-op)**으로 만든다.
+#   -> 우리 클라이언트가 만든 Rule_forTraining.xml을 건드리지 않는다.
 
 # Hybrid 모드 설정 (MODE="hybrid" 일 때만 사용)
 HYBRID_MODE = "residual"   # "residual" | "blend" | "switch"
