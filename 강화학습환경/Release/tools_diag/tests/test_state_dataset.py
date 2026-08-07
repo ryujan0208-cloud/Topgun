@@ -10,6 +10,7 @@ TOOLS_DIR = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(TOOLS_DIR))
 
 import state_dataset as subject  # noqa: E402
+import state_report  # noqa: E402
 
 
 def point(time: float, lon: float, lat: float, yaw: float, health: float = 1.0):
@@ -83,6 +84,25 @@ class StateDatasetTest(unittest.TestCase):
 
         self.assertEqual(features["own_speed_mps"], 0.0)
         self.assertEqual(features["target_speed_mps"], 0.0)
+
+    def test_report_quantile_interpolates(self):
+        self.assertEqual(state_report.quantile([0.0, 10.0], 0.5), 5.0)
+        self.assertIsNone(state_report.quantile([], 0.5))
+
+    def test_report_separates_future_dealt_and_taken(self):
+        base = {name: 1.0 for name in state_report.FEATURES}
+        rows = [
+            {**base, "episode": 0, "h10_available": 1, "h10_dealt": 0.2, "h10_taken": 0.0, "h10_net": 0.2},
+            {**base, "episode": 0, "h10_available": 1, "h10_dealt": 0.0, "h10_taken": 0.1, "h10_net": -0.1},
+            {**base, "episode": 1, "h10_available": 0, "h10_dealt": "", "h10_taken": "", "h10_net": ""},
+        ]
+
+        report = state_report.summarize_rows(rows, 10.0)
+
+        self.assertEqual(report["total_rows"], 3)
+        self.assertEqual(report["episodes"], 2)
+        self.assertEqual(report["buckets"]["future_dealt"]["count"], 1)
+        self.assertEqual(report["buckets"]["future_taken"]["count"], 1)
 
 
 if __name__ == "__main__":

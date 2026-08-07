@@ -18,7 +18,7 @@ Example:
 ```powershell
 $py = "C:\Users\TFX5470H\anaconda3\envs\aip\python.exe"
 & $py tools_diag/state_dataset.py `
-  --logdir "C:\Users\TFX5470H\Desktop\.topgun\강화학습환경\Release\artifacts\logs" `
+  --logdir ".\artifacts\logs" `
   --stamp 2026_8_7_16_33_58 `
   --output artifacts/state_policy/2026_8_7_16_33_58.csv
 ```
@@ -29,6 +29,21 @@ The output contains:
 - dynamics: speed, closure, vertical rate, turn rate, energy-height delta;
 - context: phase, health and altitude margin;
 - labels at 2/5/10/20 seconds: dealt, taken, net damage and future geometry.
+
+`tools_diag/state_report.py` performs the same conversion in memory and reports
+the p10/p50/p90 state distribution for windows preceding future dealt or taken
+damage:
+
+```powershell
+& $py tools_diag/state_report.py `
+  --logdir ".\artifacts\logs" `
+  --stamp 2026_8_4_17_4_41 `
+  --label v32-onecircle `
+  --horizon 10
+```
+
+Counts from overlapping future windows are exposure density, not independent
+firing-event counts.
 
 ## Interpretation boundary
 
