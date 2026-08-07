@@ -45,6 +45,27 @@ damage:
 Counts from overlapping future windows are exposure density, not independent
 firing-event counts.
 
+## Stage 2: independent damage events
+
+`tools_diag/damage_events.py` groups adjacent health-loss ticks into one burst
+and records the exact source stamp, episode, damage-row index, pre-damage anchor,
+and states 2/5/10 seconds before the event:
+
+```powershell
+& $py tools_diag/damage_events.py `
+  --logdir ".\artifacts\logs" `
+  --stamp 2026_8_4_17_4_41 `
+  --label v32-onecircle `
+  --output artifacts/state_policy/2026_8_4_17_4_41_events.csv
+
+& $py tools_diag/damage_event_report.py `
+  --input artifacts/state_policy/2026_8_4_17_4_41_events.csv
+```
+
+The default burst gap is 0.5 seconds and is configurable with
+`--merge-gap-s`. A candidate result should be checked across reasonable gap
+values so that an arbitrary grouping threshold does not create the conclusion.
+
 ## Interpretation boundary
 
 These labels describe what happened under the policy that generated the log.
