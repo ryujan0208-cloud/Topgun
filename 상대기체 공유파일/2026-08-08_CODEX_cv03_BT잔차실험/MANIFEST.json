@@ -1,0 +1,84 @@
+﻿{
+    "version":  "CODEX_cv03",
+    "date":  "2026-08-08",
+    "status":  "research_residual_harness_accepted_candidate_rejected_policy_unchanged",
+    "branch":  "codex/state-policy-lab",
+    "base_commit":  "51f718e",
+    "files":  [
+                  {
+                      "path":  ".gitattributes",
+                      "bytes":  36,
+                      "sha256":  "640FABC4C3DD845B74B12F8336E8D73FA7D460C554D8A909EE12F156B0357A66"
+                  },
+                  {
+                      "path":  "AIP_DCS_residual_lab.dll",
+                      "bytes":  465408,
+                      "sha256":  "DA8403DB6C598883FCBB51F0250A22AFFB68EE59BE0B687D18B880ED13EFAE5A"
+                  },
+                  {
+                      "path":  "data/e5_baseline_scan.csv",
+                      "bytes":  580,
+                      "sha256":  "D138A1C274B76A15FBBE59934820F0F57A518E2FB21924C6B2A39959762DC6CF"
+                  },
+                  {
+                      "path":  "data/residual_outcomes.csv",
+                      "bytes":  15721,
+                      "sha256":  "431692CA80C4E521659E88883F06CB89CB2E7F12FE62469CA980A2A106D27EE7"
+                  },
+                  {
+                      "path":  "README.md",
+                      "bytes":  6768,
+                      "sha256":  "EFE4462A37BF2D93D78773E076962B1B4A424D9A4531D25F83364BEC53DBA01A"
+                  },
+                  {
+                      "path":  "Rule_v32.xml",
+                      "bytes":  1980,
+                      "sha256":  "1760A7E3EA9A50D38243F276983FCD393F5ED2067AB5FD7344ED2FCA8AC153E3"
+                  },
+                  {
+                      "path":  "source/CPPBehaviorTree.cpp",
+                      "bytes":  14952,
+                      "sha256":  "CD22D8DC477DBBD8CE8CE7001C585D8550FCCA8708D20C7BF8FDE7CE3B633600"
+                  },
+                  {
+                      "path":  "source/CPPBehaviorTree.h",
+                      "bytes":  4011,
+                      "sha256":  "20B1AAEC85A4E08139A8CDD5AD0E7A3A42DEA13F3E2ED77645505183789C500B"
+                  },
+                  {
+                      "path":  "source/LibMain.cpp",
+                      "bytes":  12700,
+                      "sha256":  "531960F51D353F309B85298851FC0EF7C088D8C00E6460122ACB0011F3F34014"
+                  },
+                  {
+                      "path":  "tests/test_prefix_fork.py",
+                      "bytes":  2286,
+                      "sha256":  "36E6470E610784FF73742548AA85B8720371F9E094BB89EA4B9714BDC08EBBA8"
+                  },
+                  {
+                      "path":  "tools/fork_outcomes.py",
+                      "bytes":  6946,
+                      "sha256":  "94928C4E6919B9B98641F0C25900CBF53AFA04DBEB4A91B0AC70388EAB2A6D5B"
+                  },
+                  {
+                      "path":  "tools/native_bt.py",
+                      "bytes":  13285,
+                      "sha256":  "F6292DF794D20C0472DC4DC86518BA5586CD59C4E5064F566C4C3E066306BC87"
+                  },
+                  {
+                      "path":  "tools/prefix_fork.py",
+                      "bytes":  13837,
+                      "sha256":  "BB07C00B002A261A6E1315856C2C63C7FDF052162760A53F3593725D94489E92"
+                  },
+                  {
+                      "path":  "tools/run_fork_case.py",
+                      "bytes":  9813,
+                      "sha256":  "6A3A9EA55D6B7BD2ADF0F2595A91BD67FAD4224A4A9569080551700F1053438F"
+                  },
+                  {
+                      "path":  "tools/state_dataset.py",
+                      "bytes":  15269,
+                      "sha256":  "024032DD1E2DA547A1D9454F8218F96389D7BA97AB57D3FD8A42A702D9FDBC4A"
+                  }
+              ]
+}

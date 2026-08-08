@@ -1,0 +1,4 @@
+"campaign","seed","replay_stamp","baseline_net_hp","matching_events","selected","fork_time_s","event_time_s","event_damage_hp","own_vertical_speed_mps","range_m","own_ata_deg"
+"CV025_RESIDUAL_RANDOM_S9","9","2026_8_8_15_54_27","0.06142569175976831","0","False","","","","","",""
+"CV026_RESIDUAL_RANDOM_S10","10","2026_8_8_15_55_32","0.05493035643007593","0","False","","","","","",""
+"CV027_RESIDUAL_RANDOM_S11","11","2026_8_8_15_56_32","0.06173606604840132","1","True","163.8666","165.8666","0.014450532650369774","95.37192000000773","806.2706599955668","31.092454901424585"
