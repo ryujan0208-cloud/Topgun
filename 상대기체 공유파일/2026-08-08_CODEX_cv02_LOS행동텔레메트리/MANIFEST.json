@@ -1,0 +1,100 @@
+﻿{
+    "version":  "CODEX_cv02",
+    "date":  "2026-08-08",
+    "status":  "research_instrumentation_accepted_policy_unchanged_candidates_rejected",
+    "branch":  "codex/state-policy-lab",
+    "base_commit":  "67c1684",
+    "cv01_binary_source_archive":  "2026-08-08_CODEX_cv01_상태정책실험하네스",
+    "files":  [
+                  {
+                      "path":  "AIP_DCS_lab.dll",
+                      "bytes":  465408,
+                      "sha256":  "5AFE544793AAE631C99AB922F4A1B9066E3DBB9B511F60470F9390A0F5F1003D"
+                  },
+                  {
+                      "path":  "data/action_telemetry_comparison.csv",
+                      "bytes":  1990,
+                      "sha256":  "B12C936906758E6A6D42011AC36E4BDD24339C75A509DC427428C3F4E77CF824"
+                  },
+                  {
+                      "path":  "data/baseline_events.csv",
+                      "bytes":  168085,
+                      "sha256":  "3D49215A5CE649BE420E680D5400107F7C3ED10593D12DB3A94AF5EC9F83A24A"
+                  },
+                  {
+                      "path":  "data/baseline_manifest.csv",
+                      "bytes":  7018,
+                      "sha256":  "F108190A0AC92D7466BA8CA505E79C8407A0BC5EEABBDC7BBEFB12E2E4B75BFB"
+                  },
+                  {
+                      "path":  "data/candidate_summary.csv",
+                      "bytes":  1193,
+                      "sha256":  "A8F50396DA9A58C7773F84DCCE3E94084302D8225EBDFAF354ACFDD202653915"
+                  },
+                  {
+                      "path":  "data/fork_outcomes.csv",
+                      "bytes":  43101,
+                      "sha256":  "1345EFFCA0558FA9A3C85C7C4AB892DF11BC26297AC8D49CBE9F1876C1CAAD9C"
+                  },
+                  {
+                      "path":  "README.md",
+                      "bytes":  3802,
+                      "sha256":  "801EB4B703E44BA7B91FBF14008CAA76023C1E9C2BF12E599A4D50F7EC85D544"
+                  },
+                  {
+                      "path":  "Rule_v32.xml",
+                      "bytes":  1980,
+                      "sha256":  "1760A7E3EA9A50D38243F276983FCD393F5ED2067AB5FD7344ED2FCA8AC153E3"
+                  },
+                  {
+                      "path":  "tests/test_prefix_fork.py",
+                      "bytes":  1982,
+                      "sha256":  "198CE10623E78AB059B788D79E3438002CE36F1592ED29BBDF6D328D0BED1698"
+                  },
+                  {
+                      "path":  "tests/test_state_dataset.py",
+                      "bytes":  5335,
+                      "sha256":  "7AC98383112B5F04F6F2E3BFE726C82E060E763D881DDA8247197D0C1EC219FE"
+                  },
+                  {
+                      "path":  "tools/damage_event_report.py",
+                      "bytes":  6350,
+                      "sha256":  "48C2B4903C9276F7A2D32747F511F6394A588E6EEBC7A397252139E75948F166"
+                  },
+                  {
+                      "path":  "tools/damage_events.py",
+                      "bytes":  10795,
+                      "sha256":  "5B898148C02522A9D026781353CD90DF851BBF5D8ED31AF7F1B4372F11E09512"
+                  },
+                  {
+                      "path":  "tools/fork_outcomes.py",
+                      "bytes":  6946,
+                      "sha256":  "94928C4E6919B9B98641F0C25900CBF53AFA04DBEB4A91B0AC70388EAB2A6D5B"
+                  },
+                  {
+                      "path":  "tools/prefix_fork.py",
+                      "bytes":  13281,
+                      "sha256":  "E4FE6368B8E89A68452ADE3B849E4A3BD7B848D70F8727805CC1C098E78E0EB6"
+                  },
+                  {
+                      "path":  "tools/run_fork_case.py",
+                      "bytes":  9653,
+                      "sha256":  "D1B98E9944E2F6D2A107CC7FE5568479D023ECC2126AB5747DFBBEF83C9835E3"
+                  },
+                  {
+                      "path":  "tools/state_dataset.py",
+                      "bytes":  15269,
+                      "sha256":  "024032DD1E2DA547A1D9454F8218F96389D7BA97AB57D3FD8A42A702D9FDBC4A"
+                  },
+                  {
+                      "path":  "tools/state_report.py",
+                      "bytes":  6234,
+                      "sha256":  "DDEB509106697B968CF569D43680BB6ED7E2C658550BBC01588DC48305096594"
+                  },
+                  {
+                      "path":  "tools/wez_rule.py",
+                      "bytes":  3746,
+                      "sha256":  "37B7C61507B106C234F7C9B77D5766B67FED013C8E7DD52399BAC7A52719A730"
+                  }
+              ]
+}
