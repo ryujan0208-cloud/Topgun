@@ -1,0 +1,17 @@
+{
+  "version": "CODEX_cv01",
+  "date": "2026-08-08",
+  "status": "research_harness_accepted_policy_unchanged",
+  "branch": "codex/state-policy-lab",
+  "files": [
+    {"path": "AIP_DCS_lab.dll", "bytes": 465408, "sha256": "5AFE544793AAE631C99AB922F4A1B9066E3DBB9B511F60470F9390A0F5F1003D"},
+    {"path": "Rule_v32.xml", "bytes": 1980, "sha256": "1760A7E3EA9A50D38243F276983FCD393F5ED2067AB5FD7344ED2FCA8AC153E3"},
+    {"path": "source/CPPBehaviorTree.cpp", "bytes": 14864, "sha256": "6A5C6F143FF9C2D80A93CA80F1999F197E79EBFAD2135B43BDE2C402CB758D43"},
+    {"path": "source/CPPBehaviorTree.h", "bytes": 3972, "sha256": "4ADCBD8693BD8A665D44B79AA90D33E15990CA4B787B4C22CDDB85711CAEBA59"},
+    {"path": "source/LibMain.cpp", "bytes": 12054, "sha256": "778D6AB4D856932800C81068DBBF52C0B6225C729318EE2492E82704DFFA0CBD"},
+    {"path": "source/native_bt.py", "bytes": 11518, "sha256": "49BC3C249B911D85ECC1693C888D9710ED9B87D890F4F6C0CBA1C7AEAB430FC8"},
+    {"path": "tools/fork_outcomes.py", "bytes": 6773, "sha256": "39BA16997BCA518B1C4B702679B090E4940C3940C687EA138C8C99C854218114"},
+    {"path": "tools/prefix_fork.py", "bytes": 10277, "sha256": "5D15499175F107A1210C006AA9843BC705E20EFD8C4B23B27D49FF376B29ABA6"},
+    {"path": "tools/run_fork_case.py", "bytes": 9281, "sha256": "09067B1BE064B999C6CC0E4C40E642A75B47DFC9A74682946B69AC92FC635FA5"}
+  ]
+}

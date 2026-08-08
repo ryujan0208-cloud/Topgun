@@ -15,6 +15,22 @@ import prefix_fork as subject  # noqa: E402
 
 
 class PrefixForkTest(unittest.TestCase):
+    def test_randomized_start_matches_rehearsal_distribution(self):
+        config = subject.env_config(200.0, True)
+        self.assertEqual(
+            config["ownship_randomization"],
+            {
+                "enabled": True,
+                "radius": 1500.0,
+                "r_roll": 10.0,
+                "r_pitch": 5.0,
+                "r_heading": 180.0,
+            },
+        )
+
+    def test_fixed_start_does_not_silently_randomize(self):
+        self.assertNotIn("ownship_randomization", subject.env_config(200.0, False))
+
     def test_ned_position_is_converted_to_neu(self):
         state = np.zeros(51)
         state[0:3] = [100.0, 200.0, -3_000.0]

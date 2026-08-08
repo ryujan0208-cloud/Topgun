@@ -114,3 +114,10 @@ A learned or tabulated override will eventually be allowed only when:
 - the same direction survives opponent and seed holdouts.
 
 Otherwise the policy returns to unchanged v32 behavior.
+
+## Archived campaigns
+
+- `runs/CV01/README.md`: 20 exact-prefix action forks across fixed and
+  randomized ACE starts, including the failed predeclared seed-2 prediction.
+- `runs/CV01/fork_outcomes.csv`: state/action outcomes at 3/5/10/20-second
+  horizons plus final net HP.
