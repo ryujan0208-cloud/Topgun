@@ -1,0 +1,78 @@
+{
+    "schema_version":  1,
+    "experiment":  "CODEX_cv04_transient_residual_rejection",
+    "created_local":  "2026-08-08",
+    "git_revision":  "b7da3dd9d0af5e7cabdb721bfc88958c219aba7a",
+    "files":  [
+                  {
+                      "path":  "AIP_DCS_residual_lab.dll",
+                      "bytes":  465408,
+                      "sha256":  "DA8403DB6C598883FCBB51F0250A22AFFB68EE59BE0B687D18B880ED13EFAE5A"
+                  },
+                  {
+                      "path":  "data/baseline_scan.csv",
+                      "bytes":  2603,
+                      "sha256":  "D1E3D4E6A1F0FF9AB301A212AE60645255BFB536E8D0086554DA858A22198689"
+                  },
+                  {
+                      "path":  "data/s12_events.csv",
+                      "bytes":  7411,
+                      "sha256":  "5EAB48CE56E4D5C33F8BCF7D4EA0E8F5A8283A2F04422AF0A80DF5ECDEA60955"
+                  },
+                  {
+                      "path":  "data/s13_events.csv",
+                      "bytes":  8749,
+                      "sha256":  "0864905E20C4A04790AD3620BB072CF7C9855B0037F62CB91308247A9AE8F0E2"
+                  },
+                  {
+                      "path":  "data/s14_events.csv",
+                      "bytes":  4709,
+                      "sha256":  "299C6AD1D10D3BF8236EA11339D94DB3D1646CD88789953AA81AEF3D36EB4F6A"
+                  },
+                  {
+                      "path":  "data/s15_events.csv",
+                      "bytes":  6065,
+                      "sha256":  "A231EAEEB0170DF2DAFC7462C31922AC6BC1CE5C046F25B0BBD95AF4E420A2E7"
+                  },
+                  {
+                      "path":  "data/transient_outcomes.csv",
+                      "bytes":  3706,
+                      "sha256":  "97A9F8A3659BC81A28EF111DBDA961A8384641AFF15D3A1B1AEA06AA702A7FC2"
+                  },
+                  {
+                      "path":  "README.md",
+                      "bytes":  3670,
+                      "sha256":  "257D95D8D969A498FD320C6ABB19EAB1EAE94DBAFB1E8B7C3A608F2B0FE43940"
+                  },
+                  {
+                      "path":  "Rule_v32.xml",
+                      "bytes":  1980,
+                      "sha256":  "1760A7E3EA9A50D38243F276983FCD393F5ED2067AB5FD7344ED2FCA8AC153E3"
+                  },
+                  {
+                      "path":  "tests/test_select_damage_events.py",
+                      "bytes":  1697,
+                      "sha256":  "584E34D0B7C40F459200E54D2EB02D1FA99A12AA3BA95F02627C1C7295FCA17C"
+                  },
+                  {
+                      "path":  "tools/damage_events.py",
+                      "bytes":  10795,
+                      "sha256":  "5B898148C02522A9D026781353CD90DF851BBF5D8ED31AF7F1B4372F11E09512"
+                  },
+                  {
+                      "path":  "tools/fork_outcomes.py",
+                      "bytes":  6946,
+                      "sha256":  "94928C4E6919B9B98641F0C25900CBF53AFA04DBEB4A91B0AC70388EAB2A6D5B"
+                  },
+                  {
+                      "path":  "tools/select_damage_events.py",
+                      "bytes":  7076,
+                      "sha256":  "78F8FB96B48CA5BDC93AC47A94D08BEE1DDC7506C78A149A69C473652104E0D0"
+                  },
+                  {
+                      "path":  "tools/state_dataset.py",
+                      "bytes":  15269,
+                      "sha256":  "024032DD1E2DA547A1D9454F8218F96389D7BA97AB57D3FD8A42A702D9FDBC4A"
+                  }
+              ]
+}
