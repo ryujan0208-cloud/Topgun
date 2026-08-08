@@ -1,0 +1,512 @@
+########## repeat=1 vs AIP_onecircle.dll ##########
+[ACTIVE] [RED] Pure Z=7001.98 VPZ=7000.22
+[ACTIVE] [RED] LeadPredict dist=4387.34 dV=-0.0514526 thr=1 om=0.000445097 lt=3
+[ACTIVE] [RED] Pure Z=7000.46 VPZ=6999.68
+[ACTIVE] [RED] Pure Z=6998.56 VPZ=6998.75
+[ACTIVE] [RED] LeadPredict dist=3779.25 dV=0.61734 thr=1 om=0.0015708 lt=3
+[ACTIVE] [RED] LeadPredict dist=3164.81 dV=3.39532 thr=1 om=0.0002618 lt=3
+[ACTIVE] [RED] LeadPredict dist=2545.3 dV=6.12186 thr=1 om=0.00260411 lt=3
+[ACTIVE] [RED] LeadPredict dist=1920.29 dV=8.89981 thr=1 om=0.000276456 lt=3
+[ACTIVE] [RED] LeadPredict dist=1288.52 dV=11.8321 thr=1 om=0.000359623 lt=3
+[ACTIVE] [RED] Evade Z=6977.08
+[ACTIVE] [RED] Evade Z=6968.73
+[ACTIVE] [RED] Evade Z=6954.53
+[ACTIVE] [RED] LeadPredict dist=415.258 dV=15.4332 thr=0.689981 om=0.0277175 lt=1.24722
+[ACTIVE] [RED] LeadPredict dist=1053.03 dV=12.0379 thr=0.690637 om=0.376193 lt=3
+[ACTIVE] [RED] LeadPredict dist=1668.33 dV=15.7419 thr=0.685171 om=0.173946 lt=3
+[ACTIVE] [RED] LeadPredict dist=2240.91 dV=19.8574 thr=0.674458 om=0.174003 lt=3
+[ACTIVE] [RED] LeadPredict dist=2753.99 dV=24.4359 thr=1 om=0.174556 lt=3
+[ACTIVE] [RED] LeadPredict dist=3193.34 dV=29.889 thr=1 om=0.1746 lt=3
+[ACTIVE] [RED] LeadPredict dist=3544.02 dV=34.5704 thr=1 om=0.177274 lt=3
+[ACTIVE] [RED] LeadPredict dist=3790.98 dV=38.4801 thr=1 om=0.180284 lt=3
+[ACTIVE] [RED] LeadPredict dist=3921.21 dV=41.361 thr=1 om=0.181868 lt=3
+[ACTIVE] [RED] LeadPredict dist=3926 dV=43.1615 thr=1 om=0.183475 lt=3
+[ACTIVE] [RED] LeadPredict dist=3800.73 dV=43.9846 thr=1 om=0.18527 lt=3
+[ACTIVE] [RED] LeadPredict dist=3546.99 dV=43.6245 thr=1 om=0.18721 lt=3
+[ACTIVE] [RED] LeadPredict dist=3172.32 dV=42.1841 thr=1 om=0.189124 lt=3
+[ACTIVE] [RED] LeadPredict dist=2694.45 dV=39.8691 thr=1 om=0.191019 lt=3
+[ACTIVE] [RED] LeadPredict dist=2132.14 dV=36.0108 thr=1 om=0.192635 lt=3
+[ACTIVE] [RED] LeadPredict dist=1510.13 dV=31.6381 thr=1 om=0.194115 lt=3
+[ACTIVE] [RED] Evade Z=3492.18
+[ACTIVE] [RED] LeadPredict dist=460.821 dV=28.7057 thr=0.824 om=0.198365 lt=1.27548
+[ACTIVE] [RED] LeadPredict dist=352.987 dV=22.481 thr=0.602308 om=0.19652 lt=0.998338
+[ACTIVE] [RED] LeadPredict dist=948.267 dV=11.935 thr=0.635978 om=0.338976 lt=2.74341
+[ACTIVE] [RED] LeadPredict dist=1562.59 dV=6.73917 thr=0.663963 om=0.260698 lt=3
+[ACTIVE] [RED] LeadPredict dist=2142.89 dV=1.74908 thr=0.685827 om=0.242297 lt=3
+[ACTIVE] [RED] ClimbOut Z=2948.04
+[ACTIVE] [RED] LeadPredict dist=2676.28 dV=-8.43683 thr=1 om=0.180997 lt=3
+[ACTIVE] [RED] ClimbOut Z=2820.38
+[ACTIVE] [RED] ClimbOut Z=2695.27
+[ACTIVE] [RED] LeadPredict dist=3191.08 dV=-13.7356 thr=1 om=0.219035 lt=3
+[ACTIVE] [RED] ClimbOut Z=2580.87
+[ACTIVE] [RED] ClimbOut Z=2480.13
+[ACTIVE] [RED] LeadPredict dist=3692.98 dV=-14.6616 thr=1 om=0.216872 lt=3
+[ACTIVE] [RED] ClimbOut Z=2394.8
+[ACTIVE] [RED] ClimbOut Z=2287.74
+[ACTIVE] [RED] LeadPredict dist=4165.09 dV=-14.3015 thr=1 om=0.465909 lt=3
+[ACTIVE] [RED] Pure Z=2241.42 VPZ=3500
+[ACTIVE] [RED] Pure Z=2198.51 VPZ=3500
+[ACTIVE] [RED] LeadPredict dist=4592.63 dV=-10.4946 thr=1 om=0.23627 lt=3
+[ACTIVE] [RED] Pure Z=2169.47 VPZ=3500
+[ACTIVE] [RED] Pure Z=2154.08 VPZ=3500
+[ACTIVE] [RED] LeadPredict dist=4962.55 dV=-4.26987 thr=1 om=0.229637 lt=3
+[ACTIVE] [RED] Pure Z=2152.04 VPZ=3500
+[ACTIVE] [RED] Pure Z=2163.03 VPZ=3500
+[ACTIVE] [RED] ClimbOut Z=2842.79
+[ACTIVE] [RED] Pure Z=2186.61 VPZ=3500
+[ACTIVE] [RED] ClimbOut Z=2726.56
+[ACTIVE] [RED] Pure Z=2222.19 VPZ=3500
+[ACTIVE] [RED] ClimbOut Z=2621.38
+[ACTIVE] [RED] Pure Z=2269.03 VPZ=3500
+[ACTIVE] [RED] Pure Z=2326.26 VPZ=3500
+[ACTIVE] [RED] ClimbOut Z=2486.2
+[ACTIVE] [RED] Pure Z=2392.91 VPZ=3500
+[ACTIVE] [RED] LeadPredict dist=5894.19 dV=27.8312 thr=1 om=0.561987 lt=3
+[ACTIVE] [RED] ClimbOut Z=2361.14
+[ACTIVE] [RED] Pure Z=2468.01 VPZ=3500
+[ACTIVE] [RED] Pure Z=2550.58 VPZ=3500
+[ACTIVE] [RED] ClimbOut Z=2250.66
+[ACTIVE] [RED] Pure Z=2639.54 VPZ=3500
+[ACTIVE] [RED] Pure Z=2733.76 VPZ=3500
+[ACTIVE] [RED] LeadPredict dist=6325.28 dV=45.425 thr=1 om=0.236451 lt=3
+[ACTIVE] [RED] Pure Z=2832.03 VPZ=3500
+[ACTIVE] [RED] Pure Z=2933.08 VPZ=3500
+[ACTIVE] [RED] LeadPredict dist=6478.47 dV=51.2897 thr=1 om=0.243914 lt=3
+[ACTIVE] [RED] Pure Z=3035.64 VPZ=3500
+[ACTIVE] [RED] Pure Z=3138.37 VPZ=3500
+[ACTIVE] [RED] LeadPredict dist=6533.82 dV=56.7427 thr=1 om=0.252874 lt=3
+[ACTIVE] [RED] Pure Z=3239.96 VPZ=3500
+[ACTIVE] [RED] Pure Z=3339.09 VPZ=3500
+[ACTIVE] [RED] LeadPredict dist=6486.27 dV=61.9386 thr=1 om=0.260023 lt=3
+[ACTIVE] [RED] Pure Z=3434.47 VPZ=3500
+[ACTIVE] [RED] Pure Z=3524.9 VPZ=3500
+[ACTIVE] [RED] LeadPredict dist=6339.43 dV=66.62 thr=1 om=0.265052 lt=3
+[ACTIVE] [RED] Pure Z=3609.26 VPZ=3500
+[ACTIVE] [RED] Pure Z=3686.55 VPZ=3500
+[ACTIVE] [RED] LeadPredict dist=6100.75 dV=70.3239 thr=1 om=0.270604 lt=3
+[ACTIVE] [RED] Pure Z=3755.84 VPZ=3500
+[ACTIVE] [RED] Pure Z=3816.36 VPZ=3500
+[ACTIVE] [RED] LeadPredict dist=5775.47 dV=72.7418 thr=1 om=0.278326 lt=3
+[ACTIVE] [RED] Pure Z=3867.45 VPZ=3500
+[ACTIVE] [RED] Pure Z=3908.64 VPZ=3500
+[ACTIVE] [RED] LeadPredict dist=5372.68 dV=73.8736 thr=1 om=0.283846 lt=3
+[ACTIVE] [RED] Pure Z=3939.66 VPZ=3500
+[ACTIVE] [RED] Pure Z=3960.45 VPZ=3500
+[ACTIVE] [RED] LeadPredict dist=4903.71 dV=73.4106 thr=1 om=0.287056 lt=3
+[ACTIVE] [RED] Pure Z=3971.21 VPZ=3500
+[ACTIVE] [RED] Pure Z=3972.41 VPZ=3500
+[ACTIVE] [RED] LeadPredict dist=4383.13 dV=71.3014 thr=1 om=0.288087 lt=3
+[ACTIVE] [RED] Pure Z=3964.94 VPZ=3500
+[ACTIVE] [RED] LeadPredict dist=3828.03 dV=68.3177 thr=1 om=0.0657869 lt=3
+[ACTIVE] [RED] LeadPredict dist=3266.2 dV=61.3212 thr=1 om=0.0685062 lt=3
+[ACTIVE] [RED] LeadPredict dist=2707.43 dV=47.1742 thr=1 om=0.0244608 lt=3
+[ACTIVE] [RED] LeadPredict dist=2163.63 dV=37.4512 thr=0.766723 om=0.00328057 lt=3
+[ACTIVE] [RED] LeadPredict dist=1640.68 dV=27.574 thr=0.797769 om=0.00244458 lt=3
+[ACTIVE] [RED] LeadPredict dist=1153.72 dV=16.0505 thr=0.841715 om=0.0161189 lt=3
+[ACTIVE] [RED] LeadPredict dist=709.2 dV=1.85196 thr=0.977776 om=0.0128931 lt=2.47635
+[ACTIVE] [RED] LeadPredict dist=306.295 dV=-13.4783 thr=1 om=0.00823642 lt=1.10668
+[ACTIVE] [RED] LeadPredict dist=61.6861 dV=-27.8312 thr=1 om=0.0137602 lt=0.229623
+[ACTIVE] [RED] LeadPredict dist=373.289 dV=-40.7951 thr=1 om=0.0115192 lt=1.43659
+[ACTIVE] [RED] LeadPredict dist=628.361 dV=-50.6723 thr=1 om=0.377764 lt=2.49326
+[ACTIVE] [RED] LeadPredict dist=796.709 dV=-54.6335 thr=1 om=0.228349 lt=3
+[ACTIVE] [RED] LeadPredict dist=877.938 dV=-55.2509 thr=1 om=0.226169 lt=3
+[ACTIVE] [RED] LeadPredict dist=890.665 dV=-52.8844 thr=1 om=0.227324 lt=3
+[ACTIVE] [RED] LeadPredict dist=872.049 dV=-47.4314 thr=1 om=0.228819 lt=3
+[ACTIVE] [RED] LeadPredict dist=870.716 dV=-38.9431 thr=1 om=0.232096 lt=3
+[ACTIVE] [RED] LeadPredict dist=916.774 dV=-30.1976 thr=1 om=0.238004 lt=3
+[ACTIVE] [RED] LeadPredict dist=996.416 dV=-23.407 thr=1 om=0.245539 lt=3
+[ACTIVE] [RED] LeadPredict dist=1079.62 dV=-18.9828 thr=1 om=0.253988 lt=3
+[ACTIVE] [RED] LeadPredict dist=1143.66 dV=-16.565 thr=1 om=0.261446 lt=3
+[ACTIVE] [RED] LeadPredict dist=1180.6 dV=-17.028 thr=1 om=0.265806 lt=3
+[ACTIVE] [RED] LeadPredict dist=1189.76 dV=-19.6516 thr=1 om=0.265172 lt=3
+[ACTIVE] [RED] LeadPredict dist=1179.63 dV=-22.4296 thr=1 om=0.260583 lt=3
+[ACTIVE] [RED] LeadPredict dist=1157.55 dV=-22.1724 thr=1 om=0.255488 lt=3
+[ACTIVE] [RED] ClimbOut Z=3001.64
+[ACTIVE] [RED] LeadPredict dist=1142.16 dV=-31.1236 thr=1 om=0.138208 lt=3
+[ACTIVE] [RED] ClimbOut Z=2867.6
+[ACTIVE] [RED] ClimbOut Z=2735
+[ACTIVE] [RED] LeadPredict dist=1162.43 dV=-32.8213 thr=1 om=0.235854 lt=3
+[ACTIVE] [RED] ClimbOut Z=2610.15
+[ACTIVE] [RED] ClimbOut Z=2495.69
+[ACTIVE] [RED] LeadPredict dist=1196.74 dV=-28.7057 thr=1 om=0.215426 lt=3
+[ACTIVE] [RED] ClimbOut Z=2393.3
+[ACTIVE] [RED] ClimbOut Z=2304.45
+[ACTIVE] [RED] LeadPredict dist=1220.95 dV=-24.0758 thr=1 om=0.21398 lt=3
+[ACTIVE] [RED] ClimbOut Z=2230.39
+[ACTIVE] [RED] ClimbOut Z=2158.8
+[ACTIVE] [RED] LeadPredict dist=1225.53 dV=-13.5812 thr=1 om=0.114332 lt=3
+[ACTIVE] [RED] ClimbOut Z=2786.84
+[ACTIVE] [RED] ClimbOut Z=2658.05
+[ACTIVE] [RED] ClimbOut Z=2550.89
+[ACTIVE] [RED] ClimbOut Z=2044.39
+[ACTIVE] [RED] ClimbOut Z=2013.53
+[ACTIVE] [RED] ClimbOut Z=2424.72
+[ACTIVE] [RED] ClimbOut Z=2331.64
+[ACTIVE] [RED] ClimbOut Z=2229.92
+[ACTIVE] [RED] LeadPredict dist=1194.62 dV=8.23105 thr=1 om=0.628999 lt=3
+[ACTIVE] [RED] ClimbOut Z=2143.65
+[ACTIVE] [RED] ClimbOut Z=1900.69
+[ACTIVE] [RED] ClimbOut Z=2074.45
+[ACTIVE] [RED] LeadPredict dist=1167.2 dV=10.8547 thr=0.676863 om=0.136033 lt=3
+[ACTIVE] [RED] LeadPredict dist=1169.44 dV=12.5009 thr=0.68539 om=0.244505 lt=3
+[ACTIVE] [RED] ClimbOut Z=1987.43
+[ACTIVE] [RED] LeadPredict dist=1176.03 dV=24.4874 thr=0.67249 om=0.235629 lt=3
+[ACTIVE] [RED] ClimbOut Z=1910.22
+[ACTIVE] [RED] LeadPredict dist=1189.28 dV=35.4964 thr=0.668118 om=0.244173 lt=3
+[ACTIVE] [RED] LeadPredict dist=1207.58 dV=39.9205 thr=0.681892 om=0.252117 lt=3
+[ACTIVE] [RED] LeadPredict dist=1225.14 dV=45.4765 thr=0.696322 om=0.263206 lt=3
+[ACTIVE] [RED] LeadPredict dist=1240.37 dV=51.8041 thr=0.712064 om=0.278375 lt=3
+[ACTIVE] [RED] LeadPredict dist=1252.5 dV=58.8005 thr=0.730429 om=0.302028 lt=3
+[ACTIVE] [RED] LeadPredict dist=1259.59 dV=65.8998 thr=0.752074 om=0.290404 lt=3
+[ACTIVE] [RED] LeadPredict dist=1262.74 dV=71.5586 thr=0.778311 om=0.274374 lt=3
+[ACTIVE] [RED] LeadPredict dist=1264.87 dV=73.6164 thr=0.808701 om=0.260811 lt=3
+[ACTIVE] [RED] LeadPredict dist=1271.45 dV=70.4783 thr=0.843683 om=0.232371 lt=3
+[ACTIVE] [RED] LeadPredict dist=1285.26 dV=65.231 thr=1 om=0.271652 lt=3
+[ACTIVE] [RED] LeadPredict dist=1294.39 dV=61.2698 thr=1 om=0.236495 lt=3
+[ACTIVE] [RED] LeadPredict dist=1285.39 dV=57.2057 thr=1 om=0.224753 lt=3
+[ACTIVE] [RED] LeadPredict dist=1250.04 dV=52.1642 thr=1 om=0.221322 lt=3
+[ACTIVE] [RED] LeadPredict dist=1192.42 dV=47.3285 thr=1 om=0.212609 lt=3
+[ACTIVE] [RED] LeadPredict dist=1119.52 dV=44.0875 thr=1 om=0.20902 lt=3
+[ACTIVE] [RED] LeadPredict dist=1047.27 dV=42.4413 thr=1 om=0.204949 lt=3
+[ACTIVE] [RED] LeadPredict dist=986.599 dV=41.5668 thr=1 om=0.200489 lt=3
+[ACTIVE] [RED] LeadPredict dist=947.216 dV=40.6922 thr=1 om=0.193944 lt=3
+[ACTIVE] [RED] LeadPredict dist=933.854 dV=39.7148 thr=1 om=0.185391 lt=3
+[ACTIVE] [RED] LeadPredict dist=944.479 dV=38.6859 thr=1 om=0.17548 lt=3
+[ACTIVE] [RED] LeadPredict dist=974.909 dV=37.8628 thr=1 om=0.165181 lt=3
+[ACTIVE] [RED] LeadPredict dist=1017.34 dV=37.3998 thr=1 om=0.155437 lt=3
+[ACTIVE] [RED] LeadPredict dist=1063.42 dV=37.4512 thr=1 om=0.146825 lt=3
+[ACTIVE] [RED] LeadPredict dist=1104.95 dV=38.12 thr=1 om=0.139484 lt=3
+[ACTIVE] [RED] LeadPredict dist=1139.79 dV=39.3032 thr=1 om=0.133438 lt=3
+[ACTIVE] [RED] LeadPredict dist=1162.44 dV=41.3095 thr=1 om=0.135976 lt=3
+[ACTIVE] [RED] LeadPredict dist=1171.22 dV=43.7789 thr=1 om=0.136782 lt=3
+[ACTIVE] [RED] LeadPredict dist=1169.42 dV=46.5568 thr=1 om=0.133942 lt=3
+[ACTIVE] [RED] LeadPredict dist=1155.79 dV=49.4377 thr=1 om=0.136512 lt=3
+[ACTIVE] [RED] LeadPredict dist=1135.22 dV=52.4729 thr=1 om=0.148961 lt=3
+[ACTIVE] [RED] LeadPredict dist=1109.09 dV=55.4566 thr=1 om=0.149034 lt=3
+[ACTIVE] [RED] LeadPredict dist=1078.93 dV=57.9774 thr=1 om=0.138833 lt=3
+[ACTIVE] [RED] LeadPredict dist=1047.84 dV=59.5722 thr=1 om=0.13608 lt=3
+[ACTIVE] [RED] LeadPredict dist=1019.61 dV=60.138 thr=1 om=0.132131 lt=3
+[ACTIVE] [RED] LeadPredict dist=996.201 dV=59.7779 thr=1 om=0.13042 lt=3
+[ACTIVE] [RED] LeadPredict dist=978.826 dV=58.4404 thr=1 om=0.12702 lt=3
+[ACTIVE] [RED] LeadPredict dist=968.498 dV=56.2797 thr=1 om=0.120262 lt=3
+[ACTIVE] [RED] LeadPredict dist=965.21 dV=53.5532 thr=1 om=0.114839 lt=3
+[ACTIVE] [RED] LeadPredict dist=968.832 dV=50.4151 thr=1 om=0.0999805 lt=3
+[ACTIVE] [RED] LeadPredict dist=978.41 dV=46.814 thr=1 om=0.0844761 lt=3
+[ACTIVE] [RED] LeadPredict dist=992.724 dV=43.213 thr=1 om=0.0757844 lt=3
+[ACTIVE] [RED] LeadPredict dist=1010.58 dV=39.6119 thr=1 om=0.0683918 lt=3
+[ACTIVE] [RED] LeadPredict dist=1031.27 dV=36.1137 thr=1 om=0.0628673 lt=3
+[ACTIVE] [RED] LeadPredict dist=1054.89 dV=32.9242 thr=1 om=0.059705 lt=3
+[ACTIVE] [RED] LeadPredict dist=1078.87 dV=30.1976 thr=1 om=0.0587419 lt=3
+[ACTIVE] [RED] LeadPredict dist=1104.72 dV=27.4711 thr=1 om=0.0570697 lt=3
+[ACTIVE] [RED] LeadPredict dist=1129.33 dV=24.796 thr=1 om=0.0551276 lt=3
+[ACTIVE] [RED] LeadPredict dist=1152.45 dV=22.3781 thr=1 om=0.0543511 lt=3
+[ACTIVE] [RED] LeadPredict dist=1173.04 dV=20.2175 thr=1 om=0.0535237 lt=3
+[ACTIVE] [RED] LeadPredict dist=1191.86 dV=18.3655 thr=1 om=0.0524194 lt=3
+[ACTIVE] [RED] LeadPredict dist=1207.9 dV=16.9765 thr=1 om=0.0517187 lt=3
+[ACTIVE] [RED] LeadPredict dist=1220.62 dV=15.9476 thr=1 om=0.0511278 lt=3
+[ACTIVE] [RED] LeadPredict dist=1229.64 dV=15.4332 thr=1 om=0.0504224 lt=3
+[ACTIVE] [RED] LeadPredict dist=1236.55 dV=15.4846 thr=1 om=0.0496827 lt=3
+[ACTIVE] [RED] LeadPredict dist=1240.17 dV=15.9991 thr=1 om=0.0489094 lt=3
+[ACTIVE] [RED] LeadPredict dist=1240.48 dV=17.028 thr=1 om=0.0479798 lt=3
+[ACTIVE] [RED] LeadPredict dist=1239.11 dV=18.4684 thr=1 om=0.0469858 lt=3
+[ACTIVE] [RED] LeadPredict dist=1233.31 dV=20.3204 thr=1 om=0.0458828 lt=3
+[ACTIVE] [RED] LeadPredict dist=1227.26 dV=22.5325 thr=1 om=0.0445888 lt=3
+[ACTIVE] [RED] LeadPredict dist=1217.55 dV=24.8989 thr=1 om=0.0431669 lt=3
+[ACTIVE] [RED] LeadPredict dist=1208.19 dV=27.3682 thr=1 om=0.0414372 lt=3
+[ACTIVE] [RED] LeadPredict dist=1195.08 dV=29.9404 thr=1 om=0.0395797 lt=3
+[ACTIVE] [RED] LeadPredict dist=1181.24 dV=32.3583 thr=1 om=0.0374108 lt=3
+[ACTIVE] [RED] LeadPredict dist=1165.58 dV=34.7247 thr=1 om=0.0350197 lt=3
+[ACTIVE] [RED] LeadPredict dist=1149.12 dV=36.8339 thr=1 om=0.032356 lt=3
+[ACTIVE] [RED] LeadPredict dist=1129.88 dV=38.7888 thr=1 om=0.0294318 lt=3
+[ACTIVE] [RED] LeadPredict dist=1110.8 dV=40.435 thr=1 om=0.0263436 lt=3
+[ACTIVE] [RED] LeadPredict dist=1089.5 dV=41.824 thr=1 om=0.0230618 lt=3
+[ACTIVE] [RED] LeadPredict dist=1064.63 dV=42.9043 thr=1 om=0.0199311 lt=3
+[ACTIVE] [RED] LeadPredict dist=1040.81 dV=43.6245 thr=1 om=0.0132903 lt=3
+[ACTIVE] [RED] LeadPredict dist=1012.87 dV=44.0875 thr=1 om=0.0103864 lt=3
+[ACTIVE] [RED] LeadPredict dist=983.878 dV=44.1904 thr=1 om=0.00956832 lt=3
+[ACTIVE] [RED] LeadPredict dist=952.165 dV=44.0875 thr=1 om=0.0115424 lt=3
+[ACTIVE] [RED] LeadPredict dist=919.573 dV=43.6245 thr=1 om=0.0137256 lt=3
+[ACTIVE] [RED] LeadPredict dist=883.473 dV=41.6696 thr=0.583999 om=0.0156788 lt=0.224413
+[ACTIVE] [RED] LeadPredict dist=848.655 dV=38.8917 thr=0.55 om=0.018277 lt=0
+[ACTIVE] [RED] LeadPredict dist=814.09 dV=36.1137 thr=0.566636 om=0.0203223 lt=0
+[ACTIVE] [RED] LeadPredict dist=782.257 dV=33.953 thr=0.592563 om=0.0214122 lt=0
+[ACTIVE] [RED] LeadPredict dist=749.653 dV=32.1525 thr=0.61417 om=0.0220799 lt=0
+[ACTIVE] [RED] LeadPredict dist=718.243 dV=30.352 thr=0.635776 om=0.0222397 lt=0
+[ACTIVE] [RED] LeadPredict dist=689.33 dV=29.0144 thr=0.651827 om=0.0218 lt=0
+[ACTIVE] [RED] LeadPredict dist=660.23 dV=27.6254 thr=0.668495 om=0.0209268 lt=0
+[ACTIVE] [RED] LeadPredict dist=633.755 dV=26.2364 thr=0.685163 om=0.0197425 lt=0
+[ACTIVE] [RED] LeadPredict dist=607.706 dV=25.1561 thr=0.698127 om=0.0181969 lt=0
+[seed 0] reward=   387.37 ownHP=0.6696 tgtHP=-0.0009 target destroyed
+SUMMARY dealt=1.0009 taken=0.3304 mean_reward=387.37
+STAMP repeat=1 AIP_onecircle.dll 2026_8_8_23_24_57
+
+########## repeat=6 vs AIP_onecircle.dll ##########
+[ACTIVE] [RED] LeadPredict dist=1334.19 dV=10.1859 thr=1 om=0.00337104 lt=3
+[ACTIVE] [RED] LeadPredict dist=3207.9 dV=28.2942 thr=1 om=1.0474 lt=3
+[ACTIVE] [RED] LeadPredict dist=3602.78 dV=42.9557 thr=1 om=1.12077 lt=3
+[ACTIVE] [RED] LeadPredict dist=318.442 dV=27.0595 thr=0.608 om=0.882613 lt=0.891043
+[ACTIVE] [RED] LeadPredict dist=3632.66 dV=-11.472 thr=1 om=1.32679 lt=3
+[ACTIVE] [RED] ClimbOut Z=2381.57
+[ACTIVE] [RED] Pure Z=2169.56 VPZ=3500
+[ACTIVE] [RED] Pure Z=2412.04 VPZ=3500
+[ACTIVE] [RED] Pure Z=3124.98 VPZ=3500
+[ACTIVE] [RED] LeadPredict dist=6033.63 dV=58.1832 thr=1 om=1.43728 lt=3
+[ACTIVE] [RED] Pure Z=3935.91 VPZ=3500
+[ACTIVE] [RED] Pure Z=4426.52 VPZ=3553.11
+[ACTIVE] [RED] LeadPredict dist=3953.41 dV=78.5035 thr=1 om=1.74602 lt=3
+[ACTIVE] [RED] LeadPredict dist=809.43 dV=28.0884 thr=0.662939 om=0.0504457 lt=2.61409
+[ACTIVE] [RED] LeadPredict dist=1987.19 dV=-40.3321 thr=1 om=1.48802 lt=3
+[ACTIVE] [RED] LeadPredict dist=2755.81 dV=-73.8736 thr=1 om=1.44492 lt=3
+[ACTIVE] [RED] ClimbOut Z=2379.88
+[ACTIVE] [RED] LeadPredict dist=2868.82 dV=-78.2463 thr=1 om=0.497915 lt=3
+[ACTIVE] [RED] ClimbOut Z=1900.97
+[ACTIVE] [RED] LeadPredict dist=2705.56 dV=-43.4187 thr=1 om=1.59725 lt=3
+[ACTIVE] [RED] LeadPredict dist=1788.56 dV=21.2464 thr=0.749451 om=1.78203 lt=3
+[ACTIVE] [RED] ClimbOut Z=2786.89
+[ACTIVE] [RED] ClimbOut Z=2074.71
+[ACTIVE] [RED] LeadPredict dist=3087.22 dV=93.3709 thr=0.931824 om=3.20079 lt=3
+[ACTIVE] [RED] Pure Z=2111.76 VPZ=3500
+[ACTIVE] [RED] ClimbOut Z=1814.69
+[ACTIVE] [RED] LeadPredict dist=4120.24 dV=100.985 thr=1 om=1.68826 lt=3
+[ACTIVE] [RED] LeadPredict dist=2363.03 dV=91.3131 thr=1 om=0.890958 lt=3
+[ACTIVE] [RED] LeadPredict dist=737.468 dV=56.5884 thr=0.55 om=1.81965 lt=2.37026
+[ACTIVE] [RED] LeadPredict dist=1304.23 dV=37.5541 thr=1 om=1.49749 lt=3
+[ACTIVE] [RED] ClimbOut Z=2195.13
+[ACTIVE] [RED] Evade Z=2106.29
+[ACTIVE] [RED] ClimbOut Z=1879.5
+[ACTIVE] [RED] ClimbOut Z=1795.43
+[ACTIVE] [RED] LeadPredict dist=1336.44 dV=54.5306 thr=1 om=1.50978 lt=3
+[ACTIVE] [RED] ClimbOut Z=1802.58
+[ACTIVE] [RED] LeadPredict dist=1391.34 dV=41.7211 thr=1 om=0.68518 lt=3
+[ACTIVE] [RED] ClimbOut Z=1840.27
+[ACTIVE] [RED] LeadPredict dist=1372.59 dV=36.9368 thr=1 om=0.928558 lt=3
+[ACTIVE] [RED] ClimbOut Z=1882.39
+[ACTIVE] [RED] ClimbOut Z=1790.56
+[ACTIVE] [RED] LeadPredict dist=1320.21 dV=39.7148 thr=1 om=2.10417 lt=3
+[ACTIVE] [RED] ClimbOut Z=1822.41
+[ACTIVE] [RED] ClimbOut Z=1817.31
+[ACTIVE] [RED] LeadPredict dist=1317.39 dV=41.0009 thr=1 om=1.74198 lt=3
+[ACTIVE] [RED] ClimbOut Z=1837.63
+[ACTIVE] [RED] ClimbOut Z=1813.17
+[ACTIVE] [RED] LeadPredict dist=1299.04 dV=40.7437 thr=1 om=1.67208 lt=3
+[ACTIVE] [RED] ClimbOut Z=1800.75
+[seed 0] reward=   -57.60 ownHP=0.6388 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.3612 mean_reward=-57.60
+STAMP repeat=6 AIP_onecircle.dll 2026_8_8_23_25_29
+
+########## repeat=1 vs AIP_jink.dll ##########
+[ACTIVE] [RED] Pure Z=7001.98 VPZ=7000.22
+[ACTIVE] [RED] LeadPredict dist=4387.34 dV=0.462982 thr=1 om=0.0275955 lt=3
+[ACTIVE] [RED] LeadPredict dist=3781.79 dV=5.91608 thr=1 om=0.0176816 lt=3
+[ACTIVE] [RED] LeadPredict dist=3175.01 dV=11.1119 thr=1 om=0.0394596 lt=3
+[ACTIVE] [RED] LeadPredict dist=2562.55 dV=9.62003 thr=1 om=0.0303287 lt=3
+[ACTIVE] [RED] LeadPredict dist=1943.78 dV=11.1119 thr=1 om=0.117563 lt=3
+[ACTIVE] [RED] LeadPredict dist=1328.67 dV=13.8899 thr=1 om=0.0295511 lt=3
+[ACTIVE] [RED] LeadPredict dist=579.457 dV=13.6327 thr=0.755174 om=0.06319 lt=1.77803
+[ACTIVE] [RED] LeadPredict dist=248.001 dV=11.8321 thr=0.709877 om=0.0305129 lt=0.755491
+[ACTIVE] [RED] LeadPredict dist=725.986 dV=5.09296 thr=0.70791 om=0.0426646 lt=2.20847
+[ACTIVE] [RED] LeadPredict dist=1294.62 dV=3.54965 thr=0.702662 om=0.0298639 lt=3
+[ACTIVE] [RED] LeadPredict dist=1842.74 dV=4.73285 thr=0.692168 om=0.0596955 lt=3
+[ACTIVE] [RED] LeadPredict dist=2355.45 dV=6.37906 thr=0.677956 om=0.0250911 lt=3
+[ACTIVE] [RED] LeadPredict dist=2831.05 dV=5.29874 thr=1 om=0.0570583 lt=3
+[ACTIVE] [RED] LeadPredict dist=3263.31 dV=10.083 thr=1 om=0.014101 lt=3
+[ACTIVE] [RED] LeadPredict dist=3642.21 dV=16.2563 thr=1 om=0.211264 lt=3
+[ACTIVE] [RED] LeadPredict dist=3939.29 dV=21.9666 thr=1 om=0.240215 lt=3
+[ACTIVE] [RED] LeadPredict dist=4145.15 dV=27.6769 thr=1 om=0.142128 lt=3
+[ACTIVE] [RED] LeadPredict dist=4270.95 dV=25.3619 thr=1 om=0.189356 lt=3
+[ACTIVE] [RED] LeadPredict dist=4313.26 dV=22.7897 thr=1 om=0.034389 lt=3
+[ACTIVE] [RED] LeadPredict dist=4287.77 dV=23.7157 thr=1 om=0.171729 lt=3
+[ACTIVE] [RED] LeadPredict dist=4173.31 dV=21.9152 thr=1 om=0.0479092 lt=3
+[ACTIVE] [RED] LeadPredict dist=3978.63 dV=17.9539 thr=1 om=0.251963 lt=3
+[ACTIVE] [RED] LeadPredict dist=3748.79 dV=21.3492 thr=1 om=0.148877 lt=3
+[ACTIVE] [RED] ClimbOut Z=3526
+[ACTIVE] [RED] LeadPredict dist=3494.29 dV=17.4909 thr=1 om=0.0443257 lt=3
+[ACTIVE] [RED] ClimbOut Z=3354.65
+[ACTIVE] [RED] ClimbOut Z=3182.57
+[ACTIVE] [RED] LeadPredict dist=3239.73 dV=17.6967 thr=1 om=0.303075 lt=3
+[ACTIVE] [RED] ClimbOut Z=3015.93
+[ACTIVE] [RED] ClimbOut Z=2858.68
+[ACTIVE] [RED] LeadPredict dist=3054.55 dV=17.6453 thr=1 om=0.231984 lt=3
+[ACTIVE] [RED] ClimbOut Z=2713.45
+[ACTIVE] [RED] ClimbOut Z=2582.56
+[ACTIVE] [RED] LeadPredict dist=2945.16 dV=21.6579 thr=1 om=0.234431 lt=3
+[ACTIVE] [RED] ClimbOut Z=2468.12
+[ACTIVE] [RED] ClimbOut Z=2371.92
+[ACTIVE] [RED] LeadPredict dist=2887.47 dV=27.574 thr=1 om=0.235854 lt=3
+[ACTIVE] [RED] ClimbOut Z=2295.42
+[ACTIVE] [RED] ClimbOut Z=2239.7
+[ACTIVE] [RED] LeadPredict dist=2850.71 dV=34.7762 thr=1 om=0.235794 lt=3
+[ACTIVE] [RED] LeadPredict dist=2809.26 dV=45.0649 thr=1 om=0.352892 lt=3
+[ACTIVE] [RED] LeadPredict dist=2741.79 dV=59.5207 thr=1 om=0.0181624 lt=3
+[ACTIVE] [RED] LeadPredict dist=2647.96 dV=68.8321 thr=1 om=0.386318 lt=3
+[ACTIVE] [RED] LeadPredict dist=2556.76 dV=82.6705 thr=1 om=0.226421 lt=3
+[ACTIVE] [RED] LeadPredict dist=2465.45 dV=84.008 thr=1 om=0.0577163 lt=3
+[ACTIVE] [RED] LeadPredict dist=2375.41 dV=86.0658 thr=1 om=0.103791 lt=3
+[ACTIVE] [RED] LeadPredict dist=2282.72 dV=82.8763 thr=0.84 om=0.250687 lt=3
+[ACTIVE] [RED] LeadPredict dist=2195.11 dV=81.4359 thr=1 om=0.0579866 lt=3
+[ACTIVE] [RED] LeadPredict dist=2111.72 dV=81.2815 thr=1 om=0.0181162 lt=3
+[ACTIVE] [RED] LeadPredict dist=2024.96 dV=84.7283 thr=1 om=0.0988374 lt=3
+[ACTIVE] [RED] LeadPredict dist=1939.08 dV=85.397 thr=1 om=0.0556053 lt=3
+[ACTIVE] [RED] LeadPredict dist=1853.43 dV=89.8727 thr=1 om=0.0469371 lt=3
+[ACTIVE] [RED] LeadPredict dist=1762.45 dV=93.6281 thr=1 om=0.024608 lt=3
+[ACTIVE] [RED] LeadPredict dist=1669.78 dV=89.6669 thr=1 om=0.106972 lt=3
+[ACTIVE] [RED] LeadPredict dist=1584.47 dV=82.722 thr=1 om=0.196707 lt=3
+[ACTIVE] [RED] LeadPredict dist=1496.81 dV=85.0884 thr=1 om=0.0287041 lt=3
+[ACTIVE] [RED] LeadPredict dist=1410.65 dV=84.0595 thr=1 om=0.239166 lt=3
+[ACTIVE] [RED] LeadPredict dist=1325.45 dV=86.6831 thr=1 om=0.184686 lt=3
+[ACTIVE] [RED] LeadPredict dist=1239.33 dV=80.4584 thr=1 om=0.024958 lt=3
+[ACTIVE] [RED] LeadPredict dist=1158.91 dV=79.018 thr=1 om=0.0440193 lt=2.88891
+[ACTIVE] [RED] LeadPredict dist=1077.58 dV=84.8311 thr=1 om=0.0502544 lt=2.66429
+[ACTIVE] [RED] LeadPredict dist=990.526 dV=88.9981 thr=1 om=0.0436096 lt=2.43666
+[ACTIVE] [RED] LeadPredict dist=898.388 dV=93.731 thr=0.912 om=0.133173 lt=0
+[ACTIVE] [RED] LeadPredict dist=805.516 dV=94.2454 thr=0.55 om=0.0763646 lt=0.0296636
+[ACTIVE] [RED] LeadPredict dist=714.581 dV=87.9178 thr=0.55 om=0.0275785 lt=0.342227
+[ACTIVE] [RED] LeadPredict dist=631.073 dV=79.018 thr=0.55 om=0.259914 lt=0.327231
+[ACTIVE] [RED] LeadPredict dist=556.488 dV=71.0956 thr=0.55 om=0.0576574 lt=0.299032
+[ACTIVE] [RED] LeadPredict dist=490.977 dV=61.6814 thr=0.55 om=0.163384 lt=0.778407
+[ACTIVE] [RED] LeadPredict dist=441.171 dV=46.6597 thr=0.55 om=0.0248259 lt=0.74941
+[ACTIVE] [RED] LeadPredict dist=401.807 dV=36.8339 thr=0.557993 om=0.214536 lt=0.307868
+[ACTIVE] [RED] LeadPredict dist=366.279 dV=30.8149 thr=0.55 om=0.0668169 lt=0
+[ACTIVE] [RED] LeadPredict dist=335.599 dV=29.6317 thr=0.55 om=0.0435738 lt=0.4629
+[ACTIVE] [RED] LeadPredict dist=309.659 dV=22.3781 thr=0.611462 om=0.21604 lt=0
+[ACTIVE] [RED] LeadPredict dist=287.743 dV=20.4747 thr=0.634304 om=0.244424 lt=0.639861
+[ACTIVE] [RED] LeadPredict dist=262.126 dV=27.0596 thr=0.555285 om=0.229386 lt=0.752084
+[ACTIVE] [RED] LeadPredict dist=255.208 dV=26.7509 thr=0.55899 om=0.233147 lt=0.740653
+[ACTIVE] [RED] LeadPredict dist=261.77 dV=18.4684 thr=0.658379 om=0.0552867 lt=0.770159
+[ACTIVE] [RED] LeadPredict dist=246.649 dV=18.9314 thr=0.652823 om=0.170235 lt=0.729981
+[ACTIVE] [RED] LeadPredict dist=202.824 dV=21.9152 thr=0.617018 om=0.0145406 lt=0.147546
+[ACTIVE] [RED] LeadPredict dist=178.011 dV=25.259 thr=0.576892 om=0.27728 lt=0.210885
+[ACTIVE] [RED] LeadPredict dist=149.913 dV=27.0081 thr=0.55 om=0.0535159 lt=0.445309
+[ACTIVE] [RED] LeadPredict dist=138.198 dV=21.5036 thr=0.55 om=0.294455 lt=0.409946
+[ACTIVE] [RED] LeadPredict dist=127.245 dV=19.2401 thr=0.55 om=0.0680554 lt=0.384139
+[ACTIVE] [RED] LeadPredict dist=98.752 dV=18.4684 thr=0.55 om=0.0205633 lt=0.189493
+[ACTIVE] [RED] LeadPredict dist=106.166 dV=18.6227 thr=0.55 om=0.33009 lt=0.327005
+[ACTIVE] [RED] LeadPredict dist=91.2835 dV=13.4783 thr=0.55 om=0.0112193 lt=0.284819
+[ACTIVE] [RED] LeadPredict dist=76.265 dV=3.4982 thr=0.658022 om=0.0323775 lt=0.240507
+[ACTIVE] [RED] LeadPredict dist=85.9795 dV=1.69766 thr=0.679628 om=0.0247696 lt=0.273583
+[ACTIVE] [RED] LeadPredict dist=67.0306 dV=2.62366 thr=0.668516 om=0.156233 lt=0.0769049
+[ACTIVE] [RED] LeadPredict dist=72.5748 dV=2.67508 thr=0.667899 om=0.0156769 lt=0.233917
+[ACTIVE] [RED] LeadPredict dist=74.2276 dV=-7.15073 thr=0.785809 om=0.0278603 lt=0.242664
+[ACTIVE] [RED] LeadPredict dist=76.3678 dV=-3.80685 thr=0.745682 om=0.0692419 lt=0.100713
+[ACTIVE] [RED] LeadPredict dist=79.9116 dV=1.49185 thr=0.682098 om=0.0874847 lt=0.0385805
+[ACTIVE] [RED] LeadPredict dist=79.717 dV=4.16696 thr=0.649996 om=0.0222088 lt=0.261005
+[ACTIVE] [RED] LeadPredict dist=100.11 dV=0.308655 thr=0.696296 om=0.0762435 lt=0.329605
+[ACTIVE] [RED] LeadPredict dist=101.976 dV=-9.25992 thr=0.811119 om=0.0574113 lt=0.340949
+[ACTIVE] [RED] LeadPredict dist=97.6621 dV=-8.89981 thr=0.806798 om=0.117957 lt=0.316754
+[ACTIVE] [RED] LeadPredict dist=115.161 dV=-6.12186 thr=0.773462 om=0.0212205 lt=0.387295
+[ACTIVE] [RED] LeadPredict dist=114.928 dV=-1.90344 thr=0.722841 om=0.0384537 lt=0
+[ACTIVE] [RED] LeadPredict dist=119.303 dV=-1.18323 thr=0.714199 om=0.0208424 lt=0.388457
+[ACTIVE] [RED] LeadPredict dist=144.724 dV=7.87094 thr=0.605549 om=0.0194255 lt=0.461035
+[ACTIVE] [RED] LeadPredict dist=150.961 dV=7.92236 thr=0.700716 om=0.0644586 lt=0.484795
+[ACTIVE] [RED] LeadPredict dist=112.965 dV=9.31137 thr=0.588264 om=0.0222086 lt=0.363256
+[ACTIVE] [RED] LeadPredict dist=97.8115 dV=9.31137 thr=0.588264 om=0.0421617 lt=0.174764
+[ACTIVE] [RED] LeadPredict dist=95.0406 dV=0.668762 thr=0.691975 om=0.060566 lt=0
+[ACTIVE] [RED] LeadPredict dist=99.4964 dV=-1.44043 thr=0.717285 om=0.163322 lt=0.320317
+[ACTIVE] [RED] LeadPredict dist=115.59 dV=0.154327 thr=0.698148 om=0.023788 lt=0.372191
+[ACTIVE] [RED] LeadPredict dist=118.568 dV=-2.41785 thr=0.729014 om=0.0892331 lt=0.385226
+[ACTIVE] [RED] LeadPredict dist=112.744 dV=-7.35651 thr=0.788278 om=0.0676534 lt=0
+[ACTIVE] [RED] LeadPredict dist=127.327 dV=-6.01892 thr=0.772227 om=0.0134511 lt=0.412166
+[ACTIVE] [RED] LeadPredict dist=144.335 dV=-4.88718 thr=0.758646 om=0.0143598 lt=0.468003
+[ACTIVE] [RED] LeadPredict dist=137.474 dV=-0.0514221 thr=0.700617 om=0.0239063 lt=0.0340293
+[ACTIVE] [RED] LeadPredict dist=140.873 dV=-2.72653 thr=0.732718 om=0.041945 lt=0.452251
+[ACTIVE] [RED] LeadPredict dist=147.375 dV=-7.04782 thr=0.784574 om=0.011183 lt=0.120852
+[ACTIVE] [RED] LeadPredict dist=150.64 dV=0.82309 thr=0.690123 om=0.240167 lt=0.25271
+[ACTIVE] [RED] LeadPredict dist=148.567 dV=7.30505 thr=0.612339 om=0.162527 lt=0.33613
+[ACTIVE] [RED] LeadPredict dist=137.37 dV=10.7518 thr=0.570978 om=0.0196931 lt=0
+[ACTIVE] [RED] LeadPredict dist=126.627 dV=11.2662 thr=0.564805 om=0.337873 lt=0
+[ACTIVE] [RED] LeadPredict dist=117.429 dV=15.8962 thr=0.55 om=0.0264441 lt=0.3457
+[ACTIVE] [RED] LeadPredict dist=127.882 dV=25.3619 thr=0.55 om=0.23902 lt=0.368384
+[ACTIVE] [RED] LeadPredict dist=128.857 dV=25.0532 thr=0.55 om=0.0551401 lt=0.374074
+[ACTIVE] [RED] LeadPredict dist=65.9401 dV=19.5487 thr=0.55 om=0.39391 lt=0.195245
+[ACTIVE] [RED] LeadPredict dist=68.0195 dV=20.9377 thr=0.55 om=0.0977326 lt=0.200455
+[ACTIVE] [RED] LeadPredict dist=129.125 dV=13.7356 thr=0.55 om=0.016087 lt=0.380652
+[ACTIVE] [RED] ClimbOut Z=2207.58
+[ACTIVE] [RED] ClimbOut Z=2179.84
+[ACTIVE] [RED] ClimbOut Z=2272.66
+[ACTIVE] [RED] ClimbOut Z=2222.5
+[ACTIVE] [RED] LeadPredict dist=67.1529 dV=14.1471 thr=0.55 om=0.974854 lt=0.195063
+[ACTIVE] [RED] LeadPredict dist=27.1219 dV=10.0316 thr=0.579621 om=0.189853 lt=0.0795431
+[ACTIVE] [RED] LeadPredict dist=81.3557 dV=15.7419 thr=0.55 om=0.216097 lt=0.237811
+[ACTIVE] [RED] LeadPredict dist=129.417 dV=15.1245 thr=0.55 om=0.258318 lt=0.384721
+[ACTIVE] [RED] LeadPredict dist=73.0995 dV=10.7518 thr=0.570978 om=0.116101 lt=0.222685
+[ACTIVE] [RED] LeadPredict dist=88.8531 dV=2.10919 thr=0.67469 om=0.043476 lt=0.276482
+[ACTIVE] [RED] LeadPredict dist=200.97 dV=-8.4368 thr=0.754261 om=0.0266083 lt=0.632336
+[ACTIVE] [RED] LeadPredict dist=258.238 dV=-8.12814 thr=0.766942 om=0.274584 lt=0.820227
+[ACTIVE] [RED] LeadPredict dist=265.263 dV=-6.58481 thr=0.774375 om=0.16887 lt=0.847246
+[ACTIVE] [RED] LeadPredict dist=207.755 dV=-4.26984 thr=0.774375 om=0.154664 lt=0.663566
+[ACTIVE] [RED] ClimbOut Z=2251.4
+[ACTIVE] [RED] ClimbOut Z=2195.65
+[ACTIVE] [RED] ClimbOut Z=2135.51
+[ACTIVE] [RED] ClimbOut Z=2077.37
+[ACTIVE] [RED] LeadPredict dist=377.787 dV=13.0154 thr=0.723816 om=0.319781 lt=1.16733
+[ACTIVE] [RED] LeadPredict dist=460.347 dV=14.6615 thr=0.739175 om=0.0549204 lt=1.43245
+[ACTIVE] [RED] LeadPredict dist=459.236 dV=12.5523 thr=0.754917 om=0.557089 lt=1.44565
+[ACTIVE] [RED] LeadPredict dist=407.811 dV=0.565857 thr=0.778092 om=0.0284932 lt=1.30619
+[ACTIVE] [RED] LeadPredict dist=326.497 dV=-6.73917 thr=0.793834 om=0.14353 lt=1.0583
+[ACTIVE] [RED] LeadPredict dist=278.756 dV=-3.54965 thr=0.792741 om=0.0639792 lt=0.902804
+[ACTIVE] [RED] LeadPredict dist=340.873 dV=0.462982 thr=0.783339 om=0.590268 lt=1.09613
+[ACTIVE] [RED] LeadPredict dist=428.785 dV=-9.62003 thr=0.800174 om=0.0312339 lt=1.39661
+[ACTIVE] [RED] LeadPredict dist=475.333 dV=-10.546 thr=0.810888 om=0.17858 lt=1.56104
+[ACTIVE] [RED] LeadPredict dist=467.951 dV=-8.69403 thr=0.811106 om=0.0219006 lt=1.53706
+[ACTIVE] [RED] LeadPredict dist=434.732 dV=0.257233 thr=0.996913 om=0.314006 lt=0.628588
+[ACTIVE] [RED] ClimbOut Z=2362.87
+[ACTIVE] [RED] ClimbOut Z=2306.86
+[ACTIVE] [RED] LeadPredict dist=430.108 dV=4.42419 thr=0.94691 om=0.0114222 lt=1.33494
+[ACTIVE] [RED] LeadPredict dist=433.436 dV=4.26987 thr=0.948762 om=0.0325089 lt=0.620991
+[ACTIVE] [RED] LeadPredict dist=429.344 dV=6.9964 thr=0.916043 om=0.313171 lt=0
+[ACTIVE] [RED] LeadPredict dist=420.026 dV=10.2374 thr=0.877152 om=0.0548634 lt=0.247074
+[ACTIVE] [RED] LeadPredict dist=405.819 dV=13.3755 thr=0.839495 om=0.0369234 lt=0.613946
+[ACTIVE] [RED] LeadPredict dist=391.986 dV=12.4494 thr=0.730607 om=0.0354642 lt=0
+[ACTIVE] [RED] LeadPredict dist=375.598 dV=16.2563 thr=0.684924 om=0.0353891 lt=0.483706
+[ACTIVE] [RED] LeadPredict dist=366.439 dV=17.0794 thr=0.675047 om=0.0971435 lt=1.11315
+[ACTIVE] [RED] LeadPredict dist=357.964 dV=17.7996 thr=0.666405 om=0.0579283 lt=1.09614
+[ACTIVE] [RED] LeadPredict dist=335.516 dV=12.8095 thr=0.726286 om=0.0538062 lt=0.106454
+[ACTIVE] [RED] LeadPredict dist=320.365 dV=11.7292 thr=0.739249 om=0.26286 lt=0.662795
+[ACTIVE] [RED] LeadPredict dist=319.167 dV=14.5586 thr=0.698508 om=0.0221559 lt=0.964429
+[ACTIVE] [RED] LeadPredict dist=316.727 dV=15.4846 thr=0.694184 om=0.0888003 lt=0.966822
+[ACTIVE] [RED] LeadPredict dist=304.666 dV=11.0605 thr=0.747275 om=0.0454092 lt=0.506339
+[ACTIVE] [RED] LeadPredict dist=291.166 dV=11.009 thr=0.747892 om=0.0494723 lt=0
+[seed 0] reward=   926.58 ownHP=1.0000 tgtHP=-0.0011 target destroyed
+SUMMARY dealt=1.0011 taken=0.0000 mean_reward=926.58
+STAMP repeat=1 AIP_jink.dll 2026_8_8_23_26_2
+
+########## repeat=6 vs AIP_jink.dll ##########
+[ACTIVE] [RED] LeadPredict dist=1369.34 dV=24.5902 thr=1 om=0.316186 lt=3
+[ACTIVE] [RED] LeadPredict dist=2895.22 dV=25.3619 thr=0.896092 om=0.74252 lt=3
+[ACTIVE] [RED] LeadPredict dist=4793.68 dV=20.5776 thr=1 om=1.2787 lt=3
+[ACTIVE] [RED] Pure Z=5029.96 VPZ=4071.29
+[ACTIVE] [RED] LeadPredict dist=3002.32 dV=9.41425 thr=1 om=1.36254 lt=3
+[ACTIVE] [RED] ClimbOut Z=2797.57
+[ACTIVE] [RED] ClimbOut Z=2223.97
+[ACTIVE] [RED] LeadPredict dist=1565.25 dV=3.29242 thr=0.799999 om=0.613324 lt=3
+[ACTIVE] [RED] LeadPredict dist=1251.02 dV=58.9548 thr=1 om=1.37393 lt=3
+[ACTIVE] [RED] LeadPredict dist=682.685 dV=52.37 thr=0.55 om=0.334519 lt=1.89253
+[ACTIVE] [RED] LeadPredict dist=543.068 dV=15.8962 thr=0.649534 om=0.876009 lt=1.58577
+[ACTIVE] [RED] LeadPredict dist=503.746 dV=13.787 thr=0.834632 om=1.10076 lt=0.48654
+[ACTIVE] [RED] LeadPredict dist=363.311 dV=31.5352 thr=0.55 om=1.23623 lt=0.431149
+[ACTIVE] [RED] LeadPredict dist=158.794 dV=34.879 thr=0.55 om=0.449356 lt=0.355135
+[ACTIVE] [RED] LeadPredict dist=183.582 dV=8.48825 thr=0.75 om=0.950918 lt=0.579033
+[ACTIVE] [RED] LeadPredict dist=151.003 dV=-2.93231 thr=0.735188 om=1.42344 lt=0.489542
+[ACTIVE] [RED] LeadPredict dist=211.72 dV=7.35651 thr=0.791722 om=1.5503 lt=0.689601
+[ACTIVE] [RED] LeadPredict dist=565.867 dV=15.6904 thr=0.811715 om=1.62467 lt=1.89453
+[ACTIVE] [RED] LeadPredict dist=671.195 dV=19.4973 thr=0.766033 om=1.80033 lt=1.71595
+[ACTIVE] [RED] LeadPredict dist=598.427 dV=10.9061 thr=0.869126 om=0.838859 lt=0
+[ACTIVE] [RED] LeadPredict dist=574.339 dV=1.33752 thr=0.98395 om=0.285434 lt=0.959913
+[ACTIVE] [RED] LeadPredict dist=484.455 dV=23.9729 thr=0.712325 om=0.366444 lt=0.155651
+[ACTIVE] [RED] LeadPredict dist=332.301 dV=28.6543 thr=0.55 om=0.40235 lt=0.605355
+[ACTIVE] [RED] LeadPredict dist=174.233 dV=8.69403 thr=0.775672 om=0.258804 lt=0.069097
+[ACTIVE] [RED] LeadPredict dist=175.234 dV=6.84204 thr=0.797895 om=0.36563 lt=0.53357
+[ACTIVE] [RED] LeadPredict dist=111.187 dV=13.324 thr=0.55 om=0.124347 lt=0.127802
+[ACTIVE] [RED] LeadPredict dist=32.5857 dV=23.3041 thr=0.55 om=0.797623 lt=0.101428
+[ACTIVE] [RED] LeadPredict dist=127.424 dV=15.9477 thr=0.55 om=0.119588 lt=0.41009
+[ACTIVE] [RED] LeadPredict dist=867.421 dV=38.583 thr=0.55 om=2.70995 lt=2.76962
+[ACTIVE] [RED] LeadPredict dist=1182.93 dV=32.3068 thr=0.873683 om=0.215146 lt=3
+[ACTIVE] [RED] LeadPredict dist=901.23 dV=33.4901 thr=0.968 om=0.396784 lt=0.275841
+[ACTIVE] [RED] LeadPredict dist=591.152 dV=65.9512 thr=0.55 om=0.164074 lt=0.62561
+[ACTIVE] [RED] LeadPredict dist=395.998 dV=6.12183 thr=0.849498 om=0.417585 lt=0.139261
+[seed 0] reward=  1326.79 ownHP=1.0000 tgtHP=-0.0016 target destroyed
+SUMMARY dealt=1.0016 taken=0.0000 mean_reward=1326.79
+STAMP repeat=6 AIP_jink.dll 2026_8_8_23_26_32
+
+=== omega probe 완료 ===
+[trap] ownship -> v32
