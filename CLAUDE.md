@@ -115,7 +115,24 @@ cp -f Rule_mine_junghwan.xml Rule_mine.xml   # junghwan 돌리기 전 / 평상�
 - 제출 = BT DLL + Rule XML, **ACTION_REPEAT=6 = BT 10Hz** (로컬 개발은 60Hz)
 - **BT는 VP만 설정**한다. 스틱은 `Controller_CY::GetStick`이 변환(제출 제약)
 
+## ★★★ dt 버그 — 10Hz 실전 조건에서 상대 선회율을 7~9배로 읽는다 (2026-08-08 실측)
+`DeltaSecond`가 생성자 값 `1/60`에 고정돼 있다(`SetBehaviorTreeDeltaTime`을 호스트가 안 부른다).
+이력 버퍼는 **BT 틱마다** 채워지는데 `ACTION_REPEAT=6`이면 12틱 = **1.2초**인 창을 **0.2초**로 나눈다.
+```
+repeat=1(60Hz) onecircle  om  8.5°/s  실측 8.75  → 비율 0.98   (맞다)
+repeat=6(10Hz) onecircle  om 84.0°/s  실측 9.36  → 비율 8.98   (틀리다)
+```
+→ `R = tgtSpd/omega`가 209m(실제 1880m)가 되고 `phi` 상한에 걸려 **TailSlot이 124m**에 찍힌다.
+**사격 최소거리는 152.4m다.** onecircle 최약 매치업·"뒤 91% ATA 7°인데 0점"의 정체.
+⚠ **고치는 게 곧 개선은 아니다.** v32 상수 전부가 이 위에서 조정됐고 v17은 절제 1위였다.
+상세·재현: `강화학습환경/Release/experiments/dt_bug/FINDING_2026-08-08.md`
+
 ## 함정 (실제로 당한 것들)
+- **진단을 필터로 버리면 진단을 못 본다.** 배치 스크립트가 `[ACTIVE]`를 걸러내 dt 버그를 오래 못 봤다.
+- **`[ACTIVE]` 진단에서 우리 기체는 `[RED]`로 찍힌다** (DLL 내부 Team enum이 시뮬의 Blue/Red와 반대).
+  판별법: 상대 DLL을 안 쓰는 `STRAIGHT`로 돌려보면 우리 것만 나온다.
+- **`AIP_final.dll`과 `AIP_v32.dll`은 해시가 다르지만 동작은 같다**(같은 소스 별도 빌드).
+  8/8에 시드별 30판 일치로 검증했다. 해시가 다르다고 곧 다른 기체는 아니다 — **동작으로 증명할 것.**
 - **제출본이 낡을 수 있다.** `AIP_final.dll`이 v27인 채로 있었다(XML은 v27~v32 동일해서 안 보였음).
   **크기/해시로 현역 DLL과 대조할 것.**
 - **XML 이름 충돌.** `AIP_trinity.dll`은 `./Rule_forTraining.xml`을 읽는다 — 우리가 덮어쓰면
