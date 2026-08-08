@@ -1,4 +1,5 @@
 ﻿#include "Task_LeadPredict.h"
+#include "../Ablation.h"
 #include <iostream>
 #include <cmath>
 
@@ -120,7 +121,8 @@ NodeStatus Action::Task_LeadPredict::tick()
 	//    되어 추종 기하가 붕괴했다(dealt 4.34->1.53). v27은 **ATA로 게이트**한다:
 	//    ATA가 크면(추격 중) 리드 100% 유지, ATA가 작을 때만(종말 조준) 끈다.
 	//    -> 추종 기하는 보존하고 마지막 조준만 다듬는다.
-	if (dist < 914.0 && ataDeg < 10.0)
+	// [절제 A4] v27 종말조준. 발동률 0.3~5.7%로 v27의 간판 개선치고 거의 안 걸린다.
+	if (!Ablation::off("v27") && dist < 914.0 && ataDeg < 10.0)
 	{
 		DUTY_lead[__ti]++;
 		double fade = (ataDeg - 3.0) / 7.0;   // ATA 10°:리드유지 -> 3°이하:순수조준
@@ -138,7 +140,9 @@ NodeStatus Action::Task_LeadPredict::tick()
 	//   소모 -> dead-six인데도 상대가 15~40m/s 빨라 폐쇄 불가. 실제 선회는 v17 궤도가
 	//   담당하므로 여기선 노이즈만 걸러진다. 머지는 omega가 높아 그대로 작동(v20a 실수
 	//   회피 = 머지 무기 훼손 없음). omega>0.06rad/s = 3.4deg/s (궤도블록과 동일 임계).
-	if (std::fabs(rollDeg) > 10.0 && omegaNow > 0.06)
+	// [절제 A2] v21 뱅크 횡예측. **발동률 95~97%로 최대 지분인데 한 번도 검증된 적이 없다.**
+	//   이 절제가 이번 실험에서 가장 중요하다.
+	if (!Ablation::off("v21") && std::fabs(rollDeg) > 10.0 && omegaNow > 0.06)
 	{
 		DUTY_bank[__ti]++;
 		double s = (rollDeg > 0.0) ? 1.0 : -1.0;
@@ -162,7 +166,8 @@ NodeStatus Action::Task_LeadPredict::tick()
 	//   - 슬롯에 도달하면(w->0) 조준점이 요격 lead로 자연스럽게 넘어가 사격각을 만든다.
 	//   - 상대가 직진하면 R->무한대라 자동으로 기존 추격으로 퇴화한다.
 	//   (기수 이력/omega는 함수 상단에서 계산 -- v20부터 적응 리드와 공용)
-	if (haveHist)
+	// [절제 A3] v17 궤도추종. 조건통과 68~93% / 슬롯적용 45~75%로 두 번째 지분.
+	if (!Ablation::off("v17") && haveHist)
 	{
 		Vector3 axis   = fwdOld.cross(TgtFwd);      // 회전축(우수계: 진행방향 = +)
 		double axisLen = axis.length();
@@ -304,8 +309,12 @@ NodeStatus Action::Task_LeadPredict::tick()
 	//   과속은 v23b 코너속도 스로틀이 따로 잡는다. 같은 상황이 아니다.
 	// [부수 효과] 위를 조준하면 상대 고도로 따라 올라가므로 고도 자산이 회복된다.
 	//   실측상 교전의 46%를 '하강나선 불가' 구간(<3800m)에서 보내고 있는데 그것도 완화된다.
-	double climbSlope = dist * 3.0;         // v32: 0.5 -> 3.0 (앙각 26.6 -> 71.6deg)
-	double diveSlope  = dist * 0.5;         // v18: 0.2 -> 0.5 (하강 조준각 11.3->26.6deg)
+	// [절제 A5] v32 상승클램프 해제를 v29 값(0.5)으로 되돌린다.
+	//   v32 채택의 근거였던 변경인데, 그 판정은 **P1 고정 사격규칙 하에서** 내려졌다.
+	//   3단계 phase 규칙으로 바뀐 지금도 유효한지 다시 확인한다.
+	// [절제 A6] v18 강하클램프를 v17 값(0.2)으로 되돌린다.
+	double climbSlope = dist * (Ablation::off("v32clamp") ? 0.5 : 3.0);
+	double diveSlope  = dist * (Ablation::off("v18dive")  ? 0.2 : 0.5);
 	//   ※ 강하는 그대로 둔다. 지면 충돌 위험은 실재하고, 아래로 잘림은 13.5%로 병목이 아니다.
 	// v20: 강하 클램프에 절대 상한 650m. 사거리(<914m)에선 457m 이하라 v18 조준 성과에
 	// 영향 없음(연속). 원거리에서만 죄어 "급기동 상대의 다이브 리드를 쫓는 깊은 다이브
@@ -425,7 +434,10 @@ NodeStatus Action::Task_LeadPredict::tick()
 	//     직진 상대전 스로틀 0.98~0.99, 속도 496m/s, 선회반경 28km, 10초에 5.7km 이탈).
 	//     다만 **코너속도 로직으로는 못 잡는다** — 그건 '이미 크게 벗어났을 때'용이고,
 	//     필요한 건 '벗어나기 전에 속도를 관리하는 것'이다. 별도 기제가 필요하다.
-	bool needTurn = (dist < 2500.0) && (ataDeg > 12.0)
+	// [절제 A7] v23b 코너속도. v36에서 "5상대가 소수점까지 동일" = onecircle 상대로만
+	//   발동한다는 게 드러났다. 실제로 짐을 지고 있는지 확인한다.
+	bool needTurn = !Ablation::off("v23corner")
+	                && (dist < 2500.0) && (ataDeg > 12.0)
 	                && (mySpd > CORNER + 30.0) && !beingChased;
 	float stepUse = 0.008f;                 // 기본 변화율(부드럽게)
 	float targetBeforeCorner = target;      // 코너속도 적용 전 값(추적용)

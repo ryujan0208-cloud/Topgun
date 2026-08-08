@@ -1,4 +1,5 @@
 #include "Task_Evade.h"
+#include "../Ablation.h"
 #include <iostream>
 #include <cmath>
 
@@ -86,7 +87,17 @@ NodeStatus Action::Task_Evade::tick()
 	static long long EV_tick[2]={0,0}, EV_spiral[2]={0,0}, EV_mid[2]={0,0}, EV_climb[2]={0,0};
 	EV_tick[__t]++;
 	double downMix;
-	if (myAlt > 3000.0)
+	if (Ablation::off("v31"))
+	{
+		// [절제 A1] v31 하강나선을 빼고 v29 원형으로 되돌린다(커밋 0acc75f의 삭제분).
+		//   v31은 기각됐는데 소스를 안 되돌려 v32에 그대로 들어가 있다.
+		//   빼도 성적이 유지되면 제거하고, 떨어지면 v32의 일부로 정식 인정한다.
+		downMix = 0.55;                                   // 수평 1.0 대비 하강 비중
+		if (myAlt < 3500.0) downMix = 0.55 * ((myAlt - 2200.0) / 1300.0);
+		if (downMix < 0.0)  downMix = 0.0;
+		if (myAlt < 2200.0) downMix = -0.25;              // 저고도: 상승 성분으로 전환
+	}
+	else if (myAlt > 3000.0)
 	{
 		// 하강 나선: 고도가 높을수록 깊게(최대 1.8). 3000m에서 0.55로 연속 접속.
 		double head = (myAlt - 3000.0) / 2000.0;      // 3000m:0 -> 5000m:1
