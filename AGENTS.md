@@ -1,7 +1,7 @@
 # 탑건 BT 프로젝트 — 작업 규칙
 
 2026 AI 파일럿 탑건 챌린지. 1v1 F-16 도그파이트 BT.
-**상세 기록은 `~/.claude/projects/.../memory/` (MEMORY.md가 색인). 이 파일은 매 세션 반드시 지킬 최소 규칙만.**
+**상세 기록은 `~/.Codex/projects/.../memory/` (MEMORY.md가 색인). 이 파일은 매 세션 반드시 지킬 최소 규칙만.**
 
 ## 실행 환경 (틀리면 즉시 실패)
 ```bash
@@ -36,21 +36,6 @@ cd 강화학습환경/Release
 - **대칭 지표는 양쪽 다 재라**(위/아래, 좌/우).
 - 새 버전을 잴 땐 **그 버전의 상수를 도구에 넘겼는지** 확인.
 
-## ★ 코덱스와 투트랙 — 서로의 작업 디렉터리를 절대 건드리지 않는다
-| | 우리(Claude) | 코덱스 |
-|---|---|---|
-| 위치 | `.topgun/` (main) | `.topgun/recordings/codex-state-policy-lab/` (**git worktree**) |
-| 브랜치 | `main` | `codex/state-policy-lab` (기점 `770d7a0`) |
-| 규약 파일 | `CLAUDE.md` | `AGENTS.md`(내용 동일) + `CODEX_WORKSTREAM.md` |
-| 역할 | 기체 개선·실전 15시드 판정 | **상태-정책 실험실**(반사실 fork, 채택 판정 아님) |
-
-- `recordings/`는 main의 `.gitignore`에 있어 **서로의 git status에 안 잡힌다.** 이게 격리 장치다.
-- **교환은 커밋 해시와 리포트로만.** 상대 디렉터리를 편집하지 말 것(양쪽 다 합의).
-- 코덱스 산출물 3단: 추적되는 압축색인 `experiments/state_policy/runs/CVnn/`(README+작은 CSV,
-  SHA-256 명시) / 무시되는 원자료 `artifacts/state_policy/` / 아카이브 `상대기체 공유파일/날짜_CODEX_*`.
-- 코덱스는 `tools_diag/tests/test_*.py`로 **도구에 단위테스트를 붙인다.** 우리도 그렇게 할 것.
-- 코덱스 실험 DLL은 `AIP_DCS_lab.dll`(별도). 제출 DLL·Rule을 건드리지 않는다.
-
 ## 운영 (묻지 말고 그냥 할 것)
 - **리플레이 기본 제공**: `"$PY" tools/dashboard.py --default-tab replay --logdir artifacts/logs --port 7860`
   + **로그 stamp를 함께** 알려 어느 판인지 특정.
@@ -81,19 +66,6 @@ cd 강화학습환경/Release
 `AIP_kwon` `AIP_v7`(실제BT) `SEARCH`(탐색형) `STRAIGHT`(직진) `AIP_junghwan`(팀원 실기체)
 ⚠ **`AIP_dummy.dll`은 직선이 아니다**(80도 뱅크 선회). 직진 대조군은 `STRAIGHT`.
 ⚠ 팀원 파일은 원래 `AIP_DCS.dll`이라 **그대로 복사하면 우리 파일을 덮어쓴다.**
-
-### ★★ `kwon`과 `junghwan`은 같은 사람(권정환)의 기체다 — XML이 충돌한다
-7/22판이 `AIP_kwon.dll`, 8/6판이 `AIP_junghwan.dll`. **둘 다 `./Rule_mine.xml`을 읽는다.**
-8/6 16:49에 junghwan 패키지를 넣으면서 kwon용 XML을 덮어썼고, 그 뒤 **kwon 배치는 전부
-초기화 실패로 죽었다**(`Node not recognized: DECO_TargetLOSCheck`). 이틀간 못 봤다.
-```bash
-cp -f Rule_mine_kwon.xml Rule_mine.xml       # kwon 돌리기 전
-cp -f Rule_mine_junghwan.xml Rule_mine.xml   # junghwan 돌리기 전 / 평상시
-```
-- **한 배치에 둘 다 넣지 마라.** 넣으려면 상대마다 XML을 갈아끼워라(`_v39c.sh` 참고).
-- 유형 카운트도 주의: 둘은 독립 유형이 **아니다**(같은 사람의 두 시점).
-- **상대 DLL이 초기화에 실패하면 파이썬이 죽는다**(`OSError 0xe06d7363`). 배치 로그에
-  `SUMMARY`가 없는 구간이 있으면 그 상대는 **측정된 게 아니라 죽은 것**이다. 반드시 확인.
 
 ## 뷰어 모의경기 (BattleViewer)
 ```
