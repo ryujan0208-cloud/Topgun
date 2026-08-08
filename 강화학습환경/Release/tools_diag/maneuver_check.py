@@ -19,6 +19,11 @@ except Exception: pass
 R = r"C:\Users\TFX5470H\Desktop\.topgun\강화학습환경\Release\artifacts\logs"
 MLAT = 111320.0
 
+# ★ 배치 로그는 판이 이어붙어 있다(CLAUDE.md 함정). 판이 바뀌면 위치가 순간이동해
+#   위치차분 속도가 수백만 m/s로 튄다. 안 거르면 상위 차이 구간이 전부 경계로 채워진다.
+#   F-16이 낼 수 있는 속도의 물리 상한으로 잘라낸다.
+MAX_PHYS = 700.0    # m/s. 실측 최고가 ~500이라 넉넉한 여유.
+
 def load(stamp):
     p = os.path.join(R, f"{stamp}_ownship_(F-16)[Blue].csv")
     rows = []
@@ -27,14 +32,22 @@ def load(stamp):
             rows.append((float(r['Time']), float(r['Longitude']), float(r['Latitude']),
                          float(r['Altitude']), float(r['Roll (deg)']), float(r['Pitch (deg)'])))
     out = []
+    dropped = 0
     for i in range(1, len(rows)):
         t0, t1 = rows[i-1], rows[i]
         dt = t1[0] - t0[0]
-        if dt <= 0: continue
+        if dt <= 0:                       # 시간이 되감기면 그것도 판 경계다
+            dropped += 1
+            continue
         c = math.cos(math.radians(t0[2]))
         dx = (t1[1]-t0[1])*c*MLAT; dy = (t1[2]-t0[2])*MLAT; dz = t1[3]-t0[3]
         v = math.sqrt(dx*dx+dy*dy+dz*dz)/dt
+        if v > MAX_PHYS:                  # 판 경계
+            dropped += 1
+            continue
         out.append((t1[0], v, t1[3], t1[4], t1[5]))     # t, speed, alt, roll, pitch
+    if dropped:
+        print(f"  [{stamp}] 판 경계 {dropped}틱 제외")
     return out
 
 a = load(sys.argv[1]); b = load(sys.argv[2])

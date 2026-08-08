@@ -1,0 +1,68 @@
+@@@ 메커니즘 STRAIGHT 고정스폰
+[seed 0] reward=   -91.91 ownHP=0.8911 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.1089 mean_reward=-91.91
+STAMP 2026_8_7_14_58_38
+
+########## v39 vs ACE ##########
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[11999] | total rewards=[289.2887] | termination= [max time out]
+[seed 0] reward=   289.29 ownHP=0.9384 tgtHP=0.9652 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[256.9380] | termination= [max time out]
+[seed 1] reward=   256.94 ownHP=1.0000 tgtHP=0.9636 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[510.3409] | termination= [max time out]
+[seed 2] reward=   510.34 ownHP=1.0000 tgtHP=0.8950 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[292.1651] | termination= [max time out]
+[seed 3] reward=   292.17 ownHP=1.0000 tgtHP=0.9276 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[238.1055] | termination= [max time out]
+[seed 4] reward=   238.11 ownHP=0.9846 tgtHP=0.9499 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[223.0987] | termination= [max time out]
+[seed 5] reward=   223.10 ownHP=0.9760 tgtHP=0.9772 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[461.7604] | termination= [max time out]
+[seed 6] reward=   461.76 ownHP=1.0000 tgtHP=0.9420 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[415.8700] | termination= [max time out]
+[seed 7] reward=   415.87 ownHP=1.0000 tgtHP=0.8900 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[266.7753] | termination= [max time out]
+[seed 8] reward=   266.78 ownHP=1.0000 tgtHP=0.9725 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[329.4808] | termination= [max time out]
+[seed 9] reward=   329.48 ownHP=1.0000 tgtHP=0.9398 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[416.4308] | termination= [max time out]
+[seed 10] reward=   416.43 ownHP=1.0000 tgtHP=0.9462 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[363.1769] | termination= [max time out]
+[seed 11] reward=   363.18 ownHP=0.9978 tgtHP=0.9497 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[512.9042] | termination= [max time out]
+[seed 12] reward=   512.90 ownHP=1.0000 tgtHP=0.7188 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[606.0709] | termination= [max time out]
+[seed 13] reward=   606.07 ownHP=1.0000 tgtHP=0.8484 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[430.9613] | termination= [max time out]
+[seed 14] reward=   430.96 ownHP=1.0000 tgtHP=0.9135 max time out
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=15]
+SUMMARY dealt=1.2005 taken=0.1034 mean_reward=374.22
+tacview log saved (last episode)
+
+########## v39 vs AIP_onecircle.dll ##########
