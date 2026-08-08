@@ -45,6 +45,22 @@ def parse(paths):
     return out
 
 
+def summarize(rows):
+    """시드 목록 -> (승, 무, 패, 준, 받은, 순이득, 최대기여시드비중%).
+
+    판정은 규정 제6조(HP 비교). HP는 격추 시 음수가 될 수 있다.
+    """
+    w = sum(1 for r in rows if r[2] > r[3])
+    l = sum(1 for r in rows if r[2] < r[3])
+    d = len(rows) - w - l
+    dealt = sum(1.0 - r[3] for r in rows)
+    taken = sum(1.0 - r[2] for r in rows)
+    net = dealt - taken
+    per = [(1.0 - r[3]) - (1.0 - r[2]) for r in rows]
+    top = (max(per) / net * 100.0) if (per and net > 0) else 0.0
+    return w, d, l, dealt, taken, net, top
+
+
 def main():
     if len(sys.argv) < 2:
         print(__doc__)
@@ -64,15 +80,7 @@ def main():
         if not rows:
             print(f"{opp:<22}{'— 측정 실패(SUMMARY 없음)':>40}")
             continue
-        w = sum(1 for _, _, o, t in ((r[0], r[1], r[2], r[3]) for r in rows) if o > t)
-        l = sum(1 for _, _, o, t in ((r[0], r[1], r[2], r[3]) for r in rows) if o < t)
-        d = len(rows) - w - l
-        dealt = sum(1.0 - r[3] for r in rows)
-        taken = sum(1.0 - r[2] for r in rows)
-        net = dealt - taken
-        # 한 시드가 총합을 지배하는지: 최대 기여 시드의 순이득 비중
-        per = [(1.0 - r[3]) - (1.0 - r[2]) for r in rows]
-        top = max(per) / net * 100 if net > 0 else 0.0
+        w, d, l, dealt, taken, net, top = summarize(rows)
         tw += w; td += d; tl += l; tg += dealt; tt += taken
         print(f"{opp:<22}{w:>4}{d:>4}{l:>4}{dealt:>9.4f}{taken:>9.4f}{net:>10.4f}{top:>9.1f}%")
     print("-" * 76)

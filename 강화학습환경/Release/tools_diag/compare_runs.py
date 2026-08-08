@@ -50,11 +50,19 @@ def main():
 
     pairs = [(i, i + 1) for i in range(0, len(runs) - 1, 2)]
     print()
+    # ★ 비교할 쌍이 없으면 "통과"가 아니라 **판정 불가**다.
+    #   검증 도구가 데이터 부족을 통과로 만들면 최악의 오류다(2026-08-08에 당함:
+    #   배치가 아직 도는 중인 로그를 읽고 '통과'가 나왔다).
+    if not pairs:
+        print("=" * 62)
+        print("판정: 불가 — 비교할 실행 쌍이 없다. 배치가 끝났는지 확인할 것.")
+        return 3
     allok = True
     for a, b in pairs:
         (la, oa), ra = runs[a]
         (lb, ob), rb = runs[b]
-        same = (ra == rb) and len(ra) > 0
+        # 시드가 0개인 쌍도 "일치"가 아니다 — 둘 다 비어 있으면 잰 게 없다.
+        same = (ra == rb) and len(ra) > 0 and len(rb) > 0
         allok &= same
         mark = "완전 일치" if same else "★ 불일치"
         print(f"[{oa}] {la} vs {lb} — 시드 {len(ra)}/{len(rb)} -> {mark}")
