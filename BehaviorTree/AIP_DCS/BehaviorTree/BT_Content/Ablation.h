@@ -48,11 +48,14 @@ namespace Ablation
         return sel;
     }
 
-    // tag 기능이 "꺼져 있는가". 환경변수 미설정이면 항상 false = 전부 활성 = v32.
-    inline bool off(const char* tag)
+    // 이 tag가 선택된 변형인가. 환경변수 미설정이면 항상 false = v32 그대로.
+    inline bool sel(const char* tag)
     {
-        const char* sel = selected();
-        if (sel == nullptr || sel[0] == '\0') return false;
-        return std::strcmp(sel, tag) == 0;
+        const char* s = selected();
+        if (s == nullptr || s[0] == '\0') return false;
+        return std::strcmp(s, tag) == 0;
     }
+
+    // 절제 문맥에서 읽기 좋으라고 둔 별칭. "tag 기능이 꺼져 있는가".
+    inline bool off(const char* tag) { return sel(tag); }
 }

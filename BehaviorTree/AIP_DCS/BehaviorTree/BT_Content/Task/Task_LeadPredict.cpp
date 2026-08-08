@@ -75,12 +75,42 @@ NodeStatus Action::Task_LeadPredict::tick()
 	static Vector3 lastPos[2];
 	static bool    havePos[2] = { false, false };
 	static bool    needThrReset[2] = { false, false };
-	if (havePos[__ti] && MyLocation.distance(lastPos[__ti]) > 2000.0)
+	double moved = havePos[__ti] ? MyLocation.distance(lastPos[__ti]) : 0.0;
+	bool epBoundary = (havePos[__ti] && moved > 2000.0);
+	if (epBoundary)
 	{
 		histCnt[__ti] = 0;
 		histIdx[__ti] = 0;
 		needThrReset[__ti] = true;
 	}
+
+	// ★★★ 2026-08-08: 실제 BT 틱 간격을 스스로 추정한다 (dt 버그)
+	//  [문제] `DeltaSecond`는 BlackBoard 생성자 값 1/60에 고정돼 있다 —
+	//    DLL이 `SetBehaviorTreeDeltaTime`을 노출하는데 **호스트가 부르지 않는다**
+	//    (파이썬이 선언한 함수 6개에 없고, 대회 제공 `unreal/policies.py`도 마찬가지).
+	//    그런데 아래 이력 버퍼는 **BT 틱마다** 채워지고, 제출 조건(ACTION_REPEAT=6)에서
+	//    BT는 0.1초마다 호출된다. 12틱 = 1.2초인 창을 0.2초로 나눠 omega가 6배로 커진다.
+	//  [실측] repeat=1: om/실측 = 0.98(맞다) / repeat=6: 8.98(틀리다).
+	//    onecircle 상대 om이 84deg/s로 찍힌다 — F-16이 낼 수 없는 값이다.
+	//  [해법] 경과시간을 직접 잰다: |Δ내위치| / 내속도. 호출 주기가 바뀌어도 따라간다.
+	//    선회 중 현/호 차이는 0.1초에 1도 선회 기준 0.005%로 무시 가능하다.
+	static double tickDt[2] = { 0.0, 0.0 };
+	if (havePos[__ti] && !epBoundary && mySpd > 50.0 && moved > 1e-3)
+	{
+		double est = moved / mySpd;
+		if (est > 0.004 && est < 0.5)                 // 240Hz~2Hz 밖은 이상치로 버린다
+			tickDt[__ti] = (tickDt[__ti] <= 0.0) ? est
+			                                     : tickDt[__ti] * 0.95 + est * 0.05;
+	}
+	double dtEff = (tickDt[__ti] > 0.0) ? tickDt[__ti] : dt;
+
+	// 어디까지 교정할지는 환경변수로 고른다(사전등록 PREREG_fix_2026-08-08.md).
+	//  미설정 = v32 그대로. 제출 시 변수가 없으면 완전한 무동작이다.
+	const bool DTFIX_FULL  = Ablation::sel("dtfix_full");
+	const bool DTFIX_ORBIT = Ablation::sel("dtfix_orbit") || DTFIX_FULL;
+	double dtOmega = DTFIX_FULL  ? dtEff : dt;   // omegaNow (v21·v17 게이트 공용)
+	double dtOrbit = DTFIX_ORBIT ? dtEff : dt;   // v17 궤도 블록의 omega -> R -> phi
+
 	lastPos[__ti] = MyLocation;
 	havePos[__ti] = true;
 
@@ -91,7 +121,7 @@ NodeStatus Action::Task_LeadPredict::tick()
 	if (histCnt[__ti] < 100000) histCnt[__ti]++;
 
 	double omegaNow = 0.0;                          // 상대 선회 각속도 rad/s (실적)
-	if (haveHist) omegaNow = fwdOld.angleBetween(TgtFwd) / (HIST * dt);
+	if (haveHist) omegaNow = fwdOld.angleBetween(TgtFwd) / (HIST * dtOmega);
 
 	// 요격 리드: 상대 진행방향으로 미래위치 예측 (리드시간 = 거리/내속도, 캡 3초)
 	// v7 (v8 롤백): 전 거리에서 예측 lead. 사거리 순수조준(v8)은 -40 악화로 원복.
@@ -172,14 +202,19 @@ NodeStatus Action::Task_LeadPredict::tick()
 		Vector3 axis   = fwdOld.cross(TgtFwd);      // 회전축(우수계: 진행방향 = +)
 		double axisLen = axis.length();
 		double turnAng = fwdOld.angleBetween(TgtFwd);
-		double omega   = turnAng / (HIST * dt);     // 선회 각속도 rad/s
+		// ★ 게이트와 기하를 분리한다(사전등록 PREREG_fix_2026-08-08.md).
+		//   dtfix_orbit : 게이트는 v32 그대로 두고 **반경 계산만** 교정한다.
+		//                 v32의 경험적 조정(발동률)을 보존한 채 슬롯 거리만 되돌리기 위해서다.
+		//   dtfix_full  : 게이트도 교정한다 -> 발동률이 급감할 것이다(메커니즘 확인 지표).
+		double omega    = turnAng / (HIST * dtOmega);  // 게이트용
+		double omegaGeo = turnAng / (HIST * dtOrbit);  // 궤도 기하용
 
 		// 선회 중(3.4deg/s 이상) + 교전거리일 때만 궤도 모드
 		if (axisLen > 1e-9 && omega > 0.06 && dist < 2500.0 && tgtSpd > 30.0)
 		{
 			DUTY_orbit[__ti]++;
 			Vector3 a = axis; a.normalize();
-			double R = tgtSpd / omega;              // 선회 반경
+			double R = tgtSpd / omegaGeo;           // 선회 반경
 			if (R < 200.0)  R = 200.0;
 			if (R > 8000.0) R = 8000.0;
 
