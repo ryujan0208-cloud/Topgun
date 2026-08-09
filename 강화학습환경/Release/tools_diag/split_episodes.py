@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
-# 여러 에피소드가 연결된 tacview CSV에서 Time 되감김 기준으로 마지막 에피소드만 분리 저장
+# 여러 에피소드가 연결된 tacview CSV를 **에피소드별 파일로 전부** 분리 저장한다.
+#   출력: <stamp>_s00_..., _s01_, ... (시드 k = k번째 에피소드)
+#   경계 판정은 Time 되감김이 아니라 **위치/고도 순간이동**이다
+#   (RunningTime/Time은 에피소드 경계에서 되감기지 않는다 — dt 버그와 같은 뿌리)
+# 사용: python tools_diag/split_episodes.py <stamp>
 import csv, sys, os
 R = r"C:\Users\TFX5470H\Desktop\.topgun\강화학습환경\Release\artifacts\logs"
 stamp = sys.argv[1]
