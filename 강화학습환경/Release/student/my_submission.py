@@ -79,7 +79,7 @@ OBSERVATION_MODULE = ""                            # custom 관측이면 "studen
 # - 기본 배포 Rule은 Rule_forTraining.xml입니다.
 # - 팀별 BT DLL/XML을 제출하는 경우 파일을 Release 루트에 두고 아래 이름을 바꾸세요.
 BT_DLL = "AIP_final.dll"
-BT_RULE_XML = "Rule_v32.xml"  # activate_rule_xml이 이걸 Rule_forTraining.xml로 복사하고, AIP_final.dll이 그 이름을 읽는다
+BT_RULE_XML = "Rule_v40.xml"  # activate_rule_xml이 이걸 Rule_forTraining.xml로 복사하고, AIP_final.dll이 그 이름을 읽는다
 
 # Hybrid 모드 설정 (MODE="hybrid" 일 때만 사용)
 HYBRID_MODE = "residual"   # "residual" | "blend" | "switch"

@@ -76,9 +76,25 @@ cd 강화학습환경/Release
 4. **배치 도는 중에 시뮬/도구를 수정하지 마라** — 앞뒤가 다른 규칙으로 측정된다
 5. **기각 시 DLL만 되돌리지 말고 소스도 되돌려라** — v31 코드가 v32에 섞여 들어갔다
 
+## ★ 현재 채택 기체 = **v40** (2026-08-09, 커밋 `80d7d6a`)
+`AIP_v40.dll` + `Rule_v40.xml`. 10상대 150판 **102승 42무 6패 / 순이득 +68.14**.
+(v32는 101승 34무 15패 / +51.66)
+```cpp
+AIM_FLOOR = clamp(상대고도 - 300, 800, 1500)   // Task_LeadPredict. v32는 상수 1500
+DECO_AltitudeCheck MinAlt: 1800 -> 1000         // Rule_v40.xml
+```
+**원리: 고도를 내주는 건 상대를 따라갈 때만 이득이다.** v32는 매 판 1800m 벽에 걸려
+(우리 최저고도 중앙 1797m vs 상대 403m) 상대가 그 아래로 가면 트리가 통째로
+ClimbOut으로 넘어가 **추격이 중단**됐다. 기동 공간 1000m를 버리고 있었다.
+⚠ **조준하한과 MinAlt는 반드시 같이 낮춘다.** 하나만 낮추면 벽에 부딪혀 에너지만 잃는다
+(`divefree` 기각 사유). 무조건 낮추는 것도 안 된다(`lowfloor`는 kwon −3으로 기각).
+상세: `상대기체 공유파일/2026-08-09_v40_고도하한_상대연동_채택/README.md`
+
 ## 스파링 상대 (유형별)
 `ACE`(3D공세) `AIP_onecircle`(수평선회·최약) `AIP_sync`(거울) `AIP_jink`(불규칙)
-`AIP_kwon` `AIP_v7`(실제BT) `SEARCH`(탐색형) `STRAIGHT`(직진) `AIP_junghwan`(팀원 실기체)
+`AIP_kwon` `AIP_v7`(실제BT) `SEARCH`(탐색형) `STRAIGHT`(직진) `AIP_junghwan`(팀원 8/6판)
+★ **`AIP_jh2`(팀원 최신 `cf49f0e`) — 가장 강한 상대.** v32는 4승11패(전부 격추)였다.
+  XML이 `Rule_junghwan_cf49f0e.xml`로 고유해 `Rule_mine.xml` 충돌이 없다.
 ⚠ **`AIP_dummy.dll`은 직선이 아니다**(80도 뱅크 선회). 직진 대조군은 `STRAIGHT`.
 ⚠ 팀원 파일은 원래 `AIP_DCS.dll`이라 **그대로 복사하면 우리 파일을 덮어쓴다.**
 
