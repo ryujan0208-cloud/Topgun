@@ -1,0 +1,284 @@
+########## v21 vs AIP_jh2.dll ##########
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[5040] | total rewards=[-149.2133] | termination= [ownship destroyed]
+[seed 0] reward=  -149.21 ownHP=-0.0070 tgtHP=1.0000 ownship destroyed
+total: 2
+[DUTY] team=1 ticks=600 v27а╬╦╩а╤аь=1% v21╧Пе╘©╧цЬ=0% v17╠к╣╣а╤╟г=62.3333% v17╫╫╥тюШ©К=39% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=13.5% v23bа╤╟г=58% v23b╫га╕юШ©К=53.8333%
+runner:local/env:0	num_steps=[1964] | total rewards=[-25.4532] | termination= [target altitude below min]
+[seed 1] reward=   -25.45 ownHP=1.0000 tgtHP=1.0000 target altitude below min
+total: 2
+[DUTY] team=1 ticks=1200 v27а╬╦╩а╤аь=0.5% v21╧Пе╘©╧цЬ=0% v17╠к╣╣а╤╟г=68.4167% v17╫╫╥тюШ©К=56.75% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=27.9167% v23bа╤╟г=59.1667% v23b╫га╕юШ©К=57.0833%
+[DUTY] team=1 ticks=1800 v27а╬╦╩а╤аь=3.88889% v21╧Пе╘©╧цЬ=0% v17╠к╣╣а╤╟г=72.5556% v17╫╫╥тюШ©К=64.7778% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=27.7222% v23bа╤╟г=45.9444% v23b╫га╕юШ©К=42.8889%
+runner:local/env:0	num_steps=[8273] | total rewards=[1107.8556] | termination= [target destroyed]
+[seed 2] reward=  1107.86 ownHP=1.0000 tgtHP=-0.0045 target destroyed
+total: 2
+[DUTY] team=1 ticks=2400 v27а╬╦╩а╤аь=15% v21╧Пе╘©╧цЬ=0% v17╠к╣╣а╤╟г=70.5% v17╫╫╥тюШ©К=62.7917% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=25.25% v23bа╤╟г=37% v23b╫га╕юШ©К=33.7917%
+[DUTY] team=1 ticks=3000 v27а╬╦╩а╤аь=12% v21╧Пе╘©╧цЬ=0% v17╠к╣╣а╤╟г=74.7333% v17╫╫╥тюШ©К=68.5667% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=27.6% v23bа╤╟г=32.8% v23b╫га╕юШ©К=30.2333%
+[DUTY] team=1 ticks=3600 v27а╬╦╩а╤аь=17.7222% v21╧Пе╘©╧цЬ=0% v17╠к╣╣а╤╟г=77.1944% v17╫╫╥тюШ©К=72.0556% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=26.5833% v23bа╤╟г=28.1389% v23b╫га╕юШ©К=26%
+runner:local/env:0	num_steps=[9923] | total rewards=[1064.8974] | termination= [target destroyed]
+[seed 3] reward=  1064.90 ownHP=1.0000 tgtHP=-0.0011 target destroyed
+total: 2
+[DUTY_EV] team=1 evadeTicks=300 v31?≤Й╟∙?≤Л└═(>3000m)=0% Л╓▒Й╟└(2200~3000)=17.6667% ?│Л┼╧(<2200)=82.3333%
+runner:local/env:0	num_steps=[4467] | total rewards=[-137.6240] | termination= [ownship destroyed]
+[seed 4] reward=  -137.62 ownHP=-0.0078 tgtHP=1.0000 ownship destroyed
+total: 2
+[DUTY] team=1 ticks=4200 v27а╬╦╩а╤аь=16.6667% v21╧Пе╘©╧цЬ=0% v17╠к╣╣а╤╟г=77.5238% v17╫╫╥тюШ©К=71.0238% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=28.1429% v23bа╤╟г=34.2619% v23b╫га╕юШ©К=32.2381%
+[DUTY_EV] team=1 evadeTicks=600 v31?≤Й╟∙?≤Л└═(>3000m)=5.16667% Л╓▒Й╟└(2200~3000)=40% ?│Л┼╧(<2200)=54.8333%
+[DUTY_EV] team=1 evadeTicks=900 v31?≤Й╟∙?≤Л└═(>3000m)=3.44444% Л╓▒Й╟└(2200~3000)=31.4444% ?│Л┼╧(<2200)=65.1111%
+[DUTY_EV] team=1 evadeTicks=1200 v31?≤Й╟∙?≤Л└═(>3000m)=2.58333% Л╓▒Й╟└(2200~3000)=23.5833% ?│Л┼╧(<2200)=73.8333%
+runner:local/env:0	num_steps=[8522] | total rewards=[-198.4558] | termination= [ownship destroyed]
+[seed 5] reward=  -198.46 ownHP=-0.0141 tgtHP=1.0000 ownship destroyed
+total: 2
+[DUTY] team=1 ticks=4800 v27а╬╦╩а╤аь=14.625% v21╧Пе╘©╧цЬ=0% v17╠к╣╣а╤╟г=79.375% v17╫╫╥тюШ©К=65.625% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=29.2708% v23bа╤╟г=38.2917% v23b╫га╕юШ©К=35.4167%
+runner:local/env:0	num_steps=[2939] | total rewards=[-142.7533] | termination= [ownship destroyed]
+[seed 6] reward=  -142.75 ownHP=-0.0031 tgtHP=1.0000 ownship destroyed
+total: 2
+[DUTY] team=1 ticks=5400 v27а╬╦╩а╤аь=13% v21╧Пе╘©╧цЬ=0% v17╠к╣╣а╤╟г=81.1111% v17╫╫╥тюШ©К=67.3704% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=28.8148% v23bа╤╟г=43.9444% v23b╫га╕юШ©К=41.0556%
+[DUTY_EV] team=1 evadeTicks=1500 v31?≤Й╟∙?≤Л└═(>3000m)=2.06667% Л╓▒Й╟└(2200~3000)=18.8667% ?│Л┼╧(<2200)=79.0667%
+runner:local/env:0	num_steps=[6306] | total rewards=[-119.5209] | termination= [ownship destroyed]
+[seed 7] reward=  -119.52 ownHP=-0.0061 tgtHP=1.0000 ownship destroyed
+total: 2
+runner:local/env:0	num_steps=[2163] | total rewards=[-141.9799] | termination= [ownship destroyed]
+[seed 8] reward=  -141.98 ownHP=-0.0015 tgtHP=1.0000 ownship destroyed
+total: 2
+[DUTY] team=1 ticks=6000 v27а╬╦╩а╤аь=11.7333% v21╧Пе╘©╧цЬ=0% v17╠к╣╣а╤╟г=81.9833% v17╫╫╥тюШ©К=64.3167% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=28.1833% v23bа╤╟г=46.05% v23b╫га╕юШ©К=42.6833%
+[DUTY] team=1 ticks=6600 v27а╬╦╩а╤аь=10.6667% v21╧Пе╘©╧цЬ=0% v17╠к╣╣а╤╟г=80.5152% v17╫╫╥тюШ©К=64.4545% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=28.1818% v23bа╤╟г=43.4848% v23b╫га╕юШ©К=40.4242%
+runner:local/env:0	num_steps=[6584] | total rewards=[416.0116] | termination= [target altitude below min]
+[seed 9] reward=   416.01 ownHP=1.0000 tgtHP=1.0000 target altitude below min
+total: 2
+[DUTY] team=1 ticks=7200 v27а╬╦╩а╤аь=9.77778% v21╧Пе╘©╧цЬ=0% v17╠к╣╣а╤╟г=80.125% v17╫╫╥тюШ©К=64.8056% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=28.3889% v23bа╤╟г=45.0694% v23b╫га╕юШ©К=42.2639%
+[DUTY] team=1 ticks=7800 v27а╬╦╩а╤аь=9.39744% v21╧Пе╘©╧цЬ=0% v17╠к╣╣а╤╟г=81.5385% v17╫╫╥тюШ©К=65.8462% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=27.4615% v23bа╤╟г=45.9744% v23b╫га╕юШ©К=43.0128%
+[DUTY_EV] team=1 evadeTicks=1800 v31?≤Й╟∙?≤Л└═(>3000m)=4.27778% Л╓▒Й╟└(2200~3000)=17.2222% ?│Л┼╧(<2200)=78.5%
+runner:local/env:0	num_steps=[10199] | total rewards=[-98.4870] | termination= [ownship destroyed]
+[seed 10] reward=   -98.49 ownHP=-0.0005 tgtHP=0.9804 ownship destroyed
+total: 2
+[DUTY] team=1 ticks=8400 v27а╬╦╩а╤аь=8.78571% v21╧Пе╘©╧цЬ=0% v17╠к╣╣а╤╟г=82.7143% v17╫╫╥тюШ©К=63.9167% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=26.5476% v23bа╤╟г=49.5714% v23b╫га╕юШ©К=46.4286%
+[DUTY_EV] team=1 evadeTicks=2100 v31?≤Й╟∙?≤Л└═(>3000m)=3.66667% Л╓▒Й╟└(2200~3000)=22.2381% ?│Л┼╧(<2200)=74.0952%
+[DUTY_EV] team=1 evadeTicks=2400 v31?≤Й╟∙?≤Л└═(>3000m)=3.20833% Л╓▒Й╟└(2200~3000)=27.4167% ?│Л┼╧(<2200)=69.375%
+runner:local/env:0	num_steps=[7821] | total rewards=[-178.2603] | termination= [ownship destroyed]
+[seed 11] reward=  -178.26 ownHP=-0.0026 tgtHP=1.0000 ownship destroyed
+total: 2
+[DUTY] team=1 ticks=9000 v27а╬╦╩а╤аь=8.27778% v21╧Пе╘©╧цЬ=0% v17╠к╣╣а╤╟г=82.1% v17╫╫╥тюШ©К=63.1556% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=26.9889% v23bа╤╟г=50.9556% v23b╫га╕юШ©К=47.8667%
+[DUTY_EV] team=1 evadeTicks=2700 v31?≤Й╟∙?≤Л└═(>3000m)=2.85185% Л╓▒Й╟└(2200~3000)=26.2222% ?│Л┼╧(<2200)=70.9259%
+[DUTY_EV] team=1 evadeTicks=3000 v31?≤Й╟∙?≤Л└═(>3000m)=2.56667% Л╓▒Й╟└(2200~3000)=29.3333% ?│Л┼╧(<2200)=68.1%
+runner:local/env:0	num_steps=[6842] | total rewards=[-164.4289] | termination= [ownship destroyed]
+[seed 12] reward=  -164.43 ownHP=-0.0003 tgtHP=1.0000 ownship destroyed
+total: 2
+[DUTY] team=1 ticks=9600 v27а╬╦╩а╤аь=7.76042% v21╧Пе╘©╧цЬ=0% v17╠к╣╣а╤╟г=81.8229% v17╫╫╥тюШ©К=62.8438% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=28.5729% v23bа╤╟г=51.9583% v23b╫га╕юШ©К=48.9792%
+[DUTY_EV] team=1 evadeTicks=3300 v31?≤Й╟∙?≤Л└═(>3000m)=2.33333% Л╓▒Й╟└(2200~3000)=33.2424% ?│Л┼╧(<2200)=64.4242%
+runner:local/env:0	num_steps=[8450] | total rewards=[270.6532] | termination= [ownship destroyed]
+[seed 13] reward=   270.65 ownHP=-0.0018 tgtHP=0.9762 ownship destroyed
+total: 2
+[DUTY] team=1 ticks=10200 v27а╬╦╩а╤аь=9.16667% v21╧Пе╘©╧цЬ=0% v17╠к╣╣а╤╟г=81.6373% v17╫╫╥тюШ©К=63.049% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=28.5294% v23bа╤╟г=50.5784% v23b╫га╕юШ©К=47.6275%
+[DUTY] team=1 ticks=10800 v27а╬╦╩а╤аь=8.92593% v21╧Пе╘©╧цЬ=0% v17╠к╣╣а╤╟г=82.5185% v17╫╫╥тюШ©К=63.8148% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=27.3704% v23bа╤╟г=48.3426% v23b╫га╕юШ©К=45.5556%
+[DUTY] team=1 ticks=11400 v27а╬╦╩а╤аь=10.0965% v21╧Пе╘©╧цЬ=0% v17╠к╣╣а╤╟г=83.0965% v17╫╫╥тюШ©К=65.307% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=27.7632% v23bа╤╟г=45.7982% v23b╫га╕юШ©К=43.1579%
+[DUTY] team=1 ticks=12000 v27а╬╦╩а╤аь=9.59167% v21╧Пе╘©╧цЬ=0% v17╠к╣╣а╤╟г=83.2667% v17╫╫╥тюШ©К=66.3667% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=27.5583% v23bа╤╟г=45.4167% v23b╫га╕юШ©К=42.9083%
+runner:local/env:0	num_steps=[11999] | total rewards=[644.6039] | termination= [max time out]
+[seed 14] reward=   644.60 ownHP=1.0000 tgtHP=0.7752 max time out
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=15]
+SUMMARY dealt=2.2739 taken=10.0450 mean_reward=143.19
+tacview log saved (last episode)
+
+########## dtfix_full vs AIP_jh2.dll ##########
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[DUTY] team=1 ticks=600 v27а╬╦╩а╤аь=0.833333% v21╧Пе╘©╧цЬ=77.1667% v17╠к╣╣а╤╟г=71.1667% v17╫╫╥тюШ©К=13.5% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=23.6667% v23bа╤╟г=46.6667% v23b╫га╕юШ©К=39%
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[4922] | total rewards=[-157.3946] | termination= [ownship destroyed]
+[seed 0] reward=  -157.39 ownHP=-0.0099 tgtHP=0.9844 ownship destroyed
+total: 2
+runner:local/env:0	num_steps=[1776] | total rewards=[-27.0552] | termination= [target altitude below min]
+[seed 1] reward=   -27.06 ownHP=1.0000 tgtHP=1.0000 target altitude below min
+total: 2
+[DUTY] team=1 ticks=1200 v27а╬╦╩а╤аь=0.416667% v21╧Пе╘©╧цЬ=74.3333% v17╠к╣╣а╤╟г=66.75% v17╫╫╥тюШ©К=37% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=41.75% v23bа╤╟г=54.6667% v23b╫га╕юШ©К=50.8333%
+[DUTY] team=1 ticks=1800 v27а╬╦╩а╤аь=0.277778% v21╧Пе╘©╧цЬ=64.3333% v17╠к╣╣а╤╟г=61% v17╫╫╥тюШ©К=41.1667% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=38.9444% v23bа╤╟г=49.2222% v23b╫га╕юШ©К=46.6667%
+[DUTY] team=1 ticks=2400 v27а╬╦╩а╤аь=0.208333% v21╧Пе╘©╧цЬ=55.375% v17╠к╣╣а╤╟г=56.125% v17╫╫╥тюШ©К=41.25% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=34.125% v23bа╤╟г=41.6667% v23b╫га╕юШ©К=39.75%
+runner:local/env:0	num_steps=[11999] | total rewards=[1094.3245] | termination= [max time out]
+[seed 2] reward=  1094.32 ownHP=1.0000 tgtHP=0.9458 max time out
+total: 2
+[DUTY] team=1 ticks=3000 v27а╬╦╩а╤аь=0.166667% v21╧Пе╘©╧цЬ=57.3333% v17╠к╣╣а╤╟г=56.3667% v17╫╫╥тюШ©К=43.1% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=33.5% v23bа╤╟г=37.4667% v23b╫га╕юШ©К=35.2333%
+[DUTY] team=1 ticks=3600 v27а╬╦╩а╤аь=0.138889% v21╧Пе╘©╧цЬ=59.1111% v17╠к╣╣а╤╟г=54.2222% v17╫╫╥тюШ©К=41.8889% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=33.5833% v23bа╤╟г=35.2222% v23b╫га╕юШ©К=33.3611%
+runner:local/env:0	num_steps=[8354] | total rewards=[313.9576] | termination= [target altitude below min]
+[seed 3] reward=   313.96 ownHP=1.0000 tgtHP=1.0000 target altitude below min
+total: 2
+[DUTY] team=1 ticks=4200 v27а╬╦╩а╤аь=0.119048% v21╧Пе╘©╧цЬ=57.4762% v17╠к╣╣а╤╟г=53.0476% v17╫╫╥тюШ©К=42.2381% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=34.7619% v23bа╤╟г=36.4524% v23b╫га╕юШ©К=34.8571%
+runner:local/env:0	num_steps=[1609] | total rewards=[222.9163] | termination= [target destroyed]
+[seed 4] reward=   222.92 ownHP=1.0000 tgtHP=-0.0061 target destroyed
+total: 2
+[DUTY_EV] team=1 evadeTicks=300 v31?≤Й╟∙?≤Л└═(>3000m)=45.6667% Л╓▒Й╟└(2200~3000)=36.6667% ?│Л┼╧(<2200)=17.6667%
+[DUTY_EV] team=1 evadeTicks=600 v31?≤Й╟∙?≤Л└═(>3000m)=22.8333% Л╓▒Й╟└(2200~3000)=45.5% ?│Л┼╧(<2200)=31.6667%
+[DUTY] team=1 ticks=4800 v27а╬╦╩а╤аь=1.5% v21╧Пе╘©╧цЬ=58.9792% v17╠к╣╣а╤╟г=55.125% v17╫╫╥тюШ©К=40.125% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=36.8542% v23bа╤╟г=39.8333% v23b╫га╕юШ©К=38.4167%
+runner:local/env:0	num_steps=[9025] | total rewards=[-209.7953] | termination= [ownship destroyed]
+[seed 5] reward=  -209.80 ownHP=-0.0100 tgtHP=1.0000 ownship destroyed
+total: 2
+[DUTY_EV] team=1 evadeTicks=900 v31?≤Й╟∙?≤Л└═(>3000m)=15.2222% Л╓▒Й╟└(2200~3000)=49.1111% ?│Л┼╧(<2200)=35.6667%
+[DUTY_EV] team=1 evadeTicks=1200 v31?≤Й╟∙?≤Л└═(>3000m)=11.4167% Л╓▒Й╟└(2200~3000)=43.3333% ?│Л┼╧(<2200)=45.25%
+runner:local/env:0	num_steps=[5626] | total rewards=[-169.3566] | termination= [ownship destroyed]
+[seed 6] reward=  -169.36 ownHP=-0.0076 tgtHP=1.0000 ownship destroyed
+total: 2
+[DUTY] team=1 ticks=5400 v27а╬╦╩а╤аь=1.33333% v21╧Пе╘©╧цЬ=62.0556% v17╠к╣╣а╤╟г=58.8519% v17╫╫╥тюШ©К=37.8333% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=38.3148% v23bа╤╟г=45.2407% v23b╫га╕юШ©К=42.2593%
+[DUTY] team=1 ticks=6000 v27а╬╦╩а╤аь=1.45% v21╧Пе╘©╧цЬ=61.85% v17╠к╣╣а╤╟г=58.7% v17╫╫╥тюШ©К=38.8333% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=37.8167% v23bа╤╟г=48.8% v23b╫га╕юШ©К=46.1167%
+runner:local/env:0	num_steps=[8720] | total rewards=[-33.4863] | termination= [ownship destroyed]
+[seed 7] reward=   -33.49 ownHP=-0.0072 tgtHP=0.9683 ownship destroyed
+total: 2
+[DUTY_EV] team=1 evadeTicks=1500 v31?≤Й╟∙?≤Л└═(>3000m)=10.6667% Л╓▒Й╟└(2200~3000)=38.9333% ?│Л┼╧(<2200)=50.4%
+runner:local/env:0	num_steps=[2549] | total rewards=[-145.8833] | termination= [ownship destroyed]
+[seed 8] reward=  -145.88 ownHP=-0.0053 tgtHP=1.0000 ownship destroyed
+total: 2
+[DUTY] team=1 ticks=6600 v27а╬╦╩а╤аь=1.39394% v21╧Пе╘©╧цЬ=63.3485% v17╠к╣╣а╤╟г=60.9545% v17╫╫╥тюШ©К=37.1818% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=39.5303% v23bа╤╟г=52.697% v23b╫га╕юШ©К=47.5152%
+[DUTY] team=1 ticks=7200 v27а╬╦╩а╤аь=1.27778% v21╧Пе╘©╧цЬ=62.8472% v17╠к╣╣а╤╟г=59.3611% v17╫╫╥тюШ©К=37.5694% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=36.9722% v23bа╤╟г=49.625% v23b╫га╕юШ©К=44.875%
+[DUTY] team=1 ticks=7800 v27а╬╦╩а╤аь=1.17949% v21╧Пе╘©╧цЬ=62.7564% v17╠к╣╣а╤╟г=59.5385% v17╫╫╥тюШ©К=39.4231% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=36.7564% v23bа╤╟г=47.5256% v23b╫га╕юШ©К=43.141%
+[DUTY] team=1 ticks=8400 v27а╬╦╩а╤аь=1.09524% v21╧Пе╘©╧цЬ=61.8571% v17╠к╣╣а╤╟г=58.2619% v17╫╫╥тюШ©К=39.5833% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=36.4762% v23bа╤╟г=47.1071% v23b╫га╕юШ©К=43.0357%
+runner:local/env:0	num_steps=[11999] | total rewards=[759.5382] | termination= [max time out]
+[seed 9] reward=   759.54 ownHP=1.0000 tgtHP=0.9996 max time out
+total: 2
+[DUTY_EV] team=1 evadeTicks=1800 v31?≤Й╟∙?≤Л└═(>3000m)=12.4444% Л╓▒Й╟└(2200~3000)=36.3889% ?│Л┼╧(<2200)=51.1667%
+[DUTY_EV] team=1 evadeTicks=2100 v31?≤Й╟∙?≤Л└═(>3000m)=15.3333% Л╓▒Й╟└(2200~3000)=31.3333% ?│Л┼╧(<2200)=53.3333%
+runner:local/env:0	num_steps=[6433] | total rewards=[-168.8865] | termination= [ownship destroyed]
+[seed 10] reward=  -168.89 ownHP=-0.0073 tgtHP=1.0000 ownship destroyed
+total: 2
+[DUTY] team=1 ticks=9000 v27а╬╦╩а╤аь=1.02222% v21╧Пе╘©╧цЬ=62.9444% v17╠к╣╣а╤╟г=59% v17╫╫╥тюШ©К=39.1556% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=36.0778% v23bа╤╟г=48.6111% v23b╫га╕юШ©К=44.8111%
+[DUTY_EV] team=1 evadeTicks=2400 v31?≤Й╟∙?≤Л└═(>3000m)=14.0417% Л╓▒Й╟└(2200~3000)=34.0417% ?│Л┼╧(<2200)=51.9167%
+runner:local/env:0	num_steps=[6116] | total rewards=[-177.4347] | termination= [ownship destroyed]
+[seed 11] reward=  -177.43 ownHP=-0.0040 tgtHP=1.0000 ownship destroyed
+total: 2
+[DUTY] team=1 ticks=9600 v27а╬╦╩а╤аь=0.979167% v21╧Пе╘©╧цЬ=63.6562% v17╠к╣╣а╤╟г=61.0833% v17╫╫╥тюШ©К=36.7083% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=36.2812% v23bа╤╟г=51.2812% v23b╫га╕юШ©К=46.7396%
+[DUTY_EV] team=1 evadeTicks=2700 v31?≤Й╟∙?≤Л└═(>3000m)=12.4815% Л╓▒Й╟└(2200~3000)=31.4444% ?│Л┼╧(<2200)=56.0741%
+[DUTY_EV] team=1 evadeTicks=3000 v31?≤Й╟∙?≤Л└═(>3000m)=11.2333% Л╓▒Й╟└(2200~3000)=34.2333% ?│Л┼╧(<2200)=54.5333%
+runner:local/env:0	num_steps=[6254] | total rewards=[-170.3644] | termination= [ownship destroyed]
+[seed 12] reward=  -170.36 ownHP=-0.0142 tgtHP=1.0000 ownship destroyed
+total: 2
+[DUTY] team=1 ticks=10200 v27а╬╦╩а╤аь=0.960784% v21╧Пе╘©╧цЬ=63.8824% v17╠к╣╣а╤╟г=60.1373% v17╫╫╥тюШ©К=36.3627% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=37.3627% v23bа╤╟г=51.7843% v23b╫га╕юШ©К=47.5098%
+runner:local/env:0	num_steps=[4297] | total rewards=[138.1532] | termination= [target altitude below min]
+[seed 13] reward=   138.15 ownHP=1.0000 tgtHP=1.0000 target altitude below min
+total: 2
+[DUTY] team=1 ticks=10800 v27а╬╦╩а╤аь=0.907407% v21╧Пе╘©╧цЬ=63.7407% v17╠к╣╣а╤╟г=59.213% v17╫╫╥тюШ©К=36.3241% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=37.8796% v23bа╤╟г=50.8148% v23b╫га╕юШ©К=46.6204%
+[DUTY] team=1 ticks=11400 v27а╬╦╩а╤аь=2.35965% v21╧Пе╘©╧цЬ=62.5526% v17╠к╣╣а╤╟г=58.2632% v17╫╫╥тюШ©К=35.9474% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=38.0702% v23bа╤╟г=50.3509% v23b╫га╕юШ©К=46.2719%
+[DUTY] team=1 ticks=12000 v27а╬╦╩а╤аь=2.46667% v21╧Пе╘©╧цЬ=62.0833% v17╠к╣╣а╤╟г=59.1917% v17╫╫╥тюШ©К=34.15% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=38.575% v23bа╤╟г=52.4667% v23b╫га╕юШ©К=47.9917%
+[DUTY_EV] team=1 evadeTicks=3300 v31?≤Й╟∙?≤Л└═(>3000m)=10.2121% Л╓▒Й╟└(2200~3000)=31.4545% ?│Л┼╧(<2200)=58.3333%
+runner:local/env:0	num_steps=[11999] | total rewards=[323.4725] | termination= [max time out]
+[seed 14] reward=   323.47 ownHP=0.4756 tgtHP=0.3087 max time out
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=15]
+SUMMARY dealt=1.7992 taken=8.5899 mean_reward=106.18
+tacview log saved (last episode)
+
+########## v17 vs AIP_jh2.dll ##########
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[3329] | total rewards=[-151.4971] | termination= [ownship destroyed]
+[seed 0] reward=  -151.50 ownHP=-0.0044 tgtHP=1.0000 ownship destroyed
+total: 2
+[DUTY] team=1 ticks=600 v27а╬╦╩а╤аь=4% v21╧Пе╘©╧цЬ=88.1667% v17╠к╣╣а╤╟г=0% v17╫╫╥тюШ©К=0% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=60% v23bа╤╟г=49.5% v23b╫га╕юШ©К=49.5%
+[DUTY_EV] team=1 evadeTicks=300 v31?≤Й╟∙?≤Л└═(>3000m)=0% Л╓▒Й╟└(2200~3000)=28.6667% ?│Л┼╧(<2200)=71.3333%
+runner:local/env:0	num_steps=[7439] | total rewards=[-9.7617] | termination= [ownship destroyed]
+[seed 1] reward=    -9.76 ownHP=-0.0003 tgtHP=0.9105 ownship destroyed
+total: 2
+[DUTY] team=1 ticks=1200 v27а╬╦╩а╤аь=6.91667% v21╧Пе╘©╧цЬ=89.5% v17╠к╣╣а╤╟г=0% v17╫╫╥тюШ©К=0% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=48.25% v23bа╤╟г=64.5833% v23b╫га╕юШ©К=49%
+[DUTY] team=1 ticks=1800 v27а╬╦╩а╤аь=13.3333% v21╧Пе╘©╧цЬ=85.8333% v17╠к╣╣а╤╟г=0% v17╫╫╥тюШ©К=0% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=51.1111% v23bа╤╟г=64.8889% v23b╫га╕юШ©К=54.5%
+runner:local/env:0	num_steps=[7171] | total rewards=[487.5559] | termination= [ownship destroyed]
+[seed 2] reward=   487.56 ownHP=-0.0069 tgtHP=0.5981 ownship destroyed
+total: 2
+[DUTY] team=1 ticks=2400 v27а╬╦╩а╤аь=18.0417% v21╧Пе╘©╧цЬ=86.6667% v17╠к╣╣а╤╟г=0% v17╫╫╥тюШ©К=0% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=43.9583% v23bа╤╟г=60.5833% v23b╫га╕юШ©К=48.5%
+[DUTY_EV] team=1 evadeTicks=600 v31?≤Й╟∙?≤Л└═(>3000m)=0% Л╓▒Й╟└(2200~3000)=21.3333% ?│Л┼╧(<2200)=78.6667%
+runner:local/env:0	num_steps=[3745] | total rewards=[-153.6046] | termination= [ownship destroyed]
+[seed 3] reward=  -153.60 ownHP=-0.0049 tgtHP=1.0000 ownship destroyed
+total: 2
+[DUTY] team=1 ticks=3000 v27а╬╦╩а╤аь=16.2667% v21╧Пе╘©╧цЬ=86.3667% v17╠к╣╣а╤╟г=0% v17╫╫╥тюШ©К=0% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=48.4% v23bа╤╟г=64.4333% v23b╫га╕юШ©К=54.7667%
+runner:local/env:0	num_steps=[5292] | total rewards=[32.9718] | termination= [ownship destroyed]
+[seed 4] reward=    32.97 ownHP=-0.0102 tgtHP=1.0000 ownship destroyed
+total: 2
+[DUTY_EV] team=1 evadeTicks=900 v31?≤Й╟∙?≤Л└═(>3000m)=0.555556% Л╓▒Й╟└(2200~3000)=22.5556% ?│Л┼╧(<2200)=76.8889%
+[DUTY_EV] team=1 evadeTicks=1200 v31?≤Й╟∙?≤Л└═(>3000m)=0.416667% Л╓▒Й╟└(2200~3000)=28% ?│Л┼╧(<2200)=71.5833%
+runner:local/env:0	num_steps=[5894] | total rewards=[-178.9495] | termination= [ownship destroyed]
+[seed 5] reward=  -178.95 ownHP=-0.0005 tgtHP=1.0000 ownship destroyed
+total: 2
+[DUTY] team=1 ticks=3600 v27а╬╦╩а╤аь=14.2778% v21╧Пе╘©╧цЬ=86.9167% v17╠к╣╣а╤╟г=0% v17╫╫╥тюШ©К=0% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=49.8056% v23bа╤╟г=66.8056% v23b╫га╕юШ©К=57.8333%
+[DUTY_EV] team=1 evadeTicks=1500 v31?≤Й╟∙?≤Л└═(>3000m)=0.333333% Л╓▒Й╟└(2200~3000)=33.3333% ?│Л┼╧(<2200)=66.3333%
+[DUTY_EV] team=1 evadeTicks=1800 v31?≤Й╟∙?≤Л└═(>3000m)=0.277778% Л╓▒Й╟└(2200~3000)=31.5% ?│Л┼╧(<2200)=68.2222%
+[DUTY_EV] team=1 evadeTicks=2100 v31?≤Й╟∙?≤Л└═(>3000m)=0.238095% Л╓▒Й╟└(2200~3000)=33.381% ?│Л┼╧(<2200)=66.381%
+[DUTY_EV] team=1 evadeTicks=2400 v31?≤Й╟∙?≤Л└═(>3000m)=0.208333% Л╓▒Й╟└(2200~3000)=35.625% ?│Л┼╧(<2200)=64.1667%
+runner:local/env:0	num_steps=[7924] | total rewards=[-194.9675] | termination= [ownship destroyed]
+[seed 6] reward=  -194.97 ownHP=-0.0015 tgtHP=1.0000 ownship destroyed
+total: 2
+[DUTY] team=1 ticks=4200 v27а╬╦╩а╤аь=18.881% v21╧Пе╘©╧цЬ=85.5476% v17╠к╣╣а╤╟г=0% v17╫╫╥тюШ©К=0% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=45.0952% v23bа╤╟г=63.7857% v23b╫га╕юШ©К=56.0952%
+[DUTY] team=1 ticks=4800 v27а╬╦╩а╤аь=20.6667% v21╧Пе╘©╧цЬ=85.3125% v17╠к╣╣а╤╟г=0% v17╫╫╥тюШ©К=0% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=43.25% v23bа╤╟г=63.4583% v23b╫га╕юШ©К=53%
+[DUTY_EV] team=1 evadeTicks=2700 v31?≤Й╟∙?≤Л└═(>3000m)=0.185185% Л╓▒Й╟└(2200~3000)=36.4815% ?│Л┼╧(<2200)=63.3333%
+[DUTY_EV] team=1 evadeTicks=3000 v31?≤Й╟∙?≤Л└═(>3000m)=0.166667% Л╓▒Й╟└(2200~3000)=38.5333% ?│Л┼╧(<2200)=61.3%
+runner:local/env:0	num_steps=[11999] | total rewards=[654.3547] | termination= [max time out]
+[seed 7] reward=   654.35 ownHP=0.2542 tgtHP=0.5136 max time out
+total: 2
+[DUTY_EV] team=1 evadeTicks=3300 v31?≤Й╟∙?≤Л└═(>3000m)=2.15152% Л╓▒Й╟└(2200~3000)=35.3333% ?│Л┼╧(<2200)=62.5152%
+[DUTY_EV] team=1 evadeTicks=3600 v31?≤Й╟∙?≤Л└═(>3000m)=1.97222% Л╓▒Й╟└(2200~3000)=36.0278% ?│Л┼╧(<2200)=62%
+runner:local/env:0	num_steps=[7017] | total rewards=[-187.4244] | termination= [ownship destroyed]
+[seed 8] reward=  -187.42 ownHP=-0.0136 tgtHP=1.0000 ownship destroyed
+total: 2
+[DUTY] team=1 ticks=5400 v27а╬╦╩а╤аь=18.3704% v21╧Пе╘©╧цЬ=85.5556% v17╠к╣╣а╤╟г=0% v17╫╫╥тюШ©К=0% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=42.2222% v23bа╤╟г=65.2037% v23b╫га╕юШ©К=55.0926%
+[DUTY] team=1 ticks=6000 v27а╬╦╩а╤аь=18.35% v21╧Пе╘©╧цЬ=83.4667% v17╠к╣╣а╤╟г=0% v17╫╫╥тюШ©К=0% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=44.4% v23bа╤╟г=64.8333% v23b╫га╕юШ©К=55.7333%
+[DUTY_EV] team=1 evadeTicks=3900 v31?≤Й╟∙?≤Л└═(>3000m)=3.61538% Л╓▒Й╟└(2200~3000)=36.2308% ?│Л┼╧(<2200)=60.1538%
+runner:local/env:0	num_steps=[6770] | total rewards=[17.2851] | termination= [ownship destroyed]
+[seed 9] reward=    17.29 ownHP=-0.0062 tgtHP=0.5571 ownship destroyed
+total: 2
+[DUTY] team=1 ticks=6600 v27а╬╦╩а╤аь=19.8939% v21╧Пе╘©╧цЬ=84.1212% v17╠к╣╣а╤╟г=0% v17╫╫╥тюШ©К=0% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=42.8333% v23bа╤╟г=62.9091% v23b╫га╕юШ©К=54.5455%
+runner:local/env:0	num_steps=[7869] | total rewards=[307.2923] | termination= [ownship destroyed]
+[seed 10] reward=   307.29 ownHP=-0.0011 tgtHP=0.7478 ownship destroyed
+total: 2
+[DUTY] team=1 ticks=7200 v27а╬╦╩а╤аь=18.6806% v21╧Пе╘©╧цЬ=84.6944% v17╠к╣╣а╤╟г=0% v17╫╫╥тюШ©К=0% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=40.5417% v23bа╤╟г=62.3056% v23b╫га╕юШ©К=52.8472%
+[DUTY_EV] team=1 evadeTicks=4200 v31?≤Й╟∙?≤Л└═(>3000m)=4.57143% Л╓▒Й╟└(2200~3000)=34.381% ?│Л┼╧(<2200)=61.0476%
+runner:local/env:0	num_steps=[3919] | total rewards=[-159.3200] | termination= [ownship destroyed]
+[seed 11] reward=  -159.32 ownHP=-0.0065 tgtHP=1.0000 ownship destroyed
+total: 2
+[DUTY_EV] team=1 evadeTicks=4500 v31?≤Й╟∙?≤Л└═(>3000m)=4.26667% Л╓▒Й╟└(2200~3000)=35.6222% ?│Л┼╧(<2200)=60.1111%
+runner:local/env:0	num_steps=[3473] | total rewards=[-152.2387] | termination= [ownship destroyed]
+[seed 12] reward=  -152.24 ownHP=-0.0014 tgtHP=1.0000 ownship destroyed
+total: 2
+[DUTY] team=1 ticks=7800 v27а╬╦╩а╤аь=17.2564% v21╧Пе╘©╧цЬ=85.3205% v17╠к╣╣а╤╟г=0% v17╫╫╥тюШ©К=0% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=41.0897% v23bа╤╟г=62.0641% v23b╫га╕юШ©К=53.0385%
+[DUTY] team=1 ticks=8400 v27а╬╦╩а╤аь=17.1667% v21╧Пе╘©╧цЬ=84.5% v17╠к╣╣а╤╟г=0% v17╫╫╥тюШ©К=0% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=43.0714% v23bа╤╟г=62.5952% v23b╫га╕юШ©К=54.2143%
+runner:local/env:0	num_steps=[6435] | total rewards=[213.5913] | termination= [ownship destroyed]
+[seed 13] reward=   213.59 ownHP=-0.0093 tgtHP=0.8922 ownship destroyed
+total: 2
+[DUTY] team=1 ticks=9000 v27а╬╦╩а╤аь=16.9111% v21╧Пе╘©╧цЬ=85.1444% v17╠к╣╣а╤╟г=0% v17╫╫╥тюШ©К=0% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=42.5333% v23bа╤╟г=61.8889% v23b╫га╕юШ©К=53.4111%
+[DUTY_EV] team=1 evadeTicks=4800 v31?≤Й╟∙?≤Л└═(>3000m)=4.14583% Л╓▒Й╟└(2200~3000)=33.3958% ?│Л┼╧(<2200)=62.4583%
+[DUTY_EV] team=1 evadeTicks=5100 v31?≤Й╟∙?≤Л└═(>3000m)=3.90196% Л╓▒Й╟└(2200~3000)=33.6863% ?│Л┼╧(<2200)=62.4118%
+runner:local/env:0	num_steps=[7766] | total rewards=[-183.8108] | termination= [ownship destroyed]
+[seed 14] reward=  -183.81 ownHP=-0.0110 tgtHP=1.0000 ownship destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=15]
+SUMMARY dealt=1.7806 taken=14.8238 mean_reward=22.77
+tacview log saved (last episode)
+
+=== jh2 Л═┬Л═° Л≥└Кё▄ ===
