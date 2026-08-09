@@ -392,7 +392,24 @@ NodeStatus Action::Task_LeadPredict::tick()
 	//  ⚠ 하한만 낮추고 ClimbOut 임계(XML MinAlt)를 그대로 두면 `divefree`와 같은
 	//    반쪽 수정이 된다 — 내려가려다 벽에 부딪혀 에너지만 잃는다. **둘 다 낮춘다.**
 	//  규정상 고도 300m 즉시 패배. 상대는 800m 하한으로 403m까지 갔다(여유 103m).
-	const double AIM_FLOOR = Ablation::sel("lowfloor") ? 800.0 : 1500.0;
+	double AIM_FLOOR = 1500.0;
+	if (Ablation::sel("lowfloor")) AIM_FLOOR = 800.0;
+	// ★ `lowfloor2`: 낮추되 **상대보다 더 내려가지는 않는다.**
+	//  [계기] `lowfloor`(무조건 800)는 jh2전을 4승11패 -> 11승3패로 뒤집었지만
+	//    kwon전이 11승 -> 8승으로 퇴행했다. 실측:
+	//      kwon 최저고도 1490~1538m  = **kwon은 1500m 아래로 안 내려간다**
+	//      우리 최저 1865 -> 1160m, 중앙 5963 -> 5006m  = **우리만 1000m 더 내려간다**
+	//      준 데미지 10.99 -> 7.02 (36% 감소) = 상대가 없는 고도로 내려가 있다.
+	//    v32에서는 1800m 벽에 닿을 때마다 ClimbOut이 끌어올려 교전 고도를 유지시켰다.
+	//  [원리] 고도를 내주는 것은 상대를 따라갈 때만 이득이다. 상대가 위에 있으면
+	//    내려갈 이유가 없다. 상대 고도보다 300m 아래를 하한으로 둔다(따라붙을 여유).
+	//    상대 이름이 아니라 **상대의 현재 고도**로만 표현되므로 특정 상대 튜닝이 아니다.
+	if (Ablation::sel("lowfloor2"))
+	{
+		double follow = TargetLocation.Z - 300.0;
+		AIM_FLOOR = (follow < 800.0) ? 800.0 : follow;
+		if (AIM_FLOOR > 1500.0) AIM_FLOOR = 1500.0;   // 원래 하한보다 위로는 올리지 않는다
+	}
 	if (predicted.Z < AIM_FLOOR) predicted.Z = AIM_FLOOR;   // v18: 3500 -> 1500
 	// v22c: LeadPredict 내부 고도 안전망은 제거. 고도<1800이면 ClimbOut이 최우선으로
 	//  잡아 LeadPredict가 실행조차 안 되므로(트리 구조) 여기 안전망은 죽은 코드였다.
