@@ -382,7 +382,18 @@ NodeStatus Action::Task_LeadPredict::tick()
 	double maxZ = MyLocation.Z + climbSlope;
 	if (predicted.Z < minZ) { predicted.Z = minZ; DUTY_clmpD[__ti]++; }
 	if (predicted.Z > maxZ) { predicted.Z = maxZ; DUTY_clmpU[__ti]++; }
-	if (predicted.Z < 1500.0) predicted.Z = 1500.0;   // v18: 3500 -> 1500
+	// ★ 2026-08-09 `lowfloor`: 조준점 절대 하한을 낮춘다.
+	//  [실측] jh2전 15판에서 **우리 최저고도 중앙 1797m / 최소 1780m** — 매 판 1800m
+	//    벽(DECO_AltitudeCheck)에 정확히 걸린다. 상대는 중앙 1013m / 최소 403m까지 쓴다.
+	//    상대가 1800m 아래로 내려가면 ClimbOut이 트리 전체를 가져가 **추격이 중단된다.**
+	//  [상대의 실제 변경] 팀원은 8/6판 -> cf49f0e에서 XML 59개 노드 중 **딱 두 숫자**만
+	//    바꿨다: PreventLandCrash FloorHard 1800->800, FloorSoft 3200->1500.
+	//    그 한 변경으로 우리 상대 전적이 0승15패 -> 11승4패로 뒤집혔다.
+	//  ⚠ 하한만 낮추고 ClimbOut 임계(XML MinAlt)를 그대로 두면 `divefree`와 같은
+	//    반쪽 수정이 된다 — 내려가려다 벽에 부딪혀 에너지만 잃는다. **둘 다 낮춘다.**
+	//  규정상 고도 300m 즉시 패배. 상대는 800m 하한으로 403m까지 갔다(여유 103m).
+	const double AIM_FLOOR = Ablation::sel("lowfloor") ? 800.0 : 1500.0;
+	if (predicted.Z < AIM_FLOOR) predicted.Z = AIM_FLOOR;   // v18: 3500 -> 1500
 	// v22c: LeadPredict 내부 고도 안전망은 제거. 고도<1800이면 ClimbOut이 최우선으로
 	//  잡아 LeadPredict가 실행조차 안 되므로(트리 구조) 여기 안전망은 죽은 코드였다.
 	//  고도 안전은 DECO_AltitudeCheck(예측형) + Task_ClimbOut(풀스로틀) = 트리 레벨에서 처리.
