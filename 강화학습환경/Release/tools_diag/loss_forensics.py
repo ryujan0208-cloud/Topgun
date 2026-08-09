@@ -52,11 +52,16 @@ for k in seeds:
     t0=float(o[0]['Time'])
     # 우리/상대 HP 첫 하락 시점
     def first_drop(rows):
+        # ★ 2026-08-09 수정: 임계가 한 틱에 0.01이었다.
+        #   대미지는 계수 (914.4-dist)/762 로 **틱당 조금씩** 누적되므로
+        #   0.01을 한 번에 넘지 않는 판에서는 "피격 없음"이라는 틀린 답이 나왔다
+        #   (신형 도전자전 11패 중 3판이 그렇게 누락됐다).
+        #   이제 아주 작은 하락도 잡는다.
         p=1.0
         for i in range(len(rows)):
             h=float(rows[i]['Health'])
-            if h<p-0.01: return i,h
-            p=h
+            if h < p - 1e-6: return i,h
+            p=min(p,h)
         return None,1.0
     mi,mh=first_drop(o); ti,th=first_drop(t)
     ownHP=float(o[n-1]['Health']); tgtHP=float(t[n-1]['Health'])

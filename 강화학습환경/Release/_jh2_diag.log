@@ -1,0 +1,839 @@
+########## v32 vs AIP_jh2.dll (진단) ##########
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] LeadPredict dist=3870.29 dV=-1.80054 thr=1 om=0.583138 lt=3
+[ACTIVE] [RED] LeadPredict dist=2830.05 dV=-8.48825 thr=1 om=0.146465 lt=3
+[ACTIVE] [RED] LeadPredict dist=552.373 dV=-28.1399 thr=0.67072 om=1.43504 lt=1.55524
+[ACTIVE] [RED] ClimbOut Z=2350.19
+[ACTIVE] [RED] LeadPredict dist=765.7 dV=-2.26355 thr=0.654265 om=3.27291 lt=2.11392
+[EVADE_DIAG] team=1 side=0.527965 turnSign=1 dist=530.511 trueAta=126.329 headingXAngle=43.5286 aa=162.44
+[EVADE_DIAG] team=1 side=-0.107961 turnSign=-1 dist=482.426 trueAta=168.321 headingXAngle=13.8343 aa=171.115
+[ACTIVE] [RED] Evade Z=1914.28
+[EVADE_DIAG] team=1 side=0.0655011 turnSign=-1 dist=515.367 trueAta=157.578 headingXAngle=9.60612 aa=178.319
+[EVADE_DIAG] team=1 side=-0.0555737 turnSign=1 dist=517.355 trueAta=162.808 headingXAngle=9.67816 aa=173.919
+[EVADE_DIAG] team=1 side=0.0556789 turnSign=-1 dist=519.757 trueAta=161.658 headingXAngle=18.1074 aa=179.513
+[ACTIVE] [RED] Evade Z=1927.82
+[EVADE_DIAG] team=1 side=-0.0105917 turnSign=1 dist=515.813 trueAta=171.662 headingXAngle=7.14596 aa=178.21
+[EVADE_DIAG] team=1 side=-0.0292179 turnSign=1 dist=521.055 trueAta=177.888 headingXAngle=1.86623 aa=179.685
+[EVADE_DIAG] team=1 side=-0.0240653 turnSign=1 dist=526.184 trueAta=178.576 headingXAngle=2.3522 aa=179.106
+[ACTIVE] [RED] Evade Z=1968.68
+[EVADE_DIAG] team=1 side=0.0202385 turnSign=1 dist=532.721 trueAta=178.746 headingXAngle=5.0894 aa=178.159
+[EVADE_DIAG] team=1 side=-0.0170704 turnSign=1 dist=537.334 trueAta=176.179 headingXAngle=5.84017 aa=178.065
+[EVADE_DIAG] team=1 side=-0.0138595 turnSign=1 dist=539.737 trueAta=176.085 headingXAngle=1.30899 aa=179.013
+[ACTIVE] [RED] Evade Z=2028.53
+[EVADE_DIAG] team=1 side=-0.035266 turnSign=1 dist=543.81 trueAta=175.876 headingXAngle=3.02972 aa=178.993
+[EVADE_DIAG] team=1 side=0.0185241 turnSign=1 dist=545.111 trueAta=177.711 headingXAngle=1.1066 aa=179.831
+[EVADE_DIAG] team=1 side=-0.0361837 turnSign=1 dist=547.563 trueAta=173.967 headingXAngle=6.22234 aa=179.908
+[ACTIVE] [RED] Evade Z=2104.98
+[EVADE_DIAG] team=1 side=-0.0350694 turnSign=1 dist=554.516 trueAta=174.991 headingXAngle=0.869519 aa=177.546
+[EVADE_DIAG] team=1 side=0.0186185 turnSign=1 dist=563.169 trueAta=171.629 headingXAngle=6.05721 aa=178.615
+[EVADE_DIAG] team=1 side=-0.0312214 turnSign=1 dist=568.638 trueAta=175.589 headingXAngle=2.29896 aa=179.061
+[ACTIVE] [RED] Evade Z=2199.62
+[EVADE_DIAG] team=1 side=0.0278817 turnSign=1 dist=576.491 trueAta=173.657 headingXAngle=7.30649 aa=179.648
+[EVADE_DIAG] team=1 side=-0.0830905 turnSign=1 dist=587.66 trueAta=174.825 headingXAngle=0.748321 aa=177.768
+[EVADE_DIAG] team=1 side=0.0891462 turnSign=1 dist=602.01 trueAta=172.877 headingXAngle=3.46725 aa=177.708
+[ACTIVE] [RED] Evade Z=2301.25
+[EVADE_DIAG] team=1 side=-0.0809137 turnSign=1 dist=614.244 trueAta=174.38 headingXAngle=2.48992 aa=177.404
+[EVADE_DIAG] team=1 side=0.0746286 turnSign=1 dist=630.058 trueAta=171.37 headingXAngle=3.47106 aa=177.377
+[EVADE_DIAG] team=1 side=-0.0643095 turnSign=1 dist=648.354 trueAta=173.152 headingXAngle=1.966 aa=177.688
+[ACTIVE] [RED] Evade Z=2365.71
+[EVADE_DIAG] team=1 side=0.0528566 turnSign=1 dist=667.713 trueAta=169.412 headingXAngle=3.23053 aa=179.202
+[EVADE_DIAG] team=1 side=-0.107612 turnSign=-1 dist=685.64 trueAta=169.275 headingXAngle=3.02362 aa=176.461
+[EVADE_DIAG] team=1 side=0.13907 turnSign=1 dist=693.6 trueAta=168.82 headingXAngle=3.46208 aa=178.227
+[ACTIVE] [RED] Evade Z=2357.1
+[EVADE_DIAG] team=1 side=-0.140407 turnSign=-1 dist=699.238 trueAta=167.483 headingXAngle=5.4873 aa=177.884
+[EVADE_DIAG] team=1 side=0.0409382 turnSign=1 dist=696.659 trueAta=165.953 headingXAngle=10.1317 aa=175.555
+[EVADE_DIAG] team=1 side=-0.000670707 turnSign=-1 dist=692.766 trueAta=168.336 headingXAngle=6.18686 aa=174.098
+[ACTIVE] [RED] Evade Z=2273.59
+[EVADE_DIAG] team=1 side=0.0433996 turnSign=1 dist=683.86 trueAta=167.563 headingXAngle=5.24889 aa=179.765
+[EVADE_DIAG] team=1 side=-0.0221721 turnSign=-1 dist=673.139 trueAta=169.656 headingXAngle=5.28454 aa=177.74
+[EVADE_DIAG] team=1 side=-0.0184005 turnSign=-1 dist=656.205 trueAta=173.982 headingXAngle=4.00246 aa=177.705
+[ACTIVE] [RED] Evade Z=2169.47
+[EVADE_DIAG] team=1 side=0.0358499 turnSign=-1 dist=634.727 trueAta=174.872 headingXAngle=1.02358 aa=176.987
+[EVADE_DIAG] team=1 side=-0.0215643 turnSign=-1 dist=601.431 trueAta=176.783 headingXAngle=2.4862 aa=179.061
+[EVADE_DIAG] team=1 side=0.0451183 turnSign=-1 dist=566.369 trueAta=176.089 headingXAngle=5.31265 aa=178.3
+[ACTIVE] [RED] Evade Z=2066.08
+[EVADE_DIAG] team=1 side=-0.014098 turnSign=-1 dist=532.534 trueAta=178.8 headingXAngle=0.537517 aa=179.301
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[3985] | total rewards=[-147.6854] | termination= [ownship destroyed]
+[seed 0] reward=  -147.69 ownHP=-0.0068 tgtHP=0.9975 ownship destroyed
+total: 2
+[ACTIVE] [RED] LeadPredict dist=3555.32 dV=-0.720215 thr=1 om=0.781315 lt=3
+[ACTIVE] [RED] LeadPredict dist=1397.36 dV=-13.3754 thr=0.88 om=0.898362 lt=3
+[ACTIVE] [RED] LeadPredict dist=1684.54 dV=-8.2825 thr=0.738519 om=1.11259 lt=3
+[ACTIVE] [RED] LeadPredict dist=1317.29 dV=-21.7608 thr=1 om=1.12361 lt=3
+[ACTIVE] [RED] LeadPredict dist=1388.74 dV=-15.639 thr=0.744422 om=0.111283 lt=3
+[ACTIVE] [RED] LeadPredict dist=1639.48 dV=-19.8574 thr=1 om=0.993382 lt=3
+[ACTIVE] [RED] LeadPredict dist=1457.35 dV=17.2852 thr=1 om=1.03746 lt=3
+[ACTIVE] [RED] LeadPredict dist=1305.69 dV=3.60107 thr=1 om=0.0124537 lt=3
+[ACTIVE] [RED] LeadPredict dist=1234 dV=22.3267 thr=1 om=1.19779 lt=3
+[ACTIVE] [RED] LeadPredict dist=927.487 dV=16.3592 thr=1 om=0.706172 lt=3
+[ACTIVE] [RED] LeadPredict dist=1055.86 dV=-26.8538 thr=1 om=0.0505976 lt=3
+[ACTIVE] [RED] LeadPredict dist=1146.1 dV=2.10919 thr=1 om=0.967458 lt=3
+[ACTIVE] [RED] LeadPredict dist=1107.79 dV=18.2626 thr=0.771752 om=0.701023 lt=3
+[ACTIVE] [RED] LeadPredict dist=1379.13 dV=-11.4206 thr=0.720372 om=0.304968 lt=3
+[ACTIVE] [RED] LeadPredict dist=1414.27 dV=0.771637 thr=1 om=0.997623 lt=3
+[ACTIVE] [RED] LeadPredict dist=1220.26 dV=15.0731 thr=1 om=0.929048 lt=3
+[ACTIVE] [RED] LeadPredict dist=1178.58 dV=-1.08032 thr=1 om=0.0115929 lt=3
+[ACTIVE] [RED] LeadPredict dist=1134.64 dV=13.4269 thr=1 om=1.07425 lt=3
+[ACTIVE] [RED] LeadPredict dist=971.137 dV=8.28247 thr=1 om=1.01701 lt=2.71893
+[ACTIVE] [RED] LeadPredict dist=1016.93 dV=-8.1796 thr=1 om=0.00878474 lt=2.72996
+[ACTIVE] [RED] LeadPredict dist=1053.92 dV=2.41785 thr=1 om=1.41563 lt=2.67241
+[ACTIVE] [RED] LeadPredict dist=915.967 dV=4.42419 thr=1 om=0.0497888 lt=2.25953
+[ACTIVE] [RED] LeadPredict dist=881.66 dV=18.2626 thr=0.780848 om=0.272281 lt=0
+[ACTIVE] [RED] ClimbOut Z=2435.31
+[ACTIVE] [RED] ClimbOut Z=1992.18
+[ACTIVE] [RED] LeadPredict dist=1449.76 dV=16.8736 thr=0.342786 om=1.82563 lt=3
+[ACTIVE] [RED] LeadPredict dist=1063.07 dV=-8.5397 thr=0.596405 om=1.61017 lt=2.99486
+[ACTIVE] [RED] ClimbOut Z=1816.91
+[ACTIVE] [RED] LeadPredict dist=1664.21 dV=16.8736 thr=0.630512 om=4.49114 lt=3
+[ACTIVE] [RED] LeadPredict dist=469.152 dV=-15.2789 thr=0.749232 om=0.272147 lt=1.47068
+[ACTIVE] [RED] ClimbOut Z=1938.98
+[ACTIVE] [RED] LeadPredict dist=1439.29 dV=-4.42416 thr=0.721902 om=1.45895 lt=3
+[ACTIVE] [RED] ClimbOut Z=1799.34
+[ACTIVE] [RED] LeadPredict dist=537.566 dV=3.29242 thr=0.717967 om=1.47818 lt=1.64715
+[ACTIVE] [RED] ClimbOut Z=1850.01
+[EVADE_DIAG] team=1 side=-0.583904 turnSign=-1 dist=276.785 trueAta=142.35 headingXAngle=23.3957 aa=173.396
+[EVADE_DIAG] team=1 side=0.00853037 turnSign=-1 dist=260.172 trueAta=162.98 headingXAngle=18.3041 aa=177.279
+[ACTIVE] [RED] Evade Z=1801.7
+[EVADE_DIAG] team=1 side=0.044622 turnSign=-1 dist=276.834 trueAta=174.811 headingXAngle=3.11769 aa=178.326
+[EVADE_DIAG] team=1 side=-0.0370901 turnSign=1 dist=286.752 trueAta=167.51 headingXAngle=8.50578 aa=177.269
+runner:local/env:0	num_steps=[11999] | total rewards=[838.5222] | termination= [max time out]
+[seed 1] reward=   838.52 ownHP=0.8806 tgtHP=0.8107 max time out
+total: 2
+[ACTIVE] [RED] LeadPredict dist=4268.88 dV=2.00632 thr=1 om=0 lt=3
+[ACTIVE] [RED] LeadPredict dist=1301.37 dV=9.98013 thr=0.752293 om=0.861135 lt=3
+[ACTIVE] [RED] LeadPredict dist=2002.4 dV=10.6489 thr=0.640132 om=1.12721 lt=3
+[ACTIVE] [RED] LeadPredict dist=1446.23 dV=-24.8989 thr=0.836842 om=1.40321 lt=3
+[ACTIVE] [RED] LeadPredict dist=1415.39 dV=-21.1435 thr=0.601433 om=0.180702 lt=3
+[ACTIVE] [RED] LeadPredict dist=1482.88 dV=-3.85831 thr=1 om=1.34962 lt=3
+[ACTIVE] [RED] LeadPredict dist=1195.36 dV=7.30505 thr=1 om=0.0218302 lt=3
+[ACTIVE] [RED] LeadPredict dist=1196.04 dV=-4.01263 thr=1 om=0.0105314 lt=3
+[ACTIVE] [RED] LeadPredict dist=1109.34 dV=15.2789 thr=1 om=1.23249 lt=3
+[ACTIVE] [RED] LeadPredict dist=927.085 dV=-3.7554 thr=0.94 om=0.18627 lt=3
+[ACTIVE] [RED] LeadPredict dist=999.681 dV=-3.65253 thr=1 om=0.185401 lt=3
+[ACTIVE] [RED] LeadPredict dist=925.509 dV=6.32761 thr=1 om=1.26794 lt=2.61226
+[ACTIVE] [RED] LeadPredict dist=960.071 dV=-5.76175 thr=0.55552 om=0.217042 lt=2.63334
+[ACTIVE] [RED] LeadPredict dist=1124.08 dV=-16.4621 thr=0.525129 om=0.0567615 lt=3
+[ACTIVE] [RED] ClimbOut Z=2350.11
+[ACTIVE] [RED] ClimbOut Z=1934.45
+[ACTIVE] [RED] LeadPredict dist=682.326 dV=18.9314 thr=0.550928 om=2.62801 lt=1.86599
+[ACTIVE] [RED] LeadPredict dist=682.153 dV=-10.2888 thr=0.738081 om=0.895146 lt=2.12094
+[ACTIVE] [RED] LeadPredict dist=737.396 dV=-0.668762 thr=0.815479 om=0.60767 lt=2.43031
+[ACTIVE] [RED] LeadPredict dist=767.498 dV=15.8962 thr=0.809245 om=1.48054 lt=2.80645
+[ACTIVE] [RED] LeadPredict dist=766.87 dV=1.59476 thr=0.980863 om=0.00799467 lt=0
+runner:local/env:0	num_steps=[6929] | total rewards=[656.8552] | termination= [target destroyed]
+[seed 2] reward=   656.86 ownHP=1.0000 tgtHP=-0.0028 target destroyed
+total: 2
+[ACTIVE] [RED] LeadPredict dist=3697.02 dV=9.77435 thr=1 om=0.984881 lt=3
+[ACTIVE] [RED] LeadPredict dist=863.278 dV=59.0577 thr=0.84 om=1.18306 lt=2.61182
+[ACTIVE] [RED] LeadPredict dist=2600.59 dV=138.333 thr=0.689028 om=1.13246 lt=3
+[ACTIVE] [RED] LeadPredict dist=3997.59 dV=162.975 thr=1 om=1.08961 lt=3
+[ACTIVE] [RED] LeadPredict dist=3007.54 dV=104.483 thr=1 om=0.819611 lt=3
+[ACTIVE] [RED] LeadPredict dist=1000.06 dV=27.5226 thr=1 om=1.21017 lt=3
+[ACTIVE] [RED] LeadPredict dist=2044.6 dV=-65.2824 thr=1 om=0.791635 lt=3
+[ACTIVE] [RED] LeadPredict dist=3097.87 dV=-89.3068 thr=1 om=0.846155 lt=3
+[ACTIVE] [RED] LeadPredict dist=2374.48 dV=-44.8077 thr=1 om=0.0527235 lt=3
+[ACTIVE] [RED] LeadPredict dist=1737.36 dV=20.9377 thr=1 om=0.962595 lt=3
+[ACTIVE] [RED] LeadPredict dist=1402.62 dV=23.5613 thr=1 om=0.152274 lt=3
+[ACTIVE] [RED] LeadPredict dist=1333.26 dV=3.70395 thr=1 om=0.0238568 lt=3
+[ACTIVE] [RED] LeadPredict dist=1221.78 dV=15.6904 thr=1 om=1.09583 lt=3
+[ACTIVE] [RED] LeadPredict dist=1074.27 dV=2.2121 thr=1 om=0.190575 lt=2.92225
+[ACTIVE] [RED] LeadPredict dist=1135.61 dV=-9.4657 thr=0.464129 om=0.0362222 lt=2.94132
+[ACTIVE] [RED] LeadPredict dist=1079.54 dV=18.2626 thr=1 om=1.29017 lt=2.71859
+[ACTIVE] [RED] LeadPredict dist=913.476 dV=14.0957 thr=0.992 om=0.0214439 lt=0
+[ACTIVE] [RED] LeadPredict dist=861.932 dV=7.45938 thr=0.910487 om=0.0666126 lt=0.0809884
+[ACTIVE] [RED] LeadPredict dist=772.185 dV=10.4431 thr=0.874683 om=1.01522 lt=1.1398
+[ACTIVE] [RED] LeadPredict dist=822.46 dV=-9.67145 thr=0.850898 om=0.263756 lt=2.78722
+[ACTIVE] [RED] LeadPredict dist=947.4 dV=-3.60107 thr=1 om=0.313592 lt=2.80136
+[ACTIVE] [RED] LeadPredict dist=887.333 dV=16.5135 thr=0.912 om=1.23827 lt=1.24124
+[ACTIVE] [RED] LeadPredict dist=797.439 dV=7.09927 thr=0.914809 om=0.189307 lt=0.0490936
+runner:local/env:0	num_steps=[8375] | total rewards=[848.0130] | termination= [target destroyed]
+[seed 3] reward=   848.01 ownHP=1.0000 tgtHP=-0.0001 target destroyed
+total: 2
+[ACTIVE] [RED] LeadPredict dist=3224.34 dV=4.42416 thr=1 om=1.20211 lt=3
+[ACTIVE] [RED] LeadPredict dist=1570.78 dV=-4.42419 thr=0.739831 om=0.206784 lt=3
+[ACTIVE] [RED] LeadPredict dist=1098.87 dV=-8.5397 thr=0.667243 om=1.13606 lt=3
+[ACTIVE] [RED] LeadPredict dist=758.088 dV=-14.7644 thr=0.786082 om=1.25345 lt=2.1541
+[ACTIVE] [RED] LeadPredict dist=1147.1 dV=-25.9792 thr=0.566889 om=0.288008 lt=3
+[ACTIVE] [RED] ClimbOut Z=2161.63
+[ACTIVE] [RED] LeadPredict dist=1850.64 dV=-14.3529 thr=0.590283 om=2.61795 lt=3
+[ACTIVE] [RED] LeadPredict dist=845.29 dV=3.60107 thr=0.685609 om=1.40138 lt=2.531
+[ACTIVE] [RED] LeadPredict dist=652.286 dV=-7.40793 thr=0.835594 om=0.299764 lt=2.18387
+[ACTIVE] [RED] LeadPredict dist=893.029 dV=-2.41788 thr=1 om=1.55004 lt=2.67827
+[ACTIVE] [RED] LeadPredict dist=812.148 dV=-6.48193 thr=1 om=0.165417 lt=2.85945
+[ACTIVE] [RED] LeadPredict dist=907.867 dV=10.6489 thr=0.92 om=0.38745 lt=1.96849
+[ACTIVE] [RED] ClimbOut Z=2302.07
+[ACTIVE] [RED] LeadPredict dist=806.258 dV=15.639 thr=0.802708 om=3.54604 lt=2.20864
+[ACTIVE] [RED] ClimbOut Z=1956.35
+[ACTIVE] [RED] ClimbOut Z=1823.81
+[ACTIVE] [RED] LeadPredict dist=396.542 dV=39.8691 thr=0.558591 om=0.882162 lt=1.1107
+[ACTIVE] [RED] LeadPredict dist=295.201 dV=8.1796 thr=0.781845 om=1.47759 lt=0.964583
+[EVADE_DIAG] team=1 side=0.107602 turnSign=-1 dist=207.766 trueAta=157.338 headingXAngle=19.4725 aa=176.224
+[ACTIVE] [RED] Evade Z=3018.68
+[EVADE_DIAG] team=1 side=0.13365 turnSign=1 dist=223.473 trueAta=171.162 headingXAngle=4.83428 aa=177.583
+[EVADE_DIAG] team=1 side=-0.246458 turnSign=-1 dist=249.359 trueAta=161.787 headingXAngle=8.05634 aa=173.334
+[EVADE_DIAG] team=1 side=0.0953309 turnSign=-1 dist=262.281 trueAta=166.75 headingXAngle=8.99528 aa=174.619
+[ACTIVE] [RED] Evade Z=3556.44
+[EVADE_DIAG] team=1 side=-0.0975163 turnSign=1 dist=270.831 trueAta=166.177 headingXAngle=9.26548 aa=172.544
+[EVADE_DIAG] team=1 side=-0.0301859 turnSign=-1 dist=281.002 trueAta=168.845 headingXAngle=9.07519 aa=179.712
+[EVADE_DIAG] team=1 side=0.0877716 turnSign=-1 dist=289.262 trueAta=160.575 headingXAngle=12.0693 aa=177.062
+[ACTIVE] [RED] Evade Z=3765.38
+[EVADE_DIAG] team=1 side=0.0681469 turnSign=-1 dist=293.564 trueAta=155.919 headingXAngle=13.4991 aa=179.642
+[EVADE_DIAG] team=1 side=-0.00518519 turnSign=-1 dist=290.148 trueAta=154.141 headingXAngle=16.1854 aa=178.219
+[EVADE_DIAG] team=1 side=-0.010741 turnSign=-1 dist=284.109 trueAta=154.795 headingXAngle=16.4913 aa=179.182
+[ACTIVE] [RED] Evade Z=3669.3
+[EVADE_DIAG] team=1 side=0.139224 turnSign=-1 dist=278.49 trueAta=161.297 headingXAngle=12.8612 aa=178.553
+[EVADE_DIAG] team=1 side=-0.0058781 turnSign=1 dist=284.187 trueAta=174.808 headingXAngle=3.45757 aa=178.451
+[EVADE_DIAG] team=1 side=-0.142107 turnSign=1 dist=294.867 trueAta=163.982 headingXAngle=10.1859 aa=179.384
+[ACTIVE] [RED] Evade Z=3395.73
+[EVADE_DIAG] team=1 side=0.0199702 turnSign=-1 dist=296.091 trueAta=170.495 headingXAngle=8.14541 aa=178.551
+[EVADE_DIAG] team=1 side=0.0768292 turnSign=-1 dist=294.716 trueAta=174.278 headingXAngle=13.8657 aa=172.803
+[EVADE_DIAG] team=1 side=0.053031 turnSign=-1 dist=300.882 trueAta=175.557 headingXAngle=0.314165 aa=177.567
+[ACTIVE] [RED] Evade Z=2896.67
+[EVADE_DIAG] team=1 side=-0.00779093 turnSign=-1 dist=298.985 trueAta=177.551 headingXAngle=0.211803 aa=178.274
+[EVADE_DIAG] team=1 side=-0.14166 turnSign=-1 dist=293.81 trueAta=167.61 headingXAngle=18.5151 aa=170.989
+[EVADE_DIAG] team=1 side=-0.245693 turnSign=-1 dist=300.694 trueAta=165.536 headingXAngle=8.10935 aa=175.216
+[ACTIVE] [RED] ClimbOut Z=2145.37
+[ACTIVE] [RED] Evade Z=2071.18
+[EVADE_DIAG] team=1 side=-0.0398664 turnSign=-1 dist=290.87 trueAta=172.101 headingXAngle=4.6099 aa=177.822
+[EVADE_DIAG] team=1 side=-0.00918122 turnSign=-1 dist=304.857 trueAta=174.881 headingXAngle=12.7062 aa=171.417
+[ACTIVE] [RED] ClimbOut Z=1860.02
+[EVADE_DIAG] team=1 side=0.0670397 turnSign=-1 dist=351.725 trueAta=173.495 headingXAngle=2.30926 aa=178.284
+[ACTIVE] [RED] Evade Z=1827.72
+[EVADE_DIAG] team=1 side=0.020709 turnSign=-1 dist=363.606 trueAta=178.449 headingXAngle=4.28693 aa=177.014
+[EVADE_DIAG] team=1 side=0.00114936 turnSign=-1 dist=391.17 trueAta=174.513 headingXAngle=12.5692 aa=178.519
+[EVADE_DIAG] team=1 side=0.135362 turnSign=-1 dist=397.476 trueAta=171.681 headingXAngle=3.05023 aa=175.59
+[ACTIVE] [RED] Evade Z=1943.17
+[EVADE_DIAG] team=1 side=-0.0496813 turnSign=-1 dist=391.419 trueAta=173.976 headingXAngle=2.56247 aa=179.635
+[EVADE_DIAG] team=1 side=0.029864 turnSign=-1 dist=381.428 trueAta=173.679 headingXAngle=7.11323 aa=178.105
+[EVADE_DIAG] team=1 side=-0.0051434 turnSign=-1 dist=372.819 trueAta=178.228 headingXAngle=4.84352 aa=175.636
+[ACTIVE] [RED] Evade Z=2133.39
+[EVADE_DIAG] team=1 side=0.0692426 turnSign=-1 dist=364.28 trueAta=175.347 headingXAngle=3.19156 aa=178.409
+[EVADE_DIAG] team=1 side=-0.0125456 turnSign=-1 dist=350.667 trueAta=179.041 headingXAngle=5.02399 aa=175.142
+[EVADE_DIAG] team=1 side=0.0591673 turnSign=-1 dist=330.896 trueAta=176.608 headingXAngle=0.568176 aa=178.791
+[ACTIVE] [RED] Evade Z=2334.25
+[EVADE_DIAG] team=1 side=-0.0316399 turnSign=-1 dist=307.075 trueAta=177.195 headingXAngle=1.57587 aa=178.807
+runner:local/env:0	num_steps=[7915] | total rewards=[44.3280] | termination= [ownship destroyed]
+[seed 4] reward=    44.33 ownHP=-0.0002 tgtHP=0.9688 ownship destroyed
+total: 2
+[ACTIVE] [RED] LeadPredict dist=2026.94 dV=11.4206 thr=0.725401 om=0.493153 lt=3
+[ACTIVE] [RED] LeadPredict dist=358.922 dV=6.2247 thr=0.602745 om=0.722796 lt=1.01542
+[ACTIVE] [RED] LeadPredict dist=721.274 dV=-2.05774 thr=0.496269 om=1.30039 lt=1.90548
+[ACTIVE] [RED] ClimbOut Z=2952.16
+[ACTIVE] [RED] ClimbOut Z=2157.91
+[ACTIVE] [RED] LeadPredict dist=1957.4 dV=-22.018 thr=0.552333 om=2.75184 lt=3
+[ACTIVE] [RED] ClimbOut Z=1888.56
+[ACTIVE] [RED] LeadPredict dist=1889.87 dV=27.4711 thr=1 om=0.994291 lt=3
+[ACTIVE] [RED] ClimbOut Z=1798.79
+[ACTIVE] [RED] LeadPredict dist=1215.89 dV=20.7834 thr=1 om=1.37118 lt=3
+[EVADE_DIAG] team=1 side=-0.36695 turnSign=-1 dist=676.041 trueAta=135.756 headingXAngle=23.8438 aa=171.178
+[EVADE_DIAG] team=1 side=0.141061 turnSign=1 dist=620.526 trueAta=144.771 headingXAngle=20.137 aa=175.77
+[ACTIVE] [RED] Evade Z=1849.55
+[EVADE_DIAG] team=1 side=0.0807414 turnSign=-1 dist=597.71 trueAta=147.855 headingXAngle=23.3562 aa=176.063
+[EVADE_DIAG] team=1 side=-0.196037 turnSign=-1 dist=589.279 trueAta=157.262 headingXAngle=15.7393 aa=177.124
+[EVADE_DIAG] team=1 side=0.105474 turnSign=1 dist=589.634 trueAta=161.904 headingXAngle=10.3264 aa=178.281
+[ACTIVE] [RED] Evade Z=1855.12
+[EVADE_DIAG] team=1 side=-0.085563 turnSign=-1 dist=603.07 trueAta=165.336 headingXAngle=4.80339 aa=176.632
+[EVADE_DIAG] team=1 side=0.128467 turnSign=1 dist=613.331 trueAta=165.879 headingXAngle=6.75636 aa=175.764
+[EVADE_DIAG] team=1 side=-0.157136 turnSign=-1 dist=629.432 trueAta=170.804 headingXAngle=4.63665 aa=177.23
+[ACTIVE] [RED] Evade Z=1922.16
+[EVADE_DIAG] team=1 side=0.175022 turnSign=1 dist=642.617 trueAta=166.541 headingXAngle=9.14983 aa=179.87
+[EVADE_DIAG] team=1 side=-0.159253 turnSign=-1 dist=657.664 trueAta=170.651 headingXAngle=3.67284 aa=178.335
+[EVADE_DIAG] team=1 side=0.0398357 turnSign=-1 dist=672.2 trueAta=165.303 headingXAngle=11.5356 aa=177.611
+[ACTIVE] [RED] Evade Z=2056.46
+[EVADE_DIAG] team=1 side=-0.0269499 turnSign=1 dist=673.384 trueAta=170.035 headingXAngle=6.23653 aa=175.792
+[EVADE_DIAG] team=1 side=-0.0170088 turnSign=1 dist=679.508 trueAta=176.868 headingXAngle=0.759051 aa=179.538
+[EVADE_DIAG] team=1 side=0.00965117 turnSign=1 dist=687.234 trueAta=176.553 headingXAngle=0.245348 aa=179.369
+[ACTIVE] [RED] Evade Z=2217.89
+[EVADE_DIAG] team=1 side=-0.00264348 turnSign=1 dist=697.464 trueAta=177.3 headingXAngle=2.49965 aa=179.843
+[EVADE_DIAG] team=1 side=-0.00650815 turnSign=1 dist=706.768 trueAta=175.498 headingXAngle=3.27311 aa=175.94
+[EVADE_DIAG] team=1 side=0.0361136 turnSign=1 dist=715.171 trueAta=174.227 headingXAngle=2.44256 aa=178.477
+[ACTIVE] [RED] Evade Z=2372.75
+[EVADE_DIAG] team=1 side=-0.0415404 turnSign=1 dist=720.873 trueAta=173.907 headingXAngle=3.38498 aa=179.619
+[EVADE_DIAG] team=1 side=0.0520623 turnSign=1 dist=733.775 trueAta=175.815 headingXAngle=2.43679 aa=178.46
+[EVADE_DIAG] team=1 side=-0.0588118 turnSign=1 dist=753.642 trueAta=174.96 headingXAngle=2.46037 aa=178.304
+[ACTIVE] [RED] Evade Z=2481.9
+[EVADE_DIAG] team=1 side=0.0848906 turnSign=1 dist=776.894 trueAta=175.07 headingXAngle=2.81032 aa=177.646
+[EVADE_DIAG] team=1 side=-0.0952169 turnSign=1 dist=801.498 trueAta=174.477 headingXAngle=4.76824 aa=177.825
+[EVADE_DIAG] team=1 side=0.100147 turnSign=1 dist=825.197 trueAta=173.55 headingXAngle=2.14479 aa=176.013
+[ACTIVE] [RED] Evade Z=2529.02
+[EVADE_DIAG] team=1 side=-0.0970718 turnSign=1 dist=847.038 trueAta=174.347 headingXAngle=3.57554 aa=178.01
+[EVADE_DIAG] team=1 side=0.0948671 turnSign=1 dist=873.156 trueAta=174.116 headingXAngle=5.05796 aa=177.632
+[EVADE_DIAG] team=1 side=-0.106997 turnSign=1 dist=901.872 trueAta=173.618 headingXAngle=2.06635 aa=174.358
+[ACTIVE] [RED] Evade Z=2502.02
+[EVADE_DIAG] team=1 side=0.116019 turnSign=1 dist=935.461 trueAta=173.128 headingXAngle=3.77246 aa=177.563
+[EVADE_DIAG] team=1 side=-0.11378 turnSign=1 dist=968.539 trueAta=173.45 headingXAngle=4.72528 aa=177.019
+[EVADE_DIAG] team=1 side=0.0854241 turnSign=1 dist=1002.63 trueAta=172.703 headingXAngle=4.41519 aa=176.576
+[ACTIVE] [RED] Evade Z=2403.99
+[EVADE_DIAG] team=1 side=-0.0570435 turnSign=1 dist=1038.93 trueAta=174.244 headingXAngle=5.78398 aa=174.365
+[EVADE_DIAG] team=1 side=0.00365638 turnSign=1 dist=1080.81 trueAta=172.042 headingXAngle=6.42541 aa=177.909
+[ACTIVE] [RED] ClimbOut Z=2268.59
+[ACTIVE] [RED] LeadPredict dist=1274.65 dV=34.2617 thr=1 om=0.470959 lt=3
+[ACTIVE] [RED] ClimbOut Z=1912.01
+[EVADE_DIAG] team=1 side=0.0571703 turnSign=1 dist=1066.67 trueAta=131.58 headingXAngle=24.8813 aa=171.965
+[ACTIVE] [RED] Evade Z=1829.74
+[EVADE_DIAG] team=1 side=0.210638 turnSign=1 dist=1010.88 trueAta=135.841 headingXAngle=25.1402 aa=174.484
+[EVADE_DIAG] team=1 side=0.151977 turnSign=1 dist=950.432 trueAta=139.284 headingXAngle=19.3635 aa=178.304
+[ACTIVE] [RED] ClimbOut Z=1798.61
+[EVADE_DIAG] team=1 side=0.361282 turnSign=1 dist=845.408 trueAta=142.202 headingXAngle=18.8072 aa=160.703
+[ACTIVE] [RED] Evade Z=1863.22
+[EVADE_DIAG] team=1 side=-0.0394524 turnSign=-1 dist=809.681 trueAta=145.89 headingXAngle=24.162 aa=173.933
+[EVADE_DIAG] team=1 side=-0.342867 turnSign=-1 dist=775.605 trueAta=146.522 headingXAngle=19.6618 aa=179.124
+[EVADE_DIAG] team=1 side=0.144824 turnSign=1 dist=750.132 trueAta=150.588 headingXAngle=13.9326 aa=179.907
+[ACTIVE] [RED] Evade Z=2009.35
+[EVADE_DIAG] team=1 side=0.0323468 turnSign=-1 dist=733.899 trueAta=154.637 headingXAngle=10.2197 aa=175.234
+[EVADE_DIAG] team=1 side=-0.303772 turnSign=-1 dist=718.742 trueAta=154.488 headingXAngle=10.7536 aa=175.924
+[EVADE_DIAG] team=1 side=0.192527 turnSign=1 dist=708.156 trueAta=157.597 headingXAngle=10.3185 aa=169.063
+[ACTIVE] [RED] Evade Z=2156.99
+[EVADE_DIAG] team=1 side=-0.092019 turnSign=-1 dist=701.097 trueAta=159.769 headingXAngle=12.3906 aa=176.723
+[EVADE_DIAG] team=1 side=-0.0102065 turnSign=1 dist=691.774 trueAta=159.034 headingXAngle=14.0804 aa=178.264
+[EVADE_DIAG] team=1 side=0.0171779 turnSign=-1 dist=688.486 trueAta=162.964 headingXAngle=6.08825 aa=172.774
+[ACTIVE] [RED] Evade Z=2283.63
+[EVADE_DIAG] team=1 side=-0.20521 turnSign=-1 dist=684.258 trueAta=161.774 headingXAngle=10.6437 aa=174.647
+[EVADE_DIAG] team=1 side=0.083204 turnSign=-1 dist=679.993 trueAta=164.875 headingXAngle=9.27318 aa=175.556
+[EVADE_DIAG] team=1 side=-0.193702 turnSign=-1 dist=669.762 trueAta=165.474 headingXAngle=10.1144 aa=179.713
+[ACTIVE] [RED] Evade Z=2363.26
+[EVADE_DIAG] team=1 side=0.126034 turnSign=-1 dist=662.836 trueAta=168.758 headingXAngle=6.20174 aa=179.433
+[EVADE_DIAG] team=1 side=-0.0716945 turnSign=1 dist=652.427 trueAta=168.236 headingXAngle=7.57749 aa=179.903
+[EVADE_DIAG] team=1 side=-0.0465342 turnSign=-1 dist=649.908 trueAta=168.653 headingXAngle=5.73153 aa=174.677
+[ACTIVE] [RED] Evade Z=2395.86
+[EVADE_DIAG] team=1 side=0.0448828 turnSign=1 dist=640.922 trueAta=167.596 headingXAngle=9.63333 aa=177.303
+[EVADE_DIAG] team=1 side=-0.0766848 turnSign=-1 dist=632.088 trueAta=170.482 headingXAngle=7.23812 aa=176.906
+[EVADE_DIAG] team=1 side=0.0864783 turnSign=-1 dist=618.675 trueAta=174.247 headingXAngle=3.09874 aa=177.612
+[ACTIVE] [RED] Evade Z=2351.5
+[EVADE_DIAG] team=1 side=-0.0451806 turnSign=-1 dist=608.184 trueAta=177.374 headingXAngle=1.52798 aa=179.726
+[EVADE_DIAG] team=1 side=0.0408699 turnSign=-1 dist=599.119 trueAta=177.658 headingXAngle=1.48699 aa=178.669
+[EVADE_DIAG] team=1 side=-0.0387557 turnSign=-1 dist=587.966 trueAta=177.476 headingXAngle=2.52159 aa=177.627
+[ACTIVE] [RED] Evade Z=2267.05
+[EVADE_DIAG] team=1 side=0.0472002 turnSign=-1 dist=573.65 trueAta=175.873 headingXAngle=3.87016 aa=175.446
+[EVADE_DIAG] team=1 side=0.0609663 turnSign=-1 dist=559.558 trueAta=174.698 headingXAngle=4.72307 aa=177.357
+[EVADE_DIAG] team=1 side=-0.0254306 turnSign=-1 dist=543.956 trueAta=178.531 headingXAngle=0.76073 aa=178.368
+[ACTIVE] [RED] Evade Z=2154.53
+[EVADE_DIAG] team=1 side=0.0270631 turnSign=-1 dist=523.346 trueAta=177.957 headingXAngle=1.57 aa=179.423
+[EVADE_DIAG] team=1 side=0.0299507 turnSign=-1 dist=499.237 trueAta=176.472 headingXAngle=1.83372 aa=179.773
+[EVADE_DIAG] team=1 side=0.0805402 turnSign=-1 dist=471.927 trueAta=174.368 headingXAngle=1.47582 aa=178.929
+[ACTIVE] [RED] Evade Z=2052.14
+[EVADE_DIAG] team=1 side=-0.0963854 turnSign=-1 dist=443.579 trueAta=174.38 headingXAngle=1.27733 aa=179.588
+[EVADE_DIAG] team=1 side=0.04354 turnSign=-1 dist=410.083 trueAta=165.732 headingXAngle=7.41374 aa=173.548
+[EVADE_DIAG] team=1 side=0.0286913 turnSign=1 dist=371.812 trueAta=170.57 headingXAngle=5.61516 aa=179.954
+[ACTIVE] [RED] Evade Z=1990.48
+[EVADE_DIAG] team=1 side=-0.067257 turnSign=1 dist=348.544 trueAta=174.772 headingXAngle=2.62656 aa=177.11
+[EVADE_DIAG] team=1 side=0.0178332 turnSign=1 dist=334.268 trueAta=176.991 headingXAngle=2.72982 aa=174.299
+[EVADE_DIAG] team=1 side=0.0285236 turnSign=1 dist=330.096 trueAta=174.939 headingXAngle=1.99891 aa=179.507
+[ACTIVE] [RED] Evade Z=1927.42
+[EVADE_DIAG] team=1 side=-0.0512691 turnSign=1 dist=327.812 trueAta=173.431 headingXAngle=5.57711 aa=178.15
+[EVADE_DIAG] team=1 side=-0.0334863 turnSign=1 dist=328.761 trueAta=178.069 headingXAngle=5.84065 aa=178.806
+[EVADE_DIAG] team=1 side=-0.00817805 turnSign=1 dist=334.946 trueAta=179.163 headingXAngle=13.0845 aa=168.865
+[ACTIVE] [RED] Evade Z=1873.13
+[EVADE_DIAG] team=1 side=0.0065864 turnSign=1 dist=340.378 trueAta=170.229 headingXAngle=2.60515 aa=177.946
+[EVADE_DIAG] team=1 side=-0.0383404 turnSign=1 dist=344.555 trueAta=177.351 headingXAngle=1.30961 aa=179.186
+[EVADE_DIAG] team=1 side=0.0198772 turnSign=1 dist=352.75 trueAta=178.097 headingXAngle=3.27886 aa=178.627
+[ACTIVE] [RED] Evade Z=1837.97
+[EVADE_DIAG] team=1 side=-0.10335 turnSign=1 dist=369.477 trueAta=174.048 headingXAngle=4.80783 aa=173.937
+runner:local/env:0	num_steps=[8385] | total rewards=[-201.7386] | termination= [ownship destroyed]
+[seed 5] reward=  -201.74 ownHP=-0.0030 tgtHP=1.0000 ownship destroyed
+total: 2
+[ACTIVE] [RED] LeadPredict dist=2331.37 dV=8.48825 thr=0.798207 om=1.02531 lt=3
+[ACTIVE] [RED] LeadPredict dist=1752.63 dV=22.944 thr=0.716218 om=1.01573 lt=3
+[ACTIVE] [RED] LeadPredict dist=2150.16 dV=19.0857 thr=0.601871 om=1.1156 lt=3
+[ACTIVE] [RED] LeadPredict dist=469.338 dV=-18.5713 thr=0.632917 om=0.989544 lt=1.35501
+[ACTIVE] [RED] ClimbOut Z=2505.82
+[EVADE_DIAG] team=1 side=0.692943 turnSign=1 dist=463.443 trueAta=128.406 headingXAngle=28.7966 aa=172.285
+[EVADE_DIAG] team=1 side=-0.0895693 turnSign=1 dist=376.134 trueAta=174.697 headingXAngle=6.23759 aa=176.408
+[ACTIVE] [RED] Evade Z=1947.09
+[EVADE_DIAG] team=1 side=-0.0924722 turnSign=1 dist=396.346 trueAta=174.371 headingXAngle=6.10066 aa=179.505
+[ACTIVE] [RED] ClimbOut Z=1923.34
+[EVADE_DIAG] team=1 side=-0.00846917 turnSign=1 dist=440.895 trueAta=174.956 headingXAngle=3.27829 aa=176.425
+[EVADE_DIAG] team=1 side=-0.101682 turnSign=1 dist=474.543 trueAta=174.161 headingXAngle=10.9635 aa=174.968
+[ACTIVE] [RED] Evade Z=1848.47
+[EVADE_DIAG] team=1 side=-0.0092345 turnSign=1 dist=511.785 trueAta=179.235 headingXAngle=1.85953 aa=179.328
+[EVADE_DIAG] team=1 side=-0.0276112 turnSign=1 dist=547.472 trueAta=172.355 headingXAngle=7.9005 aa=179.933
+[EVADE_DIAG] team=1 side=-0.0333314 turnSign=1 dist=583.599 trueAta=175.503 headingXAngle=1.38566 aa=178.461
+[ACTIVE] [RED] Evade Z=1815.38
+[EVADE_DIAG] team=1 side=0.0406374 turnSign=1 dist=621.094 trueAta=171.296 headingXAngle=3.1297 aa=176.906
+[EVADE_DIAG] team=1 side=-0.161629 turnSign=-1 dist=656.529 trueAta=166.083 headingXAngle=5.29562 aa=171.34
+[EVADE_DIAG] team=1 side=0.162154 turnSign=1 dist=679.166 trueAta=167.985 headingXAngle=7.56227 aa=176.697
+[ACTIVE] [RED] Evade Z=1820.53
+[EVADE_DIAG] team=1 side=-0.187924 turnSign=-1 dist=694.314 trueAta=165.592 headingXAngle=16.0483 aa=177.646
+[EVADE_DIAG] team=1 side=0.12667 turnSign=-1 dist=703.177 trueAta=172.393 headingXAngle=6.36888 aa=179.639
+[EVADE_DIAG] team=1 side=0.0714493 turnSign=-1 dist=711.895 trueAta=175.561 headingXAngle=2.54636 aa=177.58
+[ACTIVE] [RED] Evade Z=1898.37
+[EVADE_DIAG] team=1 side=-0.0426843 turnSign=-1 dist=717.857 trueAta=177.449 headingXAngle=2.25405 aa=178.811
+[EVADE_DIAG] team=1 side=0.0482357 turnSign=-1 dist=714.976 trueAta=171.437 headingXAngle=7.91391 aa=177.183
+[EVADE_DIAG] team=1 side=0.0548718 turnSign=-1 dist=700.311 trueAta=174.64 headingXAngle=3.07772 aa=177.901
+[ACTIVE] [RED] Evade Z=2012.1
+[EVADE_DIAG] team=1 side=-0.0566141 turnSign=-1 dist=682.076 trueAta=175.411 headingXAngle=2.36055 aa=179.681
+[EVADE_DIAG] team=1 side=0.145395 turnSign=-1 dist=661.3 trueAta=171.618 headingXAngle=3.02246 aa=179.76
+[EVADE_DIAG] team=1 side=-0.102732 turnSign=-1 dist=637 trueAta=173.285 headingXAngle=1.89628 aa=179.181
+[ACTIVE] [RED] Evade Z=2153.22
+[EVADE_DIAG] team=1 side=0.0554036 turnSign=-1 dist=609.99 trueAta=167.731 headingXAngle=5.95209 aa=177.871
+[EVADE_DIAG] team=1 side=0.034351 turnSign=1 dist=579.814 trueAta=169.546 headingXAngle=4.87654 aa=176.073
+[EVADE_DIAG] team=1 side=-0.0179982 turnSign=1 dist=552.673 trueAta=172.931 headingXAngle=3.11029 aa=178.919
+[ACTIVE] [RED] Evade Z=2305.81
+[EVADE_DIAG] team=1 side=0.00106231 turnSign=1 dist=530.743 trueAta=175.45 headingXAngle=4.14907 aa=178.384
+[EVADE_DIAG] team=1 side=0.0536983 turnSign=1 dist=514.451 trueAta=176.605 headingXAngle=3.81781 aa=178.6
+[EVADE_DIAG] team=1 side=-0.0845752 turnSign=1 dist=500.576 trueAta=175.145 headingXAngle=1.31185 aa=175.668
+[ACTIVE] [RED] Evade Z=2415.22
+[EVADE_DIAG] team=1 side=0.100119 turnSign=1 dist=487.958 trueAta=174.15 headingXAngle=3.57483 aa=178.44
+[EVADE_DIAG] team=1 side=-0.0615192 turnSign=1 dist=479.577 trueAta=176.306 headingXAngle=4.26504 aa=179.118
+[EVADE_DIAG] team=1 side=0.0247443 turnSign=1 dist=473.194 trueAta=176.875 headingXAngle=4.81998 aa=175.192
+[ACTIVE] [RED] Evade Z=2469.85
+[EVADE_DIAG] team=1 side=0.0194734 turnSign=1 dist=467.188 trueAta=175.027 headingXAngle=2.61537 aa=177.742
+[EVADE_DIAG] team=1 side=0.01728 turnSign=1 dist=463.344 trueAta=175.193 headingXAngle=1.73843 aa=177.417
+[EVADE_DIAG] team=1 side=-0.0420153 turnSign=1 dist=464.153 trueAta=176.04 headingXAngle=3.59687 aa=179.57
+[ACTIVE] [RED] Evade Z=2459.88
+[EVADE_DIAG] team=1 side=0.0440994 turnSign=1 dist=474.616 trueAta=176.966 headingXAngle=1.35095 aa=178.359
+[EVADE_DIAG] team=1 side=-0.072441 turnSign=1 dist=490.078 trueAta=175.283 headingXAngle=2.40607 aa=178.595
+[EVADE_DIAG] team=1 side=0.117583 turnSign=1 dist=507.636 trueAta=173.241 headingXAngle=1.49381 aa=179.135
+[ACTIVE] [RED] Evade Z=2384.08
+[EVADE_DIAG] team=1 side=-0.138535 turnSign=1 dist=525.356 trueAta=172.036 headingXAngle=1.3477 aa=172.082
+[EVADE_DIAG] team=1 side=0.14487 turnSign=1 dist=537.978 trueAta=171.162 headingXAngle=4.32053 aa=178.01
+[EVADE_DIAG] team=1 side=-0.0910317 turnSign=1 dist=549.599 trueAta=174.569 headingXAngle=4.24799 aa=179.097
+[ACTIVE] [RED] Evade Z=2251.7
+[EVADE_DIAG] team=1 side=0.0386256 turnSign=1 dist=563.206 trueAta=176.572 headingXAngle=6.11921 aa=179.586
+[EVADE_DIAG] team=1 side=0.0179892 turnSign=1 dist=576.654 trueAta=178.897 headingXAngle=1.27816 aa=179.478
+runner:local/env:0	num_steps=[4344] | total rewards=[-159.3136] | termination= [ownship destroyed]
+[seed 6] reward=  -159.31 ownHP=-0.0031 tgtHP=1.0000 ownship destroyed
+total: 2
+[ACTIVE] [RED] LeadPredict dist=2791.15 dV=0.565887 thr=1 om=0 lt=3
+[ACTIVE] [RED] LeadPredict dist=635.52 dV=-1.85199 thr=0.802361 om=0.487246 lt=2.07345
+[ACTIVE] [RED] LeadPredict dist=2377.89 dV=-7.81949 thr=0.789024 om=1.00016 lt=3
+[ACTIVE] [RED] LeadPredict dist=1765.81 dV=-24.6931 thr=0.731522 om=0.415124 lt=3
+[ACTIVE] [RED] LeadPredict dist=1234.86 dV=-20.5262 thr=0.709877 om=1.35578 lt=3
+[ACTIVE] [RED] LeadPredict dist=1279.97 dV=-29.3745 thr=0.911569 om=1.48004 lt=3
+[ACTIVE] [RED] LeadPredict dist=1367.45 dV=-20.7834 thr=0.644942 om=0.115445 lt=3
+[ACTIVE] [RED] ClimbOut Z=2580.38
+[ACTIVE] [RED] ClimbOut Z=1995.11
+[ACTIVE] [RED] LeadPredict dist=677.354 dV=31.3808 thr=0.615645 om=1.62501 lt=1.93289
+[EVADE_DIAG] team=1 side=0.147758 turnSign=-1 dist=269.184 trueAta=134.812 headingXAngle=31.3819 aa=169.237
+[ACTIVE] [RED] Evade Z=2545.83
+[EVADE_DIAG] team=1 side=-0.143294 turnSign=-1 dist=253.585 trueAta=171.683 headingXAngle=18.0383 aa=179.023
+[EVADE_DIAG] team=1 side=-0.20625 turnSign=-1 dist=291.818 trueAta=165.755 headingXAngle=4.739 aa=179.455
+[EVADE_DIAG] team=1 side=-0.109951 turnSign=-1 dist=318.996 trueAta=160.552 headingXAngle=7.51391 aa=177.42
+[ACTIVE] [RED] Evade Z=3102.41
+[EVADE_DIAG] team=1 side=0.0477078 turnSign=1 dist=322.133 trueAta=160.735 headingXAngle=13.3435 aa=175.061
+[EVADE_DIAG] team=1 side=-0.0652055 turnSign=-1 dist=326.909 trueAta=168.213 headingXAngle=8.9626 aa=176.322
+[EVADE_DIAG] team=1 side=0.149226 turnSign=-1 dist=335.112 trueAta=167.524 headingXAngle=8.86291 aa=176.973
+[ACTIVE] [RED] Evade Z=3474.37
+[EVADE_DIAG] team=1 side=-0.0508279 turnSign=1 dist=345.378 trueAta=170.774 headingXAngle=5.9449 aa=178.082
+[EVADE_DIAG] team=1 side=-0.105409 turnSign=-1 dist=356.138 trueAta=167.852 headingXAngle=7.82529 aa=175.862
+[EVADE_DIAG] team=1 side=0.147323 turnSign=-1 dist=360.888 trueAta=165.781 headingXAngle=17.9307 aa=175.21
+[ACTIVE] [RED] Evade Z=3525.96
+[EVADE_DIAG] team=1 side=-0.0372784 turnSign=1 dist=373.824 trueAta=169.326 headingXAngle=8.95623 aa=178.119
+[EVADE_DIAG] team=1 side=-0.169583 turnSign=-1 dist=384.753 trueAta=167.268 headingXAngle=10.4919 aa=179.883
+[EVADE_DIAG] team=1 side=0.0556464 turnSign=-1 dist=396.093 trueAta=173.312 headingXAngle=5.00968 aa=173.492
+[ACTIVE] [RED] Evade Z=3272.28
+[EVADE_DIAG] team=1 side=0.112005 turnSign=-1 dist=406.019 trueAta=173.399 headingXAngle=5.028 aa=177.664
+[EVADE_DIAG] team=1 side=-0.0484897 turnSign=-1 dist=411.999 trueAta=176.503 headingXAngle=1.99382 aa=179.112
+[EVADE_DIAG] team=1 side=0.0206349 turnSign=-1 dist=412.752 trueAta=174.864 headingXAngle=2.11002 aa=179.597
+[ACTIVE] [RED] Evade Z=2829.39
+[EVADE_DIAG] team=1 side=0.0814619 turnSign=-1 dist=405.29 trueAta=172.955 headingXAngle=3.73703 aa=179.316
+[EVADE_DIAG] team=1 side=-0.092297 turnSign=-1 dist=377.211 trueAta=173.295 headingXAngle=10.4105 aa=172.992
+[ACTIVE] [RED] ClimbOut Z=2318.69
+[EVADE_DIAG] team=1 side=-0.0695322 turnSign=-1 dist=353.179 trueAta=170.708 headingXAngle=6.19768 aa=178.074
+[ACTIVE] [RED] Evade Z=2000.39
+[EVADE_DIAG] team=1 side=-0.0666929 turnSign=-1 dist=324.391 trueAta=167.615 headingXAngle=8.03295 aa=176.111
+[EVADE_DIAG] team=1 side=0.155685 turnSign=1 dist=315.312 trueAta=170.152 headingXAngle=8.95981 aa=175.624
+[EVADE_DIAG] team=1 side=-0.069084 turnSign=1 dist=315.907 trueAta=174.311 headingXAngle=4.24464 aa=177.888
+[ACTIVE] [RED] Evade Z=1886.96
+[EVADE_DIAG] team=1 side=-0.0622334 turnSign=1 dist=316.634 trueAta=176.43 headingXAngle=4.41954 aa=178.93
+[ACTIVE] [RED] ClimbOut Z=1855.93
+[EVADE_DIAG] team=1 side=-0.0727977 turnSign=1 dist=332.263 trueAta=173.458 headingXAngle=8.54152 aa=178.598
+[EVADE_DIAG] team=1 side=0.00889711 turnSign=1 dist=347.248 trueAta=176.606 headingXAngle=6.96287 aa=171.853
+[ACTIVE] [RED] Evade Z=1801.8
+[EVADE_DIAG] team=1 side=0.00253609 turnSign=1 dist=367.626 trueAta=174.337 headingXAngle=0.86433 aa=178.144
+[EVADE_DIAG] team=1 side=0.0147061 turnSign=1 dist=386.711 trueAta=169.669 headingXAngle=5.92657 aa=176.485
+[EVADE_DIAG] team=1 side=-0.06806 turnSign=1 dist=400.002 trueAta=173.776 headingXAngle=2.80813 aa=177.572
+[ACTIVE] [RED] Evade Z=1833.89
+[EVADE_DIAG] team=1 side=0.039597 turnSign=1 dist=417.447 trueAta=172.034 headingXAngle=3.77581 aa=178.62
+[EVADE_DIAG] team=1 side=-0.167813 turnSign=-1 dist=431.613 trueAta=168.916 headingXAngle=5.7634 aa=178.156
+[EVADE_DIAG] team=1 side=0.126444 turnSign=-1 dist=438.703 trueAta=171.298 headingXAngle=4.95735 aa=176.743
+[ACTIVE] [RED] Evade Z=1906.01
+[EVADE_DIAG] team=1 side=0.129699 turnSign=-1 dist=439.466 trueAta=172.271 headingXAngle=3.21932 aa=179.483
+[EVADE_DIAG] team=1 side=-0.111254 turnSign=-1 dist=432.666 trueAta=173.39 headingXAngle=1.29529 aa=178.953
+[EVADE_DIAG] team=1 side=0.138313 turnSign=-1 dist=418.162 trueAta=168.696 headingXAngle=5.96456 aa=179.403
+[ACTIVE] [RED] Evade Z=2017.5
+[EVADE_DIAG] team=1 side=-0.072793 turnSign=1 dist=396.794 trueAta=171.762 headingXAngle=6.05909 aa=177.441
+[EVADE_DIAG] team=1 side=-0.079865 turnSign=1 dist=377.099 trueAta=174.889 headingXAngle=5.46584 aa=177.782
+[EVADE_DIAG] team=1 side=0.0820823 turnSign=1 dist=368.003 trueAta=173.38 headingXAngle=6.0613 aa=168.575
+[ACTIVE] [RED] Evade Z=2175.92
+[EVADE_DIAG] team=1 side=-0.102165 turnSign=1 dist=367.93 trueAta=167.497 headingXAngle=5.49449 aa=178.817
+[EVADE_DIAG] team=1 side=0.0138341 turnSign=-1 dist=361.271 trueAta=171.795 headingXAngle=7.40566 aa=178.841
+[EVADE_DIAG] team=1 side=-0.0615908 turnSign=-1 dist=355.576 trueAta=176.447 headingXAngle=8.14562 aa=169.573
+[ACTIVE] [RED] Evade Z=2313.14
+[EVADE_DIAG] team=1 side=0.183503 turnSign=1 dist=356.494 trueAta=167.304 headingXAngle=5.16026 aa=177.083
+[EVADE_DIAG] team=1 side=-0.17047 turnSign=-1 dist=351.319 trueAta=169.835 headingXAngle=4.85091 aa=176.993
+runner:local/env:0	num_steps=[6023] | total rewards=[-131.0979] | termination= [ownship destroyed]
+[seed 7] reward=  -131.10 ownHP=-0.0027 tgtHP=1.0000 ownship destroyed
+total: 2
+[ACTIVE] [RED] LeadPredict dist=1497.08 dV=3.54965 thr=0.803235 om=0.841961 lt=3
+[ACTIVE] [RED] LeadPredict dist=497.956 dV=-1.08032 thr=0.895124 om=1.06821 lt=1.50608
+[EVADE_DIAG] team=1 side=-0.28964 turnSign=-1 dist=352.807 trueAta=126.23 headingXAngle=34.7822 aa=178.665
+[ACTIVE] [RED] Evade Z=5710.55
+[EVADE_DIAG] team=1 side=0.0337037 turnSign=1 dist=293.478 trueAta=162.348 headingXAngle=22.7789 aa=178.048
+[EVADE_DIAG] team=1 side=-0.0498353 turnSign=1 dist=325.657 trueAta=167.235 headingXAngle=10.2674 aa=178.111
+[EVADE_DIAG] team=1 side=0.00211746 turnSign=-1 dist=366.883 trueAta=157.877 headingXAngle=3.37407 aa=177.358
+[ACTIVE] [RED] Evade Z=4642.63
+[EVADE_DIAG] team=1 side=-0.221066 turnSign=-1 dist=378.367 trueAta=158.209 headingXAngle=9.36933 aa=174.919
+[EVADE_DIAG] team=1 side=0.189876 turnSign=1 dist=379.121 trueAta=166.144 headingXAngle=8.41356 aa=175.421
+[EVADE_DIAG] team=1 side=-0.103111 turnSign=1 dist=379.959 trueAta=173.53 headingXAngle=3.72728 aa=179.948
+[ACTIVE] [RED] ClimbOut Z=2969.33
+[ACTIVE] [RED] Evade Z=2244.66
+[EVADE_DIAG] team=1 side=0.106722 turnSign=1 dist=419.383 trueAta=172.741 headingXAngle=7.75634 aa=178.39
+[ACTIVE] [RED] ClimbOut Z=2194.96
+[EVADE_DIAG] team=1 side=0.0838178 turnSign=1 dist=410.604 trueAta=170.35 headingXAngle=4.94796 aa=176.255
+[EVADE_DIAG] team=1 side=0.00936121 turnSign=1 dist=398.93 trueAta=177.853 headingXAngle=8.77754 aa=173.211
+[ACTIVE] [RED] Evade Z=1920.77
+[EVADE_DIAG] team=1 side=-0.0588312 turnSign=1 dist=408.238 trueAta=170.013 headingXAngle=5.46485 aa=175.397
+[EVADE_DIAG] team=1 side=0.0249631 turnSign=1 dist=410.478 trueAta=173.436 headingXAngle=3.91908 aa=177.647
+[EVADE_DIAG] team=1 side=-0.0301249 turnSign=1 dist=413.629 trueAta=167.623 headingXAngle=8.4642 aa=178.91
+[ACTIVE] [RED] Evade Z=1866.21
+[EVADE_DIAG] team=1 side=-0.016456 turnSign=1 dist=411.309 trueAta=175.046 headingXAngle=3.63235 aa=178.727
+[EVADE_DIAG] team=1 side=0.0359086 turnSign=1 dist=412.575 trueAta=175.47 headingXAngle=7.84843 aa=174.1
+[EVADE_DIAG] team=1 side=-0.10024 turnSign=1 dist=418.665 trueAta=173.517 headingXAngle=3.50786 aa=177.149
+[ACTIVE] [RED] Evade Z=1850.14
+[EVADE_DIAG] team=1 side=0.0686868 turnSign=1 dist=424.031 trueAta=176.021 headingXAngle=1.39949 aa=177.858
+[EVADE_DIAG] team=1 side=-0.0940035 turnSign=1 dist=423.202 trueAta=172.881 headingXAngle=7.425 aa=178.568
+[EVADE_DIAG] team=1 side=0.0305284 turnSign=1 dist=426.777 trueAta=176.541 headingXAngle=1.96373 aa=178.486
+[ACTIVE] [RED] Evade Z=1879.8
+[EVADE_DIAG] team=1 side=-0.0572083 turnSign=1 dist=430.085 trueAta=169.152 headingXAngle=6.98151 aa=178.215
+[EVADE_DIAG] team=1 side=0.021546 turnSign=1 dist=428.419 trueAta=174.829 headingXAngle=3.30829 aa=177.963
+[EVADE_DIAG] team=1 side=0.00882438 turnSign=1 dist=430.689 trueAta=170.215 headingXAngle=7.25185 aa=178.456
+[ACTIVE] [RED] Evade Z=1945.38
+[EVADE_DIAG] team=1 side=-0.163836 turnSign=-1 dist=434.306 trueAta=170.13 headingXAngle=4.72284 aa=176.496
+[EVADE_DIAG] team=1 side=0.0830472 turnSign=-1 dist=428.482 trueAta=175.106 headingXAngle=5.15274 aa=179.257
+[EVADE_DIAG] team=1 side=0.109074 turnSign=-1 dist=416.418 trueAta=173.288 headingXAngle=1.84397 aa=179.117
+[ACTIVE] [RED] Evade Z=2017.37
+[EVADE_DIAG] team=1 side=-0.116741 turnSign=-1 dist=397.821 trueAta=172.767 headingXAngle=0.783602 aa=176.183
+[EVADE_DIAG] team=1 side=0.075094 turnSign=-1 dist=379.311 trueAta=163.719 headingXAngle=8.9634 aa=179.326
+[EVADE_DIAG] team=1 side=-0.0957012 turnSign=1 dist=355.475 trueAta=171.669 headingXAngle=5.06197 aa=177.258
+[ACTIVE] [RED] Evade Z=2141.65
+[EVADE_DIAG] team=1 side=-0.0158478 turnSign=1 dist=341.055 trueAta=179.034 headingXAngle=3.3137 aa=179.6
+[EVADE_DIAG] team=1 side=0.00374017 turnSign=1 dist=332.972 trueAta=175.805 headingXAngle=1.65018 aa=179.78
+[EVADE_DIAG] team=1 side=-0.00959679 turnSign=1 dist=330.056 trueAta=175.449 headingXAngle=6.74304 aa=169.203
+[ACTIVE] [RED] Evade Z=2274.61
+[EVADE_DIAG] team=1 side=-0.0719369 turnSign=1 dist=336.695 trueAta=169.723 headingXAngle=4.28817 aa=176.631
+[EVADE_DIAG] team=1 side=-0.0580925 turnSign=-1 dist=340.656 trueAta=169.997 headingXAngle=6.96964 aa=178.912
+[EVADE_DIAG] team=1 side=0.0320644 turnSign=-1 dist=337.464 trueAta=178.038 headingXAngle=5.9 aa=174.463
+[ACTIVE] [RED] Evade Z=2384.52
+[EVADE_DIAG] team=1 side=0.0498346 turnSign=-1 dist=339.302 trueAta=177.132 headingXAngle=0.670624 aa=179.003
+[EVADE_DIAG] team=1 side=-0.0482284 turnSign=-1 dist=331.101 trueAta=176.259 headingXAngle=1.41894 aa=178.765
+[EVADE_DIAG] team=1 side=0.013002 turnSign=-1 dist=316.4 trueAta=178.718 headingXAngle=1.66846 aa=179.488
+[ACTIVE] [RED] Evade Z=2452.19
+[EVADE_DIAG] team=1 side=0.0594619 turnSign=-1 dist=298.26 trueAta=176.229 headingXAngle=0.866139 aa=179.784
+[EVADE_DIAG] team=1 side=-0.142388 turnSign=-1 dist=278.683 trueAta=171.792 headingXAngle=2.16875 aa=169.643
+[EVADE_DIAG] team=1 side=0.141668 turnSign=-1 dist=262.132 trueAta=167.531 headingXAngle=6.64564 aa=175.574
+[ACTIVE] [RED] Evade Z=2460.18
+[EVADE_DIAG] team=1 side=-0.0975009 turnSign=1 dist=243.073 trueAta=171.529 headingXAngle=4.54461 aa=177.478
+[EVADE_DIAG] team=1 side=0.0592611 turnSign=1 dist=234.731 trueAta=176.597 headingXAngle=1.06272 aa=179.68
+[EVADE_DIAG] team=1 side=-0.0919277 turnSign=1 dist=233.719 trueAta=174.641 headingXAngle=2.44994 aa=179.397
+[ACTIVE] [RED] Evade Z=2394.76
+[EVADE_DIAG] team=1 side=0.101584 turnSign=1 dist=232.009 trueAta=170.891 headingXAngle=3.09493 aa=178.567
+[EVADE_DIAG] team=1 side=-0.0553945 turnSign=1 dist=231.35 trueAta=175.321 headingXAngle=3.76053 aa=179.827
+[EVADE_DIAG] team=1 side=-0.0444877 turnSign=1 dist=238.02 trueAta=177.366 headingXAngle=7.1708 aa=172.136
+[ACTIVE] [RED] Evade Z=2266.14
+[EVADE_DIAG] team=1 side=0.023775 turnSign=1 dist=254.161 trueAta=171.491 headingXAngle=3.23678 aa=177.428
+[EVADE_DIAG] team=1 side=-0.0162266 turnSign=1 dist=270.092 trueAta=178.401 headingXAngle=2.59962 aa=179.97
+[EVADE_DIAG] team=1 side=-0.0248548 turnSign=1 dist=287.848 trueAta=178.311 headingXAngle=3.42766 aa=179.073
+[ACTIVE] [RED] Evade Z=2093.75
+[EVADE_DIAG] team=1 side=0.0665141 turnSign=1 dist=313.731 trueAta=168.325 headingXAngle=1.72947 aa=170.861
+[EVADE_DIAG] team=1 side=0.066867 turnSign=-1 dist=345.901 trueAta=171.532 headingXAngle=9.42408 aa=179.412
+[EVADE_DIAG] team=1 side=0.114974 turnSign=-1 dist=351.976 trueAta=169.62 headingXAngle=5.58077 aa=177.988
+[ACTIVE] [RED] Evade Z=1920.86
+[EVADE_DIAG] team=1 side=-0.0481467 turnSign=-1 dist=350.655 trueAta=176.432 headingXAngle=4.38716 aa=179.59
+[ACTIVE] [RED] ClimbOut Z=1916.69
+[EVADE_DIAG] team=1 side=0.100835 turnSign=-1 dist=344.922 trueAta=172.937 headingXAngle=9.07737 aa=173.53
+[EVADE_DIAG] team=1 side=-0.0871311 turnSign=-1 dist=340.338 trueAta=174.515 headingXAngle=2.06965 aa=179.449
+[ACTIVE] [RED] Evade Z=1863.61
+[EVADE_DIAG] team=1 side=0.0653463 turnSign=-1 dist=325.874 trueAta=174.679 headingXAngle=4.29449 aa=178.972
+[EVADE_DIAG] team=1 side=0.0983414 turnSign=-1 dist=304.372 trueAta=173.127 headingXAngle=4.16747 aa=176.746
+[EVADE_DIAG] team=1 side=-0.0477889 turnSign=-1 dist=279.528 trueAta=176.585 headingXAngle=2.17308 aa=179.268
+[ACTIVE] [RED] Evade Z=1856.55
+[EVADE_DIAG] team=1 side=0.0565341 turnSign=-1 dist=252.277 trueAta=169.513 headingXAngle=6.25532 aa=178.399
+[EVADE_DIAG] team=1 side=0.100727 turnSign=1 dist=223.246 trueAta=170.203 headingXAngle=4.61738 aa=174.936
+[EVADE_DIAG] team=1 side=-0.0520824 turnSign=1 dist=204.18 trueAta=176.979 headingXAngle=5.56935 aa=178.834
+[ACTIVE] [RED] Evade Z=1894.21
+[EVADE_DIAG] team=1 side=-0.0384911 turnSign=1 dist=196.938 trueAta=169.376 headingXAngle=5.06003 aa=166.39
+[EVADE_DIAG] team=1 side=0.0405735 turnSign=-1 dist=194.579 trueAta=165.058 headingXAngle=6.79832 aa=175.367
+[EVADE_DIAG] team=1 side=0.0419097 turnSign=1 dist=184.334 trueAta=174.035 headingXAngle=3.55985 aa=175.993
+[ACTIVE] [RED] Evade Z=1882.89
+[EVADE_DIAG] team=1 side=-0.036366 turnSign=1 dist=185.262 trueAta=177.768 headingXAngle=1.66399 aa=179.608
+runner:local/env:0	num_steps=[4880] | total rewards=[-169.2235] | termination= [ownship destroyed]
+[seed 8] reward=  -169.22 ownHP=-0.0052 tgtHP=1.0000 ownship destroyed
+total: 2
+[ACTIVE] [RED] LeadPredict dist=1486.08 dV=5.24728 thr=0.779841 om=0.857923 lt=3
+[ACTIVE] [RED] LeadPredict dist=3049.16 dV=31.6895 thr=1 om=1.07863 lt=3
+[ACTIVE] [RED] LeadPredict dist=3415.74 dV=20.8863 thr=1 om=0.268065 lt=3
+[ACTIVE] [RED] LeadPredict dist=1774.22 dV=2.72653 thr=1 om=1.3298 lt=3
+[ACTIVE] [RED] LeadPredict dist=1501.08 dV=-12.2951 thr=1 om=0.00920761 lt=3
+[ACTIVE] [RED] LeadPredict dist=1562.78 dV=-11.3691 thr=1 om=0.0404647 lt=3
+[ACTIVE] [RED] LeadPredict dist=1835.39 dV=1.5433 thr=0.341474 om=3.78854 lt=3
+[ACTIVE] [RED] ClimbOut Z=1996.24
+[ACTIVE] [RED] LeadPredict dist=422.82 dV=27.7283 thr=0.568638 om=0.916975 lt=1.16964
+[ACTIVE] [RED] LeadPredict dist=859.703 dV=5.45306 thr=0.765192 om=1.42284 lt=2.72706
+[ACTIVE] [RED] LeadPredict dist=1114.1 dV=5.7103 thr=0.848493 om=1.49928 lt=3
+[ACTIVE] [RED] LeadPredict dist=503.982 dV=-2.72653 thr=1 om=0.828665 lt=1.79822
+[ACTIVE] [RED] LeadPredict dist=816.958 dV=-4.32129 thr=1 om=0.159232 lt=2.87015
+[ACTIVE] [RED] LeadPredict dist=1377.22 dV=-2.26355 thr=0.787275 om=1.39256 lt=3
+[ACTIVE] [RED] ClimbOut Z=2446.56
+[ACTIVE] [RED] LeadPredict dist=1545.43 dV=-11.3691 thr=0.694135 om=2.57876 lt=3
+[ACTIVE] [RED] ClimbOut Z=1945.67
+[ACTIVE] [RED] LeadPredict dist=430.739 dV=22.8926 thr=0.662652 om=2.44803 lt=1.26921
+[ACTIVE] [RED] ClimbOut Z=1806.01
+[ACTIVE] [RED] ClimbOut Z=1795.68
+[EVADE_DIAG] team=1 side=0.127683 turnSign=-1 dist=189.647 trueAta=165.759 headingXAngle=22.7607 aa=175.034
+[ACTIVE] [RED] LeadPredict dist=214.219 dV=13.787 thr=0.765202 om=3.68316 lt=0.641226
+[EVADE_DIAG] team=1 side=0.342515 turnSign=1 dist=263.323 trueAta=145.84 headingXAngle=16.1304 aa=166.034
+[ACTIVE] [RED] Evade Z=2028.38
+[EVADE_DIAG] team=1 side=-0.20022 turnSign=-1 dist=257.778 trueAta=161.605 headingXAngle=9.63843 aa=172.737
+[EVADE_DIAG] team=1 side=0.148537 turnSign=1 dist=263.269 trueAta=169.801 headingXAngle=7.35814 aa=178.803
+[EVADE_DIAG] team=1 side=-0.0130011 turnSign=1 dist=279.12 trueAta=177.284 headingXAngle=1.53908 aa=178.473
+[ACTIVE] [RED] Evade Z=2196.72
+[EVADE_DIAG] team=1 side=-0.0410892 turnSign=1 dist=297.572 trueAta=177.478 headingXAngle=3.52136 aa=179.062
+[EVADE_DIAG] team=1 side=-0.0269418 turnSign=1 dist=316.1 trueAta=176.982 headingXAngle=3.81844 aa=175.252
+[EVADE_DIAG] team=1 side=0.0825196 turnSign=1 dist=331.041 trueAta=173.585 headingXAngle=3.97163 aa=178.559
+[ACTIVE] [RED] Evade Z=2355.15
+[EVADE_DIAG] team=1 side=-0.0847115 turnSign=1 dist=345.926 trueAta=173.841 headingXAngle=2.74354 aa=178.518
+[EVADE_DIAG] team=1 side=0.00828739 turnSign=1 dist=365.129 trueAta=176.442 headingXAngle=4.13765 aa=179.352
+[EVADE_DIAG] team=1 side=-0.0345175 turnSign=1 dist=391.606 trueAta=177.986 headingXAngle=0.276837 aa=178.373
+runner:local/env:0	num_steps=[7381] | total rewards=[-15.7246] | termination= [ownship destroyed]
+[seed 9] reward=   -15.72 ownHP=-0.0024 tgtHP=0.9703 ownship destroyed
+total: 2
+[ACTIVE] [RED] LeadPredict dist=1407.46 dV=3.85831 thr=0.800174 om=1.73581 lt=3
+[ACTIVE] [RED] LeadPredict dist=3101.9 dV=20.166 thr=1 om=1.02859 lt=3
+[ACTIVE] [RED] LeadPredict dist=1746.23 dV=-22.4296 thr=0.669476 om=0.826347 lt=3
+[ACTIVE] [RED] LeadPredict dist=1376.89 dV=-23.6642 thr=0.670523 om=1.32823 lt=3
+[ACTIVE] [RED] LeadPredict dist=1243.99 dV=-17.9025 thr=0.64 om=1.48313 lt=3
+[ACTIVE] [RED] ClimbOut Z=2235.77
+[ACTIVE] [RED] LeadPredict dist=2760.87 dV=4.37274 thr=1 om=1.57108 lt=3
+[ACTIVE] [RED] ClimbOut Z=1842.2
+[ACTIVE] [RED] LeadPredict dist=374.287 dV=33.027 thr=0.55 om=0.838968 lt=1.08656
+[ACTIVE] [RED] LeadPredict dist=1967.26 dV=-1.95486 thr=0.84412 om=1.47047 lt=3
+[ACTIVE] [RED] LeadPredict dist=630.719 dV=-6.79062 thr=1 om=0.453309 lt=2.24918
+[ACTIVE] [RED] LeadPredict dist=1260.07 dV=-18.7256 thr=1 om=0.165733 lt=3
+[ACTIVE] [RED] LeadPredict dist=1135.58 dV=-17.4395 thr=0.851773 om=1.33987 lt=3
+[ACTIVE] [RED] LeadPredict dist=1157.12 dV=-14.8673 thr=0.794271 om=1.4445 lt=3
+[ACTIVE] [RED] ClimbOut Z=1954.44
+[ACTIVE] [RED] LeadPredict dist=1873.63 dV=14.6101 thr=0.677956 om=1.51717 lt=3
+[ACTIVE] [RED] LeadPredict dist=868.321 dV=-8.5397 thr=0.721465 om=1.20266 lt=2.66734
+[ACTIVE] [RED] ClimbOut Z=1886.98
+[ACTIVE] [RED] ClimbOut Z=1791.51
+[ACTIVE] [RED] LeadPredict dist=1030.1 dV=8.5397 thr=0.730648 om=1.63328 lt=3
+[ACTIVE] [RED] LeadPredict dist=915.36 dV=-6.84204 thr=0.790992 om=1.48737 lt=2.96062
+[ACTIVE] [RED] LeadPredict dist=672.069 dV=0.41156 thr=0.838654 om=0.722343 lt=2.25554
+[ACTIVE] [RED] LeadPredict dist=710.758 dV=9.25992 thr=0.888881 om=1.64835 lt=2.51706
+[ACTIVE] [RED] LeadPredict dist=695.785 dV=5.9675 thr=0.928466 om=0.0493694 lt=0
+[ACTIVE] [RED] LeadPredict dist=647.786 dV=11.7807 thr=0.858632 om=0.241964 lt=2.15028
+[ACTIVE] [RED] LeadPredict dist=576.476 dV=10.7003 thr=0.871596 om=0.456862 lt=2.88886
+[ACTIVE] [RED] LeadPredict dist=621.075 dV=5.50452 thr=0.948271 om=1.5462 lt=0.0982309
+[ACTIVE] [RED] LeadPredict dist=612.413 dV=14.9188 thr=0.820975 om=0.180504 lt=3
+[ACTIVE] [RED] LeadPredict dist=514.405 dV=2.88086 thr=0.96543 om=1.01171 lt=3
+[ACTIVE] [RED] LeadPredict dist=749.581 dV=-6.94495 thr=1 om=0.964026 lt=3
+[ACTIVE] [RED] LeadPredict dist=617.632 dV=36.731 thr=0.601826 om=0.780687 lt=2.87773
+[ACTIVE] [RED] LeadPredict dist=737.615 dV=23.7671 thr=0.714795 om=0.879601 lt=3
+[ACTIVE] [RED] LeadPredict dist=542.995 dV=0.360107 thr=0.995679 om=0.39069 lt=3
+[ACTIVE] [RED] LeadPredict dist=963.963 dV=-27.7798 thr=1 om=0.947774 lt=3
+[ACTIVE] [RED] LeadPredict dist=1136.44 dV=-12.1408 thr=1 om=1.53237 lt=3
+runner:local/env:0	num_steps=[11999] | total rewards=[586.6579] | termination= [max time out]
+[seed 10] reward=   586.66 ownHP=1.0000 tgtHP=0.3622 max time out
+total: 2
+[ACTIVE] [RED] LeadPredict dist=2235.2 dV=1.02887 thr=0.823569 om=0 lt=3
+[ACTIVE] [RED] LeadPredict dist=1834.54 dV=-22.018 thr=0.837999 om=0.706001 lt=3
+[ACTIVE] [RED] LeadPredict dist=118.575 dV=-46.5568 thr=0.80892 om=0.297908 lt=0.388822
+[ACTIVE] [RED] LeadPredict dist=794.323 dV=-28.8601 thr=0.728461 om=1.1771 lt=2.45244
+[ACTIVE] [RED] LeadPredict dist=997.696 dV=5.40164 thr=0.612146 om=1.33374 lt=2.84034
+[ACTIVE] [RED] LeadPredict dist=888.839 dV=-22.2753 thr=0.66134 om=1.51192 lt=2.61666
+[ACTIVE] [RED] ClimbOut Z=2142.99
+[ACTIVE] [RED] Evade Z=1947.32
+[EVADE_DIAG] team=1 side=0.579466 turnSign=1 dist=389.714 trueAta=144.283 headingXAngle=20.414 aa=165.696
+[EVADE_DIAG] team=1 side=0.0751755 turnSign=1 dist=376.317 trueAta=168.439 headingXAngle=11.6748 aa=178.787
+[ACTIVE] [RED] ClimbOut Z=1830.1
+[EVADE_DIAG] team=1 side=0.0610907 turnSign=1 dist=437.717 trueAta=166.238 headingXAngle=8.42569 aa=174.584
+[ACTIVE] [RED] Evade Z=1896.65
+[EVADE_DIAG] team=1 side=-0.153582 turnSign=-1 dist=451.702 trueAta=169.063 headingXAngle=8.7818 aa=177.347
+[EVADE_DIAG] team=1 side=0.101823 turnSign=-1 dist=462.838 trueAta=172.647 headingXAngle=6.11168 aa=177.336
+[EVADE_DIAG] team=1 side=0.05633 turnSign=-1 dist=472.798 trueAta=175.423 headingXAngle=3.00131 aa=175.915
+[ACTIVE] [RED] Evade Z=2135.16
+[EVADE_DIAG] team=1 side=-0.0663016 turnSign=-1 dist=482.211 trueAta=175.169 headingXAngle=2.59176 aa=178.758
+[EVADE_DIAG] team=1 side=0.0582466 turnSign=-1 dist=487.389 trueAta=175.605 headingXAngle=4.47975 aa=179.074
+[EVADE_DIAG] team=1 side=-0.0145873 turnSign=-1 dist=490.886 trueAta=178.079 headingXAngle=0.648893 aa=178.827
+[ACTIVE] [RED] Evade Z=2381.43
+[EVADE_DIAG] team=1 side=-0.0167043 turnSign=-1 dist=489.266 trueAta=178.975 headingXAngle=1.18538 aa=179.309
+[EVADE_DIAG] team=1 side=-0.000531714 turnSign=-1 dist=482.383 trueAta=175.309 headingXAngle=3.31378 aa=177.043
+[EVADE_DIAG] team=1 side=0.108359 turnSign=-1 dist=466.3 trueAta=173.779 headingXAngle=1.92753 aa=179.168
+[ACTIVE] [RED] Evade Z=2599.4
+[EVADE_DIAG] team=1 side=-0.0630856 turnSign=-1 dist=443.979 trueAta=174.331 headingXAngle=3.50634 aa=179.249
+[EVADE_DIAG] team=1 side=-0.00556991 turnSign=-1 dist=422.125 trueAta=176.117 headingXAngle=3.35354 aa=178.419
+[EVADE_DIAG] team=1 side=0.078612 turnSign=-1 dist=394.109 trueAta=175 headingXAngle=5.76515 aa=175.813
+[ACTIVE] [RED] Evade Z=2753.37
+[EVADE_DIAG] team=1 side=0.0102747 turnSign=-1 dist=363.748 trueAta=177.801 headingXAngle=1.69512 aa=179.696
+runner:local/env:0	num_steps=[3451] | total rewards=[-140.8373] | termination= [ownship destroyed]
+[seed 11] reward=  -140.84 ownHP=-0.0076 tgtHP=1.0000 ownship destroyed
+total: 2
+[ACTIVE] [RED] LeadPredict dist=3798.68 dV=1.74908 thr=1 om=1.26061 lt=3
+[ACTIVE] [RED] LeadPredict dist=3589.69 dV=-6.53339 thr=1 om=0.598426 lt=3
+[ACTIVE] [RED] LeadPredict dist=1687.04 dV=-39.046 thr=0.682766 om=0.174965 lt=3
+[ACTIVE] [RED] LeadPredict dist=1327.72 dV=-35.342 thr=0.693261 om=1.38102 lt=3
+[ACTIVE] [RED] LeadPredict dist=967.004 dV=-8.38538 thr=0.707841 om=1.44169 lt=2.75135
+[ACTIVE] [RED] ClimbOut Z=2746.86
+[ACTIVE] [RED] ClimbOut Z=2079.68
+[ACTIVE] [RED] LeadPredict dist=1053.52 dV=8.28247 thr=0.578476 om=2.45588 lt=2.9331
+[ACTIVE] [RED] ClimbOut Z=1827.77
+[ACTIVE] [RED] LeadPredict dist=447.252 dV=5.09296 thr=0.754261 om=0.991374 lt=1.40724
+[ACTIVE] [RED] LeadPredict dist=216.927 dV=-10.7518 thr=0.854615 om=0.999683 lt=0.737326
+[ACTIVE] [RED] LeadPredict dist=348.129 dV=-10.3917 thr=0.8603 om=0.844487 lt=1.18868
+[ACTIVE] [RED] LeadPredict dist=865.442 dV=-12.6038 thr=0.86336 om=1.45404 lt=2.96232
+[ACTIVE] [RED] ClimbOut Z=1943.59
+[ACTIVE] [RED] LeadPredict dist=408.963 dV=18.8799 thr=0.695447 om=1.86424 lt=1.23308
+[EVADE_DIAG] team=1 side=-0.216619 turnSign=-1 dist=172.285 trueAta=160.776 headingXAngle=26.7816 aa=175.94
+[ACTIVE] [RED] ClimbOut Z=1812.96
+[EVADE_DIAG] team=1 side=0.107011 turnSign=1 dist=296.494 trueAta=147.815 headingXAngle=17.3719 aa=168.491
+[ACTIVE] [RED] Evade Z=1860.18
+[EVADE_DIAG] team=1 side=-0.0555075 turnSign=-1 dist=288.846 trueAta=159.059 headingXAngle=11.24 aa=176
+[EVADE_DIAG] team=1 side=-0.0467012 turnSign=1 dist=290.553 trueAta=162.714 headingXAngle=12.3524 aa=179.534
+[EVADE_DIAG] team=1 side=-0.0287988 turnSign=-1 dist=297.597 trueAta=171.921 headingXAngle=3.79631 aa=178.059
+[ACTIVE] [RED] Evade Z=1980.45
+[EVADE_DIAG] team=1 side=0.0615927 turnSign=-1 dist=306.759 trueAta=175.505 headingXAngle=4.95251 aa=174.763
+[EVADE_DIAG] team=1 side=-0.102783 turnSign=-1 dist=319.271 trueAta=171.286 headingXAngle=8.38875 aa=172.099
+[EVADE_DIAG] team=1 side=0.167275 turnSign=1 dist=323.944 trueAta=170.021 headingXAngle=4.40498 aa=174.727
+[ACTIVE] [RED] Evade Z=2128.15
+[EVADE_DIAG] team=1 side=-0.135768 turnSign=1 dist=323.028 trueAta=171.67 headingXAngle=4.0956 aa=175.883
+[EVADE_DIAG] team=1 side=0.0490625 turnSign=1 dist=328.469 trueAta=175.788 headingXAngle=3.94503 aa=177.956
+[EVADE_DIAG] team=1 side=0.034742 turnSign=1 dist=336.527 trueAta=175.641 headingXAngle=6.88647 aa=170.272
+[ACTIVE] [RED] Evade Z=2242.33
+[EVADE_DIAG] team=1 side=-0.0956496 turnSign=1 dist=355.701 trueAta=171.24 headingXAngle=2.07253 aa=179.158
+[EVADE_DIAG] team=1 side=0.083483 turnSign=1 dist=372.569 trueAta=173.277 headingXAngle=3.68047 aa=177.04
+[EVADE_DIAG] team=1 side=-0.0495331 turnSign=1 dist=388.003 trueAta=174.382 headingXAngle=2.08806 aa=177.255
+[ACTIVE] [RED] Evade Z=2326.81
+[EVADE_DIAG] team=1 side=0.0204766 turnSign=1 dist=407.241 trueAta=174.294 headingXAngle=0.0959658 aa=179.588
+[EVADE_DIAG] team=1 side=-0.011118 turnSign=1 dist=426.391 trueAta=173.089 headingXAngle=0.832539 aa=173.493
+[EVADE_DIAG] team=1 side=0.00911649 turnSign=1 dist=441.117 trueAta=172.017 headingXAngle=3.21053 aa=176.455
+[ACTIVE] [RED] Evade Z=2367.27
+[EVADE_DIAG] team=1 side=0.0128277 turnSign=1 dist=456.539 trueAta=174.327 headingXAngle=3.9635 aa=179.795
+[EVADE_DIAG] team=1 side=-0.0318644 turnSign=1 dist=475.031 trueAta=176.659 headingXAngle=4.84664 aa=179.744
+[EVADE_DIAG] team=1 side=0.0203985 turnSign=1 dist=492.429 trueAta=178.779 headingXAngle=1.2984 aa=179.878
+[ACTIVE] [RED] Evade Z=2356.51
+[EVADE_DIAG] team=1 side=-0.0333863 turnSign=1 dist=511.433 trueAta=177.802 headingXAngle=0.740697 aa=178.091
+[EVADE_DIAG] team=1 side=0.0381426 turnSign=1 dist=538.151 trueAta=177.772 headingXAngle=1.67085 aa=179.833
+[EVADE_DIAG] team=1 side=-0.0373353 turnSign=1 dist=569.388 trueAta=176.953 headingXAngle=1.20296 aa=177.556
+[ACTIVE] [RED] Evade Z=2297.4
+[EVADE_DIAG] team=1 side=0.0422733 turnSign=1 dist=606.494 trueAta=177.177 headingXAngle=1.912 aa=179.839
+[EVADE_DIAG] team=1 side=-0.0435235 turnSign=1 dist=644.617 trueAta=177.096 headingXAngle=4.46229 aa=179.908
+[EVADE_DIAG] team=1 side=0.0104214 turnSign=1 dist=680.666 trueAta=179.328 headingXAngle=3.84839 aa=176.952
+runner:local/env:0	num_steps=[6182] | total rewards=[-133.3377] | termination= [ownship destroyed]
+[seed 12] reward=  -133.34 ownHP=-0.0012 tgtHP=1.0000 ownship destroyed
+total: 2
+[ACTIVE] [RED] LeadPredict dist=3434.02 dV=3.6011 thr=1 om=0.929642 lt=3
+[ACTIVE] [RED] LeadPredict dist=1863.08 dV=-5.45306 thr=0.724089 om=0.136463 lt=3
+[ACTIVE] [RED] LeadPredict dist=2029.75 dV=-34.6733 thr=0.679924 om=0.174479 lt=3
+[ACTIVE] [RED] LeadPredict dist=2243.59 dV=-44.2933 thr=1 om=1.37621 lt=3
+[ACTIVE] [RED] LeadPredict dist=2096.44 dV=-69.6552 thr=0.56667 om=0.045924 lt=3
+[ACTIVE] [RED] LeadPredict dist=2603.41 dV=-70.8898 thr=1 om=1.9519 lt=3
+[ACTIVE] [RED] ClimbOut Z=2206.82
+[ACTIVE] [RED] LeadPredict dist=905.273 dV=23.5099 thr=0.545025 om=1.28382 lt=2.46633
+[ACTIVE] [RED] LeadPredict dist=1112.57 dV=-12.0379 thr=1 om=0.0717307 lt=3
+[ACTIVE] [RED] LeadPredict dist=1155.71 dV=1.02887 thr=1 om=0.136682 lt=3
+[ACTIVE] [RED] LeadPredict dist=905.813 dV=11.1119 thr=0.88 om=2.88823 lt=2.44078
+[ACTIVE] [RED] ClimbOut Z=2153.24
+[ACTIVE] [RED] ClimbOut Z=1843.25
+[ACTIVE] [RED] LeadPredict dist=380.335 dV=36.3709 thr=0.55 om=2.28674 lt=1.06545
+[ACTIVE] [RED] LeadPredict dist=282.14 dV=7.35648 thr=0.754698 om=1.25386 lt=0.888019
+[ACTIVE] [RED] LeadPredict dist=745.582 dV=-8.1796 thr=0.827941 om=1.5405 lt=2.48127
+[ACTIVE] [RED] LeadPredict dist=979.755 dV=-15.1245 thr=0.851335 om=1.53119 lt=3
+[ACTIVE] [RED] ClimbOut Z=2025.45
+[ACTIVE] [RED] LeadPredict dist=889.187 dV=17.2337 thr=0.737426 om=1.38184 lt=2.76332
+[ACTIVE] [RED] LeadPredict dist=882.332 dV=15.5361 thr=0.708784 om=2.69714 lt=2.68577
+[ACTIVE] [RED] ClimbOut Z=1816.62
+[ACTIVE] [RED] Evade Z=1800.13
+[EVADE_DIAG] team=1 side=-0.252546 turnSign=-1 dist=236.685 trueAta=156.101 headingXAngle=21.9067 aa=176.8
+[EVADE_DIAG] team=1 side=-0.0413521 turnSign=-1 dist=265.255 trueAta=176.8 headingXAngle=14.5974 aa=177.596
+[ACTIVE] [RED] ClimbOut Z=1798.91
+[EVADE_DIAG] team=1 side=0.269638 turnSign=1 dist=317.889 trueAta=160.001 headingXAngle=11.9862 aa=171.522
+[ACTIVE] [RED] Evade Z=1848.05
+[EVADE_DIAG] team=1 side=-0.225947 turnSign=-1 dist=321.73 trueAta=162.257 headingXAngle=7.76043 aa=174.301
+[EVADE_DIAG] team=1 side=0.124493 turnSign=-1 dist=326.093 trueAta=167.926 headingXAngle=5.92302 aa=176.389
+[EVADE_DIAG] team=1 side=-0.0940597 turnSign=1 dist=327.131 trueAta=165.825 headingXAngle=9.35688 aa=179.732
+[ACTIVE] [RED] Evade Z=1952.39
+[EVADE_DIAG] team=1 side=-0.0252668 turnSign=-1 dist=330.769 trueAta=171.604 headingXAngle=4.32392 aa=178.915
+[EVADE_DIAG] team=1 side=0.100631 turnSign=-1 dist=331.17 trueAta=174.202 headingXAngle=2.40932 aa=179.87
+[EVADE_DIAG] team=1 side=-0.0118188 turnSign=-1 dist=327.723 trueAta=179.081 headingXAngle=5.6172 aa=175.523
+[ACTIVE] [RED] Evade Z=2083.05
+[EVADE_DIAG] team=1 side=0.119511 turnSign=-1 dist=327.57 trueAta=171.5 headingXAngle=4.42156 aa=170.708
+[EVADE_DIAG] team=1 side=-0.0216777 turnSign=1 dist=321.627 trueAta=166.155 headingXAngle=9.75401 aa=175.907
+[EVADE_DIAG] team=1 side=-0.0582926 turnSign=-1 dist=315.611 trueAta=172.987 headingXAngle=7.30555 aa=178.901
+[ACTIVE] [RED] Evade Z=2194.67
+[EVADE_DIAG] team=1 side=0.0290236 turnSign=-1 dist=309.563 trueAta=178.334 headingXAngle=2.00932 aa=179.913
+[EVADE_DIAG] team=1 side=-0.0103118 turnSign=-1 dist=301.801 trueAta=175.583 headingXAngle=5.26099 aa=177.157
+[EVADE_DIAG] team=1 side=0.0780078 turnSign=-1 dist=294.543 trueAta=172.77 headingXAngle=4.42876 aa=169.2
+[ACTIVE] [RED] Evade Z=2317.85
+[EVADE_DIAG] team=1 side=0.0502878 turnSign=1 dist=288.542 trueAta=166.923 headingXAngle=6.71841 aa=179.501
+[EVADE_DIAG] team=1 side=-0.124315 turnSign=-1 dist=282.691 trueAta=169.876 headingXAngle=5.1141 aa=176.778
+runner:local/env:0	num_steps=[7879] | total rewards=[12.8077] | termination= [ownship destroyed]
+[seed 13] reward=    12.81 ownHP=-0.0034 tgtHP=1.0000 ownship destroyed
+total: 2
+[ACTIVE] [RED] LeadPredict dist=4964.1 dV=3.96118 thr=1 om=0.169936 lt=3
+[ACTIVE] [RED] LeadPredict dist=2812.32 dV=14.9702 thr=1 om=0.718771 lt=3
+[ACTIVE] [RED] LeadPredict dist=884.529 dV=59.5207 thr=0.55 om=0.8295 lt=2.60634
+[ACTIVE] [RED] LeadPredict dist=2281.03 dV=82.8763 thr=0.762787 om=1.23654 lt=3
+[ACTIVE] [RED] LeadPredict dist=1532.12 dV=41.8754 thr=1 om=0.52977 lt=3
+[ACTIVE] [RED] LeadPredict dist=442.131 dV=-7.1507 thr=1 om=0.963546 lt=1.69682
+[ACTIVE] [RED] LeadPredict dist=1358.76 dV=-30.0433 thr=1 om=0.886579 lt=3
+[ACTIVE] [RED] LeadPredict dist=895.905 dV=-2.67509 thr=1 om=0.922419 lt=3
+[ACTIVE] [RED] LeadPredict dist=1490.49 dV=-14.5587 thr=1 om=0.0274543 lt=3
+[ACTIVE] [RED] LeadPredict dist=1501.55 dV=-47.8944 thr=1 om=0.938482 lt=3
+[ACTIVE] [RED] LeadPredict dist=1409.36 dV=-36.0622 thr=1 om=0.0734251 lt=3
+[ACTIVE] [RED] LeadPredict dist=1830.05 dV=-56.7427 thr=0.782465 om=0.0324628 lt=3
+[ACTIVE] [RED] LeadPredict dist=2074.06 dV=-41.4639 thr=1 om=1.3502 lt=3
+[ACTIVE] [RED] LeadPredict dist=1562.07 dV=-2.62363 thr=1 om=0.0191914 lt=3
+[ACTIVE] [RED] LeadPredict dist=1488.55 dV=-3.29242 thr=1 om=0.0169555 lt=3
+[ACTIVE] [RED] LeadPredict dist=1264.54 dV=31.6895 thr=1 om=1.29912 lt=3
+[ACTIVE] [RED] LeadPredict dist=969.923 dV=11.6263 thr=1 om=0.0878682 lt=2.68384
+[ACTIVE] [RED] LeadPredict dist=932.832 dV=8.48825 thr=1 om=0.0103666 lt=2.54534
+[ACTIVE] [RED] LeadPredict dist=809.646 dV=12.3466 thr=0.851841 om=1.23126 lt=0.992513
+[ACTIVE] [RED] LeadPredict dist=794.594 dV=-0.720215 thr=1 om=0.223476 lt=1.96052
+[ACTIVE] [RED] LeadPredict dist=815.472 dV=3.65253 thr=0.95617 om=0.0304267 lt=0
+[ACTIVE] [RED] ClimbOut Z=2221.21
+[ACTIVE] [RED] LeadPredict dist=317.394 dV=30.8664 thr=0.475108 om=1.10958 lt=0.813622
+[EVADE_DIAG] team=1 side=0.474872 turnSign=1 dist=213.653 trueAta=103.566 headingXAngle=55.6104 aa=158.778
+[ACTIVE] [RED] ClimbOut Z=1896.74
+[ACTIVE] [RED] Evade Z=2160.93
+[EVADE_DIAG] team=1 side=-0.219116 turnSign=-1 dist=305.272 trueAta=140.28 headingXAngle=35.8069 aa=173.981
+[EVADE_DIAG] team=1 side=0.0746315 turnSign=1 dist=306.81 trueAta=173.254 headingXAngle=23.0456 aa=179.414
+[EVADE_DIAG] team=1 side=0.150589 turnSign=1 dist=376.169 trueAta=148.528 headingXAngle=16.513 aa=170.37
+[ACTIVE] [RED] Evade Z=2554.95
+[EVADE_DIAG] team=1 side=-0.186982 turnSign=-1 dist=360.331 trueAta=159.666 headingXAngle=16.7995 aa=177.721
+[EVADE_DIAG] team=1 side=0.0236628 turnSign=1 dist=357.87 trueAta=173.27 headingXAngle=12.6716 aa=178.636
+[EVADE_DIAG] team=1 side=-0.03333 turnSign=1 dist=374.737 trueAta=175.266 headingXAngle=0.824539 aa=177.666
+[ACTIVE] [RED] Evade Z=2632.35
+[EVADE_DIAG] team=1 side=0.0286103 turnSign=1 dist=392.162 trueAta=176.898 headingXAngle=1.51437 aa=179.579
+[EVADE_DIAG] team=1 side=-0.0605643 turnSign=1 dist=409.141 trueAta=175.41 headingXAngle=4.18254 aa=179.094
+[EVADE_DIAG] team=1 side=0.0514595 turnSign=1 dist=428.811 trueAta=175.798 headingXAngle=2.60325 aa=178.03
+[ACTIVE] [RED] Evade Z=2626.93
+[EVADE_DIAG] team=1 side=-0.0648764 turnSign=1 dist=454.781 trueAta=173.721 headingXAngle=6.28334 aa=170.426
+[EVADE_DIAG] team=1 side=-0.00644298 turnSign=1 dist=485.948 trueAta=170.634 headingXAngle=5.40321 aa=175.761
+[EVADE_DIAG] team=1 side=-0.00360611 turnSign=1 dist=515.906 trueAta=174.263 headingXAngle=2.58823 aa=178.747
+[ACTIVE] [RED] Evade Z=2531.07
+[EVADE_DIAG] team=1 side=-0.00981031 turnSign=1 dist=543.051 trueAta=173.677 headingXAngle=4.88206 aa=179.001
+[EVADE_DIAG] team=1 side=-0.00475428 turnSign=1 dist=571.712 trueAta=178.501 headingXAngle=3.79296 aa=179.884
+[EVADE_DIAG] team=1 side=-0.00954009 turnSign=1 dist=600.237 trueAta=178.391 headingXAngle=3.8863 aa=177.528
+[ACTIVE] [RED] Evade Z=2355.16
+[EVADE_DIAG] team=1 side=-0.0157336 turnSign=1 dist=627.063 trueAta=178.578 headingXAngle=0.745863 aa=178.28
+runner:local/env:0	num_steps=[9476] | total rewards=[426.5553] | termination= [ownship destroyed]
+[seed 14] reward=   426.56 ownHP=-0.0007 tgtHP=0.1617 ownship destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=15]
+SUMMARY dealt=3.7318 taken=11.1557 mean_reward=154.32
+tacview log saved (last episode)
+STAMP v32 AIP_jh2.dll 2026_8_9_10_59_24
+=== 진단 완료 ===
