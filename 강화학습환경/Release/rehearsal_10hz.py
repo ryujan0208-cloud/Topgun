@@ -12,7 +12,11 @@
 from __future__ import annotations
 import sys
 from pathlib import Path
+import os
 import numpy as np
+
+# 대회 초기조건 모드. 미설정이면 legacy(5km·7000m) 그대로.
+MATCH_MODE = os.getenv("TOPGUN_MATCH", "") not in ("", "0")
 
 ROOT = Path.cwd()
 sys.path.insert(0, str(ROOT))
@@ -20,6 +24,59 @@ sys.path.insert(0, str(ROOT / "src"))
 
 from DogFightEnvWrapper import DogFightWrapper
 from dogfight.ai.bt_action_provider import BTActionProvider
+
+
+# ============================================================================
+#  대회 초기조건 (TOPGUN_MATCH=1 일 때만 적용. 미설정이면 legacy 그대로)
+# ============================================================================
+# 사전등록: experiments/match_conditions/PREREG_2026-08-11.md (커밋 3d4cb46)
+# 출처: `ai pilot 질문사항 종합.pdf` — 운영측 공식 답변
+#   p49 (26-08-03) "6) 1 라운드 2000 2 라운드 2500 3 라운드 3000
+#                   초기 속력과 위치는 양측 기체 동등하게 적용"
+#   p15/p43        초기 고도 2000~30000ft, 속력 200~300m/s 매 라운드 랜덤
+#   p53            2000/2500/3000ft는 고도가 아니라 **두 기체 간 거리**
+#   p53            시나리오는 교전 뷰어의 HABFM(헤드온) — 우리 형태와 이미 일치
+#
+# ★ legacy(5km·7000m)는 삭제하지 않는다. 환경변수 미설정이면 종전 그대로 동작한다.
+FT = 0.3048
+MATCH_RANGES_FT = (2000.0, 2500.0, 3000.0)   # 라운드 1/2/3
+MATCH_ALT_FT = (2000.0, 30000.0)             # 매 라운드 랜덤, 양측 동일
+MATCH_SPEED_MPS = 300.0                      # ⚠ 공식은 200~300 랜덤. 지시 범위 밖이라 고정 유지.
+
+
+def apply_match_conditions(env, seed: int):
+    """대회 초기조건을 이번 에피소드에 적용한다. env.reset() **직전**에 부른다.
+
+    ★ `FighterSim.reset()`은 기체를 **`_init_pos_lat/lon/alt`** 로 만든다
+      (`Fighter(..., _init_pos_lat, _init_pos_lon, _init_pos_alt*FT, ...)`).
+      그 LLA는 **생성자에서 한 번만** NED로부터 계산된다.
+      따라서 `_init_pos_n/e/d`만 바꾸면 **보고용 state 배열만 바뀌고 물리는 안 바뀐다.**
+      (부수 발견: 그래서 `add_random_init_position`의 `radius` 위치 산란은
+       지금까지 실제로 작동한 적이 없다 — 헤딩·롤·피치만 걸렸다.)
+      여기서는 LLA를 직접 다시 계산해 넣는다.
+
+    거리는 라운드 인덱스로 정해지므로 시드를 3으로 나눈 나머지를 라운드로 본다.
+    고도는 시드 전용 난수 — 배치 순서가 바뀌어도 같은 시드면 같은 고도가 나온다.
+    """
+    import pymap3d as pm
+    rng = np.random.default_rng(1_000_003 + seed)
+    alt_m = float(rng.uniform(*MATCH_ALT_FT)) * FT
+    sep_m = MATCH_RANGES_FT[seed % len(MATCH_RANGES_FT)] * FT
+
+    def place(f, n, e, d, heading):
+        lla = pm.ned2geodetic(n, e, d, f._origin_lat, f._origin_lon, f._origin_alt)
+        f._init_pos_lat, f._init_pos_lon, f._init_pos_alt = lla[0], lla[1], lla[2]
+        f._init_pos_n, f._init_pos_e, f._init_pos_d = n, e, d   # 보고용 state도 맞춘다
+        f._init_roll = 0.0
+        f._init_pitch = 0.0
+        f._init_heading = heading
+        f._init_speed = MATCH_SPEED_MPS
+
+    # 헤드온(HABFM): N축으로 sep 만큼 벌리고 서로 마주본다.
+    place(env._sim,        0.0,   0.0, -alt_m,   0.0)
+    place(env._target_sim, sep_m, 0.0, -alt_m, 180.0)
+    return {"seed": seed, "sep_m": sep_m, "alt_m": alt_m,
+            "round": seed % len(MATCH_RANGES_FT) + 1}
 
 
 class RepeatProvider:
@@ -80,7 +137,10 @@ def main():
         "episode_step_limit": 18000,
         "min_altitude": 300.0,
     }
-    if seeds > 1 or start_seed > 0:  # run_batch_local과 동일한 랜덤 스폰
+    if MATCH_MODE:
+        # 대회엔 이 산란이 없다. 게다가 add_random_init_position은 += 라 판마다 누적된다.
+        cfg["ownship_randomization"] = {"enabled": False}
+    elif seeds > 1 or start_seed > 0:  # run_batch_local과 동일한 랜덤 스폰
         cfg["ownship_randomization"] = {  # run_batch_local 기본값과 동일
             "enabled": True, "radius": 1500.0,
             "r_roll": 10.0, "r_pitch": 5.0, "r_heading": 180.0,
@@ -96,7 +156,13 @@ def main():
         for k in range(start_seed, start_seed + seeds):
             if isinstance(own, RepeatProvider): own.reset()
             if isinstance(tgt, RepeatProvider): tgt.reset()
-            obs, info = env.reset(seed=k) if (seeds > 1 or start_seed > 0) else env.reset()
+            if MATCH_MODE:
+                mc = apply_match_conditions(env, k)
+                print(f"[match] seed {k} round{mc['round']} "
+                      f"sep={mc['sep_m']:.0f}m alt={mc['alt_m']:.0f}m", flush=True)
+                obs, info = env.reset(seed=k)
+            else:
+                obs, info = env.reset(seed=k) if (seeds > 1 or start_seed > 0) else env.reset()
             terminated = truncated = False
             total = 0.0
             while not (terminated or truncated):
