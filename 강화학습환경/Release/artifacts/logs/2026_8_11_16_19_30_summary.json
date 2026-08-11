@@ -1,0 +1,6 @@
+{
+  "end_condition": "ownship destroyed",
+  "outcome": "loss",
+  "ownship_health": -0.011599567786400575,
+  "target_health": 0.21549155217900834
+}

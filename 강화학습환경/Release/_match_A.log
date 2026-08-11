@@ -391,3 +391,123 @@
 [seed 2] reward=   103.94 ownHP=0.3673 tgtHP=0.9474 max time out
 [match] seed 3 HABFM round1 sep=610m alt=1799m spd=270m/s
 [seed 3] reward=   240.59 ownHP=0.9380 tgtHP=0.9115 max time out
+[match] seed 4 HABFM round2 sep=762m alt=6887m spd=297m/s
+[seed 4] reward=   201.13 ownHP=0.3896 tgtHP=0.8223 max time out
+[match] seed 5 HABFM round3 sep=914m alt=7099m spd=277m/s
+[seed 5] reward=    57.49 ownHP=0.3410 tgtHP=0.9345 max time out
+[match] seed 6 HABFM round1 sep=610m alt=4953m spd=256m/s
+[seed 6] reward=   857.65 ownHP=0.3845 tgtHP=0.8129 max time out
+[match] seed 7 HABFM round2 sep=762m alt=9121m spd=249m/s
+[seed 7] reward=   182.49 ownHP=0.2836 tgtHP=0.8611 max time out
+[match] seed 8 HABFM round3 sep=914m alt=1075m spd=265m/s
+[seed 8] reward=  2096.90 ownHP=0.9915 tgtHP=0.9851 max time out
+[match] seed 9 HABFM round1 sep=610m alt=7962m spd=289m/s
+[seed 9] reward=    71.55 ownHP=0.4556 tgtHP=0.7347 max time out
+[match] seed 10 HABFM round2 sep=762m alt=3219m spd=234m/s
+[seed 10] reward=   186.47 ownHP=0.3251 tgtHP=0.8721 max time out
+[match] seed 11 HABFM round3 sep=914m alt=4420m spd=280m/s
+[seed 11] reward=  1086.61 ownHP=0.3835 tgtHP=0.9390 max time out
+[match] seed 12 HABFM round1 sep=610m alt=5889m spd=248m/s
+[seed 12] reward=   840.08 ownHP=0.3767 tgtHP=0.8035 max time out
+[match] seed 13 HABFM round2 sep=762m alt=5807m spd=237m/s
+[seed 13] reward=   875.06 ownHP=0.2556 tgtHP=0.8715 max time out
+[match] seed 14 HABFM round3 sep=914m alt=2843m spd=280m/s
+[seed 14] reward=   477.91 ownHP=0.3973 tgtHP=0.9437 max time out
+
+########## v40 vs AIP_jink.dll ##########
+[match] seed 0 HABFM round1 sep=610m alt=6057m spd=258m/s
+[seed 0] reward=   986.30 ownHP=0.7674 tgtHP=-0.0005 target destroyed
+[match] seed 1 HABFM round2 sep=762m alt=1546m spd=217m/s
+[seed 1] reward=  1434.39 ownHP=0.9615 tgtHP=0.1725 max time out
+[match] seed 2 HABFM round3 sep=914m alt=7868m spd=241m/s
+[seed 2] reward=  1070.71 ownHP=0.9385 tgtHP=-0.0000 target destroyed
+[match] seed 3 HABFM round1 sep=610m alt=1799m spd=270m/s
+[seed 3] reward=  1142.81 ownHP=0.9380 tgtHP=-0.0021 target destroyed
+[match] seed 4 HABFM round2 sep=762m alt=6887m spd=297m/s
+[seed 4] reward=  1095.54 ownHP=0.6803 tgtHP=-0.0019 target destroyed
+[match] seed 5 HABFM round3 sep=914m alt=7099m spd=277m/s
+[seed 5] reward=   872.70 ownHP=0.8934 tgtHP=-0.0038 target destroyed
+[match] seed 6 HABFM round1 sep=610m alt=4953m spd=256m/s
+[seed 6] reward=   909.49 ownHP=0.7794 tgtHP=0.4494 max time out
+[match] seed 7 HABFM round2 sep=762m alt=9121m spd=249m/s
+[seed 7] reward=   950.09 ownHP=0.8449 tgtHP=-0.0062 target destroyed
+[match] seed 8 HABFM round3 sep=914m alt=1075m spd=265m/s
+[seed 8] reward=  1466.49 ownHP=0.9915 tgtHP=-0.0029 target destroyed
+[match] seed 9 HABFM round1 sep=610m alt=7962m spd=289m/s
+[seed 9] reward=   680.71 ownHP=0.5975 tgtHP=-0.0010 target destroyed
+[match] seed 10 HABFM round2 sep=762m alt=3219m spd=234m/s
+[seed 10] reward=   812.54 ownHP=0.8152 tgtHP=-0.0037 target destroyed
+[match] seed 11 HABFM round3 sep=914m alt=4420m spd=280m/s
+[seed 11] reward=   941.64 ownHP=0.8990 tgtHP=-0.0070 target destroyed
+[match] seed 12 HABFM round1 sep=610m alt=5889m spd=248m/s
+[seed 12] reward=  1152.74 ownHP=0.7700 tgtHP=-0.0010 target destroyed
+[match] seed 13 HABFM round2 sep=762m alt=5807m spd=237m/s
+[seed 13] reward=   942.48 ownHP=0.8398 tgtHP=-0.0028 target destroyed
+[match] seed 14 HABFM round3 sep=914m alt=2843m spd=280m/s
+[seed 14] reward=   737.24 ownHP=0.9051 tgtHP=-0.0116 target destroyed
+
+########## v40 vs SEARCH ##########
+[match] seed 0 HABFM round1 sep=610m alt=6057m spd=258m/s
+[seed 0] reward=   196.17 ownHP=0.9211 tgtHP=0.8015 max time out
+[match] seed 1 HABFM round2 sep=762m alt=1546m spd=217m/s
+[seed 1] reward=   691.12 ownHP=0.9615 tgtHP=0.9093 max time out
+[match] seed 2 HABFM round3 sep=914m alt=7868m spd=241m/s
+[seed 2] reward=   846.88 ownHP=0.9865 tgtHP=-0.0011 target destroyed
+[match] seed 3 HABFM round1 sep=610m alt=1799m spd=270m/s
+[seed 3] reward=  1097.72 ownHP=0.9380 tgtHP=-0.0000 target destroyed
+[match] seed 4 HABFM round2 sep=762m alt=6887m spd=297m/s
+[seed 4] reward=   326.97 ownHP=0.9583 tgtHP=0.6717 max time out
+[match] seed 5 HABFM round3 sep=914m alt=7099m spd=277m/s
+[seed 5] reward=   305.10 ownHP=0.9891 tgtHP=0.8446 max time out
+[match] seed 6 HABFM round1 sep=610m alt=4953m spd=256m/s
+[seed 6] reward=   725.97 ownHP=0.9299 tgtHP=0.2951 max time out
+[match] seed 7 HABFM round2 sep=762m alt=9121m spd=249m/s
+[seed 7] reward=   290.34 ownHP=0.9494 tgtHP=0.8611 max time out
+[match] seed 8 HABFM round3 sep=914m alt=1075m spd=265m/s
+[seed 8] reward=  1023.90 ownHP=0.9915 tgtHP=-0.0039 target destroyed
+[match] seed 9 HABFM round1 sep=610m alt=7962m spd=289m/s
+[seed 9] reward=   118.03 ownHP=0.9197 tgtHP=0.6667 max time out
+[match] seed 10 HABFM round2 sep=762m alt=3219m spd=234m/s
+[seed 10] reward=   763.08 ownHP=0.9608 tgtHP=-0.0024 target destroyed
+[match] seed 11 HABFM round3 sep=914m alt=4420m spd=280m/s
+[seed 11] reward=   634.05 ownHP=0.9890 tgtHP=0.9390 max time out
+[match] seed 12 HABFM round1 sep=610m alt=5889m spd=248m/s
+[seed 12] reward=   582.51 ownHP=0.9216 tgtHP=0.3255 max time out
+[match] seed 13 HABFM round2 sep=762m alt=5807m spd=237m/s
+[seed 13] reward=   -11.57 ownHP=0.9554 tgtHP=0.8715 target altitude below min
+[match] seed 14 HABFM round3 sep=914m alt=2843m spd=280m/s
+[seed 14] reward=   748.38 ownHP=0.9910 tgtHP=0.2783 max time out
+
+########## v40 vs STRAIGHT ##########
+[match] seed 0 HABFM round1 sep=610m alt=6057m spd=258m/s
+[seed 0] reward=   434.04 ownHP=0.3998 tgtHP=-0.0066 target destroyed
+[match] seed 1 HABFM round2 sep=762m alt=1546m spd=217m/s
+[seed 1] reward=   390.61 ownHP=0.3274 tgtHP=-0.0053 target destroyed
+[match] seed 2 HABFM round3 sep=914m alt=7868m spd=241m/s
+[seed 2] reward=   395.60 ownHP=0.3220 tgtHP=-0.0010 target destroyed
+[match] seed 3 HABFM round1 sep=610m alt=1799m spd=270m/s
+[seed 3] reward=   362.19 ownHP=0.4213 tgtHP=-0.0008 target destroyed
+[match] seed 4 HABFM round2 sep=762m alt=6887m spd=297m/s
+[seed 4] reward=   317.99 ownHP=0.3898 tgtHP=0.2935 max time out
+[match] seed 5 HABFM round3 sep=914m alt=7099m spd=277m/s
+[seed 5] reward=   454.47 ownHP=0.3578 tgtHP=-0.0037 target destroyed
+[match] seed 6 HABFM round1 sep=610m alt=4953m spd=256m/s
+[seed 6] reward=   436.87 ownHP=0.3847 tgtHP=-0.0012 target destroyed
+[match] seed 7 HABFM round2 sep=762m alt=9121m spd=249m/s
+[seed 7] reward=   334.31 ownHP=0.2839 tgtHP=-0.0042 target destroyed
+[match] seed 8 HABFM round3 sep=914m alt=1075m spd=265m/s
+[seed 8] reward=   379.72 ownHP=0.7114 tgtHP=-0.0017 target destroyed
+[match] seed 9 HABFM round1 sep=610m alt=7962m spd=289m/s
+[seed 9] reward=   316.46 ownHP=0.4557 tgtHP=-0.0069 target destroyed
+[match] seed 10 HABFM round2 sep=762m alt=3219m spd=234m/s
+[seed 10] reward=   325.92 ownHP=0.4022 tgtHP=-0.0026 target destroyed
+[match] seed 11 HABFM round3 sep=914m alt=4420m spd=280m/s
+[seed 11] reward=   353.20 ownHP=0.4463 tgtHP=-0.0003 target destroyed
+[match] seed 12 HABFM round1 sep=610m alt=5889m spd=248m/s
+[seed 12] reward=   397.31 ownHP=0.3769 tgtHP=-0.0033 target destroyed
+[match] seed 13 HABFM round2 sep=762m alt=5807m spd=237m/s
+[seed 13] reward=   431.02 ownHP=0.3211 tgtHP=-0.0022 target destroyed
+[match] seed 14 HABFM round3 sep=914m alt=2843m spd=280m/s
+[seed 14] reward=   410.95 ownHP=0.4891 tgtHP=-0.0079 target destroyed
+
+=== cold 완료 ===

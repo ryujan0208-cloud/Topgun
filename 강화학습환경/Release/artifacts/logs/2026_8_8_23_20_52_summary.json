@@ -1,0 +1,6 @@
+{
+  "end_condition": "target destroyed",
+  "outcome": "win",
+  "ownship_health": 0.6695615581686508,
+  "target_health": -0.0008829295342978119
+}
