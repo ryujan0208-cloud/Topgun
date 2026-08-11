@@ -52,6 +52,17 @@ MATCH_SPEED_MPS = (200.0, 300.0)             # 매 라운드 랜덤, 양측 동�
 #   가정: OBFM은 공세측이 방어측 뒤 30도 원뿔 안(= 표준 control zone 진입 직전).
 MATCH_GEOM = os.getenv("TOPGUN_GEOM", "HABFM").upper()
 
+# ★ OBFM 각도오프셋 — 2026-08-11 정정.
+#  [문제] 공세측을 방어측 정확히 뒤에 **ATA 0도**로 두면, 거리 610m가 사격 조건
+#    (152.4~914.4m AND LOS<=1.0도)을 **스폰 첫 프레임부터** 만족한다.
+#    실측: t=0에 사격 성립, t=1.0s에 방어측 HP 1.000 -> 0.614. **1초에 39% 손실.**
+#    실제 BFM의 OBFM(perch) 셋업은 공세측에 우위를 주되 **각도를 좁혀야 하는 상태**로
+#    시작한다. 조준이 완성된 채로 시작하면 시나리오가 아니라 스폰킬이다.
+#  [해법] 공세측 기수를 ANGLE_OFF 만큼 틀어 시작한다. 공세측은 그 각을 좁혀야 쏠 수 있다.
+#    30도는 표준 perch 셋업의 angle-off 범위(30~45도)에서 가장 보수적인 값.
+#  ⚠ 뷰어 실제 값은 애셋 안이라 못 읽는다. **가정값이며 결과에 병기한다.**
+OBFM_ANGLE_OFF_DEG = float(os.getenv("TOPGUN_OBFM_ANGLE", "30"))
+
 
 def apply_match_conditions(env, seed: int):
     """대회 초기조건을 이번 에피소드에 적용한다. env.reset() **직전**에 부른다.
@@ -83,19 +94,22 @@ def apply_match_conditions(env, seed: int):
         f._init_speed = spd
 
     # 상대(target)는 항상 우리 정북 sep 지점. 기하는 **기수 방향**으로만 만든다.
+    a = OBFM_ANGLE_OFF_DEG
     if MATCH_GEOM == "OBFM_BLUE":
-        # 우리가 공세: 우리는 상대를 향하고(0도), 상대는 등을 보인다(0도 = 같은 방향).
-        own_hdg, tgt_hdg = 0.0, 0.0
+        # 우리가 공세: 상대는 우리 앞에서 등을 보이고, **우리 기수를 a만큼 틀어** 시작.
+        #   -> 우리도 각을 좁혀야 쏠 수 있다(스폰킬 방지, 공세측 우위는 유지).
+        own_hdg, tgt_hdg = a, 0.0
     elif MATCH_GEOM == "OBFM_RED":
-        # 상대가 공세: 둘 다 남쪽(180도)을 향하면 상대가 우리 뒤에 붙은 형태가 된다.
-        own_hdg, tgt_hdg = 180.0, 180.0
-    else:  # HABFM — 고애스펙트 중립 머지(서로 마주봄)
+        # 상대가 공세: 상대가 우리 뒤에 있고 **상대 기수를 a만큼 틀어** 시작.
+        own_hdg, tgt_hdg = 180.0, 180.0 + a
+    else:  # HABFM — 고애스펙트 중립 머지(서로 마주봄). 각도오프셋 없음.
         own_hdg, tgt_hdg = 0.0, 180.0
 
     place(env._sim,        0.0,   0.0, -alt_m, own_hdg)
     place(env._target_sim, sep_m, 0.0, -alt_m, tgt_hdg)
     return {"seed": seed, "sep_m": sep_m, "alt_m": alt_m, "spd": spd,
-            "geom": MATCH_GEOM, "round": seed % len(MATCH_RANGES_FT) + 1}
+            "geom": MATCH_GEOM, "angle_off": (a if MATCH_GEOM.startswith("OBFM") else 0.0),
+            "round": seed % len(MATCH_RANGES_FT) + 1}
 
 
 class RepeatProvider:
@@ -182,7 +196,7 @@ def main():
                 mc = apply_match_conditions(env, k)
                 print(f"[match] seed {k} {mc['geom']} round{mc['round']} "
                       f"sep={mc['sep_m']:.0f}m alt={mc['alt_m']:.0f}m "
-                      f"spd={mc['spd']:.0f}m/s", flush=True)
+                      f"spd={mc['spd']:.0f}m/s aoff={mc['angle_off']:.0f}deg", flush=True)
                 obs, info = env.reset(seed=k)
             else:
                 obs, info = env.reset(seed=k) if (seeds > 1 or start_seed > 0) else env.reset()
