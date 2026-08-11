@@ -1,0 +1,4578 @@
+########## A_noevade vs ACE ##########
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[11999] | total rewards=[541.2734] | termination= [max time out]
+[seed 0] reward=   541.27 ownHP=1.0000 tgtHP=0.9443 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[402.7100] | termination= [max time out]
+[seed 1] reward=   402.71 ownHP=1.0000 tgtHP=0.9496 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[393.5113] | termination= [max time out]
+[seed 2] reward=   393.51 ownHP=1.0000 tgtHP=0.9450 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[358.5909] | termination= [max time out]
+[seed 3] reward=   358.59 ownHP=1.0000 tgtHP=0.8922 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[383.7458] | termination= [max time out]
+[seed 4] reward=   383.75 ownHP=0.9791 tgtHP=0.9302 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[379.8308] | termination= [max time out]
+[seed 5] reward=   379.83 ownHP=0.9912 tgtHP=0.9270 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[401.7069] | termination= [max time out]
+[seed 6] reward=   401.71 ownHP=1.0000 tgtHP=0.9436 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[574.6987] | termination= [max time out]
+[seed 7] reward=   574.70 ownHP=1.0000 tgtHP=0.9100 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[689.9129] | termination= [max time out]
+[seed 8] reward=   689.91 ownHP=1.0000 tgtHP=0.8007 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[438.1305] | termination= [max time out]
+[seed 9] reward=   438.13 ownHP=1.0000 tgtHP=0.9383 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[557.6501] | termination= [max time out]
+[seed 10] reward=   557.65 ownHP=1.0000 tgtHP=0.8981 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[607.2897] | termination= [max time out]
+[seed 11] reward=   607.29 ownHP=0.9874 tgtHP=0.9244 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[380.2571] | termination= [max time out]
+[seed 12] reward=   380.26 ownHP=1.0000 tgtHP=0.9378 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[558.1540] | termination= [max time out]
+[seed 13] reward=   558.15 ownHP=1.0000 tgtHP=0.7879 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[479.6921] | termination= [max time out]
+[seed 14] reward=   479.69 ownHP=1.0000 tgtHP=0.8988 max time out
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=15]
+SUMMARY dealt=1.3720 taken=0.0423 mean_reward=476.48
+tacview log saved (last episode)
+
+########## A_noevade vs AIP_onecircle.dll ##########
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[11999] | total rewards=[35.9836] | termination= [max time out]
+[seed 0] reward=    35.98 ownHP=1.0000 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[553.6832] | termination= [max time out]
+[seed 1] reward=   553.68 ownHP=0.9610 tgtHP=0.5946 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[350.9713] | termination= [max time out]
+[seed 2] reward=   350.97 ownHP=1.0000 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[458.7168] | termination= [max time out]
+[seed 3] reward=   458.72 ownHP=1.0000 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[62.4631] | termination= [max time out]
+[seed 4] reward=    62.46 ownHP=1.0000 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[230.8858] | termination= [max time out]
+[seed 5] reward=   230.89 ownHP=0.9902 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[37.6099] | termination= [max time out]
+[seed 6] reward=    37.61 ownHP=1.0000 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[122.2620] | termination= [max time out]
+[seed 7] reward=   122.26 ownHP=1.0000 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[20.2909] | termination= [max time out]
+[seed 8] reward=    20.29 ownHP=1.0000 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[299.3628] | termination= [max time out]
+[seed 9] reward=   299.36 ownHP=1.0000 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[189.2253] | termination= [max time out]
+[seed 10] reward=   189.23 ownHP=1.0000 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[752.0294] | termination= [max time out]
+[seed 11] reward=   752.03 ownHP=1.0000 tgtHP=0.9948 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[77.5069] | termination= [max time out]
+[seed 12] reward=    77.51 ownHP=1.0000 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[252.1380] | termination= [max time out]
+[seed 13] reward=   252.14 ownHP=1.0000 tgtHP=0.9973 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[253.2493] | termination= [max time out]
+[seed 14] reward=   253.25 ownHP=1.0000 tgtHP=1.0000 max time out
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=15]
+SUMMARY dealt=0.4133 taken=0.0488 mean_reward=246.43
+tacview log saved (last episode)
+
+########## A_noevade vs AIP_sync.dll ##########
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[11999] | total rewards=[1569.9808] | termination= [max time out]
+[seed 0] reward=  1569.98 ownHP=1.0000 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[263.3284] | termination= [max time out]
+[seed 1] reward=   263.33 ownHP=1.0000 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[46.1479] | termination= [max time out]
+[seed 2] reward=    46.15 ownHP=1.0000 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[329.9386] | termination= [max time out]
+[seed 3] reward=   329.94 ownHP=1.0000 tgtHP=0.9626 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[543.2375] | termination= [max time out]
+[seed 4] reward=   543.24 ownHP=1.0000 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[197.0869] | termination= [max time out]
+[seed 5] reward=   197.09 ownHP=1.0000 tgtHP=0.9818 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[606.5547] | termination= [max time out]
+[seed 6] reward=   606.55 ownHP=1.0000 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[1343.1849] | termination= [max time out]
+[seed 7] reward=  1343.18 ownHP=1.0000 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[1056.2867] | termination= [max time out]
+[seed 8] reward=  1056.29 ownHP=1.0000 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[358.1047] | termination= [max time out]
+[seed 9] reward=   358.10 ownHP=1.0000 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[78.6928] | termination= [max time out]
+[seed 10] reward=    78.69 ownHP=1.0000 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[584.0043] | termination= [max time out]
+[seed 11] reward=   584.00 ownHP=1.0000 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[731.9926] | termination= [max time out]
+[seed 12] reward=   731.99 ownHP=1.0000 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[1093.2406] | termination= [max time out]
+[seed 13] reward=  1093.24 ownHP=1.0000 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[562.6511] | termination= [max time out]
+[seed 14] reward=   562.65 ownHP=1.0000 tgtHP=1.0000 max time out
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=15]
+SUMMARY dealt=0.0555 taken=0.0000 mean_reward=624.30
+tacview log saved (last episode)
+
+########## A_noevade vs AIP_jink.dll ##########
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[JINK] sign=-1 next=2.11667 dist=3216.17 spd=313.706
+[JINK] sign=-1 next=6.84999 dist=3047.04 spd=351.62
+[JINK] sign=-1 next=6.84999 dist=1804.52 spd=327.544
+[JINK] sign=-1 next=11.3833 dist=1110.97 spd=332.38
+[JINK] sign=-1 next=11.3833 dist=335.386 spd=294.465
+[JINK] sign=-1 next=16.2166 dist=125.232 spd=326.618
+[JINK] sign=-1 next=16.2166 dist=127.282 spd=298.735
+[JINK] sign=1 next=18.1333 dist=83.4425 spd=300.69
+[JINK] sign=-1 next=20.2499 dist=321.523 spd=323.634
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[6989] | total rewards=[663.9275] | termination= [target destroyed]
+[seed 0] reward=   663.93 ownHP=1.0000 tgtHP=-0.0011 target destroyed
+total: 2
+[JINK] sign=-1 next=21.9499 dist=2028.94 spd=309.847
+[JINK] sign=1 next=23.2666 dist=4182.13 spd=362.269
+[JINK] sign=-1 next=26.6832 dist=3227.01 spd=338.759
+[JINK] sign=1 next=28.3999 dist=1029.69 spd=288.961
+[JINK] sign=-1 next=31.2166 dist=45.4801 spd=264.319
+[JINK] sign=1 next=32.3332 dist=423.323 spd=299.095
+[JINK] sign=-1 next=36.0499 dist=151.222 spd=292.408
+[JINK] sign=1 next=37.9665 dist=91.0602 spd=287.881
+[JINK] sign=-1 next=40.0832 dist=348.967 spd=326.978
+[JINK] sign=-1 next=40.0832 dist=324.45 spd=294.363
+[JINK] sign=-1 next=44.8165 dist=205.408 spd=314.374
+[JINK] sign=-1 next=44.8165 dist=42.0534 spd=290.041
+[JINK] sign=1 next=46.5332 dist=265.2 spd=324.817
+[JINK] sign=-1 next=49.3498 dist=197.965 spd=306.555
+[JINK] sign=1 next=50.4665 dist=214.17 spd=311.802
+runner:local/env:0	num_steps=[11491] | total rewards=[890.9186] | termination= [target destroyed]
+[seed 1] reward=   890.92 ownHP=1.0000 tgtHP=-0.0005 target destroyed
+total: 2
+[JINK] sign=-1 next=53.5831 dist=2294.34 spd=294.517
+[JINK] sign=1 next=54.8998 dist=3122.92 spd=331.351
+[JINK] sign=-1 next=58.3164 dist=2301.53 spd=350.025
+[JINK] sign=1 next=60.0331 dist=690.262 spd=318.747
+[JINK] sign=-1 next=62.8498 dist=757.107 spd=278.106
+[JINK] sign=1 next=63.9664 dist=498.393 spd=264.165
+[JINK] sign=-1 next=67.6831 dist=300.191 spd=299.25
+[JINK] sign=-1 next=67.6831 dist=152.326 spd=290.401
+[JINK] sign=1 next=69.5997 dist=180.65 spd=301.153
+[JINK] sign=-1 next=71.7164 dist=849.222 spd=271.058
+[JINK] sign=1 next=73.033 dist=877.548 spd=314.117
+[JINK] sign=-1 next=76.4497 dist=736.455 spd=294.363
+runner:local/env:0	num_steps=[9102] | total rewards=[906.0055] | termination= [target destroyed]
+[seed 2] reward=   906.01 ownHP=1.0000 tgtHP=-0.0018 target destroyed
+total: 2
+[JINK] sign=-1 next=79.0164 dist=3555.01 spd=292.048
+[JINK] sign=1 next=80.333 dist=3131.94 spd=298.067
+[JINK] sign=-1 next=83.7497 dist=3378.97 spd=343.389
+[JINK] sign=1 next=85.4663 dist=1230.67 spd=353.266
+[JINK] sign=-1 next=88.283 dist=281.242 spd=289.321
+[JINK] sign=-1 next=88.283 dist=419.516 spd=265.554
+[JINK] sign=-1 next=93.1163 dist=446.033 spd=303.983
+[JINK] sign=-1 next=93.1163 dist=268.074 spd=292.562
+[JINK] sign=1 next=95.033 dist=554.727 spd=295.546
+[JINK] sign=-1 next=97.1496 dist=1223.3 spd=265.4
+[JINK] sign=1 next=98.4663 dist=741.854 spd=299.147
+[JINK] sign=-1 next=101.883 dist=549.551 spd=292.202
+runner:local/env:0	num_steps=[8620] | total rewards=[720.9368] | termination= [target destroyed]
+[seed 3] reward=   720.94 ownHP=1.0000 tgtHP=-0.0027 target destroyed
+total: 2
+[JINK] sign=-1 next=102.7 dist=1095.96 spd=301.822
+[JINK] sign=-1 next=107.433 dist=3077.99 spd=357.999
+[JINK] sign=-1 next=107.433 dist=1373.03 spd=345.241
+[JINK] sign=1 next=109.15 dist=526.271 spd=333.254
+[JINK] sign=-1 next=111.966 dist=81.1928 spd=299.507
+[JINK] sign=1 next=113.083 dist=375.99 spd=320.599
+[JINK] sign=-1 next=116.8 dist=250.079 spd=301.616
+[JINK] sign=1 next=118.716 dist=234.234 spd=287.418
+[JINK] sign=-1 next=120.833 dist=500.302 spd=331.402
+[JINK] sign=1 next=122.15 dist=527.833 spd=303.108
+[JINK] sign=-1 next=125.566 dist=330.959 spd=292.922
+[JINK] sign=-1 next=125.566 dist=29.7481 spd=269.721
+[JINK] sign=1 next=127.283 dist=169.766 spd=320.187
+[JINK] sign=-1 next=130.099 dist=327.673 spd=309.127
+[JINK] sign=1 next=131.216 dist=195.411 spd=318.644
+[JINK] sign=-1 next=134.933 dist=67.7386 spd=283.302
+runner:local/env:0	num_steps=[11999] | total rewards=[1097.7308] | termination= [max time out]
+[seed 4] reward=  1097.73 ownHP=1.0000 tgtHP=0.1391 max time out
+total: 2
+[JINK] sign=-1 next=136.033 dist=2079.63 spd=295.391
+[JINK] sign=1 next=137.349 dist=2087.89 spd=340.714
+[JINK] sign=-1 next=140.766 dist=1563.47 spd=345.498
+[JINK] sign=1 next=142.483 dist=1089.63 spd=318.078
+[JINK] sign=-1 next=145.299 dist=343.464 spd=277.077
+[JINK] sign=1 next=146.416 dist=69.0297 spd=275.997
+[JINK] sign=-1 next=150.133 dist=197.287 spd=297.243
+[JINK] sign=-1 next=150.133 dist=69.1685 spd=290.864
+[JINK] sign=1 next=152.049 dist=523.964 spd=293.179
+[JINK] sign=-1 next=154.166 dist=787.444 spd=266.428
+[JINK] sign=-1 next=158.899 dist=605.608 spd=315.146
+[JINK] sign=-1 next=158.899 dist=352.686 spd=292.716
+[JINK] sign=1 next=160.616 dist=422.312 spd=295.854
+[JINK] sign=-1 next=163.433 dist=1410.93 spd=265.451
+[JINK] sign=1 next=164.549 dist=617.934 spd=263.445
+runner:local/env:0	num_steps=[10747] | total rewards=[883.6132] | termination= [target destroyed]
+[seed 5] reward=   883.61 ownHP=1.0000 tgtHP=-0.0075 target destroyed
+total: 2
+[JINK] sign=-1 next=165.899 dist=3557.81 spd=309.796
+[JINK] sign=-1 next=170.633 dist=3684.12 spd=363.092
+[JINK] sign=1 next=172.349 dist=1478.67 spd=309.641
+[JINK] sign=-1 next=175.166 dist=774.907 spd=327.132
+[JINK] sign=-1 next=175.166 dist=380.499 spd=297.912
+[JINK] sign=-1 next=179.999 dist=114.298 spd=316.998
+[JINK] sign=-1 next=179.999 dist=51.9861 spd=289.938
+[JINK] sign=1 next=181.916 dist=235.452 spd=305.474
+[JINK] sign=-1 next=184.033 dist=522.648 spd=320.393
+[JINK] sign=1 next=185.349 dist=328.394 spd=318.953
+[JINK] sign=-1 next=188.766 dist=215.022 spd=300.536
+[JINK] sign=-1 next=188.766 dist=64.7317 spd=277.129
+runner:local/env:0	num_steps=[9584] | total rewards=[963.2237] | termination= [target destroyed]
+[seed 6] reward=   963.22 ownHP=1.0000 tgtHP=-0.0051 target destroyed
+total: 2
+[JINK] sign=-1 next=192.533 dist=2396.4 spd=297.295
+[JINK] sign=1 next=193.849 dist=2556.63 spd=320.908
+[JINK] sign=-1 next=197.266 dist=2198.05 spd=363.658
+[JINK] sign=1 next=198.983 dist=733.096 spd=314.169
+[JINK] sign=-1 next=201.799 dist=284.956 spd=322.348
+[JINK] sign=-1 next=201.799 dist=96.9104 spd=294.157
+[JINK] sign=-1 next=206.633 dist=129.679 spd=313.654
+[JINK] sign=-1 next=206.633 dist=40.2243 spd=287.263
+[JINK] sign=1 next=208.549 dist=256.524 spd=312.831
+[JINK] sign=-1 next=210.666 dist=383.076 spd=316.844
+[JINK] sign=1 next=211.982 dist=171.52 spd=327.75
+[JINK] sign=-1 next=215.399 dist=72.8965 spd=303.211
+[JINK] sign=1 next=217.116 dist=191.895 spd=283.559
+[JINK] sign=-1 next=219.932 dist=279.355 spd=327.544
+[JINK] sign=-1 next=219.932 dist=52.5908 spd=301.771
+[JINK] sign=-1 next=224.766 dist=1741.15 spd=274.351
+[JINK] sign=-1 next=224.766 dist=966.462 spd=256.654
+runner:local/env:0	num_steps=[11999] | total rewards=[936.4024] | termination= [max time out]
+[seed 7] reward=   936.40 ownHP=1.0000 tgtHP=0.5272 max time out
+total: 2
+[JINK] sign=-1 next=225.866 dist=544.874 spd=309.744
+[JINK] sign=-1 next=230.599 dist=540.258 spd=358.719
+[JINK] sign=-1 next=230.599 dist=1262.97 spd=334.129
+[JINK] sign=1 next=232.316 dist=533.135 spd=287.418
+[JINK] sign=-1 next=235.132 dist=483.18 spd=266.223
+[JINK] sign=1 next=236.249 dist=146.561 spd=306.606
+[JINK] sign=-1 next=239.966 dist=44.9509 spd=292.099
+[JINK] sign=1 next=241.882 dist=463.559 spd=296.832
+[JINK] sign=-1 next=243.999 dist=931.088 spd=301.41
+[JINK] sign=1 next=245.316 dist=621.472 spd=282.942
+[JINK] sign=-1 next=248.732 dist=506.174 spd=312.677
+[JINK] sign=-1 next=248.732 dist=82.0616 spd=293.848
+[JINK] sign=1 next=250.449 dist=150.222 spd=324.869
+[JINK] sign=-1 next=253.266 dist=164.083 spd=293.231
+[JINK] sign=1 next=254.382 dist=161.968 spd=315.866
+runner:local/env:0	num_steps=[11432] | total rewards=[1065.0752] | termination= [target destroyed]
+[seed 8] reward=  1065.08 ownHP=1.0000 tgtHP=-0.0064 target destroyed
+total: 2
+[JINK] sign=-1 next=257.632 dist=1744.83 spd=296.317
+[JINK] sign=1 next=258.949 dist=3537.42 spd=336.341
+[JINK] sign=-1 next=262.366 dist=2165.08 spd=356.198
+[JINK] sign=1 next=264.082 dist=564.878 spd=322.142
+[JINK] sign=-1 next=266.899 dist=176.172 spd=317.409
+[JINK] sign=-1 next=266.899 dist=180.539 spd=291.893
+[JINK] sign=-1 next=271.732 dist=365.829 spd=309.641
+[JINK] sign=-1 next=271.732 dist=91.6604 spd=285.051
+[JINK] sign=1 next=273.649 dist=166.553 spd=319.519
+[JINK] sign=-1 next=275.766 dist=302.884 spd=310.773
+[JINK] sign=1 next=277.082 dist=118.424 spd=329.242
+[JINK] sign=-1 next=280.499 dist=1263.1 spd=287.829
+[JINK] sign=1 next=282.216 dist=1007.57 spd=277.283
+[JINK] sign=-1 next=285.032 dist=777.74 spd=310.722
+[JINK] sign=-1 next=285.032 dist=318.862 spd=284.948
+runner:local/env:0	num_steps=[11071] | total rewards=[1176.1168] | termination= [target destroyed]
+[seed 9] reward=  1176.12 ownHP=1.0000 tgtHP=-0.0123 target destroyed
+total: 2
+[JINK] sign=-1 next=288.399 dist=939.002 spd=297.089
+[JINK] sign=1 next=289.716 dist=3494.39 spd=335.929
+[JINK] sign=-1 next=293.132 dist=1554.41 spd=353.42
+[JINK] sign=1 next=294.849 dist=376.186 spd=322.297
+[JINK] sign=-1 next=297.665 dist=222.09 spd=314.014
+[JINK] sign=1 next=298.782 dist=152.973 spd=296.317
+[JINK] sign=-1 next=302.499 dist=150.139 spd=303.108
+[JINK] sign=-1 next=302.499 dist=257.293 spd=280.627
+[JINK] sign=1 next=304.415 dist=365.243 spd=325.126
+[JINK] sign=-1 next=306.532 dist=988.91 spd=311.699
+[JINK] sign=1 next=307.849 dist=964.404 spd=330.476
+[JINK] sign=-1 next=311.265 dist=639.562 spd=292.202
+[JINK] sign=1 next=312.982 dist=95.7376 spd=305.217
+[JINK] sign=-1 next=315.799 dist=117.643 spd=316.586
+[JINK] sign=1 next=316.915 dist=197.453 spd=290.504
+[JINK] sign=-1 next=320.632 dist=511.925 spd=305.423
+runner:local/env:0	num_steps=[11999] | total rewards=[1043.3695] | termination= [max time out]
+[seed 10] reward=  1043.37 ownHP=1.0000 tgtHP=0.0923 max time out
+total: 2
+[JINK] sign=-1 next=321.732 dist=2317.38 spd=298.118
+[JINK] sign=1 next=323.049 dist=279.427 spd=319.827
+[JINK] sign=-1 next=326.465 dist=2625.08 spd=348.996
+[JINK] sign=-1 next=326.465 dist=1816.73 spd=329.602
+[JINK] sign=-1 next=330.999 dist=553.071 spd=281.656
+[JINK] sign=-1 next=330.999 dist=128.333 spd=261.953
+[JINK] sign=-1 next=335.832 dist=213.787 spd=307.018
+[JINK] sign=-1 next=335.832 dist=128.488 spd=292.202
+[JINK] sign=1 next=337.749 dist=90.8486 spd=311.905
+[JINK] sign=-1 next=339.865 dist=394.119 spd=315.249
+[JINK] sign=1 next=341.182 dist=277.879 spd=316.02
+runner:local/env:0	num_steps=[7696] | total rewards=[748.6687] | termination= [target destroyed]
+[seed 11] reward=   748.67 ownHP=1.0000 tgtHP=-0.0108 target destroyed
+total: 2
+[JINK] sign=-1 next=343.115 dist=4261.93 spd=313.911
+[JINK] sign=-1 next=347.849 dist=1418.95 spd=381.766
+[JINK] sign=-1 next=347.849 dist=962.525 spd=307.326
+[JINK] sign=1 next=349.565 dist=699.546 spd=326.927
+[JINK] sign=-1 next=352.382 dist=780.216 spd=301.462
+[JINK] sign=1 next=353.499 dist=633.964 spd=317.615
+[JINK] sign=-1 next=357.215 dist=810.641 spd=288.549
+[JINK] sign=1 next=359.132 dist=1246.53 spd=255.625
+[JINK] sign=-1 next=361.249 dist=1177.72 spd=324.252
+[JINK] sign=1 next=362.565 dist=794.566 spd=290.144
+[JINK] sign=-1 next=365.982 dist=290.636 spd=316.175
+[JINK] sign=-1 next=365.982 dist=60.5429 spd=295.494
+[JINK] sign=1 next=367.699 dist=987.918 spd=299.764
+[JINK] sign=-1 next=370.515 dist=919.97 spd=269.206
+runner:local/env:0	num_steps=[10566] | total rewards=[1076.7932] | termination= [target destroyed]
+[seed 12] reward=  1076.79 ownHP=1.0000 tgtHP=-0.0016 target destroyed
+total: 2
+[JINK] sign=-1 next=372.582 dist=3467.74 spd=303.828
+[JINK] sign=1 next=373.899 dist=2720.68 spd=357.176
+[JINK] sign=-1 next=377.315 dist=2523.22 spd=349.665
+[JINK] sign=1 next=379.032 dist=400.198 spd=321.268
+[JINK] sign=-1 next=381.848 dist=116.538 spd=313.963
+[JINK] sign=1 next=382.965 dist=229.687 spd=298.118
+[JINK] sign=-1 next=386.682 dist=484.61 spd=301.822
+[JINK] sign=-1 next=386.682 dist=441.765 spd=280.73
+[JINK] sign=1 next=388.598 dist=107.689 spd=326.721
+[JINK] sign=-1 next=390.715 dist=90.6293 spd=311.956
+[JINK] sign=-1 next=395.448 dist=1102.54 spd=292.253
+[JINK] sign=-1 next=395.448 dist=911.693 spd=269.618
+[JINK] sign=1 next=397.165 dist=413.02 spd=291.585
+runner:local/env:0	num_steps=[9916] | total rewards=[1023.0207] | termination= [target destroyed]
+[seed 13] reward=  1023.02 ownHP=1.0000 tgtHP=-0.0016 target destroyed
+total: 2
+[JINK] sign=-1 next=400.915 dist=4098.72 spd=293.231
+[JINK] sign=1 next=402.232 dist=2175.01 spd=305.732
+[JINK] sign=-1 next=405.648 dist=2599.56 spd=348.687
+[JINK] sign=1 next=407.365 dist=1231.27 spd=334.283
+[JINK] sign=-1 next=410.182 dist=514.586 spd=282.839
+[JINK] sign=-1 next=410.182 dist=297.378 spd=264.937
+[JINK] sign=-1 next=415.015 dist=228.538 spd=305.835
+[JINK] sign=-1 next=415.015 dist=85.0638 spd=290.659
+[JINK] sign=1 next=416.932 dist=63.5355 spd=296.317
+[JINK] sign=-1 next=419.048 dist=1144.12 spd=265.348
+[JINK] sign=1 next=420.365 dist=700.692 spd=291.379
+[JINK] sign=-1 next=423.782 dist=367.36 spd=293.437
+[JINK] sign=1 next=425.498 dist=137.921 spd=294.568
+[JINK] sign=-1 next=428.315 dist=1762.62 spd=271.779
+[JINK] sign=-1 next=428.315 dist=1055.27 spd=252.23
+[JINK] sign=-1 next=433.148 dist=327.175 spd=305.32
+runner:local/env:0	num_steps=[11704] | total rewards=[1106.2710] | termination= [target destroyed]
+[seed 14] reward=  1106.27 ownHP=1.0000 tgtHP=-0.0102 target destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=15]
+SUMMARY dealt=14.3030 taken=0.0000 mean_reward=953.47
+tacview log saved (last episode)
+
+########## A_noevade vs AIP_v7.dll ##########
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[11999] | total rewards=[1299.9020] | termination= [max time out]
+[seed 0] reward=  1299.90 ownHP=1.0000 tgtHP=0.3503 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[1178.7721] | termination= [max time out]
+[seed 1] reward=  1178.77 ownHP=1.0000 tgtHP=0.7156 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[45.3197] | termination= [max time out]
+[seed 2] reward=    45.32 ownHP=1.0000 tgtHP=0.9640 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[471.4176] | termination= [max time out]
+[seed 3] reward=   471.42 ownHP=1.0000 tgtHP=0.5420 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[1219.2693] | termination= [max time out]
+[seed 4] reward=  1219.27 ownHP=1.0000 tgtHP=0.4880 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[993.3224] | termination= [max time out]
+[seed 5] reward=   993.32 ownHP=1.0000 tgtHP=0.7656 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[751.2311] | termination= [max time out]
+[seed 6] reward=   751.23 ownHP=1.0000 tgtHP=0.4795 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[145.5764] | termination= [max time out]
+[seed 7] reward=   145.58 ownHP=1.0000 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[1066.7341] | termination= [max time out]
+[seed 8] reward=  1066.73 ownHP=1.0000 tgtHP=0.9213 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[149.5882] | termination= [max time out]
+[seed 9] reward=   149.59 ownHP=1.0000 tgtHP=0.9542 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[272.7658] | termination= [max time out]
+[seed 10] reward=   272.77 ownHP=1.0000 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[1254.1349] | termination= [max time out]
+[seed 11] reward=  1254.13 ownHP=1.0000 tgtHP=0.4264 max time out
+total: 2
+runner:local/env:0	num_steps=[9975] | total rewards=[1105.6497] | termination= [target destroyed]
+[seed 12] reward=  1105.65 ownHP=1.0000 tgtHP=-0.0010 target destroyed
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[1040.8437] | termination= [max time out]
+[seed 13] reward=  1040.84 ownHP=1.0000 tgtHP=0.5407 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[1152.8305] | termination= [max time out]
+[seed 14] reward=  1152.83 ownHP=1.0000 tgtHP=0.2890 max time out
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=15]
+SUMMARY dealt=5.5644 taken=0.0000 mean_reward=809.82
+tacview log saved (last episode)
+
+########## A_noevade vs SEARCH ##########
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[10068] | total rewards=[305.8889] | termination= [target altitude below min]
+[seed 0] reward=   305.89 ownHP=1.0000 tgtHP=0.9432 target altitude below min
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[758.1447] | termination= [max time out]
+[seed 1] reward=   758.14 ownHP=1.0000 tgtHP=0.3262 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[564.7693] | termination= [max time out]
+[seed 2] reward=   564.77 ownHP=1.0000 tgtHP=0.9875 max time out
+total: 2
+runner:local/env:0	num_steps=[11090] | total rewards=[827.0467] | termination= [target destroyed]
+[seed 3] reward=   827.05 ownHP=1.0000 tgtHP=-0.0083 target destroyed
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[312.3510] | termination= [max time out]
+[seed 4] reward=   312.35 ownHP=1.0000 tgtHP=0.9944 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[776.6201] | termination= [max time out]
+[seed 5] reward=   776.62 ownHP=1.0000 tgtHP=0.7578 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[436.9437] | termination= [max time out]
+[seed 6] reward=   436.94 ownHP=1.0000 tgtHP=0.9887 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[344.6157] | termination= [max time out]
+[seed 7] reward=   344.62 ownHP=1.0000 tgtHP=0.9276 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[187.1236] | termination= [max time out]
+[seed 8] reward=   187.12 ownHP=1.0000 tgtHP=0.8250 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[555.3985] | termination= [max time out]
+[seed 9] reward=   555.40 ownHP=1.0000 tgtHP=0.7931 max time out
+total: 2
+runner:local/env:0	num_steps=[1836] | total rewards=[-44.4339] | termination= [target altitude below min]
+[seed 10] reward=   -44.43 ownHP=1.0000 tgtHP=1.0000 target altitude below min
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[274.4401] | termination= [max time out]
+[seed 11] reward=   274.44 ownHP=0.9626 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[453.9304] | termination= [max time out]
+[seed 12] reward=   453.93 ownHP=1.0000 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[446.3864] | termination= [max time out]
+[seed 13] reward=   446.39 ownHP=1.0000 tgtHP=0.5148 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[433.1919] | termination= [max time out]
+[seed 14] reward=   433.19 ownHP=1.0000 tgtHP=1.0000 max time out
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=15]
+SUMMARY dealt=2.9499 taken=0.0374 mean_reward=442.16
+tacview log saved (last episode)
+
+########## A_noevade vs STRAIGHT ##########
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[11999] | total rewards=[8.2021] | termination= [max time out]
+[seed 0] reward=     8.20 ownHP=1.0000 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[-119.9900] | termination= [max time out]
+[seed 1] reward=  -119.99 ownHP=1.0000 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[7476] | total rewards=[365.9781] | termination= [target destroyed]
+[seed 2] reward=   365.98 ownHP=1.0000 tgtHP=-0.0072 target destroyed
+total: 2
+runner:local/env:0	num_steps=[7651] | total rewards=[404.4130] | termination= [target destroyed]
+[seed 3] reward=   404.41 ownHP=1.0000 tgtHP=-0.0058 target destroyed
+total: 2
+runner:local/env:0	num_steps=[8307] | total rewards=[536.2641] | termination= [target destroyed]
+[seed 4] reward=   536.26 ownHP=1.0000 tgtHP=-0.0047 target destroyed
+total: 2
+runner:local/env:0	num_steps=[7559] | total rewards=[720.9263] | termination= [target destroyed]
+[seed 5] reward=   720.93 ownHP=1.0000 tgtHP=-0.0028 target destroyed
+total: 2
+runner:local/env:0	num_steps=[10033] | total rewards=[452.2186] | termination= [target destroyed]
+[seed 6] reward=   452.22 ownHP=1.0000 tgtHP=-0.0013 target destroyed
+total: 2
+runner:local/env:0	num_steps=[4994] | total rewards=[739.8923] | termination= [target destroyed]
+[seed 7] reward=   739.89 ownHP=1.0000 tgtHP=-0.0074 target destroyed
+total: 2
+runner:local/env:0	num_steps=[5778] | total rewards=[754.5134] | termination= [target destroyed]
+[seed 8] reward=   754.51 ownHP=1.0000 tgtHP=-0.0045 target destroyed
+total: 2
+runner:local/env:0	num_steps=[7957] | total rewards=[433.4775] | termination= [target destroyed]
+[seed 9] reward=   433.48 ownHP=1.0000 tgtHP=-0.0041 target destroyed
+total: 2
+runner:local/env:0	num_steps=[9023] | total rewards=[461.6312] | termination= [target destroyed]
+[seed 10] reward=   461.63 ownHP=1.0000 tgtHP=-0.0005 target destroyed
+total: 2
+runner:local/env:0	num_steps=[4460] | total rewards=[727.7364] | termination= [target destroyed]
+[seed 11] reward=   727.74 ownHP=1.0000 tgtHP=-0.0013 target destroyed
+total: 2
+runner:local/env:0	num_steps=[5943] | total rewards=[577.6904] | termination= [target destroyed]
+[seed 12] reward=   577.69 ownHP=1.0000 tgtHP=-0.0010 target destroyed
+total: 2
+runner:local/env:0	num_steps=[4502] | total rewards=[419.0584] | termination= [target destroyed]
+[seed 13] reward=   419.06 ownHP=1.0000 tgtHP=-0.0008 target destroyed
+total: 2
+runner:local/env:0	num_steps=[3453] | total rewards=[464.6972] | termination= [target destroyed]
+[seed 14] reward=   464.70 ownHP=1.0000 tgtHP=-0.0026 target destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=15]
+SUMMARY dealt=13.0440 taken=0.0000 mean_reward=463.11
+tacview log saved (last episode)
+
+########## A_noevade vs AIP_jh2.dll ##########
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[6798] | total rewards=[632.3302] | termination= [target destroyed]
+[seed 0] reward=   632.33 ownHP=1.0000 tgtHP=-0.0036 target destroyed
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[282.9097] | termination= [max time out]
+[seed 1] reward=   282.91 ownHP=1.0000 tgtHP=0.9615 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[1410.8975] | termination= [max time out]
+[seed 2] reward=  1410.90 ownHP=1.0000 tgtHP=0.0613 max time out
+total: 2
+runner:local/env:0	num_steps=[11615] | total rewards=[1117.3660] | termination= [target altitude below min]
+[seed 3] reward=  1117.37 ownHP=1.0000 tgtHP=0.2202 target altitude below min
+total: 2
+runner:local/env:0	num_steps=[5464] | total rewards=[599.1010] | termination= [target destroyed]
+[seed 4] reward=   599.10 ownHP=1.0000 tgtHP=-0.0037 target destroyed
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[-127.6402] | termination= [max time out]
+[seed 5] reward=  -127.64 ownHP=0.5457 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[807.3357] | termination= [max time out]
+[seed 6] reward=   807.34 ownHP=1.0000 tgtHP=0.1190 max time out
+total: 2
+runner:local/env:0	num_steps=[8335] | total rewards=[793.0101] | termination= [target altitude below min]
+[seed 7] reward=   793.01 ownHP=1.0000 tgtHP=0.3555 target altitude below min
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[390.8460] | termination= [max time out]
+[seed 8] reward=   390.85 ownHP=1.0000 tgtHP=0.3467 max time out
+total: 2
+runner:local/env:0	num_steps=[9910] | total rewards=[1223.4946] | termination= [target destroyed]
+[seed 9] reward=  1223.49 ownHP=1.0000 tgtHP=-0.0016 target destroyed
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[819.3704] | termination= [max time out]
+[seed 10] reward=   819.37 ownHP=1.0000 tgtHP=0.7865 max time out
+total: 2
+runner:local/env:0	num_steps=[9298] | total rewards=[601.5616] | termination= [target destroyed]
+[seed 11] reward=   601.56 ownHP=1.0000 tgtHP=-0.0015 target destroyed
+total: 2
+runner:local/env:0	num_steps=[8874] | total rewards=[793.1535] | termination= [target destroyed]
+[seed 12] reward=   793.15 ownHP=1.0000 tgtHP=-0.0014 target destroyed
+total: 2
+runner:local/env:0	num_steps=[11982] | total rewards=[1114.1359] | termination= [target destroyed]
+[seed 13] reward=  1114.14 ownHP=1.0000 tgtHP=-0.0008 target destroyed
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[1075.2947] | termination= [max time out]
+[seed 14] reward=  1075.29 ownHP=1.0000 tgtHP=0.4554 max time out
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=15]
+SUMMARY dealt=10.7064 taken=0.4543 mean_reward=768.88
+tacview log saved (last episode)
+
+########## A_noevade vs AIP_kwon.dll ##########
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[11703] | total rewards=[1220.4677] | termination= [target destroyed]
+[seed 0] reward=  1220.47 ownHP=1.0000 tgtHP=-0.0008 target destroyed
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[683.4633] | termination= [max time out]
+[seed 1] reward=   683.46 ownHP=1.0000 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[-28.3940] | termination= [max time out]
+[seed 2] reward=   -28.39 ownHP=1.0000 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[29.6497] | termination= [max time out]
+[seed 3] reward=    29.65 ownHP=1.0000 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[1058.4154] | termination= [max time out]
+[seed 4] reward=  1058.42 ownHP=1.0000 tgtHP=0.2617 max time out
+total: 2
+runner:local/env:0	num_steps=[9918] | total rewards=[1071.2834] | termination= [target destroyed]
+[seed 5] reward=  1071.28 ownHP=1.0000 tgtHP=-0.0067 target destroyed
+total: 2
+runner:local/env:0	num_steps=[5334] | total rewards=[731.5825] | termination= [target destroyed]
+[seed 6] reward=   731.58 ownHP=1.0000 tgtHP=-0.0006 target destroyed
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[1402.3861] | termination= [max time out]
+[seed 7] reward=  1402.39 ownHP=1.0000 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[7460] | total rewards=[694.1363] | termination= [target destroyed]
+[seed 8] reward=   694.14 ownHP=1.0000 tgtHP=-0.0025 target destroyed
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[129.4212] | termination= [max time out]
+[seed 9] reward=   129.42 ownHP=1.0000 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[-98.9058] | termination= [max time out]
+[seed 10] reward=   -98.91 ownHP=1.0000 tgtHP=1.0000 max time out
+total: 2
+runner:local/env:0	num_steps=[5886] | total rewards=[322.6806] | termination= [target destroyed]
+[seed 11] reward=   322.68 ownHP=1.0000 tgtHP=-0.0032 target destroyed
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[1146.3481] | termination= [max time out]
+[seed 12] reward=  1146.35 ownHP=1.0000 tgtHP=0.5607 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[928.1215] | termination= [max time out]
+[seed 13] reward=   928.12 ownHP=1.0000 tgtHP=0.8291 max time out
+total: 2
+runner:local/env:0	num_steps=[3533] | total rewards=[343.2981] | termination= [target destroyed]
+[seed 14] reward=   343.30 ownHP=1.0000 tgtHP=-0.0062 target destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=15]
+SUMMARY dealt=7.3686 taken=0.0000 mean_reward=642.26
+tacview log saved (last episode)
+
+########## A_noevade vs AIP_junghwan.dll ##########
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[WOBBLE_FIRE] team=2 losTgt=168.67
+[WOBBLE_FIRE] team=2 losTgt=168.64
+[WOBBLE_FIRE] team=2 losTgt=168.53
+[WOBBLE_FIRE] team=2 losTgt=168.47
+[WOBBLE_FIRE] team=2 losTgt=168.44
+[WOBBLE_FIRE] team=2 losTgt=168.43
+[WOBBLE_FIRE] team=2 losTgt=168.45
+[WOBBLE_FIRE] team=2 losTgt=168.38
+[WOBBLE_FIRE] team=2 losTgt=167.90
+[WOBBLE_FIRE] team=2 losTgt=166.70
+[WOBBLE_FIRE] team=2 losTgt=164.68
+[WOBBLE_FIRE] team=2 losTgt=162.44
+[WOBBLE_FIRE] team=2 losTgt=160.68
+[WOBBLE_FIRE] team=2 losTgt=159.47
+[WOBBLE_FIRE] team=2 losTgt=158.48
+[WOBBLE_FIRE] team=2 losTgt=157.41
+[WOBBLE_FIRE] team=2 losTgt=156.38
+[WOBBLE_FIRE] team=2 losTgt=155.42
+[WOBBLE_FIRE] team=2 losTgt=154.51
+[WOBBLE_FIRE] team=2 losTgt=153.63
+[WOBBLE_FIRE] team=2 losTgt=152.80
+[WOBBLE_FIRE] team=2 losTgt=152.02
+[WOBBLE_FIRE] team=2 losTgt=151.27
+[WOBBLE_FIRE] team=2 losTgt=150.55
+[WOBBLE_FIRE] team=2 losTgt=149.85
+[WOBBLE_FIRE] team=2 losTgt=149.15
+[WOBBLE_FIRE] team=2 losTgt=148.44
+[WOBBLE_FIRE] team=2 losTgt=147.73
+[WOBBLE_FIRE] team=2 losTgt=147.02
+[WOBBLE_FIRE] team=2 losTgt=146.31
+[WOBBLE_FIRE] team=2 losTgt=145.59
+[WOBBLE_FIRE] team=2 losTgt=144.87
+[WOBBLE_FIRE] team=2 losTgt=144.14
+[WOBBLE_FIRE] team=2 losTgt=143.42
+[WOBBLE_FIRE] team=2 losTgt=142.69
+[WOBBLE_FIRE] team=2 losTgt=141.95
+[WOBBLE_FIRE] team=2 losTgt=141.21
+[WOBBLE_FIRE] team=2 losTgt=140.46
+[WOBBLE_FIRE] team=2 losTgt=139.70
+[WOBBLE_FIRE] team=2 losTgt=138.95
+[WOBBLE_FIRE] team=2 losTgt=138.21
+[WOBBLE_FIRE] team=2 losTgt=137.47
+[WOBBLE_FIRE] team=2 losTgt=136.73
+[WOBBLE_FIRE] team=2 losTgt=135.99
+[WOBBLE_FIRE] team=2 losTgt=135.26
+[WOBBLE_FIRE] team=2 losTgt=134.53
+[WOBBLE_FIRE] team=2 losTgt=133.80
+[WOBBLE_FIRE] team=2 losTgt=133.08
+[WOBBLE_FIRE] team=2 losTgt=132.36
+[WOBBLE_FIRE] team=2 losTgt=131.64
+[WOBBLE_FIRE] team=2 losTgt=130.93
+[WOBBLE_FIRE] team=2 losTgt=130.21
+[WOBBLE_FIRE] team=2 losTgt=129.51
+[WOBBLE_FIRE] team=2 losTgt=128.80
+[WOBBLE_FIRE] team=2 losTgt=128.10
+[WOBBLE_FIRE] team=2 losTgt=127.38
+[WOBBLE_FIRE] team=2 losTgt=126.66
+[WOBBLE_FIRE] team=2 losTgt=125.92
+[WOBBLE_FIRE] team=2 losTgt=125.18
+[WOBBLE_FIRE] team=2 losTgt=124.44
+[WOBBLE_FIRE] team=2 losTgt=123.69
+[WOBBLE_FIRE] team=2 losTgt=122.95
+[WOBBLE_FIRE] team=2 losTgt=122.20
+[WOBBLE_FIRE] team=2 losTgt=121.45
+[WOBBLE_FIRE] team=2 losTgt=120.70
+[WOBBLE_FIRE] team=2 losTgt=119.95
+[WOBBLE_FIRE] team=2 losTgt=119.20
+[WOBBLE_FIRE] team=2 losTgt=118.44
+[WOBBLE_FIRE] team=2 losTgt=117.69
+[WOBBLE_FIRE] team=2 losTgt=116.93
+[WOBBLE_FIRE] team=2 losTgt=116.17
+[WOBBLE_FIRE] team=2 losTgt=115.41
+[WOBBLE_FIRE] team=2 losTgt=114.65
+[WOBBLE_FIRE] team=2 losTgt=113.89
+[WOBBLE_FIRE] team=2 losTgt=113.12
+[WOBBLE_FIRE] team=2 losTgt=112.35
+[WOBBLE_FIRE] team=2 losTgt=111.59
+[WOBBLE_FIRE] team=2 losTgt=110.82
+[WOBBLE_FIRE] team=2 losTgt=110.04
+[WOBBLE_FIRE] team=2 losTgt=109.27
+[WOBBLE_FIRE] team=2 losTgt=108.50
+[WOBBLE_FIRE] team=2 losTgt=107.72
+[WOBBLE_FIRE] team=2 losTgt=106.94
+[WOBBLE_FIRE] team=2 losTgt=106.16
+[WOBBLE_FIRE] team=2 losTgt=105.38
+[WOBBLE_FIRE] team=2 losTgt=104.60
+[WOBBLE_FIRE] team=2 losTgt=103.81
+[WOBBLE_FIRE] team=2 losTgt=103.02
+[WOBBLE_FIRE] team=2 losTgt=102.23
+[WOBBLE_FIRE] team=2 losTgt=101.44
+[WOBBLE_FIRE] team=2 losTgt=100.65
+[WOBBLE_FIRE] team=2 losTgt=99.85
+[WOBBLE_FIRE] team=2 losTgt=99.05
+[WOBBLE_FIRE] team=2 losTgt=98.25
+[WOBBLE_FIRE] team=2 losTgt=97.45
+[WOBBLE_FIRE] team=2 losTgt=96.65
+[WOBBLE_FIRE] team=2 losTgt=95.84
+[WOBBLE_FIRE] team=2 losTgt=95.03
+[WOBBLE_FIRE] team=2 losTgt=94.22
+[WOBBLE_FIRE] team=2 losTgt=93.40
+[WOBBLE_FIRE] team=2 losTgt=92.58
+[WOBBLE_FIRE] team=2 losTgt=91.76
+[WOBBLE_FIRE] team=2 losTgt=90.94
+[WOBBLE_FIRE] team=2 losTgt=90.11
+[WOBBLE_FIRE] team=2 losTgt=89.28
+[WOBBLE_FIRE] team=2 losTgt=88.45
+[WOBBLE_FIRE] team=2 losTgt=87.62
+[WOBBLE_FIRE] team=2 losTgt=86.78
+[WOBBLE_FIRE] team=2 losTgt=85.94
+[WOBBLE_FIRE] team=2 losTgt=85.10
+[WOBBLE_FIRE] team=2 losTgt=84.25
+[WOBBLE_FIRE] team=2 losTgt=83.40
+[WOBBLE_FIRE] team=2 losTgt=82.55
+[WOBBLE_FIRE] team=2 losTgt=81.69
+[WOBBLE_FIRE] team=2 losTgt=80.83
+[WOBBLE_FIRE] team=2 losTgt=79.96
+[WOBBLE_FIRE] team=2 losTgt=79.10
+[WOBBLE_FIRE] team=2 losTgt=78.23
+[WOBBLE_FIRE] team=2 losTgt=77.35
+[WOBBLE_FIRE] team=2 losTgt=76.48
+[WOBBLE_FIRE] team=2 losTgt=75.59
+[WOBBLE_FIRE] team=2 losTgt=74.71
+[WOBBLE_FIRE] team=2 losTgt=73.82
+[WOBBLE_FIRE] team=2 losTgt=72.92
+[WOBBLE_FIRE] team=2 losTgt=72.24
+[WOBBLE_FIRE] team=2 losTgt=71.55
+[WOBBLE_FIRE] team=2 losTgt=70.65
+[WOBBLE_FIRE] team=2 losTgt=69.61
+[WOBBLE_FIRE] team=2 losTgt=68.55
+[WOBBLE_FIRE] team=2 losTgt=67.50
+[WOBBLE_FIRE] team=2 losTgt=66.43
+[WOBBLE_FIRE] team=2 losTgt=65.35
+[WOBBLE_FIRE] team=2 losTgt=64.28
+[WOBBLE_FIRE] team=2 losTgt=63.20
+[WOBBLE_FIRE] team=2 losTgt=62.12
+[WOBBLE_FIRE] team=2 losTgt=61.02
+[WOBBLE_FIRE] team=2 losTgt=59.91
+[WOBBLE_FIRE] team=2 losTgt=58.79
+[WOBBLE_FIRE] team=2 losTgt=57.66
+[WOBBLE_FIRE] team=2 losTgt=56.51
+[WOBBLE_FIRE] team=2 losTgt=55.34
+[WOBBLE_FIRE] team=2 losTgt=54.15
+[WOBBLE_FIRE] team=2 losTgt=52.95
+[WOBBLE_FIRE] team=2 losTgt=51.72
+[WOBBLE_FIRE] team=2 losTgt=50.47
+[WOBBLE_FIRE] team=2 losTgt=49.20
+[WOBBLE_FIRE] team=2 losTgt=47.90
+[WOBBLE_FIRE] team=2 losTgt=46.57
+[WOBBLE_FIRE] team=2 losTgt=45.22
+[WOBBLE_FIRE] team=2 losTgt=47.73
+[WOBBLE_FIRE] team=2 losTgt=55.82
+[WOBBLE_FIRE] team=2 losTgt=63.98
+[WOBBLE_FIRE] team=2 losTgt=71.95
+[WOBBLE_FIRE] team=2 losTgt=79.46
+[WOBBLE_FIRE] team=2 losTgt=86.39
+[WOBBLE_FIRE] team=2 losTgt=92.49
+[WOBBLE_FIRE] team=2 losTgt=97.46
+[WOBBLE_FIRE] team=2 losTgt=100.99
+[WOBBLE_FIRE] team=2 losTgt=103.42
+[WOBBLE_FIRE] team=2 losTgt=105.26
+[WOBBLE_FIRE] team=2 losTgt=106.96
+[WOBBLE_FIRE] team=2 losTgt=108.45
+[WOBBLE_FIRE] team=2 losTgt=109.72
+[WOBBLE_FIRE] team=2 losTgt=110.79
+[WOBBLE_FIRE] team=2 losTgt=111.68
+[WOBBLE_FIRE] team=2 losTgt=112.41
+[WOBBLE_FIRE] team=2 losTgt=112.99
+[WOBBLE_FIRE] team=2 losTgt=113.45
+[WOBBLE_FIRE] team=2 losTgt=113.79
+[WOBBLE_FIRE] team=2 losTgt=114.04
+[WOBBLE_FIRE] team=2 losTgt=114.20
+[WOBBLE_FIRE] team=2 losTgt=114.28
+[WOBBLE_FIRE] team=2 losTgt=114.29
+[WOBBLE_FIRE] team=2 losTgt=114.24
+[WOBBLE_FIRE] team=2 losTgt=114.14
+[WOBBLE_FIRE] team=2 losTgt=114.00
+[WOBBLE_FIRE] team=2 losTgt=113.81
+[WOBBLE_FIRE] team=2 losTgt=113.58
+[WOBBLE_FIRE] team=2 losTgt=113.32
+[WOBBLE_FIRE] team=2 losTgt=113.03
+[WOBBLE_FIRE] team=2 losTgt=112.71
+[WOBBLE_FIRE] team=2 losTgt=112.35
+[WOBBLE_FIRE] team=2 losTgt=111.98
+[WOBBLE_FIRE] team=2 losTgt=111.58
+[WOBBLE_FIRE] team=2 losTgt=111.16
+[WOBBLE_FIRE] team=2 losTgt=110.73
+[WOBBLE_FIRE] team=2 losTgt=110.27
+[WOBBLE_FIRE] team=2 losTgt=109.80
+[WOBBLE_FIRE] team=2 losTgt=109.31
+[WOBBLE_FIRE] team=2 losTgt=108.80
+[WOBBLE_FIRE] team=2 losTgt=108.28
+[WOBBLE_FIRE] team=2 losTgt=107.74
+[WOBBLE_FIRE] team=2 losTgt=107.19
+[WOBBLE_FIRE] team=2 losTgt=106.63
+[WOBBLE_FIRE] team=2 losTgt=106.05
+[WOBBLE_FIRE] team=2 losTgt=105.46
+[WOBBLE_FIRE] team=2 losTgt=104.87
+[WOBBLE_FIRE] team=2 losTgt=104.26
+[WOBBLE_FIRE] team=2 losTgt=103.64
+[WOBBLE_FIRE] team=2 losTgt=103.01
+[WOBBLE_FIRE] team=2 losTgt=102.38
+[WOBBLE_FIRE] team=2 losTgt=101.73
+[WOBBLE_FIRE] team=2 losTgt=101.08
+[WOBBLE_FIRE] team=2 losTgt=100.42
+[WOBBLE_FIRE] team=2 losTgt=99.75
+[WOBBLE_FIRE] team=2 losTgt=99.07
+[WOBBLE_FIRE] team=2 losTgt=98.38
+[WOBBLE_FIRE] team=2 losTgt=98.72
+[WOBBLE_FIRE] team=2 losTgt=101.34
+[WOBBLE_FIRE] team=2 losTgt=102.35
+[WOBBLE_FIRE] team=2 losTgt=103.15
+[WOBBLE_FIRE] team=2 losTgt=103.15
+[WOBBLE_FIRE] team=2 losTgt=103.08
+[WOBBLE_FIRE] team=2 losTgt=102.97
+[WOBBLE_FIRE] team=2 losTgt=103.14
+[WOBBLE_FIRE] team=2 losTgt=103.56
+[WOBBLE_FIRE] team=2 losTgt=104.02
+[WOBBLE_FIRE] team=2 losTgt=104.56
+[WOBBLE_FIRE] team=2 losTgt=105.12
+[WOBBLE_FIRE] team=2 losTgt=105.66
+[WOBBLE_FIRE] team=2 losTgt=106.17
+[WOBBLE_FIRE] team=2 losTgt=106.63
+[WOBBLE_FIRE] team=2 losTgt=107.05
+[WOBBLE_FIRE] team=2 losTgt=107.43
+[WOBBLE_FIRE] team=2 losTgt=107.76
+[WOBBLE_FIRE] team=2 losTgt=108.05
+[WOBBLE_FIRE] team=2 losTgt=108.29
+[WOBBLE_FIRE] team=2 losTgt=108.49
+[WOBBLE_FIRE] team=2 losTgt=108.64
+[WOBBLE_FIRE] team=2 losTgt=108.74
+[WOBBLE_FIRE] team=2 losTgt=108.79
+[WOBBLE_FIRE] team=2 losTgt=108.79
+[WOBBLE_FIRE] team=2 losTgt=108.74
+[WOBBLE_FIRE] team=2 losTgt=108.66
+[WOBBLE_FIRE] team=2 losTgt=108.53
+[WOBBLE_FIRE] team=2 losTgt=108.37
+[WOBBLE_FIRE] team=2 losTgt=108.17
+[WOBBLE_FIRE] team=2 losTgt=107.98
+[WOBBLE_FIRE] team=2 losTgt=108.14
+[WOBBLE_FIRE] team=2 losTgt=107.26
+[WOBBLE_FIRE] team=2 losTgt=106.12
+[WOBBLE_FIRE] team=2 losTgt=105.60
+[WOBBLE_FIRE] team=2 losTgt=104.97
+[WOBBLE_FIRE] team=2 losTgt=103.92
+[WOBBLE_FIRE] team=2 losTgt=102.32
+[WOBBLE_FIRE] team=2 losTgt=100.57
+[WOBBLE_FIRE] team=2 losTgt=98.88
+[WOBBLE_FIRE] team=2 losTgt=97.25
+[WOBBLE_FIRE] team=2 losTgt=95.67
+[WOBBLE_FIRE] team=2 losTgt=94.11
+[WOBBLE_FIRE] team=2 losTgt=92.57
+[WOBBLE_FIRE] team=2 losTgt=91.06
+[WOBBLE_FIRE] team=2 losTgt=89.57
+[WOBBLE_FIRE] team=2 losTgt=88.10
+[WOBBLE_FIRE] team=2 losTgt=86.64
+[WOBBLE_FIRE] team=2 losTgt=85.19
+[WOBBLE_FIRE] team=2 losTgt=83.75
+[WOBBLE_FIRE] team=2 losTgt=82.32
+[WOBBLE_FIRE] team=2 losTgt=80.88
+[WOBBLE_FIRE] team=2 losTgt=79.45
+[WOBBLE_FIRE] team=2 losTgt=78.03
+[WOBBLE_FIRE] team=2 losTgt=76.60
+[WOBBLE_FIRE] team=2 losTgt=75.18
+[WOBBLE_FIRE] team=2 losTgt=73.75
+[WOBBLE_FIRE] team=2 losTgt=72.32
+[WOBBLE_FIRE] team=2 losTgt=70.89
+[WOBBLE_FIRE] team=2 losTgt=69.45
+[WOBBLE_FIRE] team=2 losTgt=68.01
+[WOBBLE_FIRE] team=2 losTgt=66.58
+[WOBBLE_FIRE] team=2 losTgt=65.14
+[WOBBLE_FIRE] team=2 losTgt=63.69
+[WOBBLE_FIRE] team=2 losTgt=62.25
+[WOBBLE_FIRE] team=2 losTgt=60.80
+[WOBBLE_FIRE] team=2 losTgt=59.35
+[WOBBLE_FIRE] team=2 losTgt=57.90
+[WOBBLE_FIRE] team=2 losTgt=56.45
+[WOBBLE_FIRE] team=2 losTgt=54.99
+[WOBBLE_FIRE] team=2 losTgt=53.52
+[WOBBLE_FIRE] team=2 losTgt=52.05
+[WOBBLE_FIRE] team=2 losTgt=50.58
+[WOBBLE_FIRE] team=2 losTgt=49.10
+[WOBBLE_FIRE] team=2 losTgt=47.58
+[WOBBLE_FIRE] team=2 losTgt=46.07
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[8169] | total rewards=[873.6941] | termination= [target destroyed]
+[seed 0] reward=   873.69 ownHP=1.0000 tgtHP=-0.0006 target destroyed
+total: 2
+[WOBBLE_FIRE] team=2 losTgt=98.94
+[WOBBLE_FIRE] team=2 losTgt=99.02
+[WOBBLE_FIRE] team=2 losTgt=99.01
+[WOBBLE_FIRE] team=2 losTgt=99.01
+[WOBBLE_FIRE] team=2 losTgt=98.93
+[WOBBLE_FIRE] team=2 losTgt=98.67
+[WOBBLE_FIRE] team=2 losTgt=98.10
+[WOBBLE_FIRE] team=2 losTgt=97.16
+[WOBBLE_FIRE] team=2 losTgt=95.78
+[WOBBLE_FIRE] team=2 losTgt=94.20
+[WOBBLE_FIRE] team=2 losTgt=92.76
+[WOBBLE_FIRE] team=2 losTgt=91.56
+[WOBBLE_FIRE] team=2 losTgt=90.51
+[WOBBLE_FIRE] team=2 losTgt=89.56
+[WOBBLE_FIRE] team=2 losTgt=88.67
+[WOBBLE_FIRE] team=2 losTgt=87.84
+[WOBBLE_FIRE] team=2 losTgt=87.03
+[WOBBLE_FIRE] team=2 losTgt=86.26
+[WOBBLE_FIRE] team=2 losTgt=85.51
+[WOBBLE_FIRE] team=2 losTgt=84.79
+[WOBBLE_FIRE] team=2 losTgt=84.08
+[WOBBLE_FIRE] team=2 losTgt=83.38
+[WOBBLE_FIRE] team=2 losTgt=82.69
+[WOBBLE_FIRE] team=2 losTgt=82.01
+[WOBBLE_FIRE] team=2 losTgt=81.33
+[WOBBLE_FIRE] team=2 losTgt=80.65
+[WOBBLE_FIRE] team=2 losTgt=79.95
+[WOBBLE_FIRE] team=2 losTgt=79.25
+[WOBBLE_FIRE] team=2 losTgt=78.55
+[WOBBLE_FIRE] team=2 losTgt=77.85
+[WOBBLE_FIRE] team=2 losTgt=77.15
+[WOBBLE_FIRE] team=2 losTgt=76.45
+[WOBBLE_FIRE] team=2 losTgt=75.75
+[WOBBLE_FIRE] team=2 losTgt=75.05
+[WOBBLE_FIRE] team=2 losTgt=74.34
+[WOBBLE_FIRE] team=2 losTgt=73.63
+[WOBBLE_FIRE] team=2 losTgt=72.92
+[WOBBLE_FIRE] team=2 losTgt=72.20
+[WOBBLE_FIRE] team=2 losTgt=71.48
+[WOBBLE_FIRE] team=2 losTgt=70.76
+[WOBBLE_FIRE] team=2 losTgt=70.04
+[WOBBLE_FIRE] team=2 losTgt=69.31
+[WOBBLE_FIRE] team=2 losTgt=68.57
+[WOBBLE_FIRE] team=2 losTgt=67.84
+[WOBBLE_FIRE] team=2 losTgt=67.10
+[WOBBLE_FIRE] team=2 losTgt=66.36
+[WOBBLE_FIRE] team=2 losTgt=65.62
+[WOBBLE_FIRE] team=2 losTgt=64.87
+[WOBBLE_FIRE] team=2 losTgt=64.12
+[WOBBLE_FIRE] team=2 losTgt=63.36
+[WOBBLE_FIRE] team=2 losTgt=62.61
+[WOBBLE_FIRE] team=2 losTgt=61.85
+[WOBBLE_FIRE] team=2 losTgt=61.09
+[WOBBLE_FIRE] team=2 losTgt=60.32
+[WOBBLE_FIRE] team=2 losTgt=59.55
+[WOBBLE_FIRE] team=2 losTgt=58.78
+[WOBBLE_FIRE] team=2 losTgt=58.00
+[WOBBLE_FIRE] team=2 losTgt=57.22
+[WOBBLE_FIRE] team=2 losTgt=56.44
+[WOBBLE_FIRE] team=2 losTgt=55.65
+[WOBBLE_FIRE] team=2 losTgt=54.85
+[WOBBLE_FIRE] team=2 losTgt=54.06
+[WOBBLE_FIRE] team=2 losTgt=53.26
+[WOBBLE_FIRE] team=2 losTgt=52.45
+[WOBBLE_FIRE] team=2 losTgt=51.64
+[WOBBLE_FIRE] team=2 losTgt=50.83
+[WOBBLE_FIRE] team=2 losTgt=50.01
+[WOBBLE_FIRE] team=2 losTgt=49.19
+[WOBBLE_FIRE] team=2 losTgt=48.36
+[WOBBLE_FIRE] team=2 losTgt=47.52
+[WOBBLE_FIRE] team=2 losTgt=46.68
+[WOBBLE_FIRE] team=2 losTgt=45.83
+[WOBBLE_FIRE] team=2 losTgt=47.38
+[WOBBLE_FIRE] team=2 losTgt=50.13
+[WOBBLE_FIRE] team=2 losTgt=52.82
+[WOBBLE_FIRE] team=2 losTgt=55.45
+[WOBBLE_FIRE] team=2 losTgt=57.98
+[WOBBLE_FIRE] team=2 losTgt=60.41
+[WOBBLE_FIRE] team=2 losTgt=62.71
+[WOBBLE_FIRE] team=2 losTgt=64.88
+[WOBBLE_FIRE] team=2 losTgt=66.91
+[WOBBLE_FIRE] team=2 losTgt=68.78
+[WOBBLE_FIRE] team=2 losTgt=70.51
+[WOBBLE_FIRE] team=2 losTgt=72.06
+[WOBBLE_FIRE] team=2 losTgt=73.45
+[WOBBLE_FIRE] team=2 losTgt=74.67
+[WOBBLE_FIRE] team=2 losTgt=75.72
+[WOBBLE_FIRE] team=2 losTgt=76.62
+[WOBBLE_FIRE] team=2 losTgt=77.38
+[WOBBLE_FIRE] team=2 losTgt=78.01
+[WOBBLE_FIRE] team=2 losTgt=78.52
+[WOBBLE_FIRE] team=2 losTgt=78.91
+[WOBBLE_FIRE] team=2 losTgt=79.19
+[WOBBLE_FIRE] team=2 losTgt=79.37
+[WOBBLE_FIRE] team=2 losTgt=79.45
+[WOBBLE_FIRE] team=2 losTgt=79.44
+[WOBBLE_FIRE] team=2 losTgt=79.36
+[WOBBLE_FIRE] team=2 losTgt=79.19
+[WOBBLE_FIRE] team=2 losTgt=78.96
+[WOBBLE_FIRE] team=2 losTgt=78.67
+[WOBBLE_FIRE] team=2 losTgt=78.31
+[WOBBLE_FIRE] team=2 losTgt=77.90
+[WOBBLE_FIRE] team=2 losTgt=77.43
+[WOBBLE_FIRE] team=2 losTgt=76.92
+[WOBBLE_FIRE] team=2 losTgt=76.35
+[WOBBLE_FIRE] team=2 losTgt=75.75
+[WOBBLE_FIRE] team=2 losTgt=75.10
+[WOBBLE_FIRE] team=2 losTgt=74.41
+[WOBBLE_FIRE] team=2 losTgt=73.69
+[WOBBLE_FIRE] team=2 losTgt=72.93
+[WOBBLE_FIRE] team=2 losTgt=72.14
+[WOBBLE_FIRE] team=2 losTgt=71.32
+[WOBBLE_FIRE] team=2 losTgt=70.47
+[WOBBLE_FIRE] team=2 losTgt=69.59
+[WOBBLE_FIRE] team=2 losTgt=68.69
+[WOBBLE_FIRE] team=2 losTgt=67.75
+[WOBBLE_FIRE] team=2 losTgt=66.79
+[WOBBLE_FIRE] team=2 losTgt=65.81
+[WOBBLE_FIRE] team=2 losTgt=64.80
+[WOBBLE_FIRE] team=2 losTgt=63.77
+[WOBBLE_FIRE] team=2 losTgt=62.72
+[WOBBLE_FIRE] team=2 losTgt=61.64
+[WOBBLE_FIRE] team=2 losTgt=60.54
+[WOBBLE_FIRE] team=2 losTgt=59.42
+[WOBBLE_FIRE] team=2 losTgt=58.28
+[WOBBLE_FIRE] team=2 losTgt=57.12
+[WOBBLE_FIRE] team=2 losTgt=55.93
+[WOBBLE_FIRE] team=2 losTgt=54.73
+[WOBBLE_FIRE] team=2 losTgt=53.50
+[WOBBLE_FIRE] team=2 losTgt=52.25
+[WOBBLE_FIRE] team=2 losTgt=50.98
+[WOBBLE_FIRE] team=2 losTgt=49.69
+[WOBBLE_FIRE] team=2 losTgt=48.38
+[WOBBLE_FIRE] team=2 losTgt=47.04
+[WOBBLE_FIRE] team=2 losTgt=45.68
+[WOBBLE_FIRE] team=2 losTgt=45.18
+[WOBBLE_FIRE] team=2 losTgt=45.79
+[WOBBLE_FIRE] team=2 losTgt=46.38
+[WOBBLE_FIRE] team=2 losTgt=46.94
+[WOBBLE_FIRE] team=2 losTgt=47.47
+[WOBBLE_FIRE] team=2 losTgt=47.98
+[WOBBLE_FIRE] team=2 losTgt=48.47
+[WOBBLE_FIRE] team=2 losTgt=48.94
+[WOBBLE_FIRE] team=2 losTgt=49.38
+[WOBBLE_FIRE] team=2 losTgt=49.80
+[WOBBLE_FIRE] team=2 losTgt=50.20
+[WOBBLE_FIRE] team=2 losTgt=50.57
+[WOBBLE_FIRE] team=2 losTgt=50.92
+[WOBBLE_FIRE] team=2 losTgt=51.25
+[WOBBLE_FIRE] team=2 losTgt=51.56
+[WOBBLE_FIRE] team=2 losTgt=51.85
+[WOBBLE_FIRE] team=2 losTgt=52.11
+[WOBBLE_FIRE] team=2 losTgt=52.36
+[WOBBLE_FIRE] team=2 losTgt=52.59
+[WOBBLE_FIRE] team=2 losTgt=52.81
+[WOBBLE_FIRE] team=2 losTgt=53.00
+[WOBBLE_FIRE] team=2 losTgt=53.17
+[WOBBLE_FIRE] team=2 losTgt=53.33
+[WOBBLE_FIRE] team=2 losTgt=53.47
+[WOBBLE_FIRE] team=2 losTgt=53.60
+[WOBBLE_FIRE] team=2 losTgt=53.71
+[WOBBLE_FIRE] team=2 losTgt=53.80
+[WOBBLE_FIRE] team=2 losTgt=53.89
+[WOBBLE_FIRE] team=2 losTgt=53.95
+[WOBBLE_FIRE] team=2 losTgt=54.00
+[WOBBLE_FIRE] team=2 losTgt=54.04
+[WOBBLE_FIRE] team=2 losTgt=54.07
+[WOBBLE_FIRE] team=2 losTgt=54.08
+[WOBBLE_FIRE] team=2 losTgt=54.08
+[WOBBLE_FIRE] team=2 losTgt=54.06
+[WOBBLE_FIRE] team=2 losTgt=54.01
+[WOBBLE_FIRE] team=2 losTgt=53.94
+[WOBBLE_FIRE] team=2 losTgt=53.84
+[WOBBLE_FIRE] team=2 losTgt=53.70
+[WOBBLE_FIRE] team=2 losTgt=53.53
+[WOBBLE_FIRE] team=2 losTgt=53.31
+[WOBBLE_FIRE] team=2 losTgt=53.05
+[WOBBLE_FIRE] team=2 losTgt=52.74
+[WOBBLE_FIRE] team=2 losTgt=52.39
+[WOBBLE_FIRE] team=2 losTgt=51.99
+[WOBBLE_FIRE] team=2 losTgt=51.55
+[WOBBLE_FIRE] team=2 losTgt=51.06
+[WOBBLE_FIRE] team=2 losTgt=50.52
+[WOBBLE_FIRE] team=2 losTgt=49.95
+[WOBBLE_FIRE] team=2 losTgt=49.33
+[WOBBLE_FIRE] team=2 losTgt=48.68
+[WOBBLE_FIRE] team=2 losTgt=47.99
+[WOBBLE_FIRE] team=2 losTgt=47.25
+[WOBBLE_FIRE] team=2 losTgt=46.49
+[WOBBLE_FIRE] team=2 losTgt=45.68
+runner:local/env:0	num_steps=[7147] | total rewards=[945.5925] | termination= [target destroyed]
+[seed 1] reward=   945.59 ownHP=1.0000 tgtHP=-0.0131 target destroyed
+total: 2
+[WOBBLE_FIRE] team=2 losTgt=46.94
+[WOBBLE_FIRE] team=2 losTgt=48.92
+[WOBBLE_FIRE] team=2 losTgt=50.90
+[WOBBLE_FIRE] team=2 losTgt=52.87
+[WOBBLE_FIRE] team=2 losTgt=54.80
+[WOBBLE_FIRE] team=2 losTgt=56.69
+[WOBBLE_FIRE] team=2 losTgt=58.55
+[WOBBLE_FIRE] team=2 losTgt=60.35
+[WOBBLE_FIRE] team=2 losTgt=62.08
+[WOBBLE_FIRE] team=2 losTgt=63.75
+[WOBBLE_FIRE] team=2 losTgt=65.34
+[WOBBLE_FIRE] team=2 losTgt=66.84
+[WOBBLE_FIRE] team=2 losTgt=68.26
+[WOBBLE_FIRE] team=2 losTgt=69.59
+[WOBBLE_FIRE] team=2 losTgt=70.82
+[WOBBLE_FIRE] team=2 losTgt=71.96
+[WOBBLE_FIRE] team=2 losTgt=73.01
+[WOBBLE_FIRE] team=2 losTgt=73.96
+[WOBBLE_FIRE] team=2 losTgt=74.82
+[WOBBLE_FIRE] team=2 losTgt=75.59
+[WOBBLE_FIRE] team=2 losTgt=76.27
+[WOBBLE_FIRE] team=2 losTgt=76.87
+[WOBBLE_FIRE] team=2 losTgt=77.39
+[WOBBLE_FIRE] team=2 losTgt=77.82
+[WOBBLE_FIRE] team=2 losTgt=78.19
+[WOBBLE_FIRE] team=2 losTgt=78.48
+[WOBBLE_FIRE] team=2 losTgt=78.71
+[WOBBLE_FIRE] team=2 losTgt=78.87
+[WOBBLE_FIRE] team=2 losTgt=78.97
+[WOBBLE_FIRE] team=2 losTgt=79.01
+[WOBBLE_FIRE] team=2 losTgt=79.00
+[WOBBLE_FIRE] team=2 losTgt=78.94
+[WOBBLE_FIRE] team=2 losTgt=78.82
+[WOBBLE_FIRE] team=2 losTgt=78.67
+[WOBBLE_FIRE] team=2 losTgt=78.46
+[WOBBLE_FIRE] team=2 losTgt=78.22
+[WOBBLE_FIRE] team=2 losTgt=77.93
+[WOBBLE_FIRE] team=2 losTgt=77.61
+[WOBBLE_FIRE] team=2 losTgt=77.25
+[WOBBLE_FIRE] team=2 losTgt=76.86
+[WOBBLE_FIRE] team=2 losTgt=76.43
+[WOBBLE_FIRE] team=2 losTgt=75.97
+[WOBBLE_FIRE] team=2 losTgt=75.48
+[WOBBLE_FIRE] team=2 losTgt=74.97
+[WOBBLE_FIRE] team=2 losTgt=74.42
+[WOBBLE_FIRE] team=2 losTgt=73.85
+[WOBBLE_FIRE] team=2 losTgt=73.26
+[WOBBLE_FIRE] team=2 losTgt=72.64
+[WOBBLE_FIRE] team=2 losTgt=71.99
+[WOBBLE_FIRE] team=2 losTgt=71.33
+[WOBBLE_FIRE] team=2 losTgt=70.64
+[WOBBLE_FIRE] team=2 losTgt=69.93
+[WOBBLE_FIRE] team=2 losTgt=69.20
+[WOBBLE_FIRE] team=2 losTgt=68.45
+[WOBBLE_FIRE] team=2 losTgt=67.68
+[WOBBLE_FIRE] team=2 losTgt=66.89
+[WOBBLE_FIRE] team=2 losTgt=66.08
+[WOBBLE_FIRE] team=2 losTgt=65.26
+[WOBBLE_FIRE] team=2 losTgt=64.42
+[WOBBLE_FIRE] team=2 losTgt=63.56
+[WOBBLE_FIRE] team=2 losTgt=62.68
+[WOBBLE_FIRE] team=2 losTgt=61.79
+[WOBBLE_FIRE] team=2 losTgt=60.88
+[WOBBLE_FIRE] team=2 losTgt=59.95
+[WOBBLE_FIRE] team=2 losTgt=59.01
+[WOBBLE_FIRE] team=2 losTgt=58.05
+[WOBBLE_FIRE] team=2 losTgt=57.07
+[WOBBLE_FIRE] team=2 losTgt=56.08
+[WOBBLE_FIRE] team=2 losTgt=55.07
+[WOBBLE_FIRE] team=2 losTgt=54.05
+[WOBBLE_FIRE] team=2 losTgt=53.01
+[WOBBLE_FIRE] team=2 losTgt=51.95
+[WOBBLE_FIRE] team=2 losTgt=50.87
+[WOBBLE_FIRE] team=2 losTgt=49.78
+[WOBBLE_FIRE] team=2 losTgt=48.67
+[WOBBLE_FIRE] team=2 losTgt=47.55
+[WOBBLE_FIRE] team=2 losTgt=46.40
+[WOBBLE_FIRE] team=2 losTgt=45.24
+runner:local/env:0	num_steps=[7819] | total rewards=[1103.5524] | termination= [target destroyed]
+[seed 2] reward=  1103.55 ownHP=1.0000 tgtHP=-0.0006 target destroyed
+total: 2
+[WOBBLE_FIRE] team=2 losTgt=54.18
+[WOBBLE_FIRE] team=2 losTgt=54.36
+[WOBBLE_FIRE] team=2 losTgt=54.51
+[WOBBLE_FIRE] team=2 losTgt=54.65
+[WOBBLE_FIRE] team=2 losTgt=54.81
+[WOBBLE_FIRE] team=2 losTgt=54.93
+[WOBBLE_FIRE] team=2 losTgt=54.96
+[WOBBLE_FIRE] team=2 losTgt=54.81
+[WOBBLE_FIRE] team=2 losTgt=54.42
+[WOBBLE_FIRE] team=2 losTgt=53.73
+[WOBBLE_FIRE] team=2 losTgt=52.78
+[WOBBLE_FIRE] team=2 losTgt=51.77
+[WOBBLE_FIRE] team=2 losTgt=50.83
+[WOBBLE_FIRE] team=2 losTgt=49.97
+[WOBBLE_FIRE] team=2 losTgt=49.18
+[WOBBLE_FIRE] team=2 losTgt=48.43
+[WOBBLE_FIRE] team=2 losTgt=47.71
+[WOBBLE_FIRE] team=2 losTgt=47.01
+[WOBBLE_FIRE] team=2 losTgt=46.33
+[WOBBLE_FIRE] team=2 losTgt=45.68
+[WOBBLE_FIRE] team=2 losTgt=45.05
+[WOBBLE_FIRE] team=2 losTgt=45.37
+[WOBBLE_FIRE] team=2 losTgt=46.31
+[WOBBLE_FIRE] team=2 losTgt=47.36
+[WOBBLE_FIRE] team=2 losTgt=48.55
+[WOBBLE_FIRE] team=2 losTgt=49.90
+[WOBBLE_FIRE] team=2 losTgt=51.41
+[WOBBLE_FIRE] team=2 losTgt=53.11
+[WOBBLE_FIRE] team=2 losTgt=55.01
+[WOBBLE_FIRE] team=2 losTgt=57.12
+[WOBBLE_FIRE] team=2 losTgt=59.41
+[WOBBLE_FIRE] team=2 losTgt=61.91
+[WOBBLE_FIRE] team=2 losTgt=64.63
+[WOBBLE_FIRE] team=2 losTgt=67.54
+[WOBBLE_FIRE] team=2 losTgt=70.64
+[WOBBLE_FIRE] team=2 losTgt=73.91
+[WOBBLE_FIRE] team=2 losTgt=77.34
+[WOBBLE_FIRE] team=2 losTgt=80.88
+[WOBBLE_FIRE] team=2 losTgt=84.50
+[WOBBLE_FIRE] team=2 losTgt=88.16
+[WOBBLE_FIRE] team=2 losTgt=91.82
+[WOBBLE_FIRE] team=2 losTgt=95.43
+[WOBBLE_FIRE] team=2 losTgt=98.95
+[WOBBLE_FIRE] team=2 losTgt=102.34
+[WOBBLE_FIRE] team=2 losTgt=105.61
+[WOBBLE_FIRE] team=2 losTgt=108.71
+[WOBBLE_FIRE] team=2 losTgt=111.60
+[WOBBLE_FIRE] team=2 losTgt=114.26
+[WOBBLE_FIRE] team=2 losTgt=116.71
+[WOBBLE_FIRE] team=2 losTgt=118.97
+[WOBBLE_FIRE] team=2 losTgt=121.05
+[WOBBLE_FIRE] team=2 losTgt=122.97
+[WOBBLE_FIRE] team=2 losTgt=124.77
+[WOBBLE_FIRE] team=2 losTgt=126.45
+[WOBBLE_FIRE] team=2 losTgt=127.99
+[WOBBLE_FIRE] team=2 losTgt=129.39
+[WOBBLE_FIRE] team=2 losTgt=130.66
+[WOBBLE_FIRE] team=2 losTgt=131.83
+[WOBBLE_FIRE] team=2 losTgt=132.92
+[WOBBLE_FIRE] team=2 losTgt=133.91
+[WOBBLE_FIRE] team=2 losTgt=134.82
+[WOBBLE_FIRE] team=2 losTgt=135.63
+[WOBBLE_FIRE] team=2 losTgt=136.36
+[WOBBLE_FIRE] team=2 losTgt=137.01
+[WOBBLE_FIRE] team=2 losTgt=137.57
+[WOBBLE_FIRE] team=2 losTgt=138.06
+[WOBBLE_FIRE] team=2 losTgt=138.47
+[WOBBLE_FIRE] team=2 losTgt=138.81
+[WOBBLE_FIRE] team=2 losTgt=139.08
+[WOBBLE_FIRE] team=2 losTgt=139.29
+[WOBBLE_FIRE] team=2 losTgt=139.45
+[WOBBLE_FIRE] team=2 losTgt=139.55
+[WOBBLE_FIRE] team=2 losTgt=139.60
+[WOBBLE_FIRE] team=2 losTgt=139.59
+[WOBBLE_FIRE] team=2 losTgt=139.55
+[WOBBLE_FIRE] team=2 losTgt=139.46
+[WOBBLE_FIRE] team=2 losTgt=139.34
+[WOBBLE_FIRE] team=2 losTgt=139.18
+[WOBBLE_FIRE] team=2 losTgt=138.98
+[WOBBLE_FIRE] team=2 losTgt=138.75
+[WOBBLE_FIRE] team=2 losTgt=138.49
+[WOBBLE_FIRE] team=2 losTgt=138.20
+[WOBBLE_FIRE] team=2 losTgt=137.89
+[WOBBLE_FIRE] team=2 losTgt=137.56
+[WOBBLE_FIRE] team=2 losTgt=137.19
+[WOBBLE_FIRE] team=2 losTgt=136.81
+[WOBBLE_FIRE] team=2 losTgt=136.41
+[WOBBLE_FIRE] team=2 losTgt=135.99
+[WOBBLE_FIRE] team=2 losTgt=135.55
+[WOBBLE_FIRE] team=2 losTgt=135.09
+[WOBBLE_FIRE] team=2 losTgt=134.63
+[WOBBLE_FIRE] team=2 losTgt=134.14
+[WOBBLE_FIRE] team=2 losTgt=133.64
+[WOBBLE_FIRE] team=2 losTgt=133.13
+[WOBBLE_FIRE] team=2 losTgt=132.61
+[WOBBLE_FIRE] team=2 losTgt=132.08
+[WOBBLE_FIRE] team=2 losTgt=131.53
+[WOBBLE_FIRE] team=2 losTgt=130.98
+[WOBBLE_FIRE] team=2 losTgt=130.41
+[WOBBLE_FIRE] team=2 losTgt=129.84
+[WOBBLE_FIRE] team=2 losTgt=129.26
+[WOBBLE_FIRE] team=2 losTgt=128.66
+[WOBBLE_FIRE] team=2 losTgt=128.07
+[WOBBLE_FIRE] team=2 losTgt=127.46
+[WOBBLE_FIRE] team=2 losTgt=126.84
+[WOBBLE_FIRE] team=2 losTgt=126.22
+[WOBBLE_FIRE] team=2 losTgt=125.60
+[WOBBLE_FIRE] team=2 losTgt=124.96
+[WOBBLE_FIRE] team=2 losTgt=124.33
+[WOBBLE_FIRE] team=2 losTgt=123.68
+[WOBBLE_FIRE] team=2 losTgt=123.03
+[WOBBLE_FIRE] team=2 losTgt=122.38
+[WOBBLE_FIRE] team=2 losTgt=121.72
+[WOBBLE_FIRE] team=2 losTgt=121.05
+[WOBBLE_FIRE] team=2 losTgt=120.39
+[WOBBLE_FIRE] team=2 losTgt=119.71
+[WOBBLE_FIRE] team=2 losTgt=119.04
+[WOBBLE_FIRE] team=2 losTgt=118.36
+[WOBBLE_FIRE] team=2 losTgt=117.71
+[WOBBLE_FIRE] team=2 losTgt=117.08
+[WOBBLE_FIRE] team=2 losTgt=116.43
+[WOBBLE_FIRE] team=2 losTgt=115.76
+[WOBBLE_FIRE] team=2 losTgt=115.08
+[WOBBLE_FIRE] team=2 losTgt=114.40
+[WOBBLE_FIRE] team=2 losTgt=113.72
+[WOBBLE_FIRE] team=2 losTgt=113.02
+[WOBBLE_FIRE] team=2 losTgt=112.33
+[WOBBLE_FIRE] team=2 losTgt=111.63
+[WOBBLE_FIRE] team=2 losTgt=110.92
+[WOBBLE_FIRE] team=2 losTgt=110.22
+[WOBBLE_FIRE] team=2 losTgt=109.51
+[WOBBLE_FIRE] team=2 losTgt=108.79
+[WOBBLE_FIRE] team=2 losTgt=108.07
+[WOBBLE_FIRE] team=2 losTgt=107.35
+[WOBBLE_FIRE] team=2 losTgt=106.62
+[WOBBLE_FIRE] team=2 losTgt=105.89
+[WOBBLE_FIRE] team=2 losTgt=105.16
+[WOBBLE_FIRE] team=2 losTgt=104.42
+[WOBBLE_FIRE] team=2 losTgt=103.68
+[WOBBLE_FIRE] team=2 losTgt=102.94
+[WOBBLE_FIRE] team=2 losTgt=102.20
+[WOBBLE_FIRE] team=2 losTgt=101.45
+[WOBBLE_FIRE] team=2 losTgt=100.70
+[WOBBLE_FIRE] team=2 losTgt=99.95
+[WOBBLE_FIRE] team=2 losTgt=99.19
+[WOBBLE_FIRE] team=2 losTgt=98.44
+[WOBBLE_FIRE] team=2 losTgt=97.68
+[WOBBLE_FIRE] team=2 losTgt=96.92
+[WOBBLE_FIRE] team=2 losTgt=96.16
+[WOBBLE_FIRE] team=2 losTgt=95.40
+[WOBBLE_FIRE] team=2 losTgt=94.63
+[WOBBLE_FIRE] team=2 losTgt=93.87
+[WOBBLE_FIRE] team=2 losTgt=93.10
+[WOBBLE_FIRE] team=2 losTgt=92.33
+[WOBBLE_FIRE] team=2 losTgt=91.56
+[WOBBLE_FIRE] team=2 losTgt=90.79
+[WOBBLE_FIRE] team=2 losTgt=90.02
+[WOBBLE_FIRE] team=2 losTgt=89.25
+[WOBBLE_FIRE] team=2 losTgt=88.47
+[WOBBLE_FIRE] team=2 losTgt=87.70
+[WOBBLE_FIRE] team=2 losTgt=86.93
+[WOBBLE_FIRE] team=2 losTgt=86.15
+[WOBBLE_FIRE] team=2 losTgt=85.38
+[WOBBLE_FIRE] team=2 losTgt=84.60
+[WOBBLE_FIRE] team=2 losTgt=83.82
+[WOBBLE_FIRE] team=2 losTgt=83.05
+[WOBBLE_FIRE] team=2 losTgt=82.27
+[WOBBLE_FIRE] team=2 losTgt=81.49
+[WOBBLE_FIRE] team=2 losTgt=80.71
+[WOBBLE_FIRE] team=2 losTgt=79.93
+[WOBBLE_FIRE] team=2 losTgt=79.15
+[WOBBLE_FIRE] team=2 losTgt=78.36
+[WOBBLE_FIRE] team=2 losTgt=77.58
+[WOBBLE_FIRE] team=2 losTgt=76.80
+[WOBBLE_FIRE] team=2 losTgt=76.02
+[WOBBLE_FIRE] team=2 losTgt=75.24
+[WOBBLE_FIRE] team=2 losTgt=74.46
+[WOBBLE_FIRE] team=2 losTgt=73.68
+[WOBBLE_FIRE] team=2 losTgt=72.90
+[WOBBLE_FIRE] team=2 losTgt=72.12
+[WOBBLE_FIRE] team=2 losTgt=71.34
+[WOBBLE_FIRE] team=2 losTgt=70.56
+[WOBBLE_FIRE] team=2 losTgt=69.79
+[WOBBLE_FIRE] team=2 losTgt=69.02
+[WOBBLE_FIRE] team=2 losTgt=68.24
+[WOBBLE_FIRE] team=2 losTgt=67.47
+[WOBBLE_FIRE] team=2 losTgt=66.70
+[WOBBLE_FIRE] team=2 losTgt=65.92
+[WOBBLE_FIRE] team=2 losTgt=65.14
+[WOBBLE_FIRE] team=2 losTgt=64.37
+[WOBBLE_FIRE] team=2 losTgt=63.59
+[WOBBLE_FIRE] team=2 losTgt=62.81
+[WOBBLE_FIRE] team=2 losTgt=62.03
+[WOBBLE_FIRE] team=2 losTgt=61.24
+[WOBBLE_FIRE] team=2 losTgt=60.46
+[WOBBLE_FIRE] team=2 losTgt=59.67
+[WOBBLE_FIRE] team=2 losTgt=58.89
+[WOBBLE_FIRE] team=2 losTgt=58.10
+[WOBBLE_FIRE] team=2 losTgt=57.32
+[WOBBLE_FIRE] team=2 losTgt=56.53
+[WOBBLE_FIRE] team=2 losTgt=55.74
+[WOBBLE_FIRE] team=2 losTgt=54.95
+[WOBBLE_FIRE] team=2 losTgt=54.15
+[WOBBLE_FIRE] team=2 losTgt=53.36
+[WOBBLE_FIRE] team=2 losTgt=52.56
+[WOBBLE_FIRE] team=2 losTgt=51.76
+[WOBBLE_FIRE] team=2 losTgt=50.95
+[WOBBLE_FIRE] team=2 losTgt=50.15
+[WOBBLE_FIRE] team=2 losTgt=49.34
+[WOBBLE_FIRE] team=2 losTgt=48.52
+[WOBBLE_FIRE] team=2 losTgt=47.71
+[WOBBLE_FIRE] team=2 losTgt=46.89
+[WOBBLE_FIRE] team=2 losTgt=46.07
+[WOBBLE_FIRE] team=2 losTgt=45.25
+[WOBBLE_FIRE] team=2 losTgt=45.18
+[WOBBLE_FIRE] team=2 losTgt=48.93
+[WOBBLE_FIRE] team=2 losTgt=52.84
+[WOBBLE_FIRE] team=2 losTgt=56.84
+[WOBBLE_FIRE] team=2 losTgt=60.86
+[WOBBLE_FIRE] team=2 losTgt=64.83
+[WOBBLE_FIRE] team=2 losTgt=68.68
+[WOBBLE_FIRE] team=2 losTgt=72.37
+[WOBBLE_FIRE] team=2 losTgt=75.85
+[WOBBLE_FIRE] team=2 losTgt=79.10
+[WOBBLE_FIRE] team=2 losTgt=82.09
+[WOBBLE_FIRE] team=2 losTgt=84.83
+[WOBBLE_FIRE] team=2 losTgt=87.33
+[WOBBLE_FIRE] team=2 losTgt=89.58
+[WOBBLE_FIRE] team=2 losTgt=91.60
+[WOBBLE_FIRE] team=2 losTgt=93.39
+[WOBBLE_FIRE] team=2 losTgt=94.96
+[WOBBLE_FIRE] team=2 losTgt=96.33
+[WOBBLE_FIRE] team=2 losTgt=97.49
+[WOBBLE_FIRE] team=2 losTgt=98.45
+[WOBBLE_FIRE] team=2 losTgt=99.24
+[WOBBLE_FIRE] team=2 losTgt=99.87
+[WOBBLE_FIRE] team=2 losTgt=100.36
+[WOBBLE_FIRE] team=2 losTgt=100.72
+[WOBBLE_FIRE] team=2 losTgt=100.95
+[WOBBLE_FIRE] team=2 losTgt=101.07
+[WOBBLE_FIRE] team=2 losTgt=101.10
+[WOBBLE_FIRE] team=2 losTgt=101.04
+[WOBBLE_FIRE] team=2 losTgt=100.90
+[WOBBLE_FIRE] team=2 losTgt=100.69
+[WOBBLE_FIRE] team=2 losTgt=100.39
+[WOBBLE_FIRE] team=2 losTgt=100.02
+[WOBBLE_FIRE] team=2 losTgt=99.56
+[WOBBLE_FIRE] team=2 losTgt=99.03
+[WOBBLE_FIRE] team=2 losTgt=98.44
+[WOBBLE_FIRE] team=2 losTgt=97.78
+[WOBBLE_FIRE] team=2 losTgt=97.07
+[WOBBLE_FIRE] team=2 losTgt=96.33
+[WOBBLE_FIRE] team=2 losTgt=95.56
+[WOBBLE_FIRE] team=2 losTgt=94.78
+[WOBBLE_FIRE] team=2 losTgt=93.98
+[WOBBLE_FIRE] team=2 losTgt=93.18
+[WOBBLE_FIRE] team=2 losTgt=92.35
+[WOBBLE_FIRE] team=2 losTgt=91.51
+[WOBBLE_FIRE] team=2 losTgt=90.65
+[WOBBLE_FIRE] team=2 losTgt=89.77
+[WOBBLE_FIRE] team=2 losTgt=88.88
+[WOBBLE_FIRE] team=2 losTgt=87.98
+[WOBBLE_FIRE] team=2 losTgt=87.05
+[WOBBLE_FIRE] team=2 losTgt=86.11
+[WOBBLE_FIRE] team=2 losTgt=85.14
+[WOBBLE_FIRE] team=2 losTgt=84.16
+[WOBBLE_FIRE] team=2 losTgt=83.16
+[WOBBLE_FIRE] team=2 losTgt=82.16
+[WOBBLE_FIRE] team=2 losTgt=81.14
+[WOBBLE_FIRE] team=2 losTgt=80.11
+[WOBBLE_FIRE] team=2 losTgt=79.07
+[WOBBLE_FIRE] team=2 losTgt=78.01
+[WOBBLE_FIRE] team=2 losTgt=76.94
+[WOBBLE_FIRE] team=2 losTgt=75.87
+[WOBBLE_FIRE] team=2 losTgt=74.77
+[WOBBLE_FIRE] team=2 losTgt=73.67
+[WOBBLE_FIRE] team=2 losTgt=72.57
+[WOBBLE_FIRE] team=2 losTgt=71.45
+[WOBBLE_FIRE] team=2 losTgt=70.32
+[WOBBLE_FIRE] team=2 losTgt=69.19
+[WOBBLE_FIRE] team=2 losTgt=68.04
+[WOBBLE_FIRE] team=2 losTgt=66.89
+[WOBBLE_FIRE] team=2 losTgt=65.72
+[WOBBLE_FIRE] team=2 losTgt=64.55
+[WOBBLE_FIRE] team=2 losTgt=63.37
+[WOBBLE_FIRE] team=2 losTgt=62.19
+[WOBBLE_FIRE] team=2 losTgt=61.00
+[WOBBLE_FIRE] team=2 losTgt=59.82
+[WOBBLE_FIRE] team=2 losTgt=58.63
+[WOBBLE_FIRE] team=2 losTgt=57.48
+[WOBBLE_FIRE] team=2 losTgt=56.47
+[WOBBLE_FIRE] team=2 losTgt=55.67
+[WOBBLE_FIRE] team=2 losTgt=55.07
+[WOBBLE_FIRE] team=2 losTgt=54.60
+[WOBBLE_FIRE] team=2 losTgt=54.27
+[WOBBLE_FIRE] team=2 losTgt=54.07
+[WOBBLE_FIRE] team=2 losTgt=53.99
+[WOBBLE_FIRE] team=2 losTgt=54.00
+[WOBBLE_FIRE] team=2 losTgt=54.08
+[WOBBLE_FIRE] team=2 losTgt=54.20
+[WOBBLE_FIRE] team=2 losTgt=54.35
+[WOBBLE_FIRE] team=2 losTgt=54.50
+[WOBBLE_FIRE] team=2 losTgt=54.67
+[WOBBLE_FIRE] team=2 losTgt=54.90
+[WOBBLE_FIRE] team=2 losTgt=55.16
+[WOBBLE_FIRE] team=2 losTgt=55.43
+[WOBBLE_FIRE] team=2 losTgt=55.62
+[WOBBLE_FIRE] team=2 losTgt=55.68
+[WOBBLE_FIRE] team=2 losTgt=55.63
+[WOBBLE_FIRE] team=2 losTgt=55.51
+[WOBBLE_FIRE] team=2 losTgt=55.35
+[WOBBLE_FIRE] team=2 losTgt=55.15
+[WOBBLE_FIRE] team=2 losTgt=54.91
+[WOBBLE_FIRE] team=2 losTgt=54.57
+[WOBBLE_FIRE] team=2 losTgt=54.12
+[WOBBLE_FIRE] team=2 losTgt=53.68
+[WOBBLE_FIRE] team=2 losTgt=53.31
+[WOBBLE_FIRE] team=2 losTgt=53.16
+[WOBBLE_FIRE] team=2 losTgt=53.10
+[WOBBLE_FIRE] team=2 losTgt=52.88
+[WOBBLE_FIRE] team=2 losTgt=52.57
+[WOBBLE_FIRE] team=2 losTgt=52.21
+[WOBBLE_FIRE] team=2 losTgt=51.82
+[WOBBLE_FIRE] team=2 losTgt=51.50
+[WOBBLE_FIRE] team=2 losTgt=51.24
+[WOBBLE_FIRE] team=2 losTgt=50.99
+[WOBBLE_FIRE] team=2 losTgt=50.72
+[WOBBLE_FIRE] team=2 losTgt=50.44
+[WOBBLE_FIRE] team=2 losTgt=50.16
+[WOBBLE_FIRE] team=2 losTgt=49.88
+[WOBBLE_FIRE] team=2 losTgt=49.60
+[WOBBLE_FIRE] team=2 losTgt=49.31
+[WOBBLE_FIRE] team=2 losTgt=49.03
+[WOBBLE_FIRE] team=2 losTgt=48.75
+[WOBBLE_FIRE] team=2 losTgt=48.46
+[WOBBLE_FIRE] team=2 losTgt=48.17
+[WOBBLE_FIRE] team=2 losTgt=47.88
+[WOBBLE_FIRE] team=2 losTgt=47.59
+[WOBBLE_FIRE] team=2 losTgt=47.29
+[WOBBLE_FIRE] team=2 losTgt=46.98
+[WOBBLE_FIRE] team=2 losTgt=46.66
+[WOBBLE_FIRE] team=2 losTgt=46.02
+runner:local/env:0	num_steps=[8618] | total rewards=[932.6792] | termination= [target destroyed]
+[seed 3] reward=   932.68 ownHP=1.0000 tgtHP=-0.0034 target destroyed
+total: 2
+[WOBBLE_FIRE] team=2 losTgt=96.51
+[WOBBLE_FIRE] team=2 losTgt=96.58
+[WOBBLE_FIRE] team=2 losTgt=96.58
+[WOBBLE_FIRE] team=2 losTgt=96.60
+[WOBBLE_FIRE] team=2 losTgt=96.63
+[WOBBLE_FIRE] team=2 losTgt=96.58
+[WOBBLE_FIRE] team=2 losTgt=96.34
+[WOBBLE_FIRE] team=2 losTgt=95.79
+[WOBBLE_FIRE] team=2 losTgt=94.87
+[WOBBLE_FIRE] team=2 losTgt=93.54
+[WOBBLE_FIRE] team=2 losTgt=92.06
+[WOBBLE_FIRE] team=2 losTgt=90.74
+[WOBBLE_FIRE] team=2 losTgt=89.62
+[WOBBLE_FIRE] team=2 losTgt=88.65
+[WOBBLE_FIRE] team=2 losTgt=87.75
+[WOBBLE_FIRE] team=2 losTgt=86.91
+[WOBBLE_FIRE] team=2 losTgt=86.11
+[WOBBLE_FIRE] team=2 losTgt=85.35
+[WOBBLE_FIRE] team=2 losTgt=84.62
+[WOBBLE_FIRE] team=2 losTgt=83.91
+[WOBBLE_FIRE] team=2 losTgt=83.21
+[WOBBLE_FIRE] team=2 losTgt=82.53
+[WOBBLE_FIRE] team=2 losTgt=81.85
+[WOBBLE_FIRE] team=2 losTgt=81.17
+[WOBBLE_FIRE] team=2 losTgt=80.51
+[WOBBLE_FIRE] team=2 losTgt=79.85
+[WOBBLE_FIRE] team=2 losTgt=79.19
+[WOBBLE_FIRE] team=2 losTgt=78.54
+[WOBBLE_FIRE] team=2 losTgt=77.88
+[WOBBLE_FIRE] team=2 losTgt=77.22
+[WOBBLE_FIRE] team=2 losTgt=76.56
+[WOBBLE_FIRE] team=2 losTgt=75.90
+[WOBBLE_FIRE] team=2 losTgt=75.23
+[WOBBLE_FIRE] team=2 losTgt=74.57
+[WOBBLE_FIRE] team=2 losTgt=73.89
+[WOBBLE_FIRE] team=2 losTgt=73.21
+[WOBBLE_FIRE] team=2 losTgt=72.53
+[WOBBLE_FIRE] team=2 losTgt=71.84
+[WOBBLE_FIRE] team=2 losTgt=71.15
+[WOBBLE_FIRE] team=2 losTgt=70.45
+[WOBBLE_FIRE] team=2 losTgt=69.75
+[WOBBLE_FIRE] team=2 losTgt=69.04
+[WOBBLE_FIRE] team=2 losTgt=68.32
+[WOBBLE_FIRE] team=2 losTgt=67.60
+[WOBBLE_FIRE] team=2 losTgt=66.88
+[WOBBLE_FIRE] team=2 losTgt=66.15
+[WOBBLE_FIRE] team=2 losTgt=65.42
+[WOBBLE_FIRE] team=2 losTgt=64.68
+[WOBBLE_FIRE] team=2 losTgt=63.93
+[WOBBLE_FIRE] team=2 losTgt=63.18
+[WOBBLE_FIRE] team=2 losTgt=62.42
+[WOBBLE_FIRE] team=2 losTgt=61.66
+[WOBBLE_FIRE] team=2 losTgt=60.88
+[WOBBLE_FIRE] team=2 losTgt=60.10
+[WOBBLE_FIRE] team=2 losTgt=59.31
+[WOBBLE_FIRE] team=2 losTgt=58.51
+[WOBBLE_FIRE] team=2 losTgt=57.70
+[WOBBLE_FIRE] team=2 losTgt=56.88
+[WOBBLE_FIRE] team=2 losTgt=56.06
+[WOBBLE_FIRE] team=2 losTgt=55.23
+[WOBBLE_FIRE] team=2 losTgt=54.39
+[WOBBLE_FIRE] team=2 losTgt=53.54
+[WOBBLE_FIRE] team=2 losTgt=52.68
+[WOBBLE_FIRE] team=2 losTgt=51.81
+[WOBBLE_FIRE] team=2 losTgt=50.93
+[WOBBLE_FIRE] team=2 losTgt=50.05
+[WOBBLE_FIRE] team=2 losTgt=49.14
+[WOBBLE_FIRE] team=2 losTgt=48.23
+[WOBBLE_FIRE] team=2 losTgt=47.31
+[WOBBLE_FIRE] team=2 losTgt=46.36
+[WOBBLE_FIRE] team=2 losTgt=45.40
+[WOBBLE_FIRE] team=2 losTgt=47.63
+[WOBBLE_FIRE] team=2 losTgt=51.67
+[WOBBLE_FIRE] team=2 losTgt=55.35
+[WOBBLE_FIRE] team=2 losTgt=58.50
+[WOBBLE_FIRE] team=2 losTgt=61.44
+[WOBBLE_FIRE] team=2 losTgt=64.29
+[WOBBLE_FIRE] team=2 losTgt=66.98
+[WOBBLE_FIRE] team=2 losTgt=69.45
+[WOBBLE_FIRE] team=2 losTgt=71.68
+[WOBBLE_FIRE] team=2 losTgt=73.66
+[WOBBLE_FIRE] team=2 losTgt=75.40
+[WOBBLE_FIRE] team=2 losTgt=76.92
+[WOBBLE_FIRE] team=2 losTgt=78.20
+[WOBBLE_FIRE] team=2 losTgt=79.28
+[WOBBLE_FIRE] team=2 losTgt=80.15
+[WOBBLE_FIRE] team=2 losTgt=80.85
+[WOBBLE_FIRE] team=2 losTgt=81.39
+[WOBBLE_FIRE] team=2 losTgt=81.78
+[WOBBLE_FIRE] team=2 losTgt=82.04
+[WOBBLE_FIRE] team=2 losTgt=82.18
+[WOBBLE_FIRE] team=2 losTgt=82.23
+[WOBBLE_FIRE] team=2 losTgt=82.17
+[WOBBLE_FIRE] team=2 losTgt=82.03
+[WOBBLE_FIRE] team=2 losTgt=81.82
+[WOBBLE_FIRE] team=2 losTgt=81.53
+[WOBBLE_FIRE] team=2 losTgt=81.18
+[WOBBLE_FIRE] team=2 losTgt=80.78
+[WOBBLE_FIRE] team=2 losTgt=80.32
+[WOBBLE_FIRE] team=2 losTgt=79.81
+[WOBBLE_FIRE] team=2 losTgt=79.25
+[WOBBLE_FIRE] team=2 losTgt=78.65
+[WOBBLE_FIRE] team=2 losTgt=78.02
+[WOBBLE_FIRE] team=2 losTgt=77.34
+[WOBBLE_FIRE] team=2 losTgt=76.64
+[WOBBLE_FIRE] team=2 losTgt=75.90
+[WOBBLE_FIRE] team=2 losTgt=75.13
+[WOBBLE_FIRE] team=2 losTgt=74.33
+[WOBBLE_FIRE] team=2 losTgt=73.50
+[WOBBLE_FIRE] team=2 losTgt=72.65
+[WOBBLE_FIRE] team=2 losTgt=71.78
+[WOBBLE_FIRE] team=2 losTgt=70.88
+[WOBBLE_FIRE] team=2 losTgt=69.96
+[WOBBLE_FIRE] team=2 losTgt=69.01
+[WOBBLE_FIRE] team=2 losTgt=68.05
+[WOBBLE_FIRE] team=2 losTgt=67.06
+[WOBBLE_FIRE] team=2 losTgt=66.06
+[WOBBLE_FIRE] team=2 losTgt=65.03
+[WOBBLE_FIRE] team=2 losTgt=63.98
+[WOBBLE_FIRE] team=2 losTgt=62.92
+[WOBBLE_FIRE] team=2 losTgt=61.83
+[WOBBLE_FIRE] team=2 losTgt=60.72
+[WOBBLE_FIRE] team=2 losTgt=59.60
+[WOBBLE_FIRE] team=2 losTgt=58.45
+[WOBBLE_FIRE] team=2 losTgt=57.28
+[WOBBLE_FIRE] team=2 losTgt=56.09
+[WOBBLE_FIRE] team=2 losTgt=54.88
+[WOBBLE_FIRE] team=2 losTgt=53.65
+[WOBBLE_FIRE] team=2 losTgt=52.39
+[WOBBLE_FIRE] team=2 losTgt=51.12
+[WOBBLE_FIRE] team=2 losTgt=49.81
+[WOBBLE_FIRE] team=2 losTgt=48.48
+[WOBBLE_FIRE] team=2 losTgt=47.12
+[WOBBLE_FIRE] team=2 losTgt=45.73
+[WOBBLE_FIRE] team=2 losTgt=48.28
+[WOBBLE_FIRE] team=2 losTgt=51.07
+[WOBBLE_FIRE] team=2 losTgt=53.30
+[WOBBLE_FIRE] team=2 losTgt=55.10
+[WOBBLE_FIRE] team=2 losTgt=56.89
+[WOBBLE_FIRE] team=2 losTgt=58.65
+[WOBBLE_FIRE] team=2 losTgt=60.36
+[WOBBLE_FIRE] team=2 losTgt=61.90
+[WOBBLE_FIRE] team=2 losTgt=63.28
+[WOBBLE_FIRE] team=2 losTgt=64.51
+[WOBBLE_FIRE] team=2 losTgt=65.59
+[WOBBLE_FIRE] team=2 losTgt=66.52
+[WOBBLE_FIRE] team=2 losTgt=67.32
+[WOBBLE_FIRE] team=2 losTgt=67.99
+[WOBBLE_FIRE] team=2 losTgt=68.51
+[WOBBLE_FIRE] team=2 losTgt=68.90
+[WOBBLE_FIRE] team=2 losTgt=69.17
+[WOBBLE_FIRE] team=2 losTgt=69.29
+[WOBBLE_FIRE] team=2 losTgt=69.29
+[WOBBLE_FIRE] team=2 losTgt=69.16
+[WOBBLE_FIRE] team=2 losTgt=68.93
+[WOBBLE_FIRE] team=2 losTgt=68.60
+[WOBBLE_FIRE] team=2 losTgt=68.16
+[WOBBLE_FIRE] team=2 losTgt=67.64
+[WOBBLE_FIRE] team=2 losTgt=67.04
+[WOBBLE_FIRE] team=2 losTgt=66.36
+[WOBBLE_FIRE] team=2 losTgt=65.61
+[WOBBLE_FIRE] team=2 losTgt=64.80
+[WOBBLE_FIRE] team=2 losTgt=63.93
+[WOBBLE_FIRE] team=2 losTgt=63.00
+[WOBBLE_FIRE] team=2 losTgt=62.02
+[WOBBLE_FIRE] team=2 losTgt=60.98
+[WOBBLE_FIRE] team=2 losTgt=59.90
+[WOBBLE_FIRE] team=2 losTgt=58.77
+[WOBBLE_FIRE] team=2 losTgt=57.59
+[WOBBLE_FIRE] team=2 losTgt=56.37
+[WOBBLE_FIRE] team=2 losTgt=55.11
+[WOBBLE_FIRE] team=2 losTgt=53.80
+[WOBBLE_FIRE] team=2 losTgt=52.46
+[WOBBLE_FIRE] team=2 losTgt=51.07
+[WOBBLE_FIRE] team=2 losTgt=49.64
+[WOBBLE_FIRE] team=2 losTgt=48.18
+[WOBBLE_FIRE] team=2 losTgt=46.67
+[WOBBLE_FIRE] team=2 losTgt=45.12
+runner:local/env:0	num_steps=[7218] | total rewards=[949.1160] | termination= [target destroyed]
+[seed 4] reward=   949.12 ownHP=1.0000 tgtHP=-0.0025 target destroyed
+total: 2
+[WOBBLE_FIRE] team=2 losTgt=120.43
+[WOBBLE_FIRE] team=2 losTgt=120.44
+[WOBBLE_FIRE] team=2 losTgt=120.37
+[WOBBLE_FIRE] team=2 losTgt=120.27
+[WOBBLE_FIRE] team=2 losTgt=120.16
+[WOBBLE_FIRE] team=2 losTgt=120.04
+[WOBBLE_FIRE] team=2 losTgt=119.93
+[WOBBLE_FIRE] team=2 losTgt=119.83
+[WOBBLE_FIRE] team=2 losTgt=119.77
+[WOBBLE_FIRE] team=2 losTgt=119.74
+[WOBBLE_FIRE] team=2 losTgt=119.73
+[WOBBLE_FIRE] team=2 losTgt=119.52
+[WOBBLE_FIRE] team=2 losTgt=118.86
+[WOBBLE_FIRE] team=2 losTgt=117.73
+[WOBBLE_FIRE] team=2 losTgt=116.27
+[WOBBLE_FIRE] team=2 losTgt=114.52
+[WOBBLE_FIRE] team=2 losTgt=112.86
+[WOBBLE_FIRE] team=2 losTgt=111.47
+[WOBBLE_FIRE] team=2 losTgt=110.32
+[WOBBLE_FIRE] team=2 losTgt=109.30
+[WOBBLE_FIRE] team=2 losTgt=108.37
+[WOBBLE_FIRE] team=2 losTgt=107.53
+[WOBBLE_FIRE] team=2 losTgt=106.76
+[WOBBLE_FIRE] team=2 losTgt=106.02
+[WOBBLE_FIRE] team=2 losTgt=105.30
+[WOBBLE_FIRE] team=2 losTgt=104.60
+[WOBBLE_FIRE] team=2 losTgt=103.91
+[WOBBLE_FIRE] team=2 losTgt=103.24
+[WOBBLE_FIRE] team=2 losTgt=102.58
+[WOBBLE_FIRE] team=2 losTgt=101.96
+[WOBBLE_FIRE] team=2 losTgt=101.35
+[WOBBLE_FIRE] team=2 losTgt=100.77
+[WOBBLE_FIRE] team=2 losTgt=100.21
+[WOBBLE_FIRE] team=2 losTgt=99.67
+[WOBBLE_FIRE] team=2 losTgt=99.15
+[WOBBLE_FIRE] team=2 losTgt=98.65
+[WOBBLE_FIRE] team=2 losTgt=98.15
+[WOBBLE_FIRE] team=2 losTgt=97.89
+[WOBBLE_FIRE] team=2 losTgt=97.96
+[WOBBLE_FIRE] team=2 losTgt=97.90
+[WOBBLE_FIRE] team=2 losTgt=97.53
+[WOBBLE_FIRE] team=2 losTgt=96.82
+[WOBBLE_FIRE] team=2 losTgt=95.90
+[WOBBLE_FIRE] team=2 losTgt=94.98
+[WOBBLE_FIRE] team=2 losTgt=94.17
+[WOBBLE_FIRE] team=2 losTgt=93.46
+[WOBBLE_FIRE] team=2 losTgt=92.82
+[WOBBLE_FIRE] team=2 losTgt=92.22
+[WOBBLE_FIRE] team=2 losTgt=91.91
+[WOBBLE_FIRE] team=2 losTgt=92.02
+[WOBBLE_FIRE] team=2 losTgt=91.97
+[WOBBLE_FIRE] team=2 losTgt=91.63
+[WOBBLE_FIRE] team=2 losTgt=90.98
+[WOBBLE_FIRE] team=2 losTgt=90.04
+[WOBBLE_FIRE] team=2 losTgt=89.03
+[WOBBLE_FIRE] team=2 losTgt=88.18
+[WOBBLE_FIRE] team=2 losTgt=87.47
+[WOBBLE_FIRE] team=2 losTgt=86.86
+[WOBBLE_FIRE] team=2 losTgt=86.32
+[WOBBLE_FIRE] team=2 losTgt=85.84
+[WOBBLE_FIRE] team=2 losTgt=85.34
+[WOBBLE_FIRE] team=2 losTgt=84.84
+[WOBBLE_FIRE] team=2 losTgt=84.38
+[WOBBLE_FIRE] team=2 losTgt=83.92
+[WOBBLE_FIRE] team=2 losTgt=83.43
+[WOBBLE_FIRE] team=2 losTgt=82.94
+[WOBBLE_FIRE] team=2 losTgt=82.43
+[WOBBLE_FIRE] team=2 losTgt=81.89
+[WOBBLE_FIRE] team=2 losTgt=81.32
+[WOBBLE_FIRE] team=2 losTgt=80.71
+[WOBBLE_FIRE] team=2 losTgt=80.10
+[WOBBLE_FIRE] team=2 losTgt=79.48
+[WOBBLE_FIRE] team=2 losTgt=78.88
+[WOBBLE_FIRE] team=2 losTgt=78.28
+[WOBBLE_FIRE] team=2 losTgt=77.69
+[WOBBLE_FIRE] team=2 losTgt=77.10
+[WOBBLE_FIRE] team=2 losTgt=76.51
+[WOBBLE_FIRE] team=2 losTgt=75.92
+[WOBBLE_FIRE] team=2 losTgt=75.34
+[WOBBLE_FIRE] team=2 losTgt=74.75
+[WOBBLE_FIRE] team=2 losTgt=74.16
+[WOBBLE_FIRE] team=2 losTgt=73.57
+[WOBBLE_FIRE] team=2 losTgt=72.98
+[WOBBLE_FIRE] team=2 losTgt=72.39
+[WOBBLE_FIRE] team=2 losTgt=71.79
+[WOBBLE_FIRE] team=2 losTgt=71.19
+[WOBBLE_FIRE] team=2 losTgt=70.59
+[WOBBLE_FIRE] team=2 losTgt=69.99
+[WOBBLE_FIRE] team=2 losTgt=69.38
+[WOBBLE_FIRE] team=2 losTgt=68.77
+[WOBBLE_FIRE] team=2 losTgt=68.16
+[WOBBLE_FIRE] team=2 losTgt=67.54
+[WOBBLE_FIRE] team=2 losTgt=66.91
+[WOBBLE_FIRE] team=2 losTgt=66.29
+[WOBBLE_FIRE] team=2 losTgt=65.65
+[WOBBLE_FIRE] team=2 losTgt=65.02
+[WOBBLE_FIRE] team=2 losTgt=64.37
+[WOBBLE_FIRE] team=2 losTgt=63.72
+[WOBBLE_FIRE] team=2 losTgt=63.06
+[WOBBLE_FIRE] team=2 losTgt=62.39
+[WOBBLE_FIRE] team=2 losTgt=61.71
+[WOBBLE_FIRE] team=2 losTgt=61.02
+[WOBBLE_FIRE] team=2 losTgt=60.32
+[WOBBLE_FIRE] team=2 losTgt=59.60
+[WOBBLE_FIRE] team=2 losTgt=58.87
+[WOBBLE_FIRE] team=2 losTgt=58.12
+[WOBBLE_FIRE] team=2 losTgt=57.35
+[WOBBLE_FIRE] team=2 losTgt=56.55
+[WOBBLE_FIRE] team=2 losTgt=55.73
+[WOBBLE_FIRE] team=2 losTgt=54.88
+[WOBBLE_FIRE] team=2 losTgt=53.98
+[WOBBLE_FIRE] team=2 losTgt=53.05
+[WOBBLE_FIRE] team=2 losTgt=52.06
+[WOBBLE_FIRE] team=2 losTgt=51.00
+[WOBBLE_FIRE] team=2 losTgt=49.86
+[WOBBLE_FIRE] team=2 losTgt=48.61
+[WOBBLE_FIRE] team=2 losTgt=47.24
+[WOBBLE_FIRE] team=2 losTgt=45.67
+[WOBBLE_FIRE] team=2 losTgt=50.08
+[WOBBLE_FIRE] team=2 losTgt=82.30
+[WOBBLE_FIRE] team=2 losTgt=96.99
+[WOBBLE_FIRE] team=2 losTgt=104.54
+[WOBBLE_FIRE] team=2 losTgt=108.88
+[WOBBLE_FIRE] team=2 losTgt=111.62
+[WOBBLE_FIRE] team=2 losTgt=113.49
+[WOBBLE_FIRE] team=2 losTgt=114.84
+[WOBBLE_FIRE] team=2 losTgt=115.84
+[WOBBLE_FIRE] team=2 losTgt=116.58
+[WOBBLE_FIRE] team=2 losTgt=117.15
+[WOBBLE_FIRE] team=2 losTgt=117.58
+[WOBBLE_FIRE] team=2 losTgt=117.84
+[WOBBLE_FIRE] team=2 losTgt=117.64
+[WOBBLE_FIRE] team=2 losTgt=116.58
+[WOBBLE_FIRE] team=2 losTgt=114.86
+[WOBBLE_FIRE] team=2 losTgt=112.92
+[WOBBLE_FIRE] team=2 losTgt=111.25
+[WOBBLE_FIRE] team=2 losTgt=109.80
+[WOBBLE_FIRE] team=2 losTgt=108.47
+[WOBBLE_FIRE] team=2 losTgt=107.21
+[WOBBLE_FIRE] team=2 losTgt=106.00
+[WOBBLE_FIRE] team=2 losTgt=104.83
+[WOBBLE_FIRE] team=2 losTgt=103.67
+[WOBBLE_FIRE] team=2 losTgt=102.53
+[WOBBLE_FIRE] team=2 losTgt=101.38
+[WOBBLE_FIRE] team=2 losTgt=100.22
+[WOBBLE_FIRE] team=2 losTgt=99.06
+[WOBBLE_FIRE] team=2 losTgt=97.90
+[WOBBLE_FIRE] team=2 losTgt=96.73
+[WOBBLE_FIRE] team=2 losTgt=95.56
+[WOBBLE_FIRE] team=2 losTgt=94.37
+[WOBBLE_FIRE] team=2 losTgt=93.19
+[WOBBLE_FIRE] team=2 losTgt=91.99
+[WOBBLE_FIRE] team=2 losTgt=90.79
+[WOBBLE_FIRE] team=2 losTgt=89.58
+[WOBBLE_FIRE] team=2 losTgt=88.37
+[WOBBLE_FIRE] team=2 losTgt=87.15
+[WOBBLE_FIRE] team=2 losTgt=85.93
+[WOBBLE_FIRE] team=2 losTgt=84.70
+[WOBBLE_FIRE] team=2 losTgt=83.46
+[WOBBLE_FIRE] team=2 losTgt=82.22
+[WOBBLE_FIRE] team=2 losTgt=80.98
+[WOBBLE_FIRE] team=2 losTgt=79.72
+[WOBBLE_FIRE] team=2 losTgt=78.46
+[WOBBLE_FIRE] team=2 losTgt=77.19
+[WOBBLE_FIRE] team=2 losTgt=75.92
+[WOBBLE_FIRE] team=2 losTgt=74.64
+[WOBBLE_FIRE] team=2 losTgt=73.36
+[WOBBLE_FIRE] team=2 losTgt=72.06
+[WOBBLE_FIRE] team=2 losTgt=70.76
+[WOBBLE_FIRE] team=2 losTgt=69.45
+[WOBBLE_FIRE] team=2 losTgt=68.14
+[WOBBLE_FIRE] team=2 losTgt=66.81
+[WOBBLE_FIRE] team=2 losTgt=65.48
+[WOBBLE_FIRE] team=2 losTgt=64.13
+[WOBBLE_FIRE] team=2 losTgt=62.78
+[WOBBLE_FIRE] team=2 losTgt=61.41
+[WOBBLE_FIRE] team=2 losTgt=60.03
+[WOBBLE_FIRE] team=2 losTgt=58.63
+[WOBBLE_FIRE] team=2 losTgt=57.22
+[WOBBLE_FIRE] team=2 losTgt=55.79
+[WOBBLE_FIRE] team=2 losTgt=54.33
+[WOBBLE_FIRE] team=2 losTgt=52.84
+[WOBBLE_FIRE] team=2 losTgt=51.31
+[WOBBLE_FIRE] team=2 losTgt=49.74
+[WOBBLE_FIRE] team=2 losTgt=48.11
+[WOBBLE_FIRE] team=2 losTgt=46.40
+[WOBBLE_FIRE] team=2 losTgt=50.44
+[WOBBLE_FIRE] team=2 losTgt=69.34
+[WOBBLE_FIRE] team=2 losTgt=82.21
+[WOBBLE_FIRE] team=2 losTgt=92.42
+[WOBBLE_FIRE] team=2 losTgt=99.31
+[WOBBLE_FIRE] team=2 losTgt=104.29
+[WOBBLE_FIRE] team=2 losTgt=107.94
+[WOBBLE_FIRE] team=2 losTgt=110.73
+[WOBBLE_FIRE] team=2 losTgt=112.90
+[WOBBLE_FIRE] team=2 losTgt=114.65
+[WOBBLE_FIRE] team=2 losTgt=115.97
+[WOBBLE_FIRE] team=2 losTgt=116.50
+[WOBBLE_FIRE] team=2 losTgt=115.92
+[WOBBLE_FIRE] team=2 losTgt=114.68
+[WOBBLE_FIRE] team=2 losTgt=113.31
+[WOBBLE_FIRE] team=2 losTgt=112.15
+[WOBBLE_FIRE] team=2 losTgt=111.05
+[WOBBLE_FIRE] team=2 losTgt=109.98
+[WOBBLE_FIRE] team=2 losTgt=108.93
+[WOBBLE_FIRE] team=2 losTgt=107.88
+[WOBBLE_FIRE] team=2 losTgt=106.81
+[WOBBLE_FIRE] team=2 losTgt=105.74
+[WOBBLE_FIRE] team=2 losTgt=104.65
+[WOBBLE_FIRE] team=2 losTgt=103.56
+[WOBBLE_FIRE] team=2 losTgt=102.46
+[WOBBLE_FIRE] team=2 losTgt=101.35
+[WOBBLE_FIRE] team=2 losTgt=100.24
+[WOBBLE_FIRE] team=2 losTgt=99.13
+[WOBBLE_FIRE] team=2 losTgt=98.02
+[WOBBLE_FIRE] team=2 losTgt=96.92
+[WOBBLE_FIRE] team=2 losTgt=95.82
+[WOBBLE_FIRE] team=2 losTgt=94.73
+[WOBBLE_FIRE] team=2 losTgt=94.78
+[WOBBLE_FIRE] team=2 losTgt=97.13
+[WOBBLE_FIRE] team=2 losTgt=97.47
+[WOBBLE_FIRE] team=2 losTgt=98.25
+[WOBBLE_FIRE] team=2 losTgt=98.70
+[WOBBLE_FIRE] team=2 losTgt=99.03
+[WOBBLE_FIRE] team=2 losTgt=99.61
+[WOBBLE_FIRE] team=2 losTgt=100.59
+[WOBBLE_FIRE] team=2 losTgt=101.79
+[WOBBLE_FIRE] team=2 losTgt=102.92
+[WOBBLE_FIRE] team=2 losTgt=104.05
+[WOBBLE_FIRE] team=2 losTgt=105.13
+[WOBBLE_FIRE] team=2 losTgt=106.21
+[WOBBLE_FIRE] team=2 losTgt=107.28
+[WOBBLE_FIRE] team=2 losTgt=108.32
+[WOBBLE_FIRE] team=2 losTgt=109.34
+[WOBBLE_FIRE] team=2 losTgt=110.32
+[WOBBLE_FIRE] team=2 losTgt=111.27
+[WOBBLE_FIRE] team=2 losTgt=112.20
+[WOBBLE_FIRE] team=2 losTgt=113.09
+[WOBBLE_FIRE] team=2 losTgt=113.94
+[WOBBLE_FIRE] team=2 losTgt=114.77
+[WOBBLE_FIRE] team=2 losTgt=115.55
+[WOBBLE_FIRE] team=2 losTgt=116.30
+[WOBBLE_FIRE] team=2 losTgt=117.01
+[WOBBLE_FIRE] team=2 losTgt=117.67
+[WOBBLE_FIRE] team=2 losTgt=118.29
+[WOBBLE_FIRE] team=2 losTgt=118.18
+[WOBBLE_FIRE] team=2 losTgt=117.45
+[WOBBLE_FIRE] team=2 losTgt=117.70
+[WOBBLE_FIRE] team=2 losTgt=117.21
+[WOBBLE_FIRE] team=2 losTgt=117.02
+[WOBBLE_FIRE] team=2 losTgt=117.54
+[WOBBLE_FIRE] team=2 losTgt=117.36
+[WOBBLE_FIRE] team=2 losTgt=114.61
+[WOBBLE_FIRE] team=2 losTgt=113.38
+[WOBBLE_FIRE] team=2 losTgt=114.96
+[WOBBLE_FIRE] team=2 losTgt=115.56
+[WOBBLE_FIRE] team=2 losTgt=112.70
+[WOBBLE_FIRE] team=2 losTgt=110.98
+[WOBBLE_FIRE] team=2 losTgt=112.81
+[WOBBLE_FIRE] team=2 losTgt=113.40
+[WOBBLE_FIRE] team=2 losTgt=109.67
+[WOBBLE_FIRE] team=2 losTgt=107.02
+[WOBBLE_FIRE] team=2 losTgt=108.36
+[WOBBLE_FIRE] team=2 losTgt=106.75
+[WOBBLE_FIRE] team=2 losTgt=103.49
+[WOBBLE_FIRE] team=2 losTgt=104.01
+[WOBBLE_FIRE] team=2 losTgt=102.46
+[WOBBLE_FIRE] team=2 losTgt=99.84
+[WOBBLE_FIRE] team=2 losTgt=99.75
+[WOBBLE_FIRE] team=2 losTgt=97.64
+[WOBBLE_FIRE] team=2 losTgt=96.45
+[WOBBLE_FIRE] team=2 losTgt=95.00
+[WOBBLE_FIRE] team=2 losTgt=93.59
+[WOBBLE_FIRE] team=2 losTgt=92.21
+[WOBBLE_FIRE] team=2 losTgt=90.85
+[WOBBLE_FIRE] team=2 losTgt=89.51
+[WOBBLE_FIRE] team=2 losTgt=88.18
+[WOBBLE_FIRE] team=2 losTgt=86.85
+[WOBBLE_FIRE] team=2 losTgt=85.55
+[WOBBLE_FIRE] team=2 losTgt=84.26
+[WOBBLE_FIRE] team=2 losTgt=82.98
+[WOBBLE_FIRE] team=2 losTgt=81.70
+[WOBBLE_FIRE] team=2 losTgt=80.44
+[WOBBLE_FIRE] team=2 losTgt=79.18
+[WOBBLE_FIRE] team=2 losTgt=77.94
+[WOBBLE_FIRE] team=2 losTgt=76.70
+[WOBBLE_FIRE] team=2 losTgt=75.47
+[WOBBLE_FIRE] team=2 losTgt=74.25
+[WOBBLE_FIRE] team=2 losTgt=73.04
+[WOBBLE_FIRE] team=2 losTgt=71.83
+[WOBBLE_FIRE] team=2 losTgt=70.64
+[WOBBLE_FIRE] team=2 losTgt=69.45
+[WOBBLE_FIRE] team=2 losTgt=68.27
+[WOBBLE_FIRE] team=2 losTgt=67.10
+[WOBBLE_FIRE] team=2 losTgt=65.93
+[WOBBLE_FIRE] team=2 losTgt=64.78
+[WOBBLE_FIRE] team=2 losTgt=63.63
+[WOBBLE_FIRE] team=2 losTgt=62.48
+[WOBBLE_FIRE] team=2 losTgt=61.33
+[WOBBLE_FIRE] team=2 losTgt=60.18
+[WOBBLE_FIRE] team=2 losTgt=59.03
+[WOBBLE_FIRE] team=2 losTgt=57.86
+[WOBBLE_FIRE] team=2 losTgt=56.68
+[WOBBLE_FIRE] team=2 losTgt=55.49
+[WOBBLE_FIRE] team=2 losTgt=54.30
+[WOBBLE_FIRE] team=2 losTgt=53.13
+[WOBBLE_FIRE] team=2 losTgt=51.97
+[WOBBLE_FIRE] team=2 losTgt=50.81
+[WOBBLE_FIRE] team=2 losTgt=49.64
+[WOBBLE_FIRE] team=2 losTgt=48.46
+[WOBBLE_FIRE] team=2 losTgt=47.27
+[WOBBLE_FIRE] team=2 losTgt=46.07
+[WOBBLE_FIRE] team=2 losTgt=45.07
+[WOBBLE_FIRE] team=2 losTgt=45.22
+[WOBBLE_FIRE] team=2 losTgt=45.28
+[WOBBLE_FIRE] team=2 losTgt=45.25
+[WOBBLE_FIRE] team=2 losTgt=45.14
+runner:local/env:0	num_steps=[8250] | total rewards=[824.1952] | termination= [target destroyed]
+[seed 5] reward=   824.20 ownHP=1.0000 tgtHP=-0.0003 target destroyed
+total: 2
+[WOBBLE_FIRE] team=2 losTgt=64.79
+[WOBBLE_FIRE] team=2 losTgt=65.39
+[WOBBLE_FIRE] team=2 losTgt=65.94
+[WOBBLE_FIRE] team=2 losTgt=66.54
+[WOBBLE_FIRE] team=2 losTgt=67.19
+[WOBBLE_FIRE] team=2 losTgt=67.88
+[WOBBLE_FIRE] team=2 losTgt=68.61
+[WOBBLE_FIRE] team=2 losTgt=69.37
+[WOBBLE_FIRE] team=2 losTgt=70.14
+[WOBBLE_FIRE] team=2 losTgt=70.78
+[WOBBLE_FIRE] team=2 losTgt=71.09
+[WOBBLE_FIRE] team=2 losTgt=71.01
+[WOBBLE_FIRE] team=2 losTgt=70.52
+[WOBBLE_FIRE] team=2 losTgt=69.76
+[WOBBLE_FIRE] team=2 losTgt=69.08
+[WOBBLE_FIRE] team=2 losTgt=68.68
+[WOBBLE_FIRE] team=2 losTgt=68.49
+[WOBBLE_FIRE] team=2 losTgt=68.41
+[WOBBLE_FIRE] team=2 losTgt=68.44
+[WOBBLE_FIRE] team=2 losTgt=68.53
+[WOBBLE_FIRE] team=2 losTgt=68.70
+[WOBBLE_FIRE] team=2 losTgt=68.94
+[WOBBLE_FIRE] team=2 losTgt=69.23
+[WOBBLE_FIRE] team=2 losTgt=69.56
+[WOBBLE_FIRE] team=2 losTgt=69.90
+[WOBBLE_FIRE] team=2 losTgt=70.25
+[WOBBLE_FIRE] team=2 losTgt=70.61
+[WOBBLE_FIRE] team=2 losTgt=70.98
+[WOBBLE_FIRE] team=2 losTgt=71.35
+[WOBBLE_FIRE] team=2 losTgt=71.74
+[WOBBLE_FIRE] team=2 losTgt=72.14
+[WOBBLE_FIRE] team=2 losTgt=72.57
+[WOBBLE_FIRE] team=2 losTgt=73.02
+[WOBBLE_FIRE] team=2 losTgt=73.49
+[WOBBLE_FIRE] team=2 losTgt=73.96
+[WOBBLE_FIRE] team=2 losTgt=74.46
+[WOBBLE_FIRE] team=2 losTgt=74.97
+[WOBBLE_FIRE] team=2 losTgt=75.49
+[WOBBLE_FIRE] team=2 losTgt=76.03
+[WOBBLE_FIRE] team=2 losTgt=76.57
+[WOBBLE_FIRE] team=2 losTgt=77.14
+[WOBBLE_FIRE] team=2 losTgt=77.71
+[WOBBLE_FIRE] team=2 losTgt=78.30
+[WOBBLE_FIRE] team=2 losTgt=78.91
+[WOBBLE_FIRE] team=2 losTgt=79.52
+[WOBBLE_FIRE] team=2 losTgt=80.15
+[WOBBLE_FIRE] team=2 losTgt=80.79
+[WOBBLE_FIRE] team=2 losTgt=81.45
+[WOBBLE_FIRE] team=2 losTgt=82.10
+[WOBBLE_FIRE] team=2 losTgt=82.77
+[WOBBLE_FIRE] team=2 losTgt=83.45
+[WOBBLE_FIRE] team=2 losTgt=84.13
+[WOBBLE_FIRE] team=2 losTgt=84.82
+[WOBBLE_FIRE] team=2 losTgt=85.52
+[WOBBLE_FIRE] team=2 losTgt=86.22
+[WOBBLE_FIRE] team=2 losTgt=86.93
+[WOBBLE_FIRE] team=2 losTgt=87.64
+[WOBBLE_FIRE] team=2 losTgt=88.36
+[WOBBLE_FIRE] team=2 losTgt=89.08
+[WOBBLE_FIRE] team=2 losTgt=89.80
+[WOBBLE_FIRE] team=2 losTgt=90.52
+[WOBBLE_FIRE] team=2 losTgt=91.23
+[WOBBLE_FIRE] team=2 losTgt=91.94
+[WOBBLE_FIRE] team=2 losTgt=92.65
+[WOBBLE_FIRE] team=2 losTgt=93.34
+[WOBBLE_FIRE] team=2 losTgt=94.03
+[WOBBLE_FIRE] team=2 losTgt=94.70
+[WOBBLE_FIRE] team=2 losTgt=95.50
+[WOBBLE_FIRE] team=2 losTgt=96.33
+[WOBBLE_FIRE] team=2 losTgt=96.93
+[WOBBLE_FIRE] team=2 losTgt=97.30
+[WOBBLE_FIRE] team=2 losTgt=97.61
+[WOBBLE_FIRE] team=2 losTgt=97.97
+[WOBBLE_FIRE] team=2 losTgt=98.38
+[WOBBLE_FIRE] team=2 losTgt=98.81
+[WOBBLE_FIRE] team=2 losTgt=99.24
+[WOBBLE_FIRE] team=2 losTgt=99.68
+[WOBBLE_FIRE] team=2 losTgt=100.14
+[WOBBLE_FIRE] team=2 losTgt=100.60
+[WOBBLE_FIRE] team=2 losTgt=101.06
+[WOBBLE_FIRE] team=2 losTgt=101.50
+[WOBBLE_FIRE] team=2 losTgt=101.91
+[WOBBLE_FIRE] team=2 losTgt=102.28
+[WOBBLE_FIRE] team=2 losTgt=102.62
+[WOBBLE_FIRE] team=2 losTgt=102.91
+[WOBBLE_FIRE] team=2 losTgt=103.16
+[WOBBLE_FIRE] team=2 losTgt=103.37
+[WOBBLE_FIRE] team=2 losTgt=103.53
+[WOBBLE_FIRE] team=2 losTgt=103.66
+[WOBBLE_FIRE] team=2 losTgt=103.74
+[WOBBLE_FIRE] team=2 losTgt=103.78
+[WOBBLE_FIRE] team=2 losTgt=103.78
+[WOBBLE_FIRE] team=2 losTgt=103.75
+[WOBBLE_FIRE] team=2 losTgt=103.68
+[WOBBLE_FIRE] team=2 losTgt=103.57
+[WOBBLE_FIRE] team=2 losTgt=103.43
+[WOBBLE_FIRE] team=2 losTgt=103.26
+[WOBBLE_FIRE] team=2 losTgt=103.06
+[WOBBLE_FIRE] team=2 losTgt=102.83
+[WOBBLE_FIRE] team=2 losTgt=102.57
+[WOBBLE_FIRE] team=2 losTgt=102.29
+[WOBBLE_FIRE] team=2 losTgt=101.98
+[WOBBLE_FIRE] team=2 losTgt=101.65
+[WOBBLE_FIRE] team=2 losTgt=101.29
+[WOBBLE_FIRE] team=2 losTgt=100.91
+[WOBBLE_FIRE] team=2 losTgt=100.51
+[WOBBLE_FIRE] team=2 losTgt=100.08
+[WOBBLE_FIRE] team=2 losTgt=99.64
+[WOBBLE_FIRE] team=2 losTgt=99.18
+[WOBBLE_FIRE] team=2 losTgt=98.70
+[WOBBLE_FIRE] team=2 losTgt=98.20
+[WOBBLE_FIRE] team=2 losTgt=97.69
+[WOBBLE_FIRE] team=2 losTgt=97.16
+[WOBBLE_FIRE] team=2 losTgt=96.62
+[WOBBLE_FIRE] team=2 losTgt=96.05
+[WOBBLE_FIRE] team=2 losTgt=95.48
+[WOBBLE_FIRE] team=2 losTgt=94.89
+[WOBBLE_FIRE] team=2 losTgt=94.29
+[WOBBLE_FIRE] team=2 losTgt=93.68
+[WOBBLE_FIRE] team=2 losTgt=93.05
+[WOBBLE_FIRE] team=2 losTgt=92.43
+[WOBBLE_FIRE] team=2 losTgt=91.79
+[WOBBLE_FIRE] team=2 losTgt=91.14
+[WOBBLE_FIRE] team=2 losTgt=90.48
+[WOBBLE_FIRE] team=2 losTgt=89.80
+[WOBBLE_FIRE] team=2 losTgt=89.10
+[WOBBLE_FIRE] team=2 losTgt=88.38
+[WOBBLE_FIRE] team=2 losTgt=87.66
+[WOBBLE_FIRE] team=2 losTgt=86.91
+[WOBBLE_FIRE] team=2 losTgt=86.16
+[WOBBLE_FIRE] team=2 losTgt=85.42
+[WOBBLE_FIRE] team=2 losTgt=84.68
+[WOBBLE_FIRE] team=2 losTgt=83.93
+[WOBBLE_FIRE] team=2 losTgt=83.17
+[WOBBLE_FIRE] team=2 losTgt=82.40
+[WOBBLE_FIRE] team=2 losTgt=81.63
+[WOBBLE_FIRE] team=2 losTgt=80.86
+[WOBBLE_FIRE] team=2 losTgt=80.08
+[WOBBLE_FIRE] team=2 losTgt=79.30
+[WOBBLE_FIRE] team=2 losTgt=78.52
+[WOBBLE_FIRE] team=2 losTgt=77.73
+[WOBBLE_FIRE] team=2 losTgt=76.94
+[WOBBLE_FIRE] team=2 losTgt=76.14
+[WOBBLE_FIRE] team=2 losTgt=75.34
+[WOBBLE_FIRE] team=2 losTgt=74.54
+[WOBBLE_FIRE] team=2 losTgt=73.73
+[WOBBLE_FIRE] team=2 losTgt=72.91
+[WOBBLE_FIRE] team=2 losTgt=72.09
+[WOBBLE_FIRE] team=2 losTgt=71.27
+[WOBBLE_FIRE] team=2 losTgt=70.44
+[WOBBLE_FIRE] team=2 losTgt=69.61
+[WOBBLE_FIRE] team=2 losTgt=68.77
+[WOBBLE_FIRE] team=2 losTgt=67.92
+[WOBBLE_FIRE] team=2 losTgt=67.07
+[WOBBLE_FIRE] team=2 losTgt=66.21
+[WOBBLE_FIRE] team=2 losTgt=65.34
+[WOBBLE_FIRE] team=2 losTgt=64.47
+[WOBBLE_FIRE] team=2 losTgt=63.59
+[WOBBLE_FIRE] team=2 losTgt=62.70
+[WOBBLE_FIRE] team=2 losTgt=61.80
+[WOBBLE_FIRE] team=2 losTgt=60.90
+[WOBBLE_FIRE] team=2 losTgt=59.98
+[WOBBLE_FIRE] team=2 losTgt=59.06
+[WOBBLE_FIRE] team=2 losTgt=58.12
+[WOBBLE_FIRE] team=2 losTgt=57.18
+[WOBBLE_FIRE] team=2 losTgt=56.22
+[WOBBLE_FIRE] team=2 losTgt=55.25
+[WOBBLE_FIRE] team=2 losTgt=54.27
+[WOBBLE_FIRE] team=2 losTgt=53.27
+[WOBBLE_FIRE] team=2 losTgt=52.25
+[WOBBLE_FIRE] team=2 losTgt=51.22
+[WOBBLE_FIRE] team=2 losTgt=50.17
+[WOBBLE_FIRE] team=2 losTgt=49.09
+[WOBBLE_FIRE] team=2 losTgt=48.00
+[WOBBLE_FIRE] team=2 losTgt=46.88
+[WOBBLE_FIRE] team=2 losTgt=45.74
+[WOBBLE_FIRE] team=2 losTgt=48.87
+[WOBBLE_FIRE] team=2 losTgt=54.30
+[WOBBLE_FIRE] team=2 losTgt=59.58
+[WOBBLE_FIRE] team=2 losTgt=64.54
+[WOBBLE_FIRE] team=2 losTgt=69.05
+[WOBBLE_FIRE] team=2 losTgt=72.81
+[WOBBLE_FIRE] team=2 losTgt=75.70
+[WOBBLE_FIRE] team=2 losTgt=77.86
+[WOBBLE_FIRE] team=2 losTgt=79.59
+[WOBBLE_FIRE] team=2 losTgt=81.06
+[WOBBLE_FIRE] team=2 losTgt=82.27
+[WOBBLE_FIRE] team=2 losTgt=83.20
+[WOBBLE_FIRE] team=2 losTgt=83.87
+[WOBBLE_FIRE] team=2 losTgt=84.36
+[WOBBLE_FIRE] team=2 losTgt=84.70
+[WOBBLE_FIRE] team=2 losTgt=84.87
+[WOBBLE_FIRE] team=2 losTgt=84.91
+[WOBBLE_FIRE] team=2 losTgt=84.81
+[WOBBLE_FIRE] team=2 losTgt=84.58
+[WOBBLE_FIRE] team=2 losTgt=84.25
+[WOBBLE_FIRE] team=2 losTgt=83.82
+[WOBBLE_FIRE] team=2 losTgt=83.29
+[WOBBLE_FIRE] team=2 losTgt=82.69
+[WOBBLE_FIRE] team=2 losTgt=82.01
+[WOBBLE_FIRE] team=2 losTgt=81.26
+[WOBBLE_FIRE] team=2 losTgt=80.46
+[WOBBLE_FIRE] team=2 losTgt=79.59
+[WOBBLE_FIRE] team=2 losTgt=78.67
+[WOBBLE_FIRE] team=2 losTgt=77.70
+[WOBBLE_FIRE] team=2 losTgt=76.70
+[WOBBLE_FIRE] team=2 losTgt=75.65
+[WOBBLE_FIRE] team=2 losTgt=74.56
+[WOBBLE_FIRE] team=2 losTgt=73.43
+[WOBBLE_FIRE] team=2 losTgt=72.28
+[WOBBLE_FIRE] team=2 losTgt=71.08
+[WOBBLE_FIRE] team=2 losTgt=69.86
+[WOBBLE_FIRE] team=2 losTgt=68.60
+[WOBBLE_FIRE] team=2 losTgt=67.32
+[WOBBLE_FIRE] team=2 losTgt=66.01
+[WOBBLE_FIRE] team=2 losTgt=64.67
+[WOBBLE_FIRE] team=2 losTgt=63.30
+[WOBBLE_FIRE] team=2 losTgt=61.90
+[WOBBLE_FIRE] team=2 losTgt=60.48
+[WOBBLE_FIRE] team=2 losTgt=59.02
+[WOBBLE_FIRE] team=2 losTgt=57.55
+[WOBBLE_FIRE] team=2 losTgt=56.04
+[WOBBLE_FIRE] team=2 losTgt=54.50
+[WOBBLE_FIRE] team=2 losTgt=52.93
+[WOBBLE_FIRE] team=2 losTgt=51.34
+[WOBBLE_FIRE] team=2 losTgt=49.71
+[WOBBLE_FIRE] team=2 losTgt=48.05
+[WOBBLE_FIRE] team=2 losTgt=46.36
+[WOBBLE_FIRE] team=2 losTgt=46.37
+[WOBBLE_FIRE] team=2 losTgt=51.77
+[WOBBLE_FIRE] team=2 losTgt=57.33
+[WOBBLE_FIRE] team=2 losTgt=62.94
+[WOBBLE_FIRE] team=2 losTgt=68.57
+[WOBBLE_FIRE] team=2 losTgt=74.11
+[WOBBLE_FIRE] team=2 losTgt=79.48
+[WOBBLE_FIRE] team=2 losTgt=84.62
+[WOBBLE_FIRE] team=2 losTgt=89.48
+[WOBBLE_FIRE] team=2 losTgt=94.02
+[WOBBLE_FIRE] team=2 losTgt=98.24
+[WOBBLE_FIRE] team=2 losTgt=102.13
+[WOBBLE_FIRE] team=2 losTgt=105.70
+[WOBBLE_FIRE] team=2 losTgt=108.96
+[WOBBLE_FIRE] team=2 losTgt=111.93
+[WOBBLE_FIRE] team=2 losTgt=114.62
+[WOBBLE_FIRE] team=2 losTgt=117.06
+[WOBBLE_FIRE] team=2 losTgt=119.26
+[WOBBLE_FIRE] team=2 losTgt=121.24
+[WOBBLE_FIRE] team=2 losTgt=123.01
+[WOBBLE_FIRE] team=2 losTgt=124.59
+[WOBBLE_FIRE] team=2 losTgt=126.00
+[WOBBLE_FIRE] team=2 losTgt=127.25
+[WOBBLE_FIRE] team=2 losTgt=128.34
+[WOBBLE_FIRE] team=2 losTgt=129.29
+[WOBBLE_FIRE] team=2 losTgt=130.10
+[WOBBLE_FIRE] team=2 losTgt=130.79
+[WOBBLE_FIRE] team=2 losTgt=131.36
+[WOBBLE_FIRE] team=2 losTgt=131.82
+[WOBBLE_FIRE] team=2 losTgt=132.18
+[WOBBLE_FIRE] team=2 losTgt=132.44
+[WOBBLE_FIRE] team=2 losTgt=132.60
+[WOBBLE_FIRE] team=2 losTgt=132.69
+[WOBBLE_FIRE] team=2 losTgt=132.68
+[WOBBLE_FIRE] team=2 losTgt=132.60
+[WOBBLE_FIRE] team=2 losTgt=132.45
+[WOBBLE_FIRE] team=2 losTgt=132.23
+[WOBBLE_FIRE] team=2 losTgt=131.94
+[WOBBLE_FIRE] team=2 losTgt=131.60
+[WOBBLE_FIRE] team=2 losTgt=131.19
+[WOBBLE_FIRE] team=2 losTgt=131.05
+[WOBBLE_FIRE] team=2 losTgt=130.75
+[WOBBLE_FIRE] team=2 losTgt=130.09
+[WOBBLE_FIRE] team=2 losTgt=128.82
+[WOBBLE_FIRE] team=2 losTgt=127.46
+[WOBBLE_FIRE] team=2 losTgt=126.11
+[WOBBLE_FIRE] team=2 losTgt=124.75
+[WOBBLE_FIRE] team=2 losTgt=123.42
+[WOBBLE_FIRE] team=2 losTgt=122.07
+[WOBBLE_FIRE] team=2 losTgt=120.73
+[WOBBLE_FIRE] team=2 losTgt=119.39
+[WOBBLE_FIRE] team=2 losTgt=118.07
+[WOBBLE_FIRE] team=2 losTgt=116.75
+[WOBBLE_FIRE] team=2 losTgt=115.45
+[WOBBLE_FIRE] team=2 losTgt=114.16
+[WOBBLE_FIRE] team=2 losTgt=112.87
+[WOBBLE_FIRE] team=2 losTgt=111.59
+[WOBBLE_FIRE] team=2 losTgt=110.32
+[WOBBLE_FIRE] team=2 losTgt=109.05
+[WOBBLE_FIRE] team=2 losTgt=107.78
+[WOBBLE_FIRE] team=2 losTgt=106.52
+[WOBBLE_FIRE] team=2 losTgt=105.25
+[WOBBLE_FIRE] team=2 losTgt=103.99
+[WOBBLE_FIRE] team=2 losTgt=102.74
+[WOBBLE_FIRE] team=2 losTgt=101.48
+[WOBBLE_FIRE] team=2 losTgt=100.22
+[WOBBLE_FIRE] team=2 losTgt=98.96
+[WOBBLE_FIRE] team=2 losTgt=97.70
+[WOBBLE_FIRE] team=2 losTgt=96.43
+[WOBBLE_FIRE] team=2 losTgt=95.17
+[WOBBLE_FIRE] team=2 losTgt=93.91
+[WOBBLE_FIRE] team=2 losTgt=92.65
+[WOBBLE_FIRE] team=2 losTgt=91.39
+[WOBBLE_FIRE] team=2 losTgt=90.13
+[WOBBLE_FIRE] team=2 losTgt=88.87
+[WOBBLE_FIRE] team=2 losTgt=87.61
+[WOBBLE_FIRE] team=2 losTgt=86.35
+[WOBBLE_FIRE] team=2 losTgt=85.10
+[WOBBLE_FIRE] team=2 losTgt=83.84
+[WOBBLE_FIRE] team=2 losTgt=82.59
+[WOBBLE_FIRE] team=2 losTgt=81.33
+[WOBBLE_FIRE] team=2 losTgt=80.08
+[WOBBLE_FIRE] team=2 losTgt=78.83
+[WOBBLE_FIRE] team=2 losTgt=77.58
+[WOBBLE_FIRE] team=2 losTgt=76.32
+[WOBBLE_FIRE] team=2 losTgt=75.08
+[WOBBLE_FIRE] team=2 losTgt=73.83
+[WOBBLE_FIRE] team=2 losTgt=72.58
+[WOBBLE_FIRE] team=2 losTgt=71.32
+[WOBBLE_FIRE] team=2 losTgt=70.05
+[WOBBLE_FIRE] team=2 losTgt=68.78
+[WOBBLE_FIRE] team=2 losTgt=67.53
+[WOBBLE_FIRE] team=2 losTgt=66.26
+[WOBBLE_FIRE] team=2 losTgt=65.00
+[WOBBLE_FIRE] team=2 losTgt=63.75
+[WOBBLE_FIRE] team=2 losTgt=62.52
+[WOBBLE_FIRE] team=2 losTgt=61.30
+[WOBBLE_FIRE] team=2 losTgt=60.07
+[WOBBLE_FIRE] team=2 losTgt=58.82
+[WOBBLE_FIRE] team=2 losTgt=57.55
+[WOBBLE_FIRE] team=2 losTgt=56.27
+[WOBBLE_FIRE] team=2 losTgt=54.98
+[WOBBLE_FIRE] team=2 losTgt=53.69
+[WOBBLE_FIRE] team=2 losTgt=52.37
+[WOBBLE_FIRE] team=2 losTgt=51.03
+[WOBBLE_FIRE] team=2 losTgt=49.69
+[WOBBLE_FIRE] team=2 losTgt=48.34
+[WOBBLE_FIRE] team=2 losTgt=47.00
+[WOBBLE_FIRE] team=2 losTgt=45.65
+[WOBBLE_FIRE] team=2 losTgt=45.13
+[WOBBLE_FIRE] team=2 losTgt=46.51
+[WOBBLE_FIRE] team=2 losTgt=47.83
+[WOBBLE_FIRE] team=2 losTgt=49.04
+[WOBBLE_FIRE] team=2 losTgt=50.15
+[WOBBLE_FIRE] team=2 losTgt=51.15
+[WOBBLE_FIRE] team=2 losTgt=52.02
+[WOBBLE_FIRE] team=2 losTgt=52.75
+[WOBBLE_FIRE] team=2 losTgt=53.38
+[WOBBLE_FIRE] team=2 losTgt=53.90
+[WOBBLE_FIRE] team=2 losTgt=54.30
+[WOBBLE_FIRE] team=2 losTgt=54.60
+[WOBBLE_FIRE] team=2 losTgt=54.79
+[WOBBLE_FIRE] team=2 losTgt=54.87
+[WOBBLE_FIRE] team=2 losTgt=54.83
+[WOBBLE_FIRE] team=2 losTgt=54.68
+[WOBBLE_FIRE] team=2 losTgt=54.43
+[WOBBLE_FIRE] team=2 losTgt=54.07
+[WOBBLE_FIRE] team=2 losTgt=53.62
+[WOBBLE_FIRE] team=2 losTgt=53.08
+[WOBBLE_FIRE] team=2 losTgt=52.46
+[WOBBLE_FIRE] team=2 losTgt=51.76
+[WOBBLE_FIRE] team=2 losTgt=50.99
+[WOBBLE_FIRE] team=2 losTgt=50.15
+[WOBBLE_FIRE] team=2 losTgt=49.25
+[WOBBLE_FIRE] team=2 losTgt=48.29
+[WOBBLE_FIRE] team=2 losTgt=47.25
+[WOBBLE_FIRE] team=2 losTgt=46.17
+[WOBBLE_FIRE] team=2 losTgt=45.02
+[WOBBLE_FIRE] team=2 losTgt=45.22
+[WOBBLE_FIRE] team=2 losTgt=46.08
+[WOBBLE_FIRE] team=2 losTgt=46.88
+[WOBBLE_FIRE] team=2 losTgt=47.63
+[WOBBLE_FIRE] team=2 losTgt=48.33
+[WOBBLE_FIRE] team=2 losTgt=48.98
+[WOBBLE_FIRE] team=2 losTgt=49.58
+[WOBBLE_FIRE] team=2 losTgt=50.11
+[WOBBLE_FIRE] team=2 losTgt=50.59
+[WOBBLE_FIRE] team=2 losTgt=51.00
+[WOBBLE_FIRE] team=2 losTgt=51.33
+[WOBBLE_FIRE] team=2 losTgt=51.59
+[WOBBLE_FIRE] team=2 losTgt=51.76
+[WOBBLE_FIRE] team=2 losTgt=51.84
+[WOBBLE_FIRE] team=2 losTgt=51.83
+[WOBBLE_FIRE] team=2 losTgt=51.75
+[WOBBLE_FIRE] team=2 losTgt=51.57
+[WOBBLE_FIRE] team=2 losTgt=51.32
+[WOBBLE_FIRE] team=2 losTgt=50.99
+[WOBBLE_FIRE] team=2 losTgt=50.58
+[WOBBLE_FIRE] team=2 losTgt=50.09
+[WOBBLE_FIRE] team=2 losTgt=49.52
+[WOBBLE_FIRE] team=2 losTgt=48.87
+[WOBBLE_FIRE] team=2 losTgt=48.15
+[WOBBLE_FIRE] team=2 losTgt=47.37
+[WOBBLE_FIRE] team=2 losTgt=46.50
+[WOBBLE_FIRE] team=2 losTgt=45.58
+runner:local/env:0	num_steps=[8800] | total rewards=[984.3473] | termination= [target destroyed]
+[seed 6] reward=   984.35 ownHP=1.0000 tgtHP=-0.0001 target destroyed
+total: 2
+[WOBBLE_FIRE] team=2 losTgt=54.16
+[WOBBLE_FIRE] team=2 losTgt=53.89
+[WOBBLE_FIRE] team=2 losTgt=53.00
+[WOBBLE_FIRE] team=2 losTgt=52.06
+[WOBBLE_FIRE] team=2 losTgt=51.10
+[WOBBLE_FIRE] team=2 losTgt=50.02
+[WOBBLE_FIRE] team=2 losTgt=48.72
+[WOBBLE_FIRE] team=2 losTgt=47.21
+[WOBBLE_FIRE] team=2 losTgt=45.72
+[WOBBLE_FIRE] team=2 losTgt=45.72
+[WOBBLE_FIRE] team=2 losTgt=49.91
+[WOBBLE_FIRE] team=2 losTgt=54.31
+[WOBBLE_FIRE] team=2 losTgt=58.78
+[WOBBLE_FIRE] team=2 losTgt=63.24
+[WOBBLE_FIRE] team=2 losTgt=67.61
+[WOBBLE_FIRE] team=2 losTgt=71.78
+[WOBBLE_FIRE] team=2 losTgt=75.70
+[WOBBLE_FIRE] team=2 losTgt=79.31
+[WOBBLE_FIRE] team=2 losTgt=82.61
+[WOBBLE_FIRE] team=2 losTgt=85.59
+[WOBBLE_FIRE] team=2 losTgt=88.23
+[WOBBLE_FIRE] team=2 losTgt=90.56
+[WOBBLE_FIRE] team=2 losTgt=92.59
+[WOBBLE_FIRE] team=2 losTgt=94.35
+[WOBBLE_FIRE] team=2 losTgt=95.87
+[WOBBLE_FIRE] team=2 losTgt=97.16
+[WOBBLE_FIRE] team=2 losTgt=98.24
+[WOBBLE_FIRE] team=2 losTgt=99.11
+[WOBBLE_FIRE] team=2 losTgt=99.83
+[WOBBLE_FIRE] team=2 losTgt=100.41
+[WOBBLE_FIRE] team=2 losTgt=100.87
+[WOBBLE_FIRE] team=2 losTgt=101.22
+[WOBBLE_FIRE] team=2 losTgt=101.49
+[WOBBLE_FIRE] team=2 losTgt=101.66
+[WOBBLE_FIRE] team=2 losTgt=101.75
+[WOBBLE_FIRE] team=2 losTgt=101.77
+[WOBBLE_FIRE] team=2 losTgt=101.72
+[WOBBLE_FIRE] team=2 losTgt=101.61
+[WOBBLE_FIRE] team=2 losTgt=101.45
+[WOBBLE_FIRE] team=2 losTgt=101.22
+[WOBBLE_FIRE] team=2 losTgt=100.95
+[WOBBLE_FIRE] team=2 losTgt=100.64
+[WOBBLE_FIRE] team=2 losTgt=100.29
+[WOBBLE_FIRE] team=2 losTgt=99.92
+[WOBBLE_FIRE] team=2 losTgt=99.51
+[WOBBLE_FIRE] team=2 losTgt=99.07
+[WOBBLE_FIRE] team=2 losTgt=98.61
+[WOBBLE_FIRE] team=2 losTgt=98.12
+[WOBBLE_FIRE] team=2 losTgt=97.61
+[WOBBLE_FIRE] team=2 losTgt=97.07
+[WOBBLE_FIRE] team=2 losTgt=96.51
+[WOBBLE_FIRE] team=2 losTgt=95.93
+[WOBBLE_FIRE] team=2 losTgt=95.33
+[WOBBLE_FIRE] team=2 losTgt=94.71
+[WOBBLE_FIRE] team=2 losTgt=94.07
+[WOBBLE_FIRE] team=2 losTgt=93.42
+[WOBBLE_FIRE] team=2 losTgt=92.74
+[WOBBLE_FIRE] team=2 losTgt=92.06
+[WOBBLE_FIRE] team=2 losTgt=91.36
+[WOBBLE_FIRE] team=2 losTgt=90.65
+[WOBBLE_FIRE] team=2 losTgt=89.92
+[WOBBLE_FIRE] team=2 losTgt=89.18
+[WOBBLE_FIRE] team=2 losTgt=88.43
+[WOBBLE_FIRE] team=2 losTgt=87.67
+[WOBBLE_FIRE] team=2 losTgt=86.90
+[WOBBLE_FIRE] team=2 losTgt=86.13
+[WOBBLE_FIRE] team=2 losTgt=85.34
+[WOBBLE_FIRE] team=2 losTgt=84.55
+[WOBBLE_FIRE] team=2 losTgt=83.76
+[WOBBLE_FIRE] team=2 losTgt=82.97
+[WOBBLE_FIRE] team=2 losTgt=82.15
+[WOBBLE_FIRE] team=2 losTgt=81.31
+[WOBBLE_FIRE] team=2 losTgt=80.46
+[WOBBLE_FIRE] team=2 losTgt=79.60
+[WOBBLE_FIRE] team=2 losTgt=78.72
+[WOBBLE_FIRE] team=2 losTgt=77.84
+[WOBBLE_FIRE] team=2 losTgt=76.95
+[WOBBLE_FIRE] team=2 losTgt=76.05
+[WOBBLE_FIRE] team=2 losTgt=75.14
+[WOBBLE_FIRE] team=2 losTgt=74.22
+[WOBBLE_FIRE] team=2 losTgt=73.30
+[WOBBLE_FIRE] team=2 losTgt=72.37
+[WOBBLE_FIRE] team=2 losTgt=71.43
+[WOBBLE_FIRE] team=2 losTgt=70.49
+[WOBBLE_FIRE] team=2 losTgt=69.54
+[WOBBLE_FIRE] team=2 losTgt=68.58
+[WOBBLE_FIRE] team=2 losTgt=67.62
+[WOBBLE_FIRE] team=2 losTgt=66.64
+[WOBBLE_FIRE] team=2 losTgt=65.67
+[WOBBLE_FIRE] team=2 losTgt=64.68
+[WOBBLE_FIRE] team=2 losTgt=63.69
+[WOBBLE_FIRE] team=2 losTgt=62.69
+[WOBBLE_FIRE] team=2 losTgt=61.68
+[WOBBLE_FIRE] team=2 losTgt=60.67
+[WOBBLE_FIRE] team=2 losTgt=59.65
+[WOBBLE_FIRE] team=2 losTgt=58.62
+[WOBBLE_FIRE] team=2 losTgt=57.58
+[WOBBLE_FIRE] team=2 losTgt=56.53
+[WOBBLE_FIRE] team=2 losTgt=55.48
+[WOBBLE_FIRE] team=2 losTgt=54.42
+[WOBBLE_FIRE] team=2 losTgt=53.34
+[WOBBLE_FIRE] team=2 losTgt=52.26
+[WOBBLE_FIRE] team=2 losTgt=51.17
+[WOBBLE_FIRE] team=2 losTgt=50.07
+[WOBBLE_FIRE] team=2 losTgt=48.96
+[WOBBLE_FIRE] team=2 losTgt=47.84
+[WOBBLE_FIRE] team=2 losTgt=46.71
+[WOBBLE_FIRE] team=2 losTgt=45.56
+[WOBBLE_FIRE] team=2 losTgt=45.48
+[WOBBLE_FIRE] team=2 losTgt=47.63
+[WOBBLE_FIRE] team=2 losTgt=49.68
+[WOBBLE_FIRE] team=2 losTgt=51.65
+[WOBBLE_FIRE] team=2 losTgt=53.48
+[WOBBLE_FIRE] team=2 losTgt=55.19
+[WOBBLE_FIRE] team=2 losTgt=56.78
+[WOBBLE_FIRE] team=2 losTgt=58.23
+[WOBBLE_FIRE] team=2 losTgt=59.55
+[WOBBLE_FIRE] team=2 losTgt=60.73
+[WOBBLE_FIRE] team=2 losTgt=61.75
+[WOBBLE_FIRE] team=2 losTgt=62.63
+[WOBBLE_FIRE] team=2 losTgt=63.37
+[WOBBLE_FIRE] team=2 losTgt=63.97
+[WOBBLE_FIRE] team=2 losTgt=64.43
+[WOBBLE_FIRE] team=2 losTgt=64.77
+[WOBBLE_FIRE] team=2 losTgt=64.99
+[WOBBLE_FIRE] team=2 losTgt=65.10
+[WOBBLE_FIRE] team=2 losTgt=65.10
+[WOBBLE_FIRE] team=2 losTgt=65.01
+[WOBBLE_FIRE] team=2 losTgt=64.84
+[WOBBLE_FIRE] team=2 losTgt=64.58
+[WOBBLE_FIRE] team=2 losTgt=64.25
+[WOBBLE_FIRE] team=2 losTgt=63.84
+[WOBBLE_FIRE] team=2 losTgt=63.36
+[WOBBLE_FIRE] team=2 losTgt=62.82
+[WOBBLE_FIRE] team=2 losTgt=62.23
+[WOBBLE_FIRE] team=2 losTgt=61.58
+[WOBBLE_FIRE] team=2 losTgt=60.87
+[WOBBLE_FIRE] team=2 losTgt=60.12
+[WOBBLE_FIRE] team=2 losTgt=59.32
+[WOBBLE_FIRE] team=2 losTgt=58.47
+[WOBBLE_FIRE] team=2 losTgt=57.58
+[WOBBLE_FIRE] team=2 losTgt=56.65
+[WOBBLE_FIRE] team=2 losTgt=55.68
+[WOBBLE_FIRE] team=2 losTgt=54.67
+[WOBBLE_FIRE] team=2 losTgt=53.62
+[WOBBLE_FIRE] team=2 losTgt=52.53
+[WOBBLE_FIRE] team=2 losTgt=51.42
+[WOBBLE_FIRE] team=2 losTgt=50.26
+[WOBBLE_FIRE] team=2 losTgt=49.07
+[WOBBLE_FIRE] team=2 losTgt=47.85
+[WOBBLE_FIRE] team=2 losTgt=46.58
+[WOBBLE_FIRE] team=2 losTgt=45.29
+[WOBBLE_FIRE] team=2 losTgt=45.20
+[WOBBLE_FIRE] team=2 losTgt=45.68
+[WOBBLE_FIRE] team=2 losTgt=46.12
+[WOBBLE_FIRE] team=2 losTgt=46.51
+[WOBBLE_FIRE] team=2 losTgt=46.85
+[WOBBLE_FIRE] team=2 losTgt=47.16
+[WOBBLE_FIRE] team=2 losTgt=47.41
+[WOBBLE_FIRE] team=2 losTgt=47.63
+[WOBBLE_FIRE] team=2 losTgt=47.81
+[WOBBLE_FIRE] team=2 losTgt=47.94
+[WOBBLE_FIRE] team=2 losTgt=48.03
+[WOBBLE_FIRE] team=2 losTgt=48.07
+[WOBBLE_FIRE] team=2 losTgt=48.07
+[WOBBLE_FIRE] team=2 losTgt=48.03
+[WOBBLE_FIRE] team=2 losTgt=47.96
+[WOBBLE_FIRE] team=2 losTgt=47.84
+[WOBBLE_FIRE] team=2 losTgt=47.69
+[WOBBLE_FIRE] team=2 losTgt=47.51
+[WOBBLE_FIRE] team=2 losTgt=47.29
+[WOBBLE_FIRE] team=2 losTgt=47.04
+[WOBBLE_FIRE] team=2 losTgt=46.76
+[WOBBLE_FIRE] team=2 losTgt=46.45
+[WOBBLE_FIRE] team=2 losTgt=46.11
+[WOBBLE_FIRE] team=2 losTgt=45.75
+[WOBBLE_FIRE] team=2 losTgt=45.36
+[WOBBLE_FIRE] team=2 losTgt=47.69
+[WOBBLE_FIRE] team=2 losTgt=49.11
+[WOBBLE_FIRE] team=2 losTgt=50.23
+[WOBBLE_FIRE] team=2 losTgt=50.74
+[WOBBLE_FIRE] team=2 losTgt=50.97
+[WOBBLE_FIRE] team=2 losTgt=51.20
+[WOBBLE_FIRE] team=2 losTgt=51.69
+[WOBBLE_FIRE] team=2 losTgt=52.37
+[WOBBLE_FIRE] team=2 losTgt=53.20
+[WOBBLE_FIRE] team=2 losTgt=54.07
+[WOBBLE_FIRE] team=2 losTgt=55.01
+[WOBBLE_FIRE] team=2 losTgt=56.00
+[WOBBLE_FIRE] team=2 losTgt=56.99
+[WOBBLE_FIRE] team=2 losTgt=57.98
+[WOBBLE_FIRE] team=2 losTgt=58.95
+[WOBBLE_FIRE] team=2 losTgt=59.91
+[WOBBLE_FIRE] team=2 losTgt=60.86
+[WOBBLE_FIRE] team=2 losTgt=61.79
+[WOBBLE_FIRE] team=2 losTgt=62.70
+[WOBBLE_FIRE] team=2 losTgt=63.59
+[WOBBLE_FIRE] team=2 losTgt=64.46
+[WOBBLE_FIRE] team=2 losTgt=65.31
+[WOBBLE_FIRE] team=2 losTgt=66.12
+[WOBBLE_FIRE] team=2 losTgt=66.55
+[WOBBLE_FIRE] team=2 losTgt=67.08
+[WOBBLE_FIRE] team=2 losTgt=67.34
+[WOBBLE_FIRE] team=2 losTgt=66.65
+[WOBBLE_FIRE] team=2 losTgt=67.36
+[WOBBLE_FIRE] team=2 losTgt=68.89
+[WOBBLE_FIRE] team=2 losTgt=67.80
+[WOBBLE_FIRE] team=2 losTgt=64.94
+[WOBBLE_FIRE] team=2 losTgt=65.47
+[WOBBLE_FIRE] team=2 losTgt=67.77
+[WOBBLE_FIRE] team=2 losTgt=66.87
+[WOBBLE_FIRE] team=2 losTgt=63.19
+[WOBBLE_FIRE] team=2 losTgt=63.30
+[WOBBLE_FIRE] team=2 losTgt=65.29
+[WOBBLE_FIRE] team=2 losTgt=62.77
+[WOBBLE_FIRE] team=2 losTgt=59.25
+[WOBBLE_FIRE] team=2 losTgt=60.38
+[WOBBLE_FIRE] team=2 losTgt=60.07
+[WOBBLE_FIRE] team=2 losTgt=56.74
+[WOBBLE_FIRE] team=2 losTgt=56.58
+[WOBBLE_FIRE] team=2 losTgt=56.02
+[WOBBLE_FIRE] team=2 losTgt=54.75
+[WOBBLE_FIRE] team=2 losTgt=53.88
+[WOBBLE_FIRE] team=2 losTgt=53.03
+[WOBBLE_FIRE] team=2 losTgt=52.21
+[WOBBLE_FIRE] team=2 losTgt=51.42
+[WOBBLE_FIRE] team=2 losTgt=50.66
+[WOBBLE_FIRE] team=2 losTgt=49.94
+[WOBBLE_FIRE] team=2 losTgt=49.24
+[WOBBLE_FIRE] team=2 losTgt=48.55
+[WOBBLE_FIRE] team=2 losTgt=47.89
+[WOBBLE_FIRE] team=2 losTgt=47.24
+[WOBBLE_FIRE] team=2 losTgt=46.62
+[WOBBLE_FIRE] team=2 losTgt=46.02
+[WOBBLE_FIRE] team=2 losTgt=45.44
+runner:local/env:0	num_steps=[8235] | total rewards=[991.0761] | termination= [target destroyed]
+[seed 7] reward=   991.08 ownHP=1.0000 tgtHP=-0.0039 target destroyed
+total: 2
+[WOBBLE_FIRE] team=2 losTgt=123.94
+[WOBBLE_FIRE] team=2 losTgt=123.89
+[WOBBLE_FIRE] team=2 losTgt=123.76
+[WOBBLE_FIRE] team=2 losTgt=123.65
+[WOBBLE_FIRE] team=2 losTgt=123.59
+[WOBBLE_FIRE] team=2 losTgt=123.53
+[WOBBLE_FIRE] team=2 losTgt=123.34
+[WOBBLE_FIRE] team=2 losTgt=122.85
+[WOBBLE_FIRE] team=2 losTgt=121.94
+[WOBBLE_FIRE] team=2 losTgt=120.54
+[WOBBLE_FIRE] team=2 losTgt=118.86
+[WOBBLE_FIRE] team=2 losTgt=117.29
+[WOBBLE_FIRE] team=2 losTgt=115.97
+[WOBBLE_FIRE] team=2 losTgt=114.85
+[WOBBLE_FIRE] team=2 losTgt=113.87
+[WOBBLE_FIRE] team=2 losTgt=112.96
+[WOBBLE_FIRE] team=2 losTgt=112.11
+[WOBBLE_FIRE] team=2 losTgt=111.30
+[WOBBLE_FIRE] team=2 losTgt=110.55
+[WOBBLE_FIRE] team=2 losTgt=109.84
+[WOBBLE_FIRE] team=2 losTgt=109.16
+[WOBBLE_FIRE] team=2 losTgt=108.52
+[WOBBLE_FIRE] team=2 losTgt=107.90
+[WOBBLE_FIRE] team=2 losTgt=107.29
+[WOBBLE_FIRE] team=2 losTgt=106.71
+[WOBBLE_FIRE] team=2 losTgt=106.15
+[WOBBLE_FIRE] team=2 losTgt=105.61
+[WOBBLE_FIRE] team=2 losTgt=105.08
+[WOBBLE_FIRE] team=2 losTgt=104.58
+[WOBBLE_FIRE] team=2 losTgt=104.12
+[WOBBLE_FIRE] team=2 losTgt=103.69
+[WOBBLE_FIRE] team=2 losTgt=103.25
+[WOBBLE_FIRE] team=2 losTgt=102.84
+[WOBBLE_FIRE] team=2 losTgt=102.43
+[WOBBLE_FIRE] team=2 losTgt=102.03
+[WOBBLE_FIRE] team=2 losTgt=101.63
+[WOBBLE_FIRE] team=2 losTgt=101.27
+[WOBBLE_FIRE] team=2 losTgt=100.94
+[WOBBLE_FIRE] team=2 losTgt=100.65
+[WOBBLE_FIRE] team=2 losTgt=100.39
+[WOBBLE_FIRE] team=2 losTgt=100.16
+[WOBBLE_FIRE] team=2 losTgt=99.95
+[WOBBLE_FIRE] team=2 losTgt=99.77
+[WOBBLE_FIRE] team=2 losTgt=99.59
+[WOBBLE_FIRE] team=2 losTgt=99.42
+[WOBBLE_FIRE] team=2 losTgt=99.27
+[WOBBLE_FIRE] team=2 losTgt=99.14
+[WOBBLE_FIRE] team=2 losTgt=99.02
+[WOBBLE_FIRE] team=2 losTgt=98.91
+[WOBBLE_FIRE] team=2 losTgt=98.82
+[WOBBLE_FIRE] team=2 losTgt=98.74
+[WOBBLE_FIRE] team=2 losTgt=98.67
+[WOBBLE_FIRE] team=2 losTgt=98.62
+[WOBBLE_FIRE] team=2 losTgt=98.59
+[WOBBLE_FIRE] team=2 losTgt=98.57
+[WOBBLE_FIRE] team=2 losTgt=98.58
+[WOBBLE_FIRE] team=2 losTgt=98.60
+[WOBBLE_FIRE] team=2 losTgt=98.65
+[WOBBLE_FIRE] team=2 losTgt=98.72
+[WOBBLE_FIRE] team=2 losTgt=98.82
+[WOBBLE_FIRE] team=2 losTgt=98.94
+[WOBBLE_FIRE] team=2 losTgt=99.09
+[WOBBLE_FIRE] team=2 losTgt=99.26
+[WOBBLE_FIRE] team=2 losTgt=99.46
+[WOBBLE_FIRE] team=2 losTgt=99.68
+[WOBBLE_FIRE] team=2 losTgt=99.94
+[WOBBLE_FIRE] team=2 losTgt=100.22
+[WOBBLE_FIRE] team=2 losTgt=100.53
+[WOBBLE_FIRE] team=2 losTgt=100.88
+[WOBBLE_FIRE] team=2 losTgt=101.26
+[WOBBLE_FIRE] team=2 losTgt=101.67
+[WOBBLE_FIRE] team=2 losTgt=102.12
+[WOBBLE_FIRE] team=2 losTgt=102.61
+[WOBBLE_FIRE] team=2 losTgt=103.15
+[WOBBLE_FIRE] team=2 losTgt=103.73
+[WOBBLE_FIRE] team=2 losTgt=104.35
+[WOBBLE_FIRE] team=2 losTgt=105.03
+[WOBBLE_FIRE] team=2 losTgt=105.77
+[WOBBLE_FIRE] team=2 losTgt=106.56
+[WOBBLE_FIRE] team=2 losTgt=107.42
+[WOBBLE_FIRE] team=2 losTgt=108.34
+[WOBBLE_FIRE] team=2 losTgt=109.32
+[WOBBLE_FIRE] team=2 losTgt=110.38
+[WOBBLE_FIRE] team=2 losTgt=111.50
+[WOBBLE_FIRE] team=2 losTgt=112.69
+[WOBBLE_FIRE] team=2 losTgt=113.97
+[WOBBLE_FIRE] team=2 losTgt=115.32
+[WOBBLE_FIRE] team=2 losTgt=116.79
+[WOBBLE_FIRE] team=2 losTgt=118.35
+[WOBBLE_FIRE] team=2 losTgt=120.05
+[WOBBLE_FIRE] team=2 losTgt=121.88
+[WOBBLE_FIRE] team=2 losTgt=123.82
+[WOBBLE_FIRE] team=2 losTgt=125.91
+[WOBBLE_FIRE] team=2 losTgt=128.14
+[WOBBLE_FIRE] team=2 losTgt=130.50
+[WOBBLE_FIRE] team=2 losTgt=132.99
+[WOBBLE_FIRE] team=2 losTgt=135.64
+[WOBBLE_FIRE] team=2 losTgt=138.43
+[WOBBLE_FIRE] team=2 losTgt=141.34
+[WOBBLE_FIRE] team=2 losTgt=144.39
+[WOBBLE_FIRE] team=2 losTgt=147.77
+[WOBBLE_FIRE] team=2 losTgt=151.53
+[WOBBLE_FIRE] team=2 losTgt=155.43
+[WOBBLE_FIRE] team=2 losTgt=159.19
+[WOBBLE_FIRE] team=2 losTgt=162.70
+[WOBBLE_FIRE] team=2 losTgt=165.79
+[WOBBLE_FIRE] team=2 losTgt=168.14
+[WOBBLE_FIRE] team=2 losTgt=169.12
+[WOBBLE_FIRE] team=2 losTgt=168.47
+[WOBBLE_FIRE] team=2 losTgt=166.73
+[WOBBLE_FIRE] team=2 losTgt=164.45
+[WOBBLE_FIRE] team=2 losTgt=161.92
+[WOBBLE_FIRE] team=2 losTgt=159.29
+[WOBBLE_FIRE] team=2 losTgt=156.51
+[WOBBLE_FIRE] team=2 losTgt=153.69
+[WOBBLE_FIRE] team=2 losTgt=151.03
+[WOBBLE_FIRE] team=2 losTgt=148.65
+[WOBBLE_FIRE] team=2 losTgt=146.69
+[WOBBLE_FIRE] team=2 losTgt=145.18
+[WOBBLE_FIRE] team=2 losTgt=144.02
+[WOBBLE_FIRE] team=2 losTgt=143.04
+[WOBBLE_FIRE] team=2 losTgt=142.05
+[WOBBLE_FIRE] team=2 losTgt=141.18
+[WOBBLE_FIRE] team=2 losTgt=140.46
+[WOBBLE_FIRE] team=2 losTgt=139.93
+[WOBBLE_FIRE] team=2 losTgt=139.57
+[WOBBLE_FIRE] team=2 losTgt=139.33
+[WOBBLE_FIRE] team=2 losTgt=139.17
+[WOBBLE_FIRE] team=2 losTgt=139.14
+[WOBBLE_FIRE] team=2 losTgt=139.28
+[WOBBLE_FIRE] team=2 losTgt=139.54
+[WOBBLE_FIRE] team=2 losTgt=139.96
+[WOBBLE_FIRE] team=2 losTgt=140.54
+[WOBBLE_FIRE] team=2 losTgt=141.32
+[WOBBLE_FIRE] team=2 losTgt=142.27
+[WOBBLE_FIRE] team=2 losTgt=143.46
+[WOBBLE_FIRE] team=2 losTgt=144.99
+[WOBBLE_FIRE] team=2 losTgt=146.58
+[WOBBLE_FIRE] team=2 losTgt=148.20
+[WOBBLE_FIRE] team=2 losTgt=150.01
+[WOBBLE_FIRE] team=2 losTgt=152.27
+[WOBBLE_FIRE] team=2 losTgt=154.99
+[WOBBLE_FIRE] team=2 losTgt=157.89
+[WOBBLE_FIRE] team=2 losTgt=160.75
+[WOBBLE_FIRE] team=2 losTgt=163.36
+[WOBBLE_FIRE] team=2 losTgt=165.61
+[WOBBLE_FIRE] team=2 losTgt=167.20
+[WOBBLE_FIRE] team=2 losTgt=167.67
+[WOBBLE_FIRE] team=2 losTgt=166.91
+[WOBBLE_FIRE] team=2 losTgt=165.39
+[WOBBLE_FIRE] team=2 losTgt=163.54
+[WOBBLE_FIRE] team=2 losTgt=161.60
+[WOBBLE_FIRE] team=2 losTgt=159.75
+[WOBBLE_FIRE] team=2 losTgt=158.00
+[WOBBLE_FIRE] team=2 losTgt=156.35
+[WOBBLE_FIRE] team=2 losTgt=154.90
+[WOBBLE_FIRE] team=2 losTgt=153.65
+[WOBBLE_FIRE] team=2 losTgt=152.56
+[WOBBLE_FIRE] team=2 losTgt=151.68
+[WOBBLE_FIRE] team=2 losTgt=150.98
+[WOBBLE_FIRE] team=2 losTgt=150.44
+[WOBBLE_FIRE] team=2 losTgt=150.07
+[WOBBLE_FIRE] team=2 losTgt=149.87
+[WOBBLE_FIRE] team=2 losTgt=149.86
+[WOBBLE_FIRE] team=2 losTgt=149.97
+[WOBBLE_FIRE] team=2 losTgt=150.28
+[WOBBLE_FIRE] team=2 losTgt=150.77
+[WOBBLE_FIRE] team=2 losTgt=151.44
+[WOBBLE_FIRE] team=2 losTgt=152.27
+[WOBBLE_FIRE] team=2 losTgt=153.16
+[WOBBLE_FIRE] team=2 losTgt=154.14
+[WOBBLE_FIRE] team=2 losTgt=155.15
+[WOBBLE_FIRE] team=2 losTgt=156.15
+[WOBBLE_FIRE] team=2 losTgt=157.33
+[WOBBLE_FIRE] team=2 losTgt=159.35
+[WOBBLE_FIRE] team=2 losTgt=161.72
+[WOBBLE_FIRE] team=2 losTgt=162.90
+[WOBBLE_FIRE] team=2 losTgt=163.10
+[WOBBLE_FIRE] team=2 losTgt=163.83
+[WOBBLE_FIRE] team=2 losTgt=165.15
+[WOBBLE_FIRE] team=2 losTgt=164.91
+[WOBBLE_FIRE] team=2 losTgt=165.78
+[WOBBLE_FIRE] team=2 losTgt=166.28
+[WOBBLE_FIRE] team=2 losTgt=166.78
+[WOBBLE_FIRE] team=2 losTgt=167.28
+[WOBBLE_FIRE] team=2 losTgt=167.75
+[WOBBLE_FIRE] team=2 losTgt=168.15
+[WOBBLE_FIRE] team=2 losTgt=168.50
+[WOBBLE_FIRE] team=2 losTgt=168.74
+[WOBBLE_FIRE] team=2 losTgt=168.94
+[WOBBLE_FIRE] team=2 losTgt=169.02
+[WOBBLE_FIRE] team=2 losTgt=169.06
+[WOBBLE_FIRE] team=2 losTgt=169.02
+[WOBBLE_FIRE] team=2 losTgt=169.00
+[WOBBLE_FIRE] team=2 losTgt=168.77
+[WOBBLE_FIRE] team=2 losTgt=168.51
+[WOBBLE_FIRE] team=2 losTgt=168.17
+[WOBBLE_FIRE] team=2 losTgt=167.79
+[WOBBLE_FIRE] team=2 losTgt=167.39
+[WOBBLE_FIRE] team=2 losTgt=166.98
+[WOBBLE_FIRE] team=2 losTgt=166.51
+[WOBBLE_FIRE] team=2 losTgt=166.04
+[WOBBLE_FIRE] team=2 losTgt=165.60
+[WOBBLE_FIRE] team=2 losTgt=165.12
+[WOBBLE_FIRE] team=2 losTgt=164.69
+[WOBBLE_FIRE] team=2 losTgt=164.22
+[WOBBLE_FIRE] team=2 losTgt=163.78
+[WOBBLE_FIRE] team=2 losTgt=163.35
+[WOBBLE_FIRE] team=2 losTgt=162.93
+[WOBBLE_FIRE] team=2 losTgt=162.52
+[WOBBLE_FIRE] team=2 losTgt=162.14
+[WOBBLE_FIRE] team=2 losTgt=160.95
+[WOBBLE_FIRE] team=2 losTgt=158.31
+[WOBBLE_FIRE] team=2 losTgt=158.20
+[WOBBLE_FIRE] team=2 losTgt=158.25
+[WOBBLE_FIRE] team=2 losTgt=157.14
+[WOBBLE_FIRE] team=2 losTgt=154.89
+[WOBBLE_FIRE] team=2 losTgt=154.54
+[WOBBLE_FIRE] team=2 losTgt=153.59
+[WOBBLE_FIRE] team=2 losTgt=152.59
+[WOBBLE_FIRE] team=2 losTgt=152.35
+[WOBBLE_FIRE] team=2 losTgt=152.24
+[WOBBLE_FIRE] team=2 losTgt=152.13
+[WOBBLE_FIRE] team=2 losTgt=151.64
+[WOBBLE_FIRE] team=2 losTgt=151.47
+[WOBBLE_FIRE] team=2 losTgt=150.06
+[WOBBLE_FIRE] team=2 losTgt=150.78
+[WOBBLE_FIRE] team=2 losTgt=151.03
+[WOBBLE_FIRE] team=2 losTgt=151.07
+[WOBBLE_FIRE] team=2 losTgt=151.77
+[WOBBLE_FIRE] team=2 losTgt=152.15
+[WOBBLE_FIRE] team=2 losTgt=153.00
+[WOBBLE_FIRE] team=2 losTgt=153.34
+[WOBBLE_FIRE] team=2 losTgt=154.76
+[WOBBLE_FIRE] team=2 losTgt=155.67
+[WOBBLE_FIRE] team=2 losTgt=156.26
+[WOBBLE_FIRE] team=2 losTgt=157.45
+[WOBBLE_FIRE] team=2 losTgt=157.11
+[WOBBLE_FIRE] team=2 losTgt=158.13
+[WOBBLE_FIRE] team=2 losTgt=158.45
+[WOBBLE_FIRE] team=2 losTgt=158.94
+[WOBBLE_FIRE] team=2 losTgt=159.44
+[WOBBLE_FIRE] team=2 losTgt=159.67
+[WOBBLE_FIRE] team=2 losTgt=159.41
+[WOBBLE_FIRE] team=2 losTgt=158.61
+[WOBBLE_FIRE] team=2 losTgt=157.31
+[WOBBLE_FIRE] team=2 losTgt=155.61
+[WOBBLE_FIRE] team=2 losTgt=153.59
+[WOBBLE_FIRE] team=2 losTgt=151.33
+[WOBBLE_FIRE] team=2 losTgt=148.89
+[WOBBLE_FIRE] team=2 losTgt=146.36
+[WOBBLE_FIRE] team=2 losTgt=143.78
+[WOBBLE_FIRE] team=2 losTgt=141.15
+[WOBBLE_FIRE] team=2 losTgt=138.53
+[WOBBLE_FIRE] team=2 losTgt=135.98
+[WOBBLE_FIRE] team=2 losTgt=133.48
+[WOBBLE_FIRE] team=2 losTgt=131.06
+[WOBBLE_FIRE] team=2 losTgt=128.71
+[WOBBLE_FIRE] team=2 losTgt=126.43
+[WOBBLE_FIRE] team=2 losTgt=124.22
+[WOBBLE_FIRE] team=2 losTgt=122.08
+[WOBBLE_FIRE] team=2 losTgt=120.01
+[WOBBLE_FIRE] team=2 losTgt=118.00
+[WOBBLE_FIRE] team=2 losTgt=116.04
+[WOBBLE_FIRE] team=2 losTgt=114.15
+[WOBBLE_FIRE] team=2 losTgt=112.31
+[WOBBLE_FIRE] team=2 losTgt=110.53
+[WOBBLE_FIRE] team=2 losTgt=108.78
+[WOBBLE_FIRE] team=2 losTgt=107.09
+[WOBBLE_FIRE] team=2 losTgt=105.45
+[WOBBLE_FIRE] team=2 losTgt=103.85
+[WOBBLE_FIRE] team=2 losTgt=102.29
+[WOBBLE_FIRE] team=2 losTgt=100.77
+[WOBBLE_FIRE] team=2 losTgt=99.29
+[WOBBLE_FIRE] team=2 losTgt=97.85
+[WOBBLE_FIRE] team=2 losTgt=96.44
+[WOBBLE_FIRE] team=2 losTgt=95.06
+[WOBBLE_FIRE] team=2 losTgt=93.71
+[WOBBLE_FIRE] team=2 losTgt=92.39
+[WOBBLE_FIRE] team=2 losTgt=91.10
+[WOBBLE_FIRE] team=2 losTgt=89.83
+[WOBBLE_FIRE] team=2 losTgt=88.59
+[WOBBLE_FIRE] team=2 losTgt=87.38
+[WOBBLE_FIRE] team=2 losTgt=86.18
+[WOBBLE_FIRE] team=2 losTgt=85.01
+[WOBBLE_FIRE] team=2 losTgt=83.86
+[WOBBLE_FIRE] team=2 losTgt=82.73
+[WOBBLE_FIRE] team=2 losTgt=81.62
+[WOBBLE_FIRE] team=2 losTgt=80.53
+[WOBBLE_FIRE] team=2 losTgt=79.47
+[WOBBLE_FIRE] team=2 losTgt=78.41
+[WOBBLE_FIRE] team=2 losTgt=77.37
+[WOBBLE_FIRE] team=2 losTgt=76.32
+[WOBBLE_FIRE] team=2 losTgt=75.27
+[WOBBLE_FIRE] team=2 losTgt=74.21
+[WOBBLE_FIRE] team=2 losTgt=73.14
+[WOBBLE_FIRE] team=2 losTgt=72.07
+[WOBBLE_FIRE] team=2 losTgt=70.96
+[WOBBLE_FIRE] team=2 losTgt=69.81
+[WOBBLE_FIRE] team=2 losTgt=68.64
+[WOBBLE_FIRE] team=2 losTgt=67.44
+[WOBBLE_FIRE] team=2 losTgt=66.22
+[WOBBLE_FIRE] team=2 losTgt=64.94
+[WOBBLE_FIRE] team=2 losTgt=63.61
+[WOBBLE_FIRE] team=2 losTgt=62.24
+[WOBBLE_FIRE] team=2 losTgt=60.86
+[WOBBLE_FIRE] team=2 losTgt=59.48
+[WOBBLE_FIRE] team=2 losTgt=58.09
+[WOBBLE_FIRE] team=2 losTgt=56.69
+[WOBBLE_FIRE] team=2 losTgt=55.27
+[WOBBLE_FIRE] team=2 losTgt=53.83
+[WOBBLE_FIRE] team=2 losTgt=52.37
+[WOBBLE_FIRE] team=2 losTgt=50.88
+[WOBBLE_FIRE] team=2 losTgt=49.37
+[WOBBLE_FIRE] team=2 losTgt=47.83
+[WOBBLE_FIRE] team=2 losTgt=46.25
+runner:local/env:0	num_steps=[11818] | total rewards=[1324.2301] | termination= [target destroyed]
+[seed 8] reward=  1324.23 ownHP=1.0000 tgtHP=-0.0001 target destroyed
+total: 2
+[WOBBLE_FIRE] team=2 losTgt=45.71
+[WOBBLE_FIRE] team=2 losTgt=46.86
+[WOBBLE_FIRE] team=2 losTgt=48.04
+[WOBBLE_FIRE] team=2 losTgt=49.25
+[WOBBLE_FIRE] team=2 losTgt=50.47
+[WOBBLE_FIRE] team=2 losTgt=51.72
+[WOBBLE_FIRE] team=2 losTgt=52.98
+[WOBBLE_FIRE] team=2 losTgt=54.26
+[WOBBLE_FIRE] team=2 losTgt=55.55
+[WOBBLE_FIRE] team=2 losTgt=56.85
+[WOBBLE_FIRE] team=2 losTgt=58.18
+[WOBBLE_FIRE] team=2 losTgt=59.51
+[WOBBLE_FIRE] team=2 losTgt=60.85
+[WOBBLE_FIRE] team=2 losTgt=62.20
+[WOBBLE_FIRE] team=2 losTgt=63.56
+[WOBBLE_FIRE] team=2 losTgt=64.91
+[WOBBLE_FIRE] team=2 losTgt=66.26
+[WOBBLE_FIRE] team=2 losTgt=67.60
+[WOBBLE_FIRE] team=2 losTgt=68.93
+[WOBBLE_FIRE] team=2 losTgt=70.25
+[WOBBLE_FIRE] team=2 losTgt=71.54
+[WOBBLE_FIRE] team=2 losTgt=72.82
+[WOBBLE_FIRE] team=2 losTgt=74.09
+[WOBBLE_FIRE] team=2 losTgt=75.32
+[WOBBLE_FIRE] team=2 losTgt=76.53
+[WOBBLE_FIRE] team=2 losTgt=77.72
+[WOBBLE_FIRE] team=2 losTgt=78.87
+[WOBBLE_FIRE] team=2 losTgt=79.99
+[WOBBLE_FIRE] team=2 losTgt=81.08
+[WOBBLE_FIRE] team=2 losTgt=82.13
+[WOBBLE_FIRE] team=2 losTgt=83.15
+[WOBBLE_FIRE] team=2 losTgt=84.12
+[WOBBLE_FIRE] team=2 losTgt=85.07
+[WOBBLE_FIRE] team=2 losTgt=85.97
+[WOBBLE_FIRE] team=2 losTgt=86.84
+[WOBBLE_FIRE] team=2 losTgt=87.67
+[WOBBLE_FIRE] team=2 losTgt=88.45
+[WOBBLE_FIRE] team=2 losTgt=89.20
+[WOBBLE_FIRE] team=2 losTgt=89.90
+[WOBBLE_FIRE] team=2 losTgt=90.56
+[WOBBLE_FIRE] team=2 losTgt=91.18
+[WOBBLE_FIRE] team=2 losTgt=91.76
+[WOBBLE_FIRE] team=2 losTgt=92.29
+[WOBBLE_FIRE] team=2 losTgt=92.78
+[WOBBLE_FIRE] team=2 losTgt=93.22
+[WOBBLE_FIRE] team=2 losTgt=93.61
+[WOBBLE_FIRE] team=2 losTgt=93.96
+[WOBBLE_FIRE] team=2 losTgt=94.26
+[WOBBLE_FIRE] team=2 losTgt=94.53
+[WOBBLE_FIRE] team=2 losTgt=94.76
+[WOBBLE_FIRE] team=2 losTgt=94.95
+[WOBBLE_FIRE] team=2 losTgt=95.09
+[WOBBLE_FIRE] team=2 losTgt=95.20
+[WOBBLE_FIRE] team=2 losTgt=95.28
+[WOBBLE_FIRE] team=2 losTgt=95.31
+[WOBBLE_FIRE] team=2 losTgt=95.30
+[WOBBLE_FIRE] team=2 losTgt=95.27
+[WOBBLE_FIRE] team=2 losTgt=95.19
+[WOBBLE_FIRE] team=2 losTgt=95.09
+[WOBBLE_FIRE] team=2 losTgt=94.95
+[WOBBLE_FIRE] team=2 losTgt=94.78
+[WOBBLE_FIRE] team=2 losTgt=94.58
+[WOBBLE_FIRE] team=2 losTgt=94.35
+[WOBBLE_FIRE] team=2 losTgt=94.09
+[WOBBLE_FIRE] team=2 losTgt=93.80
+[WOBBLE_FIRE] team=2 losTgt=93.49
+[WOBBLE_FIRE] team=2 losTgt=93.15
+[WOBBLE_FIRE] team=2 losTgt=92.79
+[WOBBLE_FIRE] team=2 losTgt=92.40
+[WOBBLE_FIRE] team=2 losTgt=91.99
+[WOBBLE_FIRE] team=2 losTgt=91.55
+[WOBBLE_FIRE] team=2 losTgt=91.09
+[WOBBLE_FIRE] team=2 losTgt=90.62
+[WOBBLE_FIRE] team=2 losTgt=90.12
+[WOBBLE_FIRE] team=2 losTgt=89.60
+[WOBBLE_FIRE] team=2 losTgt=89.06
+[WOBBLE_FIRE] team=2 losTgt=88.51
+[WOBBLE_FIRE] team=2 losTgt=87.93
+[WOBBLE_FIRE] team=2 losTgt=87.33
+[WOBBLE_FIRE] team=2 losTgt=86.69
+[WOBBLE_FIRE] team=2 losTgt=86.01
+[WOBBLE_FIRE] team=2 losTgt=85.31
+[WOBBLE_FIRE] team=2 losTgt=84.62
+[WOBBLE_FIRE] team=2 losTgt=83.95
+[WOBBLE_FIRE] team=2 losTgt=83.28
+[WOBBLE_FIRE] team=2 losTgt=82.60
+[WOBBLE_FIRE] team=2 losTgt=81.92
+[WOBBLE_FIRE] team=2 losTgt=81.23
+[WOBBLE_FIRE] team=2 losTgt=80.52
+[WOBBLE_FIRE] team=2 losTgt=79.80
+[WOBBLE_FIRE] team=2 losTgt=79.07
+[WOBBLE_FIRE] team=2 losTgt=78.32
+[WOBBLE_FIRE] team=2 losTgt=77.56
+[WOBBLE_FIRE] team=2 losTgt=76.79
+[WOBBLE_FIRE] team=2 losTgt=76.00
+[WOBBLE_FIRE] team=2 losTgt=75.20
+[WOBBLE_FIRE] team=2 losTgt=74.39
+[WOBBLE_FIRE] team=2 losTgt=73.56
+[WOBBLE_FIRE] team=2 losTgt=72.72
+[WOBBLE_FIRE] team=2 losTgt=71.87
+[WOBBLE_FIRE] team=2 losTgt=71.01
+[WOBBLE_FIRE] team=2 losTgt=70.13
+[WOBBLE_FIRE] team=2 losTgt=69.24
+[WOBBLE_FIRE] team=2 losTgt=68.35
+[WOBBLE_FIRE] team=2 losTgt=67.44
+[WOBBLE_FIRE] team=2 losTgt=66.51
+[WOBBLE_FIRE] team=2 losTgt=65.58
+[WOBBLE_FIRE] team=2 losTgt=64.64
+[WOBBLE_FIRE] team=2 losTgt=63.68
+[WOBBLE_FIRE] team=2 losTgt=62.72
+[WOBBLE_FIRE] team=2 losTgt=61.74
+[WOBBLE_FIRE] team=2 losTgt=60.76
+[WOBBLE_FIRE] team=2 losTgt=59.76
+[WOBBLE_FIRE] team=2 losTgt=58.76
+[WOBBLE_FIRE] team=2 losTgt=57.74
+[WOBBLE_FIRE] team=2 losTgt=56.71
+[WOBBLE_FIRE] team=2 losTgt=55.68
+[WOBBLE_FIRE] team=2 losTgt=54.63
+[WOBBLE_FIRE] team=2 losTgt=53.58
+[WOBBLE_FIRE] team=2 losTgt=52.51
+[WOBBLE_FIRE] team=2 losTgt=51.44
+[WOBBLE_FIRE] team=2 losTgt=50.35
+[WOBBLE_FIRE] team=2 losTgt=49.26
+[WOBBLE_FIRE] team=2 losTgt=48.15
+[WOBBLE_FIRE] team=2 losTgt=47.04
+[WOBBLE_FIRE] team=2 losTgt=45.92
+[WOBBLE_FIRE] team=2 losTgt=45.78
+[WOBBLE_FIRE] team=2 losTgt=47.26
+[WOBBLE_FIRE] team=2 losTgt=48.68
+[WOBBLE_FIRE] team=2 losTgt=50.02
+[WOBBLE_FIRE] team=2 losTgt=51.29
+[WOBBLE_FIRE] team=2 losTgt=52.49
+[WOBBLE_FIRE] team=2 losTgt=53.91
+[WOBBLE_FIRE] team=2 losTgt=55.16
+[WOBBLE_FIRE] team=2 losTgt=55.64
+[WOBBLE_FIRE] team=2 losTgt=55.38
+[WOBBLE_FIRE] team=2 losTgt=55.18
+[WOBBLE_FIRE] team=2 losTgt=55.02
+[WOBBLE_FIRE] team=2 losTgt=54.89
+[WOBBLE_FIRE] team=2 losTgt=54.82
+[WOBBLE_FIRE] team=2 losTgt=54.80
+[WOBBLE_FIRE] team=2 losTgt=54.81
+[WOBBLE_FIRE] team=2 losTgt=54.84
+[WOBBLE_FIRE] team=2 losTgt=54.87
+[WOBBLE_FIRE] team=2 losTgt=54.92
+[WOBBLE_FIRE] team=2 losTgt=54.98
+[WOBBLE_FIRE] team=2 losTgt=55.04
+[WOBBLE_FIRE] team=2 losTgt=55.12
+[WOBBLE_FIRE] team=2 losTgt=55.20
+[WOBBLE_FIRE] team=2 losTgt=55.29
+[WOBBLE_FIRE] team=2 losTgt=55.37
+[WOBBLE_FIRE] team=2 losTgt=55.45
+[WOBBLE_FIRE] team=2 losTgt=55.53
+[WOBBLE_FIRE] team=2 losTgt=55.61
+[WOBBLE_FIRE] team=2 losTgt=55.69
+[WOBBLE_FIRE] team=2 losTgt=55.75
+[WOBBLE_FIRE] team=2 losTgt=55.82
+[WOBBLE_FIRE] team=2 losTgt=55.89
+[WOBBLE_FIRE] team=2 losTgt=55.95
+[WOBBLE_FIRE] team=2 losTgt=56.01
+[WOBBLE_FIRE] team=2 losTgt=56.06
+[WOBBLE_FIRE] team=2 losTgt=56.10
+[WOBBLE_FIRE] team=2 losTgt=56.14
+[WOBBLE_FIRE] team=2 losTgt=56.16
+[WOBBLE_FIRE] team=2 losTgt=56.18
+[WOBBLE_FIRE] team=2 losTgt=56.18
+[WOBBLE_FIRE] team=2 losTgt=56.17
+[WOBBLE_FIRE] team=2 losTgt=56.14
+[WOBBLE_FIRE] team=2 losTgt=56.10
+[WOBBLE_FIRE] team=2 losTgt=56.04
+[WOBBLE_FIRE] team=2 losTgt=55.96
+[WOBBLE_FIRE] team=2 losTgt=55.86
+[WOBBLE_FIRE] team=2 losTgt=55.74
+[WOBBLE_FIRE] team=2 losTgt=55.59
+[WOBBLE_FIRE] team=2 losTgt=55.41
+[WOBBLE_FIRE] team=2 losTgt=55.18
+[WOBBLE_FIRE] team=2 losTgt=54.90
+[WOBBLE_FIRE] team=2 losTgt=54.57
+[WOBBLE_FIRE] team=2 losTgt=54.19
+[WOBBLE_FIRE] team=2 losTgt=53.75
+[WOBBLE_FIRE] team=2 losTgt=53.27
+[WOBBLE_FIRE] team=2 losTgt=52.72
+[WOBBLE_FIRE] team=2 losTgt=52.13
+[WOBBLE_FIRE] team=2 losTgt=51.49
+[WOBBLE_FIRE] team=2 losTgt=50.79
+[WOBBLE_FIRE] team=2 losTgt=50.04
+[WOBBLE_FIRE] team=2 losTgt=49.23
+[WOBBLE_FIRE] team=2 losTgt=48.37
+[WOBBLE_FIRE] team=2 losTgt=47.46
+[WOBBLE_FIRE] team=2 losTgt=46.49
+[WOBBLE_FIRE] team=2 losTgt=45.48
+runner:local/env:0	num_steps=[9109] | total rewards=[1185.6371] | termination= [target destroyed]
+[seed 9] reward=  1185.64 ownHP=1.0000 tgtHP=-0.0053 target destroyed
+total: 2
+[WOBBLE_FIRE] team=2 losTgt=46.04
+[WOBBLE_FIRE] team=2 losTgt=49.25
+[WOBBLE_FIRE] team=2 losTgt=52.71
+[WOBBLE_FIRE] team=2 losTgt=56.37
+[WOBBLE_FIRE] team=2 losTgt=60.16
+[WOBBLE_FIRE] team=2 losTgt=64.00
+[WOBBLE_FIRE] team=2 losTgt=67.84
+[WOBBLE_FIRE] team=2 losTgt=71.54
+[WOBBLE_FIRE] team=2 losTgt=75.07
+[WOBBLE_FIRE] team=2 losTgt=78.43
+[WOBBLE_FIRE] team=2 losTgt=81.57
+[WOBBLE_FIRE] team=2 losTgt=84.53
+[WOBBLE_FIRE] team=2 losTgt=87.30
+[WOBBLE_FIRE] team=2 losTgt=89.84
+[WOBBLE_FIRE] team=2 losTgt=92.16
+[WOBBLE_FIRE] team=2 losTgt=94.25
+[WOBBLE_FIRE] team=2 losTgt=96.15
+[WOBBLE_FIRE] team=2 losTgt=97.86
+[WOBBLE_FIRE] team=2 losTgt=99.41
+[WOBBLE_FIRE] team=2 losTgt=100.80
+[WOBBLE_FIRE] team=2 losTgt=102.04
+[WOBBLE_FIRE] team=2 losTgt=103.15
+[WOBBLE_FIRE] team=2 losTgt=104.12
+[WOBBLE_FIRE] team=2 losTgt=104.98
+[WOBBLE_FIRE] team=2 losTgt=105.71
+[WOBBLE_FIRE] team=2 losTgt=106.33
+[WOBBLE_FIRE] team=2 losTgt=106.85
+[WOBBLE_FIRE] team=2 losTgt=107.27
+[WOBBLE_FIRE] team=2 losTgt=107.61
+[WOBBLE_FIRE] team=2 losTgt=107.86
+[WOBBLE_FIRE] team=2 losTgt=108.05
+[WOBBLE_FIRE] team=2 losTgt=108.17
+[WOBBLE_FIRE] team=2 losTgt=108.23
+[WOBBLE_FIRE] team=2 losTgt=108.23
+[WOBBLE_FIRE] team=2 losTgt=108.19
+[WOBBLE_FIRE] team=2 losTgt=108.11
+[WOBBLE_FIRE] team=2 losTgt=107.97
+[WOBBLE_FIRE] team=2 losTgt=107.80
+[WOBBLE_FIRE] team=2 losTgt=107.60
+[WOBBLE_FIRE] team=2 losTgt=107.37
+[WOBBLE_FIRE] team=2 losTgt=107.10
+[WOBBLE_FIRE] team=2 losTgt=106.81
+[WOBBLE_FIRE] team=2 losTgt=106.49
+[WOBBLE_FIRE] team=2 losTgt=106.16
+[WOBBLE_FIRE] team=2 losTgt=105.80
+[WOBBLE_FIRE] team=2 losTgt=105.42
+[WOBBLE_FIRE] team=2 losTgt=105.02
+[WOBBLE_FIRE] team=2 losTgt=104.60
+[WOBBLE_FIRE] team=2 losTgt=104.17
+[WOBBLE_FIRE] team=2 losTgt=103.71
+[WOBBLE_FIRE] team=2 losTgt=103.22
+[WOBBLE_FIRE] team=2 losTgt=102.72
+[WOBBLE_FIRE] team=2 losTgt=102.20
+[WOBBLE_FIRE] team=2 losTgt=101.66
+[WOBBLE_FIRE] team=2 losTgt=101.11
+[WOBBLE_FIRE] team=2 losTgt=100.55
+[WOBBLE_FIRE] team=2 losTgt=99.97
+[WOBBLE_FIRE] team=2 losTgt=99.38
+[WOBBLE_FIRE] team=2 losTgt=98.78
+[WOBBLE_FIRE] team=2 losTgt=98.17
+[WOBBLE_FIRE] team=2 losTgt=97.55
+[WOBBLE_FIRE] team=2 losTgt=96.91
+[WOBBLE_FIRE] team=2 losTgt=96.27
+[WOBBLE_FIRE] team=2 losTgt=95.62
+[WOBBLE_FIRE] team=2 losTgt=94.95
+[WOBBLE_FIRE] team=2 losTgt=94.27
+[WOBBLE_FIRE] team=2 losTgt=93.59
+[WOBBLE_FIRE] team=2 losTgt=92.89
+[WOBBLE_FIRE] team=2 losTgt=92.18
+[WOBBLE_FIRE] team=2 losTgt=91.47
+[WOBBLE_FIRE] team=2 losTgt=90.75
+[WOBBLE_FIRE] team=2 losTgt=90.02
+[WOBBLE_FIRE] team=2 losTgt=89.28
+[WOBBLE_FIRE] team=2 losTgt=88.53
+[WOBBLE_FIRE] team=2 losTgt=87.78
+[WOBBLE_FIRE] team=2 losTgt=87.02
+[WOBBLE_FIRE] team=2 losTgt=86.25
+[WOBBLE_FIRE] team=2 losTgt=85.48
+[WOBBLE_FIRE] team=2 losTgt=84.70
+[WOBBLE_FIRE] team=2 losTgt=83.91
+[WOBBLE_FIRE] team=2 losTgt=83.12
+[WOBBLE_FIRE] team=2 losTgt=82.32
+[WOBBLE_FIRE] team=2 losTgt=81.52
+[WOBBLE_FIRE] team=2 losTgt=80.71
+[WOBBLE_FIRE] team=2 losTgt=79.89
+[WOBBLE_FIRE] team=2 losTgt=79.07
+[WOBBLE_FIRE] team=2 losTgt=78.25
+[WOBBLE_FIRE] team=2 losTgt=77.42
+[WOBBLE_FIRE] team=2 losTgt=76.58
+[WOBBLE_FIRE] team=2 losTgt=75.74
+[WOBBLE_FIRE] team=2 losTgt=74.89
+[WOBBLE_FIRE] team=2 losTgt=74.04
+[WOBBLE_FIRE] team=2 losTgt=73.18
+[WOBBLE_FIRE] team=2 losTgt=72.32
+[WOBBLE_FIRE] team=2 losTgt=71.45
+[WOBBLE_FIRE] team=2 losTgt=70.58
+[WOBBLE_FIRE] team=2 losTgt=69.71
+[WOBBLE_FIRE] team=2 losTgt=68.83
+[WOBBLE_FIRE] team=2 losTgt=67.94
+[WOBBLE_FIRE] team=2 losTgt=67.05
+[WOBBLE_FIRE] team=2 losTgt=66.16
+[WOBBLE_FIRE] team=2 losTgt=65.26
+[WOBBLE_FIRE] team=2 losTgt=64.36
+[WOBBLE_FIRE] team=2 losTgt=63.45
+[WOBBLE_FIRE] team=2 losTgt=62.54
+[WOBBLE_FIRE] team=2 losTgt=61.62
+[WOBBLE_FIRE] team=2 losTgt=60.70
+[WOBBLE_FIRE] team=2 losTgt=59.77
+[WOBBLE_FIRE] team=2 losTgt=58.85
+[WOBBLE_FIRE] team=2 losTgt=57.91
+[WOBBLE_FIRE] team=2 losTgt=56.97
+[WOBBLE_FIRE] team=2 losTgt=56.03
+[WOBBLE_FIRE] team=2 losTgt=55.09
+[WOBBLE_FIRE] team=2 losTgt=54.14
+[WOBBLE_FIRE] team=2 losTgt=53.18
+[WOBBLE_FIRE] team=2 losTgt=52.22
+[WOBBLE_FIRE] team=2 losTgt=51.26
+[WOBBLE_FIRE] team=2 losTgt=50.29
+[WOBBLE_FIRE] team=2 losTgt=49.32
+[WOBBLE_FIRE] team=2 losTgt=48.35
+[WOBBLE_FIRE] team=2 losTgt=47.36
+[WOBBLE_FIRE] team=2 losTgt=46.38
+[WOBBLE_FIRE] team=2 losTgt=45.38
+[WOBBLE_FIRE] team=2 losTgt=45.98
+[WOBBLE_FIRE] team=2 losTgt=48.21
+[WOBBLE_FIRE] team=2 losTgt=50.37
+[WOBBLE_FIRE] team=2 losTgt=52.42
+[WOBBLE_FIRE] team=2 losTgt=54.37
+[WOBBLE_FIRE] team=2 losTgt=56.19
+[WOBBLE_FIRE] team=2 losTgt=57.89
+[WOBBLE_FIRE] team=2 losTgt=59.45
+[WOBBLE_FIRE] team=2 losTgt=60.89
+[WOBBLE_FIRE] team=2 losTgt=62.19
+[WOBBLE_FIRE] team=2 losTgt=63.37
+[WOBBLE_FIRE] team=2 losTgt=64.40
+[WOBBLE_FIRE] team=2 losTgt=65.29
+[WOBBLE_FIRE] team=2 losTgt=66.06
+[WOBBLE_FIRE] team=2 losTgt=66.68
+[WOBBLE_FIRE] team=2 losTgt=67.16
+[WOBBLE_FIRE] team=2 losTgt=67.52
+[WOBBLE_FIRE] team=2 losTgt=67.76
+[WOBBLE_FIRE] team=2 losTgt=67.89
+[WOBBLE_FIRE] team=2 losTgt=67.91
+[WOBBLE_FIRE] team=2 losTgt=67.84
+[WOBBLE_FIRE] team=2 losTgt=67.68
+[WOBBLE_FIRE] team=2 losTgt=67.43
+[WOBBLE_FIRE] team=2 losTgt=67.11
+[WOBBLE_FIRE] team=2 losTgt=66.71
+[WOBBLE_FIRE] team=2 losTgt=66.24
+[WOBBLE_FIRE] team=2 losTgt=65.71
+[WOBBLE_FIRE] team=2 losTgt=65.11
+[WOBBLE_FIRE] team=2 losTgt=64.46
+[WOBBLE_FIRE] team=2 losTgt=63.76
+[WOBBLE_FIRE] team=2 losTgt=63.01
+[WOBBLE_FIRE] team=2 losTgt=62.20
+[WOBBLE_FIRE] team=2 losTgt=61.36
+[WOBBLE_FIRE] team=2 losTgt=60.47
+[WOBBLE_FIRE] team=2 losTgt=59.54
+[WOBBLE_FIRE] team=2 losTgt=58.57
+[WOBBLE_FIRE] team=2 losTgt=57.56
+[WOBBLE_FIRE] team=2 losTgt=56.51
+[WOBBLE_FIRE] team=2 losTgt=55.43
+[WOBBLE_FIRE] team=2 losTgt=54.31
+[WOBBLE_FIRE] team=2 losTgt=53.16
+[WOBBLE_FIRE] team=2 losTgt=51.97
+[WOBBLE_FIRE] team=2 losTgt=50.75
+[WOBBLE_FIRE] team=2 losTgt=49.50
+[WOBBLE_FIRE] team=2 losTgt=48.22
+[WOBBLE_FIRE] team=2 losTgt=46.91
+[WOBBLE_FIRE] team=2 losTgt=45.56
+runner:local/env:0	num_steps=[6276] | total rewards=[774.6291] | termination= [target destroyed]
+[seed 10] reward=   774.63 ownHP=1.0000 tgtHP=-0.0001 target destroyed
+total: 2
+[WOBBLE_FIRE] team=2 losTgt=150.27
+[WOBBLE_FIRE] team=2 losTgt=149.63
+[WOBBLE_FIRE] team=2 losTgt=147.42
+[WOBBLE_FIRE] team=2 losTgt=144.92
+[WOBBLE_FIRE] team=2 losTgt=142.72
+[WOBBLE_FIRE] team=2 losTgt=140.79
+[WOBBLE_FIRE] team=2 losTgt=139.14
+[WOBBLE_FIRE] team=2 losTgt=137.68
+[WOBBLE_FIRE] team=2 losTgt=136.33
+[WOBBLE_FIRE] team=2 losTgt=135.03
+[WOBBLE_FIRE] team=2 losTgt=133.76
+[WOBBLE_FIRE] team=2 losTgt=132.53
+[WOBBLE_FIRE] team=2 losTgt=131.33
+[WOBBLE_FIRE] team=2 losTgt=130.17
+[WOBBLE_FIRE] team=2 losTgt=129.07
+[WOBBLE_FIRE] team=2 losTgt=127.99
+[WOBBLE_FIRE] team=2 losTgt=126.92
+[WOBBLE_FIRE] team=2 losTgt=125.85
+[WOBBLE_FIRE] team=2 losTgt=124.80
+[WOBBLE_FIRE] team=2 losTgt=123.78
+[WOBBLE_FIRE] team=2 losTgt=122.78
+[WOBBLE_FIRE] team=2 losTgt=121.81
+[WOBBLE_FIRE] team=2 losTgt=120.86
+[WOBBLE_FIRE] team=2 losTgt=119.94
+[WOBBLE_FIRE] team=2 losTgt=119.04
+[WOBBLE_FIRE] team=2 losTgt=118.16
+[WOBBLE_FIRE] team=2 losTgt=117.29
+[WOBBLE_FIRE] team=2 losTgt=116.43
+[WOBBLE_FIRE] team=2 losTgt=115.57
+[WOBBLE_FIRE] team=2 losTgt=114.73
+[WOBBLE_FIRE] team=2 losTgt=113.91
+[WOBBLE_FIRE] team=2 losTgt=113.10
+[WOBBLE_FIRE] team=2 losTgt=112.31
+[WOBBLE_FIRE] team=2 losTgt=111.53
+[WOBBLE_FIRE] team=2 losTgt=110.76
+[WOBBLE_FIRE] team=2 losTgt=109.99
+[WOBBLE_FIRE] team=2 losTgt=109.23
+[WOBBLE_FIRE] team=2 losTgt=108.45
+[WOBBLE_FIRE] team=2 losTgt=107.68
+[WOBBLE_FIRE] team=2 losTgt=106.89
+[WOBBLE_FIRE] team=2 losTgt=106.11
+[WOBBLE_FIRE] team=2 losTgt=105.34
+[WOBBLE_FIRE] team=2 losTgt=104.61
+[WOBBLE_FIRE] team=2 losTgt=103.89
+[WOBBLE_FIRE] team=2 losTgt=103.21
+[WOBBLE_FIRE] team=2 losTgt=102.54
+[WOBBLE_FIRE] team=2 losTgt=101.89
+[WOBBLE_FIRE] team=2 losTgt=101.24
+[WOBBLE_FIRE] team=2 losTgt=100.58
+[WOBBLE_FIRE] team=2 losTgt=99.92
+[WOBBLE_FIRE] team=2 losTgt=99.26
+[WOBBLE_FIRE] team=2 losTgt=98.60
+[WOBBLE_FIRE] team=2 losTgt=97.94
+[WOBBLE_FIRE] team=2 losTgt=97.30
+[WOBBLE_FIRE] team=2 losTgt=96.66
+[WOBBLE_FIRE] team=2 losTgt=96.04
+[WOBBLE_FIRE] team=2 losTgt=95.42
+[WOBBLE_FIRE] team=2 losTgt=94.81
+[WOBBLE_FIRE] team=2 losTgt=94.22
+[WOBBLE_FIRE] team=2 losTgt=93.63
+[WOBBLE_FIRE] team=2 losTgt=93.04
+[WOBBLE_FIRE] team=2 losTgt=92.47
+[WOBBLE_FIRE] team=2 losTgt=91.90
+[WOBBLE_FIRE] team=2 losTgt=91.35
+[WOBBLE_FIRE] team=2 losTgt=90.79
+[WOBBLE_FIRE] team=2 losTgt=90.25
+[WOBBLE_FIRE] team=2 losTgt=89.70
+[WOBBLE_FIRE] team=2 losTgt=89.16
+[WOBBLE_FIRE] team=2 losTgt=88.63
+[WOBBLE_FIRE] team=2 losTgt=88.10
+[WOBBLE_FIRE] team=2 losTgt=87.57
+[WOBBLE_FIRE] team=2 losTgt=87.06
+[WOBBLE_FIRE] team=2 losTgt=86.55
+[WOBBLE_FIRE] team=2 losTgt=86.04
+[WOBBLE_FIRE] team=2 losTgt=85.49
+[WOBBLE_FIRE] team=2 losTgt=84.92
+[WOBBLE_FIRE] team=2 losTgt=84.33
+[WOBBLE_FIRE] team=2 losTgt=83.74
+[WOBBLE_FIRE] team=2 losTgt=83.14
+[WOBBLE_FIRE] team=2 losTgt=82.54
+[WOBBLE_FIRE] team=2 losTgt=81.93
+[WOBBLE_FIRE] team=2 losTgt=81.29
+[WOBBLE_FIRE] team=2 losTgt=80.64
+[WOBBLE_FIRE] team=2 losTgt=80.00
+[WOBBLE_FIRE] team=2 losTgt=79.38
+[WOBBLE_FIRE] team=2 losTgt=78.78
+[WOBBLE_FIRE] team=2 losTgt=78.18
+[WOBBLE_FIRE] team=2 losTgt=77.58
+[WOBBLE_FIRE] team=2 losTgt=76.99
+[WOBBLE_FIRE] team=2 losTgt=76.38
+[WOBBLE_FIRE] team=2 losTgt=75.78
+[WOBBLE_FIRE] team=2 losTgt=75.17
+[WOBBLE_FIRE] team=2 losTgt=74.57
+[WOBBLE_FIRE] team=2 losTgt=73.96
+[WOBBLE_FIRE] team=2 losTgt=73.35
+[WOBBLE_FIRE] team=2 losTgt=72.73
+[WOBBLE_FIRE] team=2 losTgt=72.11
+[WOBBLE_FIRE] team=2 losTgt=71.49
+[WOBBLE_FIRE] team=2 losTgt=70.87
+[WOBBLE_FIRE] team=2 losTgt=70.24
+[WOBBLE_FIRE] team=2 losTgt=69.60
+[WOBBLE_FIRE] team=2 losTgt=68.97
+[WOBBLE_FIRE] team=2 losTgt=68.34
+[WOBBLE_FIRE] team=2 losTgt=67.70
+[WOBBLE_FIRE] team=2 losTgt=67.06
+[WOBBLE_FIRE] team=2 losTgt=66.42
+[WOBBLE_FIRE] team=2 losTgt=65.77
+[WOBBLE_FIRE] team=2 losTgt=65.11
+[WOBBLE_FIRE] team=2 losTgt=64.46
+[WOBBLE_FIRE] team=2 losTgt=63.80
+[WOBBLE_FIRE] team=2 losTgt=63.14
+[WOBBLE_FIRE] team=2 losTgt=62.47
+[WOBBLE_FIRE] team=2 losTgt=61.77
+[WOBBLE_FIRE] team=2 losTgt=61.08
+[WOBBLE_FIRE] team=2 losTgt=60.36
+[WOBBLE_FIRE] team=2 losTgt=59.62
+[WOBBLE_FIRE] team=2 losTgt=58.88
+[WOBBLE_FIRE] team=2 losTgt=58.10
+[WOBBLE_FIRE] team=2 losTgt=57.27
+[WOBBLE_FIRE] team=2 losTgt=56.40
+[WOBBLE_FIRE] team=2 losTgt=55.44
+[WOBBLE_FIRE] team=2 losTgt=54.37
+[WOBBLE_FIRE] team=2 losTgt=53.11
+[WOBBLE_FIRE] team=2 losTgt=51.47
+[WOBBLE_FIRE] team=2 losTgt=49.12
+[WOBBLE_FIRE] team=2 losTgt=93.93
+[WOBBLE_FIRE] team=2 losTgt=114.19
+[WOBBLE_FIRE] team=2 losTgt=117.11
+[WOBBLE_FIRE] team=2 losTgt=117.93
+[WOBBLE_FIRE] team=2 losTgt=118.18
+[WOBBLE_FIRE] team=2 losTgt=118.29
+[WOBBLE_FIRE] team=2 losTgt=118.27
+[WOBBLE_FIRE] team=2 losTgt=118.14
+[WOBBLE_FIRE] team=2 losTgt=117.96
+[WOBBLE_FIRE] team=2 losTgt=117.71
+[WOBBLE_FIRE] team=2 losTgt=117.42
+[WOBBLE_FIRE] team=2 losTgt=117.12
+[WOBBLE_FIRE] team=2 losTgt=116.62
+[WOBBLE_FIRE] team=2 losTgt=115.54
+[WOBBLE_FIRE] team=2 losTgt=113.55
+[WOBBLE_FIRE] team=2 losTgt=111.03
+[WOBBLE_FIRE] team=2 losTgt=108.61
+[WOBBLE_FIRE] team=2 losTgt=106.65
+[WOBBLE_FIRE] team=2 losTgt=105.04
+[WOBBLE_FIRE] team=2 losTgt=103.64
+[WOBBLE_FIRE] team=2 losTgt=102.37
+[WOBBLE_FIRE] team=2 losTgt=101.15
+[WOBBLE_FIRE] team=2 losTgt=99.97
+[WOBBLE_FIRE] team=2 losTgt=98.80
+[WOBBLE_FIRE] team=2 losTgt=97.66
+[WOBBLE_FIRE] team=2 losTgt=96.52
+[WOBBLE_FIRE] team=2 losTgt=95.38
+[WOBBLE_FIRE] team=2 losTgt=94.25
+[WOBBLE_FIRE] team=2 losTgt=93.11
+[WOBBLE_FIRE] team=2 losTgt=91.97
+[WOBBLE_FIRE] team=2 losTgt=90.84
+[WOBBLE_FIRE] team=2 losTgt=89.69
+[WOBBLE_FIRE] team=2 losTgt=88.53
+[WOBBLE_FIRE] team=2 losTgt=87.37
+[WOBBLE_FIRE] team=2 losTgt=86.20
+[WOBBLE_FIRE] team=2 losTgt=85.02
+[WOBBLE_FIRE] team=2 losTgt=83.83
+[WOBBLE_FIRE] team=2 losTgt=82.64
+[WOBBLE_FIRE] team=2 losTgt=81.44
+[WOBBLE_FIRE] team=2 losTgt=80.23
+[WOBBLE_FIRE] team=2 losTgt=78.95
+[WOBBLE_FIRE] team=2 losTgt=77.62
+[WOBBLE_FIRE] team=2 losTgt=76.23
+[WOBBLE_FIRE] team=2 losTgt=74.82
+[WOBBLE_FIRE] team=2 losTgt=73.41
+[WOBBLE_FIRE] team=2 losTgt=72.03
+[WOBBLE_FIRE] team=2 losTgt=70.65
+[WOBBLE_FIRE] team=2 losTgt=69.27
+[WOBBLE_FIRE] team=2 losTgt=67.89
+[WOBBLE_FIRE] team=2 losTgt=66.49
+[WOBBLE_FIRE] team=2 losTgt=65.09
+[WOBBLE_FIRE] team=2 losTgt=63.67
+[WOBBLE_FIRE] team=2 losTgt=62.23
+[WOBBLE_FIRE] team=2 losTgt=60.78
+[WOBBLE_FIRE] team=2 losTgt=59.30
+[WOBBLE_FIRE] team=2 losTgt=57.80
+[WOBBLE_FIRE] team=2 losTgt=56.28
+[WOBBLE_FIRE] team=2 losTgt=54.73
+[WOBBLE_FIRE] team=2 losTgt=53.15
+[WOBBLE_FIRE] team=2 losTgt=51.54
+[WOBBLE_FIRE] team=2 losTgt=49.89
+[WOBBLE_FIRE] team=2 losTgt=48.20
+[WOBBLE_FIRE] team=2 losTgt=46.45
+[WOBBLE_FIRE] team=2 losTgt=46.53
+[WOBBLE_FIRE] team=2 losTgt=53.36
+[WOBBLE_FIRE] team=2 losTgt=59.84
+[WOBBLE_FIRE] team=2 losTgt=65.73
+[WOBBLE_FIRE] team=2 losTgt=70.92
+[WOBBLE_FIRE] team=2 losTgt=75.42
+[WOBBLE_FIRE] team=2 losTgt=79.29
+[WOBBLE_FIRE] team=2 losTgt=82.61
+[WOBBLE_FIRE] team=2 losTgt=85.49
+[WOBBLE_FIRE] team=2 losTgt=87.97
+[WOBBLE_FIRE] team=2 losTgt=89.81
+[WOBBLE_FIRE] team=2 losTgt=90.68
+[WOBBLE_FIRE] team=2 losTgt=90.65
+[WOBBLE_FIRE] team=2 losTgt=90.05
+[WOBBLE_FIRE] team=2 losTgt=89.46
+[WOBBLE_FIRE] team=2 losTgt=88.92
+[WOBBLE_FIRE] team=2 losTgt=88.39
+[WOBBLE_FIRE] team=2 losTgt=87.85
+[WOBBLE_FIRE] team=2 losTgt=87.25
+[WOBBLE_FIRE] team=2 losTgt=86.58
+[WOBBLE_FIRE] team=2 losTgt=85.85
+[WOBBLE_FIRE] team=2 losTgt=85.08
+[WOBBLE_FIRE] team=2 losTgt=84.27
+[WOBBLE_FIRE] team=2 losTgt=83.43
+[WOBBLE_FIRE] team=2 losTgt=82.54
+[WOBBLE_FIRE] team=2 losTgt=81.63
+[WOBBLE_FIRE] team=2 losTgt=80.67
+[WOBBLE_FIRE] team=2 losTgt=79.68
+[WOBBLE_FIRE] team=2 losTgt=78.64
+[WOBBLE_FIRE] team=2 losTgt=77.58
+[WOBBLE_FIRE] team=2 losTgt=76.50
+[WOBBLE_FIRE] team=2 losTgt=75.38
+[WOBBLE_FIRE] team=2 losTgt=74.23
+[WOBBLE_FIRE] team=2 losTgt=73.06
+[WOBBLE_FIRE] team=2 losTgt=71.86
+[WOBBLE_FIRE] team=2 losTgt=70.63
+[WOBBLE_FIRE] team=2 losTgt=69.38
+[WOBBLE_FIRE] team=2 losTgt=68.11
+[WOBBLE_FIRE] team=2 losTgt=66.81
+[WOBBLE_FIRE] team=2 losTgt=65.48
+[WOBBLE_FIRE] team=2 losTgt=64.14
+[WOBBLE_FIRE] team=2 losTgt=62.76
+[WOBBLE_FIRE] team=2 losTgt=61.36
+[WOBBLE_FIRE] team=2 losTgt=59.93
+[WOBBLE_FIRE] team=2 losTgt=58.47
+[WOBBLE_FIRE] team=2 losTgt=56.97
+[WOBBLE_FIRE] team=2 losTgt=55.45
+[WOBBLE_FIRE] team=2 losTgt=53.88
+[WOBBLE_FIRE] team=2 losTgt=52.28
+[WOBBLE_FIRE] team=2 losTgt=50.63
+[WOBBLE_FIRE] team=2 losTgt=48.93
+[WOBBLE_FIRE] team=2 losTgt=47.18
+[WOBBLE_FIRE] team=2 losTgt=45.37
+[WOBBLE_FIRE] team=2 losTgt=51.92
+[WOBBLE_FIRE] team=2 losTgt=59.22
+[WOBBLE_FIRE] team=2 losTgt=65.59
+[WOBBLE_FIRE] team=2 losTgt=70.52
+[WOBBLE_FIRE] team=2 losTgt=74.43
+[WOBBLE_FIRE] team=2 losTgt=77.59
+[WOBBLE_FIRE] team=2 losTgt=80.36
+[WOBBLE_FIRE] team=2 losTgt=82.69
+[WOBBLE_FIRE] team=2 losTgt=84.62
+[WOBBLE_FIRE] team=2 losTgt=86.19
+[WOBBLE_FIRE] team=2 losTgt=87.45
+[WOBBLE_FIRE] team=2 losTgt=88.44
+[WOBBLE_FIRE] team=2 losTgt=89.20
+[WOBBLE_FIRE] team=2 losTgt=89.75
+[WOBBLE_FIRE] team=2 losTgt=90.12
+[WOBBLE_FIRE] team=2 losTgt=90.34
+[WOBBLE_FIRE] team=2 losTgt=90.42
+[WOBBLE_FIRE] team=2 losTgt=90.37
+[WOBBLE_FIRE] team=2 losTgt=90.23
+[WOBBLE_FIRE] team=2 losTgt=90.01
+[WOBBLE_FIRE] team=2 losTgt=89.70
+[WOBBLE_FIRE] team=2 losTgt=89.33
+[WOBBLE_FIRE] team=2 losTgt=88.90
+[WOBBLE_FIRE] team=2 losTgt=88.42
+[WOBBLE_FIRE] team=2 losTgt=87.89
+[WOBBLE_FIRE] team=2 losTgt=87.33
+[WOBBLE_FIRE] team=2 losTgt=86.72
+[WOBBLE_FIRE] team=2 losTgt=86.07
+[WOBBLE_FIRE] team=2 losTgt=85.39
+[WOBBLE_FIRE] team=2 losTgt=84.66
+[WOBBLE_FIRE] team=2 losTgt=83.89
+[WOBBLE_FIRE] team=2 losTgt=83.10
+[WOBBLE_FIRE] team=2 losTgt=82.29
+[WOBBLE_FIRE] team=2 losTgt=81.48
+[WOBBLE_FIRE] team=2 losTgt=80.66
+[WOBBLE_FIRE] team=2 losTgt=79.84
+[WOBBLE_FIRE] team=2 losTgt=79.00
+[WOBBLE_FIRE] team=2 losTgt=78.17
+[WOBBLE_FIRE] team=2 losTgt=77.34
+[WOBBLE_FIRE] team=2 losTgt=76.50
+[WOBBLE_FIRE] team=2 losTgt=75.67
+[WOBBLE_FIRE] team=2 losTgt=74.85
+[WOBBLE_FIRE] team=2 losTgt=74.04
+[WOBBLE_FIRE] team=2 losTgt=73.23
+[WOBBLE_FIRE] team=2 losTgt=72.44
+[WOBBLE_FIRE] team=2 losTgt=71.65
+[WOBBLE_FIRE] team=2 losTgt=70.88
+[WOBBLE_FIRE] team=2 losTgt=70.11
+[WOBBLE_FIRE] team=2 losTgt=69.35
+[WOBBLE_FIRE] team=2 losTgt=68.60
+[WOBBLE_FIRE] team=2 losTgt=67.87
+[WOBBLE_FIRE] team=2 losTgt=67.14
+[WOBBLE_FIRE] team=2 losTgt=66.42
+[WOBBLE_FIRE] team=2 losTgt=65.72
+[WOBBLE_FIRE] team=2 losTgt=65.02
+[WOBBLE_FIRE] team=2 losTgt=64.35
+[WOBBLE_FIRE] team=2 losTgt=63.68
+[WOBBLE_FIRE] team=2 losTgt=63.03
+[WOBBLE_FIRE] team=2 losTgt=62.40
+[WOBBLE_FIRE] team=2 losTgt=61.78
+[WOBBLE_FIRE] team=2 losTgt=61.19
+[WOBBLE_FIRE] team=2 losTgt=61.56
+[WOBBLE_FIRE] team=2 losTgt=63.32
+[WOBBLE_FIRE] team=2 losTgt=63.72
+[WOBBLE_FIRE] team=2 losTgt=63.67
+[WOBBLE_FIRE] team=2 losTgt=63.20
+[WOBBLE_FIRE] team=2 losTgt=62.42
+[WOBBLE_FIRE] team=2 losTgt=61.90
+[WOBBLE_FIRE] team=2 losTgt=61.67
+[WOBBLE_FIRE] team=2 losTgt=61.43
+[WOBBLE_FIRE] team=2 losTgt=60.87
+[WOBBLE_FIRE] team=2 losTgt=60.12
+[WOBBLE_FIRE] team=2 losTgt=59.43
+[WOBBLE_FIRE] team=2 losTgt=58.76
+[WOBBLE_FIRE] team=2 losTgt=58.09
+[WOBBLE_FIRE] team=2 losTgt=57.47
+[WOBBLE_FIRE] team=2 losTgt=56.90
+[WOBBLE_FIRE] team=2 losTgt=56.37
+[WOBBLE_FIRE] team=2 losTgt=55.88
+[WOBBLE_FIRE] team=2 losTgt=55.42
+[WOBBLE_FIRE] team=2 losTgt=54.99
+[WOBBLE_FIRE] team=2 losTgt=54.59
+[WOBBLE_FIRE] team=2 losTgt=54.22
+[WOBBLE_FIRE] team=2 losTgt=53.89
+[WOBBLE_FIRE] team=2 losTgt=53.60
+[WOBBLE_FIRE] team=2 losTgt=53.35
+[WOBBLE_FIRE] team=2 losTgt=53.13
+[WOBBLE_FIRE] team=2 losTgt=52.94
+[WOBBLE_FIRE] team=2 losTgt=52.77
+[WOBBLE_FIRE] team=2 losTgt=52.60
+[WOBBLE_FIRE] team=2 losTgt=52.43
+[WOBBLE_FIRE] team=2 losTgt=52.25
+[WOBBLE_FIRE] team=2 losTgt=52.06
+[WOBBLE_FIRE] team=2 losTgt=51.88
+[WOBBLE_FIRE] team=2 losTgt=51.68
+[WOBBLE_FIRE] team=2 losTgt=51.47
+[WOBBLE_FIRE] team=2 losTgt=51.24
+[WOBBLE_FIRE] team=2 losTgt=50.98
+[WOBBLE_FIRE] team=2 losTgt=50.72
+[WOBBLE_FIRE] team=2 losTgt=50.42
+[WOBBLE_FIRE] team=2 losTgt=50.08
+[WOBBLE_FIRE] team=2 losTgt=49.68
+[WOBBLE_FIRE] team=2 losTgt=49.24
+[WOBBLE_FIRE] team=2 losTgt=48.75
+[WOBBLE_FIRE] team=2 losTgt=48.23
+[WOBBLE_FIRE] team=2 losTgt=47.68
+[WOBBLE_FIRE] team=2 losTgt=47.08
+[WOBBLE_FIRE] team=2 losTgt=46.44
+[WOBBLE_FIRE] team=2 losTgt=45.76
+[WOBBLE_FIRE] team=2 losTgt=45.04
+runner:local/env:0	num_steps=[6924] | total rewards=[820.0937] | termination= [target destroyed]
+[seed 11] reward=   820.09 ownHP=1.0000 tgtHP=-0.0057 target destroyed
+total: 2
+[WOBBLE_FIRE] team=2 losTgt=172.24
+[WOBBLE_FIRE] team=2 losTgt=171.61
+[WOBBLE_FIRE] team=2 losTgt=170.40
+[WOBBLE_FIRE] team=2 losTgt=168.92
+[WOBBLE_FIRE] team=2 losTgt=167.22
+[WOBBLE_FIRE] team=2 losTgt=165.26
+[WOBBLE_FIRE] team=2 losTgt=163.16
+[WOBBLE_FIRE] team=2 losTgt=161.21
+[WOBBLE_FIRE] team=2 losTgt=159.47
+[WOBBLE_FIRE] team=2 losTgt=157.88
+[WOBBLE_FIRE] team=2 losTgt=156.37
+[WOBBLE_FIRE] team=2 losTgt=154.91
+[WOBBLE_FIRE] team=2 losTgt=153.51
+[WOBBLE_FIRE] team=2 losTgt=152.16
+[WOBBLE_FIRE] team=2 losTgt=150.86
+[WOBBLE_FIRE] team=2 losTgt=149.59
+[WOBBLE_FIRE] team=2 losTgt=148.32
+[WOBBLE_FIRE] team=2 losTgt=147.05
+[WOBBLE_FIRE] team=2 losTgt=145.80
+[WOBBLE_FIRE] team=2 losTgt=144.56
+[WOBBLE_FIRE] team=2 losTgt=143.36
+[WOBBLE_FIRE] team=2 losTgt=142.17
+[WOBBLE_FIRE] team=2 losTgt=141.01
+[WOBBLE_FIRE] team=2 losTgt=139.86
+[WOBBLE_FIRE] team=2 losTgt=138.73
+[WOBBLE_FIRE] team=2 losTgt=137.61
+[WOBBLE_FIRE] team=2 losTgt=136.50
+[WOBBLE_FIRE] team=2 losTgt=135.39
+[WOBBLE_FIRE] team=2 losTgt=134.30
+[WOBBLE_FIRE] team=2 losTgt=133.21
+[WOBBLE_FIRE] team=2 losTgt=132.14
+[WOBBLE_FIRE] team=2 losTgt=131.08
+[WOBBLE_FIRE] team=2 losTgt=130.03
+[WOBBLE_FIRE] team=2 losTgt=128.99
+[WOBBLE_FIRE] team=2 losTgt=127.96
+[WOBBLE_FIRE] team=2 losTgt=126.94
+[WOBBLE_FIRE] team=2 losTgt=125.93
+[WOBBLE_FIRE] team=2 losTgt=124.93
+[WOBBLE_FIRE] team=2 losTgt=123.94
+[WOBBLE_FIRE] team=2 losTgt=122.95
+[WOBBLE_FIRE] team=2 losTgt=121.98
+[WOBBLE_FIRE] team=2 losTgt=121.02
+[WOBBLE_FIRE] team=2 losTgt=120.06
+[WOBBLE_FIRE] team=2 losTgt=119.11
+[WOBBLE_FIRE] team=2 losTgt=118.17
+[WOBBLE_FIRE] team=2 losTgt=117.24
+[WOBBLE_FIRE] team=2 losTgt=116.32
+[WOBBLE_FIRE] team=2 losTgt=115.41
+[WOBBLE_FIRE] team=2 losTgt=114.50
+[WOBBLE_FIRE] team=2 losTgt=113.61
+[WOBBLE_FIRE] team=2 losTgt=112.72
+[WOBBLE_FIRE] team=2 losTgt=111.84
+[WOBBLE_FIRE] team=2 losTgt=110.97
+[WOBBLE_FIRE] team=2 losTgt=110.11
+[WOBBLE_FIRE] team=2 losTgt=109.26
+[WOBBLE_FIRE] team=2 losTgt=108.42
+[WOBBLE_FIRE] team=2 losTgt=107.58
+[WOBBLE_FIRE] team=2 losTgt=106.75
+[WOBBLE_FIRE] team=2 losTgt=105.93
+[WOBBLE_FIRE] team=2 losTgt=105.12
+[WOBBLE_FIRE] team=2 losTgt=104.31
+[WOBBLE_FIRE] team=2 losTgt=103.50
+[WOBBLE_FIRE] team=2 losTgt=102.70
+[WOBBLE_FIRE] team=2 losTgt=101.90
+[WOBBLE_FIRE] team=2 losTgt=101.10
+[WOBBLE_FIRE] team=2 losTgt=100.31
+[WOBBLE_FIRE] team=2 losTgt=99.51
+[WOBBLE_FIRE] team=2 losTgt=98.72
+[WOBBLE_FIRE] team=2 losTgt=97.94
+[WOBBLE_FIRE] team=2 losTgt=97.18
+[WOBBLE_FIRE] team=2 losTgt=96.44
+[WOBBLE_FIRE] team=2 losTgt=95.69
+[WOBBLE_FIRE] team=2 losTgt=94.94
+[WOBBLE_FIRE] team=2 losTgt=94.19
+[WOBBLE_FIRE] team=2 losTgt=93.43
+[WOBBLE_FIRE] team=2 losTgt=92.68
+[WOBBLE_FIRE] team=2 losTgt=91.92
+[WOBBLE_FIRE] team=2 losTgt=91.17
+[WOBBLE_FIRE] team=2 losTgt=90.42
+[WOBBLE_FIRE] team=2 losTgt=89.65
+[WOBBLE_FIRE] team=2 losTgt=88.89
+[WOBBLE_FIRE] team=2 losTgt=88.12
+[WOBBLE_FIRE] team=2 losTgt=87.35
+[WOBBLE_FIRE] team=2 losTgt=86.58
+[WOBBLE_FIRE] team=2 losTgt=85.81
+[WOBBLE_FIRE] team=2 losTgt=85.05
+[WOBBLE_FIRE] team=2 losTgt=84.28
+[WOBBLE_FIRE] team=2 losTgt=83.51
+[WOBBLE_FIRE] team=2 losTgt=82.75
+[WOBBLE_FIRE] team=2 losTgt=81.99
+[WOBBLE_FIRE] team=2 losTgt=81.22
+[WOBBLE_FIRE] team=2 losTgt=80.46
+[WOBBLE_FIRE] team=2 losTgt=79.69
+[WOBBLE_FIRE] team=2 losTgt=78.92
+[WOBBLE_FIRE] team=2 losTgt=78.15
+[WOBBLE_FIRE] team=2 losTgt=77.37
+[WOBBLE_FIRE] team=2 losTgt=76.60
+[WOBBLE_FIRE] team=2 losTgt=75.82
+[WOBBLE_FIRE] team=2 losTgt=75.04
+[WOBBLE_FIRE] team=2 losTgt=74.25
+[WOBBLE_FIRE] team=2 losTgt=73.46
+[WOBBLE_FIRE] team=2 losTgt=72.67
+[WOBBLE_FIRE] team=2 losTgt=71.88
+[WOBBLE_FIRE] team=2 losTgt=71.08
+[WOBBLE_FIRE] team=2 losTgt=70.28
+[WOBBLE_FIRE] team=2 losTgt=69.48
+[WOBBLE_FIRE] team=2 losTgt=68.67
+[WOBBLE_FIRE] team=2 losTgt=67.86
+[WOBBLE_FIRE] team=2 losTgt=67.05
+[WOBBLE_FIRE] team=2 losTgt=66.24
+[WOBBLE_FIRE] team=2 losTgt=65.42
+[WOBBLE_FIRE] team=2 losTgt=64.59
+[WOBBLE_FIRE] team=2 losTgt=63.77
+[WOBBLE_FIRE] team=2 losTgt=62.94
+[WOBBLE_FIRE] team=2 losTgt=62.11
+[WOBBLE_FIRE] team=2 losTgt=61.27
+[WOBBLE_FIRE] team=2 losTgt=60.43
+[WOBBLE_FIRE] team=2 losTgt=59.59
+[WOBBLE_FIRE] team=2 losTgt=58.74
+[WOBBLE_FIRE] team=2 losTgt=57.88
+[WOBBLE_FIRE] team=2 losTgt=57.02
+[WOBBLE_FIRE] team=2 losTgt=56.16
+[WOBBLE_FIRE] team=2 losTgt=55.25
+[WOBBLE_FIRE] team=2 losTgt=54.32
+[WOBBLE_FIRE] team=2 losTgt=53.36
+[WOBBLE_FIRE] team=2 losTgt=52.40
+[WOBBLE_FIRE] team=2 losTgt=51.42
+[WOBBLE_FIRE] team=2 losTgt=50.39
+[WOBBLE_FIRE] team=2 losTgt=49.32
+[WOBBLE_FIRE] team=2 losTgt=48.23
+[WOBBLE_FIRE] team=2 losTgt=47.14
+[WOBBLE_FIRE] team=2 losTgt=46.04
+[WOBBLE_FIRE] team=2 losTgt=47.12
+[WOBBLE_FIRE] team=2 losTgt=52.13
+[WOBBLE_FIRE] team=2 losTgt=57.14
+[WOBBLE_FIRE] team=2 losTgt=61.83
+[WOBBLE_FIRE] team=2 losTgt=66.07
+[WOBBLE_FIRE] team=2 losTgt=69.91
+[WOBBLE_FIRE] team=2 losTgt=73.39
+[WOBBLE_FIRE] team=2 losTgt=76.48
+[WOBBLE_FIRE] team=2 losTgt=79.17
+[WOBBLE_FIRE] team=2 losTgt=81.49
+[WOBBLE_FIRE] team=2 losTgt=83.50
+[WOBBLE_FIRE] team=2 losTgt=85.26
+[WOBBLE_FIRE] team=2 losTgt=86.76
+[WOBBLE_FIRE] team=2 losTgt=87.99
+[WOBBLE_FIRE] team=2 losTgt=88.99
+[WOBBLE_FIRE] team=2 losTgt=89.77
+[WOBBLE_FIRE] team=2 losTgt=90.35
+[WOBBLE_FIRE] team=2 losTgt=90.76
+[WOBBLE_FIRE] team=2 losTgt=91.01
+[WOBBLE_FIRE] team=2 losTgt=91.14
+[WOBBLE_FIRE] team=2 losTgt=91.17
+[WOBBLE_FIRE] team=2 losTgt=91.08
+[WOBBLE_FIRE] team=2 losTgt=90.93
+[WOBBLE_FIRE] team=2 losTgt=90.70
+[WOBBLE_FIRE] team=2 losTgt=90.36
+[WOBBLE_FIRE] team=2 losTgt=89.92
+[WOBBLE_FIRE] team=2 losTgt=89.39
+[WOBBLE_FIRE] team=2 losTgt=88.80
+[WOBBLE_FIRE] team=2 losTgt=88.16
+[WOBBLE_FIRE] team=2 losTgt=87.46
+[WOBBLE_FIRE] team=2 losTgt=86.72
+[WOBBLE_FIRE] team=2 losTgt=85.93
+[WOBBLE_FIRE] team=2 losTgt=85.08
+[WOBBLE_FIRE] team=2 losTgt=84.20
+[WOBBLE_FIRE] team=2 losTgt=83.27
+[WOBBLE_FIRE] team=2 losTgt=82.32
+[WOBBLE_FIRE] team=2 losTgt=81.35
+[WOBBLE_FIRE] team=2 losTgt=80.35
+[WOBBLE_FIRE] team=2 losTgt=79.33
+[WOBBLE_FIRE] team=2 losTgt=78.29
+[WOBBLE_FIRE] team=2 losTgt=77.23
+[WOBBLE_FIRE] team=2 losTgt=76.14
+[WOBBLE_FIRE] team=2 losTgt=75.05
+[WOBBLE_FIRE] team=2 losTgt=73.93
+[WOBBLE_FIRE] team=2 losTgt=72.80
+[WOBBLE_FIRE] team=2 losTgt=71.66
+[WOBBLE_FIRE] team=2 losTgt=70.50
+[WOBBLE_FIRE] team=2 losTgt=69.33
+[WOBBLE_FIRE] team=2 losTgt=68.14
+[WOBBLE_FIRE] team=2 losTgt=66.95
+[WOBBLE_FIRE] team=2 losTgt=65.74
+[WOBBLE_FIRE] team=2 losTgt=64.51
+[WOBBLE_FIRE] team=2 losTgt=63.27
+[WOBBLE_FIRE] team=2 losTgt=62.02
+[WOBBLE_FIRE] team=2 losTgt=60.76
+[WOBBLE_FIRE] team=2 losTgt=59.47
+[WOBBLE_FIRE] team=2 losTgt=58.17
+[WOBBLE_FIRE] team=2 losTgt=56.85
+[WOBBLE_FIRE] team=2 losTgt=55.51
+[WOBBLE_FIRE] team=2 losTgt=54.16
+[WOBBLE_FIRE] team=2 losTgt=52.79
+[WOBBLE_FIRE] team=2 losTgt=51.40
+[WOBBLE_FIRE] team=2 losTgt=49.99
+[WOBBLE_FIRE] team=2 losTgt=48.56
+[WOBBLE_FIRE] team=2 losTgt=47.11
+[WOBBLE_FIRE] team=2 losTgt=45.64
+[WOBBLE_FIRE] team=2 losTgt=45.01
+[WOBBLE_FIRE] team=2 losTgt=46.69
+[WOBBLE_FIRE] team=2 losTgt=48.34
+[WOBBLE_FIRE] team=2 losTgt=49.93
+[WOBBLE_FIRE] team=2 losTgt=51.46
+[WOBBLE_FIRE] team=2 losTgt=52.92
+[WOBBLE_FIRE] team=2 losTgt=54.31
+[WOBBLE_FIRE] team=2 losTgt=55.60
+[WOBBLE_FIRE] team=2 losTgt=56.81
+[WOBBLE_FIRE] team=2 losTgt=57.93
+[WOBBLE_FIRE] team=2 losTgt=58.97
+[WOBBLE_FIRE] team=2 losTgt=59.92
+[WOBBLE_FIRE] team=2 losTgt=60.78
+[WOBBLE_FIRE] team=2 losTgt=61.57
+[WOBBLE_FIRE] team=2 losTgt=62.28
+[WOBBLE_FIRE] team=2 losTgt=62.91
+[WOBBLE_FIRE] team=2 losTgt=63.48
+[WOBBLE_FIRE] team=2 losTgt=63.98
+[WOBBLE_FIRE] team=2 losTgt=64.40
+[WOBBLE_FIRE] team=2 losTgt=64.77
+[WOBBLE_FIRE] team=2 losTgt=65.09
+[WOBBLE_FIRE] team=2 losTgt=65.36
+[WOBBLE_FIRE] team=2 losTgt=65.57
+[WOBBLE_FIRE] team=2 losTgt=65.73
+[WOBBLE_FIRE] team=2 losTgt=65.85
+[WOBBLE_FIRE] team=2 losTgt=65.93
+[WOBBLE_FIRE] team=2 losTgt=65.96
+[WOBBLE_FIRE] team=2 losTgt=65.97
+[WOBBLE_FIRE] team=2 losTgt=65.93
+[WOBBLE_FIRE] team=2 losTgt=65.87
+[WOBBLE_FIRE] team=2 losTgt=65.78
+[WOBBLE_FIRE] team=2 losTgt=65.66
+[WOBBLE_FIRE] team=2 losTgt=65.51
+[WOBBLE_FIRE] team=2 losTgt=65.33
+[WOBBLE_FIRE] team=2 losTgt=65.14
+[WOBBLE_FIRE] team=2 losTgt=64.92
+[WOBBLE_FIRE] team=2 losTgt=64.68
+[WOBBLE_FIRE] team=2 losTgt=64.41
+[WOBBLE_FIRE] team=2 losTgt=64.14
+[WOBBLE_FIRE] team=2 losTgt=63.84
+[WOBBLE_FIRE] team=2 losTgt=63.52
+[WOBBLE_FIRE] team=2 losTgt=63.19
+[WOBBLE_FIRE] team=2 losTgt=62.84
+[WOBBLE_FIRE] team=2 losTgt=62.48
+[WOBBLE_FIRE] team=2 losTgt=62.10
+[WOBBLE_FIRE] team=2 losTgt=61.70
+[WOBBLE_FIRE] team=2 losTgt=61.29
+[WOBBLE_FIRE] team=2 losTgt=60.85
+[WOBBLE_FIRE] team=2 losTgt=60.39
+[WOBBLE_FIRE] team=2 losTgt=59.91
+[WOBBLE_FIRE] team=2 losTgt=59.41
+[WOBBLE_FIRE] team=2 losTgt=58.88
+[WOBBLE_FIRE] team=2 losTgt=58.33
+[WOBBLE_FIRE] team=2 losTgt=57.75
+[WOBBLE_FIRE] team=2 losTgt=57.14
+[WOBBLE_FIRE] team=2 losTgt=56.51
+[WOBBLE_FIRE] team=2 losTgt=55.85
+[WOBBLE_FIRE] team=2 losTgt=55.17
+[WOBBLE_FIRE] team=2 losTgt=54.46
+[WOBBLE_FIRE] team=2 losTgt=53.72
+[WOBBLE_FIRE] team=2 losTgt=52.96
+[WOBBLE_FIRE] team=2 losTgt=52.18
+[WOBBLE_FIRE] team=2 losTgt=51.37
+[WOBBLE_FIRE] team=2 losTgt=50.53
+[WOBBLE_FIRE] team=2 losTgt=49.68
+[WOBBLE_FIRE] team=2 losTgt=48.80
+[WOBBLE_FIRE] team=2 losTgt=47.89
+[WOBBLE_FIRE] team=2 losTgt=46.97
+[WOBBLE_FIRE] team=2 losTgt=46.02
+[WOBBLE_FIRE] team=2 losTgt=45.05
+[WOBBLE_FIRE] team=2 losTgt=46.82
+[WOBBLE_FIRE] team=2 losTgt=49.81
+[WOBBLE_FIRE] team=2 losTgt=52.78
+[WOBBLE_FIRE] team=2 losTgt=55.70
+[WOBBLE_FIRE] team=2 losTgt=58.61
+[WOBBLE_FIRE] team=2 losTgt=61.46
+[WOBBLE_FIRE] team=2 losTgt=64.28
+[WOBBLE_FIRE] team=2 losTgt=67.04
+[WOBBLE_FIRE] team=2 losTgt=69.75
+[WOBBLE_FIRE] team=2 losTgt=72.41
+[WOBBLE_FIRE] team=2 losTgt=74.99
+[WOBBLE_FIRE] team=2 losTgt=77.51
+[WOBBLE_FIRE] team=2 losTgt=79.96
+[WOBBLE_FIRE] team=2 losTgt=82.33
+[WOBBLE_FIRE] team=2 losTgt=84.63
+[WOBBLE_FIRE] team=2 losTgt=86.85
+[WOBBLE_FIRE] team=2 losTgt=88.98
+[WOBBLE_FIRE] team=2 losTgt=91.03
+[WOBBLE_FIRE] team=2 losTgt=93.01
+[WOBBLE_FIRE] team=2 losTgt=94.91
+[WOBBLE_FIRE] team=2 losTgt=96.73
+[WOBBLE_FIRE] team=2 losTgt=98.48
+[WOBBLE_FIRE] team=2 losTgt=100.15
+[WOBBLE_FIRE] team=2 losTgt=101.75
+[WOBBLE_FIRE] team=2 losTgt=103.28
+[WOBBLE_FIRE] team=2 losTgt=103.84
+[WOBBLE_FIRE] team=2 losTgt=103.00
+[WOBBLE_FIRE] team=2 losTgt=104.14
+[WOBBLE_FIRE] team=2 losTgt=105.69
+[WOBBLE_FIRE] team=2 losTgt=105.51
+[WOBBLE_FIRE] team=2 losTgt=105.01
+[WOBBLE_FIRE] team=2 losTgt=105.54
+[WOBBLE_FIRE] team=2 losTgt=105.48
+[WOBBLE_FIRE] team=2 losTgt=105.47
+[WOBBLE_FIRE] team=2 losTgt=105.86
+[WOBBLE_FIRE] team=2 losTgt=106.21
+[WOBBLE_FIRE] team=2 losTgt=104.99
+[WOBBLE_FIRE] team=2 losTgt=104.37
+[WOBBLE_FIRE] team=2 losTgt=105.34
+[WOBBLE_FIRE] team=2 losTgt=105.81
+[WOBBLE_FIRE] team=2 losTgt=103.74
+[WOBBLE_FIRE] team=2 losTgt=102.15
+[WOBBLE_FIRE] team=2 losTgt=102.88
+[WOBBLE_FIRE] team=2 losTgt=100.93
+[WOBBLE_FIRE] team=2 losTgt=98.33
+[WOBBLE_FIRE] team=2 losTgt=98.59
+[WOBBLE_FIRE] team=2 losTgt=96.79
+[WOBBLE_FIRE] team=2 losTgt=95.53
+[WOBBLE_FIRE] team=2 losTgt=98.77
+[WOBBLE_FIRE] team=2 losTgt=99.60
+[WOBBLE_FIRE] team=2 losTgt=98.05
+[WOBBLE_FIRE] team=2 losTgt=98.47
+[WOBBLE_FIRE] team=2 losTgt=97.98
+[WOBBLE_FIRE] team=2 losTgt=97.55
+[WOBBLE_FIRE] team=2 losTgt=97.26
+[WOBBLE_FIRE] team=2 losTgt=97.17
+[WOBBLE_FIRE] team=2 losTgt=96.77
+[WOBBLE_FIRE] team=2 losTgt=95.88
+[WOBBLE_FIRE] team=2 losTgt=94.46
+[WOBBLE_FIRE] team=2 losTgt=92.87
+[WOBBLE_FIRE] team=2 losTgt=91.33
+[WOBBLE_FIRE] team=2 losTgt=89.86
+[WOBBLE_FIRE] team=2 losTgt=88.41
+[WOBBLE_FIRE] team=2 losTgt=86.98
+[WOBBLE_FIRE] team=2 losTgt=85.60
+[WOBBLE_FIRE] team=2 losTgt=84.19
+[WOBBLE_FIRE] team=2 losTgt=82.81
+[WOBBLE_FIRE] team=2 losTgt=81.42
+[WOBBLE_FIRE] team=2 losTgt=80.03
+[WOBBLE_FIRE] team=2 losTgt=78.68
+[WOBBLE_FIRE] team=2 losTgt=77.38
+[WOBBLE_FIRE] team=2 losTgt=76.10
+[WOBBLE_FIRE] team=2 losTgt=74.87
+[WOBBLE_FIRE] team=2 losTgt=74.75
+[WOBBLE_FIRE] team=2 losTgt=76.97
+[WOBBLE_FIRE] team=2 losTgt=77.42
+[WOBBLE_FIRE] team=2 losTgt=77.91
+[WOBBLE_FIRE] team=2 losTgt=77.36
+[WOBBLE_FIRE] team=2 losTgt=76.65
+[WOBBLE_FIRE] team=2 losTgt=75.78
+[WOBBLE_FIRE] team=2 losTgt=75.32
+[WOBBLE_FIRE] team=2 losTgt=74.66
+[WOBBLE_FIRE] team=2 losTgt=73.56
+[WOBBLE_FIRE] team=2 losTgt=72.10
+[WOBBLE_FIRE] team=2 losTgt=70.70
+[WOBBLE_FIRE] team=2 losTgt=69.42
+[WOBBLE_FIRE] team=2 losTgt=68.25
+[WOBBLE_FIRE] team=2 losTgt=67.14
+[WOBBLE_FIRE] team=2 losTgt=66.09
+[WOBBLE_FIRE] team=2 losTgt=65.10
+[WOBBLE_FIRE] team=2 losTgt=64.16
+[WOBBLE_FIRE] team=2 losTgt=63.28
+[WOBBLE_FIRE] team=2 losTgt=62.44
+[WOBBLE_FIRE] team=2 losTgt=61.65
+[WOBBLE_FIRE] team=2 losTgt=60.92
+[WOBBLE_FIRE] team=2 losTgt=60.22
+[WOBBLE_FIRE] team=2 losTgt=59.58
+[WOBBLE_FIRE] team=2 losTgt=58.98
+[WOBBLE_FIRE] team=2 losTgt=58.43
+[WOBBLE_FIRE] team=2 losTgt=57.91
+[WOBBLE_FIRE] team=2 losTgt=57.41
+[WOBBLE_FIRE] team=2 losTgt=56.95
+[WOBBLE_FIRE] team=2 losTgt=56.52
+[WOBBLE_FIRE] team=2 losTgt=56.11
+[WOBBLE_FIRE] team=2 losTgt=55.73
+[WOBBLE_FIRE] team=2 losTgt=55.37
+[WOBBLE_FIRE] team=2 losTgt=55.02
+[WOBBLE_FIRE] team=2 losTgt=54.68
+[WOBBLE_FIRE] team=2 losTgt=54.35
+[WOBBLE_FIRE] team=2 losTgt=54.03
+[WOBBLE_FIRE] team=2 losTgt=53.71
+[WOBBLE_FIRE] team=2 losTgt=53.39
+[WOBBLE_FIRE] team=2 losTgt=53.07
+[WOBBLE_FIRE] team=2 losTgt=52.75
+[WOBBLE_FIRE] team=2 losTgt=52.43
+[WOBBLE_FIRE] team=2 losTgt=52.09
+[WOBBLE_FIRE] team=2 losTgt=51.73
+[WOBBLE_FIRE] team=2 losTgt=51.36
+[WOBBLE_FIRE] team=2 losTgt=50.97
+[WOBBLE_FIRE] team=2 losTgt=50.57
+[WOBBLE_FIRE] team=2 losTgt=50.13
+[WOBBLE_FIRE] team=2 losTgt=49.69
+[WOBBLE_FIRE] team=2 losTgt=49.22
+[WOBBLE_FIRE] team=2 losTgt=48.74
+[WOBBLE_FIRE] team=2 losTgt=48.23
+[WOBBLE_FIRE] team=2 losTgt=47.70
+[WOBBLE_FIRE] team=2 losTgt=47.15
+[WOBBLE_FIRE] team=2 losTgt=46.58
+[WOBBLE_FIRE] team=2 losTgt=45.98
+[WOBBLE_FIRE] team=2 losTgt=45.34
+runner:local/env:0	num_steps=[11404] | total rewards=[1297.0424] | termination= [target destroyed]
+[seed 12] reward=  1297.04 ownHP=1.0000 tgtHP=-0.0063 target destroyed
+total: 2
+runner:local/env:0	num_steps=[9854] | total rewards=[1332.4557] | termination= [target destroyed]
+[seed 13] reward=  1332.46 ownHP=1.0000 tgtHP=-0.0114 target destroyed
+total: 2
+[WOBBLE_FIRE] team=2 losTgt=91.91
+[WOBBLE_FIRE] team=2 losTgt=91.79
+[WOBBLE_FIRE] team=2 losTgt=91.46
+[WOBBLE_FIRE] team=2 losTgt=91.08
+[WOBBLE_FIRE] team=2 losTgt=90.62
+[WOBBLE_FIRE] team=2 losTgt=90.01
+[WOBBLE_FIRE] team=2 losTgt=89.19
+[WOBBLE_FIRE] team=2 losTgt=88.10
+[WOBBLE_FIRE] team=2 losTgt=86.76
+[WOBBLE_FIRE] team=2 losTgt=85.39
+[WOBBLE_FIRE] team=2 losTgt=84.13
+[WOBBLE_FIRE] team=2 losTgt=82.97
+[WOBBLE_FIRE] team=2 losTgt=81.91
+[WOBBLE_FIRE] team=2 losTgt=80.90
+[WOBBLE_FIRE] team=2 losTgt=79.93
+[WOBBLE_FIRE] team=2 losTgt=78.99
+[WOBBLE_FIRE] team=2 losTgt=78.08
+[WOBBLE_FIRE] team=2 losTgt=77.21
+[WOBBLE_FIRE] team=2 losTgt=76.35
+[WOBBLE_FIRE] team=2 losTgt=75.51
+[WOBBLE_FIRE] team=2 losTgt=74.69
+[WOBBLE_FIRE] team=2 losTgt=73.88
+[WOBBLE_FIRE] team=2 losTgt=73.09
+[WOBBLE_FIRE] team=2 losTgt=72.31
+[WOBBLE_FIRE] team=2 losTgt=71.55
+[WOBBLE_FIRE] team=2 losTgt=70.81
+[WOBBLE_FIRE] team=2 losTgt=70.07
+[WOBBLE_FIRE] team=2 losTgt=69.34
+[WOBBLE_FIRE] team=2 losTgt=68.61
+[WOBBLE_FIRE] team=2 losTgt=67.89
+[WOBBLE_FIRE] team=2 losTgt=67.18
+[WOBBLE_FIRE] team=2 losTgt=66.46
+[WOBBLE_FIRE] team=2 losTgt=65.74
+[WOBBLE_FIRE] team=2 losTgt=65.02
+[WOBBLE_FIRE] team=2 losTgt=64.31
+[WOBBLE_FIRE] team=2 losTgt=63.58
+[WOBBLE_FIRE] team=2 losTgt=62.86
+[WOBBLE_FIRE] team=2 losTgt=62.13
+[WOBBLE_FIRE] team=2 losTgt=61.40
+[WOBBLE_FIRE] team=2 losTgt=60.67
+[WOBBLE_FIRE] team=2 losTgt=59.94
+[WOBBLE_FIRE] team=2 losTgt=59.20
+[WOBBLE_FIRE] team=2 losTgt=58.45
+[WOBBLE_FIRE] team=2 losTgt=57.70
+[WOBBLE_FIRE] team=2 losTgt=56.95
+[WOBBLE_FIRE] team=2 losTgt=56.20
+[WOBBLE_FIRE] team=2 losTgt=55.44
+[WOBBLE_FIRE] team=2 losTgt=54.68
+[WOBBLE_FIRE] team=2 losTgt=53.91
+[WOBBLE_FIRE] team=2 losTgt=53.15
+[WOBBLE_FIRE] team=2 losTgt=52.38
+[WOBBLE_FIRE] team=2 losTgt=51.62
+[WOBBLE_FIRE] team=2 losTgt=50.86
+[WOBBLE_FIRE] team=2 losTgt=50.11
+[WOBBLE_FIRE] team=2 losTgt=49.35
+[WOBBLE_FIRE] team=2 losTgt=48.59
+[WOBBLE_FIRE] team=2 losTgt=47.83
+[WOBBLE_FIRE] team=2 losTgt=47.07
+[WOBBLE_FIRE] team=2 losTgt=46.30
+[WOBBLE_FIRE] team=2 losTgt=45.52
+[WOBBLE_FIRE] team=2 losTgt=45.45
+[WOBBLE_FIRE] team=2 losTgt=49.45
+[WOBBLE_FIRE] team=2 losTgt=53.64
+[WOBBLE_FIRE] team=2 losTgt=57.95
+[WOBBLE_FIRE] team=2 losTgt=62.29
+[WOBBLE_FIRE] team=2 losTgt=66.59
+[WOBBLE_FIRE] team=2 losTgt=70.78
+[WOBBLE_FIRE] team=2 losTgt=74.79
+[WOBBLE_FIRE] team=2 losTgt=78.58
+[WOBBLE_FIRE] team=2 losTgt=82.12
+[WOBBLE_FIRE] team=2 losTgt=85.39
+[WOBBLE_FIRE] team=2 losTgt=88.36
+[WOBBLE_FIRE] team=2 losTgt=91.05
+[WOBBLE_FIRE] team=2 losTgt=93.46
+[WOBBLE_FIRE] team=2 losTgt=95.62
+[WOBBLE_FIRE] team=2 losTgt=97.52
+[WOBBLE_FIRE] team=2 losTgt=99.20
+[WOBBLE_FIRE] team=2 losTgt=100.70
+[WOBBLE_FIRE] team=2 losTgt=102.00
+[WOBBLE_FIRE] team=2 losTgt=103.15
+[WOBBLE_FIRE] team=2 losTgt=104.13
+[WOBBLE_FIRE] team=2 losTgt=104.97
+[WOBBLE_FIRE] team=2 losTgt=105.69
+[WOBBLE_FIRE] team=2 losTgt=106.28
+[WOBBLE_FIRE] team=2 losTgt=106.78
+[WOBBLE_FIRE] team=2 losTgt=107.18
+[WOBBLE_FIRE] team=2 losTgt=107.50
+[WOBBLE_FIRE] team=2 losTgt=107.74
+[WOBBLE_FIRE] team=2 losTgt=107.92
+[WOBBLE_FIRE] team=2 losTgt=108.04
+[WOBBLE_FIRE] team=2 losTgt=108.10
+[WOBBLE_FIRE] team=2 losTgt=108.12
+[WOBBLE_FIRE] team=2 losTgt=108.09
+[WOBBLE_FIRE] team=2 losTgt=108.01
+[WOBBLE_FIRE] team=2 losTgt=107.91
+[WOBBLE_FIRE] team=2 losTgt=107.76
+[WOBBLE_FIRE] team=2 losTgt=107.59
+[WOBBLE_FIRE] team=2 losTgt=107.39
+[WOBBLE_FIRE] team=2 losTgt=107.16
+[WOBBLE_FIRE] team=2 losTgt=106.91
+[WOBBLE_FIRE] team=2 losTgt=106.64
+[WOBBLE_FIRE] team=2 losTgt=106.34
+[WOBBLE_FIRE] team=2 losTgt=106.03
+[WOBBLE_FIRE] team=2 losTgt=105.70
+[WOBBLE_FIRE] team=2 losTgt=105.36
+[WOBBLE_FIRE] team=2 losTgt=105.00
+[WOBBLE_FIRE] team=2 losTgt=104.63
+[WOBBLE_FIRE] team=2 losTgt=104.25
+[WOBBLE_FIRE] team=2 losTgt=103.86
+[WOBBLE_FIRE] team=2 losTgt=103.46
+[WOBBLE_FIRE] team=2 losTgt=103.05
+[WOBBLE_FIRE] team=2 losTgt=102.63
+[WOBBLE_FIRE] team=2 losTgt=102.21
+[WOBBLE_FIRE] team=2 losTgt=101.77
+[WOBBLE_FIRE] team=2 losTgt=101.33
+[WOBBLE_FIRE] team=2 losTgt=100.89
+[WOBBLE_FIRE] team=2 losTgt=100.44
+[WOBBLE_FIRE] team=2 losTgt=99.98
+[WOBBLE_FIRE] team=2 losTgt=99.52
+[WOBBLE_FIRE] team=2 losTgt=99.06
+[WOBBLE_FIRE] team=2 losTgt=98.59
+[WOBBLE_FIRE] team=2 losTgt=98.12
+[WOBBLE_FIRE] team=2 losTgt=97.64
+[WOBBLE_FIRE] team=2 losTgt=97.16
+[WOBBLE_FIRE] team=2 losTgt=96.68
+[WOBBLE_FIRE] team=2 losTgt=96.20
+[WOBBLE_FIRE] team=2 losTgt=95.72
+[WOBBLE_FIRE] team=2 losTgt=95.23
+[WOBBLE_FIRE] team=2 losTgt=94.74
+[WOBBLE_FIRE] team=2 losTgt=94.26
+[WOBBLE_FIRE] team=2 losTgt=93.77
+[WOBBLE_FIRE] team=2 losTgt=93.27
+[WOBBLE_FIRE] team=2 losTgt=92.78
+[WOBBLE_FIRE] team=2 losTgt=92.29
+[WOBBLE_FIRE] team=2 losTgt=91.79
+[WOBBLE_FIRE] team=2 losTgt=91.30
+[WOBBLE_FIRE] team=2 losTgt=90.80
+[WOBBLE_FIRE] team=2 losTgt=90.31
+[WOBBLE_FIRE] team=2 losTgt=89.81
+[WOBBLE_FIRE] team=2 losTgt=89.32
+[WOBBLE_FIRE] team=2 losTgt=88.83
+[WOBBLE_FIRE] team=2 losTgt=88.34
+[WOBBLE_FIRE] team=2 losTgt=87.84
+[WOBBLE_FIRE] team=2 losTgt=87.36
+[WOBBLE_FIRE] team=2 losTgt=86.87
+[WOBBLE_FIRE] team=2 losTgt=86.39
+[WOBBLE_FIRE] team=2 losTgt=85.91
+[WOBBLE_FIRE] team=2 losTgt=85.43
+[WOBBLE_FIRE] team=2 losTgt=84.95
+[WOBBLE_FIRE] team=2 losTgt=84.48
+[WOBBLE_FIRE] team=2 losTgt=84.01
+[WOBBLE_FIRE] team=2 losTgt=83.54
+[WOBBLE_FIRE] team=2 losTgt=83.08
+[WOBBLE_FIRE] team=2 losTgt=82.62
+[WOBBLE_FIRE] team=2 losTgt=82.16
+[WOBBLE_FIRE] team=2 losTgt=81.71
+[WOBBLE_FIRE] team=2 losTgt=81.25
+[WOBBLE_FIRE] team=2 losTgt=80.80
+[WOBBLE_FIRE] team=2 losTgt=80.36
+[WOBBLE_FIRE] team=2 losTgt=79.91
+[WOBBLE_FIRE] team=2 losTgt=79.47
+[WOBBLE_FIRE] team=2 losTgt=79.03
+[WOBBLE_FIRE] team=2 losTgt=78.59
+[WOBBLE_FIRE] team=2 losTgt=78.17
+[WOBBLE_FIRE] team=2 losTgt=77.76
+[WOBBLE_FIRE] team=2 losTgt=77.36
+[WOBBLE_FIRE] team=2 losTgt=76.97
+[WOBBLE_FIRE] team=2 losTgt=76.57
+[WOBBLE_FIRE] team=2 losTgt=76.15
+[WOBBLE_FIRE] team=2 losTgt=75.70
+[WOBBLE_FIRE] team=2 losTgt=75.23
+[WOBBLE_FIRE] team=2 losTgt=74.74
+[WOBBLE_FIRE] team=2 losTgt=74.26
+[WOBBLE_FIRE] team=2 losTgt=73.78
+[WOBBLE_FIRE] team=2 losTgt=73.30
+[WOBBLE_FIRE] team=2 losTgt=72.82
+[WOBBLE_FIRE] team=2 losTgt=72.35
+[WOBBLE_FIRE] team=2 losTgt=71.87
+[WOBBLE_FIRE] team=2 losTgt=71.39
+[WOBBLE_FIRE] team=2 losTgt=70.89
+[WOBBLE_FIRE] team=2 losTgt=70.40
+[WOBBLE_FIRE] team=2 losTgt=69.89
+[WOBBLE_FIRE] team=2 losTgt=69.39
+[WOBBLE_FIRE] team=2 losTgt=68.89
+[WOBBLE_FIRE] team=2 losTgt=68.39
+[WOBBLE_FIRE] team=2 losTgt=67.88
+[WOBBLE_FIRE] team=2 losTgt=67.38
+[WOBBLE_FIRE] team=2 losTgt=66.87
+[WOBBLE_FIRE] team=2 losTgt=66.37
+[WOBBLE_FIRE] team=2 losTgt=65.86
+[WOBBLE_FIRE] team=2 losTgt=65.36
+[WOBBLE_FIRE] team=2 losTgt=64.85
+[WOBBLE_FIRE] team=2 losTgt=64.33
+[WOBBLE_FIRE] team=2 losTgt=63.82
+[WOBBLE_FIRE] team=2 losTgt=63.30
+[WOBBLE_FIRE] team=2 losTgt=62.78
+[WOBBLE_FIRE] team=2 losTgt=62.25
+[WOBBLE_FIRE] team=2 losTgt=61.72
+[WOBBLE_FIRE] team=2 losTgt=61.18
+[WOBBLE_FIRE] team=2 losTgt=60.63
+[WOBBLE_FIRE] team=2 losTgt=60.08
+[WOBBLE_FIRE] team=2 losTgt=59.53
+[WOBBLE_FIRE] team=2 losTgt=58.97
+[WOBBLE_FIRE] team=2 losTgt=58.40
+[WOBBLE_FIRE] team=2 losTgt=57.83
+[WOBBLE_FIRE] team=2 losTgt=57.25
+[WOBBLE_FIRE] team=2 losTgt=56.67
+[WOBBLE_FIRE] team=2 losTgt=56.08
+[WOBBLE_FIRE] team=2 losTgt=55.48
+[WOBBLE_FIRE] team=2 losTgt=54.88
+[WOBBLE_FIRE] team=2 losTgt=54.27
+[WOBBLE_FIRE] team=2 losTgt=53.66
+[WOBBLE_FIRE] team=2 losTgt=53.03
+[WOBBLE_FIRE] team=2 losTgt=52.40
+[WOBBLE_FIRE] team=2 losTgt=51.76
+[WOBBLE_FIRE] team=2 losTgt=51.11
+[WOBBLE_FIRE] team=2 losTgt=50.45
+[WOBBLE_FIRE] team=2 losTgt=49.79
+[WOBBLE_FIRE] team=2 losTgt=49.11
+[WOBBLE_FIRE] team=2 losTgt=48.42
+[WOBBLE_FIRE] team=2 losTgt=47.72
+[WOBBLE_FIRE] team=2 losTgt=47.01
+[WOBBLE_FIRE] team=2 losTgt=46.29
+[WOBBLE_FIRE] team=2 losTgt=45.55
+[WOBBLE_FIRE] team=2 losTgt=48.39
+[WOBBLE_FIRE] team=2 losTgt=54.62
+[WOBBLE_FIRE] team=2 losTgt=60.94
+[WOBBLE_FIRE] team=2 losTgt=67.08
+[WOBBLE_FIRE] team=2 losTgt=72.52
+[WOBBLE_FIRE] team=2 losTgt=76.67
+[WOBBLE_FIRE] team=2 losTgt=79.40
+[WOBBLE_FIRE] team=2 losTgt=81.17
+[WOBBLE_FIRE] team=2 losTgt=82.63
+[WOBBLE_FIRE] team=2 losTgt=83.96
+[WOBBLE_FIRE] team=2 losTgt=85.22
+[WOBBLE_FIRE] team=2 losTgt=86.40
+[WOBBLE_FIRE] team=2 losTgt=87.45
+[WOBBLE_FIRE] team=2 losTgt=88.39
+[WOBBLE_FIRE] team=2 losTgt=89.21
+[WOBBLE_FIRE] team=2 losTgt=89.88
+[WOBBLE_FIRE] team=2 losTgt=90.41
+[WOBBLE_FIRE] team=2 losTgt=90.81
+[WOBBLE_FIRE] team=2 losTgt=91.09
+[WOBBLE_FIRE] team=2 losTgt=91.26
+[WOBBLE_FIRE] team=2 losTgt=91.32
+[WOBBLE_FIRE] team=2 losTgt=91.30
+[WOBBLE_FIRE] team=2 losTgt=91.19
+[WOBBLE_FIRE] team=2 losTgt=91.01
+[WOBBLE_FIRE] team=2 losTgt=90.76
+[WOBBLE_FIRE] team=2 losTgt=90.44
+[WOBBLE_FIRE] team=2 losTgt=90.07
+[WOBBLE_FIRE] team=2 losTgt=89.65
+[WOBBLE_FIRE] team=2 losTgt=89.18
+[WOBBLE_FIRE] team=2 losTgt=88.67
+[WOBBLE_FIRE] team=2 losTgt=88.13
+[WOBBLE_FIRE] team=2 losTgt=87.54
+[WOBBLE_FIRE] team=2 losTgt=86.93
+[WOBBLE_FIRE] team=2 losTgt=86.29
+[WOBBLE_FIRE] team=2 losTgt=85.61
+[WOBBLE_FIRE] team=2 losTgt=84.91
+[WOBBLE_FIRE] team=2 losTgt=84.19
+[WOBBLE_FIRE] team=2 losTgt=83.44
+[WOBBLE_FIRE] team=2 losTgt=82.68
+[WOBBLE_FIRE] team=2 losTgt=81.89
+[WOBBLE_FIRE] team=2 losTgt=81.09
+[WOBBLE_FIRE] team=2 losTgt=80.26
+[WOBBLE_FIRE] team=2 losTgt=79.43
+[WOBBLE_FIRE] team=2 losTgt=78.57
+[WOBBLE_FIRE] team=2 losTgt=77.70
+[WOBBLE_FIRE] team=2 losTgt=76.83
+[WOBBLE_FIRE] team=2 losTgt=75.93
+[WOBBLE_FIRE] team=2 losTgt=75.03
+[WOBBLE_FIRE] team=2 losTgt=74.10
+[WOBBLE_FIRE] team=2 losTgt=73.17
+[WOBBLE_FIRE] team=2 losTgt=72.23
+[WOBBLE_FIRE] team=2 losTgt=71.27
+[WOBBLE_FIRE] team=2 losTgt=70.31
+[WOBBLE_FIRE] team=2 losTgt=69.33
+[WOBBLE_FIRE] team=2 losTgt=68.35
+[WOBBLE_FIRE] team=2 losTgt=67.35
+[WOBBLE_FIRE] team=2 losTgt=66.35
+[WOBBLE_FIRE] team=2 losTgt=65.34
+[WOBBLE_FIRE] team=2 losTgt=64.33
+[WOBBLE_FIRE] team=2 losTgt=63.30
+[WOBBLE_FIRE] team=2 losTgt=62.27
+[WOBBLE_FIRE] team=2 losTgt=61.23
+[WOBBLE_FIRE] team=2 losTgt=60.19
+[WOBBLE_FIRE] team=2 losTgt=59.14
+[WOBBLE_FIRE] team=2 losTgt=58.08
+[WOBBLE_FIRE] team=2 losTgt=57.01
+[WOBBLE_FIRE] team=2 losTgt=55.94
+[WOBBLE_FIRE] team=2 losTgt=54.86
+[WOBBLE_FIRE] team=2 losTgt=53.77
+[WOBBLE_FIRE] team=2 losTgt=52.68
+[WOBBLE_FIRE] team=2 losTgt=51.57
+[WOBBLE_FIRE] team=2 losTgt=50.46
+[WOBBLE_FIRE] team=2 losTgt=49.34
+[WOBBLE_FIRE] team=2 losTgt=48.21
+[WOBBLE_FIRE] team=2 losTgt=47.08
+[WOBBLE_FIRE] team=2 losTgt=45.93
+runner:local/env:0	num_steps=[11999] | total rewards=[1019.7423] | termination= [max time out]
+[seed 14] reward=  1019.74 ownHP=1.0000 tgtHP=0.2433 max time out
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=15]
+SUMMARY dealt=14.8101 taken=0.0000 mean_reward=1023.87
+tacview log saved (last episode)
+
+=== A legacy 10상대 완료 ===
