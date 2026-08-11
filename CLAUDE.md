@@ -56,7 +56,13 @@ cd 강화학습환경/Release
   + **로그 stamp를 함께** 알려 어느 판인지 특정.
 - **버전 바뀌면 자동으로**: `상대기체 공유파일/날짜_vN_이름/`에 DLL+Rule XML+수정 .cpp+README(성적·근거)
   아카이브 → `git add -A` → commit. **기각한 버전도 기록.**
-- **배치 3개 이상 병렬 금지** (PC 다운 전례). PC 다운 시 `aircraft/f16/f16_init.xml` 손상 확인.
+- **배치 3개 이상 병렬 금지** (PC 다운 전례). **PC 다운 시 두 곳을 확인**:
+  1. `aircraft/f16/f16_init.xml` (3회 손상 전례)
+  2. **`.git/refs/heads/main`** — 2026-08-11에 41바이트 전부 NULL이 됐다.
+     증상: `fatal: your current branch appears to be broken`, `git status`가 전 파일을 `A`로 표시.
+     복구: `tail -1 .git/logs/refs/heads/main`(reflog는 살아 있다)에서 마지막 해시를 꺼내
+     `git cat-file -t <해시>`로 확인 후 `printf '<해시>\n' > .git/refs/heads/main`.
+     끝나면 `git fsck`로 검증. **작업 파일과 객체DB는 멀쩡하다 — ref만 다시 쓰면 된다.**
 - git push는 사용자 승인 후.
 
 ## ★ 사격 판정은 **3단계 phase**다 (2026-08-06 대회 자료 대조로 발견)
