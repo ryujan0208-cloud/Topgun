@@ -110,7 +110,10 @@ def main():
     start_seed = int(sys.argv[5]) if len(sys.argv) > 5 else 0  # 특정 시드 재현용
     tgt_dll = sys.argv[6] if len(sys.argv) > 6 else "AIP_kwon.dll"  # 스파링 상대 선택
 
-    own = BTActionProvider(dll_name="AIP_DCS_ownship.dll")
+    # 병렬 배치를 위해 ownship DLL을 프로세스별로 고를 수 있게 한다.
+    # 미설정이면 종전대로 AIP_DCS_ownship.dll (legacy 경로 불변).
+    own_dll = os.getenv("TOPGUN_OWN_DLL") or "AIP_DCS_ownship.dll"
+    own = BTActionProvider(dll_name=own_dll)
     if tgt_dll.upper() == "ACE":
         from ace_pilot import AcePilot
         tgt = AcePilot()
