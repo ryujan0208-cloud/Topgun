@@ -1,386 +1,385 @@
 ########## v32_HABFM vs AIP_jh2.dll ##########
-[match] seed 0 HABFM round1 sep=610m alt=6057m spd=258m/s
-[seed 0] reward=   -18.66 ownHP=0.6412 tgtHP=0.8015 target altitude below min
-[match] seed 3 HABFM round1 sep=610m alt=1799m spd=270m/s
-[seed 3] reward=   104.49 ownHP=-0.0116 tgtHP=0.2155 ownship destroyed
-[match] seed 6 HABFM round1 sep=610m alt=4953m spd=256m/s
-[seed 6] reward=   -16.89 ownHP=0.6420 tgtHP=0.8063 target altitude below min
-[match] seed 9 HABFM round1 sep=610m alt=7962m spd=289m/s
-[seed 9] reward=  -129.68 ownHP=-0.0097 tgtHP=0.7347 ownship destroyed
-[match] seed 12 HABFM round1 sep=610m alt=5889m spd=248m/s
-[seed 12] reward=  -131.92 ownHP=-0.0108 tgtHP=0.8144 ownship destroyed
-[match] seed 15 HABFM round1 sep=610m alt=6004m spd=217m/s
-[seed 15] reward=  -113.41 ownHP=-0.0085 tgtHP=0.7778 ownship destroyed
-[match] seed 18 HABFM round1 sep=610m alt=6242m spd=272m/s
-[seed 18] reward=  -152.08 ownHP=-0.0017 tgtHP=0.7757 ownship destroyed
-[match] seed 21 HABFM round1 sep=610m alt=3325m spd=262m/s
-[seed 21] reward=  -139.00 ownHP=-0.0013 tgtHP=0.8226 ownship destroyed
-[match] seed 24 HABFM round1 sep=610m alt=4585m spd=280m/s
-[seed 24] reward=  -137.48 ownHP=-0.0047 tgtHP=0.7971 ownship destroyed
-[match] seed 27 HABFM round1 sep=610m alt=2472m spd=205m/s
-[seed 27] reward=  -148.31 ownHP=-0.0041 tgtHP=0.8018 ownship destroyed
-[match] seed 30 HABFM round1 sep=610m alt=2676m spd=228m/s
-[seed 30] reward=  -156.99 ownHP=-0.0084 tgtHP=0.7968 ownship destroyed
-[match] seed 33 HABFM round1 sep=610m alt=5743m spd=211m/s
-[seed 33] reward=  -134.38 ownHP=-0.0078 tgtHP=0.7900 ownship destroyed
-[match] seed 36 HABFM round1 sep=610m alt=1017m spd=299m/s
-[seed 36] reward=   275.21 ownHP=-0.0012 tgtHP=0.5703 ownship destroyed
-[match] seed 39 HABFM round1 sep=610m alt=4248m spd=230m/s
-[seed 39] reward=   -14.52 ownHP=0.5882 tgtHP=0.7964 target altitude below min
-[match] seed 42 HABFM round1 sep=610m alt=4792m spd=263m/s
-[seed 42] reward=   -19.62 ownHP=0.6922 tgtHP=0.8117 target altitude below min
+[match] seed 0 HABFM round1 sep=610m alt=6057m spd=258m/s aoff=0deg
+[seed 0] reward=  -163.84 ownHP=-0.0025 tgtHP=1.0000 ownship destroyed
+[match] seed 3 HABFM round1 sep=610m alt=1799m spd=270m/s aoff=0deg
+[seed 3] reward=    67.49 ownHP=-0.0024 tgtHP=1.0000 ownship destroyed
+[match] seed 6 HABFM round1 sep=610m alt=4953m spd=256m/s aoff=0deg
+[seed 6] reward=  -130.38 ownHP=-0.0090 tgtHP=0.9817 ownship destroyed
+[match] seed 9 HABFM round1 sep=610m alt=7962m spd=289m/s aoff=0deg
+[seed 9] reward=   -14.90 ownHP=1.0000 tgtHP=1.0000 target altitude below min
+[match] seed 12 HABFM round1 sep=610m alt=5889m spd=248m/s aoff=0deg
+[seed 12] reward=   858.21 ownHP=1.0000 tgtHP=-0.0003 target destroyed
+[match] seed 15 HABFM round1 sep=610m alt=6004m spd=217m/s aoff=0deg
+[seed 15] reward=   736.00 ownHP=1.0000 tgtHP=-0.0003 target destroyed
+[match] seed 18 HABFM round1 sep=610m alt=6242m spd=272m/s aoff=0deg
+[seed 18] reward=  -151.53 ownHP=-0.0083 tgtHP=1.0000 ownship destroyed
+[match] seed 21 HABFM round1 sep=610m alt=3325m spd=262m/s aoff=0deg
+[seed 21] reward=  -161.51 ownHP=-0.0104 tgtHP=1.0000 ownship destroyed
+[match] seed 24 HABFM round1 sep=610m alt=4585m spd=280m/s aoff=0deg
+[seed 24] reward=   -34.44 ownHP=1.0000 tgtHP=1.0000 target altitude below min
+[match] seed 27 HABFM round1 sep=610m alt=2472m spd=205m/s aoff=0deg
+[seed 27] reward=   425.34 ownHP=1.0000 tgtHP=-0.0009 target destroyed
+[match] seed 30 HABFM round1 sep=610m alt=2676m spd=228m/s aoff=0deg
+[seed 30] reward=   751.03 ownHP=1.0000 tgtHP=-0.0000 target destroyed
+[match] seed 33 HABFM round1 sep=610m alt=5743m spd=211m/s aoff=0deg
+[seed 33] reward=   560.88 ownHP=1.0000 tgtHP=0.9875 target altitude below min
+[match] seed 36 HABFM round1 sep=610m alt=1017m spd=299m/s aoff=0deg
+[seed 36] reward=   315.83 ownHP=0.3625 tgtHP=0.9406 max time out
+[match] seed 39 HABFM round1 sep=610m alt=4248m spd=230m/s aoff=0deg
+[seed 39] reward=   -28.47 ownHP=1.0000 tgtHP=1.0000 target altitude below min
+[match] seed 42 HABFM round1 sep=610m alt=4792m spd=263m/s aoff=0deg
+[seed 42] reward=   -21.84 ownHP=1.0000 tgtHP=1.0000 target altitude below min
 
 ########## v32_HABFM vs ACE ##########
-[match] seed 0 HABFM round1 sep=610m alt=6057m spd=258m/s
-[seed 0] reward=   510.33 ownHP=0.5710 tgtHP=0.7004 max time out
-[match] seed 3 HABFM round1 sep=610m alt=1799m spd=270m/s
-[seed 3] reward=   515.43 ownHP=0.8833 tgtHP=0.8800 max time out
-[match] seed 6 HABFM round1 sep=610m alt=4953m spd=256m/s
-[seed 6] reward=   516.23 ownHP=0.5721 tgtHP=0.6917 max time out
-[match] seed 9 HABFM round1 sep=610m alt=7962m spd=289m/s
-[seed 9] reward=   498.07 ownHP=0.5366 tgtHP=0.5258 max time out
-[match] seed 12 HABFM round1 sep=610m alt=5889m spd=248m/s
-[seed 12] reward=   538.53 ownHP=0.5773 tgtHP=0.7082 max time out
-[match] seed 15 HABFM round1 sep=610m alt=6004m spd=217m/s
-[seed 15] reward=   549.15 ownHP=0.5559 tgtHP=0.6093 max time out
-[match] seed 18 HABFM round1 sep=610m alt=6242m spd=272m/s
-[seed 18] reward=   582.73 ownHP=0.5322 tgtHP=0.6363 max time out
-[match] seed 21 HABFM round1 sep=610m alt=3325m spd=262m/s
-[seed 21] reward=   427.69 ownHP=0.4607 tgtHP=0.6654 max time out
-[match] seed 24 HABFM round1 sep=610m alt=4585m spd=280m/s
-[seed 24] reward=   413.23 ownHP=0.4457 tgtHP=0.7350 max time out
-[match] seed 27 HABFM round1 sep=610m alt=2472m spd=205m/s
-[seed 27] reward=   569.07 ownHP=0.8612 tgtHP=0.7241 max time out
-[match] seed 30 HABFM round1 sep=610m alt=2676m spd=228m/s
-[seed 30] reward=   660.91 ownHP=0.8584 tgtHP=0.5633 max time out
-[match] seed 33 HABFM round1 sep=610m alt=5743m spd=211m/s
-[seed 33] reward=   533.38 ownHP=0.5467 tgtHP=0.7173 max time out
-[match] seed 36 HABFM round1 sep=610m alt=1017m spd=299m/s
-[seed 36] reward=   535.93 ownHP=0.8907 tgtHP=0.8685 max time out
-[match] seed 39 HABFM round1 sep=610m alt=4248m spd=230m/s
-[seed 39] reward=   565.26 ownHP=0.4080 tgtHP=0.6316 max time out
-[match] seed 42 HABFM round1 sep=610m alt=4792m spd=263m/s
-[seed 42] reward=   399.44 ownHP=0.4903 tgtHP=0.7383 max time out
+[match] seed 0 HABFM round1 sep=610m alt=6057m spd=258m/s aoff=0deg
+[seed 0] reward=   421.18 ownHP=1.0000 tgtHP=0.9256 max time out
+[match] seed 3 HABFM round1 sep=610m alt=1799m spd=270m/s aoff=0deg
+[seed 3] reward=   503.11 ownHP=1.0000 tgtHP=0.9385 max time out
+[match] seed 6 HABFM round1 sep=610m alt=4953m spd=256m/s aoff=0deg
+[seed 6] reward=   415.28 ownHP=1.0000 tgtHP=0.9279 max time out
+[match] seed 9 HABFM round1 sep=610m alt=7962m spd=289m/s aoff=0deg
+[seed 9] reward=   179.75 ownHP=1.0000 tgtHP=0.9886 max time out
+[match] seed 12 HABFM round1 sep=610m alt=5889m spd=248m/s aoff=0deg
+[seed 12] reward=   559.46 ownHP=1.0000 tgtHP=0.8199 max time out
+[match] seed 15 HABFM round1 sep=610m alt=6004m spd=217m/s aoff=0deg
+[seed 15] reward=   525.32 ownHP=1.0000 tgtHP=0.9141 max time out
+[match] seed 18 HABFM round1 sep=610m alt=6242m spd=272m/s aoff=0deg
+[seed 18] reward=   449.30 ownHP=1.0000 tgtHP=0.8772 max time out
+[match] seed 21 HABFM round1 sep=610m alt=3325m spd=262m/s aoff=0deg
+[seed 21] reward=  -119.99 ownHP=1.0000 tgtHP=1.0000 max time out
+[match] seed 24 HABFM round1 sep=610m alt=4585m spd=280m/s aoff=0deg
+[seed 24] reward=   256.52 ownHP=1.0000 tgtHP=0.9504 max time out
+[match] seed 27 HABFM round1 sep=610m alt=2472m spd=205m/s aoff=0deg
+[seed 27] reward=   575.12 ownHP=1.0000 tgtHP=0.8717 max time out
+[match] seed 30 HABFM round1 sep=610m alt=2676m spd=228m/s aoff=0deg
+[seed 30] reward=   520.85 ownHP=1.0000 tgtHP=0.8796 max time out
+[match] seed 33 HABFM round1 sep=610m alt=5743m spd=211m/s aoff=0deg
+[seed 33] reward=   517.79 ownHP=1.0000 tgtHP=0.8588 max time out
+[match] seed 36 HABFM round1 sep=610m alt=1017m spd=299m/s aoff=0deg
+[seed 36] reward=   472.69 ownHP=1.0000 tgtHP=0.9014 max time out
+[match] seed 39 HABFM round1 sep=610m alt=4248m spd=230m/s aoff=0deg
+[seed 39] reward=   385.48 ownHP=1.0000 tgtHP=0.9118 max time out
+[match] seed 42 HABFM round1 sep=610m alt=4792m spd=263m/s aoff=0deg
+[seed 42] reward=   230.53 ownHP=1.0000 tgtHP=0.9390 max time out
 
 ########## v40_HABFM vs AIP_jh2.dll ##########
-[match] seed 0 HABFM round1 sep=610m alt=6057m spd=258m/s
-[seed 0] reward=   -18.66 ownHP=0.6412 tgtHP=0.8015 target altitude below min
-[match] seed 3 HABFM round1 sep=610m alt=1799m spd=270m/s
-[seed 3] reward=   933.52 ownHP=0.8832 tgtHP=-0.0054 target destroyed
-[match] seed 6 HABFM round1 sep=610m alt=4953m spd=256m/s
-[seed 6] reward=   -16.89 ownHP=0.6420 tgtHP=0.8063 target altitude below min
-[match] seed 9 HABFM round1 sep=610m alt=7962m spd=289m/s
-[seed 9] reward=  1106.80 ownHP=0.4557 tgtHP=-0.0002 target destroyed
-[match] seed 12 HABFM round1 sep=610m alt=5889m spd=248m/s
-[seed 12] reward=  -149.14 ownHP=-0.0133 tgtHP=0.8144 ownship destroyed
-[match] seed 15 HABFM round1 sep=610m alt=6004m spd=217m/s
-[seed 15] reward=   756.57 ownHP=0.5696 tgtHP=0.1039 max time out
-[match] seed 18 HABFM round1 sep=610m alt=6242m spd=272m/s
-[seed 18] reward=   -19.47 ownHP=0.5919 tgtHP=0.7757 target altitude below min
-[match] seed 21 HABFM round1 sep=610m alt=3325m spd=262m/s
-[seed 21] reward=   213.03 ownHP=-0.0099 tgtHP=0.5140 ownship destroyed
-[match] seed 24 HABFM round1 sep=610m alt=4585m spd=280m/s
-[seed 24] reward=   515.53 ownHP=0.6162 tgtHP=-0.0120 target destroyed
-[match] seed 27 HABFM round1 sep=610m alt=2472m spd=205m/s
-[seed 27] reward=   939.46 ownHP=0.9236 tgtHP=-0.0033 target destroyed
-[match] seed 30 HABFM round1 sep=610m alt=2676m spd=228m/s
-[seed 30] reward=   663.93 ownHP=0.5759 tgtHP=-0.0027 target destroyed
-[match] seed 33 HABFM round1 sep=610m alt=5743m spd=211m/s
-[seed 33] reward=   755.00 ownHP=0.5872 tgtHP=-0.0030 target destroyed
-[match] seed 36 HABFM round1 sep=610m alt=1017m spd=299m/s
-[seed 36] reward=   958.69 ownHP=0.9457 tgtHP=-0.0113 target destroyed
-[match] seed 39 HABFM round1 sep=610m alt=4248m spd=230m/s
-[seed 39] reward=   -14.55 ownHP=0.5882 tgtHP=0.7964 target altitude below min
-[match] seed 42 HABFM round1 sep=610m alt=4792m spd=263m/s
-[seed 42] reward=   597.00 ownHP=0.6922 tgtHP=0.3320 max time out
+[match] seed 0 HABFM round1 sep=610m alt=6057m spd=258m/s aoff=0deg
+[seed 0] reward=   609.80 ownHP=1.0000 tgtHP=-0.0004 target destroyed
+[match] seed 3 HABFM round1 sep=610m alt=1799m spd=270m/s aoff=0deg
+[seed 3] reward=   920.57 ownHP=1.0000 tgtHP=-0.0014 target destroyed
+[match] seed 6 HABFM round1 sep=610m alt=4953m spd=256m/s aoff=0deg
+[seed 6] reward=   769.65 ownHP=1.0000 tgtHP=-0.0033 target destroyed
+[match] seed 9 HABFM round1 sep=610m alt=7962m spd=289m/s aoff=0deg
+[seed 9] reward=   -14.67 ownHP=1.0000 tgtHP=1.0000 target altitude below min
+[match] seed 12 HABFM round1 sep=610m alt=5889m spd=248m/s aoff=0deg
+[seed 12] reward=   602.73 ownHP=1.0000 tgtHP=-0.0007 target destroyed
+[match] seed 15 HABFM round1 sep=610m alt=6004m spd=217m/s aoff=0deg
+[seed 15] reward=   999.52 ownHP=1.0000 tgtHP=-0.0025 target destroyed
+[match] seed 18 HABFM round1 sep=610m alt=6242m spd=272m/s aoff=0deg
+[seed 18] reward=   -16.30 ownHP=1.0000 tgtHP=1.0000 target altitude below min
+[match] seed 21 HABFM round1 sep=610m alt=3325m spd=262m/s aoff=0deg
+[seed 21] reward=   924.07 ownHP=1.0000 tgtHP=-0.0004 target destroyed
+[match] seed 24 HABFM round1 sep=610m alt=4585m spd=280m/s aoff=0deg
+[seed 24] reward=   588.99 ownHP=1.0000 tgtHP=-0.0023 target destroyed
+[match] seed 27 HABFM round1 sep=610m alt=2472m spd=205m/s aoff=0deg
+[seed 27] reward=   425.34 ownHP=1.0000 tgtHP=-0.0009 target destroyed
+[match] seed 30 HABFM round1 sep=610m alt=2676m spd=228m/s aoff=0deg
+[seed 30] reward=   751.03 ownHP=1.0000 tgtHP=-0.0000 target destroyed
+[match] seed 33 HABFM round1 sep=610m alt=5743m spd=211m/s aoff=0deg
+[seed 33] reward=   948.73 ownHP=1.0000 tgtHP=-0.0054 target destroyed
+[match] seed 36 HABFM round1 sep=610m alt=1017m spd=299m/s aoff=0deg
+[seed 36] reward=   319.35 ownHP=1.0000 tgtHP=-0.0027 target destroyed
+[match] seed 39 HABFM round1 sep=610m alt=4248m spd=230m/s aoff=0deg
+[seed 39] reward=   236.00 ownHP=1.0000 tgtHP=0.9125 max time out
+[match] seed 42 HABFM round1 sep=610m alt=4792m spd=263m/s aoff=0deg
+[seed 42] reward=   679.85 ownHP=1.0000 tgtHP=-0.0009 target destroyed
 
 ########## v40_HABFM vs ACE ##########
-[match] seed 0 HABFM round1 sep=610m alt=6057m spd=258m/s
-[seed 0] reward=   542.48 ownHP=0.5710 tgtHP=0.6465 max time out
-[match] seed 3 HABFM round1 sep=610m alt=1799m spd=270m/s
-[seed 3] reward=   564.68 ownHP=0.8833 tgtHP=0.8047 max time out
-[match] seed 6 HABFM round1 sep=610m alt=4953m spd=256m/s
-[seed 6] reward=   581.43 ownHP=0.5721 tgtHP=0.6049 max time out
-[match] seed 9 HABFM round1 sep=610m alt=7962m spd=289m/s
-[seed 9] reward=   425.33 ownHP=0.5366 tgtHP=0.6801 max time out
-[match] seed 12 HABFM round1 sep=610m alt=5889m spd=248m/s
-[seed 12] reward=   500.99 ownHP=0.5773 tgtHP=0.7398 max time out
-[match] seed 15 HABFM round1 sep=610m alt=6004m spd=217m/s
-[seed 15] reward=   512.27 ownHP=0.5559 tgtHP=0.7326 max time out
-[match] seed 18 HABFM round1 sep=610m alt=6242m spd=272m/s
-[seed 18] reward=   519.39 ownHP=0.5322 tgtHP=0.7115 max time out
-[match] seed 21 HABFM round1 sep=610m alt=3325m spd=262m/s
-[seed 21] reward=   594.97 ownHP=0.4607 tgtHP=0.6776 max time out
-[match] seed 24 HABFM round1 sep=610m alt=4585m spd=280m/s
-[seed 24] reward=   450.45 ownHP=0.4457 tgtHP=0.6468 max time out
-[match] seed 27 HABFM round1 sep=610m alt=2472m spd=205m/s
-[seed 27] reward=   569.07 ownHP=0.8612 tgtHP=0.7241 max time out
-[match] seed 30 HABFM round1 sep=610m alt=2676m spd=228m/s
-[seed 30] reward=   660.91 ownHP=0.8584 tgtHP=0.5633 max time out
-[match] seed 33 HABFM round1 sep=610m alt=5743m spd=211m/s
-[seed 33] reward=   574.94 ownHP=0.5467 tgtHP=0.6618 max time out
-[match] seed 36 HABFM round1 sep=610m alt=1017m spd=299m/s
-[seed 36] reward=   572.04 ownHP=0.8906 tgtHP=0.7058 max time out
-[match] seed 39 HABFM round1 sep=610m alt=4248m spd=230m/s
-[seed 39] reward=   548.67 ownHP=0.4080 tgtHP=0.7425 max time out
-[match] seed 42 HABFM round1 sep=610m alt=4792m spd=263m/s
-[seed 42] reward=   330.51 ownHP=0.4667 tgtHP=0.7850 max time out
+[match] seed 0 HABFM round1 sep=610m alt=6057m spd=258m/s aoff=0deg
+[seed 0] reward=   440.98 ownHP=1.0000 tgtHP=0.9460 max time out
+[match] seed 3 HABFM round1 sep=610m alt=1799m spd=270m/s aoff=0deg
+[seed 3] reward=   581.09 ownHP=1.0000 tgtHP=0.9293 max time out
+[match] seed 6 HABFM round1 sep=610m alt=4953m spd=256m/s aoff=0deg
+[seed 6] reward=   442.06 ownHP=1.0000 tgtHP=0.9103 max time out
+[match] seed 9 HABFM round1 sep=610m alt=7962m spd=289m/s aoff=0deg
+[seed 9] reward=   403.30 ownHP=1.0000 tgtHP=0.9143 max time out
+[match] seed 12 HABFM round1 sep=610m alt=5889m spd=248m/s aoff=0deg
+[seed 12] reward=   509.02 ownHP=1.0000 tgtHP=0.9441 max time out
+[match] seed 15 HABFM round1 sep=610m alt=6004m spd=217m/s aoff=0deg
+[seed 15] reward=   588.91 ownHP=1.0000 tgtHP=0.8824 max time out
+[match] seed 18 HABFM round1 sep=610m alt=6242m spd=272m/s aoff=0deg
+[seed 18] reward=   447.41 ownHP=1.0000 tgtHP=0.9132 max time out
+[match] seed 21 HABFM round1 sep=610m alt=3325m spd=262m/s aoff=0deg
+[seed 21] reward=   577.78 ownHP=1.0000 tgtHP=0.8697 max time out
+[match] seed 24 HABFM round1 sep=610m alt=4585m spd=280m/s aoff=0deg
+[seed 24] reward=   444.51 ownHP=1.0000 tgtHP=0.9582 max time out
+[match] seed 27 HABFM round1 sep=610m alt=2472m spd=205m/s aoff=0deg
+[seed 27] reward=   575.12 ownHP=1.0000 tgtHP=0.8717 max time out
+[match] seed 30 HABFM round1 sep=610m alt=2676m spd=228m/s aoff=0deg
+[seed 30] reward=   520.85 ownHP=1.0000 tgtHP=0.8796 max time out
+[match] seed 33 HABFM round1 sep=610m alt=5743m spd=211m/s aoff=0deg
+[seed 33] reward=   562.92 ownHP=1.0000 tgtHP=0.8509 max time out
+[match] seed 36 HABFM round1 sep=610m alt=1017m spd=299m/s aoff=0deg
+[seed 36] reward=   629.95 ownHP=1.0000 tgtHP=0.8435 max time out
+[match] seed 39 HABFM round1 sep=610m alt=4248m spd=230m/s aoff=0deg
+[seed 39] reward=   501.75 ownHP=1.0000 tgtHP=0.9516 max time out
+[match] seed 42 HABFM round1 sep=610m alt=4792m spd=263m/s aoff=0deg
+[seed 42] reward=   508.05 ownHP=1.0000 tgtHP=0.8465 max time out
 
 ########## v32_OBFM_BLUE vs AIP_jh2.dll ##########
-[match] seed 0 OBFM_BLUE round1 sep=610m alt=6057m spd=258m/s
-[seed 0] reward=   108.41 ownHP=-0.0005 tgtHP=0.2233 ownship destroyed
-[match] seed 3 OBFM_BLUE round1 sep=610m alt=1799m spd=270m/s
-[seed 3] reward=   102.45 ownHP=-0.0041 tgtHP=0.4944 ownship destroyed
-[match] seed 6 OBFM_BLUE round1 sep=610m alt=4953m spd=256m/s
-[seed 6] reward=    37.73 ownHP=-0.0011 tgtHP=0.3461 ownship destroyed
-[match] seed 9 OBFM_BLUE round1 sep=610m alt=7962m spd=289m/s
-[seed 9] reward=   267.34 ownHP=-0.0007 tgtHP=0.1559 ownship destroyed
-[match] seed 12 OBFM_BLUE round1 sep=610m alt=5889m spd=248m/s
-[seed 12] reward=   254.71 ownHP=1.0000 tgtHP=-0.0024 target destroyed
-[match] seed 15 OBFM_BLUE round1 sep=610m alt=6004m spd=217m/s
-[seed 15] reward=   482.35 ownHP=1.0000 tgtHP=-0.0044 target destroyed
-[match] seed 18 OBFM_BLUE round1 sep=610m alt=6242m spd=272m/s
-[seed 18] reward=   486.16 ownHP=1.0000 tgtHP=-0.0075 target destroyed
-[match] seed 21 OBFM_BLUE round1 sep=610m alt=3325m spd=262m/s
-[seed 21] reward=   -25.73 ownHP=-0.0127 tgtHP=0.3999 ownship destroyed
-[match] seed 24 OBFM_BLUE round1 sep=610m alt=4585m spd=280m/s
-[seed 24] reward=   387.46 ownHP=-0.0016 tgtHP=0.0863 ownship destroyed
-[match] seed 27 OBFM_BLUE round1 sep=610m alt=2472m spd=205m/s
-[seed 27] reward=    13.43 ownHP=-0.0029 tgtHP=0.1675 ownship destroyed
-[match] seed 30 OBFM_BLUE round1 sep=610m alt=2676m spd=228m/s
-[seed 30] reward=   -60.37 ownHP=-0.0014 tgtHP=0.3002 ownship destroyed
-[match] seed 33 OBFM_BLUE round1 sep=610m alt=5743m spd=211m/s
-[seed 33] reward=   541.18 ownHP=1.0000 tgtHP=-0.0011 target destroyed
-[match] seed 36 OBFM_BLUE round1 sep=610m alt=1017m spd=299m/s
-[seed 36] reward=  -178.25 ownHP=-0.0139 tgtHP=0.9533 ownship destroyed
-[match] seed 39 OBFM_BLUE round1 sep=610m alt=4248m spd=230m/s
-[seed 39] reward=    34.33 ownHP=-0.0053 tgtHP=0.2662 ownship destroyed
-[match] seed 42 OBFM_BLUE round1 sep=610m alt=4792m spd=263m/s
-[seed 42] reward=    53.37 ownHP=-0.0058 tgtHP=0.3218 ownship destroyed
+[match] seed 0 OBFM_BLUE round1 sep=610m alt=6057m spd=258m/s aoff=30deg
+[seed 0] reward=   371.98 ownHP=-0.0057 tgtHP=0.2273 ownship destroyed
+[match] seed 3 OBFM_BLUE round1 sep=610m alt=1799m spd=270m/s aoff=30deg
+[seed 3] reward=   434.05 ownHP=1.0000 tgtHP=-0.0013 target destroyed
+[match] seed 6 OBFM_BLUE round1 sep=610m alt=4953m spd=256m/s aoff=30deg
+[seed 6] reward=   412.06 ownHP=-0.0004 tgtHP=0.8137 ownship destroyed
+[match] seed 9 OBFM_BLUE round1 sep=610m alt=7962m spd=289m/s aoff=30deg
+[seed 9] reward=    37.65 ownHP=-0.0009 tgtHP=0.9883 ownship destroyed
+[match] seed 12 OBFM_BLUE round1 sep=610m alt=5889m spd=248m/s aoff=30deg
+[seed 12] reward=   455.12 ownHP=-0.0028 tgtHP=0.4821 ownship destroyed
+[match] seed 15 OBFM_BLUE round1 sep=610m alt=6004m spd=217m/s aoff=30deg
+[seed 15] reward=   264.43 ownHP=-0.0013 tgtHP=0.7055 ownship destroyed
+[match] seed 18 OBFM_BLUE round1 sep=610m alt=6242m spd=272m/s aoff=30deg
+[seed 18] reward=   597.93 ownHP=-0.0015 tgtHP=0.8287 ownship destroyed
+[match] seed 21 OBFM_BLUE round1 sep=610m alt=3325m spd=262m/s aoff=30deg
+[seed 21] reward=   405.05 ownHP=-0.0094 tgtHP=0.8582 ownship destroyed
+[match] seed 24 OBFM_BLUE round1 sep=610m alt=4585m spd=280m/s aoff=30deg
+[seed 24] reward=   792.93 ownHP=1.0000 tgtHP=-0.0017 target destroyed
+[match] seed 27 OBFM_BLUE round1 sep=610m alt=2472m spd=205m/s aoff=30deg
+[seed 27] reward=   303.11 ownHP=-0.0019 tgtHP=0.9650 ownship destroyed
+[match] seed 30 OBFM_BLUE round1 sep=610m alt=2676m spd=228m/s aoff=30deg
+[seed 30] reward=   868.38 ownHP=1.0000 tgtHP=-0.0062 target destroyed
+[match] seed 33 OBFM_BLUE round1 sep=610m alt=5743m spd=211m/s aoff=30deg
+[seed 33] reward=   300.51 ownHP=-0.0154 tgtHP=0.2232 ownship destroyed
+[match] seed 36 OBFM_BLUE round1 sep=610m alt=1017m spd=299m/s aoff=30deg
+[seed 36] reward=  1117.13 ownHP=1.0000 tgtHP=-0.0038 target destroyed
+[match] seed 39 OBFM_BLUE round1 sep=610m alt=4248m spd=230m/s aoff=30deg
+[seed 39] reward=   289.04 ownHP=-0.0078 tgtHP=0.7514 ownship destroyed
+[match] seed 42 OBFM_BLUE round1 sep=610m alt=4792m spd=263m/s aoff=30deg
+[seed 42] reward=   424.02 ownHP=-0.0123 tgtHP=0.6134 ownship destroyed
 
 ########## v32_OBFM_BLUE vs ACE ##########
-[match] seed 0 OBFM_BLUE round1 sep=610m alt=6057m spd=258m/s
-[seed 0] reward=   656.03 ownHP=1.0000 tgtHP=0.0649 max time out
-[match] seed 3 OBFM_BLUE round1 sep=610m alt=1799m spd=270m/s
-[seed 3] reward=   669.03 ownHP=1.0000 tgtHP=0.8483 max time out
-[match] seed 6 OBFM_BLUE round1 sep=610m alt=4953m spd=256m/s
-[seed 6] reward=   608.78 ownHP=1.0000 tgtHP=0.1320 max time out
-[match] seed 9 OBFM_BLUE round1 sep=610m alt=7962m spd=289m/s
-[seed 9] reward=   157.60 ownHP=1.0000 tgtHP=-0.0011 target destroyed
-[match] seed 15 OBFM_BLUE round1 sep=610m alt=6004m spd=217m/s
-[seed 15] reward=   718.07 ownHP=1.0000 tgtHP=-0.0002 target destroyed
-[match] seed 18 OBFM_BLUE round1 sep=610m alt=6242m spd=272m/s
-[seed 18] reward=   155.46 ownHP=1.0000 tgtHP=-0.0039 target destroyed
-[match] seed 21 OBFM_BLUE round1 sep=610m alt=3325m spd=262m/s
-[seed 21] reward=   710.41 ownHP=1.0000 tgtHP=0.1069 max time out
-[match] seed 24 OBFM_BLUE round1 sep=610m alt=4585m spd=280m/s
-[seed 24] reward=   154.63 ownHP=1.0000 tgtHP=-0.0047 target destroyed
-[match] seed 27 OBFM_BLUE round1 sep=610m alt=2472m spd=205m/s
-[seed 27] reward=   803.94 ownHP=1.0000 tgtHP=0.1741 max time out
-[match] seed 30 OBFM_BLUE round1 sep=610m alt=2676m spd=228m/s
-[seed 30] reward=   726.13 ownHP=1.0000 tgtHP=0.3248 max time out
-[match] seed 33 OBFM_BLUE round1 sep=610m alt=5743m spd=211m/s
-[seed 33] reward=   704.57 ownHP=1.0000 tgtHP=0.1738 max time out
-[match] seed 36 OBFM_BLUE round1 sep=610m alt=1017m spd=299m/s
-[seed 36] reward=   637.34 ownHP=1.0000 tgtHP=0.7734 max time out
-[match] seed 39 OBFM_BLUE round1 sep=610m alt=4248m spd=230m/s
-[seed 39] reward=   588.59 ownHP=1.0000 tgtHP=0.2554 max time out
-[match] seed 42 OBFM_BLUE round1 sep=610m alt=4792m spd=263m/s
-[seed 42] reward=   624.74 ownHP=1.0000 tgtHP=0.0900 max time out
+[match] seed 0 OBFM_BLUE round1 sep=610m alt=6057m spd=258m/s aoff=30deg
+[seed 0] reward=   653.97 ownHP=1.0000 tgtHP=0.8914 max time out
+[match] seed 3 OBFM_BLUE round1 sep=610m alt=1799m spd=270m/s aoff=30deg
+[seed 3] reward=   656.97 ownHP=1.0000 tgtHP=0.7514 max time out
+[match] seed 6 OBFM_BLUE round1 sep=610m alt=4953m spd=256m/s aoff=30deg
+[seed 6] reward=   718.82 ownHP=1.0000 tgtHP=0.8742 max time out
+[match] seed 9 OBFM_BLUE round1 sep=610m alt=7962m spd=289m/s aoff=30deg
+[seed 9] reward=   713.06 ownHP=1.0000 tgtHP=0.8441 max time out
+[match] seed 12 OBFM_BLUE round1 sep=610m alt=5889m spd=248m/s aoff=30deg
+[seed 12] reward=   606.92 ownHP=1.0000 tgtHP=0.8739 max time out
+[match] seed 15 OBFM_BLUE round1 sep=610m alt=6004m spd=217m/s aoff=30deg
+[seed 15] reward=   615.56 ownHP=1.0000 tgtHP=0.9185 max time out
+[match] seed 18 OBFM_BLUE round1 sep=610m alt=6242m spd=272m/s aoff=30deg
+[seed 18] reward=   687.96 ownHP=1.0000 tgtHP=0.7371 max time out
+[match] seed 21 OBFM_BLUE round1 sep=610m alt=3325m spd=262m/s aoff=30deg
+[seed 21] reward=   618.87 ownHP=1.0000 tgtHP=0.7883 max time out
+[match] seed 24 OBFM_BLUE round1 sep=610m alt=4585m spd=280m/s aoff=30deg
+[seed 24] reward=   659.63 ownHP=1.0000 tgtHP=0.9233 max time out
+[match] seed 27 OBFM_BLUE round1 sep=610m alt=2472m spd=205m/s aoff=30deg
+[seed 27] reward=   639.00 ownHP=1.0000 tgtHP=0.8798 max time out
+[match] seed 30 OBFM_BLUE round1 sep=610m alt=2676m spd=228m/s aoff=30deg
+[seed 30] reward=   614.37 ownHP=1.0000 tgtHP=0.9273 max time out
+[match] seed 33 OBFM_BLUE round1 sep=610m alt=5743m spd=211m/s aoff=30deg
+[seed 33] reward=   592.78 ownHP=1.0000 tgtHP=0.9202 max time out
+[match] seed 36 OBFM_BLUE round1 sep=610m alt=1017m spd=299m/s aoff=30deg
+[seed 36] reward=   437.31 ownHP=1.0000 tgtHP=0.9264 max time out
+[match] seed 39 OBFM_BLUE round1 sep=610m alt=4248m spd=230m/s aoff=30deg
+[seed 39] reward=   648.52 ownHP=1.0000 tgtHP=0.8327 max time out
+[match] seed 42 OBFM_BLUE round1 sep=610m alt=4792m spd=263m/s aoff=30deg
+[seed 42] reward=   716.95 ownHP=1.0000 tgtHP=0.8773 max time out
 
 ########## v40_OBFM_BLUE vs AIP_jh2.dll ##########
-[match] seed 0 OBFM_BLUE round1 sep=610m alt=6057m spd=258m/s
-[seed 0] reward=   574.01 ownHP=1.0000 tgtHP=-0.0007 target destroyed
-[match] seed 3 OBFM_BLUE round1 sep=610m alt=1799m spd=270m/s
-[seed 3] reward=   634.73 ownHP=1.0000 tgtHP=-0.0132 target destroyed
-[match] seed 6 OBFM_BLUE round1 sep=610m alt=4953m spd=256m/s
-[seed 6] reward=   649.17 ownHP=1.0000 tgtHP=-0.0018 target destroyed
-[match] seed 9 OBFM_BLUE round1 sep=610m alt=7962m spd=289m/s
-[seed 9] reward=   732.11 ownHP=1.0000 tgtHP=-0.0069 target destroyed
-[match] seed 12 OBFM_BLUE round1 sep=610m alt=5889m spd=248m/s
-[seed 12] reward=   254.71 ownHP=1.0000 tgtHP=-0.0024 target destroyed
-[match] seed 15 OBFM_BLUE round1 sep=610m alt=6004m spd=217m/s
-[seed 15] reward=   481.53 ownHP=1.0000 tgtHP=-0.0045 target destroyed
-[match] seed 18 OBFM_BLUE round1 sep=610m alt=6242m spd=272m/s
-[seed 18] reward=   486.16 ownHP=1.0000 tgtHP=-0.0075 target destroyed
-[match] seed 21 OBFM_BLUE round1 sep=610m alt=3325m spd=262m/s
-[seed 21] reward=   614.58 ownHP=1.0000 tgtHP=-0.0004 target destroyed
-[match] seed 24 OBFM_BLUE round1 sep=610m alt=4585m spd=280m/s
-[seed 24] reward=   702.18 ownHP=1.0000 tgtHP=-0.0038 target destroyed
-[match] seed 27 OBFM_BLUE round1 sep=610m alt=2472m spd=205m/s
-[seed 27] reward=   462.35 ownHP=1.0000 tgtHP=-0.0055 target destroyed
-[match] seed 30 OBFM_BLUE round1 sep=610m alt=2676m spd=228m/s
-[seed 30] reward=    37.43 ownHP=0.9902 tgtHP=0.2651 max time out
-[match] seed 33 OBFM_BLUE round1 sep=610m alt=5743m spd=211m/s
-[seed 33] reward=   806.81 ownHP=1.0000 tgtHP=-0.0015 target destroyed
-[match] seed 36 OBFM_BLUE round1 sep=610m alt=1017m spd=299m/s
-[seed 36] reward=   888.07 ownHP=1.0000 tgtHP=0.2351 max time out
-[match] seed 39 OBFM_BLUE round1 sep=610m alt=4248m spd=230m/s
-[seed 39] reward=   719.77 ownHP=1.0000 tgtHP=-0.0021 target destroyed
-[match] seed 42 OBFM_BLUE round1 sep=610m alt=4792m spd=263m/s
-[seed 42] reward=   749.74 ownHP=1.0000 tgtHP=-0.0004 target destroyed
+[match] seed 0 OBFM_BLUE round1 sep=610m alt=6057m spd=258m/s aoff=30deg
+[seed 0] reward=   687.67 ownHP=1.0000 tgtHP=-0.0025 target destroyed
+[match] seed 3 OBFM_BLUE round1 sep=610m alt=1799m spd=270m/s aoff=30deg
+[seed 3] reward=   805.13 ownHP=1.0000 tgtHP=-0.0133 target destroyed
+[match] seed 6 OBFM_BLUE round1 sep=610m alt=4953m spd=256m/s aoff=30deg
+[seed 6] reward=   381.71 ownHP=-0.0008 tgtHP=0.8137 ownship destroyed
+[match] seed 9 OBFM_BLUE round1 sep=610m alt=7962m spd=289m/s aoff=30deg
+[seed 9] reward=   988.38 ownHP=1.0000 tgtHP=0.5700 max time out
+[match] seed 12 OBFM_BLUE round1 sep=610m alt=5889m spd=248m/s aoff=30deg
+[seed 12] reward=  1271.71 ownHP=1.0000 tgtHP=-0.0013 target destroyed
+[match] seed 15 OBFM_BLUE round1 sep=610m alt=6004m spd=217m/s aoff=30deg
+[seed 15] reward=   234.80 ownHP=-0.0120 tgtHP=0.7055 ownship destroyed
+[match] seed 18 OBFM_BLUE round1 sep=610m alt=6242m spd=272m/s aoff=30deg
+[seed 18] reward=  1355.62 ownHP=1.0000 tgtHP=-0.0032 target destroyed
+[match] seed 21 OBFM_BLUE round1 sep=610m alt=3325m spd=262m/s aoff=30deg
+[seed 21] reward=   469.63 ownHP=0.3864 tgtHP=0.8582 max time out
+[match] seed 24 OBFM_BLUE round1 sep=610m alt=4585m spd=280m/s aoff=30deg
+[seed 24] reward=   792.93 ownHP=1.0000 tgtHP=-0.0017 target destroyed
+[match] seed 27 OBFM_BLUE round1 sep=610m alt=2472m spd=205m/s aoff=30deg
+[seed 27] reward=   289.03 ownHP=-0.0092 tgtHP=0.9650 ownship destroyed
+[match] seed 30 OBFM_BLUE round1 sep=610m alt=2676m spd=228m/s aoff=30deg
+[seed 30] reward=   868.38 ownHP=1.0000 tgtHP=-0.0062 target destroyed
+[match] seed 33 OBFM_BLUE round1 sep=610m alt=5743m spd=211m/s aoff=30deg
+[seed 33] reward=   655.35 ownHP=1.0000 tgtHP=-0.0003 target destroyed
+[match] seed 36 OBFM_BLUE round1 sep=610m alt=1017m spd=299m/s aoff=30deg
+[seed 36] reward=  1156.44 ownHP=1.0000 tgtHP=-0.0007 target destroyed
+[match] seed 39 OBFM_BLUE round1 sep=610m alt=4248m spd=230m/s aoff=30deg
+[seed 39] reward=   658.36 ownHP=1.0000 tgtHP=-0.0007 target destroyed
+[match] seed 42 OBFM_BLUE round1 sep=610m alt=4792m spd=263m/s aoff=30deg
+[seed 42] reward=   429.14 ownHP=-0.0006 tgtHP=0.6134 ownship destroyed
 
 ########## v40_OBFM_BLUE vs ACE ##########
-[match] seed 0 OBFM_BLUE round1 sep=610m alt=6057m spd=258m/s
-[seed 0] reward=   655.18 ownHP=1.0000 tgtHP=0.1955 max time out
-[match] seed 3 OBFM_BLUE round1 sep=610m alt=1799m spd=270m/s
-[seed 3] reward=   720.10 ownHP=1.0000 tgtHP=0.3648 max time out
-[match] seed 6 OBFM_BLUE round1 sep=610m alt=4953m spd=256m/s
-[seed 6] reward=   675.65 ownHP=1.0000 tgtHP=0.2112 max time out
-[match] seed 9 OBFM_BLUE round1 sep=610m alt=7962m spd=289m/s
-[seed 9] reward=   157.60 ownHP=1.0000 tgtHP=-0.0011 target destroyed
-[match] seed 12 OBFM_BLUE round1 sep=610m alt=5889m spd=248m/s
-[seed 12] reward=   629.70 ownHP=1.0000 tgtHP=0.2559 max time out
-[match] seed 15 OBFM_BLUE round1 sep=610m alt=6004m spd=217m/s
-[seed 15] reward=   718.07 ownHP=1.0000 tgtHP=-0.0002 target destroyed
-[match] seed 18 OBFM_BLUE round1 sep=610m alt=6242m spd=272m/s
-[seed 18] reward=   155.46 ownHP=1.0000 tgtHP=-0.0039 target destroyed
-[match] seed 21 OBFM_BLUE round1 sep=610m alt=3325m spd=262m/s
-[seed 21] reward=   710.41 ownHP=1.0000 tgtHP=0.1069 max time out
-[match] seed 24 OBFM_BLUE round1 sep=610m alt=4585m spd=280m/s
-[seed 24] reward=   154.63 ownHP=1.0000 tgtHP=-0.0047 target destroyed
-[match] seed 27 OBFM_BLUE round1 sep=610m alt=2472m spd=205m/s
-[seed 27] reward=   803.94 ownHP=1.0000 tgtHP=0.1741 max time out
-[match] seed 30 OBFM_BLUE round1 sep=610m alt=2676m spd=228m/s
-[seed 30] reward=   726.13 ownHP=1.0000 tgtHP=0.3248 max time out
-[match] seed 33 OBFM_BLUE round1 sep=610m alt=5743m spd=211m/s
-[seed 33] reward=   694.00 ownHP=1.0000 tgtHP=0.2020 max time out
-[match] seed 36 OBFM_BLUE round1 sep=610m alt=1017m spd=299m/s
-[seed 36] reward=   861.35 ownHP=1.0000 tgtHP=0.3368 max time out
-[match] seed 39 OBFM_BLUE round1 sep=610m alt=4248m spd=230m/s
-[seed 39] reward=   588.59 ownHP=1.0000 tgtHP=0.2554 max time out
-[match] seed 42 OBFM_BLUE round1 sep=610m alt=4792m spd=263m/s
-[seed 42] reward=   664.53 ownHP=1.0000 tgtHP=0.1166 max time out
+[match] seed 0 OBFM_BLUE round1 sep=610m alt=6057m spd=258m/s aoff=30deg
+[seed 0] reward=   620.67 ownHP=1.0000 tgtHP=0.9336 max time out
+[match] seed 3 OBFM_BLUE round1 sep=610m alt=1799m spd=270m/s aoff=30deg
+[seed 3] reward=   670.76 ownHP=1.0000 tgtHP=0.7576 max time out
+[match] seed 6 OBFM_BLUE round1 sep=610m alt=4953m spd=256m/s aoff=30deg
+[seed 6] reward=   677.15 ownHP=1.0000 tgtHP=0.8987 max time out
+[match] seed 9 OBFM_BLUE round1 sep=610m alt=7962m spd=289m/s aoff=30deg
+[seed 9] reward=   733.28 ownHP=1.0000 tgtHP=0.8923 max time out
+[match] seed 12 OBFM_BLUE round1 sep=610m alt=5889m spd=248m/s aoff=30deg
+[seed 12] reward=   676.67 ownHP=1.0000 tgtHP=0.8532 max time out
+[match] seed 15 OBFM_BLUE round1 sep=610m alt=6004m spd=217m/s aoff=30deg
+[seed 15] reward=   624.60 ownHP=1.0000 tgtHP=0.9219 max time out
+[match] seed 18 OBFM_BLUE round1 sep=610m alt=6242m spd=272m/s aoff=30deg
+[seed 18] reward=   686.98 ownHP=1.0000 tgtHP=0.8880 max time out
+[match] seed 21 OBFM_BLUE round1 sep=610m alt=3325m spd=262m/s aoff=30deg
+[seed 21] reward=   618.87 ownHP=1.0000 tgtHP=0.7883 max time out
+[match] seed 24 OBFM_BLUE round1 sep=610m alt=4585m spd=280m/s aoff=30deg
+[seed 24] reward=   691.52 ownHP=1.0000 tgtHP=0.7966 max time out
+[match] seed 27 OBFM_BLUE round1 sep=610m alt=2472m spd=205m/s aoff=30deg
+[seed 27] reward=   639.00 ownHP=1.0000 tgtHP=0.8798 max time out
+[match] seed 30 OBFM_BLUE round1 sep=610m alt=2676m spd=228m/s aoff=30deg
+[seed 30] reward=   614.37 ownHP=1.0000 tgtHP=0.9273 max time out
+[match] seed 33 OBFM_BLUE round1 sep=610m alt=5743m spd=211m/s aoff=30deg
+[seed 33] reward=   592.78 ownHP=1.0000 tgtHP=0.9202 max time out
+[match] seed 36 OBFM_BLUE round1 sep=610m alt=1017m spd=299m/s aoff=30deg
+[seed 36] reward=   595.76 ownHP=1.0000 tgtHP=0.9358 max time out
+[match] seed 39 OBFM_BLUE round1 sep=610m alt=4248m spd=230m/s aoff=30deg
+[seed 39] reward=   648.52 ownHP=1.0000 tgtHP=0.8327 max time out
+[match] seed 42 OBFM_BLUE round1 sep=610m alt=4792m spd=263m/s aoff=30deg
+[seed 42] reward=   660.37 ownHP=1.0000 tgtHP=0.9298 max time out
 
 ########## v32_OBFM_RED vs AIP_jh2.dll ##########
-[match] seed 0 OBFM_RED round1 sep=610m alt=6057m spd=258m/s
-[seed 0] reward=  -158.42 ownHP=-0.0069 tgtHP=1.0000 ownship destroyed
-[match] seed 3 OBFM_RED round1 sep=610m alt=1799m spd=270m/s
-[seed 3] reward=  -133.23 ownHP=-0.0048 tgtHP=1.0000 ownship destroyed
-[match] seed 6 OBFM_RED round1 sep=610m alt=4953m spd=256m/s
-[seed 6] reward=  -124.32 ownHP=-0.0061 tgtHP=1.0000 ownship destroyed
-[match] seed 9 OBFM_RED round1 sep=610m alt=7962m spd=289m/s
-[seed 9] reward=  -138.08 ownHP=-0.0064 tgtHP=1.0000 ownship destroyed
-[match] seed 12 OBFM_RED round1 sep=610m alt=5889m spd=248m/s
-[seed 12] reward=  -138.42 ownHP=-0.0042 tgtHP=1.0000 ownship destroyed
-[match] seed 15 OBFM_RED round1 sep=610m alt=6004m spd=217m/s
-[seed 15] reward=  -136.40 ownHP=-0.0067 tgtHP=1.0000 ownship destroyed
-[match] seed 18 OBFM_RED round1 sep=610m alt=6242m spd=272m/s
-[seed 18] reward=  -126.01 ownHP=-0.0046 tgtHP=1.0000 ownship destroyed
-[match] seed 21 OBFM_RED round1 sep=610m alt=3325m spd=262m/s
-[seed 21] reward=  -127.88 ownHP=-0.0016 tgtHP=1.0000 ownship destroyed
-[match] seed 24 OBFM_RED round1 sep=610m alt=4585m spd=280m/s
-[seed 24] reward=  -136.42 ownHP=-0.0088 tgtHP=1.0000 ownship destroyed
-[match] seed 27 OBFM_RED round1 sep=610m alt=2472m spd=205m/s
-[seed 27] reward=  -171.76 ownHP=-0.0024 tgtHP=1.0000 ownship destroyed
-[match] seed 30 OBFM_RED round1 sep=610m alt=2676m spd=228m/s
-[seed 30] reward=  -155.16 ownHP=-0.0084 tgtHP=1.0000 ownship destroyed
-[match] seed 33 OBFM_RED round1 sep=610m alt=5743m spd=211m/s
-[seed 33] reward=  -137.47 ownHP=-0.0049 tgtHP=1.0000 ownship destroyed
-[match] seed 36 OBFM_RED round1 sep=610m alt=1017m spd=299m/s
-[seed 36] reward=  -182.34 ownHP=-0.0131 tgtHP=1.0000 ownship destroyed
-[match] seed 39 OBFM_RED round1 sep=610m alt=4248m spd=230m/s
-[seed 39] reward=  -146.73 ownHP=-0.0119 tgtHP=1.0000 ownship destroyed
-[match] seed 42 OBFM_RED round1 sep=610m alt=4792m spd=263m/s
-[seed 42] reward=  -139.40 ownHP=-0.0076 tgtHP=1.0000 ownship destroyed
+[match] seed 0 OBFM_RED round1 sep=610m alt=6057m spd=258m/s aoff=30deg
+[seed 0] reward=  -133.47 ownHP=-0.0082 tgtHP=1.0000 ownship destroyed
+[match] seed 3 OBFM_RED round1 sep=610m alt=1799m spd=270m/s aoff=30deg
+[seed 3] reward=  -181.91 ownHP=-0.0077 tgtHP=1.0000 ownship destroyed
+[match] seed 6 OBFM_RED round1 sep=610m alt=4953m spd=256m/s aoff=30deg
+[seed 6] reward=  -138.13 ownHP=-0.0052 tgtHP=1.0000 ownship destroyed
+[match] seed 9 OBFM_RED round1 sep=610m alt=7962m spd=289m/s aoff=30deg
+[seed 9] reward=  -154.60 ownHP=-0.0032 tgtHP=1.0000 ownship destroyed
+[match] seed 12 OBFM_RED round1 sep=610m alt=5889m spd=248m/s aoff=30deg
+[seed 12] reward=  -171.17 ownHP=-0.0044 tgtHP=1.0000 ownship destroyed
+[match] seed 15 OBFM_RED round1 sep=610m alt=6004m spd=217m/s aoff=30deg
+[seed 15] reward=  -189.43 ownHP=-0.0078 tgtHP=1.0000 ownship destroyed
+[match] seed 18 OBFM_RED round1 sep=610m alt=6242m spd=272m/s aoff=30deg
+[seed 18] reward=  -132.75 ownHP=-0.0096 tgtHP=1.0000 ownship destroyed
+[match] seed 21 OBFM_RED round1 sep=610m alt=3325m spd=262m/s aoff=30deg
+[seed 21] reward=  -168.21 ownHP=-0.0038 tgtHP=1.0000 ownship destroyed
+[match] seed 24 OBFM_RED round1 sep=610m alt=4585m spd=280m/s aoff=30deg
+[seed 24] reward=  -137.44 ownHP=-0.0039 tgtHP=1.0000 ownship destroyed
+[match] seed 27 OBFM_RED round1 sep=610m alt=2472m spd=205m/s aoff=30deg
+[seed 27] reward=  -162.84 ownHP=-0.0031 tgtHP=1.0000 ownship destroyed
+[match] seed 30 OBFM_RED round1 sep=610m alt=2676m spd=228m/s aoff=30deg
+[seed 30] reward=  -184.78 ownHP=-0.0007 tgtHP=1.0000 ownship destroyed
+[match] seed 33 OBFM_RED round1 sep=610m alt=5743m spd=211m/s aoff=30deg
+[seed 33] reward=  -140.89 ownHP=-0.0039 tgtHP=1.0000 ownship destroyed
+[match] seed 36 OBFM_RED round1 sep=610m alt=1017m spd=299m/s aoff=30deg
+[seed 36] reward=  -185.23 ownHP=-0.0039 tgtHP=1.0000 ownship destroyed
+[match] seed 39 OBFM_RED round1 sep=610m alt=4248m spd=230m/s aoff=30deg
+[seed 39] reward=  -152.03 ownHP=-0.0023 tgtHP=1.0000 ownship destroyed
+[match] seed 42 OBFM_RED round1 sep=610m alt=4792m spd=263m/s aoff=30deg
+[seed 42] reward=  -162.92 ownHP=-0.0073 tgtHP=1.0000 ownship destroyed
 
 ########## v32_OBFM_RED vs ACE ##########
-[match] seed 0 OBFM_RED round1 sep=610m alt=6057m spd=258m/s
-[seed 0] reward=   326.88 ownHP=0.1041 tgtHP=0.9669 max time out
-[match] seed 3 OBFM_RED round1 sep=610m alt=1799m spd=270m/s
-[seed 3] reward=   434.56 ownHP=0.9067 tgtHP=0.9205 max time out
-[match] seed 6 OBFM_RED round1 sep=610m alt=4953m spd=256m/s
-[seed 6] reward=   507.42 ownHP=0.1636 tgtHP=0.8762 max time out
-[match] seed 9 OBFM_RED round1 sep=610m alt=7962m spd=289m/s
-[seed 9] reward=   402.01 ownHP=0.0491 tgtHP=0.7986 max time out
-[match] seed 12 OBFM_RED round1 sep=610m alt=5889m spd=248m/s
-[seed 12] reward=   451.16 ownHP=0.0310 tgtHP=0.6439 max time out
-[match] seed 15 OBFM_RED round1 sep=610m alt=6004m spd=217m/s
-[seed 15] reward=   269.47 ownHP=0.0561 tgtHP=0.9788 max time out
-[match] seed 18 OBFM_RED round1 sep=610m alt=6242m spd=272m/s
-[seed 18] reward=   511.54 ownHP=0.1228 tgtHP=0.8855 max time out
-[match] seed 21 OBFM_RED round1 sep=610m alt=3325m spd=262m/s
-[seed 21] reward=   463.78 ownHP=0.2054 tgtHP=0.7756 max time out
-[match] seed 24 OBFM_RED round1 sep=610m alt=4585m spd=280m/s
-[seed 24] reward=   405.53 ownHP=0.2999 tgtHP=0.9151 max time out
-[match] seed 27 OBFM_RED round1 sep=610m alt=2472m spd=205m/s
-[seed 27] reward=   306.59 ownHP=0.8933 tgtHP=0.9251 max time out
-[match] seed 30 OBFM_RED round1 sep=610m alt=2676m spd=228m/s
-[seed 30] reward=   401.87 ownHP=0.8606 tgtHP=0.8345 max time out
-[match] seed 33 OBFM_RED round1 sep=610m alt=5743m spd=211m/s
-[seed 33] reward=   406.18 ownHP=0.0224 tgtHP=0.9368 max time out
-[match] seed 36 OBFM_RED round1 sep=610m alt=1017m spd=299m/s
-[seed 36] reward=   551.08 ownHP=0.9133 tgtHP=0.8625 max time out
-[match] seed 39 OBFM_RED round1 sep=610m alt=4248m spd=230m/s
-[seed 39] reward=   385.26 ownHP=0.1394 tgtHP=0.9703 max time out
-[match] seed 42 OBFM_RED round1 sep=610m alt=4792m spd=263m/s
-[seed 42] reward=   442.93 ownHP=0.1897 tgtHP=0.9391 max time out
+[match] seed 0 OBFM_RED round1 sep=610m alt=6057m spd=258m/s aoff=30deg
+[seed 0] reward=   444.88 ownHP=1.0000 tgtHP=0.9347 max time out
+[match] seed 3 OBFM_RED round1 sep=610m alt=1799m spd=270m/s aoff=30deg
+[seed 3] reward=   747.25 ownHP=1.0000 tgtHP=0.7638 max time out
+[match] seed 6 OBFM_RED round1 sep=610m alt=4953m spd=256m/s aoff=30deg
+[seed 6] reward=   330.70 ownHP=1.0000 tgtHP=0.9604 max time out
+[match] seed 9 OBFM_RED round1 sep=610m alt=7962m spd=289m/s aoff=30deg
+[seed 9] reward=   147.77 ownHP=1.0000 tgtHP=0.9449 max time out
+[match] seed 12 OBFM_RED round1 sep=610m alt=5889m spd=248m/s aoff=30deg
+[seed 12] reward=   478.41 ownHP=1.0000 tgtHP=0.9619 max time out
+[match] seed 15 OBFM_RED round1 sep=610m alt=6004m spd=217m/s aoff=30deg
+[seed 15] reward=   427.46 ownHP=1.0000 tgtHP=0.9560 max time out
+[match] seed 18 OBFM_RED round1 sep=610m alt=6242m spd=272m/s aoff=30deg
+[seed 18] reward=   401.56 ownHP=1.0000 tgtHP=0.9541 max time out
+[match] seed 21 OBFM_RED round1 sep=610m alt=3325m spd=262m/s aoff=30deg
+[seed 21] reward=   233.90 ownHP=0.8964 tgtHP=0.9536 max time out
+[match] seed 24 OBFM_RED round1 sep=610m alt=4585m spd=280m/s aoff=30deg
+[seed 24] reward=   523.41 ownHP=1.0000 tgtHP=0.9616 max time out
+[match] seed 27 OBFM_RED round1 sep=610m alt=2472m spd=205m/s aoff=30deg
+[seed 27] reward=   360.88 ownHP=1.0000 tgtHP=0.9182 max time out
+[match] seed 30 OBFM_RED round1 sep=610m alt=2676m spd=228m/s aoff=30deg
+[seed 30] reward=   488.66 ownHP=0.9697 tgtHP=0.9574 max time out
+[match] seed 33 OBFM_RED round1 sep=610m alt=5743m spd=211m/s aoff=30deg
+[seed 33] reward=   361.93 ownHP=1.0000 tgtHP=0.9402 max time out
+[match] seed 36 OBFM_RED round1 sep=610m alt=1017m spd=299m/s aoff=30deg
+[seed 36] reward=   433.73 ownHP=0.9465 tgtHP=0.9271 max time out
+[match] seed 39 OBFM_RED round1 sep=610m alt=4248m spd=230m/s aoff=30deg
+[seed 39] reward=   427.50 ownHP=1.0000 tgtHP=0.9419 max time out
+[match] seed 42 OBFM_RED round1 sep=610m alt=4792m spd=263m/s aoff=30deg
+[seed 42] reward=   471.74 ownHP=1.0000 tgtHP=0.9495 max time out
 
 ########## v40_OBFM_RED vs AIP_jh2.dll ##########
-[match] seed 0 OBFM_RED round1 sep=610m alt=6057m spd=258m/s
-[seed 0] reward=  -200.64 ownHP=-0.0122 tgtHP=1.0000 ownship destroyed
-[match] seed 3 OBFM_RED round1 sep=610m alt=1799m spd=270m/s
-[seed 3] reward=  -137.69 ownHP=-0.0024 tgtHP=1.0000 ownship destroyed
-[match] seed 6 OBFM_RED round1 sep=610m alt=4953m spd=256m/s
-[seed 6] reward=  -124.32 ownHP=-0.0061 tgtHP=1.0000 ownship destroyed
-[match] seed 9 OBFM_RED round1 sep=610m alt=7962m spd=289m/s
-[seed 9] reward=  -150.26 ownHP=-0.0082 tgtHP=1.0000 ownship destroyed
-[match] seed 12 OBFM_RED round1 sep=610m alt=5889m spd=248m/s
-[seed 12] reward=   734.05 ownHP=0.5738 tgtHP=-0.0022 target destroyed
-[match] seed 15 OBFM_RED round1 sep=610m alt=6004m spd=217m/s
-[seed 15] reward=  -196.16 ownHP=-0.0043 tgtHP=1.0000 ownship destroyed
-[match] seed 18 OBFM_RED round1 sep=610m alt=6242m spd=272m/s
-[seed 18] reward=  -126.01 ownHP=-0.0046 tgtHP=1.0000 ownship destroyed
-[match] seed 21 OBFM_RED round1 sep=610m alt=3325m spd=262m/s
-[seed 21] reward=  -127.59 ownHP=-0.0020 tgtHP=1.0000 ownship destroyed
-[match] seed 24 OBFM_RED round1 sep=610m alt=4585m spd=280m/s
-[seed 24] reward=  -139.52 ownHP=-0.0019 tgtHP=1.0000 ownship destroyed
-[match] seed 27 OBFM_RED round1 sep=610m alt=2472m spd=205m/s
-[seed 27] reward=  -164.65 ownHP=-0.0035 tgtHP=1.0000 ownship destroyed
-[match] seed 30 OBFM_RED round1 sep=610m alt=2676m spd=228m/s
-[seed 30] reward=  -147.05 ownHP=-0.0113 tgtHP=1.0000 ownship destroyed
-[match] seed 33 OBFM_RED round1 sep=610m alt=5743m spd=211m/s
-[seed 33] reward=  -153.54 ownHP=-0.0129 tgtHP=1.0000 ownship destroyed
-[match] seed 36 OBFM_RED round1 sep=610m alt=1017m spd=299m/s
-[seed 36] reward=    85.52 ownHP=0.1300 tgtHP=0.9466 max time out
-[match] seed 39 OBFM_RED round1 sep=610m alt=4248m spd=230m/s
-[seed 39] reward=  -159.54 ownHP=-0.0058 tgtHP=1.0000 ownship destroyed
-[match] seed 42 OBFM_RED round1 sep=610m alt=4792m spd=263m/s
-[seed 42] reward=  -137.88 ownHP=-0.0059 tgtHP=1.0000 ownship destroyed
+[match] seed 0 OBFM_RED round1 sep=610m alt=6057m spd=258m/s aoff=30deg
+[seed 0] reward=   568.35 ownHP=0.8488 tgtHP=-0.0026 target destroyed
+[match] seed 3 OBFM_RED round1 sep=610m alt=1799m spd=270m/s aoff=30deg
+[seed 3] reward=  -142.83 ownHP=-0.0112 tgtHP=1.0000 ownship destroyed
+[match] seed 6 OBFM_RED round1 sep=610m alt=4953m spd=256m/s aoff=30deg
+[seed 6] reward=  -189.77 ownHP=-0.0032 tgtHP=1.0000 ownship destroyed
+[match] seed 9 OBFM_RED round1 sep=610m alt=7962m spd=289m/s aoff=30deg
+[seed 9] reward=  -232.14 ownHP=-0.0022 tgtHP=1.0000 ownship destroyed
+[match] seed 12 OBFM_RED round1 sep=610m alt=5889m spd=248m/s aoff=30deg
+[seed 12] reward=  -133.63 ownHP=-0.0078 tgtHP=1.0000 ownship destroyed
+[match] seed 15 OBFM_RED round1 sep=610m alt=6004m spd=217m/s aoff=30deg
+[seed 15] reward=  -189.94 ownHP=-0.0015 tgtHP=1.0000 ownship destroyed
+[match] seed 18 OBFM_RED round1 sep=610m alt=6242m spd=272m/s aoff=30deg
+[seed 18] reward=  -140.68 ownHP=-0.0034 tgtHP=1.0000 ownship destroyed
+[match] seed 21 OBFM_RED round1 sep=610m alt=3325m spd=262m/s aoff=30deg
+[seed 21] reward=  -182.77 ownHP=-0.0041 tgtHP=1.0000 ownship destroyed
+[match] seed 24 OBFM_RED round1 sep=610m alt=4585m spd=280m/s aoff=30deg
+[seed 24] reward=  -146.09 ownHP=-0.0032 tgtHP=1.0000 ownship destroyed
+[match] seed 27 OBFM_RED round1 sep=610m alt=2472m spd=205m/s aoff=30deg
+[seed 27] reward=   324.96 ownHP=0.8674 tgtHP=0.1017 max time out
+[match] seed 30 OBFM_RED round1 sep=610m alt=2676m spd=228m/s aoff=30deg
+[seed 30] reward=  -142.19 ownHP=-0.0056 tgtHP=1.0000 ownship destroyed
+[match] seed 33 OBFM_RED round1 sep=610m alt=5743m spd=211m/s aoff=30deg
+[seed 33] reward=  -173.69 ownHP=-0.0106 tgtHP=1.0000 ownship destroyed
+[match] seed 36 OBFM_RED round1 sep=610m alt=1017m spd=299m/s aoff=30deg
+[seed 36] reward=   296.04 ownHP=1.0000 tgtHP=-0.0037 target destroyed
+[match] seed 39 OBFM_RED round1 sep=610m alt=4248m spd=230m/s aoff=30deg
+[seed 39] reward=  -139.84 ownHP=0.0076 tgtHP=1.0000 max time out
+[match] seed 42 OBFM_RED round1 sep=610m alt=4792m spd=263m/s aoff=30deg
+[seed 42] reward=  -167.11 ownHP=-0.0138 tgtHP=1.0000 ownship destroyed
 
 ########## v40_OBFM_RED vs ACE ##########
-[match] seed 0 OBFM_RED round1 sep=610m alt=6057m spd=258m/s
-[seed 0] reward=   542.36 ownHP=0.1041 tgtHP=0.9319 max time out
-[match] seed 3 OBFM_RED round1 sep=610m alt=1799m spd=270m/s
-[seed 3] reward=   654.37 ownHP=0.9067 tgtHP=0.9166 max time out
-[match] seed 6 OBFM_RED round1 sep=610m alt=4953m spd=256m/s
-[seed 6] reward=   513.19 ownHP=0.1636 tgtHP=0.9439 max time out
-[match] seed 9 OBFM_RED round1 sep=610m alt=7962m spd=289m/s
-[seed 9] reward=   655.00 ownHP=0.0517 tgtHP=0.8973 max time out
-[match] seed 12 OBFM_RED round1 sep=610m alt=5889m spd=248m/s
-[seed 12] reward=   571.31 ownHP=0.0592 tgtHP=0.9338 max time out
-[match] seed 15 OBFM_RED round1 sep=610m alt=6004m spd=217m/s
-[seed 15] reward=   661.96 ownHP=0.0788 tgtHP=0.9348 max time out
-[match] seed 18 OBFM_RED round1 sep=610m alt=6242m spd=272m/s
-[seed 18] reward=   479.68 ownHP=0.1434 tgtHP=0.9468 max time out
-[match] seed 21 OBFM_RED round1 sep=610m alt=3325m spd=262m/s
-[seed 21] reward=   320.73 ownHP=0.2054 tgtHP=0.9370 max time out
-[match] seed 24 OBFM_RED round1 sep=610m alt=4585m spd=280m/s
-[seed 24] reward=   622.32 ownHP=0.2999 tgtHP=0.7179 max time out
-[match] seed 27 OBFM_RED round1 sep=610m alt=2472m spd=205m/s
-[seed 27] reward=   439.04 ownHP=0.8933 tgtHP=0.9468 max time out
-[match] seed 30 OBFM_RED round1 sep=610m alt=2676m spd=228m/s
-[seed 30] reward=   430.79 ownHP=0.8606 tgtHP=0.9318 max time out
-[match] seed 33 OBFM_RED round1 sep=610m alt=5743m spd=211m/s
-[seed 33] reward=   621.30 ownHP=0.0676 tgtHP=0.9252 max time out
-[match] seed 36 OBFM_RED round1 sep=610m alt=1017m spd=299m/s
-[seed 36] reward=   598.50 ownHP=0.9133 tgtHP=0.8040 max time out
-[match] seed 39 OBFM_RED round1 sep=610m alt=4248m spd=230m/s
-[seed 39] reward=   410.11 ownHP=0.1394 tgtHP=0.9374 max time out
-[match] seed 42 OBFM_RED round1 sep=610m alt=4792m spd=263m/s
-[seed 42] reward=   515.59 ownHP=0.1897 tgtHP=0.9232 max time out
+[match] seed 0 OBFM_RED round1 sep=610m alt=6057m spd=258m/s aoff=30deg
+[seed 0] reward=   408.41 ownHP=1.0000 tgtHP=0.9226 max time out
+[match] seed 3 OBFM_RED round1 sep=610m alt=1799m spd=270m/s aoff=30deg
+[seed 3] reward=   589.14 ownHP=1.0000 tgtHP=0.9158 max time out
+[match] seed 6 OBFM_RED round1 sep=610m alt=4953m spd=256m/s aoff=30deg
+[seed 6] reward=   660.61 ownHP=1.0000 tgtHP=0.7906 max time out
+[match] seed 9 OBFM_RED round1 sep=610m alt=7962m spd=289m/s aoff=30deg
+[seed 9] reward=   468.70 ownHP=1.0000 tgtHP=0.9496 max time out
+[match] seed 12 OBFM_RED round1 sep=610m alt=5889m spd=248m/s aoff=30deg
+[seed 12] reward=   466.32 ownHP=1.0000 tgtHP=0.9272 max time out
+[match] seed 15 OBFM_RED round1 sep=610m alt=6004m spd=217m/s aoff=30deg
+[seed 15] reward=   523.75 ownHP=0.9844 tgtHP=0.7926 max time out
+[match] seed 18 OBFM_RED round1 sep=610m alt=6242m spd=272m/s aoff=30deg
+[seed 18] reward=   404.38 ownHP=1.0000 tgtHP=0.9347 max time out
+[match] seed 21 OBFM_RED round1 sep=610m alt=3325m spd=262m/s aoff=30deg
+[seed 21] reward=   268.44 ownHP=0.9325 tgtHP=0.8385 max time out
+[match] seed 24 OBFM_RED round1 sep=610m alt=4585m spd=280m/s aoff=30deg
+[seed 24] reward=   499.26 ownHP=1.0000 tgtHP=0.9314 max time out
+[match] seed 27 OBFM_RED round1 sep=610m alt=2472m spd=205m/s aoff=30deg
+[seed 27] reward=   479.34 ownHP=1.0000 tgtHP=0.9194 max time out
+[match] seed 30 OBFM_RED round1 sep=610m alt=2676m spd=228m/s aoff=30deg
+[seed 30] reward=   470.87 ownHP=0.9697 tgtHP=0.9186 max time out
+[match] seed 33 OBFM_RED round1 sep=610m alt=5743m spd=211m/s aoff=30deg
+[seed 33] reward=   428.00 ownHP=1.0000 tgtHP=0.9424 max time out
+[match] seed 36 OBFM_RED round1 sep=610m alt=1017m spd=299m/s aoff=30deg
+[seed 36] reward=   577.78 ownHP=1.0000 tgtHP=0.9340 max time out
+[match] seed 39 OBFM_RED round1 sep=610m alt=4248m spd=230m/s aoff=30deg
+[seed 39] reward=   581.38 ownHP=1.0000 tgtHP=0.9511 max time out
+[match] seed 42 OBFM_RED round1 sep=610m alt=4792m spd=263m/s aoff=30deg
+[seed 42] reward=   623.48 ownHP=1.0000 tgtHP=0.9414 max time out
 
 === S1 probe 완료 ===
-########## v32_OBFM_BLUE vs ACE (보충) ##########
-[match] seed 12 OBFM_BLUE round1 sep=610m alt=5889m spd=248m/s
-[seed 12] reward=   571.44 ownHP=1.0000 tgtHP=0.2517 max time out
