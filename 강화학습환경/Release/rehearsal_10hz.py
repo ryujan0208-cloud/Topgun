@@ -39,9 +39,18 @@ from dogfight.ai.bt_action_provider import BTActionProvider
 #
 # ★ legacy(5km·7000m)는 삭제하지 않는다. 환경변수 미설정이면 종전 그대로 동작한다.
 FT = 0.3048
-MATCH_RANGES_FT = (2000.0, 2500.0, 3000.0)   # 라운드 1/2/3
+MATCH_RANGES_FT = (2000.0, 2500.0, 3000.0)   # 뷰어 거리 버튼 = 라운드 1/2/3
 MATCH_ALT_FT = (2000.0, 30000.0)             # 매 라운드 랜덤, 양측 동일
-MATCH_SPEED_MPS = 300.0                      # ⚠ 공식은 200~300 랜덤. 지시 범위 밖이라 고정 유지.
+MATCH_SPEED_MPS = (200.0, 300.0)             # 매 라운드 랜덤, 양측 동일
+
+# 뷰어 기하 프리셋: HABFM / OBFM_RED / OBFM_BLUE (스크린샷으로 확인된 세 버튼).
+#   HABFM     = High Aspect BFM. 고애스펙트 = 서로 마주보는 중립 머지.
+#   OBFM_RED  = Offensive BFM, **상대(RED)가 공세**로 시작 = 우리가 방어.
+#   OBFM_BLUE = **우리(BLUE)가 공세**로 시작.
+# ⚠ 각 프리셋의 정확한 각도는 뷰어 애셋(.uasset) 안이라 읽을 수 없다.
+#   아래는 BFM 표준 셋업에 따른 **가정값**이며, 뷰어 실측으로 확정해야 한다.
+#   가정: OBFM은 공세측이 방어측 뒤 30도 원뿔 안(= 표준 control zone 진입 직전).
+MATCH_GEOM = os.getenv("TOPGUN_GEOM", "HABFM").upper()
 
 
 def apply_match_conditions(env, seed: int):
@@ -61,6 +70,7 @@ def apply_match_conditions(env, seed: int):
     import pymap3d as pm
     rng = np.random.default_rng(1_000_003 + seed)
     alt_m = float(rng.uniform(*MATCH_ALT_FT)) * FT
+    spd   = float(rng.uniform(*MATCH_SPEED_MPS))      # 양측 동일(공식 답변)
     sep_m = MATCH_RANGES_FT[seed % len(MATCH_RANGES_FT)] * FT
 
     def place(f, n, e, d, heading):
@@ -70,13 +80,22 @@ def apply_match_conditions(env, seed: int):
         f._init_roll = 0.0
         f._init_pitch = 0.0
         f._init_heading = heading
-        f._init_speed = MATCH_SPEED_MPS
+        f._init_speed = spd
 
-    # 헤드온(HABFM): N축으로 sep 만큼 벌리고 서로 마주본다.
-    place(env._sim,        0.0,   0.0, -alt_m,   0.0)
-    place(env._target_sim, sep_m, 0.0, -alt_m, 180.0)
-    return {"seed": seed, "sep_m": sep_m, "alt_m": alt_m,
-            "round": seed % len(MATCH_RANGES_FT) + 1}
+    # 상대(target)는 항상 우리 정북 sep 지점. 기하는 **기수 방향**으로만 만든다.
+    if MATCH_GEOM == "OBFM_BLUE":
+        # 우리가 공세: 우리는 상대를 향하고(0도), 상대는 등을 보인다(0도 = 같은 방향).
+        own_hdg, tgt_hdg = 0.0, 0.0
+    elif MATCH_GEOM == "OBFM_RED":
+        # 상대가 공세: 둘 다 남쪽(180도)을 향하면 상대가 우리 뒤에 붙은 형태가 된다.
+        own_hdg, tgt_hdg = 180.0, 180.0
+    else:  # HABFM — 고애스펙트 중립 머지(서로 마주봄)
+        own_hdg, tgt_hdg = 0.0, 180.0
+
+    place(env._sim,        0.0,   0.0, -alt_m, own_hdg)
+    place(env._target_sim, sep_m, 0.0, -alt_m, tgt_hdg)
+    return {"seed": seed, "sep_m": sep_m, "alt_m": alt_m, "spd": spd,
+            "geom": MATCH_GEOM, "round": seed % len(MATCH_RANGES_FT) + 1}
 
 
 class RepeatProvider:
@@ -161,8 +180,9 @@ def main():
             if isinstance(tgt, RepeatProvider): tgt.reset()
             if MATCH_MODE:
                 mc = apply_match_conditions(env, k)
-                print(f"[match] seed {k} round{mc['round']} "
-                      f"sep={mc['sep_m']:.0f}m alt={mc['alt_m']:.0f}m", flush=True)
+                print(f"[match] seed {k} {mc['geom']} round{mc['round']} "
+                      f"sep={mc['sep_m']:.0f}m alt={mc['alt_m']:.0f}m "
+                      f"spd={mc['spd']:.0f}m/s", flush=True)
                 obs, info = env.reset(seed=k)
             else:
                 obs, info = env.reset(seed=k) if (seeds > 1 or start_seed > 0) else env.reset()
