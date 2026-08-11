@@ -1,7 +1,7 @@
 # 탑건 BT 프로젝트 — 작업 규칙
 
 2026 AI 파일럿 탑건 챌린지. 1v1 F-16 도그파이트 BT.
-**상세 기록은 `~/.Codex/projects/.../memory/` (MEMORY.md가 색인). 이 파일은 매 세션 반드시 지킬 최소 규칙만.**
+**상세 기록은 `~/.claude/projects/.../memory/` (MEMORY.md가 색인). 이 파일은 매 세션 반드시 지킬 최소 규칙만.**
 
 ## 실행 환경 (틀리면 즉시 실패)
 ```bash
@@ -36,12 +36,33 @@ cd 강화학습환경/Release
 - **대칭 지표는 양쪽 다 재라**(위/아래, 좌/우).
 - 새 버전을 잴 땐 **그 버전의 상수를 도구에 넘겼는지** 확인.
 
+## ★ 코덱스와 투트랙 — 서로의 작업 디렉터리를 절대 건드리지 않는다
+| | 우리(Claude) | 코덱스 |
+|---|---|---|
+| 위치 | `.topgun/` (main) | `.topgun/recordings/codex-state-policy-lab/` (**git worktree**) |
+| 브랜치 | `main` | `codex/state-policy-lab` (기점 `770d7a0`) |
+| 규약 파일 | `CLAUDE.md` | `AGENTS.md`(내용 동일) + `CODEX_WORKSTREAM.md` |
+| 역할 | 기체 개선·실전 15시드 판정 | **상태-정책 실험실**(반사실 fork, 채택 판정 아님) |
+
+- `recordings/`는 main의 `.gitignore`에 있어 **서로의 git status에 안 잡힌다.** 이게 격리 장치다.
+- **교환은 커밋 해시와 리포트로만.** 상대 디렉터리를 편집하지 말 것(양쪽 다 합의).
+- 코덱스 산출물 3단: 추적되는 압축색인 `experiments/state_policy/runs/CVnn/`(README+작은 CSV,
+  SHA-256 명시) / 무시되는 원자료 `artifacts/state_policy/` / 아카이브 `상대기체 공유파일/날짜_CODEX_*`.
+- 코덱스는 `tools_diag/tests/test_*.py`로 **도구에 단위테스트를 붙인다.** 우리도 그렇게 할 것.
+- 코덱스 실험 DLL은 `AIP_DCS_lab.dll`(별도). 제출 DLL·Rule을 건드리지 않는다.
+
 ## 운영 (묻지 말고 그냥 할 것)
 - **리플레이 기본 제공**: `"$PY" tools/dashboard.py --default-tab replay --logdir artifacts/logs --port 7860`
   + **로그 stamp를 함께** 알려 어느 판인지 특정.
 - **버전 바뀌면 자동으로**: `상대기체 공유파일/날짜_vN_이름/`에 DLL+Rule XML+수정 .cpp+README(성적·근거)
   아카이브 → `git add -A` → commit. **기각한 버전도 기록.**
-- **배치 3개 이상 병렬 금지** (PC 다운 전례). PC 다운 시 `aircraft/f16/f16_init.xml` 손상 확인.
+- **배치 3개 이상 병렬 금지** (PC 다운 전례). **PC 다운 시 두 곳을 확인**:
+  1. `aircraft/f16/f16_init.xml` (3회 손상 전례)
+  2. **`.git/refs/heads/main`** — 2026-08-11에 41바이트 전부 NULL이 됐다.
+     증상: `fatal: your current branch appears to be broken`, `git status`가 전 파일을 `A`로 표시.
+     복구: `tail -1 .git/logs/refs/heads/main`(reflog는 살아 있다)에서 마지막 해시를 꺼내
+     `git cat-file -t <해시>`로 확인 후 `printf '<해시>\n' > .git/refs/heads/main`.
+     끝나면 `git fsck`로 검증. **작업 파일과 객체DB는 멀쩡하다 — ref만 다시 쓰면 된다.**
 - git push는 사용자 승인 후.
 
 ## ★ 사격 판정은 **3단계 phase**다 (2026-08-06 대회 자료 대조로 발견)
@@ -61,11 +82,68 @@ cd 강화학습환경/Release
 4. **배치 도는 중에 시뮬/도구를 수정하지 마라** — 앞뒤가 다른 규칙으로 측정된다
 5. **기각 시 DLL만 되돌리지 말고 소스도 되돌려라** — v31 코드가 v32에 섞여 들어갔다
 
+## ★★ 현재 채택 기체 = **v41** (2026-08-11) — 방어 노드(Task_Evade) 제거
+`AIP_final.dll`(v40과 같은 소스 빌드) + `Rule_v41.xml` / 제출용 `Rule_forTraining.xml`.
+**변경은 XML 한 곳뿐. DLL 재빌드 없음.**
+```
+대회조건 90판  71/2/17 -> 77/5/8    (라운드 승률 79% -> 86%)
+legacy 150판  102/42/6 -> 110/37/3  (+68.14 -> +70.00, 10상대 중 퇴행 0)
+Syllabus      PASS 0 -> 1 (S3 방어BFM: WEAK(생존만) -> PASS(반전 성공)), 하락 0
+우리 추락 240판 0건
+```
+**원리: 근거리 6시 위협의 정답은 이탈이 아니라 선회진입이다.**
+개전 2초에 상대 ATA가 25°를 깨면 게이트가 열려 우리가 등을 돌렸고 그 뒤로 회복하지 못했다.
+같은 t=0 기하에서 게이트가 안 열린 판은 HP 1.000으로 이기고 100% 열린 판은 37초에 격추됐다.
+**방어를 없앤 게 아니라 더 나쁜 방어 기동을 더 나은 것으로 바꾼 것.**
+⚠ **게이트 축소(1100→400)는 기각**(4승 11패 = 기준선과 동일). 우리는 최근접 중앙값 216m까지
+파고들어 좁힌 게이트도 결국 열린다 — 해로운 행동을 없애는 게 아니라 더 나쁜 순간으로 미룬다.
+상세: `상대기체 공유파일/2026-08-11_v41_Evade제거_채택/README.md`
+
+## ★★★ 제출본은 **DLL과 XML을 쌍으로**, **시드별 완전일치**로 검증한다
+v40 채택(8/9)이 `Rule_v40.xml`만 고치고 제출용 `Rule_forTraining.xml`을 안 고쳐
+**이틀간 제출 조합이 사실상 v32였다**(v40 DLL + v32 MinAlt=1800).
+같은 15시드 vs jh2: **제출본 3승12패 / 채택본 12승1무2패, 시드일치 0/15.**
+- **해시·크기 비교로는 못 잡는다.** 두 DLL은 86바이트만 달랐고 전부 타임스탬프·XML경로·
+  밀린 상대주소였다(= 같은 소스 빌드). 문제는 XML이었다.
+- **성적 비교로도 못 잡는다.** 교정 전 ACE는 14승 vs 15승으로 "비슷"했지만 시드일치 0이었다.
+  **약한 상대만 보면 안 보인다.**
+- v40 때 `_v40_verify.sh`가 "게이트판 vs 기본판"만 보고 **제출 빌드를 검증에 안 넣은 것**이
+  직접 원인. → `_v41_submit_verify.sh`처럼 **제출 빌드를 환경변수 없이** 돌려 대조할 것.
+
+## (구) 채택 기체 = v40 (2026-08-09, 커밋 `80d7d6a`) — v41의 토대
+`AIP_v40.dll` + `Rule_v40.xml`. 10상대 150판 **102승 42무 6패 / 순이득 +68.14**.
+(v32는 101승 34무 15패 / +51.66)
+```cpp
+AIM_FLOOR = clamp(상대고도 - 300, 800, 1500)   // Task_LeadPredict. v32는 상수 1500
+DECO_AltitudeCheck MinAlt: 1800 -> 1000         // Rule_v40.xml
+```
+**원리: 고도를 내주는 건 상대를 따라갈 때만 이득이다.** v32는 매 판 1800m 벽에 걸려
+(우리 최저고도 중앙 1797m vs 상대 403m) 상대가 그 아래로 가면 트리가 통째로
+ClimbOut으로 넘어가 **추격이 중단**됐다. 기동 공간 1000m를 버리고 있었다.
+⚠ **조준하한과 MinAlt는 반드시 같이 낮춘다.** 하나만 낮추면 벽에 부딪혀 에너지만 잃는다
+(`divefree` 기각 사유). 무조건 낮추는 것도 안 된다(`lowfloor`는 kwon −3으로 기각).
+상세: `상대기체 공유파일/2026-08-09_v40_고도하한_상대연동_채택/README.md`
+
 ## 스파링 상대 (유형별)
 `ACE`(3D공세) `AIP_onecircle`(수평선회·최약) `AIP_sync`(거울) `AIP_jink`(불규칙)
-`AIP_kwon` `AIP_v7`(실제BT) `SEARCH`(탐색형) `STRAIGHT`(직진) `AIP_junghwan`(팀원 실기체)
+`AIP_kwon` `AIP_v7`(실제BT) `SEARCH`(탐색형) `STRAIGHT`(직진) `AIP_junghwan`(팀원 8/6판)
+★ **`AIP_jh2`(팀원 최신 `cf49f0e`) — 가장 강한 상대.** v32는 4승11패(전부 격추)였다.
+  XML이 `Rule_junghwan_cf49f0e.xml`로 고유해 `Rule_mine.xml` 충돌이 없다.
 ⚠ **`AIP_dummy.dll`은 직선이 아니다**(80도 뱅크 선회). 직진 대조군은 `STRAIGHT`.
 ⚠ 팀원 파일은 원래 `AIP_DCS.dll`이라 **그대로 복사하면 우리 파일을 덮어쓴다.**
+
+### ★★ `kwon`과 `junghwan`은 같은 사람(권정환)의 기체다 — XML이 충돌한다
+7/22판이 `AIP_kwon.dll`, 8/6판이 `AIP_junghwan.dll`. **둘 다 `./Rule_mine.xml`을 읽는다.**
+8/6 16:49에 junghwan 패키지를 넣으면서 kwon용 XML을 덮어썼고, 그 뒤 **kwon 배치는 전부
+초기화 실패로 죽었다**(`Node not recognized: DECO_TargetLOSCheck`). 이틀간 못 봤다.
+```bash
+cp -f Rule_mine_kwon.xml Rule_mine.xml       # kwon 돌리기 전
+cp -f Rule_mine_junghwan.xml Rule_mine.xml   # junghwan 돌리기 전 / 평상시
+```
+- **한 배치에 둘 다 넣지 마라.** 넣으려면 상대마다 XML을 갈아끼워라(`_v39c.sh` 참고).
+- 유형 카운트도 주의: 둘은 독립 유형이 **아니다**(같은 사람의 두 시점).
+- **상대 DLL이 초기화에 실패하면 파이썬이 죽는다**(`OSError 0xe06d7363`). 배치 로그에
+  `SUMMARY`가 없는 구간이 있으면 그 상대는 **측정된 게 아니라 죽은 것**이다. 반드시 확인.
 
 ## 뷰어 모의경기 (BattleViewer)
 ```
@@ -87,7 +165,28 @@ cd 강화학습환경/Release
 - 제출 = BT DLL + Rule XML, **ACTION_REPEAT=6 = BT 10Hz** (로컬 개발은 60Hz)
 - **BT는 VP만 설정**한다. 스틱은 `Controller_CY::GetStick`이 변환(제출 제약)
 
+## ★★★ dt 버그 — 10Hz 실전 조건에서 상대 선회율을 7~9배로 읽는다 (2026-08-08 실측)
+`DeltaSecond`가 생성자 값 `1/60`에 고정돼 있다(`SetBehaviorTreeDeltaTime`을 호스트가 안 부른다).
+이력 버퍼는 **BT 틱마다** 채워지는데 `ACTION_REPEAT=6`이면 12틱 = **1.2초**인 창을 **0.2초**로 나눈다.
+```
+repeat=1(60Hz) onecircle  om  8.5°/s  실측 8.75  → 비율 0.98   (맞다)
+repeat=6(10Hz) onecircle  om 84.0°/s  실측 9.36  → 비율 8.98   (틀리다)
+```
+→ `R = tgtSpd/omega`가 209m(실제 1880m)가 되고 `phi` 상한에 걸려 **TailSlot이 124m**에 찍힌다.
+**사격 최소거리는 152.4m다.** onecircle 최약 매치업·"뒤 91% ATA 7°인데 0점"의 정체.
+⚠ **고치는 게 곧 개선은 아니다.** v32 상수 전부가 이 위에서 조정됐고 v17은 절제 1위였다.
+상세·재현: `강화학습환경/Release/experiments/dt_bug/FINDING_2026-08-08.md`
+
 ## 함정 (실제로 당한 것들)
+- **★ 아카이브 후 `git ls-files`로 실제로 들어갔는지 확인할 것.** `.gitignore`의 부정(!) 규칙은
+  **조용히 실패한다.** 26~27행이 인코딩 손상으로 깨져 있어 **7/11부터 아카이브 DLL 29개가
+  한 번도 커밋된 적이 없었다**(채택본 v32, 팀배포본, 스파링 상대 전부 포함).
+  `git add -A`는 성공하고 경고도 없다. 2026-08-08에 발견·복구.
+- **진단을 필터로 버리면 진단을 못 본다.** 배치 스크립트가 `[ACTIVE]`를 걸러내 dt 버그를 오래 못 봤다.
+- **`[ACTIVE]` 진단에서 우리 기체는 `[RED]`로 찍힌다** (DLL 내부 Team enum이 시뮬의 Blue/Red와 반대).
+  판별법: 상대 DLL을 안 쓰는 `STRAIGHT`로 돌려보면 우리 것만 나온다.
+- **`AIP_final.dll`과 `AIP_v32.dll`은 해시가 다르지만 동작은 같다**(같은 소스 별도 빌드).
+  8/8에 시드별 30판 일치로 검증했다. 해시가 다르다고 곧 다른 기체는 아니다 — **동작으로 증명할 것.**
 - **제출본이 낡을 수 있다.** `AIP_final.dll`이 v27인 채로 있었다(XML은 v27~v32 동일해서 안 보였음).
   **크기/해시로 현역 DLL과 대조할 것.**
 - **XML 이름 충돌.** `AIP_trinity.dll`은 `./Rule_forTraining.xml`을 읽는다 — 우리가 덮어쓰면

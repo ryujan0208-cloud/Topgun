@@ -2210,3 +2210,132 @@ Remove Space Complete.
 SUMMARY dealt=0.0660 taken=0.0000 mean_reward=577.78
 tacview log saved (last episode)
 STAMP v40 ACE seed36 2026_8_11_20_28_29
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 39 OBFM_RED round1 sep=610m alt=4248m spd=230m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+[EVADE_DIAG] team=1 side=-0.403296 turnSign=-1 dist=683.627 trueAta=130.677 headingXAngle=35.1892 aa=179.915
+[EVADE_DIAG] team=1 side=-0.290837 turnSign=-1 dist=641.882 trueAta=125.432 headingXAngle=52.0988 aa=179.32
+[ACTIVE] [RED] Evade Z=4088.58
+[EVADE_DIAG] team=1 side=-0.167301 turnSign=-1 dist=585.227 trueAta=126.793 headingXAngle=64.5069 aa=174.171
+[EVADE_DIAG] team=1 side=0.0313133 turnSign=-1 dist=550.584 trueAta=133.554 headingXAngle=67.3247 aa=179.471
+[EVADE_DIAG] team=1 side=-0.387055 turnSign=-1 dist=687.114 trueAta=133.742 headingXAngle=30.3035 aa=174.1
+[ACTIVE] [RED] Evade Z=2877.47
+[EVADE_DIAG] team=1 side=0.311027 turnSign=1 dist=638.013 trueAta=144.739 headingXAngle=33.9752 aa=178.554
+[EVADE_DIAG] team=1 side=-0.147829 turnSign=-1 dist=613.078 trueAta=159.354 headingXAngle=30.1308 aa=179.655
+[EVADE_DIAG] team=1 side=0.0731867 turnSign=1 dist=620.321 trueAta=172.356 headingXAngle=28.1905 aa=169.027
+[ACTIVE] [RED] LeadPredict dist=742.104 dV=14.4557 thr=0.78357 om=0.746284 lt=2.17153
+[ACTIVE] [RED] LeadPredict dist=876.406 dV=-2.26352 thr=0.740486 om=0.778265 lt=2.72971
+[ACTIVE] [RED] LeadPredict dist=690.024 dV=-36.8853 thr=1 om=1.48885 lt=2.6645
+[ACTIVE] [RED] LeadPredict dist=884.908 dV=-26.3393 thr=1 om=1.7367 lt=2.04049
+[ACTIVE] [RED] LeadPredict dist=811.841 dV=-12.398 thr=1 om=1.71262 lt=3
+[ACTIVE] [RED] LeadPredict dist=835.557 dV=-6.01895 thr=1 om=2.05146 lt=0
+[ACTIVE] [RED] LeadPredict dist=624.137 dV=27.0596 thr=0.675285 om=1.73961 lt=2.22776
+[ACTIVE] [RED] LeadPredict dist=856.295 dV=0.360107 thr=0.995679 om=2.32418 lt=3
+[ACTIVE] [RED] LeadPredict dist=776.397 dV=6.07039 thr=0.927155 om=1.69904 lt=3
+[ACTIVE] [RED] LeadPredict dist=1111.43 dV=1.02887 thr=1 om=1.67819 lt=3
+[DUTY] team=1 ticks=600 v27Á¾¸»Á¶ÁØ=21.5% v21¹ðÅ©¿¹Ãø=94.5% v17±ËµµÁ¶°Ç=98% v17½½·ÔÀû¿ë=80.6667% »ó½ÂÅ¬·¥ÇÁ=0% °­ÇÏÅ¬·¥ÇÁ=0% v23bÁ¶°Ç=15.3333% v23b½ÇÁ¦Àû¿ë=15.3333%
+[ACTIVE] [RED] LeadPredict dist=676.833 dV=26.9052 thr=0.677137 om=1.66083 lt=2.53306
+[ACTIVE] [RED] LeadPredict dist=856.022 dV=-0.668762 thr=1 om=1.66988 lt=1.23202
+[ACTIVE] [RED] LeadPredict dist=853.759 dV=-8.17961 thr=1 om=1.39828 lt=3
+[ACTIVE] [RED] LeadPredict dist=663.491 dV=17.0794 thr=0.795047 om=1.72146 lt=2.49128
+[ACTIVE] [RED] LeadPredict dist=890.79 dV=-5.86461 thr=1 om=1.76014 lt=3
+[ACTIVE] [RED] LeadPredict dist=795.574 dV=-5.19583 thr=1 om=0.773479 lt=3
+[ACTIVE] [RED] LeadPredict dist=642.49 dV=16.6678 thr=0.799986 om=1.75511 lt=2.38387
+[ACTIVE] [RED] LeadPredict dist=930.23 dV=-3.18953 thr=1 om=1.96429 lt=3
+[ACTIVE] [RED] LeadPredict dist=903.228 dV=-0.102875 thr=1 om=2.17109 lt=3
+[ACTIVE] [RED] LeadPredict dist=658.028 dV=11.5749 thr=0.861101 om=1.76246 lt=2.43873
+[DUTY] team=1 ticks=1200 v27Á¾¸»Á¶ÁØ=15.6667% v21¹ðÅ©¿¹Ãø=96.9167% v17±ËµµÁ¶°Ç=98.9167% v17½½·ÔÀû¿ë=90.25% »ó½ÂÅ¬·¥ÇÁ=0% °­ÇÏÅ¬·¥ÇÁ=0% v23bÁ¶°Ç=7.66667% v23b½ÇÁ¦Àû¿ë=7.66667%
+[ACTIVE] [RED] LeadPredict dist=641.221 dV=2.77798 thr=0.966664 om=0.452438 lt=2.31595
+[ACTIVE] [RED] LeadPredict dist=577.176 dV=19.2401 thr=0.769119 om=1.74509 lt=2.00958
+[ACTIVE] [RED] LeadPredict dist=864.963 dV=10.3917 thr=0.952 om=1.57659 lt=1.84563
+[ACTIVE] [RED] LeadPredict dist=977.612 dV=-9.67148 thr=1 om=1.91111 lt=3
+[ACTIVE] [RED] LeadPredict dist=703.376 dV=9.7229 thr=0.883325 om=1.76275 lt=2.53103
+[ACTIVE] [RED] LeadPredict dist=753.7 dV=-0.771637 thr=1 om=1.63073 lt=2.79918
+[ACTIVE] [RED] LeadPredict dist=766.125 dV=8.69403 thr=0.895672 om=1.58314 lt=1.83283
+[ACTIVE] [RED] LeadPredict dist=950.629 dV=11.1633 thr=0.979249 om=2.00796 lt=3
+[ACTIVE] [RED] LeadPredict dist=745.117 dV=-1.85196 thr=1 om=1.59354 lt=2.70325
+[ACTIVE] [RED] LeadPredict dist=856.226 dV=10.2888 thr=0.865765 om=1.31977 lt=2.93646
+[DUTY] team=1 ticks=1800 v27Á¾¸»Á¶ÁØ=13.6667% v21¹ðÅ©¿¹Ãø=97.5% v17±ËµµÁ¶°Ç=99.2778% v17½½·ÔÀû¿ë=93.5% »ó½ÂÅ¬·¥ÇÁ=0% °­ÇÏÅ¬·¥ÇÁ=0% v23bÁ¶°Ç=7.27778% v23b½ÇÁ¦Àû¿ë=5.33333%
+[ACTIVE] [RED] LeadPredict dist=893.096 dV=-1.02887 thr=1 om=1.60967 lt=3
+runner:local/env:0	num_steps=[11999] | total rewards=[581.3758] | termination= [max time out]
+[seed 39] reward=   581.38 ownHP=1.0000 tgtHP=0.9511 max time out
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.0489 taken=0.0000 mean_reward=581.38
+tacview log saved (last episode)
+STAMP v40 ACE seed39 2026_8_11_20_29_25
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 42 OBFM_RED round1 sep=610m alt=4792m spd=263m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+[EVADE_DIAG] team=1 side=-0.540568 turnSign=-1 dist=653.207 trueAta=125.931 headingXAngle=43.8734 aa=179.29
+[EVADE_DIAG] team=1 side=-0.435281 turnSign=-1 dist=584.88 trueAta=128.946 headingXAngle=55.1945 aa=176.888
+[ACTIVE] [RED] Evade Z=4471.16
+[EVADE_DIAG] team=1 side=-0.175911 turnSign=-1 dist=534.327 trueAta=137.896 headingXAngle=60.0189 aa=179.862
+[ACTIVE] [RED] LeadPredict dist=724.642 dV=10.3402 thr=0.875917 om=0.816586 lt=2.35868
+[EVADE_DIAG] team=1 side=0.327673 turnSign=1 dist=648.411 trueAta=131.065 headingXAngle=30.5767 aa=166.455
+[EVADE_DIAG] team=1 side=-0.27659 turnSign=-1 dist=583.622 trueAta=146.826 headingXAngle=32.1257 aa=177.449
+[ACTIVE] [RED] Evade Z=2756.93
+[EVADE_DIAG] team=1 side=0.0383027 turnSign=1 dist=555.509 trueAta=163.785 headingXAngle=29.2087 aa=179.415
+[EVADE_DIAG] team=1 side=-0.0525318 turnSign=1 dist=576.823 trueAta=176.633 headingXAngle=18.9768 aa=176.469
+[ACTIVE] [RED] LeadPredict dist=720.955 dV=3.08664 thr=0.645817 om=1.10029 lt=2.09984
+[ACTIVE] [RED] LeadPredict dist=325.364 dV=-31.6895 thr=1 om=1.05432 lt=1.14722
+[ACTIVE] [RED] LeadPredict dist=664.845 dV=-25.259 thr=1 om=1.87066 lt=2.68572
+[ACTIVE] [RED] LeadPredict dist=689.743 dV=-5.55595 thr=1 om=1.38908 lt=1.76903
+[ACTIVE] [RED] LeadPredict dist=714.963 dV=-9.72292 thr=1 om=1.44527 lt=2.5188
+[ACTIVE] [RED] LeadPredict dist=739.446 dV=-4.47563 thr=1 om=1.61095 lt=3
+[ACTIVE] [RED] LeadPredict dist=726.696 dV=0.0514526 thr=0.999383 om=1.75689 lt=2.82689
+[ACTIVE] [RED] LeadPredict dist=767.509 dV=0.0514221 thr=0.999383 om=1.17705 lt=2.66941
+[ACTIVE] [RED] LeadPredict dist=663.369 dV=18.3141 thr=0.780231 om=1.59265 lt=2.15851
+[DUTY] team=1 ticks=600 v27Á¾¸»Á¶ÁØ=25.1667% v21¹ðÅ©¿¹Ãø=90.3333% v17±ËµµÁ¶°Ç=98% v17½½·ÔÀû¿ë=75.6667% »ó½ÂÅ¬·¥ÇÁ=0% °­ÇÏÅ¬·¥ÇÁ=17.8333% v23bÁ¶°Ç=21.5% v23b½ÇÁ¦Àû¿ë=20.1667%
+[ACTIVE] [RED] LeadPredict dist=864.502 dV=21.4521 thr=0.742574 om=1.80556 lt=3
+[ACTIVE] [RED] LeadPredict dist=781.251 dV=16.3078 thr=0.824 om=1.70745 lt=2.93571
+[ACTIVE] [RED] LeadPredict dist=1037.71 dV=0.0514374 thr=1 om=1.69727 lt=3
+[ACTIVE] [RED] LeadPredict dist=998.484 dV=21.9666 thr=1 om=1.67559 lt=3
+[ACTIVE] [RED] LeadPredict dist=750.566 dV=25.3105 thr=0.696275 om=1.45668 lt=2.7934
+[ACTIVE] [RED] LeadPredict dist=687.054 dV=11.6778 thr=0.859866 om=1.64744 lt=2.60085
+[ACTIVE] [RED] LeadPredict dist=954.589 dV=-1.08035 thr=1 om=1.77571 lt=3
+[ACTIVE] [RED] LeadPredict dist=702.356 dV=14.3529 thr=0.827765 om=1.70788 lt=2.67126
+[ACTIVE] [RED] LeadPredict dist=759.144 dV=5.86462 thr=0.952592 om=1.51124 lt=2.91404
+[ACTIVE] [RED] LeadPredict dist=875.339 dV=2.16064 thr=0.974072 om=1.74326 lt=0.862547
+[DUTY] team=1 ticks=1200 v27Á¾¸»Á¶ÁØ=15.75% v21¹ðÅ©¿¹Ãø=94.9167% v17±ËµµÁ¶°Ç=99% v17½½·ÔÀû¿ë=87.8333% »ó½ÂÅ¬·¥ÇÁ=0% °­ÇÏÅ¬·¥ÇÁ=8.91667% v23bÁ¶°Ç=14.3333% v23b½ÇÁ¦Àû¿ë=10.0833%
+[ACTIVE] [RED] LeadPredict dist=756.854 dV=13.5812 thr=0.837025 om=1.4956 lt=2.85674
+[ACTIVE] [RED] LeadPredict dist=716.278 dV=8.1796 thr=0.901845 om=1.67169 lt=2.66478
+[ACTIVE] [RED] LeadPredict dist=741.751 dV=12.7581 thr=0.890368 om=1.64767 lt=2.65781
+[ACTIVE] [RED] LeadPredict dist=902.869 dV=2.00632 thr=0.975924 om=2.12258 lt=3
+[ACTIVE] [RED] LeadPredict dist=837.24 dV=0.925995 thr=0.988888 om=1.2361 lt=3
+[ACTIVE] [RED] LeadPredict dist=773.783 dV=7.97385 thr=0.867077 om=1.90196 lt=2.65653
+[ACTIVE] [RED] LeadPredict dist=758.902 dV=10.2888 thr=0.832095 om=2.17302 lt=2.53384
+[ACTIVE] [RED] LeadPredict dist=674.826 dV=24.0758 thr=0.711091 om=1.68248 lt=2.25196
+[ACTIVE] [RED] LeadPredict dist=623.01 dV=2.67511 thr=0.967899 om=1.57053 lt=2.20913
+[ACTIVE] [RED] LeadPredict dist=965.375 dV=1.90344 thr=1 om=1.33419 lt=3
+[DUTY] team=1 ticks=1800 v27Á¾¸»Á¶ÁØ=14% v21¹ðÅ©¿¹Ãø=96.2778% v17±ËµµÁ¶°Ç=99.2778% v17½½·ÔÀû¿ë=91.8333% »ó½ÂÅ¬·¥ÇÁ=0% °­ÇÏÅ¬·¥ÇÁ=5.94444% v23bÁ¶°Ç=15.5556% v23b½ÇÁ¦Àû¿ë=9.38889%
+[ACTIVE] [RED] LeadPredict dist=867.762 dV=1.74908 thr=0.979011 om=1.6074 lt=3
+runner:local/env:0	num_steps=[11999] | total rewards=[623.4778] | termination= [max time out]
+[seed 42] reward=   623.48 ownHP=1.0000 tgtHP=0.9414 max time out
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.0586 taken=0.0000 mean_reward=623.48
+tacview log saved (last episode)
+STAMP v40 ACE seed42 2026_8_11_20_30_24
+
+=== OBFM_RED ì§„ë‹¨ ì™„ë£Œ ===

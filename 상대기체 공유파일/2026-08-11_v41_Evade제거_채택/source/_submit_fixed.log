@@ -1,0 +1,251 @@
+########## AIP_final.dll vs AIP_jh2.dll ##########
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[6798] | total rewards=[632.3302] | termination= [target destroyed]
+[seed 0] reward=   632.33 ownHP=1.0000 tgtHP=-0.0036 target destroyed
+total: 2
+runner:local/env:0	num_steps=[11116] | total rewards=[57.6045] | termination= [ownship destroyed]
+[seed 1] reward=    57.60 ownHP=-0.0032 tgtHP=1.0000 ownship destroyed
+total: 2
+runner:local/env:0	num_steps=[7632] | total rewards=[790.0348] | termination= [target destroyed]
+[seed 2] reward=   790.03 ownHP=1.0000 tgtHP=-0.0072 target destroyed
+total: 2
+runner:local/env:0	num_steps=[9326] | total rewards=[937.8579] | termination= [target destroyed]
+[seed 3] reward=   937.86 ownHP=1.0000 tgtHP=-0.0008 target destroyed
+total: 2
+runner:local/env:0	num_steps=[8143] | total rewards=[1060.0150] | termination= [target destroyed]
+[seed 4] reward=  1060.01 ownHP=1.0000 tgtHP=-0.0006 target destroyed
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[389.4634] | termination= [max time out]
+[seed 5] reward=   389.46 ownHP=0.6406 tgtHP=0.1629 max time out
+total: 2
+runner:local/env:0	num_steps=[5364] | total rewards=[313.1451] | termination= [target destroyed]
+[seed 6] reward=   313.15 ownHP=1.0000 tgtHP=-0.0035 target destroyed
+total: 2
+runner:local/env:0	num_steps=[6706] | total rewards=[821.0589] | termination= [target destroyed]
+[seed 7] reward=   821.06 ownHP=1.0000 tgtHP=-0.0021 target destroyed
+total: 2
+runner:local/env:0	num_steps=[2600] | total rewards=[-146.2723] | termination= [ownship destroyed]
+[seed 8] reward=  -146.27 ownHP=-0.0136 tgtHP=1.0000 ownship destroyed
+total: 2
+runner:local/env:0	num_steps=[9075] | total rewards=[803.8532] | termination= [target destroyed]
+[seed 9] reward=   803.85 ownHP=1.0000 tgtHP=-0.0038 target destroyed
+total: 2
+runner:local/env:0	num_steps=[7525] | total rewards=[726.2093] | termination= [target destroyed]
+[seed 10] reward=   726.21 ownHP=1.0000 tgtHP=-0.0049 target destroyed
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[933.9353] | termination= [max time out]
+[seed 11] reward=   933.94 ownHP=1.0000 tgtHP=0.0577 max time out
+total: 2
+runner:local/env:0	num_steps=[7322] | total rewards=[599.7472] | termination= [target destroyed]
+[seed 12] reward=   599.75 ownHP=1.0000 tgtHP=-0.0021 target destroyed
+total: 2
+runner:local/env:0	num_steps=[8435] | total rewards=[914.2668] | termination= [target destroyed]
+[seed 13] reward=   914.27 ownHP=1.0000 tgtHP=-0.0011 target destroyed
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[319.4816] | termination= [max time out]
+[seed 14] reward=   319.48 ownHP=1.0000 tgtHP=1.0000 max time out
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=15]
+SUMMARY dealt=11.8090 taken=2.3762 mean_reward=610.18
+tacview log saved (last episode)
+
+########## AIP_v40.dll vs AIP_jh2.dll ##########
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[6798] | total rewards=[632.3302] | termination= [target destroyed]
+[seed 0] reward=   632.33 ownHP=1.0000 tgtHP=-0.0036 target destroyed
+total: 2
+runner:local/env:0	num_steps=[11116] | total rewards=[57.6045] | termination= [ownship destroyed]
+[seed 1] reward=    57.60 ownHP=-0.0032 tgtHP=1.0000 ownship destroyed
+total: 2
+runner:local/env:0	num_steps=[7632] | total rewards=[790.0348] | termination= [target destroyed]
+[seed 2] reward=   790.03 ownHP=1.0000 tgtHP=-0.0072 target destroyed
+total: 2
+runner:local/env:0	num_steps=[9326] | total rewards=[937.8579] | termination= [target destroyed]
+[seed 3] reward=   937.86 ownHP=1.0000 tgtHP=-0.0008 target destroyed
+total: 2
+runner:local/env:0	num_steps=[8143] | total rewards=[1060.0150] | termination= [target destroyed]
+[seed 4] reward=  1060.01 ownHP=1.0000 tgtHP=-0.0006 target destroyed
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[389.4634] | termination= [max time out]
+[seed 5] reward=   389.46 ownHP=0.6406 tgtHP=0.1629 max time out
+total: 2
+runner:local/env:0	num_steps=[5364] | total rewards=[313.1451] | termination= [target destroyed]
+[seed 6] reward=   313.15 ownHP=1.0000 tgtHP=-0.0035 target destroyed
+total: 2
+runner:local/env:0	num_steps=[6706] | total rewards=[821.0589] | termination= [target destroyed]
+[seed 7] reward=   821.06 ownHP=1.0000 tgtHP=-0.0021 target destroyed
+total: 2
+runner:local/env:0	num_steps=[2600] | total rewards=[-146.2723] | termination= [ownship destroyed]
+[seed 8] reward=  -146.27 ownHP=-0.0136 tgtHP=1.0000 ownship destroyed
+total: 2
+runner:local/env:0	num_steps=[9075] | total rewards=[803.8532] | termination= [target destroyed]
+[seed 9] reward=   803.85 ownHP=1.0000 tgtHP=-0.0038 target destroyed
+total: 2
+runner:local/env:0	num_steps=[7525] | total rewards=[726.2093] | termination= [target destroyed]
+[seed 10] reward=   726.21 ownHP=1.0000 tgtHP=-0.0049 target destroyed
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[933.9353] | termination= [max time out]
+[seed 11] reward=   933.94 ownHP=1.0000 tgtHP=0.0577 max time out
+total: 2
+runner:local/env:0	num_steps=[7322] | total rewards=[599.7472] | termination= [target destroyed]
+[seed 12] reward=   599.75 ownHP=1.0000 tgtHP=-0.0021 target destroyed
+total: 2
+runner:local/env:0	num_steps=[8435] | total rewards=[914.2668] | termination= [target destroyed]
+[seed 13] reward=   914.27 ownHP=1.0000 tgtHP=-0.0011 target destroyed
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[319.4816] | termination= [max time out]
+[seed 14] reward=   319.48 ownHP=1.0000 tgtHP=1.0000 max time out
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=15]
+SUMMARY dealt=11.8090 taken=2.3762 mean_reward=610.18
+tacview log saved (last episode)
+
+########## AIP_final.dll vs ACE ##########
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[11999] | total rewards=[517.0992] | termination= [max time out]
+[seed 0] reward=   517.10 ownHP=1.0000 tgtHP=0.9369 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[543.6922] | termination= [max time out]
+[seed 1] reward=   543.69 ownHP=1.0000 tgtHP=0.9317 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[421.8559] | termination= [max time out]
+[seed 2] reward=   421.86 ownHP=1.0000 tgtHP=0.9388 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[445.2258] | termination= [max time out]
+[seed 3] reward=   445.23 ownHP=1.0000 tgtHP=0.8021 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[365.7151] | termination= [max time out]
+[seed 4] reward=   365.72 ownHP=0.9711 tgtHP=0.9535 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[527.7524] | termination= [max time out]
+[seed 5] reward=   527.75 ownHP=1.0000 tgtHP=0.9329 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[520.4454] | termination= [max time out]
+[seed 6] reward=   520.45 ownHP=1.0000 tgtHP=0.8080 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[613.7054] | termination= [max time out]
+[seed 7] reward=   613.71 ownHP=1.0000 tgtHP=0.8829 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[595.1140] | termination= [max time out]
+[seed 8] reward=   595.11 ownHP=1.0000 tgtHP=0.9168 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[438.1305] | termination= [max time out]
+[seed 9] reward=   438.13 ownHP=1.0000 tgtHP=0.9383 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[557.6501] | termination= [max time out]
+[seed 10] reward=   557.65 ownHP=1.0000 tgtHP=0.8981 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[626.5789] | termination= [max time out]
+[seed 11] reward=   626.58 ownHP=1.0000 tgtHP=0.9122 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[548.5795] | termination= [max time out]
+[seed 12] reward=   548.58 ownHP=1.0000 tgtHP=0.8645 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[558.1540] | termination= [max time out]
+[seed 13] reward=   558.15 ownHP=1.0000 tgtHP=0.7879 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[457.0250] | termination= [max time out]
+[seed 14] reward=   457.02 ownHP=1.0000 tgtHP=0.9096 max time out
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=15]
+SUMMARY dealt=1.5860 taken=0.0289 mean_reward=515.78
+tacview log saved (last episode)
+
+########## AIP_v40.dll vs ACE ##########
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[11999] | total rewards=[517.0992] | termination= [max time out]
+[seed 0] reward=   517.10 ownHP=1.0000 tgtHP=0.9369 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[543.6922] | termination= [max time out]
+[seed 1] reward=   543.69 ownHP=1.0000 tgtHP=0.9317 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[421.8559] | termination= [max time out]
+[seed 2] reward=   421.86 ownHP=1.0000 tgtHP=0.9388 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[445.2258] | termination= [max time out]
+[seed 3] reward=   445.23 ownHP=1.0000 tgtHP=0.8021 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[365.7151] | termination= [max time out]
+[seed 4] reward=   365.72 ownHP=0.9711 tgtHP=0.9535 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[527.7524] | termination= [max time out]
+[seed 5] reward=   527.75 ownHP=1.0000 tgtHP=0.9329 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[520.4454] | termination= [max time out]
+[seed 6] reward=   520.45 ownHP=1.0000 tgtHP=0.8080 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[613.7054] | termination= [max time out]
+[seed 7] reward=   613.71 ownHP=1.0000 tgtHP=0.8829 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[595.1140] | termination= [max time out]
+[seed 8] reward=   595.11 ownHP=1.0000 tgtHP=0.9168 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[438.1305] | termination= [max time out]
+[seed 9] reward=   438.13 ownHP=1.0000 tgtHP=0.9383 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[557.6501] | termination= [max time out]
+[seed 10] reward=   557.65 ownHP=1.0000 tgtHP=0.8981 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[626.5789] | termination= [max time out]
+[seed 11] reward=   626.58 ownHP=1.0000 tgtHP=0.9122 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[548.5795] | termination= [max time out]
+[seed 12] reward=   548.58 ownHP=1.0000 tgtHP=0.8645 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[558.1540] | termination= [max time out]
+[seed 13] reward=   558.15 ownHP=1.0000 tgtHP=0.7879 max time out
+total: 2
+runner:local/env:0	num_steps=[11999] | total rewards=[457.0250] | termination= [max time out]
+[seed 14] reward=   457.02 ownHP=1.0000 tgtHP=0.9096 max time out
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=15]
+SUMMARY dealt=1.5860 taken=0.0289 mean_reward=515.78
+tacview log saved (last episode)
+
+=== 교정본 재검증 완료 ===

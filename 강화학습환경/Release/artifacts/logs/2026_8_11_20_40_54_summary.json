@@ -1,0 +1,6 @@
+{
+  "end_condition": "ownship altitude below min",
+  "outcome": "crash",
+  "ownship_health": 0.6713037077686834,
+  "target_health": 1.0
+}

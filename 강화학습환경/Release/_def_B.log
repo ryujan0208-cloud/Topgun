@@ -1,0 +1,653 @@
+########## B: v40+ablate(v31) / OBFM_RED / jh2 ##########
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 0 OBFM_RED round1 sep=610m alt=6057m spd=258m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] Evade Z=5979.27
+[ACTIVE] [RED] Evade Z=5752.57
+[ACTIVE] [RED] Evade Z=5315.16
+[ACTIVE] [RED] Evade Z=4649.83
+[ACTIVE] [RED] Evade Z=3776.99
+[ACTIVE] [RED] ClimbOut Z=1877.8
+[ACTIVE] [RED] Evade Z=1757.63
+[ACTIVE] [RED] Evade Z=1387.44
+[ACTIVE] [RED] Evade Z=1565.36
+[ACTIVE] [RED] Evade Z=1920.5
+[ACTIVE] [RED] Evade Z=2103.5
+[DUTY_EV] team=1 evadeTicks=300 v31?≤Й╟∙?≤Л└═(>3000m)=0% Л╓▒Й╟└(2200~3000)=0% ?│Л┼╧(<2200)=0%
+[ACTIVE] [RED] Evade Z=2300.97
+[ACTIVE] [RED] Evade Z=2478.58
+[ACTIVE] [RED] Evade Z=2643.25
+[ACTIVE] [RED] Evade Z=2752.48
+[ACTIVE] [RED] LeadPredict dist=59.9862 dV=2.05774 thr=0.984 om=0 lt=0.184911
+[ACTIVE] [RED] Evade Z=2798.88
+[ACTIVE] [RED] Evade Z=2744.16
+[ACTIVE] [RED] Evade Z=2649.02
+[ACTIVE] [RED] Evade Z=2507.97
+[ACTIVE] [RED] Evade Z=2328.92
+runner:local/env:0	num_steps=[4180] | total rewards=[-162.3589] | termination= [ownship destroyed]
+[seed 0] reward=  -162.36 ownHP=-0.0113 tgtHP=1.0000 ownship destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.0000 taken=1.0113 mean_reward=-162.36
+tacview log saved (last episode)
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 3 OBFM_RED round1 sep=610m alt=1799m spd=270m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] Evade Z=1791.97
+[ACTIVE] [RED] Evade Z=1752.48
+[ACTIVE] [RED] Evade Z=1668.93
+[ACTIVE] [RED] Evade Z=1613.99
+[ACTIVE] [RED] Evade Z=1607.49
+[ACTIVE] [RED] Evade Z=1671.4
+[ACTIVE] [RED] Evade Z=1744.08
+[ACTIVE] [RED] Evade Z=1790.44
+[ACTIVE] [RED] Evade Z=1832.79
+[ACTIVE] [RED] Evade Z=1823.21
+[DUTY_EV] team=1 evadeTicks=300 v31?≤Й╟∙?≤Л└═(>3000m)=0% Л╓▒Й╟└(2200~3000)=0% ?│Л┼╧(<2200)=0%
+[ACTIVE] [RED] Evade Z=1823.83
+[ACTIVE] [RED] Evade Z=1835.89
+runner:local/env:0	num_steps=[2233] | total rewards=[-142.8286] | termination= [ownship destroyed]
+[seed 3] reward=  -142.83 ownHP=-0.0112 tgtHP=1.0000 ownship destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.0000 taken=1.0112 mean_reward=-142.83
+tacview log saved (last episode)
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 6 OBFM_RED round1 sep=610m alt=4953m spd=256m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] Evade Z=4865.06
+[ACTIVE] [RED] Evade Z=4608.39
+[ACTIVE] [RED] Evade Z=4139.84
+[ACTIVE] [RED] Evade Z=3445.45
+[ACTIVE] [RED] ClimbOut Z=1744.12
+[ACTIVE] [RED] Evade Z=1727.22
+[ACTIVE] [RED] Evade Z=1307.45
+[ACTIVE] [RED] Evade Z=1542.6
+[ACTIVE] [RED] Evade Z=2076.54
+[ACTIVE] [RED] Evade Z=2649.28
+[ACTIVE] [RED] Evade Z=3177.01
+[DUTY_EV] team=1 evadeTicks=300 v31?≤Й╟∙?≤Л└═(>3000m)=0% Л╓▒Й╟└(2200~3000)=0% ?│Л┼╧(<2200)=0%
+[ACTIVE] [RED] Evade Z=3619.82
+[ACTIVE] [RED] Evade Z=3937.33
+[ACTIVE] [RED] Evade Z=4093.31
+[ACTIVE] [RED] Evade Z=3975.87
+[ACTIVE] [RED] Evade Z=3545.75
+[ACTIVE] [RED] Evade Z=2837.72
+[ACTIVE] [RED] ClimbOut Z=1845.68
+[ACTIVE] [RED] Evade Z=1395.03
+[ACTIVE] [RED] LeadPredict dist=459.541 dV=-20.1146 thr=0.564968 om=1.13445 lt=1.24778
+[ACTIVE] [RED] Evade Z=1841.89
+[ACTIVE] [RED] Evade Z=2543.97
+[ACTIVE] [RED] Evade Z=3152.19
+[DUTY_EV] team=1 evadeTicks=600 v31?≤Й╟∙?≤Л└═(>3000m)=0% Л╓▒Й╟└(2200~3000)=0% ?│Л┼╧(<2200)=0%
+[ACTIVE] [RED] Evade Z=3649.23
+[ACTIVE] [RED] Evade Z=4071.66
+[ACTIVE] [RED] Evade Z=4349.98
+[ACTIVE] [RED] Evade Z=4426.94
+[ACTIVE] [RED] Evade Z=4339.99
+runner:local/env:0	num_steps=[5487] | total rewards=[-175.3132] | termination= [ownship destroyed]
+[seed 6] reward=  -175.31 ownHP=-0.0057 tgtHP=1.0000 ownship destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.0000 taken=1.0057 mean_reward=-175.31
+tacview log saved (last episode)
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 9 OBFM_RED round1 sep=610m alt=7962m spd=289m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] Evade Z=7696.78
+[ACTIVE] [RED] Evade Z=7318.55
+[ACTIVE] [RED] Evade Z=6758.12
+[ACTIVE] [RED] Evade Z=5992.59
+[ACTIVE] [RED] Evade Z=5044.71
+[ACTIVE] [RED] Evade Z=3961.99
+[ACTIVE] [RED] ClimbOut Z=1910.55
+[ACTIVE] [RED] Evade Z=1890.31
+[ACTIVE] [RED] Evade Z=1362.64
+[ACTIVE] [RED] Evade Z=1788.74
+[ACTIVE] [RED] Evade Z=2202.48
+[DUTY_EV] team=1 evadeTicks=300 v31?≤Й╟∙?≤Л└═(>3000m)=0% Л╓▒Й╟└(2200~3000)=0% ?│Л┼╧(<2200)=0%
+[ACTIVE] [RED] Evade Z=2580.36
+[ACTIVE] [RED] Evade Z=2856.45
+[ACTIVE] [RED] Evade Z=3013.75
+[ACTIVE] [RED] Evade Z=3062.83
+[ACTIVE] [RED] Evade Z=2970.32
+[ACTIVE] [RED] Evade Z=2779.62
+[ACTIVE] [RED] Evade Z=2516.64
+[ACTIVE] [RED] LeadPredict dist=64.8899 dV=-5.81317 thr=0.992 om=0 lt=0.192223
+[ACTIVE] [RED] Evade Z=2056.16
+[ACTIVE] [RED] ClimbOut Z=1414.57
+[ACTIVE] [RED] Evade Z=1302.27
+[ACTIVE] [RED] LeadPredict dist=411.875 dV=3.60107 thr=0.669867 om=1.02477 lt=1.21973
+[ACTIVE] [RED] LeadPredict dist=682.564 dV=-18.5713 thr=0.815479 om=1.37278 lt=2.24959
+[ACTIVE] [RED] LeadPredict dist=947.363 dV=30.6092 thr=0.716394 om=1.76213 lt=3
+[ACTIVE] [RED] LeadPredict dist=66.9974 dV=-15.176 thr=0.897919 om=0.810677 lt=0.233352
+[ACTIVE] [RED] LeadPredict dist=915.045 dV=-16.6679 thr=1 om=1.34757 lt=3
+[ACTIVE] [RED] LeadPredict dist=1061.74 dV=35.9079 thr=0.785307 om=1.83189 lt=3
+[ACTIVE] [RED] LeadPredict dist=482.793 dV=-4.7843 thr=0.851335 om=1.51702 lt=1.6367
+[ACTIVE] [RED] LeadPredict dist=416.374 dV=-1.69766 thr=0.851117 om=0.223477 lt=1.41129
+[ACTIVE] [RED] LeadPredict dist=480.895 dV=8.1796 thr=0.750981 om=0.796325 lt=1.50944
+[DUTY] team=1 ticks=600 v27а╬╦╩а╤аь=0.666667% v21╧Пе╘©╧цЬ=84.6667% v17╠к╣╣а╤╟г=93.8333% v17╫╫╥тюШ©К=45.3333% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=34.8333% v23bа╤╟г=72.1667% v23b╫га╕юШ©К=53.5%
+[ACTIVE] [RED] ClimbOut Z=1318.8
+[ACTIVE] [RED] LeadPredict dist=134.721 dV=19.7545 thr=0.658071 om=3.77451 lt=0.4032
+[ACTIVE] [RED] LeadPredict dist=238.585 dV=-5.65884 thr=0.861393 om=1.23283 lt=0.81536
+[ACTIVE] [RED] LeadPredict dist=68.3185 dV=2.72653 thr=0.88 om=0.318435 lt=0.25038
+[ACTIVE] [RED] LeadPredict dist=119.809 dV=-9.98013 thr=0.893884 om=1.91168 lt=0.483882
+[ACTIVE] [RED] LeadPredict dist=252.368 dV=15.1245 thr=0.698506 om=2.02887 lt=1.08126
+[ACTIVE] [RED] LeadPredict dist=236.793 dV=-17.9539 thr=1 om=0.514709 lt=1.10197
+[ACTIVE] [RED] LeadPredict dist=346.502 dV=3.0352 thr=0.919256 om=0.559571 lt=1.66309
+[ACTIVE] [RED] LeadPredict dist=632.083 dV=20.166 thr=0.758007 om=1.20225 lt=2.85873
+[ACTIVE] [RED] LeadPredict dist=235.172 dV=-12.6038 thr=1 om=1.38476 lt=1.0731
+[ACTIVE] [RED] LeadPredict dist=72.6412 dV=7.30505 thr=0.821657 om=0.248262 lt=0.309252
+[DUTY] team=1 ticks=1200 v27а╬╦╩а╤аь=0.416667% v21╧Пе╘©╧цЬ=88.9167% v17╠к╣╣а╤╟г=96.5833% v17╫╫╥тюШ©К=38.9167% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=30.75% v23bа╤╟г=46.25% v23b╫га╕юШ©К=34.0833%
+[ACTIVE] [RED] LeadPredict dist=695.887 dV=-3.7554 thr=1 om=0.432789 lt=2.81053
+[ACTIVE] [RED] LeadPredict dist=1019.66 dV=-17.0794 thr=1 om=1.43066 lt=3
+runner:local/env:0	num_steps=[11999] | total rewards=[-84.4737] | termination= [max time out]
+[seed 9] reward=   -84.47 ownHP=0.8545 tgtHP=0.9950 max time out
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.0050 taken=0.1455 mean_reward=-84.47
+tacview log saved (last episode)
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 12 OBFM_RED round1 sep=610m alt=5889m spd=248m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] Evade Z=5813.06
+[ACTIVE] [RED] Evade Z=5578.47
+[ACTIVE] [RED] Evade Z=5135.98
+[ACTIVE] [RED] Evade Z=4466.66
+[ACTIVE] [RED] Evade Z=3584
+[ACTIVE] [RED] ClimbOut Z=1861.74
+[ACTIVE] [RED] Evade Z=1585.19
+[ACTIVE] [RED] Evade Z=1360.98
+[ACTIVE] [RED] Evade Z=1695.04
+[ACTIVE] [RED] Evade Z=2206.63
+[ACTIVE] [RED] Evade Z=2701.51
+[DUTY_EV] team=1 evadeTicks=300 v31?≤Й╟∙?≤Л└═(>3000m)=0% Л╓▒Й╟└(2200~3000)=0% ?│Л┼╧(<2200)=0%
+[ACTIVE] [RED] Evade Z=3123.09
+[ACTIVE] [RED] Evade Z=3371.06
+[ACTIVE] [RED] Evade Z=3464.23
+[ACTIVE] [RED] Evade Z=3404.67
+[ACTIVE] [RED] Evade Z=3161.82
+[ACTIVE] [RED] Evade Z=2796.38
+[ACTIVE] [RED] Evade Z=2324.74
+[ACTIVE] [RED] Evade Z=1705.27
+[ACTIVE] [RED] LeadPredict dist=378.535 dV=1.95486 thr=0.625046 om=1.21035 lt=1.08704
+[ACTIVE] [RED] LeadPredict dist=125.363 dV=-7.2536 thr=0.787043 om=1.34843 lt=0.412752
+[ACTIVE] [RED] LeadPredict dist=142.106 dV=-9.51712 thr=0.814205 om=1.69278 lt=0.477419
+[ACTIVE] [RED] LeadPredict dist=294.019 dV=15.5361 thr=0.693567 om=1.92645 lt=0.928263
+[ACTIVE] [RED] Evade Z=1784.75
+[ACTIVE] [RED] ClimbOut Z=1587.12
+[ACTIVE] [RED] LeadPredict dist=111.271 dV=9.67145 thr=0.679884 om=3.11591 lt=0.332048
+[ACTIVE] [RED] LeadPredict dist=254.039 dV=-3.60107 thr=0.762787 om=1.46603 lt=0.804391
+[ACTIVE] [RED] LeadPredict dist=166.529 dV=-7.5108 thr=0.777436 om=0.933419 lt=0.533119
+[ACTIVE] [RED] LeadPredict dist=304.031 dV=9.10559 thr=0.73677 om=1.81355 lt=0.944382
+[ACTIVE] [RED] LeadPredict dist=300.245 dV=2.05774 thr=0.738519 om=0.905662 lt=0.933816
+[ACTIVE] [RED] LeadPredict dist=312.358 dV=-8.89981 thr=0.819414 om=1.48607 lt=1.03262
+[DUTY] team=1 ticks=600 v27а╬╦╩а╤аь=0% v21╧Пе╘©╧цЬ=89.8333% v17╠к╣╣а╤╟г=94% v17╫╫╥тюШ©К=2% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=24.8333% v23bа╤╟г=92.1667% v23b╫га╕юШ©К=77.3333%
+[ACTIVE] [RED] LeadPredict dist=591.799 dV=9.05414 thr=0.767597 om=1.66001 lt=1.88062
+[ACTIVE] [RED] LeadPredict dist=309.525 dV=-9.41425 thr=0.850461 om=1.45489 lt=1.04858
+[ACTIVE] [RED] LeadPredict dist=388.483 dV=7.66516 thr=0.788018 om=0.502946 lt=1.26007
+[ACTIVE] [RED] LeadPredict dist=48.2132 dV=0.874542 thr=0.693959 om=0.312461 lt=0.161949
+[ACTIVE] [RED] Evade Z=1995.15
+[DUTY_EV] team=1 evadeTicks=600 v31?≤Й╟∙?≤Л└═(>3000m)=0% Л╓▒Й╟└(2200~3000)=0% ?│Л┼╧(<2200)=0%
+[ACTIVE] [RED] LeadPredict dist=158.594 dV=-0.0514221 thr=0.74 om=2.22467 lt=0.505966
+[ACTIVE] [RED] LeadPredict dist=162.6 dV=3.54965 thr=0.708784 om=2.45602 lt=0.494944
+[ACTIVE] [RED] ClimbOut Z=1507.35
+[ACTIVE] [RED] Evade Z=1495.85
+[ACTIVE] [RED] LeadPredict dist=322.372 dV=1.02887 thr=0.737644 om=1.78936 lt=1.00199
+[ACTIVE] [RED] Evade Z=2536.63
+[ACTIVE] [RED] LeadPredict dist=334.195 dV=4.52707 thr=0.825675 om=1.86854 lt=1.1249
+[ACTIVE] [RED] LeadPredict dist=188.18 dV=10.4946 thr=0.847357 om=1.51848 lt=0.650649
+[ACTIVE] [RED] Evade Z=3299.58
+runner:local/env:0	num_steps=[11868] | total rewards=[-236.8479] | termination= [ownship destroyed]
+[seed 12] reward=  -236.85 ownHP=-0.0040 tgtHP=1.0000 ownship destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.0000 taken=1.0040 mean_reward=-236.85
+tacview log saved (last episode)
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 15 OBFM_RED round1 sep=610m alt=6004m spd=217m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] Evade Z=5933.71
+[ACTIVE] [RED] Evade Z=5732.83
+[ACTIVE] [RED] Evade Z=5323.89
+[ACTIVE] [RED] Evade Z=4688.02
+[ACTIVE] [RED] Evade Z=3861.51
+[ACTIVE] [RED] Evade Z=2874.84
+[ACTIVE] [RED] ClimbOut Z=1856.61
+[ACTIVE] [RED] Evade Z=1401.56
+[ACTIVE] [RED] Evade Z=1420.89
+[ACTIVE] [RED] Evade Z=1841.47
+[ACTIVE] [RED] Evade Z=2309.57
+[DUTY_EV] team=1 evadeTicks=300 v31?≤Й╟∙?≤Л└═(>3000m)=0% Л╓▒Й╟└(2200~3000)=0% ?│Л┼╧(<2200)=0%
+[ACTIVE] [RED] Evade Z=2744.06
+[ACTIVE] [RED] Evade Z=3091.41
+[ACTIVE] [RED] Evade Z=3349.6
+runner:local/env:0	num_steps=[2801] | total rewards=[-148.5123] | termination= [ownship destroyed]
+[seed 15] reward=  -148.51 ownHP=-0.0098 tgtHP=1.0000 ownship destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.0000 taken=1.0098 mean_reward=-148.51
+tacview log saved (last episode)
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 18 OBFM_RED round1 sep=610m alt=6242m spd=272m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] Evade Z=6155.03
+[ACTIVE] [RED] Evade Z=5921.98
+[ACTIVE] [RED] Evade Z=5493.66
+[ACTIVE] [RED] Evade Z=4833.96
+[ACTIVE] [RED] Evade Z=3962.1
+[ACTIVE] [RED] Evade Z=2918.79
+[ACTIVE] [RED] ClimbOut Z=1809.09
+[ACTIVE] [RED] Evade Z=1435.19
+[ACTIVE] [RED] Evade Z=1572.36
+[ACTIVE] [RED] Evade Z=2004.92
+[ACTIVE] [RED] Evade Z=2404.8
+[DUTY_EV] team=1 evadeTicks=300 v31?≤Й╟∙?≤Л└═(>3000m)=0% Л╓▒Й╟└(2200~3000)=0% ?│Л┼╧(<2200)=0%
+[ACTIVE] [RED] Evade Z=2768.92
+[ACTIVE] [RED] Evade Z=3028.75
+[ACTIVE] [RED] Evade Z=3191.38
+[ACTIVE] [RED] Evade Z=3246.36
+[ACTIVE] [RED] Evade Z=3162.42
+[ACTIVE] [RED] Evade Z=3102.95
+[ACTIVE] [RED] Evade Z=2911.52
+[ACTIVE] [RED] Evade Z=2640.09
+[ACTIVE] [RED] Evade Z=2255.07
+[ACTIVE] [RED] Evade Z=1823.28
+[DUTY_EV] team=1 evadeTicks=600 v31?≤Й╟∙?≤Л└═(>3000m)=0% Л╓▒Й╟└(2200~3000)=0% ?│Л┼╧(<2200)=0%
+[ACTIVE] [RED] Evade Z=1413
+[ACTIVE] [RED] LeadPredict dist=270.373 dV=-4.52707 thr=0.88 om=0 lt=0.735369
+[ACTIVE] [RED] LeadPredict dist=154.493 dV=2.31497 thr=0.844013 om=2.0588 lt=0.463946
+[ACTIVE] [RED] Evade Z=1838.25
+[ACTIVE] [RED] Evade Z=1874.52
+runner:local/env:0	num_steps=[5212] | total rewards=[-172.5932] | termination= [ownship destroyed]
+[seed 18] reward=  -172.59 ownHP=-0.0073 tgtHP=1.0000 ownship destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.0000 taken=1.0073 mean_reward=-172.59
+tacview log saved (last episode)
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 21 OBFM_RED round1 sep=610m alt=3325m spd=262m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] Evade Z=3261.92
+[ACTIVE] [RED] Evade Z=3037.16
+[ACTIVE] [RED] Evade Z=2623.72
+[ACTIVE] [RED] Evade Z=2049.19
+[ACTIVE] [RED] Evade Z=1273.59
+[ACTIVE] [RED] ClimbOut Z=1220.25
+[ACTIVE] [RED] Evade Z=1698.1
+[ACTIVE] [RED] Evade Z=2234.89
+[ACTIVE] [RED] Evade Z=2752.27
+[ACTIVE] [RED] Evade Z=3196.2
+[ACTIVE] [RED] Evade Z=3533.01
+[DUTY_EV] team=1 evadeTicks=300 v31?≤Й╟∙?≤Л└═(>3000m)=0% Л╓▒Й╟└(2200~3000)=0% ?│Л┼╧(<2200)=0%
+[ACTIVE] [RED] Evade Z=3691.66
+[ACTIVE] [RED] Evade Z=3590.09
+[ACTIVE] [RED] Evade Z=3249.96
+[ACTIVE] [RED] Evade Z=2765.45
+[ACTIVE] [RED] Evade Z=2166
+[ACTIVE] [RED] Evade Z=1445.69
+[ACTIVE] [RED] Evade Z=1361.97
+[ACTIVE] [RED] Evade Z=1710.34
+[ACTIVE] [RED] Evade Z=2181.34
+[ACTIVE] [RED] Evade Z=2673.37
+[DUTY_EV] team=1 evadeTicks=600 v31?≤Й╟∙?≤Л└═(>3000m)=0% Л╓▒Й╟└(2200~3000)=0% ?│Л┼╧(<2200)=0%
+[ACTIVE] [RED] Evade Z=3093.52
+[ACTIVE] [RED] Evade Z=3391.54
+runner:local/env:0	num_steps=[4699] | total rewards=[-167.4545] | termination= [ownship destroyed]
+[seed 21] reward=  -167.45 ownHP=-0.0088 tgtHP=1.0000 ownship destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.0000 taken=1.0088 mean_reward=-167.45
+tacview log saved (last episode)
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 24 OBFM_RED round1 sep=610m alt=4585m spd=280m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] Evade Z=4516.79
+[ACTIVE] [RED] Evade Z=4285.09
+[ACTIVE] [RED] Evade Z=3829.01
+[ACTIVE] [RED] Evade Z=3112.63
+[ACTIVE] [RED] ClimbOut Z=1690.01
+[ACTIVE] [RED] Evade Z=1508.59
+[ACTIVE] [RED] Evade Z=1286.27
+[ACTIVE] [RED] Evade Z=1736.93
+[ACTIVE] [RED] Evade Z=2205.24
+[ACTIVE] [RED] Evade Z=2651.86
+[ACTIVE] [RED] Evade Z=3012.19
+[DUTY_EV] team=1 evadeTicks=300 v31?≤Й╟∙?≤Л└═(>3000m)=0% Л╓▒Й╟└(2200~3000)=0% ?│Л┼╧(<2200)=0%
+[ACTIVE] [RED] Evade Z=3297.79
+runner:local/env:0	num_steps=[2425] | total rewards=[-144.8049] | termination= [ownship destroyed]
+[seed 24] reward=  -144.80 ownHP=-0.0115 tgtHP=1.0000 ownship destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.0000 taken=1.0115 mean_reward=-144.80
+tacview log saved (last episode)
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 27 OBFM_RED round1 sep=610m alt=2472m spd=205m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] Evade Z=2420.53
+[ACTIVE] [RED] Evade Z=2326.47
+[ACTIVE] [RED] Evade Z=2189.91
+[ACTIVE] [RED] Evade Z=2108.4
+[ACTIVE] [RED] Evade Z=2106.9
+[ACTIVE] [RED] Evade Z=2115.02
+[ACTIVE] [RED] Evade Z=2092.41
+[ACTIVE] [RED] Evade Z=2099.6
+[ACTIVE] [RED] Evade Z=2136.45
+[ACTIVE] [RED] Evade Z=2203.29
+[DUTY_EV] team=1 evadeTicks=300 v31?≤Й╟∙?≤Л└═(>3000m)=0% Л╓▒Й╟└(2200~3000)=0% ?│Л┼╧(<2200)=0%
+[ACTIVE] [RED] Evade Z=2290.43
+[ACTIVE] [RED] Evade Z=2367.22
+[ACTIVE] [RED] Evade Z=2427.66
+[ACTIVE] [RED] Evade Z=2459.18
+[ACTIVE] [RED] Evade Z=2433.11
+[ACTIVE] [RED] Evade Z=2344.97
+[ACTIVE] [RED] Evade Z=2205.32
+[ACTIVE] [RED] Evade Z=2049.71
+[ACTIVE] [RED] Evade Z=1911.91
+[ACTIVE] [RED] Evade Z=1843.08
+[DUTY_EV] team=1 evadeTicks=600 v31?≤Й╟∙?≤Л└═(>3000m)=0% Л╓▒Й╟└(2200~3000)=0% ?│Л┼╧(<2200)=0%
+[ACTIVE] [RED] Evade Z=1831.95
+[ACTIVE] [RED] Evade Z=1839.34
+[ACTIVE] [RED] Evade Z=1873.69
+[ACTIVE] [RED] Evade Z=1923.74
+[ACTIVE] [RED] Evade Z=2020.21
+runner:local/env:0	num_steps=[4604] | total rewards=[-166.0661] | termination= [ownship destroyed]
+[seed 27] reward=  -166.07 ownHP=-0.0013 tgtHP=1.0000 ownship destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.0000 taken=1.0013 mean_reward=-166.07
+tacview log saved (last episode)
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 30 OBFM_RED round1 sep=610m alt=2676m spd=228m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] Evade Z=2635.9
+[ACTIVE] [RED] Evade Z=2523.41
+[ACTIVE] [RED] Evade Z=2288.36
+[ACTIVE] [RED] Evade Z=2033.59
+[ACTIVE] [RED] Evade Z=1801.02
+[ACTIVE] [RED] Evade Z=1623.53
+[ACTIVE] [RED] Evade Z=1463.93
+[ACTIVE] [RED] Evade Z=1377.73
+[ACTIVE] [RED] Evade Z=1602.92
+[ACTIVE] [RED] Evade Z=1923.23
+[DUTY_EV] team=1 evadeTicks=300 v31?≤Й╟∙?≤Л└═(>3000m)=0% Л╓▒Й╟└(2200~3000)=0% ?│Л┼╧(<2200)=0%
+[ACTIVE] [RED] Evade Z=2251.98
+[ACTIVE] [RED] Evade Z=2560.43
+[ACTIVE] [RED] Evade Z=2820.64
+[ACTIVE] [RED] Evade Z=2963.69
+[ACTIVE] [RED] Evade Z=2987.58
+[ACTIVE] [RED] Evade Z=2907.21
+[ACTIVE] [RED] Evade Z=2704.88
+[ACTIVE] [RED] Evade Z=2422.6
+runner:local/env:0	num_steps=[3525] | total rewards=[-155.8604] | termination= [ownship destroyed]
+[seed 30] reward=  -155.86 ownHP=-0.0145 tgtHP=1.0000 ownship destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.0000 taken=1.0145 mean_reward=-155.86
+tacview log saved (last episode)
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 33 OBFM_RED round1 sep=610m alt=5743m spd=211m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] Evade Z=5672.9
+[ACTIVE] [RED] Evade Z=5482.3
+[ACTIVE] [RED] Evade Z=5088
+[ACTIVE] [RED] Evade Z=4455.97
+[ACTIVE] [RED] Evade Z=3624.7
+[ACTIVE] [RED] ClimbOut Z=1747.98
+[ACTIVE] [RED] Evade Z=1436.55
+[ACTIVE] [RED] Evade Z=1440.7
+[ACTIVE] [RED] Evade Z=1975.4
+[ACTIVE] [RED] Evade Z=2545.33
+[ACTIVE] [RED] Evade Z=3072.11
+[DUTY_EV] team=1 evadeTicks=300 v31?≤Й╟∙?≤Л└═(>3000m)=0% Л╓▒Й╟└(2200~3000)=0% ?│Л┼╧(<2200)=0%
+runner:local/env:0	num_steps=[2323] | total rewards=[-143.7098] | termination= [ownship destroyed]
+[seed 33] reward=  -143.71 ownHP=-0.0115 tgtHP=1.0000 ownship destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.0000 taken=1.0115 mean_reward=-143.71
+tacview log saved (last episode)
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 36 OBFM_RED round1 sep=610m alt=1017m spd=299m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] LeadPredict dist=660.086 dV=2.77798 thr=0.966664 om=1.28352 lt=2.47993
+[ACTIVE] [RED] LeadPredict dist=406.155 dV=4.68141 thr=0.943823 om=1.56392 lt=1.75369
+[ACTIVE] [RED] LeadPredict dist=386.064 dV=12.0379 thr=0.735545 om=1.46242 lt=1.742
+[ACTIVE] [RED] LeadPredict dist=482.723 dV=-3.18953 thr=1 om=1.27452 lt=2.36419
+[ACTIVE] [RED] LeadPredict dist=560.528 dV=9.72292 thr=0.883325 om=1.74043 lt=2.38109
+[ACTIVE] [RED] LeadPredict dist=101.993 dV=-3.54964 thr=0.849953 om=0.85407 lt=0.418979
+[ACTIVE] [RED] LeadPredict dist=650.493 dV=-11.009 thr=1 om=0.936348 lt=2.54318
+[ACTIVE] [RED] LeadPredict dist=972.948 dV=2.16064 thr=1 om=1.64696 lt=3
+[ACTIVE] [RED] LeadPredict dist=1265.17 dV=-7.81949 thr=0.795364 om=2.5447 lt=3
+[ACTIVE] [RED] LeadPredict dist=886.986 dV=29.0659 thr=0.730221 om=0.493359 lt=2.82884
+[DUTY] team=1 ticks=600 v27а╬╦╩а╤аь=1.5% v21╧Пе╘©╧цЬ=93.5% v17╠к╣╣а╤╟г=97.8333% v17╫╫╥тюШ©К=44% ╩С╫бе╛╥╔га=0% ╟╜гое╛╥╔га=16.6667% v23bа╤╟г=23.1667% v23b╫га╕юШ©К=23%
+[ACTIVE] [RED] LeadPredict dist=1148.98 dV=-28.6543 thr=1 om=1.4922 lt=3
+[ACTIVE] [RED] LeadPredict dist=800.762 dV=19.8059 thr=0.762329 om=0.251896 lt=2.74334
+[ACTIVE] [RED] LeadPredict dist=1034.3 dV=8.48825 thr=1 om=1.75521 lt=3
+[ACTIVE] [RED] LeadPredict dist=754.487 dV=12.5523 thr=0.849372 om=0.06506 lt=3
+[ACTIVE] [RED] LeadPredict dist=745.983 dV=0.154327 thr=0.998148 om=0.049356 lt=0
+[ACTIVE] [RED] LeadPredict dist=713.344 dV=13.6327 thr=0.836408 om=1.6757 lt=0
+[ACTIVE] [RED] LeadPredict dist=621.999 dV=-3.0352 thr=1 om=0.307572 lt=2.64685
+runner:local/env:0	num_steps=[6488] | total rewards=[409.2089] | termination= [target destroyed]
+[seed 36] reward=   409.21 ownHP=1.0000 tgtHP=-0.0009 target destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=1.0009 taken=0.0000 mean_reward=409.21
+tacview log saved (last episode)
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 39 OBFM_RED round1 sep=610m alt=4248m spd=230m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] Evade Z=4191.35
+[ACTIVE] [RED] Evade Z=3992.35
+[ACTIVE] [RED] Evade Z=3565.79
+[ACTIVE] [RED] Evade Z=2893.04
+[ACTIVE] [RED] ClimbOut Z=1652.55
+[ACTIVE] [RED] Evade Z=1451.1
+[ACTIVE] [RED] Evade Z=1286.39
+[ACTIVE] [RED] Evade Z=1581.25
+[ACTIVE] [RED] Evade Z=2139.73
+[ACTIVE] [RED] Evade Z=2755.18
+[ACTIVE] [RED] Evade Z=3331.87
+[DUTY_EV] team=1 evadeTicks=300 v31?≤Й╟∙?≤Л└═(>3000m)=0% Л╓▒Й╟└(2200~3000)=0% ?│Л┼╧(<2200)=0%
+[ACTIVE] [RED] Evade Z=3793.95
+[ACTIVE] [RED] Evade Z=4012
+[ACTIVE] [RED] Evade Z=3932.45
+[ACTIVE] [RED] Evade Z=3571.36
+[ACTIVE] [RED] Evade Z=2977.68
+[ACTIVE] [RED] Evade Z=2059.42
+[ACTIVE] [RED] ClimbOut Z=1477.88
+[ACTIVE] [RED] Evade Z=1289.84
+[ACTIVE] [RED] Evade Z=1840.79
+[ACTIVE] [RED] Evade Z=2345.55
+[ACTIVE] [RED] Evade Z=2821.44
+[DUTY_EV] team=1 evadeTicks=600 v31?≤Й╟∙?≤Л└═(>3000m)=0% Л╓▒Й╟└(2200~3000)=0% ?│Л┼╧(<2200)=0%
+[ACTIVE] [RED] Evade Z=3202.7
+runner:local/env:0	num_steps=[4532] | total rewards=[-165.6805] | termination= [ownship destroyed]
+[seed 39] reward=  -165.68 ownHP=-0.0057 tgtHP=1.0000 ownship destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.0000 taken=1.0057 mean_reward=-165.68
+tacview log saved (last episode)
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 42 OBFM_RED round1 sep=610m alt=4792m spd=263m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] Evade Z=4708.57
+[ACTIVE] [RED] Evade Z=4448.94
+[ACTIVE] [RED] Evade Z=3974.31
+[ACTIVE] [RED] Evade Z=3266.72
+[ACTIVE] [RED] ClimbOut Z=1692.22
+[ACTIVE] [RED] Evade Z=1431.96
+[ACTIVE] [RED] Evade Z=1246.79
+[ACTIVE] [RED] Evade Z=1862.16
+[ACTIVE] [RED] Evade Z=2408.02
+runner:local/env:0	num_steps=[1999] | total rewards=[-140.3520] | termination= [ownship destroyed]
+[seed 42] reward=  -140.35 ownHP=-0.0059 tgtHP=1.0000 ownship destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.0000 taken=1.0059 mean_reward=-140.35
+tacview log saved (last episode)
+=== B Л≥└Кё▄ ===

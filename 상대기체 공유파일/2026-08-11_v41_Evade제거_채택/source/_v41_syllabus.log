@@ -1,0 +1,654 @@
+[준비] Rule_mine.xml = kwon판 (DECO_TargetLOSCheck 없음) 확인
+
+########## 기준선 v40 (Rule_v40.xml) ##########
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+
+시험 기체: AIP_v40.dll   상대: AIP_v7.dll, AIP_kwon.dll   반복 3회/조합  120초
+
+[1] 정면 머지 - 3km 정면 접근, 동고도·동속. 머지 각도전 시험(최대 약점)
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[111.9841] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[59.2709] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[75.3355] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+     vs AIP_v7.dll           WEAK  [P0/W3/F0] (중립)   사격  7.0 피격  0.0 뒤   8% 물림   4% 최소ATA  0.5° 최저고도 1575m
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[576.1074] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[5507] | total rewards=[656.5519] | termination= [target destroyed]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[256.6494] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+     vs AIP_kwon.dll         WEAK  [P1/W2/F0] (중립)   사격101.7 피격  0.0 뒤  11% 물림   1% 최소ATA  0.1° 최저고도 1389m
+
+[2] 공세 BFM - 우리가 적 800m 뒤. 킬 전환력 시험
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[606.2596] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[584.4199] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[694.6613] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+     vs AIP_v7.dll           FAIL  [P0/W1/F2] (전환 실패)   사격  0.7 피격  0.0 뒤  26% 물림   0% 최소ATA  1.0° 최저고도 1345m
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[758.3846] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[789.4562] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[5646] | total rewards=[783.9311] | termination= [target destroyed]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+     vs AIP_kwon.dll         FAIL  [P2/W0/F1] (전환 실패)   사격190.3 피격  0.0 뒤  26% 물림   0% 최소ATA  0.0° 최저고도 1384m
+
+[3] 방어 BFM - 적이 우리 800m 뒤. Evade 실효성 시험
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[465.0908] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[507.7099] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[443.6091] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+     vs AIP_v7.dll           WEAK  [P0/W3/F0] (생존만)   사격  0.0 피격 21.7 뒤   6% 물림   6% 최소ATA  2.8° 최저고도 1873m
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[3634] | total rewards=[315.1424] | termination= [target destroyed]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[285.0027] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[186] | total rewards=[-122.1815] | termination= [ownship destroyed]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+     vs AIP_kwon.dll         FAIL  [P0/W1/F2] (계속 물림(38%))   사격158.0 피격199.0 뒤  17% 물림  50% 최소ATA  0.0° 최저고도 1336m
+
+[4] 에너지 열세 - 우리가 1500m 아래 + 저속. 에너지 관리 시험
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[46.1161] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[41.6101] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[17.0012] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+     vs AIP_v7.dll           WEAK  [P0/W3/F0] (생존)   사격  0.3 피격  0.0 뒤   5% 물림   3% 최소ATA  0.8° 최저고도 4810m
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[-61.0825] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[-54.9273] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[283.9859] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+     vs AIP_kwon.dll         WEAK  [P0/W3/F0] (생존)   사격  0.0 피격  0.0 뒤   0% 물림   0% 최소ATA 28.5° 최저고도 5433m
+
+[5] 에너지 우세 - 우리가 1500m 위 + 고속. 우위 활용 시험
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[15.3669] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[2.3641] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[42.6765] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+     vs AIP_v7.dll           FAIL  [P0/W0/F3] (전환 실패)   사격  0.0 피격  1.3 뒤   6% 물림   5% 최소ATA  3.8° 최저고도 1247m
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[740.2233] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[666.8433] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[4095] | total rewards=[589.0376] | termination= [target destroyed]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+     vs AIP_kwon.dll         FAIL  [P2/W0/F1] (전환 실패)   사격273.0 피격  0.0 뒤  15% 물림   0% 최소ATA  0.1° 최저고도 1264m
+
+[6] 측면 진입 - 90° 교차(빔). 일반 기하 시험
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[462.3932] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[319.7515] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[348.4386] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+     vs AIP_v7.dll           WEAK  [P1/W2/F0] (뒤2/물림0)   사격  2.7 피격  0.0 뒤  12% 물림   0% 최소ATA  0.5° 최저고도 1896m
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[4967] | total rewards=[536.1491] | termination= [target destroyed]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[634.7315] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[741.8216] | termination= [max time out]
+Remove Space Complete.
+     vs AIP_kwon.dll         WEAK  [P2/W1/F0] (뒤6/물림0)   사격233.7 피격  0.0 뒤  22% 물림   0% 최소ATA  0.0° 최저고도 2061m
+
+=== 종합: PASS 0 / WEAK 7 / FAIL 5  (총 12)
+    결과 저장: syllabus_AIP_v40.json
+
+########## A: Evade 제거 (Rule_noevade.xml) ##########
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+
+시험 기체: AIP_v40.dll   상대: AIP_v7.dll, AIP_kwon.dll   반복 3회/조합  120초
+
+[1] 정면 머지 - 3km 정면 접근, 동고도·동속. 머지 각도전 시험(최대 약점)
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[111.8666] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[68.7369] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[98.0130] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+     vs AIP_v7.dll           WEAK  [P0/W3/F0] (중립)   사격  9.0 피격  0.0 뒤  10% 물림   4% 최소ATA  0.3° 최저고도 1619m
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[681.2133] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[290.0637] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[776.2774] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+     vs AIP_kwon.dll         WEAK  [P1/W2/F0] (중립)   사격 37.7 피격  0.0 뒤   8% 물림   1% 최소ATA  0.2° 최저고도 1392m
+
+[2] 공세 BFM - 우리가 적 800m 뒤. 킬 전환력 시험
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[606.2596] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[584.4199] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[694.6613] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+     vs AIP_v7.dll           FAIL  [P0/W1/F2] (전환 실패)   사격  0.7 피격  0.0 뒤  26% 물림   0% 최소ATA  1.0° 최저고도 1345m
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[758.3846] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[789.4562] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[5646] | total rewards=[783.9311] | termination= [target destroyed]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+     vs AIP_kwon.dll         FAIL  [P2/W0/F1] (전환 실패)   사격190.3 피격  0.0 뒤  26% 물림   0% 최소ATA  0.0° 최저고도 1384m
+
+[3] 방어 BFM - 적이 우리 800m 뒤. Evade 실효성 시험
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[483.7835] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[400.1190] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[574.4054] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+     vs AIP_v7.dll           PASS  [P3/W0/F0] (반전 성공)   사격  1.3 피격  4.7 뒤  15% 물림  14% 최소ATA  0.4° 최저고도 1661m
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[5602] | total rewards=[445.7494] | termination= [target destroyed]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[349.5586] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[240] | total rewards=[-122.6290] | termination= [ownship destroyed]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+     vs AIP_kwon.dll         FAIL  [P1/W0/F2] (계속 물림(30%))   사격298.3 피격385.3 뒤  25% 물림  50% 최소ATA  0.0° 최저고도 1363m
+
+[4] 에너지 열세 - 우리가 1500m 아래 + 저속. 에너지 관리 시험
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[4.9717] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[39.4730] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[19.6203] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+     vs AIP_v7.dll           WEAK  [P0/W3/F0] (생존)   사격  0.0 피격  0.0 뒤   6% 물림   4% 최소ATA  1.9° 최저고도 4427m
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[-61.0825] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[-54.9273] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[283.9859] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+     vs AIP_kwon.dll         WEAK  [P0/W3/F0] (생존)   사격  0.0 피격  0.0 뒤   0% 물림   0% 최소ATA 28.5° 최저고도 5433m
+
+[5] 에너지 우세 - 우리가 1500m 위 + 고속. 우위 활용 시험
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[-8.9099] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[13.4245] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[120.7364] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+     vs AIP_v7.dll           FAIL  [P0/W0/F3] (전환 실패)   사격  0.0 피격  0.0 뒤   5% 물림   4% 최소ATA  8.6° 최저고도 1588m
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[740.2233] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[666.8433] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[4095] | total rewards=[589.0376] | termination= [target destroyed]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+     vs AIP_kwon.dll         FAIL  [P2/W0/F1] (전환 실패)   사격273.0 피격  0.0 뒤  15% 물림   0% 최소ATA  0.1° 최저고도 1264m
+
+[6] 측면 진입 - 90° 교차(빔). 일반 기하 시험
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[462.3932] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[319.7515] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[348.4386] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+     vs AIP_v7.dll           WEAK  [P1/W2/F0] (뒤2/물림0)   사격  2.7 피격  0.0 뒤  12% 물림   0% 최소ATA  0.5° 최저고도 1896m
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[4967] | total rewards=[536.1491] | termination= [target destroyed]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[501.4392] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[741.8216] | termination= [max time out]
+Remove Space Complete.
+     vs AIP_kwon.dll         WEAK  [P2/W1/F0] (뒤6/물림0)   사격 44.7 피격  0.0 뒤  16% 물림   0% 최소ATA  0.1° 최저고도 2068m
+
+=== 종합: PASS 1 / WEAK 6 / FAIL 5  (총 12)
+    결과 저장: syllabus_AIP_v40.json
+=== Syllabus 대조 완료 ===
