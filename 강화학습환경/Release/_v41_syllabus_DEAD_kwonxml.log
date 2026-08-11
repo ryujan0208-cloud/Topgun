@@ -1,0 +1,160 @@
+########## Í∏∞Ï§ÄÏÑ† v40 (Rule_v40.xml) ##########
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+
+ÏãúÌóò Í∏∞Ï≤¥: AIP_v40.dll   ÏÉÅÎåÄ: AIP_v7.dll, AIP_kwon.dll   Î∞òÎ≥µ 3Ìöå/Ï°∞Ìï©  120Ï¥à
+
+[1] Ï†ïÎ©¥ Î®∏ÏßÄ - 3km Ï†ïÎ©¥ Ï†ëÍ∑º, ÎèôÍ≥†ÎèÑ¬∑ÎèôÏÜç. Î®∏ÏßÄ Í∞ÅÎèÑÏ†Ñ ÏãúÌóò(ÏµúÎåÄ ÏïΩÏ†ê)
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[111.9841] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[59.2709] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[75.3355] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialization Failed: Error at line 47: -> Node not recognized: DECO_TargetLOSCheck
+It appears that the process failed while parsing the XML.
+ -Please check whether the XML file is located in the correct path.
+ -Please check whether the XML file is calling any node with an invalid or incorrect name.
+ -Please check whether the node was added to the Factory when building the DLL.
+Remove Space Complete.
+     vs AIP_v7.dll           WEAK  [P0/W3/F0] (Ï§ëÎ¶Ω)   ÏÇ¨Í≤©  7.0 ÌîºÍ≤©  0.0 Îí§   8% Î¨ºÎ¶º   4% ÏµúÏÜåATA  0.5¬∞ ÏµúÏ†ÄÍ≥†ÎèÑ 1575m
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+Traceback (most recent call last):
+  File "C:\Users\TFX5470H\Desktop\.topgun\∞≠»≠«–Ω¿»Ø∞Ê\Release\src\dogfight\ai\native_bt.py", line 146, in CreateBehaviorTree
+    self.AIPilotDLL.CreateBehaviorTree(my_id, my_force_id)
+OSError: [WinError -529697949] Windows Error 0xe06d7363
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\TFX5470H\Desktop\.topgun\∞≠»≠«–Ω¿»Ø∞Ê\Release\bfm_syllabus.py", line 271, in <module>
+    main()
+  File "C:\Users\TFX5470H\Desktop\.topgun\∞≠»≠«–Ω¿»Ø∞Ê\Release\bfm_syllabus.py", line 227, in main
+    r = run_scenario(sid, a.own, opp, a.time, not a.no_jitter, seed=1000*sid+k)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TFX5470H\Desktop\.topgun\∞≠»≠«–Ω¿»Ø∞Ê\Release\bfm_syllabus.py", line 168, in run_scenario
+    _, _, term, trunc, info = env.step(np.zeros(4, dtype=np.float32))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TFX5470H\Desktop\.topgun\∞≠»≠«–Ω¿»Ø∞Ê\Release\src\dogfight\envs\single_agent_env.py", line 292, in step
+    failure = self._advance_simulation_step_ratio(action)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TFX5470H\Desktop\.topgun\∞≠»≠«–Ω¿»Ø∞Ê\Release\src\dogfight\envs\single_agent_env.py", line 377, in _advance_simulation_step_ratio
+    self._step_target_aircraft()
+  File "C:\Users\TFX5470H\Desktop\.topgun\∞≠»≠«–Ω¿»Ø∞Ê\Release\src\dogfight\envs\single_agent_env.py", line 511, in _step_target_aircraft
+    result = self._target_action_provider.compute_action(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TFX5470H\Desktop\.topgun\∞≠»≠«–Ω¿»Ø∞Ê\Release\src\dogfight\ai\bt_action_provider.py", line 75, in compute_action
+    self._ensure_behavior_tree(context)
+  File "C:\Users\TFX5470H\Desktop\.topgun\∞≠»≠«–Ω¿»Ø∞Ê\Release\src\dogfight\ai\bt_action_provider.py", line 48, in _ensure_behavior_tree
+    self.ai_pilot.CreateBehaviorTree(fighter_id, force_side)
+  File "C:\Users\TFX5470H\Desktop\.topgun\∞≠»≠«–Ω¿»Ø∞Ê\Release\src\dogfight\ai\native_bt.py", line 148, in CreateBehaviorTree
+    raise OSError(
+OSError: CreateBehaviorTree failed dll=C:\Users\TFX5470H\Desktop\.topgun\∞≠»≠«–Ω¿»Ø∞Ê\Release\AIP_kwon.dll my_id=2 force=2
+
+########## A: Evade Ï†úÍ±∞ (Rule_noevade.xml) ##########
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+
+ÏãúÌóò Í∏∞Ï≤¥: AIP_v40.dll   ÏÉÅÎåÄ: AIP_v7.dll, AIP_kwon.dll   Î∞òÎ≥µ 3Ìöå/Ï°∞Ìï©  120Ï¥à
+
+[1] Ï†ïÎ©¥ Î®∏ÏßÄ - 3km Ï†ïÎ©¥ Ï†ëÍ∑º, ÎèôÍ≥†ÎèÑ¬∑ÎèôÏÜç. Î®∏ÏßÄ Í∞ÅÎèÑÏ†Ñ ÏãúÌóò(ÏµúÎåÄ ÏïΩÏ†ê)
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[111.8666] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[68.7369] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+runner:local/env:0	num_steps=[7200] | total rewards=[98.0130] | termination= [max time out]
+Remove Space Complete.
+total: 2
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialization Failed: Error at line 47: -> Node not recognized: DECO_TargetLOSCheck
+It appears that the process failed while parsing the XML.
+ -Please check whether the XML file is located in the correct path.
+ -Please check whether the XML file is calling any node with an invalid or incorrect name.
+ -Please check whether the node was added to the Factory when building the DLL.
+Remove Space Complete.
+     vs AIP_v7.dll           WEAK  [P0/W3/F0] (Ï§ëÎ¶Ω)   ÏÇ¨Í≤©  9.0 ÌîºÍ≤©  0.0 Îí§  10% Î¨ºÎ¶º   4% ÏµúÏÜåATA  0.3¬∞ ÏµúÏ†ÄÍ≥†ÎèÑ 1619m
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+Traceback (most recent call last):
+  File "C:\Users\TFX5470H\Desktop\.topgun\∞≠»≠«–Ω¿»Ø∞Ê\Release\src\dogfight\ai\native_bt.py", line 146, in CreateBehaviorTree
+    self.AIPilotDLL.CreateBehaviorTree(my_id, my_force_id)
+OSError: [WinError -529697949] Windows Error 0xe06d7363
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\TFX5470H\Desktop\.topgun\∞≠»≠«–Ω¿»Ø∞Ê\Release\bfm_syllabus.py", line 271, in <module>
+    main()
+  File "C:\Users\TFX5470H\Desktop\.topgun\∞≠»≠«–Ω¿»Ø∞Ê\Release\bfm_syllabus.py", line 227, in main
+    r = run_scenario(sid, a.own, opp, a.time, not a.no_jitter, seed=1000*sid+k)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TFX5470H\Desktop\.topgun\∞≠»≠«–Ω¿»Ø∞Ê\Release\bfm_syllabus.py", line 168, in run_scenario
+    _, _, term, trunc, info = env.step(np.zeros(4, dtype=np.float32))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TFX5470H\Desktop\.topgun\∞≠»≠«–Ω¿»Ø∞Ê\Release\src\dogfight\envs\single_agent_env.py", line 292, in step
+    failure = self._advance_simulation_step_ratio(action)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TFX5470H\Desktop\.topgun\∞≠»≠«–Ω¿»Ø∞Ê\Release\src\dogfight\envs\single_agent_env.py", line 377, in _advance_simulation_step_ratio
+    self._step_target_aircraft()
+  File "C:\Users\TFX5470H\Desktop\.topgun\∞≠»≠«–Ω¿»Ø∞Ê\Release\src\dogfight\envs\single_agent_env.py", line 511, in _step_target_aircraft
+    result = self._target_action_provider.compute_action(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TFX5470H\Desktop\.topgun\∞≠»≠«–Ω¿»Ø∞Ê\Release\src\dogfight\ai\bt_action_provider.py", line 75, in compute_action
+    self._ensure_behavior_tree(context)
+  File "C:\Users\TFX5470H\Desktop\.topgun\∞≠»≠«–Ω¿»Ø∞Ê\Release\src\dogfight\ai\bt_action_provider.py", line 48, in _ensure_behavior_tree
+    self.ai_pilot.CreateBehaviorTree(fighter_id, force_side)
+  File "C:\Users\TFX5470H\Desktop\.topgun\∞≠»≠«–Ω¿»Ø∞Ê\Release\src\dogfight\ai\native_bt.py", line 148, in CreateBehaviorTree
+    raise OSError(
+OSError: CreateBehaviorTree failed dll=C:\Users\TFX5470H\Desktop\.topgun\∞≠»≠«–Ω¿»Ø∞Ê\Release\AIP_kwon.dll my_id=2 force=2
+=== Syllabus ÎåÄÏ°∞ ÏôÑÎ£å ===
