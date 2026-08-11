@@ -1,0 +1,128 @@
+########## v32 vs AIP_kwon.dll ##########
+[match] seed 0 round1 sep=610m alt=6057m
+[seed 0] reward=  1176.90 ownHP=0.4804 tgtHP=0.7314 max time out
+[match] seed 1 round2 sep=762m alt=1546m
+[seed 1] reward=  1084.34 ownHP=0.9637 tgtHP=0.9690 max time out
+[match] seed 2 round3 sep=914m alt=7868m
+[seed 2] reward=   277.96 ownHP=0.6985 tgtHP=0.9051 max time out
+[match] seed 3 round1 sep=610m alt=1799m
+[seed 3] reward=   621.49 ownHP=0.9371 tgtHP=-0.0019 target destroyed
+[match] seed 4 round2 sep=762m alt=6887m
+[seed 4] reward=  1595.59 ownHP=0.5286 tgtHP=0.2202 max time out
+[match] seed 5 round3 sep=914m alt=7099m
+[seed 5] reward=  1416.22 ownHP=0.7099 tgtHP=-0.0004 target destroyed
+[match] seed 6 round1 sep=610m alt=4953m
+[seed 6] reward=  1193.54 ownHP=0.4969 tgtHP=0.7442 max time out
+[match] seed 7 round2 sep=762m alt=9121m
+[seed 7] reward=   877.56 ownHP=0.5137 tgtHP=-0.0053 target destroyed
+[match] seed 8 round3 sep=914m alt=1075m
+[seed 8] reward=  1251.64 ownHP=0.9924 tgtHP=-0.0006 target destroyed
+[match] seed 9 round1 sep=610m alt=7962m
+[seed 9] reward=  1126.10 ownHP=0.4805 tgtHP=0.7184 max time out
+[match] seed 10 round2 sep=762m alt=3219m
+[seed 10] reward=   422.43 ownHP=0.6135 tgtHP=-0.0015 target destroyed
+[match] seed 11 round3 sep=914m alt=4420m
+[seed 11] reward=   559.23 ownHP=0.7209 tgtHP=0.8907 max time out
+[match] seed 12 round1 sep=610m alt=5889m
+[seed 12] reward=  1089.23 ownHP=0.4804 tgtHP=0.7314 max time out
+[match] seed 13 round2 sep=762m alt=5807m
+[seed 13] reward=   918.21 ownHP=0.5721 tgtHP=-0.0019 target destroyed
+[match] seed 14 round3 sep=914m alt=2843m
+[seed 14] reward=    39.27 ownHP=0.9904 tgtHP=0.9346 max time out
+
+########## v32 vs AIP_junghwan.dll ##########
+[match] seed 0 round1 sep=610m alt=6057m
+[seed 0] reward=   894.99 ownHP=0.4802 tgtHP=-0.0023 target destroyed
+[match] seed 1 round2 sep=762m alt=1546m
+[seed 1] reward=  1180.97 ownHP=0.9637 tgtHP=-0.0006 target destroyed
+[match] seed 2 round3 sep=914m alt=7868m
+[seed 2] reward=   723.76 ownHP=0.7097 tgtHP=-0.0061 target destroyed
+[match] seed 3 round1 sep=610m alt=1799m
+[seed 3] reward=   986.75 ownHP=0.9371 tgtHP=-0.0015 target destroyed
+[match] seed 4 round2 sep=762m alt=6887m
+[seed 4] reward=   770.83 ownHP=0.5283 tgtHP=-0.0006 target destroyed
+[match] seed 5 round3 sep=914m alt=7099m
+[seed 5] reward=  1068.09 ownHP=0.6983 tgtHP=0.3853 max time out
+[match] seed 6 round1 sep=610m alt=4953m
+[seed 6] reward=   609.70 ownHP=0.4967 tgtHP=-0.0016 target destroyed
+[match] seed 7 round2 sep=762m alt=9121m
+[seed 7] reward=   746.58 ownHP=0.5577 tgtHP=-0.0059 target destroyed
+[match] seed 8 round3 sep=914m alt=1075m
+[seed 8] reward=   633.58 ownHP=0.9924 tgtHP=-0.0010 target destroyed
+[match] seed 9 HABFM round1 sep=610m alt=7962m spd=289m/s
+[seed 9] reward=   921.76 ownHP=0.4557 tgtHP=-0.0046 target destroyed
+[match] seed 10 HABFM round2 sep=762m alt=3219m spd=234m/s
+[seed 10] reward=   591.93 ownHP=0.7693 tgtHP=-0.0010 target destroyed
+[match] seed 11 HABFM round3 sep=914m alt=4420m spd=280m/s
+[seed 11] reward=   906.38 ownHP=0.8642 tgtHP=-0.0082 target destroyed
+[match] seed 12 HABFM round1 sep=610m alt=5889m spd=248m/s
+[seed 12] reward=   775.96 ownHP=0.7103 tgtHP=-0.0017 target destroyed
+[match] seed 13 HABFM round2 sep=762m alt=5807m spd=237m/s
+[seed 13] reward=   461.72 ownHP=0.8052 tgtHP=-0.0005 target destroyed
+[match] seed 14 HABFM round3 sep=914m alt=2843m spd=280m/s
+[seed 14] reward=   721.17 ownHP=0.9910 tgtHP=-0.0064 target destroyed
+
+########## v40 vs AIP_kwon.dll ##########
+[match] seed 0 HABFM round1 sep=610m alt=6057m spd=258m/s
+[seed 0] reward=   745.87 ownHP=0.6413 tgtHP=0.8016 max time out
+[match] seed 1 HABFM round2 sep=762m alt=1546m spd=217m/s
+[seed 1] reward=  1450.76 ownHP=0.9615 tgtHP=-0.0045 target destroyed
+[match] seed 2 HABFM round3 sep=914m alt=7868m spd=241m/s
+[seed 2] reward=   455.18 ownHP=0.8893 tgtHP=0.9474 max time out
+[match] seed 3 HABFM round1 sep=610m alt=1799m spd=270m/s
+[seed 3] reward=  1320.32 ownHP=0.9380 tgtHP=-0.0018 target destroyed
+[match] seed 4 HABFM round2 sep=762m alt=6887m spd=297m/s
+[seed 4] reward=  1539.20 ownHP=0.6294 tgtHP=-0.0017 target destroyed
+[match] seed 5 HABFM round3 sep=914m alt=7099m spd=277m/s
+[seed 5] reward=  1331.55 ownHP=0.8654 tgtHP=0.8988 max time out
+[match] seed 6 HABFM round1 sep=610m alt=4953m spd=256m/s
+[seed 6] reward=     5.10 ownHP=0.6421 tgtHP=0.8129 target altitude below min
+[match] seed 7 HABFM round2 sep=762m alt=9121m spd=249m/s
+[seed 7] reward=  1178.38 ownHP=0.8009 tgtHP=0.5948 max time out
+[match] seed 8 HABFM round3 sep=914m alt=1075m spd=265m/s
+[seed 8] reward=   744.69 ownHP=0.9915 tgtHP=-0.0004 target destroyed
+[match] seed 9 HABFM round1 sep=610m alt=7962m spd=289m/s
+[seed 9] reward=   919.10 ownHP=0.4725 tgtHP=0.7348 max time out
+[match] seed 10 HABFM round2 sep=762m alt=3219m spd=234m/s
+[seed 10] reward=   618.46 ownHP=0.7694 tgtHP=-0.0005 target destroyed
+[match] seed 11 HABFM round3 sep=914m alt=4420m spd=280m/s
+[seed 11] reward=   958.79 ownHP=0.8643 tgtHP=-0.0009 target destroyed
+[match] seed 12 HABFM round1 sep=610m alt=5889m spd=248m/s
+[seed 12] reward=   621.55 ownHP=0.7104 tgtHP=-0.0012 target destroyed
+[match] seed 13 HABFM round2 sep=762m alt=5807m spd=237m/s
+[seed 13] reward=   806.06 ownHP=0.7963 tgtHP=-0.0019 target destroyed
+[match] seed 14 HABFM round3 sep=914m alt=2843m spd=280m/s
+[seed 14] reward=  1170.37 ownHP=0.9910 tgtHP=-0.0007 target destroyed
+
+########## v40 vs AIP_junghwan.dll ##########
+[match] seed 0 HABFM round1 sep=610m alt=6057m spd=258m/s
+[seed 0] reward=  1084.10 ownHP=0.6412 tgtHP=-0.0029 target destroyed
+[match] seed 1 HABFM round2 sep=762m alt=1546m spd=217m/s
+[seed 1] reward=  1191.36 ownHP=0.9615 tgtHP=0.3831 max time out
+[match] seed 2 HABFM round3 sep=914m alt=7868m spd=241m/s
+[seed 2] reward=  1050.00 ownHP=0.8954 tgtHP=-0.0016 target destroyed
+[match] seed 3 HABFM round1 sep=610m alt=1799m spd=270m/s
+[seed 3] reward=   429.13 ownHP=0.9380 tgtHP=-0.0006 target destroyed
+  !! seed 4 비정상
+[match] seed 5 HABFM round3 sep=914m alt=7099m spd=277m/s
+[seed 5] reward=  1303.79 ownHP=0.8653 tgtHP=-0.0030 target destroyed
+[match] seed 6 HABFM round1 sep=610m alt=4953m spd=256m/s
+[seed 6] reward=   976.86 ownHP=0.6554 tgtHP=-0.0043 target destroyed
+[match] seed 7 HABFM round2 sep=762m alt=9121m spd=249m/s
+[seed 7] reward=  1036.95 ownHP=0.8009 tgtHP=-0.0042 target destroyed
+[match] seed 8 HABFM round3 sep=914m alt=1075m spd=265m/s
+[seed 8] reward=  1156.27 ownHP=0.9915 tgtHP=-0.0010 target destroyed
+[match] seed 9 HABFM round1 sep=610m alt=7962m spd=289m/s
+[seed 9] reward=   763.05 ownHP=0.4557 tgtHP=-0.0046 target destroyed
+[match] seed 10 HABFM round2 sep=762m alt=3219m spd=234m/s
+[seed 10] reward=  1033.71 ownHP=0.7693 tgtHP=-0.0015 target destroyed
+[match] seed 11 HABFM round3 sep=914m alt=4420m spd=280m/s
+[seed 11] reward=  1155.84 ownHP=0.8642 tgtHP=-0.0025 target destroyed
+[match] seed 12 HABFM round1 sep=610m alt=5889m spd=248m/s
+[seed 12] reward=  1040.79 ownHP=0.7103 tgtHP=-0.0025 target destroyed
+[match] seed 13 HABFM round2 sep=762m alt=5807m spd=237m/s
+[seed 13] reward=   887.79 ownHP=0.8052 tgtHP=-0.0075 target destroyed
+[match] seed 14 HABFM round3 sep=914m alt=2843m spd=280m/s
+[seed 14] reward=   734.12 ownHP=0.9910 tgtHP=-0.0047 target destroyed
+
+=== cold 완료 ===
