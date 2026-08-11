@@ -93,20 +93,29 @@ def apply_match_conditions(env, seed: int):
         f._init_heading = heading
         f._init_speed = spd
 
-    # 상대(target)는 항상 우리 정북 sep 지점. 기하는 **기수 방향**으로만 만든다.
+    # ★ 원칙: **어느 기하도 t=0에 사격이 성립해선 안 된다.**
+    #   사격 조건이 거리 152.4~914.4m AND LOS<=1.0도인데 시작 거리가 610~914m다.
+    #   기수를 상대에게 정확히 맞춰 두면 스폰 첫 프레임부터 맞는다(실측: 1초에 HP 39% 손실).
     a = OBFM_ANGLE_OFF_DEG
     if MATCH_GEOM == "OBFM_BLUE":
-        # 우리가 공세: 상대는 우리 앞에서 등을 보이고, **우리 기수를 a만큼 틀어** 시작.
-        #   -> 우리도 각을 좁혀야 쏠 수 있다(스폰킬 방지, 공세측 우위는 유지).
+        # 우리가 공세: 상대가 앞에서 등을 보이고, 우리 기수를 a만큼 틀어 시작.
+        #   상대는 우리 정북(N축) sep 지점.
+        own_n, own_e, tgt_n, tgt_e = 0.0, 0.0, sep_m, 0.0
         own_hdg, tgt_hdg = a, 0.0
     elif MATCH_GEOM == "OBFM_RED":
-        # 상대가 공세: 상대가 우리 뒤에 있고 **상대 기수를 a만큼 틀어** 시작.
+        # 상대가 공세: 상대가 우리 뒤에 있고, 상대 기수를 a만큼 틀어 시작.
+        own_n, own_e, tgt_n, tgt_e = 0.0, 0.0, sep_m, 0.0
         own_hdg, tgt_hdg = 180.0, 180.0 + a
-    else:  # HABFM — 고애스펙트 중립 머지(서로 마주봄). 각도오프셋 없음.
-        own_hdg, tgt_hdg = 0.0, 180.0
+    else:
+        # HABFM = **3-9 셋업**(운영측 확인: "시작조건이 3-9 셋업인지" -> "맞습니다").
+        #   서로의 3시/9시 방향에 나란히 서서 반대 방향을 본다 = 양쪽 ATA 90도.
+        #   중립이고 t=0 사격이 성립하지 않는다. 정면 마주보기(ATA 0/0)는
+        #   양쪽 스폰킬 + 충돌 코스가 되어 3-9 셋업이 아니다.
+        own_n, own_e, tgt_n, tgt_e = 0.0, 0.0, 0.0, sep_m      # 상대는 우리 **동쪽**(3시)
+        own_hdg, tgt_hdg = 0.0, 180.0                          # 서로 반대 방향
 
-    place(env._sim,        0.0,   0.0, -alt_m, own_hdg)
-    place(env._target_sim, sep_m, 0.0, -alt_m, tgt_hdg)
+    place(env._sim,        own_n, own_e, -alt_m, own_hdg)
+    place(env._target_sim, tgt_n, tgt_e, -alt_m, tgt_hdg)
     return {"seed": seed, "sep_m": sep_m, "alt_m": alt_m, "spd": spd,
             "geom": MATCH_GEOM, "angle_off": (a if MATCH_GEOM.startswith("OBFM") else 0.0),
             "round": seed % len(MATCH_RANGES_FT) + 1}
