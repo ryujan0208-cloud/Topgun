@@ -14,16 +14,13 @@
         <ReactiveFallback>
 
           <!-- 0. 추락 방지.
-               v18: MinAlt 3000 -> 1800.  v40: 1800 -> 1000.
-               ★ 2026-08-11 교정: v40 채택(8/9) 때 Rule_v40.xml만 고치고 이 제출용
-               파일을 안 고쳐 8/9~8/11 제출 조합이 "v40 DLL + v32 MinAlt"였다.
-               실측 대조(같은 15시드 vs jh2): 그 조합 3승12패 / 정상 v40 12승1무2패.
+               v18: MinAlt 3000 -> 1800.
                [근거] VP Z하한이 3500이던 v17까지는 고도가 3358m 아래로 내려갈 일이
                없어 이 분기가 200초간 0회 발동하는 죽은 코드였다. 하한을 1500m로
                내리면서, 그보다 위인 1800m에서 발동하도록 옮겨 실제 안전망으로 살린다.
                (실제 종료 하한은 min_altitude=300m이므로 1800m는 충분한 여유) -->
           <Sequence>
-            <DECO_AltitudeCheck name="AltCheck" MinAlt="1000" BB="{BB}"/>
+            <DECO_AltitudeCheck name="AltCheck" MinAlt="1800" BB="{BB}"/>
             <Task_ClimbOut name="ClimbOut" BB="{BB}"/>
           </Sequence>
 
