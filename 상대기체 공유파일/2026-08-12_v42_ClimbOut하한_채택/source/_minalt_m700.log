@@ -1,0 +1,1548 @@
+########## Rule_m700.xml / ÎùºÏö¥Îìú2 / OBFM_RED / jh2 ##########
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 1 OBFM_RED round2 sep=762m alt=1546m spd=217m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] LeadPredict dist=652.632 dV=2.82942 thr=0.966047 om=1.28998 lt=2.74357
+[ACTIVE] [RED] LeadPredict dist=187.197 dV=-10.8032 thr=1 om=1.33862 lt=0.832498
+[ACTIVE] [RED] LeadPredict dist=190.277 dV=8.69403 thr=0.862375 om=2.16802 lt=0.830239
+[ACTIVE] [RED] LeadPredict dist=273.032 dV=-0.0514526 thr=0.880617 om=0.824249 lt=1.29227
+[ACTIVE] [RED] LeadPredict dist=274.899 dV=-3.29242 thr=0.919509 om=0.94569 lt=1.22561
+[ACTIVE] [RED] LeadPredict dist=154.948 dV=-6.17329 thr=0.95408 om=1.67161 lt=0.695122
+[ACTIVE] [RED] LeadPredict dist=131.183 dV=-4.99007 thr=0.759881 om=1.61046 lt=0.54969
+[ACTIVE] [RED] LeadPredict dist=115.613 dV=-0.720215 thr=0.708643 om=1.92268 lt=0.447858
+[ACTIVE] [RED] LeadPredict dist=81.8518 dV=-1.38898 thr=0.716668 om=1.38322 lt=0.299301
+[ACTIVE] [RED] LeadPredict dist=106.269 dV=6.01895 thr=0.627773 om=3.28252 lt=0.319921
+[DUTY] team=1 ticks=600 v27¡æ∏ª¡∂¡ÿ=0% v21π≈©øπ√¯=90.6667% v17±Àµµ¡∂∞«=97.3333% v17ΩΩ∑‘¿˚øÎ=0% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=1.33333% v23b¡∂∞«=2.16667% v23bΩ«¡¶¿˚øÎ=0%
+[ACTIVE] [RED] LeadPredict dist=410.859 dV=3.90973 thr=0.797332 om=1.80199 lt=1.33532
+[ACTIVE] [RED] LeadPredict dist=725.681 dV=-11.1119 thr=1 om=1.60934 lt=2.6431
+[ACTIVE] [RED] LeadPredict dist=952.856 dV=29.1173 thr=0.877678 om=1.86329 lt=3
+[ACTIVE] [RED] LeadPredict dist=530.916 dV=-13.2211 thr=1 om=1.23956 lt=2.1663
+[ACTIVE] [RED] LeadPredict dist=472.038 dV=19.2401 thr=0.888 om=0.0835072 lt=1.87108
+[ACTIVE] [RED] LeadPredict dist=346.413 dV=-5.81317 thr=0.96 om=0.0769211 lt=1.54021
+[ACTIVE] [RED] LeadPredict dist=687.299 dV=-8.69405 thr=1 om=1.31133 lt=0
+[ACTIVE] [RED] LeadPredict dist=767.524 dV=9.51714 thr=0.885794 om=0.0934442 lt=3
+[ACTIVE] [RED] LeadPredict dist=705.13 dV=5.81317 thr=0.930242 om=1.44123 lt=3
+[ACTIVE] [RED] LeadPredict dist=1010.33 dV=-15.4846 thr=1 om=0.379838 lt=3
+[DUTY] team=1 ticks=1200 v27¡æ∏ª¡∂¡ÿ=3.41667% v21π≈©øπ√¯=89.5% v17±Àµµ¡∂∞«=97.75% v17ΩΩ∑‘¿˚øÎ=39.5833% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=12.5833% v23b¡∂∞«=8.58333% v23bΩ«¡¶¿˚øÎ=6.5%
+[ACTIVE] [RED] LeadPredict dist=1088.35 dV=-2.26353 thr=1 om=0.0167587 lt=3
+[ACTIVE] [RED] LeadPredict dist=910.407 dV=20.7319 thr=0.992 om=1.46259 lt=2.75701
+[ACTIVE] [RED] LeadPredict dist=812.56 dV=-0.61731 thr=1 om=0.0294021 lt=2.39924
+[ACTIVE] [RED] LeadPredict dist=862.62 dV=-6.99637 thr=1 om=0.0492694 lt=3
+[ACTIVE] [RED] LeadPredict dist=772.844 dV=3.96118 thr=0.822694 om=1.37594 lt=2.56147
+[ACTIVE] [RED] LeadPredict dist=973.485 dV=-4.11551 thr=0.754261 om=0.0915876 lt=3
+[ACTIVE] [RED] LeadPredict dist=1033.72 dV=1.38898 thr=1 om=0.0620794 lt=2.95284
+[ACTIVE] [RED] ClimbOut Z=1793.14
+[ACTIVE] [RED] LeadPredict dist=1162.28 dV=15.639 thr=0.496 om=3.97895 lt=2.95798
+runner:local/env:0	num_steps=[10407] | total rewards=[379.5254] | termination= [target altitude below min]
+[seed 1] reward=   379.53 ownHP=0.9350 tgtHP=0.7318 target altitude below min
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.2682 taken=0.0650 mean_reward=379.53
+tacview log saved (last episode)
+STAMP Rule_m700.xml ÎùºÏö¥Îìú2 seed1 2026_8_12_12_7_26
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 4 OBFM_RED round2 sep=762m alt=6887m spd=297m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] LeadPredict dist=710.425 dV=-4.47565 thr=1 om=0.85667 lt=2.31008
+[ACTIVE] [RED] LeadPredict dist=474.823 dV=0.565887 thr=0.993209 om=1.0494 lt=1.3367
+[ACTIVE] [RED] LeadPredict dist=413.396 dV=-5.19583 thr=1 om=1.39395 lt=1.08241
+[ACTIVE] [RED] LeadPredict dist=334.072 dV=-6.73917 thr=0.96087 om=1.06105 lt=0.974766
+runner:local/env:0	num_steps=[1720] | total rewards=[-137.4099] | termination= [ownship destroyed]
+[seed 4] reward=  -137.41 ownHP=-0.0105 tgtHP=1.0000 ownship destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.0000 taken=1.0105 mean_reward=-137.41
+tacview log saved (last episode)
+STAMP Rule_m700.xml ÎùºÏö¥Îìú2 seed4 2026_8_12_12_7_35
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 7 OBFM_RED round2 sep=762m alt=9121m spd=249m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] LeadPredict dist=732.186 dV=-10.8032 thr=1 om=0.490667 lt=2.80834
+[ACTIVE] [RED] LeadPredict dist=526.743 dV=-1.08032 thr=1 om=0.864284 lt=1.71769
+[ACTIVE] [RED] LeadPredict dist=377.904 dV=-5.14441 thr=0.941733 om=0.95106 lt=1.0768
+[ACTIVE] [RED] LeadPredict dist=315.597 dV=-4.62994 thr=0.935559 om=1.38849 lt=0.816119
+[ACTIVE] [RED] ClimbOut Z=1618.72
+[ACTIVE] [RED] LeadPredict dist=411.147 dV=2.2121 thr=0.499548 om=1.56169 lt=1.0884
+[ACTIVE] [RED] LeadPredict dist=359.113 dV=-25.0532 thr=0.757103 om=1.48417 lt=1.1323
+[ACTIVE] [RED] LeadPredict dist=533.452 dV=15.639 thr=0.812332 om=1.49893 lt=1.82146
+[ACTIVE] [RED] LeadPredict dist=66.6957 dV=-19.9088 thr=0.968 om=0.361109 lt=0.287913
+[ACTIVE] [RED] LeadPredict dist=1081.6 dV=-9.92868 thr=1 om=1.22548 lt=3
+[ACTIVE] [RED] LeadPredict dist=347.792 dV=21.4007 thr=0.818985 om=0.25817 lt=1.79469
+[DUTY] team=1 ticks=600 v27¡æ∏ª¡∂¡ÿ=1.5% v21π≈©øπ√¯=86% v17±Àµµ¡∂∞«=97.8333% v17ΩΩ∑‘¿˚øÎ=21.6667% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=4.66667% v23b¡∂∞«=19.5% v23bΩ«¡¶¿˚øÎ=15.8333%
+[ACTIVE] [RED] LeadPredict dist=1679.52 dV=34.8276 thr=1 om=0.915921 lt=3
+[ACTIVE] [RED] LeadPredict dist=1558.54 dV=11.8836 thr=1 om=0.229058 lt=3
+[ACTIVE] [RED] LeadPredict dist=580.975 dV=-15.0217 thr=1 om=1.83658 lt=3
+[ACTIVE] [RED] LeadPredict dist=979.109 dV=-39.6633 thr=1 om=0.993685 lt=3
+[ACTIVE] [RED] LeadPredict dist=1399.75 dV=-54.3249 thr=1 om=0.20336 lt=3
+[ACTIVE] [RED] LeadPredict dist=1259.89 dV=-6.63628 thr=1 om=1.04488 lt=3
+[ACTIVE] [RED] LeadPredict dist=1314.55 dV=-7.66516 thr=1 om=0.0832571 lt=3
+[ACTIVE] [RED] LeadPredict dist=1424.46 dV=-18.0568 thr=1 om=0.0570001 lt=3
+[ACTIVE] [RED] LeadPredict dist=1410.92 dV=2.93231 thr=1 om=1.15358 lt=3
+[ACTIVE] [RED] LeadPredict dist=1097.35 dV=12.0894 thr=1 om=0.269322 lt=3
+[DUTY] team=1 ticks=1200 v27¡æ∏ª¡∂¡ÿ=1.91667% v21π≈©øπ√¯=86.4167% v17±Àµµ¡∂∞«=93.0833% v17ΩΩ∑‘¿˚øÎ=49% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=23.75% v23b¡∂∞«=9.75% v23bΩ«¡¶¿˚øÎ=7.91667%
+[ACTIVE] [RED] LeadPredict dist=1078.71 dV=0.41156 thr=1 om=0.0049298 lt=2.87595
+[ACTIVE] [RED] LeadPredict dist=958.398 dV=25.6705 thr=1 om=1.51826 lt=2.40138
+[ACTIVE] [RED] LeadPredict dist=742.199 dV=10.9576 thr=0.868509 om=0.0760715 lt=0
+[ACTIVE] [RED] LeadPredict dist=715.739 dV=-2.46933 thr=1 om=0.0586307 lt=0.188593
+[ACTIVE] [RED] LeadPredict dist=664.165 dV=5.7103 thr=0.931476 om=1.52519 lt=0.944791
+[ACTIVE] [RED] ClimbOut Z=2096.26
+[ACTIVE] [RED] ClimbOut Z=1287.95
+[ACTIVE] [RED] LeadPredict dist=1878.82 dV=4.11551 thr=0.551365 om=2.29552 lt=3
+[ACTIVE] [RED] LeadPredict dist=1208.82 dV=23.6128 thr=0.695666 om=1.72466 lt=3
+[ACTIVE] [RED] LeadPredict dist=1198.36 dV=-22.1724 thr=1 om=1.70308 lt=3
+[ACTIVE] [RED] LeadPredict dist=923.342 dV=-8.74548 thr=0.846307 om=0.160812 lt=3
+runner:local/env:0	num_steps=[11333] | total rewards=[706.5967] | termination= [target destroyed]
+[seed 7] reward=   706.60 ownHP=0.7385 tgtHP=-0.0003 target destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=1.0003 taken=0.2615 mean_reward=706.60
+tacview log saved (last episode)
+STAMP Rule_m700.xml ÎùºÏö¥Îìú2 seed7 2026_8_12_12_8_4
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 10 OBFM_RED round2 sep=762m alt=3219m spd=234m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] LeadPredict dist=611.33 dV=-7.92238 thr=1 om=1.55192 lt=2.45932
+[ACTIVE] [RED] ClimbOut Z=1220.12
+[ACTIVE] [RED] LeadPredict dist=363.951 dV=-2.4693 thr=0.909632 om=8.83332 lt=1.15637
+[ACTIVE] [RED] LeadPredict dist=649.318 dV=5.35019 thr=0.935798 om=2.36387 lt=2.28532
+[ACTIVE] [RED] LeadPredict dist=1046.84 dV=-10.9576 thr=1 om=2.0087 lt=3
+[ACTIVE] [RED] LeadPredict dist=635.551 dV=-6.07039 thr=1 om=0.398713 lt=0
+[ACTIVE] [RED] LeadPredict dist=1380.95 dV=22.5325 thr=1 om=1.24544 lt=3
+[ACTIVE] [RED] LeadPredict dist=1242.74 dV=2.31499 thr=1 om=0.318899 lt=3
+[ACTIVE] [RED] LeadPredict dist=643.788 dV=-9.72292 thr=1 om=1.53532 lt=3
+[ACTIVE] [RED] LeadPredict dist=1882.75 dV=-63.4819 thr=1 om=0.800393 lt=3
+[ACTIVE] [RED] LeadPredict dist=2548.93 dV=-60.5496 thr=1 om=0.755654 lt=3
+[DUTY] team=1 ticks=600 v27¡æ∏ª¡∂¡ÿ=1.5% v21π≈©øπ√¯=85.3333% v17±Àµµ¡∂∞«=95.5% v17ΩΩ∑‘¿˚øÎ=51% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=9.16667% v23b¡∂∞«=5.5% v23bΩ«¡¶¿˚øÎ=4.83333%
+[ACTIVE] [RED] LeadPredict dist=2390.23 dV=-4.47562 thr=1 om=0.83575 lt=3
+[ACTIVE] [RED] LeadPredict dist=1718.26 dV=55.7653 thr=1 om=0.417546 lt=3
+[ACTIVE] [RED] LeadPredict dist=1071.88 dV=50.1579 thr=1 om=0.130387 lt=3
+[ACTIVE] [RED] LeadPredict dist=939.011 dV=20.1146 thr=1 om=0.954707 lt=3
+[ACTIVE] [RED] LeadPredict dist=1038.13 dV=-19.4458 thr=1 om=0.22319 lt=3
+[ACTIVE] [RED] LeadPredict dist=1282.39 dV=-29.3231 thr=1 om=0.099381 lt=3
+[ACTIVE] [RED] LeadPredict dist=1393.3 dV=-3.29242 thr=1 om=1.04793 lt=3
+[ACTIVE] [RED] LeadPredict dist=1101.98 dV=34.3132 thr=1 om=1.02744 lt=3
+[ACTIVE] [RED] LeadPredict dist=929.421 dV=22.8926 thr=1 om=0.0600412 lt=3
+[ACTIVE] [RED] LeadPredict dist=770.296 dV=26.8538 thr=0.677755 om=1.37917 lt=2.80665
+[DUTY] team=1 ticks=1200 v27¡æ∏ª¡∂¡ÿ=2.83333% v21π≈©øπ√¯=86.5833% v17±Àµµ¡∂∞«=90.5833% v17ΩΩ∑‘¿˚øÎ=68.3333% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=5.08333% v23b¡∂∞«=2.75% v23bΩ«¡¶¿˚øÎ=2.41667%
+[ACTIVE] [RED] LeadPredict dist=1052.28 dV=-8.5397 thr=1 om=0.0965238 lt=3
+[ACTIVE] [RED] LeadPredict dist=1036.1 dV=16.0505 thr=1 om=0.998598 lt=3
+[ACTIVE] [RED] LeadPredict dist=947.757 dV=24.0243 thr=0.847619 om=0.0747552 lt=3
+[ACTIVE] [RED] LeadPredict dist=900.512 dV=3.60107 thr=0.956787 om=0.019831 lt=0.677351
+[ACTIVE] [RED] LeadPredict dist=796.192 dV=10.9061 thr=0.869126 om=1.21942 lt=1.53565
+[ACTIVE] [RED] LeadPredict dist=853.633 dV=-19.1886 thr=1 om=0.211297 lt=1.73821
+[ACTIVE] [RED] LeadPredict dist=950.285 dV=-1.95486 thr=1 om=0.196314 lt=3
+[ACTIVE] [RED] LeadPredict dist=885.602 dV=17.028 thr=0.888 om=0.829942 lt=0.809678
+[ACTIVE] [RED] LeadPredict dist=801.142 dV=13.6841 thr=0.835791 om=0.845677 lt=0.780868
+[ACTIVE] [RED] LeadPredict dist=771.135 dV=5.35016 thr=0.935798 om=0.0456272 lt=0
+[DUTY] team=1 ticks=1800 v27¡æ∏ª¡∂¡ÿ=17% v21π≈©øπ√¯=82% v17±Àµµ¡∂∞«=88.9444% v17ΩΩ∑‘¿˚øÎ=74.1111% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=4.61111% v23b¡∂∞«=4.11111% v23bΩ«¡¶¿˚øÎ=3.88889%
+[ACTIVE] [RED] LeadPredict dist=708.709 dV=7.15073 thr=0.914191 om=1.13165 lt=0.798933
+[ACTIVE] [RED] LeadPredict dist=703.64 dV=-0.20578 thr=1 om=0.186557 lt=0
+runner:local/env:0	num_steps=[11865] | total rewards=[1043.7340] | termination= [target destroyed]
+[seed 10] reward=  1043.73 ownHP=1.0000 tgtHP=-0.0015 target destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=1.0015 taken=0.0000 mean_reward=1043.73
+tacview log saved (last episode)
+STAMP Rule_m700.xml ÎùºÏö¥Îìú2 seed10 2026_8_12_12_8_32
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 13 OBFM_RED round2 sep=762m alt=5807m spd=237m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] LeadPredict dist=633.859 dV=-15.5361 thr=1 om=0.919676 lt=2.58417
+[ACTIVE] [RED] LeadPredict dist=270.006 dV=-7.92236 thr=0.975068 om=1.56819 lt=0.942288
+[ACTIVE] [RED] LeadPredict dist=170.323 dV=-5.81317 thr=0.949758 om=1.46035 lt=0.512197
+[ACTIVE] [RED] ClimbOut Z=1431.8
+[ACTIVE] [RED] ClimbOut Z=879.489
+[ACTIVE] [RED] LeadPredict dist=643.947 dV=9.36279 thr=0.683641 om=0.339542 lt=1.92546
+[ACTIVE] [RED] LeadPredict dist=571.083 dV=-16.6164 thr=1 om=1.68074 lt=2.06454
+[ACTIVE] [RED] LeadPredict dist=633.723 dV=18.3655 thr=0.82609 om=1.8774 lt=2.45099
+[ACTIVE] [RED] LeadPredict dist=186.174 dV=-13.5298 thr=1 om=0.630938 lt=0.00494458
+[ACTIVE] [RED] LeadPredict dist=945.714 dV=-8.38538 thr=1 om=1.26667 lt=3
+[ACTIVE] [RED] LeadPredict dist=510.756 dV=50.1065 thr=0.697133 om=1.0234 lt=2.31809
+[ACTIVE] [RED] LeadPredict dist=1126.09 dV=44.3962 thr=1 om=0.279529 lt=3
+[DUTY] team=1 ticks=600 v27¡æ∏ª¡∂¡ÿ=1.83333% v21π≈©øπ√¯=86.3333% v17±Àµµ¡∂∞«=97.5% v17ΩΩ∑‘¿˚øÎ=33.3333% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=15.8333% v23b¡∂∞«=12.6667% v23bΩ«¡¶¿˚øÎ=12%
+[ACTIVE] [RED] LeadPredict dist=223.758 dV=-12.6552 thr=1 om=0.697999 lt=1.29374
+[ACTIVE] [RED] LeadPredict dist=1265.63 dV=-13.787 thr=1 om=0.942932 lt=3
+[ACTIVE] [RED] LeadPredict dist=698.008 dV=12.7581 thr=0.896 om=1.88399 lt=0
+[ACTIVE] [RED] LeadPredict dist=802.824 dV=27.3682 thr=0.671582 om=0.979065 lt=3
+[ACTIVE] [RED] LeadPredict dist=725.108 dV=-0.257233 thr=1 om=0.359547 lt=3
+[ACTIVE] [RED] LeadPredict dist=807.481 dV=0.565872 thr=0.99321 om=1.43724 lt=3
+[ACTIVE] [RED] LeadPredict dist=799.287 dV=3.65251 thr=0.95617 om=0.427935 lt=3
+[ACTIVE] [RED] LeadPredict dist=780.223 dV=-7.66515 thr=1 om=1.40228 lt=3
+[ACTIVE] [RED] LeadPredict dist=561.027 dV=13.6327 thr=0.867678 om=0.38794 lt=2.14888
+[ACTIVE] [RED] LeadPredict dist=753.748 dV=5.65881 thr=0.859206 om=0.310829 lt=2.57139
+[DUTY] team=1 ticks=1200 v27¡æ∏ª¡∂¡ÿ=3.33333% v21π≈©øπ√¯=91.75% v17±Àµµ¡∂∞«=98.25% v17ΩΩ∑‘¿˚øÎ=60.3333% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=17.25% v23b¡∂∞«=7.33333% v23bΩ«¡¶¿˚øÎ=6.83333%
+[ACTIVE] [RED] LeadPredict dist=1150.48 dV=-27.8827 thr=0.793397 om=1.31129 lt=3
+[ACTIVE] [RED] ClimbOut Z=1631.06
+[ACTIVE] [RED] ClimbOut Z=941.619
+[ACTIVE] [RED] LeadPredict dist=2994.69 dV=7.35648 thr=1 om=1.5082 lt=3
+[ACTIVE] [RED] LeadPredict dist=2297.63 dV=15.3303 thr=0.72 om=1.0649 lt=3
+[ACTIVE] [RED] LeadPredict dist=781.123 dV=-11.8836 thr=0.846525 om=0.433155 lt=2.63793
+[ACTIVE] [RED] LeadPredict dist=1245.95 dV=-15.5875 thr=1 om=1.57705 lt=3
+[ACTIVE] [RED] LeadPredict dist=1260.07 dV=-3.90976 thr=0.856801 om=0.118038 lt=3
+[ACTIVE] [RED] LeadPredict dist=1118.34 dV=-10.8032 thr=0.843902 om=1.50562 lt=3
+[ACTIVE] [RED] LeadPredict dist=1223.15 dV=-18.0054 thr=0.750544 om=1.53453 lt=3
+[ACTIVE] [RED] ClimbOut Z=1512.35
+[ACTIVE] [RED] LeadPredict dist=724.67 dV=16.6678 thr=0.712064 om=1.06929 lt=2.21105
+[ACTIVE] [RED] LeadPredict dist=614.244 dV=3.80685 thr=0.954318 om=1.67586 lt=2.18562
+[DUTY] team=1 ticks=1800 v27¡æ∏ª¡∂¡ÿ=2.61111% v21π≈©øπ√¯=91.2222% v17±Àµµ¡∂∞«=94.2778% v17ΩΩ∑‘¿˚øÎ=68.8889% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=19.4444% v23b¡∂∞«=25.6667% v23bΩ«¡¶¿˚øÎ=25.1111%
+runner:local/env:0	num_steps=[11999] | total rewards=[200.0845] | termination= [max time out]
+[seed 13] reward=   200.08 ownHP=1.0000 tgtHP=0.9869 max time out
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.0131 taken=0.0000 mean_reward=200.08
+tacview log saved (last episode)
+STAMP Rule_m700.xml ÎùºÏö¥Îìú2 seed13 2026_8_12_12_9_1
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 16 OBFM_RED round2 sep=762m alt=2265m spd=227m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] LeadPredict dist=626.672 dV=-3.18953 thr=1 om=1.59242 lt=2.5538
+[ACTIVE] [RED] LeadPredict dist=286.197 dV=4.93863 thr=0.820736 om=1.67809 lt=1.00041
+[ACTIVE] [RED] LeadPredict dist=164.616 dV=1.33754 thr=0.86395 om=1.46288 lt=0.683742
+[ACTIVE] [RED] LeadPredict dist=467.942 dV=4.62996 thr=0.94444 om=0.31404 lt=2.185
+[ACTIVE] [RED] LeadPredict dist=931.017 dV=23.3556 thr=0.928867 om=1.54038 lt=3
+[ACTIVE] [RED] LeadPredict dist=353.341 dV=-2.88087 thr=0.914571 om=1.36401 lt=1.75709
+[ACTIVE] [RED] LeadPredict dist=461.768 dV=7.61371 thr=0.916736 om=0.312217 lt=1.04158
+[ACTIVE] [RED] LeadPredict dist=825.319 dV=45.9909 thr=0.55 om=1.58711 lt=3
+[ACTIVE] [RED] LeadPredict dist=150.829 dV=-8.23105 thr=0.844473 om=1.19564 lt=0.875458
+[ACTIVE] [RED] LeadPredict dist=1182.33 dV=-21.6065 thr=1 om=0.941215 lt=3
+[DUTY] team=1 ticks=600 v27¡æ∏ª¡∂¡ÿ=3.33333% v21π≈©øπ√¯=85% v17±Àµµ¡∂∞«=98% v17ΩΩ∑‘¿˚øÎ=51.8333% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=20.1667% v23b¡∂∞«=0% v23bΩ«¡¶¿˚øÎ=0%
+[ACTIVE] [RED] LeadPredict dist=611.062 dV=33.2328 thr=0.816 om=1.21769 lt=3
+[ACTIVE] [RED] LeadPredict dist=892.166 dV=45.9395 thr=0.55 om=1.60137 lt=3
+[ACTIVE] [RED] LeadPredict dist=418.975 dV=-13.9928 thr=1 om=0.227498 lt=2.822
+[ACTIVE] [RED] LeadPredict dist=931.235 dV=-22.018 thr=1 om=0.725312 lt=3
+[ACTIVE] [RED] LeadPredict dist=886.595 dV=7.81949 thr=0.936 om=1.07245 lt=3
+[ACTIVE] [RED] LeadPredict dist=764.149 dV=25.5162 thr=0.693805 om=0.799122 lt=3
+[ACTIVE] [RED] LeadPredict dist=798.283 dV=-1.90343 thr=1 om=0.497547 lt=3
+[ACTIVE] [RED] LeadPredict dist=1028.31 dV=-17.5424 thr=1 om=1.27165 lt=3
+[ACTIVE] [RED] LeadPredict dist=905.285 dV=-2.88087 thr=1 om=1.19567 lt=2.84794
+[ACTIVE] [RED] LeadPredict dist=989.508 dV=-16.565 thr=1 om=0.0483822 lt=3
+[DUTY] team=1 ticks=1200 v27¡æ∏ª¡∂¡ÿ=4.16667% v21π≈©øπ√¯=85.4167% v17±Àµµ¡∂∞«=97.4167% v17ΩΩ∑‘¿˚øÎ=74.3333% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=19.8333% v23b¡∂∞«=0% v23bΩ«¡¶¿˚øÎ=0%
+[ACTIVE] [RED] LeadPredict dist=1246.6 dV=-20.7834 thr=1 om=0.238921 lt=3
+[ACTIVE] [RED] LeadPredict dist=1174.65 dV=10.9576 thr=1 om=1.29011 lt=3
+[ACTIVE] [RED] LeadPredict dist=869.636 dV=15.7419 thr=0.811097 om=0.0350758 lt=1.08149
+[ACTIVE] [RED] LeadPredict dist=803.151 dV=14.8673 thr=0.821592 om=1.55768 lt=0.00846159
+[ACTIVE] [RED] LeadPredict dist=680.787 dV=5.40161 thr=0.935181 om=1.14369 lt=1.88217
+[ACTIVE] [RED] ClimbOut Z=1783.68
+[ACTIVE] [RED] LeadPredict dist=691.871 dV=-1.23465 thr=0.661121 om=1.67934 lt=2.0365
+[ACTIVE] [RED] ClimbOut Z=1162.21
+[ACTIVE] [RED] LeadPredict dist=609.589 dV=25.2076 thr=0.651501 om=1.58102 lt=1.78242
+[ACTIVE] [RED] LeadPredict dist=539.261 dV=18.1597 thr=0.782083 om=1.11296 lt=0
+[ACTIVE] [RED] LeadPredict dist=501.498 dV=0.102875 thr=0.998766 om=0.233322 lt=0.927534
+[ACTIVE] [RED] LeadPredict dist=462.36 dV=13.1696 thr=0.841964 om=0.566327 lt=0.577052
+[DUTY] team=1 ticks=1800 v27¡æ∏ª¡∂¡ÿ=18.2778% v21π≈©øπ√¯=82.7222% v17±Àµµ¡∂∞«=93.5% v17ΩΩ∑‘¿˚øÎ=78.1111% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=22% v23b¡∂∞«=7% v23bΩ«¡¶¿˚øÎ=7%
+runner:local/env:0	num_steps=[11398] | total rewards=[871.1738] | termination= [target destroyed]
+[seed 16] reward=   871.17 ownHP=1.0000 tgtHP=-0.0042 target destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=1.0042 taken=0.0000 mean_reward=871.17
+tacview log saved (last episode)
+STAMP Rule_m700.xml ÎùºÏö¥Îìú2 seed16 2026_8_12_12_9_28
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 19 OBFM_RED round2 sep=762m alt=3204m spd=230m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] LeadPredict dist=622.342 dV=-7.51082 thr=1 om=1.47119 lt=2.54791
+[ACTIVE] [RED] ClimbOut Z=1235.08
+[ACTIVE] [RED] LeadPredict dist=352.336 dV=-3.13809 thr=0.917657 om=9.29974 lt=1.12702
+[ACTIVE] [RED] LeadPredict dist=620.727 dV=7.71661 thr=0.907401 om=1.90235 lt=2.17603
+[ACTIVE] [RED] LeadPredict dist=337.929 dV=-7.2536 thr=0.967043 om=1.76417 lt=1.43331
+[ACTIVE] [RED] LeadPredict dist=431.126 dV=4.83574 thr=0.941971 om=1.4446 lt=2.18185
+[ACTIVE] [RED] LeadPredict dist=401.931 dV=0.0514526 thr=0.917093 om=1.03791 lt=2.21206
+[ACTIVE] [RED] LeadPredict dist=65.7118 dV=5.5045 thr=0.784466 om=0.139019 lt=0.398672
+[ACTIVE] [RED] LeadPredict dist=636.307 dV=17.3881 thr=0.791343 om=1.08762 lt=3
+[ACTIVE] [RED] LeadPredict dist=119.655 dV=-12.2437 thr=0.860649 om=1.6831 lt=0.716334
+[ACTIVE] [RED] LeadPredict dist=561.337 dV=-1.59477 thr=1 om=0.856876 lt=2.94431
+[DUTY] team=1 ticks=600 v27¡æ∏ª¡∂¡ÿ=0% v21π≈©øπ√¯=88% v17±Àµµ¡∂∞«=98% v17ΩΩ∑‘¿˚øÎ=21.3333% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=16.6667% v23b¡∂∞«=5.16667% v23bΩ«¡¶¿˚øÎ=3.5%
+[ACTIVE] [RED] LeadPredict dist=694.486 dV=22.0695 thr=0.754556 om=1.70297 lt=2.95919
+[ACTIVE] [RED] LeadPredict dist=412.651 dV=-9.98013 thr=1 om=0.598721 lt=1.72688
+[ACTIVE] [RED] LeadPredict dist=1124.63 dV=-22.0695 thr=1 om=1.40428 lt=3
+[ACTIVE] [RED] LeadPredict dist=673.25 dV=21.092 thr=0.779061 om=2.34989 lt=2.39076
+[ACTIVE] [RED] LeadPredict dist=213.091 dV=1.85196 thr=0.847619 om=0.100793 lt=0.720257
+[ACTIVE] [RED] LeadPredict dist=691.935 dV=-9.92871 thr=0.783339 om=0.544825 lt=2.22502
+[ACTIVE] [RED] ClimbOut Z=2150.62
+[ACTIVE] [RED] ClimbOut Z=1311.52
+[ACTIVE] [RED] LeadPredict dist=893.897 dV=10.0316 thr=0.641444 om=1.47212 lt=2.59577
+[ACTIVE] [RED] LeadPredict dist=1432.95 dV=11.2662 thr=0.804547 om=1.6587 lt=3
+[ACTIVE] [RED] LeadPredict dist=787.5 dV=-10.8033 thr=1 om=0.250028 lt=2.96723
+[ACTIVE] [RED] LeadPredict dist=1373.25 dV=-27.3682 thr=1 om=0.689035 lt=3
+[DUTY] team=1 ticks=1200 v27¡æ∏ª¡∂¡ÿ=0.583333% v21π≈©øπ√¯=88.6667% v17±Àµµ¡∂∞«=98.5% v17ΩΩ∑‘¿˚øÎ=49.6667% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=25.4167% v23b¡∂∞«=21.9167% v23bΩ«¡¶¿˚øÎ=19.0833%
+[ACTIVE] [RED] LeadPredict dist=883.366 dV=-0.154327 thr=1 om=0.243214 lt=3
+[ACTIVE] [RED] LeadPredict dist=1211.59 dV=-24.6931 thr=1 om=0.244678 lt=3
+[ACTIVE] [RED] LeadPredict dist=1318.92 dV=-13.324 thr=1 om=1.29279 lt=3
+[ACTIVE] [RED] LeadPredict dist=1001.01 dV=37.3998 thr=1 om=1.05487 lt=3
+[ACTIVE] [RED] LeadPredict dist=908.392 dV=-1.2861 thr=1 om=0.0831927 lt=0
+[ACTIVE] [RED] LeadPredict dist=888.431 dV=2.77798 thr=0.97474 om=1.05658 lt=0
+[ACTIVE] [RED] LeadPredict dist=769.286 dV=5.50452 thr=0.933946 om=1.32417 lt=2.58137
+[ACTIVE] [RED] LeadPredict dist=827.75 dV=-3.44675 thr=1 om=0.119901 lt=0
+[ACTIVE] [RED] LeadPredict dist=862.493 dV=-1.5433 thr=1 om=0.908696 lt=0.928613
+[ACTIVE] [RED] LeadPredict dist=721.907 dV=18.0569 thr=0.783318 om=1.34829 lt=1.23588
+[DUTY] team=1 ticks=1800 v27¡æ∏ª¡∂¡ÿ=15.3889% v21π≈©øπ√¯=85.3889% v17±Àµµ¡∂∞«=93.4444% v17ΩΩ∑‘¿˚øÎ=60.8889% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=17.6667% v23b¡∂∞«=16.1667% v23bΩ«¡¶¿˚øÎ=14.2778%
+[ACTIVE] [RED] LeadPredict dist=669.316 dV=2.4693 thr=0.970368 om=0.0269448 lt=0
+runner:local/env:0	num_steps=[11841] | total rewards=[628.6641] | termination= [target destroyed]
+[seed 19] reward=   628.66 ownHP=1.0000 tgtHP=-0.0008 target destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=1.0008 taken=0.0000 mean_reward=628.66
+tacview log saved (last episode)
+STAMP Rule_m700.xml ÎùºÏö¥Îìú2 seed19 2026_8_12_12_9_56
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 22 OBFM_RED round2 sep=762m alt=7582m spd=260m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] LeadPredict dist=688.665 dV=-9.82581 thr=1 om=0.994381 lt=2.532
+[ACTIVE] [RED] LeadPredict dist=476.401 dV=-0.514465 thr=1 om=0.805403 lt=1.47933
+[ACTIVE] [RED] LeadPredict dist=416.974 dV=-5.9675 thr=1 om=1.19293 lt=1.13442
+[ACTIVE] [RED] LeadPredict dist=345.069 dV=-5.65884 thr=0.947906 om=0.691626 lt=0.960707
+runner:local/env:0	num_steps=[1703] | total rewards=[-137.3236] | termination= [ownship destroyed]
+[seed 22] reward=  -137.32 ownHP=-0.0019 tgtHP=1.0000 ownship destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.0000 taken=1.0019 mean_reward=-137.32
+tacview log saved (last episode)
+STAMP Rule_m700.xml ÎùºÏö¥Îìú2 seed22 2026_8_12_12_10_3
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 25 OBFM_RED round2 sep=762m alt=5320m spd=222m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] LeadPredict dist=672.969 dV=-8.64259 thr=1 om=1.40535 lt=2.87887
+[ACTIVE] [RED] LeadPredict dist=255.731 dV=-7.35651 thr=0.968921 om=1.23681 lt=0.951399
+[ACTIVE] [RED] LeadPredict dist=155.453 dV=-7.56226 thr=0.970747 om=1.41366 lt=0.484493
+[ACTIVE] [RED] ClimbOut Z=1366.14
+[ACTIVE] [RED] ClimbOut Z=718.65
+[ACTIVE] [RED] LeadPredict dist=544.942 dV=11.7807 thr=0.751856 om=1.57926 lt=1.71157
+[ACTIVE] [RED] LeadPredict dist=321.011 dV=-10.7003 thr=1 om=1.70499 lt=1.24031
+[ACTIVE] [RED] LeadPredict dist=381.278 dV=3.90974 thr=0.898834 om=1.40145 lt=1.69872
+[ACTIVE] [RED] LeadPredict dist=300.096 dV=-0.257217 thr=0.883087 om=1.25196 lt=1.45836
+[ACTIVE] [RED] LeadPredict dist=502.097 dV=16.8222 thr=0.798134 om=1.27598 lt=2.37645
+[ACTIVE] [RED] LeadPredict dist=221.525 dV=-27.1624 thr=1 om=1.44601 lt=1.18398
+[ACTIVE] [RED] LeadPredict dist=66.2393 dV=5.45306 thr=0.826595 om=0.308884 lt=0.358064
+[DUTY] team=1 ticks=600 v27¡æ∏ª¡∂¡ÿ=0.166667% v21π≈©øπ√¯=89.3333% v17±Àµµ¡∂∞«=96% v17ΩΩ∑‘¿˚øÎ=5.83333% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=8% v23b¡∂∞«=8.5% v23bΩ«¡¶¿˚øÎ=8.5%
+[ACTIVE] [RED] LeadPredict dist=878.965 dV=8.02527 thr=0.903697 om=1.07781 lt=3
+[ACTIVE] [RED] LeadPredict dist=202.14 dV=-37.657 thr=1 om=0.889465 lt=1.18318
+[ACTIVE] [RED] LeadPredict dist=1134.48 dV=-25.6191 thr=1 om=1.10957 lt=3
+[ACTIVE] [RED] LeadPredict dist=354.742 dV=15.4846 thr=0.862588 om=0.203046 lt=1.6997
+[ACTIVE] [RED] LeadPredict dist=1086.17 dV=12.1408 thr=1 om=1.22787 lt=3
+[ACTIVE] [RED] LeadPredict dist=624.057 dV=-16.6679 thr=1 om=2.04555 lt=2.72052
+[ACTIVE] [RED] LeadPredict dist=671.751 dV=10.7518 thr=0.952 om=1.44291 lt=2.25516
+[ACTIVE] [RED] LeadPredict dist=673.319 dV=16.6678 thr=0.799986 om=0.619436 lt=2.69031
+[ACTIVE] [RED] LeadPredict dist=614.546 dV=-3.65253 thr=1 om=1.11341 lt=2.79306
+[ACTIVE] [RED] LeadPredict dist=777.371 dV=11.1633 thr=0.873827 om=1.19571 lt=0.798729
+[DUTY] team=1 ticks=1200 v27¡æ∏ª¡∂¡ÿ=5.33333% v21π≈©øπ√¯=93.3333% v17±Àµµ¡∂∞«=97.9167% v17ΩΩ∑‘¿˚øÎ=45.25% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=18% v23b¡∂∞«=4.25% v23bΩ«¡¶¿˚øÎ=4.25%
+[ACTIVE] [RED] LeadPredict dist=664.8 dV=17.1823 thr=0.793812 om=0.178562 lt=2.25985
+[ACTIVE] [RED] LeadPredict dist=640.155 dV=8.43681 thr=0.898758 om=0.0586808 lt=0
+[ACTIVE] [RED] LeadPredict dist=604.961 dV=-1.13177 thr=1 om=0.654757 lt=0
+[ACTIVE] [RED] LeadPredict dist=550.962 dV=13.2726 thr=0.778529 om=0.228017 lt=1.76528
+[ACTIVE] [RED] LeadPredict dist=517.587 dV=10.0316 thr=0.879621 om=1.40656 lt=0.128429
+[ACTIVE] [RED] LeadPredict dist=487.208 dV=6.53342 thr=0.527097 om=0.579955 lt=1.31227
+[ACTIVE] [RED] LeadPredict dist=514.521 dV=0.308655 thr=0.84 om=0.155438 lt=1.26219
+[ACTIVE] [RED] ClimbOut Z=1853.08
+[ACTIVE] [RED] ClimbOut Z=1019.72
+[ACTIVE] [RED] LeadPredict dist=818.679 dV=13.787 thr=0.590283 om=1.98467 lt=2.29705
+[ACTIVE] [RED] LeadPredict dist=866.225 dV=-11.3177 thr=0.837999 om=1.56234 lt=2.90564
+runner:local/env:0	num_steps=[11505] | total rewards=[644.9062] | termination= [target destroyed]
+[seed 25] reward=   644.91 ownHP=1.0000 tgtHP=-0.0004 target destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=1.0004 taken=0.0000 mean_reward=644.91
+tacview log saved (last episode)
+STAMP Rule_m700.xml ÎùºÏö¥Îìú2 seed25 2026_8_12_12_10_31
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 28 OBFM_RED round2 sep=762m alt=8944m spd=211m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] LeadPredict dist=763.069 dV=-18.3655 thr=1 om=0.262354 lt=3
+[ACTIVE] [RED] LeadPredict dist=447.928 dV=-14.1985 thr=1 om=0.940656 lt=1.81929
+[ACTIVE] [RED] LeadPredict dist=216.145 dV=-11.7807 thr=1 om=1.23694 lt=0.743902
+[ACTIVE] [RED] LeadPredict dist=105.621 dV=-3.60107 thr=0.75939 om=1.69738 lt=0.309859
+[ACTIVE] [RED] LeadPredict dist=84.645 dV=-0.925964 thr=0.711112 om=1.61124 lt=0.219706
+[ACTIVE] [RED] ClimbOut Z=1607.35
+[ACTIVE] [RED] LeadPredict dist=600.556 dV=-1.08032 thr=0.548086 om=0.419419 lt=1.63937
+[ACTIVE] [RED] LeadPredict dist=640.198 dV=-30.352 thr=0.784214 om=1.36441 lt=2.06002
+[ACTIVE] [RED] LeadPredict dist=655.642 dV=19.9603 thr=0.760476 om=1.71546 lt=2.11989
+[ACTIVE] [RED] LeadPredict dist=454.351 dV=-12.1922 thr=1 om=1.41568 lt=1.63555
+[ACTIVE] [RED] LeadPredict dist=429.918 dV=2.98376 thr=0.966689 om=1.25384 lt=0.98871
+[DUTY] team=1 ticks=600 v27¡æ∏ª¡∂¡ÿ=1.83333% v21π≈©øπ√¯=74.1667% v17±Àµµ¡∂∞«=97.6667% v17ΩΩ∑‘¿˚øÎ=21% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=22.8333% v23b¡∂∞«=30.5% v23bΩ«¡¶¿˚øÎ=24.8333%
+[ACTIVE] [RED] LeadPredict dist=1166.57 dV=49.6435 thr=0.932106 om=1.65935 lt=3
+[ACTIVE] [RED] LeadPredict dist=585.38 dV=-18.417 thr=1 om=1.93054 lt=2.26312
+[ACTIVE] [RED] LeadPredict dist=1100.35 dV=-18.4684 thr=1 om=0.212557 lt=3
+[ACTIVE] [RED] LeadPredict dist=766.853 dV=28.5 thr=0.658 om=2.23557 lt=2.92228
+[ACTIVE] [RED] LeadPredict dist=602.54 dV=-3.65251 thr=1 om=0.337467 lt=2.57023
+[ACTIVE] [RED] LeadPredict dist=711.881 dV=3.08664 thr=0.96296 om=0.0189898 lt=2.58027
+[ACTIVE] [RED] LeadPredict dist=900.389 dV=-9.25992 thr=0.760382 om=0.114013 lt=2.8459
+[ACTIVE] [RED] LeadPredict dist=916.286 dV=8.95126 thr=1 om=1.46675 lt=2.62008
+[ACTIVE] [RED] LeadPredict dist=734.905 dV=8.43683 thr=0.898758 om=0.0393126 lt=0
+[ACTIVE] [RED] LeadPredict dist=698.464 dV=9.82581 thr=0.88209 om=0.0148058 lt=0.0195827
+[DUTY] team=1 ticks=1200 v27¡æ∏ª¡∂¡ÿ=14.8333% v21π≈©øπ√¯=70.0833% v17±Àµµ¡∂∞«=88.75% v17ΩΩ∑‘¿˚øÎ=44.8333% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=31.6667% v23b¡∂∞«=24.4167% v23bΩ«¡¶¿˚øÎ=20.75%
+runner:local/env:0	num_steps=[7611] | total rewards=[393.6357] | termination= [target destroyed]
+[seed 28] reward=   393.64 ownHP=1.0000 tgtHP=-0.0009 target destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=1.0009 taken=0.0000 mean_reward=393.64
+tacview log saved (last episode)
+STAMP Rule_m700.xml ÎùºÏö¥Îìú2 seed28 2026_8_12_12_10_50
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 31 OBFM_RED round2 sep=762m alt=8199m spd=261m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] LeadPredict dist=712.505 dV=-8.95126 thr=1 om=0.971704 lt=2.61027
+[ACTIVE] [RED] LeadPredict dist=512.739 dV=0.20578 thr=0.997531 om=0.741541 lt=1.59242
+[ACTIVE] [RED] LeadPredict dist=449.697 dV=-3.4982 thr=1 om=1.037 lt=1.20439
+[ACTIVE] [RED] LeadPredict dist=343.181 dV=-7.04782 thr=0.964574 om=1.4353 lt=0.88686
+[ACTIVE] [RED] ClimbOut Z=1524.15
+[ACTIVE] [RED] LeadPredict dist=315.494 dV=-4.57849 thr=0.632917 om=0.439261 lt=0.910852
+[ACTIVE] [RED] LeadPredict dist=142.215 dV=-4.32129 thr=0.918426 om=1.59402 lt=0.478447
+[ACTIVE] [RED] LeadPredict dist=179.989 dV=1.74908 thr=0.859011 om=0.748729 lt=0.719163
+[ACTIVE] [RED] LeadPredict dist=146.534 dV=-0.257233 thr=0.82279 om=1.3204 lt=0.677548
+[ACTIVE] [RED] LeadPredict dist=127.318 dV=5.29874 thr=0.761436 om=1.32438 lt=0.595499
+[ACTIVE] [RED] LeadPredict dist=157.545 dV=0.977432 thr=0.868271 om=0.910081 lt=0.705635
+[DUTY] team=1 ticks=600 v27¡æ∏ª¡∂¡ÿ=0% v21π≈©øπ√¯=85.6667% v17±Àµµ¡∂∞«=98% v17ΩΩ∑‘¿˚øÎ=0% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=0% v23b¡∂∞«=8.16667% v23bΩ«¡¶¿˚øÎ=7.5%
+[ACTIVE] [RED] LeadPredict dist=147.568 dV=1.02887 thr=0.687654 om=1.47705 lt=0.622373
+[ACTIVE] [RED] LeadPredict dist=108.676 dV=-0.874542 thr=0.727881 om=2.08248 lt=0.453619
+[ACTIVE] [RED] LeadPredict dist=80.011 dV=-7.92236 thr=0.795068 om=1.21682 lt=0.307494
+[ACTIVE] [RED] LeadPredict dist=45.8373 dV=-5.55594 thr=0.766671 om=0.393457 lt=0.155635
+[ACTIVE] [RED] LeadPredict dist=247.015 dV=3.85828 thr=0.692386 om=1.24409 lt=0.743172
+[ACTIVE] [RED] LeadPredict dist=141.978 dV=-2.36642 thr=0.613021 om=1.74352 lt=0.404435
+[ACTIVE] [RED] ClimbOut Z=1399.5
+[ACTIVE] [RED] LeadPredict dist=674.759 dV=7.76804 thr=0.696759 om=1.43203 lt=2.03639
+[ACTIVE] [RED] LeadPredict dist=438.777 dV=-20.5776 thr=0.860737 om=1.51445 lt=1.49872
+[ACTIVE] [RED] LeadPredict dist=815.774 dV=25.9792 thr=0.688249 om=1.80751 lt=2.78202
+[ACTIVE] [RED] LeadPredict dist=217.259 dV=-29.5803 thr=1 om=0.220442 lt=0.885557
+[DUTY] team=1 ticks=1200 v27¡æ∏ª¡∂¡ÿ=0.166667% v21π≈©øπ√¯=87.4167% v17±Àµµ¡∂∞«=98.6667% v17ΩΩ∑‘¿˚øÎ=6% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=6.33333% v23b¡∂∞«=24.4167% v23bΩ«¡¶¿˚øÎ=18.9167%
+[ACTIVE] [RED] LeadPredict dist=959.683 dV=-20.1146 thr=1 om=0.866666 lt=3
+[ACTIVE] [RED] LeadPredict dist=1028.26 dV=31.8953 thr=0.907999 om=2.00391 lt=3
+[ACTIVE] [RED] LeadPredict dist=804.613 dV=2.62364 thr=0.968516 om=0.462651 lt=3
+[ACTIVE] [RED] LeadPredict dist=1059.64 dV=-32.3068 thr=1 om=1.41812 lt=3
+[ACTIVE] [RED] LeadPredict dist=939.057 dV=0.720215 thr=1 om=1.49753 lt=3
+[ACTIVE] [RED] LeadPredict dist=691.867 dV=36.4738 thr=0.562315 om=0.496787 lt=3
+[ACTIVE] [RED] LeadPredict dist=895.572 dV=-7.51083 thr=1 om=1.92188 lt=3
+[ACTIVE] [RED] LeadPredict dist=792.038 dV=-9.67148 thr=1 om=1.25631 lt=2.48627
+[ACTIVE] [RED] LeadPredict dist=948.352 dV=-19.2401 thr=1 om=0.187604 lt=3
+[ACTIVE] [RED] LeadPredict dist=1049.21 dV=1.69766 thr=1 om=1.66491 lt=3
+[DUTY] team=1 ticks=1800 v27¡æ∏ª¡∂¡ÿ=3.94444% v21π≈©øπ√¯=87.9444% v17±Àµµ¡∂∞«=96.6667% v17ΩΩ∑‘¿˚øÎ=32.8333% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=16.4444% v23b¡∂∞«=16.2778% v23bΩ«¡¶¿˚øÎ=12.6111%
+[ACTIVE] [RED] LeadPredict dist=728.602 dV=39.046 thr=0.776 om=1.26332 lt=2.03025
+[ACTIVE] [RED] LeadPredict dist=708.77 dV=7.45938 thr=0.866608 om=0.0278388 lt=2.23625
+runner:local/env:0	num_steps=[11999] | total rewards=[175.2100] | termination= [max time out]
+[seed 31] reward=   175.21 ownHP=0.3436 tgtHP=0.8998 max time out
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.1002 taken=0.6564 mean_reward=175.21
+tacview log saved (last episode)
+STAMP Rule_m700.xml ÎùºÏö¥Îìú2 seed31 2026_8_12_12_11_18
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 34 OBFM_RED round2 sep=762m alt=8102m spd=299m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] LeadPredict dist=745.943 dV=-4.37274 thr=1 om=0.750029 lt=2.41387
+[ACTIVE] [RED] LeadPredict dist=500.824 dV=-0.874542 thr=1 om=0.856226 lt=1.42475
+[ACTIVE] [RED] LeadPredict dist=485.859 dV=1.80054 thr=0.978394 om=1.14034 lt=1.19899
+[ACTIVE] [RED] ClimbOut Z=1619.45
+[ACTIVE] [RED] LeadPredict dist=537.05 dV=13.2726 thr=0.840729 om=1.83531 lt=1.3069
+[ACTIVE] [RED] LeadPredict dist=272.68 dV=-7.35651 thr=0.976971 om=0.533676 lt=0.811844
+[ACTIVE] [RED] LeadPredict dist=208.8 dV=5.60739 thr=0.846526 om=1.51714 lt=0.695711
+[ACTIVE] [RED] LeadPredict dist=136.345 dV=-10.3917 thr=0.91287 om=1.21212 lt=0.513535
+[ACTIVE] [RED] LeadPredict dist=258.466 dV=-6.48195 thr=0.957783 om=1.94034 lt=1.04475
+[ACTIVE] [RED] LeadPredict dist=347.547 dV=-1.7491 thr=0.904516 om=0.9834 lt=1.43284
+[ACTIVE] [RED] LeadPredict dist=216.634 dV=3.75542 thr=0.834935 om=0.736217 lt=0.856428
+[DUTY] team=1 ticks=600 v27¡æ∏ª¡∂¡ÿ=0% v21π≈©øπ√¯=86% v17±Àµµ¡∂∞«=96% v17ΩΩ∑‘¿˚øÎ=0.833333% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=2.5% v23b¡∂∞«=9.33333% v23bΩ«¡¶¿˚øÎ=9.33333%
+[ACTIVE] [RED] LeadPredict dist=93.6252 dV=-5.55594 thr=0.832592 om=1.21759 lt=0.337089
+[ACTIVE] [RED] LeadPredict dist=209.761 dV=5.9675 thr=0.757977 om=1.54673 lt=0.661818
+[ACTIVE] [RED] ClimbOut Z=1803.52
+[ACTIVE] [RED] LeadPredict dist=182.313 dV=0.977417 thr=0.62286 om=3.4077 lt=0.522779
+[ACTIVE] [RED] LeadPredict dist=330.457 dV=-5.40161 thr=0.770658 om=1.64891 lt=1.05254
+[ACTIVE] [RED] LeadPredict dist=730.463 dV=-13.0668 thr=1 om=1.62322 lt=2.6368
+[ACTIVE] [RED] LeadPredict dist=984.743 dV=34.3646 thr=0.880834 om=1.87109 lt=3
+[ACTIVE] [RED] LeadPredict dist=644.817 dV=-15.176 thr=1 om=1.80913 lt=2.67713
+[ACTIVE] [RED] LeadPredict dist=324.945 dV=9.0027 thr=0.861253 om=0.275326 lt=1.44212
+[ACTIVE] [RED] LeadPredict dist=1016.23 dV=18.9828 thr=1 om=1.46452 lt=3
+[ACTIVE] [RED] LeadPredict dist=705.117 dV=-15.2789 thr=1 om=1.31378 lt=3
+[DUTY] team=1 ticks=1200 v27¡æ∏ª¡∂¡ÿ=1.16667% v21π≈©øπ√¯=84% v17±Àµµ¡∂∞«=97.5833% v17ΩΩ∑‘¿˚øÎ=21.5% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=15% v23b¡∂∞«=20.5% v23bΩ«¡¶¿˚øÎ=18.5%
+[ACTIVE] [RED] LeadPredict dist=908.731 dV=-1.85199 thr=1 om=0.49036 lt=3
+[ACTIVE] [RED] LeadPredict dist=774.622 dV=43.4187 thr=0.55 om=0.997599 lt=3
+[ACTIVE] [RED] LeadPredict dist=678.793 dV=-0.41156 thr=1 om=1.89104 lt=2.30134
+[ACTIVE] [RED] LeadPredict dist=877.174 dV=-33.0785 thr=1 om=1.24324 lt=3
+[ACTIVE] [RED] LeadPredict dist=915.308 dV=9.56857 thr=1 om=1.25094 lt=3
+[ACTIVE] [RED] LeadPredict dist=698.6 dV=34.2103 thr=0.589477 om=0.257049 lt=3
+[ACTIVE] [RED] LeadPredict dist=795.498 dV=-5.5045 thr=1 om=1.44312 lt=2.85609
+[ACTIVE] [RED] LeadPredict dist=728.34 dV=-9.00269 thr=1 om=0.216223 lt=3
+[ACTIVE] [RED] LeadPredict dist=935.09 dV=-15.3817 thr=1 om=0.0167221 lt=3
+[ACTIVE] [RED] ClimbOut Z=2078.91
+[ACTIVE] [RED] ClimbOut Z=1180.44
+[ACTIVE] [RED] LeadPredict dist=875.028 dV=32.2554 thr=0.84 om=7.94084 lt=2.36339
+[DUTY] team=1 ticks=1800 v27¡æ∏ª¡∂¡ÿ=2.83333% v21π≈©øπ√¯=82.5% v17±Àµµ¡∂∞«=94.6111% v17ΩΩ∑‘¿˚øÎ=43.4444% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=22.6667% v23b¡∂∞«=15.6667% v23bΩ«¡¶¿˚øÎ=14.3333%
+[ACTIVE] [RED] LeadPredict dist=839.528 dV=-1.38898 thr=1 om=0.0105407 lt=0
+runner:local/env:0	num_steps=[11999] | total rewards=[219.6701] | termination= [max time out]
+[seed 34] reward=   219.67 ownHP=0.5158 tgtHP=0.8044 max time out
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.1956 taken=0.4842 mean_reward=219.67
+tacview log saved (last episode)
+STAMP Rule_m700.xml ÎùºÏö¥Îìú2 seed34 2026_8_12_12_11_47
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 37 OBFM_RED round2 sep=762m alt=7453m spd=295m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] LeadPredict dist=723.103 dV=-4.52707 thr=1 om=0.865337 lt=2.36317
+[ACTIVE] [RED] LeadPredict dist=483.803 dV=-0.20575 thr=1 om=0.991866 lt=1.37512
+[ACTIVE] [RED] LeadPredict dist=464.3 dV=-0.874542 thr=1 om=0.716612 lt=1.14593
+[ACTIVE] [RED] ClimbOut Z=1631.85
+[ACTIVE] [RED] LeadPredict dist=504.017 dV=-2.67511 thr=0.495394 om=0.946419 lt=1.33081
+[ACTIVE] [RED] LeadPredict dist=182.922 dV=-16.6678 thr=0.982063 om=0.396948 lt=0.568829
+[ACTIVE] [RED] LeadPredict dist=170.708 dV=-0.41156 thr=0.884939 om=1.24156 lt=0.554071
+[ACTIVE] [RED] LeadPredict dist=123.791 dV=0.82309 thr=0.690123 om=1.27102 lt=0.42172
+[ACTIVE] [RED] LeadPredict dist=101.817 dV=0.61731 thr=0.692592 om=0.783745 lt=0.350795
+[ACTIVE] [RED] LeadPredict dist=81.2593 dV=-1.69763 thr=0.720372 om=2.01777 lt=0.273045
+[ACTIVE] [RED] LeadPredict dist=65.5248 dV=-3.70398 thr=0.744448 om=0.26039 lt=0.20412
+[DUTY] team=1 ticks=600 v27¡æ∏ª¡∂¡ÿ=0% v21π≈©øπ√¯=82.6667% v17±Àµµ¡∂∞«=97.8333% v17ΩΩ∑‘¿˚øÎ=0% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=0% v23b¡∂∞«=11.3333% v23bΩ«¡¶¿˚øÎ=11.3333%
+[ACTIVE] [RED] LeadPredict dist=118.045 dV=0.462982 thr=0.659591 om=1.69375 lt=0.347093
+[ACTIVE] [RED] ClimbOut Z=1271.97
+[ACTIVE] [RED] LeadPredict dist=269.023 dV=12.4494 thr=0.605806 om=2.07233 lt=0.762641
+[ACTIVE] [RED] LeadPredict dist=165.369 dV=-11.9865 thr=0.826192 om=0.445594 lt=0.549588
+[ACTIVE] [RED] LeadPredict dist=155.867 dV=-0.257233 thr=0.90744 om=0.355326 lt=0.562748
+[ACTIVE] [RED] LeadPredict dist=272.062 dV=-9.25995 thr=0.991119 om=0.483812 lt=1.04043
+[ACTIVE] [RED] LeadPredict dist=1199.89 dV=-24.6417 thr=1 om=1.67618 lt=3
+[ACTIVE] [RED] LeadPredict dist=641.407 dV=41.7725 thr=0.715678 om=1.51586 lt=2.39127
+[ACTIVE] [RED] LeadPredict dist=338.922 dV=-15.2789 thr=1 om=0.166821 lt=1.50106
+[ACTIVE] [RED] LeadPredict dist=1048.29 dV=-13.8899 thr=1 om=1.38092 lt=3
+[ACTIVE] [RED] LeadPredict dist=659.093 dV=36.268 thr=0.735999 om=0.0762134 lt=2.98089
+[DUTY] team=1 ticks=1200 v27¡æ∏ª¡∂¡ÿ=1.91667% v21π≈©øπ√¯=78.4167% v17±Àµµ¡∂∞«=98.5833% v17ΩΩ∑‘¿˚øÎ=26.6667% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=18.5833% v23b¡∂∞«=21.4167% v23bΩ«¡¶¿˚øÎ=20.9167%
+[ACTIVE] [RED] LeadPredict dist=786.743 dV=16.102 thr=0.912 om=0.0871057 lt=3
+[ACTIVE] [RED] LeadPredict dist=827.293 dV=-20.9892 thr=1 om=1.26996 lt=3
+[ACTIVE] [RED] LeadPredict dist=1302.34 dV=-19.8574 thr=1 om=0.443931 lt=3
+[ACTIVE] [RED] LeadPredict dist=742.526 dV=44.1389 thr=0.824 om=1.08357 lt=3
+[ACTIVE] [RED] LeadPredict dist=909.105 dV=8.1796 thr=0.901845 om=1.42175 lt=3
+[ACTIVE] [RED] LeadPredict dist=920.741 dV=-13.4269 thr=1 om=1.42247 lt=3
+[ACTIVE] [RED] LeadPredict dist=873.276 dV=9.10559 thr=0.890733 om=0.869638 lt=3
+[ACTIVE] [RED] LeadPredict dist=973.675 dV=6.68771 thr=1 om=0.143022 lt=3
+[ACTIVE] [RED] LeadPredict dist=1028.39 dV=4.68141 thr=1 om=1.28729 lt=3
+[ACTIVE] [RED] LeadPredict dist=812.268 dV=5.50452 thr=0.933946 om=1.25089 lt=3
+[DUTY] team=1 ticks=1800 v27¡æ∏ª¡∂¡ÿ=3.33333% v21π≈©øπ√¯=82.7222% v17±Àµµ¡∂∞«=98.3889% v17ΩΩ∑‘¿˚øÎ=49.4444% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=15.3333% v23b¡∂∞«=14.2778% v23bΩ«¡¶¿˚øÎ=13.9444%
+[ACTIVE] [RED] LeadPredict dist=904.155 dV=-14.4043 thr=1 om=0.0388267 lt=0
+[ACTIVE] [RED] LeadPredict dist=914.33 dV=8.38538 thr=1 om=1.40328 lt=3
+runner:local/env:0	num_steps=[11999] | total rewards=[309.9447] | termination= [max time out]
+[seed 37] reward=   309.94 ownHP=0.5287 tgtHP=0.7424 max time out
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.2576 taken=0.4713 mean_reward=309.94
+tacview log saved (last episode)
+STAMP Rule_m700.xml ÎùºÏö¥Îìú2 seed37 2026_8_12_12_12_16
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 40 OBFM_RED round2 sep=762m alt=6516m spd=218m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] LeadPredict dist=699.782 dV=-11.009 thr=1 om=1.2655 lt=3
+[ACTIVE] [RED] LeadPredict dist=265.835 dV=-10.6489 thr=1 om=1.54361 lt=1.02468
+[ACTIVE] [RED] LeadPredict dist=154.565 dV=-6.89349 thr=0.962722 om=1.27033 lt=0.500837
+[ACTIVE] [RED] ClimbOut Z=1394.55
+[ACTIVE] [RED] LeadPredict dist=241.586 dV=1.90341 thr=0.651978 om=4.77038 lt=0.661235
+[ACTIVE] [RED] ClimbOut Z=896.549
+[ACTIVE] [RED] LeadPredict dist=585.924 dV=-3.29242 thr=0.743547 om=1.7028 lt=1.82906
+[ACTIVE] [RED] LeadPredict dist=630.588 dV=-28.2942 thr=1 om=1.44212 lt=2.32993
+[ACTIVE] [RED] LeadPredict dist=1088.49 dV=19.2401 thr=1 om=1.88049 lt=3
+[ACTIVE] [RED] LeadPredict dist=443.367 dV=-28.4485 thr=1 om=1.30279 lt=2.0878
+[ACTIVE] [RED] LeadPredict dist=1167.91 dV=-21.4007 thr=1 om=0.539338 lt=3
+[ACTIVE] [RED] LeadPredict dist=616.492 dV=29.0144 thr=0.735999 om=0.32568 lt=2.93576
+[DUTY] team=1 ticks=600 v27¡æ∏ª¡∂¡ÿ=2.33333% v21π≈©øπ√¯=86.1667% v17±Àµµ¡∂∞«=97.1667% v17ΩΩ∑‘¿˚øÎ=37.3333% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=8% v23b¡∂∞«=14.1667% v23bΩ«¡¶¿˚øÎ=14.1667%
+[ACTIVE] [RED] LeadPredict dist=1061.26 dV=5.86461 thr=1 om=0.163309 lt=3
+[ACTIVE] [RED] LeadPredict dist=761.498 dV=-0.308655 thr=1 om=1.08799 lt=3
+[ACTIVE] [RED] LeadPredict dist=1255.03 dV=-33.5929 thr=1 om=0.636125 lt=3
+[ACTIVE] [RED] LeadPredict dist=1136.35 dV=6.48195 thr=1 om=1.4441 lt=3
+[ACTIVE] [RED] LeadPredict dist=871.285 dV=11.472 thr=0.862336 om=0.515166 lt=3
+[ACTIVE] [RED] LeadPredict dist=983.443 dV=-1.38898 thr=1 om=0.0739392 lt=3
+[ACTIVE] [RED] LeadPredict dist=866.699 dV=4.62994 thr=0.792522 om=1.36714 lt=2.8065
+[ACTIVE] [RED] LeadPredict dist=1060.6 dV=-15.2789 thr=0.678612 om=0.063073 lt=3
+[ACTIVE] [RED] ClimbOut Z=1192.8
+[ACTIVE] [RED] LeadPredict dist=820.447 dV=10.8547 thr=0.600777 om=2.13118 lt=2.31808
+[ACTIVE] [RED] LeadPredict dist=781.827 dV=-4.06409 thr=0.784651 om=0.60629 lt=2.51658
+[DUTY] team=1 ticks=1200 v27¡æ∏ª¡∂¡ÿ=1.75% v21π≈©øπ√¯=83.25% v17±Àµµ¡∂∞«=96.0833% v17ΩΩ∑‘¿˚øÎ=66.1667% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=13.0833% v23b¡∂∞«=21.3333% v23bΩ«¡¶¿˚øÎ=21.3333%
+[ACTIVE] [RED] LeadPredict dist=868.098 dV=-2.5722 thr=1 om=0.238321 lt=3
+[ACTIVE] [RED] LeadPredict dist=831.734 dV=0.462982 thr=0.994444 om=0.0218217 lt=0
+[ACTIVE] [RED] LeadPredict dist=800.502 dV=7.04782 thr=0.915426 om=0.177743 lt=0
+[ACTIVE] [RED] LeadPredict dist=657.522 dV=7.76804 thr=0.906784 om=1.39904 lt=2.23021
+[ACTIVE] [RED] LeadPredict dist=744.702 dV=-4.7843 thr=1 om=0.122119 lt=0.804641
+runner:local/env:0	num_steps=[9698] | total rewards=[628.3058] | termination= [target destroyed]
+[seed 40] reward=   628.31 ownHP=1.0000 tgtHP=-0.0009 target destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=1.0009 taken=0.0000 mean_reward=628.31
+tacview log saved (last episode)
+STAMP Rule_m700.xml ÎùºÏö¥Îìú2 seed40 2026_8_12_12_12_41
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 43 OBFM_RED round2 sep=762m alt=8245m spd=239m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] LeadPredict dist=684.508 dV=-19.2915 thr=1 om=0.789844 lt=2.81844
+[ACTIVE] [RED] LeadPredict dist=376.328 dV=-11.9865 thr=1 om=0.863581 lt=1.33613
+[ACTIVE] [RED] LeadPredict dist=211.092 dV=-10.3402 thr=1 om=0.832 lt=0.628478
+[ACTIVE] [RED] LeadPredict dist=151.443 dV=-7.04785 thr=0.951635 om=1.44864 lt=0.397386
+[ACTIVE] [RED] ClimbOut Z=1520.62
+[ACTIVE] [RED] ClimbOut Z=873.442
+[ACTIVE] [RED] LeadPredict dist=850.064 dV=24.2816 thr=0.555082 om=0.581687 lt=2.33094
+[ACTIVE] [RED] LeadPredict dist=211.424 dV=-18.0054 thr=0.843683 om=1.51221 lt=0.712392
+[ACTIVE] [RED] LeadPredict dist=94.2556 dV=-4.37274 thr=0.952 om=0.128069 lt=0.381152
+[ACTIVE] [RED] LeadPredict dist=787.976 dV=1.90343 thr=0.977159 om=0.239604 lt=3
+[ACTIVE] [RED] LeadPredict dist=805.309 dV=-1.85199 thr=1 om=1.23847 lt=3
+[ACTIVE] [RED] LeadPredict dist=1295.7 dV=4.73285 thr=1 om=0.610793 lt=3
+[DUTY] team=1 ticks=600 v27¡æ∏ª¡∂¡ÿ=0.666667% v21π≈©øπ√¯=86.8333% v17±Àµµ¡∂∞«=95.5% v17ΩΩ∑‘¿˚øÎ=22.8333% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=4.66667% v23b¡∂∞«=15.1667% v23bΩ«¡¶¿˚øÎ=15.1667%
+[ACTIVE] [RED] LeadPredict dist=310.495 dV=14.1985 thr=0.818657 om=1.13597 lt=1.89978
+[ACTIVE] [RED] LeadPredict dist=1048.06 dV=17.0794 thr=1 om=0.917692 lt=3
+[ACTIVE] [RED] LeadPredict dist=527.503 dV=-7.87093 thr=1 om=0.924871 lt=1.24278
+[ACTIVE] [RED] LeadPredict dist=1147.66 dV=-5.81317 thr=1 om=1.26838 lt=3
+[ACTIVE] [RED] LeadPredict dist=682.992 dV=-4.52707 thr=1 om=1.81542 lt=3
+[ACTIVE] [RED] LeadPredict dist=1104.08 dV=-8.89981 thr=1 om=1.47025 lt=3
+[ACTIVE] [RED] LeadPredict dist=608.005 dV=18.3141 thr=0.820913 om=2.25228 lt=2.13066
+[ACTIVE] [RED] LeadPredict dist=390.837 dV=-8.38538 thr=0.813293 om=0.125782 lt=1.28594
+[ACTIVE] [RED] LeadPredict dist=665.573 dV=-8.79691 thr=0.826988 om=1.27052 lt=1.88933
+[ACTIVE] [RED] ClimbOut Z=1762.66
+[ACTIVE] [RED] ClimbOut Z=991.405
+[ACTIVE] [RED] LeadPredict dist=1080.16 dV=16.0505 thr=0.638383 om=1.37207 lt=3
+[DUTY] team=1 ticks=1200 v27¡æ∏ª¡∂¡ÿ=2.75% v21π≈©øπ√¯=92.0833% v17±Àµµ¡∂∞«=97.5% v17ΩΩ∑‘¿˚øÎ=53.25% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=17.6667% v23b¡∂∞«=21.4167% v23bΩ«¡¶¿˚øÎ=19%
+[ACTIVE] [RED] LeadPredict dist=1175.38 dV=-9.4657 thr=0.827067 om=0.446149 lt=3
+[ACTIVE] [RED] LeadPredict dist=812.929 dV=0.308685 thr=0.996296 om=1.65662 lt=2.90162
+[ACTIVE] [RED] LeadPredict dist=919.385 dV=-0.257233 thr=1 om=0.028241 lt=3
+[ACTIVE] [RED] LeadPredict dist=891.528 dV=2.72653 thr=0.967282 om=0.18225 lt=0
+[ACTIVE] [RED] LeadPredict dist=878.483 dV=4.47565 thr=0.744422 om=1.37499 lt=2.74409
+[ACTIVE] [RED] LeadPredict dist=1130.45 dV=-14.5072 thr=1 om=0.0355704 lt=3
+[ACTIVE] [RED] LeadPredict dist=1152.63 dV=-1.13174 thr=1 om=0.0059218 lt=3
+[ACTIVE] [RED] LeadPredict dist=919.355 dV=23.4585 thr=1 om=1.6114 lt=2.40072
+[ACTIVE] [RED] LeadPredict dist=782.996 dV=3.4982 thr=0.958022 om=0.114143 lt=0
+[ACTIVE] [RED] LeadPredict dist=763.914 dV=1.44043 thr=0.982715 om=0.20303 lt=0.103014
+[DUTY] team=1 ticks=1800 v27¡æ∏ª¡∂¡ÿ=12.4444% v21π≈©øπ√¯=87.8333% v17±Àµµ¡∂∞«=92.1111% v17ΩΩ∑‘¿˚øÎ=62.6111% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=11.7778% v23b¡∂∞«=22.8889% v23bΩ«¡¶¿˚øÎ=21.2778%
+runner:local/env:0	num_steps=[11650] | total rewards=[582.4038] | termination= [target destroyed]
+[seed 43] reward=   582.40 ownHP=1.0000 tgtHP=-0.0015 target destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=1.0015 taken=0.0000 mean_reward=582.40
+tacview log saved (last episode)
+STAMP Rule_m700.xml ÎùºÏö¥Îìú2 seed43 2026_8_12_12_13_8
+
+########## Rule_m700.xml / ÎùºÏö¥Îìú3 / OBFM_RED / jh2 ##########
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 2 OBFM_RED round3 sep=914m alt=7868m spd=241m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] LeadPredict dist=817.378 dV=-21.1949 thr=1 om=0.594938 lt=3
+[ACTIVE] [RED] LeadPredict dist=369.305 dV=-10.7003 thr=1 om=0.969278 lt=1.29161
+[ACTIVE] [RED] LeadPredict dist=249.832 dV=-8.23105 thr=0.978773 om=0.892808 lt=0.742454
+[ACTIVE] [RED] LeadPredict dist=187.4 dV=3.85831 thr=0.869733 om=1.52191 lt=0.482427
+[ACTIVE] [RED] ClimbOut Z=1538.81
+[ACTIVE] [RED] ClimbOut Z=939.978
+[ACTIVE] [RED] LeadPredict dist=608.741 dV=-5.24728 thr=0.651501 om=1.7881 lt=1.77995
+[ACTIVE] [RED] LeadPredict dist=531.401 dV=-15.3818 thr=0.853741 om=1.3634 lt=1.80494
+[ACTIVE] [RED] LeadPredict dist=1108.9 dV=39.2518 thr=0.990575 om=1.7577 lt=3
+[ACTIVE] [RED] LeadPredict dist=118.068 dV=-14.6615 thr=0.976 om=0.410383 lt=0.498389
+[ACTIVE] [RED] LeadPredict dist=1104.59 dV=-11.7292 thr=1 om=1.33591 lt=3
+[ACTIVE] [RED] LeadPredict dist=398.813 dV=25.3105 thr=0.790047 om=0.244937 lt=1.93037
+[DUTY] team=1 ticks=600 v27¡æ∏ª¡∂¡ÿ=1.83333% v21π≈©øπ√¯=90% v17±Àµµ¡∂∞«=97.8333% v17ΩΩ∑‘¿˚øÎ=28.5% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=5.66667% v23b¡∂∞«=22.5% v23bΩ«¡¶¿˚øÎ=19.5%
+[ACTIVE] [RED] LeadPredict dist=1581.15 dV=25.1047 thr=1 om=0.968598 lt=3
+[ACTIVE] [RED] LeadPredict dist=729.968 dV=-10.4431 thr=1 om=1.05652 lt=3
+[ACTIVE] [RED] LeadPredict dist=1202.49 dV=-6.27615 thr=1 om=1.25137 lt=3
+[ACTIVE] [RED] LeadPredict dist=987.14 dV=-6.89349 thr=1 om=1.22589 lt=3
+[ACTIVE] [RED] LeadPredict dist=870.471 dV=-6.7906 thr=1 om=1.43921 lt=3
+[ACTIVE] [RED] LeadPredict dist=1015.96 dV=-16.8222 thr=1 om=1.94451 lt=3
+[ACTIVE] [RED] LeadPredict dist=902.116 dV=8.33392 thr=0.899993 om=0.629543 lt=3
+[ACTIVE] [RED] LeadPredict dist=1191.3 dV=-16.8222 thr=1 om=0.118137 lt=3
+[ACTIVE] [RED] LeadPredict dist=1226.81 dV=-1.23468 thr=1 om=1.56322 lt=3
+[ACTIVE] [RED] LeadPredict dist=975.586 dV=-1.80054 thr=0.783339 om=1.1214 lt=3
+[DUTY] team=1 ticks=1200 v27¡æ∏ª¡∂¡ÿ=1.66667% v21π≈©øπ√¯=92.1667% v17±Àµµ¡∂∞«=97.9167% v17ΩΩ∑‘¿˚øÎ=59.5833% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=4.08333% v23b¡∂∞«=12% v23bΩ«¡¶¿˚øÎ=10.5%
+[ACTIVE] [RED] LeadPredict dist=1184.48 dV=-23.0984 thr=0.665275 om=0.017834 lt=3
+[ACTIVE] [RED] LeadPredict dist=1268.11 dV=-0.720215 thr=0.537154 om=4.48192 lt=3
+[ACTIVE] [RED] ClimbOut Z=1433.47
+[ACTIVE] [RED] LeadPredict dist=900.337 dV=21.1435 thr=0.693042 om=0.511577 lt=2.71002
+[ACTIVE] [RED] LeadPredict dist=966.205 dV=-11.6263 thr=1 om=1.58271 lt=3
+[ACTIVE] [RED] LeadPredict dist=1003.79 dV=-7.76807 thr=1 om=0.00755619 lt=3
+[ACTIVE] [RED] LeadPredict dist=1004.03 dV=4.47562 thr=1 om=0.0104166 lt=2.80982
+[ACTIVE] [RED] LeadPredict dist=864.536 dV=20.9377 thr=0.904 om=1.54097 lt=1.08503
+[ACTIVE] [RED] LeadPredict dist=728.612 dV=3.18951 thr=0.961726 om=0.175317 lt=0
+[ACTIVE] [RED] LeadPredict dist=732.086 dV=11.4206 thr=0.872 om=0.255531 lt=1.53922
+[ACTIVE] [RED] ClimbOut Z=1157.85
+[ACTIVE] [RED] LeadPredict dist=646.571 dV=21.8637 thr=0.543697 om=4.17165 lt=1.70651
+[DUTY] team=1 ticks=1800 v27¡æ∏ª¡∂¡ÿ=11.1667% v21π≈©øπ√¯=84.3889% v17±Àµµ¡∂∞«=90.1667% v17ΩΩ∑‘¿˚øÎ=64.6111% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=9.77778% v23b¡∂∞«=20.8889% v23bΩ«¡¶¿˚øÎ=19.6111%
+[ACTIVE] [RED] LeadPredict dist=739.559 dV=-1.59476 thr=0.693698 om=0.181103 lt=2.22711
+runner:local/env:0	num_steps=[11999] | total rewards=[578.3481] | termination= [max time out]
+[seed 2] reward=   578.35 ownHP=0.9411 tgtHP=0.5097 max time out
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.4903 taken=0.0589 mean_reward=578.35
+tacview log saved (last episode)
+STAMP Rule_m700.xml ÎùºÏö¥Îìú3 seed2 2026_8_12_12_13_37
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 5 OBFM_RED round3 sep=914m alt=7099m spd=277m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] LeadPredict dist=843.472 dV=-4.52707 thr=1 om=0.884087 lt=2.89425
+[ACTIVE] [RED] LeadPredict dist=506.421 dV=-0.565887 thr=1 om=1.01875 lt=1.5004
+[ACTIVE] [RED] LeadPredict dist=428.251 dV=-3.49817 thr=1 om=1.29734 lt=1.15523
+[ACTIVE] [RED] LeadPredict dist=352.318 dV=-5.71027 thr=0.948523 om=1.2017 lt=1.0325
+[ACTIVE] [RED] LeadPredict dist=300.414 dV=6.79062 thr=0.80039 om=0.844952 lt=0.882386
+[ACTIVE] [RED] ClimbOut Z=1514.7
+runner:local/env:0	num_steps=[2316] | total rewards=[-143.4547] | termination= [ownship destroyed]
+[seed 5] reward=  -143.45 ownHP=-0.0027 tgtHP=1.0000 ownship destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.0000 taken=1.0027 mean_reward=-143.45
+tacview log saved (last episode)
+STAMP Rule_m700.xml ÎùºÏö¥Îìú3 seed5 2026_8_12_12_13_46
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 8 OBFM_RED round3 sep=914m alt=1075m spd=265m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] LeadPredict dist=896.228 dV=8.02525 thr=0.984 om=1.70852 lt=3
+[ACTIVE] [RED] LeadPredict dist=598.358 dV=-4.16696 thr=1 om=1.43487 lt=2.90927
+[ACTIVE] [RED] LeadPredict dist=709.637 dV=-6.37906 thr=1 om=0.259976 lt=3
+[ACTIVE] [RED] LeadPredict dist=908.124 dV=5.81317 thr=0.930242 om=1.5833 lt=3
+[ACTIVE] [RED] LeadPredict dist=1678.26 dV=2.41786 thr=1 om=0.945824 lt=3
+[ACTIVE] [RED] LeadPredict dist=1114.56 dV=8.33393 thr=1 om=1.49461 lt=3
+[ACTIVE] [RED] LeadPredict dist=664.841 dV=43.5216 thr=0.631999 om=0.362147 lt=3
+[ACTIVE] [RED] LeadPredict dist=1201.86 dV=26.9566 thr=1 om=0.350273 lt=3
+[ACTIVE] [RED] LeadPredict dist=1513.16 dV=19.0343 thr=1 om=0.443641 lt=3
+[ACTIVE] [RED] LeadPredict dist=1320.91 dV=7.56227 thr=1 om=0.765303 lt=3
+[DUTY] team=1 ticks=600 v27¡æ∏ª¡∂¡ÿ=1.5% v21π≈©øπ√¯=91% v17±Àµµ¡∂∞«=97.8333% v17ΩΩ∑‘¿˚øÎ=74.1667% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=0.833333% v23b¡∂∞«=0% v23bΩ«¡¶¿˚øÎ=0%
+[ACTIVE] [RED] LeadPredict dist=835.985 dV=9.67147 thr=0.928 om=1.68763 lt=3
+[ACTIVE] [RED] LeadPredict dist=659.032 dV=-19.8059 thr=1 om=2.15598 lt=3
+[ACTIVE] [RED] LeadPredict dist=1273.9 dV=-67.5974 thr=1 om=1.00019 lt=3
+[ACTIVE] [RED] LeadPredict dist=1275.93 dV=-53.8619 thr=1 om=0.393895 lt=3
+[ACTIVE] [RED] LeadPredict dist=1293.36 dV=4.37274 thr=1 om=1.05087 lt=3
+[ACTIVE] [RED] LeadPredict dist=1220.43 dV=20.5262 thr=1 om=0.256333 lt=3
+[ACTIVE] [RED] LeadPredict dist=1136.12 dV=1.23465 thr=1 om=0.0140113 lt=3
+[ACTIVE] [RED] LeadPredict dist=1110.17 dV=1.23465 thr=1 om=1.49147 lt=3
+[ACTIVE] [RED] LeadPredict dist=854.132 dV=4.52707 thr=0.945675 om=0.144662 lt=3
+[ACTIVE] [RED] LeadPredict dist=962.457 dV=-5.86462 thr=1 om=0.0776081 lt=3
+[DUTY] team=1 ticks=1200 v27¡æ∏ª¡∂¡ÿ=1.5% v21π≈©øπ√¯=82.8333% v17±Àµµ¡∂∞«=91.0833% v17ΩΩ∑‘¿˚øÎ=79.25% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=12.3333% v23b¡∂∞«=0% v23bΩ«¡¶¿˚øÎ=0%
+[ACTIVE] [RED] LeadPredict dist=926.875 dV=11.4206 thr=1 om=1.19965 lt=2.67555
+[ACTIVE] [RED] LeadPredict dist=778.829 dV=14.7644 thr=0.822827 om=1.22931 lt=1.66695
+[ACTIVE] [RED] LeadPredict dist=753.962 dV=5.45306 thr=0.934563 om=0.0318558 lt=0
+[ACTIVE] [RED] LeadPredict dist=668.071 dV=15.8448 thr=0.809863 om=1.40689 lt=1.86051
+[ACTIVE] [RED] LeadPredict dist=832.289 dV=-2.2121 thr=0.654781 om=1.39413 lt=2.4391
+[ACTIVE] [RED] LeadPredict dist=1028.75 dV=-11.8836 thr=0.76 om=0.0399116 lt=2.91
+[ACTIVE] [RED] LeadPredict dist=892.908 dV=26.0307 thr=0.71 om=1.5739 lt=2.39175
+runner:local/env:0	num_steps=[10097] | total rewards=[785.0734] | termination= [target destroyed]
+[seed 8] reward=   785.07 ownHP=1.0000 tgtHP=-0.0014 target destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=1.0014 taken=0.0000 mean_reward=785.07
+tacview log saved (last episode)
+STAMP Rule_m700.xml ÎùºÏö¥Îìú3 seed8 2026_8_12_12_14_10
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 11 OBFM_RED round3 sep=914m alt=4420m spd=280m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] LeadPredict dist=763.092 dV=-3.03519 thr=1 om=1.09592 lt=2.59553
+[ACTIVE] [RED] LeadPredict dist=363.675 dV=-1.5433 thr=0.904 om=1.40613 lt=1.07388
+[ACTIVE] [RED] ClimbOut Z=1206.86
+[ACTIVE] [RED] LeadPredict dist=400.952 dV=0.668793 thr=0.686264 om=1.34812 lt=1.2011
+[ACTIVE] [RED] LeadPredict dist=225.932 dV=-8.12814 thr=0.959701 om=0.814697 lt=0.782016
+[ACTIVE] [RED] LeadPredict dist=197.622 dV=-4.16696 thr=0.93248 om=1.82635 lt=0.708634
+[ACTIVE] [RED] LeadPredict dist=348.398 dV=18.6742 thr=0.65591 om=1.33462 lt=1.28265
+[ACTIVE] [RED] LeadPredict dist=128.881 dV=-5.7103 thr=0.945487 om=0.598163 lt=0.525877
+[ACTIVE] [RED] LeadPredict dist=181.552 dV=-18.0569 thr=1 om=1.97129 lt=0.735538
+[ACTIVE] [RED] LeadPredict dist=391.8 dV=18.6742 thr=0.672895 om=1.7357 lt=1.46013
+[ACTIVE] [RED] LeadPredict dist=165.925 dV=-1.23465 thr=0.894816 om=0.956897 lt=0.644041
+[DUTY] team=1 ticks=600 v27¡æ∏ª¡∂¡ÿ=0% v21π≈©øπ√¯=75.5% v17±Àµµ¡∂∞«=98% v17ΩΩ∑‘¿˚øÎ=0% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=11.1667% v23b¡∂∞«=12.5% v23bΩ«¡¶¿˚øÎ=10.1667%
+[ACTIVE] [RED] LeadPredict dist=214.589 dV=-7.97382 thr=0.975686 om=1.09159 lt=0.769615
+[ACTIVE] [RED] LeadPredict dist=218.868 dV=9.51715 thr=0.765794 om=2.13772 lt=0.734418
+[ACTIVE] [RED] LeadPredict dist=242.149 dV=-0.0514526 thr=0.811762 om=1.23866 lt=0.795779
+[ACTIVE] [RED] LeadPredict dist=156.801 dV=1.54333 thr=0.692346 om=1.72062 lt=0.468274
+[ACTIVE] [RED] ClimbOut Z=1258.41
+[ACTIVE] [RED] LeadPredict dist=363.707 dV=15.2274 thr=0.611053 om=1.47344 lt=1.03468
+[ACTIVE] [RED] LeadPredict dist=98.444 dV=-24.796 thr=0.954063 om=0.214782 lt=0.333382
+[ACTIVE] [RED] LeadPredict dist=236.769 dV=5.76172 thr=0.87292 om=1.79044 lt=0.889881
+[ACTIVE] [RED] LeadPredict dist=198.396 dV=-16.3077 thr=1 om=0.669602 lt=0.833665
+[ACTIVE] [RED] LeadPredict dist=796.728 dV=-9.67148 thr=1 om=1.49106 lt=3
+[ACTIVE] [RED] LeadPredict dist=763.066 dV=34.6218 thr=0.687999 om=1.34901 lt=3
+[DUTY] team=1 ticks=1200 v27¡æ∏ª¡∂¡ÿ=0.5% v21π≈©øπ√¯=78.5% v17±Àµµ¡∂∞«=98.9167% v17ΩΩ∑‘¿˚øÎ=10.3333% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=19.5833% v23b¡∂∞«=22.3333% v23bΩ«¡¶¿˚øÎ=17.75%
+[ACTIVE] [RED] LeadPredict dist=340.805 dV=-4.62996 thr=0.976 om=0.198724 lt=1.11553
+[ACTIVE] [RED] LeadPredict dist=970.173 dV=-3.49818 thr=1 om=1.44205 lt=3
+[ACTIVE] [RED] LeadPredict dist=734.215 dV=26.0307 thr=0.749076 om=1.67102 lt=2.79462
+[ACTIVE] [RED] LeadPredict dist=305.877 dV=-12.1408 thr=1 om=0.260879 lt=1.18419
+[ACTIVE] [RED] LeadPredict dist=731.773 dV=-12.5523 thr=1 om=0.414333 lt=2.761
+[ACTIVE] [RED] LeadPredict dist=743.313 dV=13.3754 thr=0.831221 om=0.996233 lt=2.48008
+[ACTIVE] [RED] LeadPredict dist=714.515 dV=-13.5812 thr=0.811762 om=0.101186 lt=2.34813
+[ACTIVE] [RED] LeadPredict dist=617.841 dV=21.9666 thr=0.659591 om=1.15743 lt=1.81666
+[ACTIVE] [RED] LeadPredict dist=591.023 dV=3.03519 thr=0.963578 om=0.689187 lt=1.85271
+[ACTIVE] [RED] LeadPredict dist=537.33 dV=17.1308 thr=0.79443 om=0.0627394 lt=0.725815
+[DUTY] team=1 ticks=1800 v27¡æ∏ª¡∂¡ÿ=6.44444% v21π≈©øπ√¯=84.5556% v17±Àµµ¡∂∞«=99.1111% v17ΩΩ∑‘¿˚øÎ=35.6667% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=25.5% v23b¡∂∞«=23.1111% v23bΩ«¡¶¿˚øÎ=18.1111%
+[ACTIVE] [RED] LeadPredict dist=524.644 dV=2.67508 thr=0.967899 om=0.996843 lt=0
+runner:local/env:0	num_steps=[11999] | total rewards=[262.7186] | termination= [max time out]
+[seed 11] reward=   262.72 ownHP=0.8759 tgtHP=0.0946 max time out
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.9054 taken=0.1241 mean_reward=262.72
+tacview log saved (last episode)
+STAMP Rule_m700.xml ÎùºÏö¥Îìú3 seed11 2026_8_12_12_14_38
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 14 OBFM_RED round3 sep=914m alt=2843m spd=280m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] LeadPredict dist=717.23 dV=-4.7843 thr=1 om=1.22116 lt=2.44983
+[ACTIVE] [RED] ClimbOut Z=1324.14
+[ACTIVE] [RED] LeadPredict dist=305.832 dV=-2.26352 thr=0.755135 om=1.46226 lt=0.962902
+[ACTIVE] [RED] LeadPredict dist=215.254 dV=-3.96118 thr=0.927534 om=1.82815 lt=0.828398
+[ACTIVE] [RED] LeadPredict dist=123.891 dV=-10.1345 thr=0.872744 om=0.221675 lt=0.566785
+[ACTIVE] [RED] LeadPredict dist=95.6223 dV=-8.48825 thr=0.93692 om=1.45474 lt=0.496465
+[ACTIVE] [RED] LeadPredict dist=287.97 dV=0.823105 thr=0.870123 om=0.39926 lt=1.54378
+[ACTIVE] [RED] LeadPredict dist=325.627 dV=-1.38899 thr=0.896668 om=0.855767 lt=1.82993
+[ACTIVE] [RED] LeadPredict dist=317.324 dV=16.8222 thr=0.678134 om=1.16946 lt=1.58284
+[ACTIVE] [RED] LeadPredict dist=113.364 dV=-19.6516 thr=0.935819 om=1.18584 lt=0.56287
+[ACTIVE] [RED] LeadPredict dist=46.4205 dV=-5.86461 thr=0.867856 om=1.27088 lt=0.204105
+[DUTY] team=1 ticks=600 v27¡æ∏ª¡∂¡ÿ=0% v21π≈©øπ√¯=86.6667% v17±Àµµ¡∂∞«=97.8333% v17ΩΩ∑‘¿˚øÎ=1.66667% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=9.16667% v23b¡∂∞«=5.16667% v23bΩ«¡¶¿˚øÎ=5.16667%
+[ACTIVE] [RED] LeadPredict dist=111.519 dV=-5.09296 thr=0.793902 om=2.10313 lt=0.442043
+[ACTIVE] [RED] LeadPredict dist=293.219 dV=15.2789 thr=0.696654 om=1.51147 lt=1.01365
+[ACTIVE] [RED] LeadPredict dist=161.722 dV=5.40161 thr=0.815181 om=0.251843 lt=0.50868
+[ACTIVE] [RED] LeadPredict dist=223.041 dV=-3.03522 thr=0.765065 om=1.40197 lt=0.648654
+[ACTIVE] [RED] ClimbOut Z=1333.92
+[ACTIVE] [RED] LeadPredict dist=147.571 dV=-13.5812 thr=0.82349 om=0.401491 lt=0.461111
+[ACTIVE] [RED] LeadPredict dist=288.626 dV=5.60739 thr=0.788587 om=1.61201 lt=0.931819
+[ACTIVE] [RED] LeadPredict dist=294.185 dV=-10.2888 thr=0.991887 om=1.38035 lt=1.02208
+[ACTIVE] [RED] LeadPredict dist=552.139 dV=11.8321 thr=0.858015 om=1.73101 lt=1.90433
+[ACTIVE] [RED] LeadPredict dist=420.967 dV=-7.81949 thr=1 om=1.41564 lt=1.56254
+[ACTIVE] [RED] LeadPredict dist=386.799 dV=12.861 thr=0.813618 om=1.77031 lt=1.45997
+[DUTY] team=1 ticks=1200 v27¡æ∏ª¡∂¡ÿ=0% v21π≈©øπ√¯=89% v17±Àµµ¡∂∞«=98.75% v17ΩΩ∑‘¿˚øÎ=2.33333% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=13.5% v23b¡∂∞«=22% v23bΩ«¡¶¿˚øÎ=16.5%
+[ACTIVE] [RED] LeadPredict dist=168.643 dV=0.617325 thr=0.872592 om=0.630451 lt=0.701068
+[ACTIVE] [RED] LeadPredict dist=420.573 dV=1.7491 thr=0.979011 om=0.563028 lt=1.82241
+[ACTIVE] [RED] LeadPredict dist=634.521 dV=-10.2888 thr=1 om=1.12548 lt=3
+[ACTIVE] [RED] LeadPredict dist=268.665 dV=38.9946 thr=0.762444 om=1.58405 lt=1.25149
+[ACTIVE] [RED] LeadPredict dist=652.194 dV=14.5072 thr=0.825913 om=0.505641 lt=3
+[ACTIVE] [RED] LeadPredict dist=356.348 dV=-23.6128 thr=1 om=0.878873 lt=2.09907
+[ACTIVE] [RED] LeadPredict dist=543.531 dV=-1.7491 thr=1 om=0.408488 lt=3
+[ACTIVE] [RED] LeadPredict dist=621.201 dV=39.2003 thr=0.55 om=1.94929 lt=3
+[ACTIVE] [RED] LeadPredict dist=775.006 dV=12.861 thr=0.864 om=0.249768 lt=3
+[ACTIVE] [RED] LeadPredict dist=437.2 dV=-36.3709 thr=1 om=0.252732 lt=2.45694
+[DUTY] team=1 ticks=1800 v27¡æ∏ª¡∂¡ÿ=0.222222% v21π≈©øπ√¯=90.5556% v17±Àµµ¡∂∞«=99.1111% v17ΩΩ∑‘¿˚øÎ=18.2778% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=17.2222% v23b¡∂∞«=14.6667% v23bΩ«¡¶¿˚øÎ=11%
+[ACTIVE] [RED] LeadPredict dist=1224.37 dV=-36.6281 thr=1 om=1.01545 lt=3
+[ACTIVE] [RED] LeadPredict dist=488.502 dV=31.4837 thr=0.824 om=0.599395 lt=2.1196
+runner:local/env:0	num_steps=[11999] | total rewards=[-79.6436] | termination= [max time out]
+[seed 14] reward=   -79.64 ownHP=0.9835 tgtHP=1.0000 max time out
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.0000 taken=0.0165 mean_reward=-79.64
+tacview log saved (last episode)
+STAMP Rule_m700.xml ÎùºÏö¥Îìú3 seed14 2026_8_12_12_15_7
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 17 OBFM_RED round3 sep=914m alt=3486m spd=239m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] LeadPredict dist=735.467 dV=-10.6489 thr=1 om=1.37028 lt=2.9272
+[ACTIVE] [RED] ClimbOut Z=1271.16
+[ACTIVE] [RED] ClimbOut Z=723.984
+[ACTIVE] [RED] LeadPredict dist=300.113 dV=-1.08032 thr=0.952 om=0 lt=0.929981
+[ACTIVE] [RED] LeadPredict dist=286.081 dV=-6.73917 thr=0.96087 om=0.65915 lt=1.03365
+[ACTIVE] [RED] LeadPredict dist=31.7873 dV=-10.8547 thr=0.930798 om=0.897748 lt=0.140082
+[ACTIVE] [RED] LeadPredict dist=152.723 dV=-2.67509 thr=0.912101 om=0.144415 lt=0.775933
+[ACTIVE] [RED] LeadPredict dist=545.231 dV=4.99007 thr=0.940119 om=0.896031 lt=3
+[ACTIVE] [RED] LeadPredict dist=201.01 dV=17.8511 thr=0.681184 om=1.05819 lt=1.22143
+[ACTIVE] [RED] LeadPredict dist=488.737 dV=7.30504 thr=0.91234 om=0.457185 lt=2.99791
+[ACTIVE] [RED] LeadPredict dist=283.894 dV=-3.18953 thr=0.918274 om=0.815261 lt=1.59126
+[ACTIVE] [RED] LeadPredict dist=98.6362 dV=-2.82942 thr=0.834104 om=2.00396 lt=0.47518
+[DUTY] team=1 ticks=600 v27¡æ∏ª¡∂¡ÿ=0% v21π≈©øπ√¯=91.8333% v17±Àµµ¡∂∞«=95.8333% v17ΩΩ∑‘¿˚øÎ=6.33333% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=8.66667% v23b¡∂∞«=4.66667% v23bΩ«¡¶¿˚øÎ=3%
+[ACTIVE] [RED] LeadPredict dist=197.517 dV=-0.514435 thr=0.886173 om=1.0372 lt=0.799886
+[ACTIVE] [RED] LeadPredict dist=248.074 dV=9.4657 thr=0.766412 om=1.67056 lt=0.853639
+[ACTIVE] [RED] LeadPredict dist=290.224 dV=5.65884 thr=0.710315 om=1.39052 lt=0.884394
+[ACTIVE] [RED] ClimbOut Z=1779.89
+[ACTIVE] [RED] ClimbOut Z=1092.49
+[ACTIVE] [RED] LeadPredict dist=549.928 dV=11.4206 thr=0.620236 om=1.44769 lt=1.57412
+[ACTIVE] [RED] LeadPredict dist=246.347 dV=-21.3493 thr=0.863579 om=1.49723 lt=0.843367
+[ACTIVE] [RED] LeadPredict dist=36.0115 dV=-10.3917 thr=0.927094 om=1.8881 lt=0.145412
+[ACTIVE] [RED] LeadPredict dist=36.783 dV=-9.82581 thr=0.92 om=1.66219 lt=0.161584
+[ACTIVE] [RED] LeadPredict dist=92.451 dV=7.92238 thr=0.72844 om=2.0376 lt=0.398828
+[ACTIVE] [RED] LeadPredict dist=129.057 dV=-1.80054 thr=0.831018 om=1.88917 lt=0.531166
+[ACTIVE] [RED] LeadPredict dist=424.348 dV=14.3014 thr=0.827148 om=1.77467 lt=1.56344
+[DUTY] team=1 ticks=1200 v27¡æ∏ª¡∂¡ÿ=0% v21π≈©øπ√¯=92.0833% v17±Àµµ¡∂∞«=97.9167% v17ΩΩ∑‘¿˚øÎ=3.25% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=12.25% v23b¡∂∞«=14.75% v23bΩ«¡¶¿˚øÎ=11.3333%
+[ACTIVE] [RED] LeadPredict dist=241.887 dV=2.2121 thr=0.826848 om=1.37764 lt=0.804302
+[ACTIVE] [RED] ClimbOut Z=1331.65
+[ACTIVE] [RED] LeadPredict dist=204.153 dV=5.50452 thr=0.648487 om=4.01008 lt=0.583938
+[ACTIVE] [RED] LeadPredict dist=539.871 dV=-5.09296 thr=0.745296 om=1.88134 lt=1.68746
+[ACTIVE] [RED] LeadPredict dist=772.847 dV=-20.4747 thr=1 om=1.52565 lt=2.7805
+[ACTIVE] [RED] LeadPredict dist=818.07 dV=41.824 thr=0.55 om=1.83847 lt=2.79918
+[ACTIVE] [RED] LeadPredict dist=597.035 dV=-8.33395 thr=1 om=0.144031 lt=2.3137
+[ACTIVE] [RED] LeadPredict dist=1302.4 dV=-22.6868 thr=1 om=0.0744742 lt=3
+[ACTIVE] [RED] LeadPredict dist=691.084 dV=24.796 thr=0.702448 om=0.161484 lt=2.53658
+[ACTIVE] [RED] LeadPredict dist=747.66 dV=-6.5334 thr=1 om=0.0302163 lt=0.65884
+runner:local/env:0	num_steps=[11724] | total rewards=[172.0256] | termination= [target destroyed]
+[seed 17] reward=   172.03 ownHP=1.0000 tgtHP=-0.0023 target destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=1.0023 taken=0.0000 mean_reward=172.03
+tacview log saved (last episode)
+STAMP Rule_m700.xml ÎùºÏö¥Îìú3 seed17 2026_8_12_12_15_37
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 20 OBFM_RED round3 sep=914m alt=2493m spd=271m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] LeadPredict dist=692.159 dV=-4.93863 thr=1 om=1.50734 lt=2.43478
+[ACTIVE] [RED] ClimbOut Z=1300.65
+[ACTIVE] [RED] LeadPredict dist=475.489 dV=0.925995 thr=0.82007 om=1.42675 lt=1.57272
+[ACTIVE] [RED] LeadPredict dist=436.063 dV=-2.05774 thr=1 om=1.73926 lt=1.65169
+[ACTIVE] [RED] LeadPredict dist=329.747 dV=12.9639 thr=0.724433 om=1.52645 lt=1.34802
+[ACTIVE] [RED] LeadPredict dist=218.582 dV=-0.61734 thr=0.887408 om=0.602298 lt=1.00686
+[ACTIVE] [RED] LeadPredict dist=185.088 dV=-3.70396 thr=0.924448 om=0.37382 lt=0.821052
+[ACTIVE] [RED] LeadPredict dist=101.58 dV=-4.06407 thr=0.880718 om=0.49857 lt=0.434353
+[ACTIVE] [RED] LeadPredict dist=110.835 dV=-8.59114 thr=0.857361 om=2.00335 lt=0.452433
+[ACTIVE] [RED] LeadPredict dist=267.14 dV=14.5072 thr=0.705914 om=1.89353 lt=0.983677
+[ACTIVE] [RED] LeadPredict dist=131.68 dV=-3.60107 thr=0.852964 om=1.03857 lt=0.462201
+[DUTY] team=1 ticks=600 v27¡æ∏ª¡∂¡ÿ=0% v21π≈©øπ√¯=87.8333% v17±Àµµ¡∂∞«=98% v17ΩΩ∑‘¿˚øÎ=0.666667% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=13.5% v23b¡∂∞«=7.16667% v23bΩ«¡¶¿˚øÎ=7.16667%
+[ACTIVE] [RED] LeadPredict dist=188.464 dV=-2.05777 thr=0.904693 om=1.36856 lt=0.597047
+[ACTIVE] [RED] ClimbOut Z=1453.18
+[ACTIVE] [RED] LeadPredict dist=365.821 dV=6.99637 thr=0.705286 om=1.43906 lt=1.11075
+[ACTIVE] [RED] LeadPredict dist=570.232 dV=-6.89352 thr=1 om=1.53927 lt=2.01794
+[ACTIVE] [RED] LeadPredict dist=810.173 dV=30.8664 thr=0.721321 om=1.85052 lt=2.89657
+[ACTIVE] [RED] LeadPredict dist=63.8325 dV=-13.6841 thr=0.968 om=1.83757 lt=0.279652
+[ACTIVE] [RED] LeadPredict dist=792.861 dV=-3.13808 thr=1 om=1.15682 lt=3
+[ACTIVE] [RED] LeadPredict dist=533.758 dV=45.6308 thr=0.661378 om=1.59424 lt=2.60888
+[ACTIVE] [RED] LeadPredict dist=988.443 dV=33.7473 thr=1 om=0.418747 lt=3
+[ACTIVE] [RED] LeadPredict dist=95.2034 dV=-22.481 thr=0.969772 om=0.759363 lt=0.667372
+[ACTIVE] [RED] LeadPredict dist=834.185 dV=-10.8547 thr=1 om=0.571535 lt=3
+[DUTY] team=1 ticks=1200 v27¡æ∏ª¡∂¡ÿ=0.416667% v21π≈©øπ√¯=83.1667% v17±Àµµ¡∂∞«=98.75% v17ΩΩ∑‘¿˚øÎ=17.75% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=14.3333% v23b¡∂∞«=11.5833% v23bΩ«¡¶¿˚øÎ=9.83333%
+[ACTIVE] [RED] LeadPredict dist=910.959 dV=-5.6074 thr=1 om=0.601093 lt=3
+[ACTIVE] [RED] LeadPredict dist=372.441 dV=25.3104 thr=0.696426 om=1.20317 lt=3
+[ACTIVE] [RED] LeadPredict dist=782.761 dV=35.1877 thr=0.577748 om=0.888008 lt=3
+[ACTIVE] [RED] LeadPredict dist=1319.47 dV=23.7157 thr=1 om=0.756768 lt=3
+[ACTIVE] [RED] LeadPredict dist=1029.11 dV=-3.29242 thr=1 om=0.311675 lt=3
+[ACTIVE] [RED] LeadPredict dist=49.6145 dV=-18.6742 thr=0.936 om=0.865787 lt=0.278337
+[ACTIVE] [RED] LeadPredict dist=1135.02 dV=-15.9476 thr=1 om=0.96934 lt=3
+[ACTIVE] [RED] LeadPredict dist=358.511 dV=3.65253 thr=0.96 om=1.56315 lt=1.63017
+[ACTIVE] [RED] LeadPredict dist=974.187 dV=15.3303 thr=1 om=1.39868 lt=3
+[ACTIVE] [RED] LeadPredict dist=690.997 dV=-27.8826 thr=1 om=0.275973 lt=2.90548
+[DUTY] team=1 ticks=1800 v27¡æ∏ª¡∂¡ÿ=1.66667% v21π≈©øπ√¯=86.5% v17±Àµµ¡∂∞«=99% v17ΩΩ∑‘¿˚øÎ=35.1667% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=10.2778% v23b¡∂∞«=7.72222% v23bΩ«¡¶¿˚øÎ=6.55556%
+[ACTIVE] [RED] LeadPredict dist=860.92 dV=-20.7319 thr=1 om=1.57153 lt=3
+runner:local/env:0	num_steps=[11999] | total rewards=[-28.5923] | termination= [max time out]
+[seed 20] reward=   -28.59 ownHP=0.8679 tgtHP=0.9205 max time out
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.0795 taken=0.1321 mean_reward=-28.59
+tacview log saved (last episode)
+STAMP Rule_m700.xml ÎùºÏö¥Îìú3 seed20 2026_8_12_12_16_6
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 23 OBFM_RED round3 sep=914m alt=4100m spd=238m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] LeadPredict dist=749.785 dV=-11.8836 thr=1 om=1.2998 lt=3
+[ACTIVE] [RED] LeadPredict dist=226.437 dV=-6.63629 thr=0.959635 om=1.74782 lt=0.772892
+[ACTIVE] [RED] ClimbOut Z=1368.55
+[ACTIVE] [RED] ClimbOut Z=900.982
+[ACTIVE] [RED] LeadPredict dist=610.503 dV=17.5424 thr=0.693698 om=1.53627 lt=1.83847
+[ACTIVE] [RED] LeadPredict dist=66.6361 dV=-8.48828 thr=0.944303 om=1.47374 lt=0.24348
+[ACTIVE] [RED] LeadPredict dist=201.189 dV=-5.71028 thr=0.948523 om=0.249303 lt=0.868302
+[ACTIVE] [RED] LeadPredict dist=994.427 dV=23.3556 thr=1 om=1.46808 lt=3
+[ACTIVE] [RED] LeadPredict dist=141.352 dV=-4.57851 thr=0.851906 om=0.880162 lt=0.777502
+[ACTIVE] [RED] LeadPredict dist=1365.79 dV=-11.7807 thr=1 om=0.92821 lt=3
+[ACTIVE] [RED] LeadPredict dist=838.893 dV=0.925995 thr=0.988913 om=1.83688 lt=0.801078
+[ACTIVE] [RED] LeadPredict dist=852.832 dV=0.360107 thr=0.995679 om=1.32311 lt=3
+[DUTY] team=1 ticks=600 v27¡æ∏ª¡∂¡ÿ=1.5% v21π≈©øπ√¯=86.8333% v17±Àµµ¡∂∞«=97.8333% v17ΩΩ∑‘¿˚øÎ=41.3333% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=10.8333% v23b¡∂∞«=13.3333% v23bΩ«¡¶¿˚øÎ=13.3333%
+[ACTIVE] [RED] LeadPredict dist=1306.6 dV=-8.23105 thr=1 om=1.03752 lt=3
+[ACTIVE] [RED] LeadPredict dist=533.138 dV=15.176 thr=0.887383 om=0.646854 lt=2.54131
+[ACTIVE] [RED] LeadPredict dist=1148.81 dV=7.61372 thr=1 om=1.18605 lt=3
+[ACTIVE] [RED] LeadPredict dist=682.404 dV=-0.771667 thr=1 om=0.24035 lt=2.81575
+[ACTIVE] [RED] LeadPredict dist=1200.94 dV=-25.1561 thr=1 om=1.43041 lt=3
+[ACTIVE] [RED] LeadPredict dist=945.68 dV=31.8953 thr=0.8 om=1.34595 lt=3
+[ACTIVE] [RED] LeadPredict dist=986.094 dV=19.7545 thr=1 om=0.134226 lt=3
+[ACTIVE] [RED] LeadPredict dist=907.25 dV=12.7581 thr=0.96 om=1.84409 lt=0.0101893
+[ACTIVE] [RED] LeadPredict dist=716.076 dV=4.3213 thr=0.948144 om=1.46933 lt=2.92981
+[ACTIVE] [RED] LeadPredict dist=940.809 dV=-19.7545 thr=1 om=0.181212 lt=3
+[DUTY] team=1 ticks=1200 v27¡æ∏ª¡∂¡ÿ=5.66667% v21π≈©øπ√¯=83.25% v17±Àµµ¡∂∞«=94.0833% v17ΩΩ∑‘¿˚øÎ=65.8333% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=13.9167% v23b¡∂∞«=11.6667% v23bΩ«¡¶¿˚øÎ=9.5%
+[ACTIVE] [RED] LeadPredict dist=1022.53 dV=-5.76172 thr=1 om=1.24709 lt=3
+[ACTIVE] [RED] LeadPredict dist=838.374 dV=25.3105 thr=0.856 om=1.29611 lt=1.50359
+[ACTIVE] [RED] LeadPredict dist=740.27 dV=5.86459 thr=0.929625 om=0.00257231 lt=0
+[ACTIVE] [RED] LeadPredict dist=699.116 dV=11.8836 thr=0.862462 om=1.20902 lt=0
+[ACTIVE] [RED] LeadPredict dist=757.228 dV=2.2121 thr=0.722558 om=1.29275 lt=2.32792
+[ACTIVE] [RED] LeadPredict dist=1042.44 dV=-10.7003 thr=0.74097 om=0.0649466 lt=3
+[ACTIVE] [RED] LeadPredict dist=1086.95 dV=-5.19586 thr=1 om=1.64236 lt=2.95467
+[ACTIVE] [RED] ClimbOut Z=1212.22
+[ACTIVE] [RED] LeadPredict dist=1477.48 dV=31.9467 thr=0.471344 om=2.88995 lt=3
+[ACTIVE] [RED] LeadPredict dist=1050.17 dV=7.30505 thr=0.686046 om=0.181239 lt=3
+[ACTIVE] [RED] LeadPredict dist=1272.6 dV=-22.1209 thr=1 om=1.48961 lt=3
+[DUTY] team=1 ticks=1800 v27¡æ∏ª¡∂¡ÿ=10.5% v21π≈©øπ√¯=82.6111% v17±Àµµ¡∂∞«=91.4444% v17ΩΩ∑‘¿˚øÎ=72.6111% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=17.6111% v23b¡∂∞«=21.8333% v23bΩ«¡¶¿˚øÎ=20.3889%
+[ACTIVE] [RED] LeadPredict dist=935.259 dV=19.1372 thr=0.855489 om=0.190075 lt=3
+runner:local/env:0	num_steps=[11982] | total rewards=[777.8697] | termination= [target destroyed]
+[seed 23] reward=   777.87 ownHP=1.0000 tgtHP=-0.0009 target destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=1.0009 taken=0.0000 mean_reward=777.87
+tacview log saved (last episode)
+STAMP Rule_m700.xml ÎùºÏö¥Îìú3 seed23 2026_8_12_12_16_35
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 26 OBFM_RED round3 sep=914m alt=8517m spd=292m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] LeadPredict dist=910.037 dV=-5.35016 thr=1 om=0.647973 lt=2.98866
+[ACTIVE] [RED] LeadPredict dist=583.756 dV=-2.46933 thr=1 om=0.878384 lt=1.6871
+[ACTIVE] [RED] LeadPredict dist=497.075 dV=-1.95486 thr=1 om=1.23422 lt=1.2749
+[ACTIVE] [RED] LeadPredict dist=402.118 dV=-10.4946 thr=1 om=1.2752 lt=1.08988
+[ACTIVE] [RED] LeadPredict dist=339.676 dV=0.0514526 thr=0.879383 om=0.797956 lt=1.01038
+[ACTIVE] [RED] LeadPredict dist=349.821 dV=1.13177 thr=0.866419 om=1.04655 lt=1.00369
+runner:local/env:0	num_steps=[2303] | total rewards=[-143.4144] | termination= [ownship destroyed]
+[seed 26] reward=  -143.41 ownHP=-0.0069 tgtHP=1.0000 ownship destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.0000 taken=1.0069 mean_reward=-143.41
+tacview log saved (last episode)
+STAMP Rule_m700.xml ÎùºÏö¥Îìú3 seed26 2026_8_12_12_16_44
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 29 OBFM_RED round3 sep=914m alt=4196m spd=210m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] LeadPredict dist=844.706 dV=-7.40793 thr=1 om=0.833101 lt=3
+[ACTIVE] [RED] LeadPredict dist=189.885 dV=-10.1345 thr=1 om=1.61047 lt=0.74059
+[ACTIVE] [RED] ClimbOut Z=1263.44
+[ACTIVE] [RED] LeadPredict dist=225.063 dV=0.61731 thr=0.718232 om=5.57604 lt=0.674829
+[ACTIVE] [RED] ClimbOut Z=853.449
+[ACTIVE] [RED] LeadPredict dist=673.054 dV=3.54965 thr=0.81373 om=1.75635 lt=2.21525
+[ACTIVE] [RED] LeadPredict dist=913.397 dV=-12.9639 thr=1 om=1.65519 lt=3
+[ACTIVE] [RED] LeadPredict dist=829.385 dV=38.4287 thr=0.751999 om=2.13352 lt=3
+[ACTIVE] [RED] LeadPredict dist=676.146 dV=-4.32129 thr=1 om=0.122581 lt=2.96355
+[ACTIVE] [RED] LeadPredict dist=1253.7 dV=-28.8086 thr=1 om=1.31032 lt=3
+[ACTIVE] [RED] LeadPredict dist=958.451 dV=-1.13177 thr=1 om=1.90463 lt=3
+[ACTIVE] [RED] LeadPredict dist=951.671 dV=17.4395 thr=0.870848 om=1.85744 lt=3
+[DUTY] team=1 ticks=600 v27¡æ∏ª¡∂¡ÿ=1.66667% v21π≈©øπ√¯=86.8333% v17±Àµµ¡∂∞«=97% v17ΩΩ∑‘¿˚øÎ=45.5% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=10.8333% v23b¡∂∞«=11.8333% v23bΩ«¡¶¿˚øÎ=11.8333%
+[ACTIVE] [RED] LeadPredict dist=1147.09 dV=-2.2121 thr=1 om=0.311153 lt=3
+[ACTIVE] [RED] LeadPredict dist=777.024 dV=1.18321 thr=0.985801 om=1.09777 lt=3
+[ACTIVE] [RED] LeadPredict dist=1358.36 dV=-41.2066 thr=1 om=1.24047 lt=3
+[ACTIVE] [RED] LeadPredict dist=1467.86 dV=-16.2049 thr=1 om=1.34406 lt=3
+[ACTIVE] [RED] LeadPredict dist=888.949 dV=51.907 thr=0.976 om=0.754441 lt=3
+[ACTIVE] [RED] LeadPredict dist=836.997 dV=17.0794 thr=0.795047 om=0.0155044 lt=3
+[ACTIVE] [RED] LeadPredict dist=779.079 dV=13.4269 thr=0.838877 om=0.929807 lt=3
+[ACTIVE] [RED] LeadPredict dist=739.252 dV=-3.70396 thr=1 om=1.06852 lt=3
+[ACTIVE] [RED] LeadPredict dist=909.987 dV=-18.9828 thr=1 om=0.0440527 lt=3
+[ACTIVE] [RED] LeadPredict dist=981.111 dV=6.53339 thr=1 om=1.36509 lt=3
+[DUTY] team=1 ticks=1200 v27¡æ∏ª¡∂¡ÿ=7.08333% v21π≈©øπ√¯=86.3333% v17±Àµµ¡∂∞«=92.9167% v17ΩΩ∑‘¿˚øÎ=67.1667% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=13.6667% v23b¡∂∞«=5.91667% v23bΩ«¡¶¿˚øÎ=5.91667%
+[ACTIVE] [RED] LeadPredict dist=840.801 dV=36.4223 thr=0.679999 om=1.32973 lt=2.96409
+[ACTIVE] [RED] LeadPredict dist=1138.88 dV=25.8249 thr=0.810888 om=0.175236 lt=3
+[ACTIVE] [RED] LeadPredict dist=920.418 dV=0.514435 thr=1 om=1.14001 lt=2.99994
+[ACTIVE] [RED] LeadPredict dist=976.664 dV=-11.6778 thr=0.948519 om=0.0731587 lt=3
+[ACTIVE] [RED] LeadPredict dist=1064.49 dV=-7.71658 thr=0.586566 om=0.0648018 lt=2.97945
+[ACTIVE] [RED] LeadPredict dist=933.094 dV=31.5352 thr=1 om=1.31992 lt=2.46978
+[ACTIVE] [RED] LeadPredict dist=743.353 dV=11.7807 thr=0.858632 om=0.034288 lt=0
+runner:local/env:0	num_steps=[10292] | total rewards=[716.6580] | termination= [target destroyed]
+[seed 29] reward=   716.66 ownHP=1.0000 tgtHP=-0.0027 target destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=1.0027 taken=0.0000 mean_reward=716.66
+tacview log saved (last episode)
+STAMP Rule_m700.xml ÎùºÏö¥Îìú3 seed29 2026_8_12_12_17_9
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 32 OBFM_RED round3 sep=914m alt=4878m spd=267m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] LeadPredict dist=762.75 dV=-5.81317 thr=1 om=1.06651 lt=2.7071
+[ACTIVE] [RED] LeadPredict dist=354.413 dV=-1.69766 thr=0.900372 om=1.27832 lt=1.07427
+[ACTIVE] [RED] ClimbOut Z=1425.38
+[ACTIVE] [RED] LeadPredict dist=277.841 dV=-0.925995 thr=0.891112 om=1.43486 lt=0.803937
+[ACTIVE] [RED] LeadPredict dist=191.253 dV=-4.06406 thr=0.928769 om=0.880225 lt=0.634417
+[ACTIVE] [RED] LeadPredict dist=170.939 dV=-1.69766 thr=0.900372 om=1.37202 lt=0.594847
+[ACTIVE] [RED] LeadPredict dist=191.768 dV=6.9964 thr=0.796043 om=1.20101 lt=0.650671
+[ACTIVE] [RED] LeadPredict dist=147.413 dV=-1.08032 thr=0.76761 om=1.26717 lt=0.476868
+[ACTIVE] [RED] LeadPredict dist=109.567 dV=1.44043 thr=0.682715 om=0.307889 lt=0.327566
+[ACTIVE] [RED] ClimbOut Z=1286.4
+[ACTIVE] [RED] LeadPredict dist=257.041 dV=1.5433 thr=0.686702 om=1.04688 lt=0.770235
+[ACTIVE] [RED] LeadPredict dist=269.497 dV=-10.9061 thr=1 om=1.52179 lt=0.940006
+[DUTY] team=1 ticks=600 v27¡æ∏ª¡∂¡ÿ=0% v21π≈©øπ√¯=78.5% v17±Àµµ¡∂∞«=97.6667% v17ΩΩ∑‘¿˚øÎ=2% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=2.16667% v23b¡∂∞«=13.8333% v23bΩ«¡¶¿˚øÎ=13.8333%
+[ACTIVE] [RED] LeadPredict dist=153.872 dV=-2.46933 thr=0.824419 om=0.12415 lt=0.567886
+[ACTIVE] [RED] LeadPredict dist=216.989 dV=5.55595 thr=0.874444 om=0.976141 lt=0.832439
+[ACTIVE] [RED] LeadPredict dist=135.983 dV=-8.43681 thr=0.96092 om=0.927464 lt=0.552881
+[ACTIVE] [RED] LeadPredict dist=279.046 dV=6.48195 thr=0.872592 om=0.334728 lt=0.0470163
+[ACTIVE] [RED] LeadPredict dist=406.625 dV=-0.462997 thr=1 om=0.776142 lt=1.65986
+[ACTIVE] [RED] LeadPredict dist=822.638 dV=-7.15071 thr=1 om=1.52537 lt=3
+[ACTIVE] [RED] LeadPredict dist=786.81 dV=35.9593 thr=0.620685 om=1.74059 lt=2.8636
+[ACTIVE] [RED] LeadPredict dist=480.461 dV=-12.1922 thr=1 om=1.11143 lt=1.8374
+[ACTIVE] [RED] LeadPredict dist=435.846 dV=20.1146 thr=0.938444 om=1.90187 lt=1.51805
+[ACTIVE] [RED] LeadPredict dist=511.757 dV=-1.33752 thr=0.827067 om=0.151051 lt=1.70194
+[DUTY] team=1 ticks=1200 v27¡æ∏ª¡∂¡ÿ=1.33333% v21π≈©øπ√¯=78.25% v17±Àµµ¡∂∞«=98.5% v17ΩΩ∑‘¿˚øÎ=36.3333% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=23.75% v23b¡∂∞«=13.75% v23bΩ«¡¶¿˚øÎ=7.91667%
+[ACTIVE] [RED] LeadPredict dist=518.883 dV=5.14438 thr=0.951899 om=0.169923 lt=1.66662
+[ACTIVE] [RED] LeadPredict dist=541.42 dV=5.45306 thr=0.934563 om=1.98781 lt=1.31672
+[ACTIVE] [RED] LeadPredict dist=570.658 dV=3.03519 thr=0.963578 om=0.922539 lt=0
+[ACTIVE] [RED] LeadPredict dist=513.155 dV=12.9639 thr=0.844433 om=0.164387 lt=1.18349
+[ACTIVE] [RED] LeadPredict dist=553.962 dV=0.61734 thr=0.992592 om=1.16968 lt=0.275319
+[ACTIVE] [RED] LeadPredict dist=462.83 dV=19.3429 thr=0.767885 om=0.0920649 lt=1.38561
+[ACTIVE] [RED] LeadPredict dist=412.507 dV=4.32129 thr=0.948145 om=0.229443 lt=0.555468
+[ACTIVE] [RED] LeadPredict dist=305.781 dV=27.9855 thr=0.55 om=1.05882 lt=0.771395
+[ACTIVE] [RED] LeadPredict dist=239.218 dV=6.37906 thr=0.53147 om=0.113958 lt=0.646111
+[ACTIVE] [RED] LeadPredict dist=188.383 dV=14.6615 thr=0.573011 om=1.66502 lt=0.522607
+[DUTY] team=1 ticks=1800 v27¡æ∏ª¡∂¡ÿ=22.9444% v21π≈©øπ√¯=81.2778% v17±Àµµ¡∂∞«=97.2222% v17ΩΩ∑‘¿˚øÎ=52.2778% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=18.6667% v23b¡∂∞«=18.3889% v23bΩ«¡¶¿˚øÎ=14.5%
+runner:local/env:0	num_steps=[11474] | total rewards=[687.7870] | termination= [target destroyed]
+[seed 32] reward=   687.79 ownHP=0.9672 tgtHP=-0.0014 target destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=1.0014 taken=0.0328 mean_reward=687.79
+tacview log saved (last episode)
+STAMP Rule_m700.xml ÎùºÏö¥Îìú3 seed32 2026_8_12_12_17_38
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 35 OBFM_RED round3 sep=914m alt=5611m spd=238m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] LeadPredict dist=776.902 dV=-16.8222 thr=1 om=1.00997 lt=3
+[ACTIVE] [RED] LeadPredict dist=266.508 dV=-9.77435 thr=0.997292 om=1.44264 lt=0.922463
+[ACTIVE] [RED] ClimbOut Z=1450.33
+[ACTIVE] [RED] LeadPredict dist=310.867 dV=-3.34384 thr=0.87544 om=8.32434 lt=0.862769
+[ACTIVE] [RED] ClimbOut Z=913.265
+[ACTIVE] [RED] LeadPredict dist=722.791 dV=8.69403 thr=0.738519 om=1.70877 lt=2.24801
+[ACTIVE] [RED] LeadPredict dist=499.806 dV=-9.87726 thr=1 om=1.52197 lt=1.80318
+[ACTIVE] [RED] LeadPredict dist=563.111 dV=12.2951 thr=0.852459 om=1.65891 lt=2.25507
+[ACTIVE] [RED] LeadPredict dist=790.745 dV=-17.6453 thr=1 om=1.18574 lt=3
+[ACTIVE] [RED] LeadPredict dist=1108.4 dV=-8.5397 thr=1 om=0.412991 lt=3
+[ACTIVE] [RED] LeadPredict dist=547.81 dV=17.6967 thr=0.787639 om=1.71682 lt=2.96703
+[ACTIVE] [RED] LeadPredict dist=969.481 dV=1.90343 thr=1 om=0.772693 lt=3
+[DUTY] team=1 ticks=600 v27¡æ∏ª¡∂¡ÿ=1.66667% v21π≈©øπ√¯=83.8333% v17±Àµµ¡∂∞«=96.8333% v17ΩΩ∑‘¿˚øÎ=35% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=5.83333% v23b¡∂∞«=14.6667% v23bΩ«¡¶¿˚øÎ=14.6667%
+[ACTIVE] [RED] LeadPredict dist=623.848 dV=-5.19585 thr=1 om=0.217211 lt=3
+[ACTIVE] [RED] LeadPredict dist=930.408 dV=-10.2374 thr=1 om=0.500194 lt=3
+[ACTIVE] [RED] LeadPredict dist=812.342 dV=-6.27615 thr=1 om=0.298945 lt=3
+[ACTIVE] [RED] LeadPredict dist=1025.5 dV=-12.9125 thr=1 om=1.74035 lt=3
+[ACTIVE] [RED] LeadPredict dist=982.444 dV=-2.82941 thr=0.813949 om=0.0800201 lt=3
+[ACTIVE] [RED] LeadPredict dist=1176.57 dV=-20.0117 thr=0.675333 om=0.0343045 lt=3
+[ACTIVE] [RED] ClimbOut Z=1399.39
+[ACTIVE] [RED] LeadPredict dist=863.157 dV=31.5866 thr=0.585692 om=1.06804 lt=2.41453
+[ACTIVE] [RED] LeadPredict dist=933.413 dV=6.79062 thr=1 om=1.62113 lt=2.98474
+[ACTIVE] [RED] LeadPredict dist=883.707 dV=-4.11554 thr=1 om=0.163963 lt=0
+[ACTIVE] [RED] LeadPredict dist=748.29 dV=2.88086 thr=0.96543 om=1.50395 lt=2.19161
+[DUTY] team=1 ticks=1200 v27¡æ∏ª¡∂¡ÿ=11.4167% v21π≈©øπ√¯=79.3333% v17±Àµµ¡∂∞«=92.25% v17ΩΩ∑‘¿˚øÎ=61.3333% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=16.25% v23b¡∂∞«=20.3333% v23bΩ«¡¶¿˚øÎ=20.3333%
+[ACTIVE] [RED] ClimbOut Z=1551.26
+runner:local/env:0	num_steps=[8112] | total rewards=[238.0783] | termination= [target altitude below min]
+[seed 35] reward=   238.08 ownHP=1.0000 tgtHP=0.8360 target altitude below min
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.1640 taken=0.0000 mean_reward=238.08
+tacview log saved (last episode)
+STAMP Rule_m700.xml ÎùºÏö¥Îìú3 seed35 2026_8_12_12_17_59
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 38 OBFM_RED round3 sep=914m alt=5404m spd=289m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] LeadPredict dist=802.545 dV=-3.7554 thr=1 om=0.91405 lt=2.66399
+[ACTIVE] [RED] LeadPredict dist=437.409 dV=-0.771637 thr=1 om=1.27406 lt=1.255
+[ACTIVE] [RED] ClimbOut Z=1313.24
+[ACTIVE] [RED] LeadPredict dist=367.035 dV=-0.61734 thr=0.887408 om=1.40588 lt=0.991887
+[ACTIVE] [RED] LeadPredict dist=239.152 dV=-9.98013 thr=0.8 om=0.372076 lt=0.746553
+[ACTIVE] [RED] LeadPredict dist=334.407 dV=15.5361 thr=0.693567 om=1.64947 lt=1.08866
+[ACTIVE] [RED] LeadPredict dist=224.314 dV=-0.0514526 thr=0.880617 om=0.212095 lt=0.782549
+[ACTIVE] [RED] LeadPredict dist=232.018 dV=1.95486 thr=0.821819 om=1.2393 lt=0.768461
+[ACTIVE] [RED] LeadPredict dist=185.994 dV=1.2861 thr=0.864567 om=1.04398 lt=0.581172
+[ACTIVE] [RED] LeadPredict dist=139.892 dV=-2.82944 thr=0.733953 om=0.420353 lt=0.40514
+[ACTIVE] [RED] LeadPredict dist=240.809 dV=-0.925995 thr=0.696978 om=1.02552 lt=0.726863
+[DUTY] team=1 ticks=600 v27¡æ∏ª¡∂¡ÿ=0% v21π≈©øπ√¯=74.6667% v17±Àµµ¡∂∞«=98% v17ΩΩ∑‘¿˚øÎ=0% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=7.16667% v23b¡∂∞«=29.6667% v23bΩ«¡¶¿˚øÎ=21%
+[ACTIVE] [RED] LeadPredict dist=350.693 dV=-7.92236 thr=0.976 om=1.60656 lt=1.24876
+[ACTIVE] [RED] LeadPredict dist=585.534 dV=12.0894 thr=0.854928 om=0.979683 lt=2.11482
+[ACTIVE] [RED] LeadPredict dist=880.788 dV=-21.7094 thr=1 om=1.49176 lt=3
+[ACTIVE] [RED] LeadPredict dist=708.637 dV=27.3682 thr=0.776 om=1.94271 lt=2.50135
+[ACTIVE] [RED] LeadPredict dist=151.548 dV=-1.33752 thr=0.83118 om=0.373672 lt=0.5329
+[ACTIVE] [RED] LeadPredict dist=1239.45 dV=-12.5523 thr=0.833407 om=1.39278 lt=3
+[ACTIVE] [RED] ClimbOut Z=1818.89
+[ACTIVE] [RED] ClimbOut Z=1131.79
+[ACTIVE] [RED] LeadPredict dist=1907.44 dV=10.1345 thr=0.650189 om=1.47642 lt=3
+[ACTIVE] [RED] LeadPredict dist=869.773 dV=17.1309 thr=0.724307 om=1.89713 lt=2.6773
+[ACTIVE] [RED] LeadPredict dist=848.05 dV=-9.2085 thr=1 om=1.96767 lt=3
+[ACTIVE] [RED] LeadPredict dist=1053.87 dV=-19.8574 thr=1 om=0.0748255 lt=3
+[DUTY] team=1 ticks=1200 v27¡æ∏ª¡∂¡ÿ=0.833333% v21π≈©øπ√¯=84.0833% v17±Àµµ¡∂∞«=98.3333% v17ΩΩ∑‘¿˚øÎ=32.1667% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=19.1667% v23b¡∂∞«=35.5% v23bΩ«¡¶¿˚øÎ=31.1667%
+[ACTIVE] [RED] LeadPredict dist=991.043 dV=29.1173 thr=1 om=1.91267 lt=3
+[ACTIVE] [RED] LeadPredict dist=768.312 dV=39.046 thr=0.55 om=1.79438 lt=2.21127
+[ACTIVE] [RED] LeadPredict dist=802.863 dV=5.60739 thr=0.787275 om=1.32995 lt=2.58944
+[ACTIVE] [RED] LeadPredict dist=814.202 dV=24.796 thr=0.76039 om=1.42516 lt=0
+[ACTIVE] [RED] LeadPredict dist=711.079 dV=5.24728 thr=0.937033 om=1.78105 lt=2.13836
+[ACTIVE] [RED] ClimbOut Z=1042.98
+[ACTIVE] [RED] LeadPredict dist=652.483 dV=22.8411 thr=0.651064 om=0.72727 lt=1.90727
+[ACTIVE] [RED] LeadPredict dist=751.805 dV=2.5722 thr=0.974148 om=1.5938 lt=2.49174
+[ACTIVE] [RED] LeadPredict dist=727.698 dV=-10.9576 thr=1 om=0.0489494 lt=0.204513
+[ACTIVE] [RED] LeadPredict dist=730.183 dV=4.6814 thr=0.943823 om=0.00688342 lt=0
+runner:local/env:0	num_steps=[11265] | total rewards=[470.8381] | termination= [target destroyed]
+[seed 38] reward=   470.84 ownHP=0.4718 tgtHP=-0.0014 target destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=1.0014 taken=0.5282 mean_reward=470.84
+tacview log saved (last episode)
+STAMP Rule_m700.xml ÎùºÏö¥Îìú3 seed38 2026_8_12_12_18_27
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 41 OBFM_RED round3 sep=914m alt=5825m spd=239m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] LeadPredict dist=776.639 dV=-17.2852 thr=1 om=0.92444 lt=3
+[ACTIVE] [RED] LeadPredict dist=285.595 dV=-9.05414 thr=0.98865 om=1.29369 lt=0.983275
+[ACTIVE] [RED] LeadPredict dist=182.321 dV=-9.51715 thr=0.994206 om=1.39969 lt=0.528414
+[ACTIVE] [RED] ClimbOut Z=1464.39
+[ACTIVE] [RED] ClimbOut Z=925.657
+[ACTIVE] [RED] LeadPredict dist=696.902 dV=-2.00632 thr=0.712938 om=1.48735 lt=2.12766
+[ACTIVE] [RED] LeadPredict dist=746.14 dV=-10.1859 thr=1 om=1.52115 lt=2.67353
+[ACTIVE] [RED] LeadPredict dist=725.648 dV=25.6706 thr=0.821794 om=2.06822 lt=2.72625
+[ACTIVE] [RED] LeadPredict dist=824.822 dV=9.41426 thr=0.96 om=0.840277 lt=3
+[ACTIVE] [RED] LeadPredict dist=1002.97 dV=-24.6931 thr=1 om=1.6072 lt=3
+[ACTIVE] [RED] LeadPredict dist=1564.37 dV=-24.4359 thr=1 om=0.913659 lt=3
+[ACTIVE] [RED] LeadPredict dist=837.012 dV=27.574 thr=0.944 om=0.934008 lt=3
+[DUTY] team=1 ticks=600 v27¡æ∏ª¡∂¡ÿ=1.33333% v21π≈©øπ√¯=83% v17±Àµµ¡∂∞«=96.8333% v17ΩΩ∑‘¿˚øÎ=39.1667% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=8.16667% v23b¡∂∞«=15% v23bΩ«¡¶¿˚øÎ=15%
+[ACTIVE] [RED] LeadPredict dist=1085.57 dV=29.2716 thr=1 om=1.45986 lt=3
+[ACTIVE] [RED] LeadPredict dist=1460.72 dV=22.3781 thr=1 om=0.73113 lt=3
+[ACTIVE] [RED] LeadPredict dist=987.716 dV=-4.2184 thr=1 om=0.209203 lt=3
+[ACTIVE] [RED] LeadPredict dist=596.422 dV=-5.50452 thr=1 om=0.562229 lt=3
+[ACTIVE] [RED] LeadPredict dist=1431.7 dV=-38.3258 thr=1 om=0.776696 lt=3
+[ACTIVE] [RED] LeadPredict dist=1445.93 dV=-46.7626 thr=1 om=1.5518 lt=3
+[ACTIVE] [RED] LeadPredict dist=1063.42 dV=14.1985 thr=1 om=0.97001 lt=3
+[ACTIVE] [RED] LeadPredict dist=1439.03 dV=-15.4332 thr=1 om=0.318528 lt=3
+[ACTIVE] [RED] LeadPredict dist=1312.11 dV=-15.3817 thr=1 om=1.24197 lt=3
+[ACTIVE] [RED] LeadPredict dist=1229.7 dV=-18.5198 thr=0.783339 om=0.027629 lt=3
+[DUTY] team=1 ticks=1200 v27¡æ∏ª¡∂¡ÿ=1.41667% v21π≈©øπ√¯=89% v17±Àµµ¡∂∞«=97.0833% v17ΩΩ∑‘¿˚øÎ=68.25% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=8.83333% v23b¡∂∞«=10.25% v23bΩ«¡¶¿˚øÎ=10.25%
+[ACTIVE] [RED] LeadPredict dist=1438.26 dV=-18.3655 thr=0.88 om=0.288726 lt=3
+[ACTIVE] [RED] LeadPredict dist=1141.46 dV=32.2554 thr=1 om=1.46235 lt=2.91377
+[ACTIVE] [RED] LeadPredict dist=889.852 dV=7.30505 thr=0.869465 om=0.00611355 lt=0.683457
+[ACTIVE] [RED] LeadPredict dist=850.196 dV=8.5397 thr=0.897524 om=0.0195962 lt=0.254551
+[ACTIVE] [RED] LeadPredict dist=713.201 dV=6.94492 thr=0.916661 om=1.3409 lt=1.49184
+[ACTIVE] [RED] LeadPredict dist=781.89 dV=-10.4946 thr=0.827597 om=0.151585 lt=2.47781
+[ACTIVE] [RED] LeadPredict dist=848.687 dV=-2.31497 thr=1 om=0.109024 lt=0
+[ACTIVE] [RED] LeadPredict dist=688.7 dV=29.426 thr=0.646888 om=1.46909 lt=1.15972
+[ACTIVE] [RED] LeadPredict dist=598.426 dV=0.977417 thr=0.988271 om=0.148645 lt=0
+runner:local/env:0	num_steps=[10883] | total rewards=[717.8266] | termination= [target destroyed]
+[seed 41] reward=   717.83 ownHP=1.0000 tgtHP=-0.0017 target destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=1.0017 taken=0.0000 mean_reward=717.83
+tacview log saved (last episode)
+STAMP Rule_m700.xml ÎùºÏö¥Îìú3 seed41 2026_8_12_12_18_54
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 44 OBFM_RED round3 sep=914m alt=1894m spd=200m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] LeadPredict dist=841.868 dV=2.93231 thr=0.964812 om=1.66894 lt=3
+[ACTIVE] [RED] LeadPredict dist=387.237 dV=3.60107 thr=0.836787 om=1.75135 lt=1.50577
+[ACTIVE] [RED] LeadPredict dist=141.541 dV=-2.88087 thr=0.933884 om=1.80984 lt=0.611277
+[ACTIVE] [RED] LeadPredict dist=428.83 dV=5.76173 thr=0.952 om=0.333518 lt=1.86568
+[ACTIVE] [RED] LeadPredict dist=1015.86 dV=26.8023 thr=1 om=1.64907 lt=3
+[ACTIVE] [RED] LeadPredict dist=695.835 dV=-7.61371 thr=1 om=1.87024 lt=2.96234
+[ACTIVE] [RED] LeadPredict dist=410.71 dV=7.2536 thr=0.921675 om=0.861613 lt=1.74888
+[ACTIVE] [RED] LeadPredict dist=466.908 dV=3.7554 thr=0.954935 om=0.109201 lt=1.97994
+[ACTIVE] [RED] LeadPredict dist=502.739 dV=-3.85829 thr=1 om=0.905266 lt=2.15873
+[ACTIVE] [RED] LeadPredict dist=440.111 dV=14.4557 thr=0.826531 om=0.09289 lt=1.6667
+[DUTY] team=1 ticks=600 v27¡æ∏ª¡∂¡ÿ=6% v21π≈©øπ√¯=89.6667% v17±Àµµ¡∂∞«=96% v17ΩΩ∑‘¿˚øÎ=61.1667% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=22.3333% v23b¡∂∞«=0% v23bΩ«¡¶¿˚øÎ=0%
+[ACTIVE] [RED] LeadPredict dist=395.386 dV=6.22473 thr=0.805303 om=0.606881 lt=1.26017
+[ACTIVE] [RED] ClimbOut Z=1295.28
+[ACTIVE] [RED] LeadPredict dist=409.278 dV=16.4621 thr=0.658498 om=1.63428 lt=1.20251
+[ACTIVE] [RED] LeadPredict dist=451.56 dV=-8.1796 thr=0.96968 om=0.491339 lt=0
+[ACTIVE] [RED] LeadPredict dist=427.265 dV=15.6904 thr=0.811715 om=0.146011 lt=1.49352
+[ACTIVE] [RED] LeadPredict dist=404.017 dV=-1.08032 thr=1 om=0.966217 lt=1.31244
+[ACTIVE] [RED] LeadPredict dist=377.281 dV=16.102 thr=0.760289 om=0.0992135 lt=1.3685
+[ACTIVE] [RED] LeadPredict dist=324.761 dV=-3.85831 thr=0.9263 om=0.260959 lt=0.0877377
+[ACTIVE] [RED] LeadPredict dist=298.302 dV=15.0731 thr=0.699123 om=1.17039 lt=0.668966
+[ACTIVE] [RED] LeadPredict dist=257.245 dV=-1.44043 thr=0.897285 om=0.127752 lt=0.604651
+[ACTIVE] [RED] LeadPredict dist=235.714 dV=18.3141 thr=0.57148 om=0.151348 lt=0.653257
+[DUTY] team=1 ticks=1200 v27¡æ∏ª¡∂¡ÿ=28.9167% v21π≈©øπ√¯=89.75% v17±Àµµ¡∂∞«=96.25% v17ΩΩ∑‘¿˚øÎ=73.75% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=21.1667% v23b¡∂∞«=13.4167% v23bΩ«¡¶¿˚øÎ=11.6667%
+[ACTIVE] [RED] LeadPredict dist=287.036 dV=12.2951 thr=0.661558 om=1.96243 lt=0.845135
+[ACTIVE] [RED] LeadPredict dist=264.572 dV=2.4693 thr=0.772626 om=0.991458 lt=0.84393
+[ACTIVE] [RED] LeadPredict dist=426.937 dV=14.1471 thr=0.781153 om=0.360012 lt=1.37061
+[ACTIVE] [RED] LeadPredict dist=232.832 dV=3.4982 thr=0.928 om=0.588251 lt=0.806188
+[ACTIVE] [RED] LeadPredict dist=424.529 dV=3.34384 thr=0.870794 om=0.512649 lt=1.46187
+[ACTIVE] [RED] LeadPredict dist=64.6237 dV=-0.82309 thr=0.843704 om=0.342215 lt=0.233711
+[ACTIVE] [RED] LeadPredict dist=81.9163 dV=-10.8033 thr=0.843162 om=1.53121 lt=0.300442
+[ACTIVE] [RED] LeadPredict dist=339.286 dV=14.9702 thr=0.740964 om=1.73207 lt=1.26588
+[ACTIVE] [RED] LeadPredict dist=65.6936 dV=-19.3944 thr=0.944 om=1.65535 lt=0.262648
+[ACTIVE] [RED] LeadPredict dist=162.737 dV=8.59114 thr=0.788372 om=0.264865 lt=0.670207
+[DUTY] team=1 ticks=1800 v27¡æ∏ª¡∂¡ÿ=19.4444% v21π≈©øπ√¯=86.5556% v17±Àµµ¡∂∞«=97.3889% v17ΩΩ∑‘¿˚øÎ=54.6667% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=23.1111% v23b¡∂∞«=24.3333% v23bΩ«¡¶¿˚øÎ=16.6111%
+[ACTIVE] [RED] LeadPredict dist=108.173 dV=-16.6678 thr=0.984 om=0.178822 lt=0.480846
+[ACTIVE] [RED] LeadPredict dist=1034.36 dV=-12.5009 thr=1 om=1.43969 lt=3
+runner:local/env:0	num_steps=[11999] | total rewards=[602.4962] | termination= [max time out]
+[seed 44] reward=   602.50 ownHP=1.0000 tgtHP=0.5275 max time out
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.4725 taken=0.0000 mean_reward=602.50
+tacview log saved (last episode)
+STAMP Rule_m700.xml ÎùºÏö¥Îìú3 seed44 2026_8_12_12_19_23
+
+=== Rule_m700.xml ÏôÑÎ£å ===
