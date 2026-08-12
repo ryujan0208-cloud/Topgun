@@ -1,0 +1,199 @@
+########## M700 / ë¼ìš´ë“œ2 / HABFM / jh2 ##########
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 1 HABFM round2 sep=762m alt=1546m spd=217m/s aoff=0deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[DUTY] team=1 ticks=600 v27Á¾¸»Á¶ÁØ=13.6667% v21¹ğÅ©¿¹Ãø=88% v17±ËµµÁ¶°Ç=85% v17½½·ÔÀû¿ë=73.6667% »ó½ÂÅ¬·¥ÇÁ=0% °­ÇÏÅ¬·¥ÇÁ=4.5% v23bÁ¶°Ç=0% v23b½ÇÁ¦Àû¿ë=0%
+[DUTY] team=1 ticks=1200 v27Á¾¸»Á¶ÁØ=38.25% v21¹ğÅ©¿¹Ãø=87.3333% v17±ËµµÁ¶°Ç=89.9167% v17½½·ÔÀû¿ë=80.3333% »ó½ÂÅ¬·¥ÇÁ=0% °­ÇÏÅ¬·¥ÇÁ=14.4167% v23bÁ¶°Ç=13.1667% v23b½ÇÁ¦Àû¿ë=8.25%
+[DUTY] team=1 ticks=1800 v27Á¾¸»Á¶ÁØ=29.0556% v21¹ğÅ©¿¹Ãø=88.1667% v17±ËµµÁ¶°Ç=92.4444% v17½½·ÔÀû¿ë=63.7778% »ó½ÂÅ¬·¥ÇÁ=0% °­ÇÏÅ¬·¥ÇÁ=18.6667% v23bÁ¶°Ç=36.5% v23b½ÇÁ¦Àû¿ë=27.1667%
+runner:local/env:0	num_steps=[11999] | total rewards=[1007.6930] | termination= [max time out]
+[seed 1] reward=  1007.69 ownHP=1.0000 tgtHP=0.6562 max time out
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.3438 taken=0.0000 mean_reward=1007.69
+tacview log saved (last episode)
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 4 HABFM round2 sep=762m alt=6887m spd=297m/s aoff=0deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+runner:local/env:0	num_steps=[2254] | total rewards=[-6.8765] | termination= [target altitude below min]
+[seed 4] reward=    -6.88 ownHP=1.0000 tgtHP=1.0000 target altitude below min
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-6.88
+tacview log saved (last episode)
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 7 HABFM round2 sep=762m alt=9121m spd=249m/s aoff=0deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[DUTY] team=1 ticks=600 v27Á¾¸»Á¶ÁØ=0% v21¹ğÅ©¿¹Ãø=87.8333% v17±ËµµÁ¶°Ç=49.6667% v17½½·ÔÀû¿ë=35.3333% »ó½ÂÅ¬·¥ÇÁ=0% °­ÇÏÅ¬·¥ÇÁ=42.8333% v23bÁ¶°Ç=28.3333% v23b½ÇÁ¦Àû¿ë=28.3333%
+[DUTY] team=1 ticks=1200 v27Á¾¸»Á¶ÁØ=0% v21¹ğÅ©¿¹Ãø=85.5% v17±ËµµÁ¶°Ç=67.0833% v17½½·ÔÀû¿ë=59.9167% »ó½ÂÅ¬·¥ÇÁ=0% °­ÇÏÅ¬·¥ÇÁ=25.75% v23bÁ¶°Ç=14.1667% v23b½ÇÁ¦Àû¿ë=14.1667%
+[DUTY] team=1 ticks=1800 v27Á¾¸»Á¶ÁØ=2.94444% v21¹ğÅ©¿¹Ãø=87.2778% v17±ËµµÁ¶°Ç=75.8889% v17½½·ÔÀû¿ë=71.1111% »ó½ÂÅ¬·¥ÇÁ=0% °­ÇÏÅ¬·¥ÇÁ=21.1667% v23bÁ¶°Ç=18% v23b½ÇÁ¦Àû¿ë=18%
+runner:local/env:0	num_steps=[11813] | total rewards=[947.4846] | termination= [target destroyed]
+[seed 7] reward=   947.48 ownHP=1.0000 tgtHP=-0.0039 target destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=1.0039 taken=0.0000 mean_reward=947.48
+tacview log saved (last episode)
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 10 HABFM round2 sep=762m alt=3219m spd=234m/s aoff=0deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[DUTY] team=1 ticks=600 v27Á¾¸»Á¶ÁØ=15.3333% v21¹ğÅ©¿¹Ãø=73.6667% v17±ËµµÁ¶°Ç=67.5% v17½½·ÔÀû¿ë=58.1667% »ó½ÂÅ¬·¥ÇÁ=0% °­ÇÏÅ¬·¥ÇÁ=2.16667% v23bÁ¶°Ç=10.5% v23b½ÇÁ¦Àû¿ë=10.5%
+[DUTY] team=1 ticks=1200 v27Á¾¸»Á¶ÁØ=30.25% v21¹ğÅ©¿¹Ãø=71.5833% v17±ËµµÁ¶°Ç=69.9167% v17½½·ÔÀû¿ë=65.25% »ó½ÂÅ¬·¥ÇÁ=0% °­ÇÏÅ¬·¥ÇÁ=10% v23bÁ¶°Ç=17.75% v23b½ÇÁ¦Àû¿ë=17.75%
+runner:local/env:0	num_steps=[7683] | total rewards=[997.5440] | termination= [target destroyed]
+[seed 10] reward=   997.54 ownHP=1.0000 tgtHP=-0.0025 target destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=1.0025 taken=0.0000 mean_reward=997.54
+tacview log saved (last episode)
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 13 HABFM round2 sep=762m alt=5807m spd=237m/s aoff=0deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[DUTY] team=1 ticks=600 v27Á¾¸»Á¶ÁØ=0% v21¹ğÅ©¿¹Ãø=64.1667% v17±ËµµÁ¶°Ç=58% v17½½·ÔÀû¿ë=49.6667% »ó½ÂÅ¬·¥ÇÁ=0% °­ÇÏÅ¬·¥ÇÁ=29.1667% v23bÁ¶°Ç=16.3333% v23b½ÇÁ¦Àû¿ë=16.3333%
+[DUTY] team=1 ticks=1200 v27Á¾¸»Á¶ÁØ=3.58333% v21¹ğÅ©¿¹Ãø=70.5% v17±ËµµÁ¶°Ç=68.5% v17½½·ÔÀû¿ë=64.3333% »ó½ÂÅ¬·¥ÇÁ=0% °­ÇÏÅ¬·¥ÇÁ=28.8333% v23bÁ¶°Ç=18.75% v23b½ÇÁ¦Àû¿ë=18.75%
+runner:local/env:0	num_steps=[9762] | total rewards=[1163.3549] | termination= [target destroyed]
+[seed 13] reward=  1163.35 ownHP=1.0000 tgtHP=-0.0005 target destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=1.0005 taken=0.0000 mean_reward=1163.35
+tacview log saved (last episode)
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 16 HABFM round2 sep=762m alt=2265m spd=227m/s aoff=0deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[DUTY] team=1 ticks=600 v27Á¾¸»Á¶ÁØ=15% v21¹ğÅ©¿¹Ãø=83.1667% v17±ËµµÁ¶°Ç=71.8333% v17½½·ÔÀû¿ë=61.5% »ó½ÂÅ¬·¥ÇÁ=0% °­ÇÏÅ¬·¥ÇÁ=1.83333% v23bÁ¶°Ç=0% v23b½ÇÁ¦Àû¿ë=0%
+[DUTY] team=1 ticks=1200 v27Á¾¸»Á¶ÁØ=43.9167% v21¹ğÅ©¿¹Ãø=82.6667% v17±ËµµÁ¶°Ç=84.5% v17½½·ÔÀû¿ë=77.8333% »ó½ÂÅ¬·¥ÇÁ=0% °­ÇÏÅ¬·¥ÇÁ=1.41667% v23bÁ¶°Ç=0.5% v23b½ÇÁ¦Àû¿ë=0.5%
+runner:local/env:0	num_steps=[7380] | total rewards=[1023.3500] | termination= [target destroyed]
+[seed 16] reward=  1023.35 ownHP=1.0000 tgtHP=-0.0108 target destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=1.0108 taken=0.0000 mean_reward=1023.35
+tacview log saved (last episode)
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 19 HABFM round2 sep=762m alt=3204m spd=230m/s aoff=0deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[DUTY] team=1 ticks=600 v27Á¾¸»Á¶ÁØ=1.33333% v21¹ğÅ©¿¹Ãø=92.3333% v17±ËµµÁ¶°Ç=63% v17½½·ÔÀû¿ë=51.6667% »ó½ÂÅ¬·¥ÇÁ=0% °­ÇÏÅ¬·¥ÇÁ=3.33333% v23bÁ¶°Ç=2.5% v23b½ÇÁ¦Àû¿ë=2.5%
+[DUTY] team=1 ticks=1200 v27Á¾¸»Á¶ÁØ=6.5% v21¹ğÅ©¿¹Ãø=92% v17±ËµµÁ¶°Ç=79.0833% v17½½·ÔÀû¿ë=73.4167% »ó½ÂÅ¬·¥ÇÁ=0% °­ÇÏÅ¬·¥ÇÁ=9.83333% v23bÁ¶°Ç=1.25% v23b½ÇÁ¦Àû¿ë=1.25%
+[DUTY] team=1 ticks=1800 v27Á¾¸»Á¶ÁØ=13.3333% v21¹ğÅ©¿¹Ãø=84.1111% v17±ËµµÁ¶°Ç=77.4444% v17½½·ÔÀû¿ë=73.6667% »ó½ÂÅ¬·¥ÇÁ=0% °­ÇÏÅ¬·¥ÇÁ=9.38889% v23bÁ¶°Ç=1.33333% v23b½ÇÁ¦Àû¿ë=1.33333%
+runner:local/env:0	num_steps=[11999] | total rewards=[1043.0926] | termination= [max time out]
+[seed 19] reward=  1043.09 ownHP=1.0000 tgtHP=0.1372 max time out
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.8628 taken=0.0000 mean_reward=1043.09
+tacview log saved (last episode)
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 22 HABFM round2 sep=762m alt=7582m spd=260m/s aoff=0deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+runner:local/env:0	num_steps=[1891] | total rewards=[-17.8730] | termination= [target altitude below min]
+[seed 22] reward=   -17.87 ownHP=1.0000 tgtHP=1.0000 target altitude below min
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-17.87
+tacview log saved (last episode)
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 25 HABFM round2 sep=762m alt=5320m spd=222m/s aoff=0deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[DUTY] team=1 ticks=600 v27Á¾¸»Á¶ÁØ=0% v21¹ğÅ©¿¹Ãø=72.1667% v17±ËµµÁ¶°Ç=52.3333% v17½½·ÔÀû¿ë=43.5% »ó½ÂÅ¬·¥ÇÁ=0% °­ÇÏÅ¬·¥ÇÁ=11.1667% v23bÁ¶°Ç=2.66667% v23b½ÇÁ¦Àû¿ë=2.66667%
+[DUTY] team=1 ticks=1200 v27Á¾¸»Á¶ÁØ=41% v21¹ğÅ©¿¹Ãø=77% v17±ËµµÁ¶°Ç=73.8333% v17½½·ÔÀû¿ë=66.3333% »ó½ÂÅ¬·¥ÇÁ=0% °­ÇÏÅ¬·¥ÇÁ=5.58333% v23bÁ¶°Ç=1.33333% v23b½ÇÁ¦Àû¿ë=1.33333%
+[DUTY] team=1 ticks=1800 v27Á¾¸»Á¶ÁØ=27.6111% v21¹ğÅ©¿¹Ãø=79.7222% v17±ËµµÁ¶°Ç=82.5556% v17½½·ÔÀû¿ë=47.1111% »ó½ÂÅ¬·¥ÇÁ=0% °­ÇÏÅ¬·¥ÇÁ=13.6111% v23bÁ¶°Ç=2.38889% v23b½ÇÁ¦Àû¿ë=0.888889%
+runner:local/env:0	num_steps=[11999] | total rewards=[933.8761] | termination= [max time out]
+[seed 25] reward=   933.88 ownHP=0.9758 tgtHP=0.5977 max time out
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.4023 taken=0.0242 mean_reward=933.88
+tacview log saved (last episode)
