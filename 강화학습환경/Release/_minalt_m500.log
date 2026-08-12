@@ -1,0 +1,76 @@
+########## Rule_m500.xml / ÎùºÏö¥Îìú2 / OBFM_RED / jh2 ##########
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 1 OBFM_RED round2 sep=762m alt=1546m spd=217m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] LeadPredict dist=652.632 dV=2.82942 thr=0.966047 om=1.28998 lt=2.74357
+[ACTIVE] [RED] LeadPredict dist=187.197 dV=-10.8032 thr=1 om=1.33862 lt=0.832498
+[ACTIVE] [RED] LeadPredict dist=190.277 dV=8.69403 thr=0.862375 om=2.16802 lt=0.830239
+[ACTIVE] [RED] LeadPredict dist=273.032 dV=-0.0514526 thr=0.880617 om=0.824249 lt=1.29227
+[ACTIVE] [RED] LeadPredict dist=274.899 dV=-3.29242 thr=0.919509 om=0.94569 lt=1.22561
+[ACTIVE] [RED] LeadPredict dist=154.948 dV=-6.17329 thr=0.95408 om=1.67161 lt=0.695122
+[ACTIVE] [RED] LeadPredict dist=131.183 dV=-4.99007 thr=0.759881 om=1.61046 lt=0.54969
+[ACTIVE] [RED] LeadPredict dist=115.613 dV=-0.720215 thr=0.708643 om=1.92268 lt=0.447858
+[ACTIVE] [RED] LeadPredict dist=81.8518 dV=-1.38898 thr=0.716668 om=1.38322 lt=0.299301
+[ACTIVE] [RED] LeadPredict dist=126.632 dV=2.82941 thr=0.666047 om=1.64332 lt=0.389917
+[DUTY] team=1 ticks=600 v27¡æ∏ª¡∂¡ÿ=0% v21π≈©øπ√¯=91.3333% v17±Àµµ¡∂∞«=97.3333% v17ΩΩ∑‘¿˚øÎ=0% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=2% v23b¡∂∞«=2.5% v23bΩ«¡¶¿˚øÎ=0%
+[ACTIVE] [RED] LeadPredict dist=574.669 dV=-2.16064 thr=0.77197 om=1.88112 lt=1.83217
+[ACTIVE] [RED] LeadPredict dist=621.229 dV=-13.9928 thr=1 om=0.451733 lt=2.25422
+[ACTIVE] [RED] LeadPredict dist=679.357 dV=0.308685 thr=0.996296 om=1.00237 lt=2.46468
+[ACTIVE] [RED] LeadPredict dist=651.791 dV=-11.1119 thr=1 om=1.09333 lt=0
+[ACTIVE] [RED] LeadPredict dist=893.393 dV=-5.19583 thr=1 om=0.360096 lt=3
+[ACTIVE] [RED] ClimbOut Z=1671.5
+[ACTIVE] [RED] ClimbOut Z=935.313
+[ACTIVE] [RED] LeadPredict dist=2133.53 dV=25.9278 thr=0.738311 om=7.53493 lt=3
+[ACTIVE] [RED] LeadPredict dist=4136.19 dV=62.1444 thr=1 om=2.01307 lt=3
+[ACTIVE] [RED] LeadPredict dist=2355.46 dV=59.1606 thr=0.84 om=1.78665 lt=3
+[ACTIVE] [RED] LeadPredict dist=902.029 dV=29.0144 thr=0.651827 om=0.133104 lt=2.99167
+[ACTIVE] [RED] LeadPredict dist=1128.62 dV=17.2852 thr=1 om=2.17786 lt=3
+[DUTY] team=1 ticks=1200 v27¡æ∏ª¡∂¡ÿ=3.5% v21π≈©øπ√¯=91.75% v17±Àµµ¡∂∞«=89% v17ΩΩ∑‘¿˚øÎ=36.0833% ªÛΩ¬≈¨∑•«¡=0% ∞≠«œ≈¨∑•«¡=5.83333% v23b¡∂∞«=15.5833% v23bΩ«¡¶¿˚øÎ=12%
+[ACTIVE] [RED] LeadPredict dist=751.961 dV=-6.63628 thr=1 om=0.0323138 lt=3
+[ACTIVE] [RED] LeadPredict dist=846.446 dV=3.54962 thr=0.959949 om=0.030373 lt=0.431459
+[ACTIVE] [RED] LeadPredict dist=806.621 dV=12.7581 thr=0.846903 om=1.69995 lt=0
+[ACTIVE] [RED] LeadPredict dist=663.987 dV=9.10559 thr=0.890733 om=1.13807 lt=1.85126
+[ACTIVE] [RED] LeadPredict dist=601.7 dV=15.4846 thr=0.814185 om=0.498608 lt=0.325085
+runner:local/env:0	num_steps=[9584] | total rewards=[508.1505] | termination= [target destroyed]
+[seed 1] reward=   508.15 ownHP=0.9350 tgtHP=-0.0015 target destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=1.0015 taken=0.0650 mean_reward=508.15
+tacview log saved (last episode)
+STAMP Rule_m500.xml ÎùºÏö¥Îìú2 seed1 2026_8_12_18_12_59
+
+
+     JSBSim Flight Dynamics Model v1.0.0 May 27 2026 16:13:38
+init ID:1 Lat37.92355643001773 Lon128.18188127777776 Alt(meter)7000.0785355893395 Speed(m/sec)300.0
+init ID:1 Lat37.96855377446113 Lon128.18188127777776 Alt(meter)7002.8272734023885 Speed(m/sec)300.0
+[match] seed 4 OBFM_RED round2 sep=762m alt=6887m spd=297m/s aoff=30deg
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+total: 2
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[ACTIVE] [RED] LeadPredict dist=710.425 dV=-4.47565 thr=1 om=0.85667 lt=2.31008
+[ACTIVE] [RED] LeadPredict dist=474.823 dV=0.565887 thr=0.993209 om=1.0494 lt=1.3367
+[ACTIVE] [RED] LeadPredict dist=413.396 dV=-5.19583 thr=1 om=1.39395 lt=1.08241
+[ACTIVE] [RED] LeadPredict dist=334.072 dV=-6.73917 thr=0.96087 om=1.06105 lt=0.974766
+runner:local/env:0	num_steps=[1720] | total rewards=[-137.4099] | termination= [ownship destroyed]
+[seed 4] reward=  -137.41 ownHP=-0.0105 tgtHP=1.0000 ownship destroyed
+Remove Space Complete.
+
+[rehearsal own_rep=6 tgt_rep=6 seeds=1]
+SUMMARY dealt=0.0000 taken=1.0105 mean_reward=-137.41
+tacview log saved (last episode)
+STAMP Rule_m500.xml ÎùºÏö¥Îìú2 seed4 2026_8_12_18_13_7
