@@ -182,6 +182,29 @@ class ProviderCommandPolicy:
         )
 
     def _compute_provider_action(self, context, own_plane, enemy_plane) -> np.ndarray:
+        # ===== [진단] 서버가 보내는 position 원시값을 찍는다 (TOPGUN_PROBE=1일 때만) =====
+        # [왜] BTActionProvider의 서버 경로는 여기서 만든 position을 그대로
+        #   OPlaneData.LocationX/Y/Z에 넣는다. 그런데 로컬 경로(ChangeData)에서
+        #   그 필드는 **(위도도, 경도도, 고도m)**다 — 직교 좌표가 아니다.
+        #   실측: 정면 610m를 직교로 넣으면 BT가 Dist=6.76e+07로 읽는다(위도 610도로 해석).
+        #   위경도로 넣으면 607.25로 정상. 따라서 서버가 보내는 값의 실제 규약을
+        #   확인해야 한다. 이 로그는 그걸 보기 위한 것이고 기본은 꺼져 있다.
+        import os as _os
+        if _os.environ.get("TOPGUN_PROBE") and getattr(self, "_probe_n", 0) < 5:
+            self._probe_n = getattr(self, "_probe_n", 0) + 1
+            import math as _m
+            op, ep = own_plane.position, enemy_plane.position
+            d = _m.dist((op.x, op.y, op.z), (ep.x, ep.y, ep.z))
+            print(
+                f"[PROBE] frame={context.frame_index} "
+                f"own=({op.x:.3f}, {op.y:.3f}, {op.z:.3f}) "
+                f"enemy=({ep.x:.3f}, {ep.y:.3f}, {ep.z:.3f}) "
+                f"|차이|={d:.3f} "
+                f"own_rot=({own_plane.rotation.roll:.2f},{own_plane.rotation.pitch:.2f},{own_plane.rotation.yaw:.2f}) "
+                f"own_vel=({own_plane.velocity.x:.2f},{own_plane.velocity.y:.2f},{own_plane.velocity.z:.2f})",
+                flush=True,
+            )
+        # ===============================================================================
         ownship_state = plane_info_to_state(own_plane)
         target_state = plane_info_to_state(enemy_plane)
         observation = self._build_observation(ownship_state, target_state)
