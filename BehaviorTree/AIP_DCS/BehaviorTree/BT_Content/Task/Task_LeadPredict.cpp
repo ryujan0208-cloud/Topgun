@@ -45,6 +45,8 @@ NodeStatus Action::Task_LeadPredict::tick()
 	//        기각한 v31 코드가 소스에 남아 v32에 들어가 있는 것도 발견됐다.
 	//  트리거 발동만 보고 판정하던 관행을 끝내기 위한 계측이다.
 	static long long DUTY_tick[2]  = {0,0};   // 이 노드가 tick된 횟수
+	static long long DUTY_jink[2]  = {0,0};   // [실험 J] 사격해 교란이 실제 적용된 틱
+	static long long DUTY_jtick[2] = {0,0};   // [실험 J] 게이트를 평가한 틱(발동률 분모)
 	static long long DUTY_lead[2]  = {0,0};   // v27 종말조준 게이트
 	static long long DUTY_bank[2]  = {0,0};   // v21 뱅크 횡예측
 	static long long DUTY_orbit[2] = {0,0};   // v17 궤도추종(조건 통과)
@@ -418,6 +420,48 @@ NodeStatus Action::Task_LeadPredict::tick()
 	// v22c: LeadPredict 내부 고도 안전망은 제거. 고도<1800이면 ClimbOut이 최우선으로
 	//  잡아 LeadPredict가 실행조차 안 되므로(트리 구조) 여기 안전망은 죽은 코드였다.
 	//  고도 안전은 DECO_AltitudeCheck(예측형) + Task_ClimbOut(풀스로틀) = 트리 레벨에서 처리.
+
+	// ===== [실험 J] 개전 30초 생존 — 사격해 교란 (기본 OFF, Ablation 게이트) =====
+	// 사전등록: experiments/match_conditions/PREREG_p1survival_2026-08-13.md
+	// [문제] v42의 남은 실점이 **전부** 개전 22~29초의 7초 창에 몰려 있다.
+	//   OBFM_RED 30판 실측: P1(0~100s) 받은 6.853 / P2 0.000 / P3 0.000.
+	//   피격 565틱 전부 t<100s, 시각 중앙 25초, 거리 348m, 우리 ATA 168도(상대가 6시).
+	//   그 구간에서 우리가 버는 건 0.475뿐 = **공격성을 생존과 맞바꾸는 비용이 사실상 0**.
+	// [가설] 사격해를 깨는 것과 싸움을 포기하는 것은 다르다.
+	//   P1 사격 요건은 |ATA| <= 1.0도로 극히 좁다. 비행경로에 작은 면외 성분만 줘도
+	//   상대 추적 루프가 그 1도를 못 맞춘다. **기수는 계속 싸움 안에 둔다.**
+	// [왜 Evade와 다른가] Evade는 MyRight 브레이크로 **진행 방향 자체**를 바꿔 등을 내줬고
+	//   v41에서 제거가 이득이었다. 여기서는 조준점에 **주기적 면외 성분만** 더한다.
+	//   게이트가 풀리면 즉시 원복 — 상태를 남기지 않는다(v33 설계와 동일).
+	// [이미 기각된 것 — 반복하지 않는다] lag pursuit(v33/v33b: 뒤를 겨누면 ATA<=1도를
+	//   영원히 못 만든다, ACE 13승->2승), Evade 게이트 축소(A2: 더 나쁜 순간으로 미룸),
+	//   접근속도 상한(v39), dt 수정(orbit/full). **공통점: 전부 싸움을 포기하는 방향이었다.**
+	{
+		// 에피소드 경과 시간. RunningTime은 생성자 값에 고정돼 작동하지 않으므로
+		// 위치점프 기반 경계(needThrReset)와 자체 추정 틱간격(tickDt)으로 만든다.
+		static long long epTick[2] = { 0, 0 };
+		if (needThrReset[__ti]) epTick[__ti] = 0;
+		epTick[__ti]++;
+		double dtJ   = (tickDt[__ti] > 1e-6) ? tickDt[__ti] : (1.0 / 60.0);
+		double tSecJ = (double)epTick[__ti] * dtJ;
+
+		double ampJ = 0.0, perJ = 2.0;
+		if      (Ablation::sel("j1")) { ampJ = 150.0; perJ = 2.0; }
+		else if (Ablation::sel("j2")) { ampJ = 300.0; perJ = 2.0; }
+		else if (Ablation::sel("j3")) { ampJ = 150.0; perJ = 1.0; }
+
+		// 게이트: 상대가 우리 뒤(ATA>120도) + 교전거리 + 개전 초반에만.
+		if (ampJ > 0.0 && ataDeg > 120.0 && dist < 900.0 && tSecJ < 45.0)
+		{
+			Vector3 upJ = (*BB)->MyUpVector; upJ.normalize();
+			double  ph  = 6.283185307179586 * tSecJ / perJ;
+			predicted   = predicted + upJ * (ampJ * std::sin(ph));
+			DUTY_jink[__ti]++;
+		}
+		DUTY_jtick[__ti]++;
+	}
+	// ==========================================================================
+
 	(*BB)->VP_Cartesian = predicted;
 
 	// v9: 근접 폐쇄율 관리 — "뒤를 잡고도 추월하는" 문제 해결(리플레이서 확인).
@@ -600,6 +644,8 @@ NodeStatus Action::Task_LeadPredict::tick()
 			<< " 강하클램프=" << (100.0*DUTY_clmpD[__ti]/n) << "%"
 			<< " v23b조건=" << (100.0*DUTY_corner[__ti]/n) << "%"
 			<< " v23b실제적용=" << (100.0*DUTY_capp[__ti]/n) << "%"
+			// [실험 J] 게이트 발동률. 상수만 보고 판정하지 않기 위해 실제 적용 틱을 센다.
+			<< " J교란적용=" << (100.0*DUTY_jink[__ti]/n) << "%"
 			<< std::endl;
 	}
 
