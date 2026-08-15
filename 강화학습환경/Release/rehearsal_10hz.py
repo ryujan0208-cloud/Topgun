@@ -182,6 +182,26 @@ def main():
         "episode_step_limit": 18000,
         "min_altitude": 300.0,
     }
+    # ★ 2026-08-15: 채점 규칙을 바꿔 끼운다 (TOPGUN_WEZ).
+    # [왜] 우리는 2026-08-06(eeecad5)에 로컬 시뮬을 3-phase로 고쳤고 v33~v42 판정이
+    #   전부 그 위에서 이뤄졌다. 그런데 팀원(jung)이 실서버 4판(08-13)으로
+    #   "뷰어/실서버는 Phase 2/3 데미지를 주지 않는다"고 보고했다.
+    #   사실이면 우리 기체는 존재하지 않는 점수를 향해 튜닝된 것이다.
+    # [규칙] 기본(미설정)은 현행 3-phase. p1을 주면 phases를 빼서 폴백 경로로 보낸다.
+    #   폴백은 angle_deg/2.0 = 1.0도 반각 + 152.4~914.4m 이므로 **Phase 1과 동일**하고
+    #   이것이 곧 대회 원본 시뮬의 판정이다.
+    _wez_mode = os.environ.get("TOPGUN_WEZ", "").strip().lower()
+    if _wez_mode in ("p1", "phase1", "orig"):
+        cfg["wez"] = {
+            "angle_deg": 2.0,                 # 폴백에서 /2 -> |ATA| <= 1.0도
+            "min_range_m": 500 * 0.30480,
+            "max_range_m": 3000 * 0.30480,
+        }                                     # phases 키 없음 -> 단일 판정
+        print(f"[WEZ] P1 단독 채점 (|ATA|<=1.0도, 152.4~914.4m) — 3-phase 아님",
+              file=sys.stderr, flush=True)
+    elif _wez_mode:
+        raise SystemExit(f"TOPGUN_WEZ 값을 모르겠다: {_wez_mode!r} (p1 또는 미설정)")
+
     if MATCH_MODE:
         # 대회엔 이 산란이 없다. 게다가 add_random_init_position은 += 라 판마다 누적된다.
         cfg["ownship_randomization"] = {"enabled": False}

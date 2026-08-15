@@ -1,0 +1,184 @@
+########## 3phase :: AIP_jung.dll ##########
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 1] reward=   820.94 ownHP=1.0000 tgtHP=-0.0089 target destroyed
+SUMMARY dealt=1.0089 taken=0.0000 mean_reward=820.94
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 4] reward=   374.08 ownHP=1.0000 tgtHP=0.1292 target altitude below min
+SUMMARY dealt=0.8708 taken=0.0000 mean_reward=374.08
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 7] reward=   847.61 ownHP=1.0000 tgtHP=0.3577 max time out
+SUMMARY dealt=0.6423 taken=0.0000 mean_reward=847.61
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 10] reward=   548.73 ownHP=1.0000 tgtHP=-0.0014 target destroyed
+SUMMARY dealt=1.0014 taken=0.0000 mean_reward=548.73
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 13] reward=   541.36 ownHP=1.0000 tgtHP=-0.0009 target destroyed
+SUMMARY dealt=1.0009 taken=0.0000 mean_reward=541.36
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 16] reward=   886.16 ownHP=1.0000 tgtHP=0.8472 max time out
+SUMMARY dealt=0.1528 taken=0.0000 mean_reward=886.16
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 19] reward=  1033.38 ownHP=1.0000 tgtHP=-0.0001 target destroyed
+SUMMARY dealt=1.0001 taken=0.0000 mean_reward=1033.38
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 22] reward=   667.64 ownHP=1.0000 tgtHP=-0.0038 target destroyed
+SUMMARY dealt=1.0038 taken=0.0000 mean_reward=667.64
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 25] reward=  1144.07 ownHP=1.0000 tgtHP=-0.0015 target destroyed
+SUMMARY dealt=1.0015 taken=0.0000 mean_reward=1144.07
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 28] reward=   115.10 ownHP=1.0000 tgtHP=1.0000 target altitude below min
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=115.10
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 31] reward=   833.12 ownHP=1.0000 tgtHP=-0.0021 target destroyed
+SUMMARY dealt=1.0021 taken=0.0000 mean_reward=833.12
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 34] reward=  1200.72 ownHP=1.0000 tgtHP=-0.0040 target destroyed
+SUMMARY dealt=1.0040 taken=0.0000 mean_reward=1200.72
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 37] reward=   786.26 ownHP=1.0000 tgtHP=-0.0004 target destroyed
+SUMMARY dealt=1.0004 taken=0.0000 mean_reward=786.26
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 40] reward=   889.86 ownHP=1.0000 tgtHP=-0.0110 target destroyed
+SUMMARY dealt=1.0110 taken=0.0000 mean_reward=889.86
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 43] reward=   413.64 ownHP=0.7396 tgtHP=0.4241 max time out
+SUMMARY dealt=0.5759 taken=0.2604 mean_reward=413.64
+########## 3phase :: AIP_yuno.dll ##########
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 1] reward=   352.86 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=352.86
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 4] reward=    60.14 ownHP=0.8609 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.1391 mean_reward=60.14
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 7] reward=    60.47 ownHP=0.9650 tgtHP=0.9771 max time out
+SUMMARY dealt=0.0229 taken=0.0350 mean_reward=60.47
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 10] reward=   485.01 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=485.01
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 13] reward=    35.59 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=35.59
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 16] reward=     8.93 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=8.93
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 19] reward=    31.96 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=31.96
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 22] reward=   -22.22 ownHP=1.0000 tgtHP=0.9883 max time out
+SUMMARY dealt=0.0117 taken=0.0000 mean_reward=-22.22
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 25] reward=    37.68 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=37.68
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 28] reward=    84.11 ownHP=0.9744 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0256 mean_reward=84.11
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 31] reward=   -21.51 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-21.51
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 34] reward=    70.99 ownHP=0.9729 tgtHP=0.9359 max time out
+SUMMARY dealt=0.0641 taken=0.0271 mean_reward=70.99
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 37] reward=    66.81 ownHP=0.9840 tgtHP=0.9477 max time out
+SUMMARY dealt=0.0523 taken=0.0160 mean_reward=66.81
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 40] reward=   104.67 ownHP=0.9483 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0517 mean_reward=104.67
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 43] reward=    15.57 ownHP=0.8132 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.1868 mean_reward=15.57
+########## 3phase :: AIP_jh2.dll ##########
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 1] reward=  1007.69 ownHP=1.0000 tgtHP=0.6562 max time out
+SUMMARY dealt=0.3438 taken=0.0000 mean_reward=1007.69
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 4] reward=    -6.88 ownHP=1.0000 tgtHP=1.0000 target altitude below min
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-6.88
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 7] reward=   947.48 ownHP=1.0000 tgtHP=-0.0039 target destroyed
+SUMMARY dealt=1.0039 taken=0.0000 mean_reward=947.48
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 10] reward=   997.54 ownHP=1.0000 tgtHP=-0.0025 target destroyed
+SUMMARY dealt=1.0025 taken=0.0000 mean_reward=997.54
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 13] reward=  1163.35 ownHP=1.0000 tgtHP=-0.0005 target destroyed
+SUMMARY dealt=1.0005 taken=0.0000 mean_reward=1163.35
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 16] reward=  1023.35 ownHP=1.0000 tgtHP=-0.0108 target destroyed
+SUMMARY dealt=1.0108 taken=0.0000 mean_reward=1023.35
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 19] reward=  1043.09 ownHP=1.0000 tgtHP=0.1372 max time out
+SUMMARY dealt=0.8628 taken=0.0000 mean_reward=1043.09
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 22] reward=   -17.87 ownHP=1.0000 tgtHP=1.0000 target altitude below min
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-17.87
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 25] reward=   933.88 ownHP=0.9758 tgtHP=0.5977 max time out
+SUMMARY dealt=0.4023 taken=0.0242 mean_reward=933.88
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 28] reward=   -42.54 ownHP=1.0000 tgtHP=1.0000 target altitude below min
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-42.54
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 31] reward=   -24.34 ownHP=1.0000 tgtHP=1.0000 target altitude below min
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-24.34
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 34] reward=   651.62 ownHP=1.0000 tgtHP=-0.0015 target destroyed
+SUMMARY dealt=1.0015 taken=0.0000 mean_reward=651.62
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 37] reward=    -9.69 ownHP=1.0000 tgtHP=1.0000 target altitude below min
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-9.69
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 40] reward=   956.00 ownHP=1.0000 tgtHP=0.1434 max time out
+SUMMARY dealt=0.8566 taken=0.0000 mean_reward=956.00
+Behavior Tree Initialized Successfully
+Behavior Tree Initialized Successfully
+[seed 43] reward=  1022.79 ownHP=1.0000 tgtHP=-0.0022 target destroyed
+SUMMARY dealt=1.0022 taken=0.0000 mean_reward=1022.79
+########## DONE 3phase ##########
