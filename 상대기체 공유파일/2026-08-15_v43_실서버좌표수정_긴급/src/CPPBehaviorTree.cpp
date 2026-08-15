@@ -29,9 +29,33 @@ Vector3 UCPPBehaviorTree::LLAtoCartesian(Vector3 LLA, Vector3 BaseLLA)
 	return res;
 }
 
+// ★ 2026-08-15: 입력 좌표 규약 판별.
+//  [판별 기준] LLA로 들어오면 위경도가 맵 원점(37.914557, 128.181881) ±1도 안에 있다.
+//    직교 미터로 들어오면 그 값은 원점으로부터의 거리(m)라 위경도 범위를 크게 벗어난다.
+//    (실측: 실서버 spawn own=[608.5, 6.1, 4572.0])
+//  [왜 '한 대라도'인가] 적기가 직교 원점 근처에 있을 수 있다(실측 enemy=[0.1, -7.3]).
+//    그 값만 보면 |0.1-37.9|>1 이라 직교로 맞게 판정되지만, 반대로 우연히 원점 근처
+//    (37.9, 128.2) 미터 지점을 지나면 LLA로 오판할 수 있다. 그래서 **모든 기체를 보고
+//    한 대라도 직교로 보이면 직교**로 결론낸다. 한 프레임의 좌표계는 하나뿐이다.
+//  [반환] 1 = LLA, 2 = 직교 미터
+int UCPPBehaviorTree::DecideCoordFrame(const Vector3& mine, int nOthers, const PlaneInfo* others) const
+{
+	const double TOL = 1.0;   // 도. 대회 맵은 원점 기준 수십 km = 0.5도 이내다.
+	if (fabs(mine.X - OriLAT) > TOL || fabs(mine.Y - OriLOn) > TOL)
+		return 2;
+	for (int i = 0; i < nOthers; i++)
+	{
+		if (fabs(others[i].Location.X - OriLAT) > TOL ||
+			fabs(others[i].Location.Y - OriLOn) > TOL)
+			return 2;
+	}
+	return 1;
+}
+
 // Sets default values for this component's properties
 UCPPBehaviorTree::UCPPBehaviorTree()
 {
+	CoordFrameMode = 0;   // 미정. 첫 Step에서 판별해 고정한다.
 	ID = -1;
 	ForceID = -1;
 
@@ -171,23 +195,33 @@ StickValue UCPPBehaviorTree::Step(PlaneInfo MyInfo, int NumofOtherPlane, PlaneIn
 	Myinfo.Resv1 = MyInfo.Resv1;		//HP
 	Myinfo.Resv2 = MyInfo.Resv2;		//OperationMode
 
-	// ★ 2026-08-15: 좌표 변환을 여기서 완전히 제거했다.
-	//  [규약] oPlaneData.Location 은 **항상 직교 미터**로 들어온다.
-	//    - 로컬 경로: ChangeData()가 LLA를 직교로 바꿔서 넣는다 (유일한 변환 지점)
-	//    - 서버 경로: 대회 서버가 직교를 직접 보낸다
-	//  [왜 없앴나] 여기서 무조건 LLAtoCartesian을 걸고 있었다. 서버 경로는 직교를 주므로
-	//    미터를 도로 읽어 거리가 1.05e+08 m가 됐다(2026-08-15 실서버 실전에서 확인).
-	//    주최측이 2026-05-25에 "지워야 했는데 까먹은 줄"이라고 답한 그 줄이다.
-	//  [왜 판별식을 안 쓰나] 같은 버그가 GetStick()에도 있었다(LibMain.cpp:297).
-	//    진입점마다 판별식을 넣는 방식은 진입점이 늘 때마다 같은 실수를 반복한다.
-	//    변환을 ChangeData() 한 곳으로 모으면 나머지는 결정할 것이 없다.
-	//  ⚠ Step에 LLA를 직접 넣으면 이제 조용히 틀린다. 진단 스크립트는 직교로 넣을 것.
-	Vector3 MyLocationNEU = MyInfo.Location;
+	// Convert LLA to NEU Cartesian (meters) for consistent coordinate frame with Controller
+	Vector3 origin(OriLAT, OriLOn, 0.0);
 
+	// ★ 2026-08-15: 입력이 LLA인지 직교 미터인지 한 번만 판별해 고정한다.
+	//  로컬 경로는 LLA, 대회 서버 경로는 직교 미터를 준다(실서버 실전 확인).
+	//  LLAtoCartesian은 (dN, dE, dD) = (북, 동, 상)을 돌려주고 Unreal도 X=북/Y=동/Z=상이라
+	//  직교 입력은 **변환 없이 그대로** 쓰면 된다. LLA로 되돌리는 왕복은 0.5% 오차가 난다.
+	//  [래치 방향] LLA는 고정하지 않고 **직교가 확인될 때만** 전환하고 그 뒤로 고정한다.
+	//    이유: LLA 입력은 항상 원점 ±1도 안에 머물러 오판할 여지가 없다. 반면 직교는
+	//    기체가 우연히 원점 근처(37.9, 128.2)m 를 지나면 LLA로 오판할 수 있다.
+	//    한 번이라도 직교임이 분명하면 그 판은 끝까지 직교다 — 좌표계는 판 중간에 안 바뀐다.
+	//    이 방향이면 로컬 경로(항상 LLA)는 이 분기에 절대 걸리지 않는다.
+	if (CoordFrameMode != 2 &&
+		DecideCoordFrame(MyInfo.Location, NumofOtherPlane, OthersInfo) == 2)
+		CoordFrameMode = 2;
+
+	Vector3 MyLocationNEU = (CoordFrameMode == 2)
+		? MyInfo.Location
+		: LLAtoCartesian(MyInfo.Location, origin);
+
+	//다른 비행기들 위치 좌표계 변환
 	PlaneInfo others[4];
 	for (int i = 0; i < NumofOtherPlane; i++)
 	{
-		others[i].Location = OthersInfo[i].Location;
+		others[i].Location = (CoordFrameMode == 2)
+			? OthersInfo[i].Location
+			: LLAtoCartesian(OthersInfo[i].Location, origin);
 		others[i].Rotation = EulerAngle(OthersInfo[i].Rotation.Yaw, OthersInfo[i].Rotation.Pitch, OthersInfo[i].Rotation.Roll);
 		others[i].Speed = OthersInfo[i].Speed;
 		others[i].Team = OthersInfo[i].Team;
