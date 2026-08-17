@@ -48,6 +48,9 @@ NodeStatus Action::Task_LeadPredict::tick()
 	static long long DUTY_jink[2]  = {0,0};   // [실험 J] 사격해 교란이 실제 적용된 틱
 	static long long DUTY_jtick[2] = {0,0};   // [실험 J] 게이트를 평가한 틱(발동률 분모)
 	static long long DUTY_lead[2]  = {0,0};   // v27 종말조준 게이트
+	// v45: standoff 발동률. **발동률은 중요도를 예측하지 못하지만**(절제실험 교훈),
+	//  0%면 아예 안 걸린 것이므로 "효과 없음"과 "발동 안 함"을 가르는 데는 반드시 필요하다.
+	static long long DUTY_standoff[2] = {0,0};
 	static long long DUTY_bank[2]  = {0,0};   // v21 뱅크 횡예측
 	static long long DUTY_orbit[2] = {0,0};   // v17 궤도추종(조건 통과)
 	static long long DUTY_slot[2]  = {0,0};   // v17 궤도추종(슬롯 실제 적용)
@@ -162,6 +165,35 @@ NodeStatus Action::Task_LeadPredict::tick()
 		if (fade > 1.0) fade = 1.0;
 		leadTime *= fade;
 	}
+	// ★★ v45 STANDOFF (2026-08-16) — 절제 플래그 "standoff" 로만 켜진다(기본 꺼짐).
+	//  [무엇을 하나] 조준점은 **한 톨도 건드리지 않는다.** 폐쇄율(스로틀)만 낮춘다.
+	//    v33은 조준점을 상대 뒤로 옮겨 득점을 구조적으로 포기했고(준데미지 95% 감소) 기각됐다.
+	//    여기서 바꾸는 것은 거리뿐이다.
+	//  [근거 — 2026-08-16 실측, vs yuno 15판, 사거리 안 거리대별 LOS 각속도]
+	//      150~300m 66.1도/s | 450~600m 29.9 | 750~900m 16.1 | 900~1050m 14.3
+	//    우리 지속 선회율 최고는 15.6도/s(속도 250~275m/s 구간). 사격 사거리 상한은 914.4m.
+	//    => 추종 가능 구간과 사격 구간이 **900~914m에서만 겹친다.**
+	//    지금은 조준이 안 된 채 914m를 지나 최근접 중앙 216m까지 파고들고,
+	//    거기서는 요구 선회율이 능력의 4배라 영영 못 맞춘다.
+	//  [게이트를 ATA로 잡는 이유] LOS 각속도를 쓰면 안 된다.
+	//    losRate는 (LHIST*dt)로 나누는데 호스트가 SetBehaviorTreeDeltaTime을 부르지 않아
+	//    dt가 1/60에 고정된다. ACTION_REPEAT=6이면 6틱 창이 실제 0.6초인데 0.1초로 나눠
+	//    **6배 과대평가**된다(2026-08-16 확인). 절대 임계값을 쓰면 의도한 지점에서 안 열린다.
+	//    ATA는 dt와 무관하고, 두 매치업을 실제로 가른다:
+	//      사거리 안 우리 ATA 중앙 — jung(이김) 6.12도  vs  yuno(짐) 23.4~75.9도
+	//    "안으로 들어왔는데 각이 여전히 크면 그 접근은 헛되다"가 판별식이다.
+	//  [노리는 것] 압도가 아니라 1틱. yuno전 15판 중 7판이 1.0000 대 1.0000이라
+	//    아주 작은 데미지도 승패를 뒤집는다. 규정은 200초 HP 비교다.
+	//  [기각 조건 — 결과 보기 전 고정] 어디서든 준데미지가 줄면 무조건 기각.
+	bool standoffActive = false;   // 스로틀 최종 대입부(아래 v9/v23b)까지 플래그로 넘긴다
+	// 두 가설을 절제 플래그로 갈라 잰다(둘 다 조준점은 안 건드리고 스로틀만 낮춘다):
+	//  A "standoff"  : 각이 큰데 파고드는 것을 막는다 (ataDeg > 15)  — 헛된 접근 억제 가설
+	//  B "dwell"     : 잘 겨눈 상태에서 통과를 늦춘다 (ataDeg < 15)  — 사격구역 체류 가설
+	//    B는 메모리 bt_wez_transit("초당 23m로 파고들어 사격구역을 통과한다")과 직접 연결된다.
+	if ((Ablation::sel("standoff") && dist < 880.0 && ataDeg > 15.0 && tgtSpd > 30.0)
+	 || (Ablation::sel("dwell")    && dist < 880.0 && ataDeg < 15.0 && tgtSpd > 30.0))
+		standoffActive = true;
+
 	Vector3 predicted = TargetLocation + TgtFwd * (tgtSpd * leadTime);
 
 	double rollDeg = (*BB)->TargetRotation_EDegree.Roll;
@@ -300,6 +332,23 @@ NodeStatus Action::Task_LeadPredict::tick()
 			//    **"애초에 그 기하에 안 들어간다"(선제 포지셔닝)**이다.
 			//    lag는 유지(sustain) 전술이지 득점(score) 전술이 아니다.
 			//  코드는 기록·재현을 위해 남기되 게이트로 끈다.
+			// ★★ v45 STANDOFF (2026-08-16) — 절제 플래그 "standoff" 로만 켜진다(기본 꺼짐).
+			//  [v33과 무엇이 다른가] v33은 **조준점을 상대 뒤로 옮겨** 득점을 구조적으로 포기했다
+			//    (준데미지 95% 감소로 기각). 여기서는 **조준점을 한 톨도 건드리지 않는다.**
+			//    바꾸는 것은 폐쇄율(스로틀)뿐이다. 겨눈 채로 거리를 유지한다.
+			//  [근거 — 2026-08-16 실측, vs yuno 15판 사거리 안]
+			//    거리대별 LOS 각속도 중앙        우리 지속 선회율 최고 15.6도/s
+			//      150~300m  66.1도/s   불가        (250~275m/s 구간에서 측정)
+			//      450~600m  29.9도/s   불가
+			//      750~900m  16.1도/s   경계
+			//      900~1050m 14.3도/s   **가능**
+			//    사격 사거리 상한이 914.4m이므로 **추종 가능 구간과 사거리가 900~914m에서만 겹친다.**
+			//    지금은 조준이 안 된 채 914m를 통과해 최근접 중앙 216m까지 파고든다.
+			//    그 안쪽에서는 요구 선회율이 능력의 4배라 영영 못 맞춘다.
+			//  [노리는 것] 압도가 아니라 **1틱**이다. yuno전 15판 중 7판이 1.0000 대 1.0000
+			//    (양쪽 데미지 0)이므로 아주 작은 데미지도 승패를 뒤집는다. 규정은 HP 비교다.
+			//  [기각 조건 — 결과 보기 전 고정] 준데미지가 줄면 무조건 기각.
+			//    "위치를 사고 사격을 파는" 것이 v33의 정체였고 그건 행동강령 3 위반이다.
 			const bool V33_LAG_ENABLED = false;
 			if (V33_LAG_ENABLED && losRate > TURN_CAP && dist < 900.0 && tgtSpd > 30.0)
 			{
@@ -607,6 +656,11 @@ NodeStatus Action::Task_LeadPredict::tick()
 	//  속도가 그대로면 결국 지나친다. 램프를 타지 않고 즉시 적용하되 상태(lastThr)에는
 	//  남겨 조건 해제 시 위 로직이 정상적으로 램프업으로 복귀하게 한다.
 	if (lagActive && cur > 0.30f) cur = 0.30f;
+	// v45 standoff: 폐쇄율만 낮춘다. v33(0.30)보다 훨씬 약하게 잡는다 — 상대를 놓치면
+	//  교전 자체가 성립하지 않아 v33처럼 "위치를 사고 사격을 파는" 실패로 간다.
+	//  0.55는 감속은 되되 추격은 유지되는 값으로 잡았고, 배치 결과로 재조정한다.
+	if (standoffActive && cur > 0.55f) cur = 0.55f;
+	if (standoffActive) DUTY_standoff[__ti]++;
 	lastThr[__ti] = cur;
 	(*BB)->Throttle = cur;
 	THR_final[__ti] += cur;
