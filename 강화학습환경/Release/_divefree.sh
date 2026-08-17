@@ -1,44 +1,41 @@
-#!/bin/bash
-# 강하 클램프 완화(`divefree`) 시험.
+#!/usr/bin/env bash
+# divefree 재시험 — 2026-08-16
 #
-# [측정된 근거] 신형 도전자는 1000m 이상 아래로 강하하며 선회한다.
-#   그 국면에서 필요 강하각 41~65도 vs 허용 30~50도 -> seed0 6/7, seed6 5/7 구간이 막힌다.
-#   막히면 기수가 안 내려가고 선회율이 안 나온다(우리 8.3°/s vs 상대 14.8°/s).
-#   v32의 최대 성과가 **상승 클램프 해제**였는데 강하는 안 건드렸다.
-#   당시 근거 "아래로 잘림 13.5%"는 **낡은 상대 세트**에서 잰 값이다.
+# [왜 다시 하나] v40 시절 "4승->1승"으로 기각됐으나, 그 기각 사유가 사라졌다.
+#   당시 기각 사유: "조준만 내리고 **벽은 그대로** = 최악의 조합"
+#   당시 벽: DECO_AltitudeCheck MinAlt=1800, 조준 절대하한 1500m 고정
+#   현재  : MinAlt=700(v42), 조준 하한 800~1500 동적(v40)  -> 두 벽 다 내려갔다
 #
-# [변경] diveSlope: dist*0.5 -> dist*3.0 (상승과 대칭), 절대 상한 650m -> 2000m.
-#   안전망은 그대로: 조준점 절대 하한 1500m + 고도<1800m면 ClimbOut 최우선.
+# [기대 메커니즘] diveSlope = dist*0.5 는 강하각을 약 27도로 묶는다.
+#   하강나선(뱅크110도)은 지속 25.4도/s를 내지만 그 기하에 들어갈 수가 없다.
+#   실측: 우리 실전 지속 선회율 13~15.6도/s = 수평선회(11.3) 수준.
+#   yuno가 강요하는 LOS 각속도는 600~900m에서 16.1~17.4도/s.
 #
-# ★ 예상 (결과 보기 전에 적는다)
-#   jh2 상대   : 개선한다. 패 11 -> 8 이하.  (막힌 구간이 71~86%였으므로)
-#   onecircle  : 개선하거나 중립. 수평선회 상대라 고도차가 작다.
-#   STRAIGHT   : 중립. 고도차가 거의 없다.
-#   ACE·kwon   : **모르겠다.** 깊은 다이브로 고도를 잃어 악화할 수 있다.
-#   고도이탈 패배(<300m)가 늘어나면 그것만으로 기각한다.
-cd "$(dirname "$0")"
+# ★ 판정 기준 (결과 보기 전 고정)
+#   채택: yuno 순이득 개선 AND jung·jh2 퇴행 없음 AND **우리 추락 0건**
+#   기각: 추락 1건이라도 나면 즉시. 또는 어디서든 준데미지 감소.
+#   ⚠ 최저고도를 함께 본다. "측정 중 실제 altitude below min 사망" 기록이 있다.
+set -u
 PY="/c/Users/TFX5470H/anaconda3/envs/aip/python.exe"
+cd "$(dirname "$0")"
+LOCK="_divefree.lock"
+if [ -e "$LOCK" ] && kill -0 "$(cat "$LOCK" 2>/dev/null)" 2>/dev/null; then
+  echo "★ 이미 돌고 있다 (PID $(cat "$LOCK"))" >&2; exit 3
+fi
+echo $$ > "$LOCK"
+# 제출본과 같은 조합으로 잰다(AIP_final.dll + Rule_forTraining.xml, 환경변수 없이)
+export TOPGUN_MATCH=1 TOPGUN_OWN_DLL="AIP_final.dll"
+trap 'rm -f "$LOCK"; unset TOPGUN_MATCH TOPGUN_OWN_DLL TOPGUN_RULE TOPGUN_ABLATE' EXIT
+unset TOPGUN_RULE 2>/dev/null || true
 
-trap 'cp -f AIP_v32.dll AIP_DCS_ownship.dll; cp -f Rule_mine_junghwan.xml Rule_mine.xml; unset TOPGUN_ABLATE' EXIT
-
-# --- 1) 대조군: 미설정이 v32와 동일한가 (통과 못 하면 이후 측정 무의미) ---
-for WHICH in v32 divefix; do
-  cp -f "AIP_${WHICH}.dll" AIP_DCS_ownship.dll
-  echo "########## ${WHICH} vs AIP_v7.dll ##########"
-  unset TOPGUN_ABLATE
-  "$PY" rehearsal_10hz.py 6 6 200 15 0 AIP_v7.dll 2>&1 \
-    | grep -avE "^\[(ACTIVE|EVADE_DIAG|DECO_|SYNC|PURE_ATA|ROOT|SelectTarget|DIST|ONECIRCLE|CLAMP_DIAG|DUTY|THR|BFM|WEZ|Lead|Pure|Lag)" \
-    || echo "  !! 비정상 종료"
-  echo ""
+for MODE in base divefree; do
+  if [ "$MODE" = "divefree" ]; then export TOPGUN_ABLATE="divefree"; else unset TOPGUN_ABLATE; fi
+  for OPP in AIP_yuno.dll AIP_jung.dll AIP_jh2.dll; do
+    echo "########## ${MODE} :: ${OPP} ##########"
+    for k in $(seq 0 14); do
+      "$PY" rehearsal_10hz.py 6 6 200 1 $((k*3+1)) "$OPP" 2>&1 \
+        | grep -aE "^\[seed |^SUMMARY|below min|destroyed|Error|Traceback"
+    done
+  done
 done
-
-# --- 2) 본 시험 ---
-cp -f AIP_divefix.dll AIP_DCS_ownship.dll
-for OPP in AIP_jh2.dll ACE AIP_onecircle.dll STRAIGHT; do
-  echo "########## divefree vs ${OPP} ##########"
-  TOPGUN_ABLATE=divefree "$PY" rehearsal_10hz.py 6 6 200 15 0 "$OPP" 2>&1 \
-    | grep -avE "^\[(ACTIVE|EVADE_DIAG|DECO_|SYNC|PURE_ATA|ROOT|SelectTarget|DIST|ONECIRCLE|CLAMP_DIAG|DUTY|THR|BFM|WEZ|Lead|Pure|Lag)" \
-    || echo "  !! 비정상 종료"
-  echo ""
-done
-echo "=== divefree 완료 ==="
+echo "########## DONE ##########"

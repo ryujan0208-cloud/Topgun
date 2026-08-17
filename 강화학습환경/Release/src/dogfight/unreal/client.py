@@ -243,7 +243,25 @@ class UnrealAIPilotUDPClient:
                 continue
             except OSError:
                 break
-            self._process_packet(buffer, remote_endpoint)
+            # ★ 2026-08-16: 파싱 실패로 수신 스레드가 죽는 것을 막는다.
+            #  [왜] unpack_*() 는 STRUCT.unpack(buffer[:size]) 를 하는데, 서버가 보낸
+            #    패킷이 그 크기보다 짧으면 struct.error 가 난다. 이 호출은 위 try 밖이라
+            #    예외가 스레드를 그대로 끝내고, 그 뒤로 **패킷을 한 개도 못 받는다**
+            #    (송신은 계속되므로 겉으로는 살아 있는 것처럼 보인다).
+            #  [영향] 잘린 패킷 하나로 그 판을 진다. 악의가 없어도 네트워크 절단 한 번이면 난다.
+            #  [설계] 정보 유출이나 코드 실행 경로는 아니다(파이썬 + 크기 제한 슬라이스).
+            #    그러니 조용히 버리고 다음 패킷을 받는 것이 맞다. 다만 계속 실패하면
+            #    원인을 봐야 하므로 처음 몇 건은 남긴다.
+            try:
+                self._process_packet(buffer, remote_endpoint)
+            except Exception as exc:                      # noqa: BLE001 - 수신 루프는 죽으면 안 된다
+                self._rx_parse_errors = getattr(self, "_rx_parse_errors", 0) + 1
+                if self._rx_parse_errors <= 5:
+                    print(
+                        f"[client] 수신 패킷 파싱 실패 {self._rx_parse_errors}건째 "
+                        f"({len(buffer)}바이트, {type(exc).__name__}: {exc}) — 버리고 계속한다",
+                        file=sys.stderr, flush=True,
+                    )
 
     def send_simulation_state(self) -> None:
         assert self._socket is not None
