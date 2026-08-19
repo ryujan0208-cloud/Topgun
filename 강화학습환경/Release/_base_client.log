@@ -1,0 +1,338 @@
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=-1) | rx_packets=0 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 5.1s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 6.1s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 7.1s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 8.1s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 9.1s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 10.1s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 11.1s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 12.2s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 13.2s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 14.2s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 15.2s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 16.2s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 17.2s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 18.2s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 19.3s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 20.3s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 21.3s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 22.3s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 23.3s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 24.3s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 25.3s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 26.3s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 27.4s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 28.4s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 29.4s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 30.4s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 31.4s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 32.4s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 33.5s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 34.5s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 35.5s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 36.5s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 37.5s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 38.5s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 39.5s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 40.5s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 41.5s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 42.6s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 43.6s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 44.6s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 45.6s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 46.6s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 47.6s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 48.6s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 49.7s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 50.7s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 51.7s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 52.7s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 53.7s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 54.7s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 55.7s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 56.7s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 57.8s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 58.8s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 59.8s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 60.8s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 61.8s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 62.8s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 63.8s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 64.9s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 65.9s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 66.9s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 67.9s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 68.9s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 69.9s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 70.9s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1 tx_cmds=0 last_frame=0 idx_mismatch=0 dup_resend=0
+[WARN] no response from server for 72.0s
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=29 tx_cmds=14 last_frame=14 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=99 tx_cmds=49 last_frame=49 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=181 tx_cmds=90 last_frame=90 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=255 tx_cmds=127 last_frame=127 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=329 tx_cmds=164 last_frame=164 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=407 tx_cmds=203 last_frame=203 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=480 tx_cmds=239 last_frame=239 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=551 tx_cmds=275 last_frame=275 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=621 tx_cmds=310 last_frame=310 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=693 tx_cmds=346 last_frame=346 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=765 tx_cmds=382 last_frame=382 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=839 tx_cmds=419 last_frame=419 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=911 tx_cmds=455 last_frame=455 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=981 tx_cmds=490 last_frame=490 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1053 tx_cmds=526 last_frame=526 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1127 tx_cmds=562 last_frame=563 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1195 tx_cmds=597 last_frame=597 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1261 tx_cmds=630 last_frame=630 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1329 tx_cmds=664 last_frame=664 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1387 tx_cmds=693 last_frame=693 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1449 tx_cmds=724 last_frame=724 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1517 tx_cmds=758 last_frame=758 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1581 tx_cmds=790 last_frame=790 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1649 tx_cmds=824 last_frame=824 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1715 tx_cmds=857 last_frame=857 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1781 tx_cmds=890 last_frame=890 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1845 tx_cmds=922 last_frame=922 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1913 tx_cmds=956 last_frame=956 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=1981 tx_cmds=990 last_frame=990 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=2045 tx_cmds=1022 last_frame=1022 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=2107 tx_cmds=1053 last_frame=1053 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=2175 tx_cmds=1087 last_frame=1087 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=2239 tx_cmds=1119 last_frame=1119 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=2305 tx_cmds=1152 last_frame=1152 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=2371 tx_cmds=1185 last_frame=1185 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=2433 tx_cmds=1216 last_frame=1216 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=2503 tx_cmds=1251 last_frame=1251 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=2573 tx_cmds=1286 last_frame=1286 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=2643 tx_cmds=1321 last_frame=1321 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=2713 tx_cmds=1356 last_frame=1356 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=2783 tx_cmds=1391 last_frame=1391 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=2851 tx_cmds=1425 last_frame=1425 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=2920 tx_cmds=1459 last_frame=1459 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=2989 tx_cmds=1494 last_frame=1494 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=3059 tx_cmds=1529 last_frame=1529 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=3127 tx_cmds=1563 last_frame=1563 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=3199 tx_cmds=1599 last_frame=1599 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=3271 tx_cmds=1635 last_frame=1635 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=3339 tx_cmds=1669 last_frame=1669 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=3409 tx_cmds=1704 last_frame=1704 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=3473 tx_cmds=1736 last_frame=1736 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=3539 tx_cmds=1769 last_frame=1769 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=3605 tx_cmds=1802 last_frame=1802 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=3671 tx_cmds=1835 last_frame=1835 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=3741 tx_cmds=1870 last_frame=1870 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=3807 tx_cmds=1903 last_frame=1903 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=3873 tx_cmds=1936 last_frame=1936 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=3945 tx_cmds=1972 last_frame=1972 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=4015 tx_cmds=2007 last_frame=2007 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=4083 tx_cmds=2041 last_frame=2041 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=4149 tx_cmds=2074 last_frame=2074 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=4217 tx_cmds=2108 last_frame=2108 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=4283 tx_cmds=2141 last_frame=2141 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=4349 tx_cmds=2174 last_frame=2174 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=4419 tx_cmds=2209 last_frame=2209 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=4489 tx_cmds=2244 last_frame=2244 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=4557 tx_cmds=2278 last_frame=2278 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=4625 tx_cmds=2312 last_frame=2312 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=4695 tx_cmds=2347 last_frame=2347 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=4767 tx_cmds=2383 last_frame=2383 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=4839 tx_cmds=2419 last_frame=2419 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=4909 tx_cmds=2454 last_frame=2454 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=4979 tx_cmds=2489 last_frame=2489 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=5049 tx_cmds=2524 last_frame=2524 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=5117 tx_cmds=2558 last_frame=2558 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=5187 tx_cmds=2593 last_frame=2593 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=5257 tx_cmds=2628 last_frame=2628 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=5329 tx_cmds=2664 last_frame=2664 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=5397 tx_cmds=2698 last_frame=2698 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=5467 tx_cmds=2733 last_frame=2733 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=5533 tx_cmds=2766 last_frame=2766 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=5601 tx_cmds=2800 last_frame=2800 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=5669 tx_cmds=2834 last_frame=2834 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=5739 tx_cmds=2869 last_frame=2869 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=5809 tx_cmds=2904 last_frame=2904 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=5879 tx_cmds=2939 last_frame=2939 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=5947 tx_cmds=2973 last_frame=2973 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=6019 tx_cmds=3009 last_frame=3009 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=6091 tx_cmds=3045 last_frame=3045 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=6165 tx_cmds=3082 last_frame=3082 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=6233 tx_cmds=3116 last_frame=3116 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=6299 tx_cmds=3149 last_frame=3149 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=6367 tx_cmds=3183 last_frame=3183 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=6441 tx_cmds=3220 last_frame=3220 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=6513 tx_cmds=3256 last_frame=3256 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=6585 tx_cmds=3292 last_frame=3292 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=6657 tx_cmds=3328 last_frame=3328 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=6731 tx_cmds=3365 last_frame=3365 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=6799 tx_cmds=3399 last_frame=3399 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=6869 tx_cmds=3434 last_frame=3434 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=6939 tx_cmds=3469 last_frame=3469 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=7007 tx_cmds=3503 last_frame=3503 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=7079 tx_cmds=3539 last_frame=3539 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=7153 tx_cmds=3576 last_frame=3576 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=7225 tx_cmds=3612 last_frame=3612 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=7297 tx_cmds=3648 last_frame=3648 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=7367 tx_cmds=3683 last_frame=3683 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=7439 tx_cmds=3719 last_frame=3719 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=7515 tx_cmds=3757 last_frame=3757 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=7589 tx_cmds=3794 last_frame=3794 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=7661 tx_cmds=3830 last_frame=3830 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=7731 tx_cmds=3865 last_frame=3865 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=7803 tx_cmds=3901 last_frame=3901 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=7871 tx_cmds=3935 last_frame=3935 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=7941 tx_cmds=3970 last_frame=3970 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=8011 tx_cmds=4005 last_frame=4005 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=8079 tx_cmds=4039 last_frame=4039 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=8149 tx_cmds=4074 last_frame=4074 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=8217 tx_cmds=4108 last_frame=4108 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=8287 tx_cmds=4143 last_frame=4143 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=8357 tx_cmds=4178 last_frame=4178 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=8431 tx_cmds=4215 last_frame=4215 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=8505 tx_cmds=4252 last_frame=4252 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=8577 tx_cmds=4288 last_frame=4288 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=8651 tx_cmds=4325 last_frame=4325 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=8725 tx_cmds=4362 last_frame=4362 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=8801 tx_cmds=4400 last_frame=4400 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=8873 tx_cmds=4436 last_frame=4436 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=8941 tx_cmds=4470 last_frame=4470 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=9013 tx_cmds=4506 last_frame=4506 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=9083 tx_cmds=4541 last_frame=4541 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=9157 tx_cmds=4578 last_frame=4578 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=9231 tx_cmds=4615 last_frame=4615 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=9303 tx_cmds=4651 last_frame=4651 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=9375 tx_cmds=4687 last_frame=4687 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=9447 tx_cmds=4723 last_frame=4723 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=9517 tx_cmds=4758 last_frame=4758 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=9585 tx_cmds=4792 last_frame=4792 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=9653 tx_cmds=4826 last_frame=4826 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=9723 tx_cmds=4861 last_frame=4861 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=9793 tx_cmds=4896 last_frame=4896 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=9867 tx_cmds=4933 last_frame=4933 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=9941 tx_cmds=4970 last_frame=4970 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=10017 tx_cmds=5008 last_frame=5008 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=10089 tx_cmds=5044 last_frame=5044 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=10163 tx_cmds=5081 last_frame=5081 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=10235 tx_cmds=5117 last_frame=5117 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=10311 tx_cmds=5155 last_frame=5155 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=10385 tx_cmds=5192 last_frame=5192 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=10459 tx_cmds=5229 last_frame=5229 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=10533 tx_cmds=5266 last_frame=5266 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=10607 tx_cmds=5303 last_frame=5303 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=10679 tx_cmds=5339 last_frame=5339 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=10751 tx_cmds=5375 last_frame=5375 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=10815 tx_cmds=5407 last_frame=5407 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=10881 tx_cmds=5440 last_frame=5440 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=10945 tx_cmds=5472 last_frame=5472 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=11015 tx_cmds=5507 last_frame=5507 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=11085 tx_cmds=5542 last_frame=5542 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=11157 tx_cmds=5578 last_frame=5578 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=11227 tx_cmds=5613 last_frame=5613 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=11299 tx_cmds=5649 last_frame=5649 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=11369 tx_cmds=5684 last_frame=5684 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=11437 tx_cmds=5718 last_frame=5718 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=11507 tx_cmds=5753 last_frame=5753 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=11581 tx_cmds=5790 last_frame=5790 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=11651 tx_cmds=5825 last_frame=5825 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=11725 tx_cmds=5862 last_frame=5862 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=11799 tx_cmds=5899 last_frame=5899 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=11865 tx_cmds=5932 last_frame=5932 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=11929 tx_cmds=5964 last_frame=5964 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=12001 tx_cmds=6000 last_frame=6000 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=12073 tx_cmds=6036 last_frame=6036 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=12145 tx_cmds=6072 last_frame=6072 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=12219 tx_cmds=6109 last_frame=6109 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=12293 tx_cmds=6146 last_frame=6146 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=12363 tx_cmds=6181 last_frame=6181 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=12433 tx_cmds=6216 last_frame=6216 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=12501 tx_cmds=6250 last_frame=6250 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=12569 tx_cmds=6284 last_frame=6284 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=12641 tx_cmds=6320 last_frame=6320 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=12707 tx_cmds=6353 last_frame=6353 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=12777 tx_cmds=6388 last_frame=6388 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=12847 tx_cmds=6423 last_frame=6423 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=12913 tx_cmds=6456 last_frame=6456 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=12979 tx_cmds=6489 last_frame=6489 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=13051 tx_cmds=6525 last_frame=6525 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=13121 tx_cmds=6560 last_frame=6560 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=13191 tx_cmds=6595 last_frame=6595 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=13261 tx_cmds=6630 last_frame=6630 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=13331 tx_cmds=6665 last_frame=6665 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=13399 tx_cmds=6699 last_frame=6699 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=13469 tx_cmds=6734 last_frame=6734 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=13541 tx_cmds=6770 last_frame=6770 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=13611 tx_cmds=6805 last_frame=6805 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=13681 tx_cmds=6840 last_frame=6840 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=13749 tx_cmds=6874 last_frame=6874 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=13819 tx_cmds=6909 last_frame=6909 idx_mismatch=0 dup_resend=0
+[HB] -> 127.0.0.1:9999  SimState(state=1) + ClientJoinInfo(team=EasyModeCutoff, ai_type=0, plane_id=0) | rx_packets=13826 tx_cmds=6912 last_frame=6912 idx_mismatch=0 dup_resend=0
