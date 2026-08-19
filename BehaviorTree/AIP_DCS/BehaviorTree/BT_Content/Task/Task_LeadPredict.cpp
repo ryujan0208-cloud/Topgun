@@ -174,6 +174,11 @@ NodeStatus Action::Task_LeadPredict::tick()
 	if      (Ablation::sel("aim15")) v27Gate = 15.0;
 	else if (Ablation::sel("aim20")) v27Gate = 20.0;
 	else if (Ablation::sel("aim30")) v27Gate = 30.0;
+	// ★ 2026-08-19 추가: 머지 실측에서 접근 중 우리 ATA 중앙이 36~49도로 나왔다.
+	//   30도 게이트는 그 국면에 **한 번도 안 열린다.** 교차 머지를 겨냥하려면 45~50도가 필요하다.
+	//   (800m에서 3초 리드 750m를 옆으로 찍으면 약 43도 — 실측 41.7도와 일치한다.)
+	else if (Ablation::sel("aim45")) v27Gate = 45.0;
+	else if (Ablation::sel("aim50")) v27Gate = 50.0;
 	if (!Ablation::off("v27") && dist < 914.0 && ataDeg < v27Gate)
 	{
 		DUTY_lead[__ti]++;
@@ -626,6 +631,16 @@ NodeStatus Action::Task_LeadPredict::tick()
 	//  [부수 발견] 5상대에서 결과가 완전 동일 = 이 코너속도 로직은 **onecircle 상대로만 발동**한다.
 	//    needTurn 조건(dist<2500 && ata>12 && spd>CORNER+30 && !beingChased)이
 	//    다른 상대에겐 거의 성립하지 않는다. '코너속도를 지킨다'고 믿었지만 실제론 거의 놀고 있다.
+	// ★ 2026-08-19: 접근속도(closure rate). 거리의 시간 변화로 직접 잰다.
+	//  dtEff(위치차분 기반 실측 틱간격)를 쓴다 — DeltaSecond는 1/60에 고정돼 있어
+	//  ACTION_REPEAT=6에서 6배 틀리기 때문이다(2026-08-16 확인).
+	//  머지 판별에만 쓰므로 다른 로직에는 영향이 없다.
+	static double prevDist[2] = { -1.0, -1.0 };
+	double closeRate = 0.0;
+	if (prevDist[__ti] > 0.0 && !epBoundary && dtEff > 1e-4)
+		closeRate = (prevDist[__ti] - dist) / dtEff;   // +면 접근 중(m/s)
+	prevDist[__ti] = dist;
+
 	const double CORNER = 260.0;
 	// (myFwdT / losT / ataDeg 는 함수 상단에서 계산 — v27 리드 게이트와 공용)
 
@@ -652,9 +667,22 @@ NodeStatus Action::Task_LeadPredict::tick()
 	//     필요한 건 '벗어나기 전에 속도를 관리하는 것'이다. 별도 기제가 필요하다.
 	// [절제 A7] v23b 코너속도. v36에서 "5상대가 소수점까지 동일" = onecircle 상대로만
 	//   발동한다는 게 드러났다. 실제로 짐을 지고 있는지 확인한다.
+	// ★★ 2026-08-19 "mergeslow" — 교차 머지에서만 beingChased 차단을 푼다.
+	//  [문제] 머지 접근 중 상대 ATA가 21~29도라 beingChased(<35도)가 **항상 참**이 되어
+	//    코너속도 감속이 차단된다. 그 결과 접근속도 440~454m/s로 사거리 762m를
+	//    **1.7초에 관통**한다(실측). 겨눌 시간이 아니라 지나갈 시간만 있다.
+	//  [왜 원래 막았나] "적이 나를 겨누면 에너지를 지킨다"는 방어 논리다. 그건 **추격당할 때**
+	//    맞는 말이지만, 머지는 **서로** 겨누는 순간이라 같은 규칙이 우리만 손해 보게 만든다.
+	//  [구분] 진짜 추격당하는 상황과 머지를 가른다:
+	//    추격당함 = 상대가 나를 겨누는데 **나는 상대를 못 겨눔**(내 ATA 큼) + 거리가 안 줄어듦
+	//    머지     = **양쪽 다** 겨누고 **거리가 빠르게 줄어듦**(접근속도 300m/s 초과)
+	//  [기대] 감속으로 접근 450 -> 350m/s면 통과 창이 1.7초 -> 2.2초(+29%). 10Hz에서 17틱 -> 22틱.
+	//  ⚠ CLAUDE.md: 스로틀은 세 번 건드려 세 번 다 무효였다(v36/v37/v38).
+	//    **발동률(DUTY_corner/DUTY_capp)을 반드시 확인**할 것. 안 걸리면 '효과 없음'이 아니라 '무동작'이다.
+	bool mergeNow = Ablation::sel("mergeslow") && (closeRate > 300.0) && (dist < 1600.0);
 	bool needTurn = !Ablation::off("v23corner")
 	                && (dist < 2500.0) && (ataDeg > 12.0)
-	                && (mySpd > CORNER + 30.0) && !beingChased;
+	                && (mySpd > CORNER + 30.0) && (!beingChased || mergeNow);
 	float stepUse = 0.008f;                 // 기본 변화율(부드럽게)
 	float targetBeforeCorner = target;      // 코너속도 적용 전 값(추적용)
 	if (needTurn) DUTY_corner[__ti]++;

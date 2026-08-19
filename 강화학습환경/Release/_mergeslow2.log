@@ -1,0 +1,9 @@
+########## base :: AIP_yuno.dll ##########
+[seed 2] reward=    -8.67 ownHP=0.9300 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0700 mean_reward=-8.67
+[seed 5] reward=   -76.39 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-76.39
+[seed 8] reward=   -82.43 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-82.43
+[seed 11] reward=   -72.50 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-72.50
