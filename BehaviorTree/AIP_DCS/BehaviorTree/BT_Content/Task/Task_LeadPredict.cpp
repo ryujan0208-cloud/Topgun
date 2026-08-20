@@ -52,6 +52,7 @@ NodeStatus Action::Task_LeadPredict::tick()
 	//  0%면 아예 안 걸린 것이므로 "효과 없음"과 "발동 안 함"을 가르는 데는 반드시 필요하다.
 	static long long DUTY_standoff[2] = {0,0};
 	static long long DUTY_sixdive[2]  = {0,0};   // v49: 뒤잡힘 하강반전 발동률
+	static long long DUTY_unlock[2]   = {0,0};   // v50: 피치권한 해제 발동률
 	static long long DUTY_bank[2]  = {0,0};   // v21 뱅크 횡예측
 	static long long DUTY_orbit[2] = {0,0};   // v17 궤도추종(조건 통과)
 	static long long DUTY_slot[2]  = {0,0};   // v17 궤도추종(슬롯 실제 적용)
@@ -538,6 +539,50 @@ NodeStatus Action::Task_LeadPredict::tick()
 			if (predicted.Z > MyLocation.Z - drop)
 				predicted.Z = MyLocation.Z - drop;
 			DUTY_sixdive[__ti]++;
+		}
+	}
+
+	// ★★ 2026-08-21 "unlockpitch" — 피치 권한이 죽는 구간을 푼다 (절제 플래그, 기본 꺼짐).
+	//  [실측 — 왜 ATA가 9도에서 얼어붙나]
+	//    사거리 안 + ATA<20도 구간 46개 중 **1도 이내로 들어간 것은 1개뿐**이고,
+	//    구간별 최소 ATA 중앙이 10.77도다. 한 구간은 **15.5초를 8도에서 한 발짝도 못 움직였다**
+	//    (부호전환 0회 = 요동이 아니라 **정지**. 선회율 부족이면 요동쳐야 한다).
+	//    ATA 5~15도 구간 4219틱에서:
+	//      Roll_Effect 중앙 0.150,  실효 PitchCMD 중앙 **0.194**(최대의 19%),  피치억제 53.5%
+	//      UTAngle 중앙 **76.5도** (90도 부근이면 Roll_Effect -> 0)
+	//  [메커니즘] Controller_CY: PitchCMD = ERROR_Effect x Roll_Effect x Horizon_Effect.
+	//    Roll_Effect = 1 - |UTAngle|/90 이므로 표적이 우리 양력면 **옆**에 있으면 피치가 죽는다.
+	//    제어기 논리는 "먼저 롤해서 당길 평면에 넣고 당긴다"로 옳은 BFM인데,
+	//    롤이 끝나기 전에 표적이 또 옆으로 돌아가 **영원히 롤 중**인 채 피치가 눌린다.
+	//  [지렛대] Controller_CY는 제출 제약이라 못 건드린다. 그러나 UTAngle은 **VP 위치가 정한다.**
+	//    VP를 우리 자신의 Up 방향으로 조금 올리면 수직성분에 Up 성분이 생겨 UTAngle이 줄고
+	//    Roll_Effect가 올라가 피치 권한이 돌아온다.
+	//  [앞서 기각된 조준게이트와 다른 축이다] 그것들은 **리드(상대 속도 방향)** 를 건드렸다.
+	//    이건 **우리 양력면 안에서의 오프셋**이라 추종 기하를 건드리지 않는다.
+	//  [기각 조건 — 결과 보기 전 고정] 어느 상대든 준데미지가 줄면 즉시 기각.
+	if (Ablation::sel("unlockpitch") && dist < 914.0 && ataDeg > 4.0 && ataDeg < 16.0)
+	{
+		Vector3 myUp = (*BB)->MyUpVector; myUp.normalize();
+		Vector3 los2 = predicted - MyLocation;
+		double l2 = los2.length();
+		if (l2 > 1.0)
+		{
+			Vector3 f2 = los2 / l2;
+			// 기수축 수직성분
+			Vector3 perp = los2 - f2 * (los2.dot(f2));
+			double pl = perp.length();
+			if (pl > 1e-6)
+			{
+				double ut = std::acos(std::max(-1.0, std::min(1.0, myUp.dot(perp / pl)))) * 57.2957795;
+				double rollEff = 1.0 - std::min(1.0, std::fabs(ut) / 90.0);
+				// 피치가 실제로 눌려 있을 때만 손댄다
+				if (rollEff < 0.40)
+				{
+					// 수직성분 크기에 비례해 Up 성분을 더한다. UTAngle이 줄어 Roll_Effect가 오른다.
+					predicted = predicted + myUp * (pl * 0.8);
+					DUTY_unlock[__ti]++;
+				}
+			}
 		}
 	}
 
