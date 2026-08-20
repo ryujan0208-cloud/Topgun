@@ -51,6 +51,7 @@ NodeStatus Action::Task_LeadPredict::tick()
 	// v45: standoff 발동률. **발동률은 중요도를 예측하지 못하지만**(절제실험 교훈),
 	//  0%면 아예 안 걸린 것이므로 "효과 없음"과 "발동 안 함"을 가르는 데는 반드시 필요하다.
 	static long long DUTY_standoff[2] = {0,0};
+	static long long DUTY_sixdive[2]  = {0,0};   // v49: 뒤잡힘 하강반전 발동률
 	static long long DUTY_bank[2]  = {0,0};   // v21 뱅크 횡예측
 	static long long DUTY_orbit[2] = {0,0};   // v17 궤도추종(조건 통과)
 	static long long DUTY_slot[2]  = {0,0};   // v17 궤도추종(슬롯 실제 적용)
@@ -508,6 +509,38 @@ NodeStatus Action::Task_LeadPredict::tick()
 	if (Ablation::sel("v40floor")) AIM_FLOOR = 1500.0;          // 절제용: v32로 원복
 	if (Ablation::sel("lowfloor")) AIM_FLOOR = 800.0;
 	// (`lowfloor2` 태그는 위 기본 동작으로 승격됐다. 별도 분기 제거)
+	// ★★ 2026-08-19 "sixdive" — 뒤를 잡혔을 때 위가 아니라 **아래로** 반전한다.
+	//  [실측 근거 — 이게 우리의 실제 행동이다]
+	//    상대가 우리를 겨누고(상대ATA<15도) 거리<1500m인 구간 1474틱에서
+	//    **우리 수직속도 중앙 +39.9 m/s, 상승 비율 61.7%.** 뒤를 잡히면 위로 도망친다.
+	//    8/18 스크림에서 같은 패턴으로 21초간 3483m 상승하다 마지막에 10틱 맞고 졌다
+	//    (그 21초 내내 우리 ATA 120~161도 = 등을 보인 채 도주, 상대는 2~13도로 물고 있었다).
+	//  [왜 상승이 최악인가] ①궤적이 뻔해 추적을 못 끊는다 ②에너지를 태운다
+	//    ③**우리는 전원 중 가장 낮은 하한(700m)을 가졌는데 그 자산을 안 쓴다**
+	//    (하한: 우리 700 / jung·jh2 800 / yuno 1800 / TW 3000 — XML 실측).
+	//  [기대] 상대가 따라 내려오면 자기 하한에 먼저 걸려 이탈한다. 그때 우리가 위치를 얻는다.
+	//  ⚠ v41 교훈: "근거리 6시의 정답은 이탈이 아니라 선회진입"이라 Task_Evade를 제거했다.
+	//    Evade는 **수평으로 등을 돌리는** 기동이었다. 이건 수직이고, 조준점은 여전히 상대를
+	//    향한다(Z만 끌어내린다). 같은 실패가 아니라는 것은 **측정으로 증명해야 한다.**
+	//  ⚠ 게이트를 엄격히: Evade는 개전 2초에 열려 판을 버렸다. 여기서는 "상대가 나를 겨누고
+	//    있고 + 근거리 + 내가 상대를 못 겨눔"을 모두 요구한다.
+	if (Ablation::sel("sixdive"))
+	{
+		Vector3 t2m = MyLocation - TargetLocation;
+		double t2mL = t2m.length(); if (t2mL < 1.0) t2mL = 1.0;
+		t2m = t2m / t2mL;
+		double eAta = std::acos(std::max(-1.0, std::min(1.0, TgtFwd.dot(t2m)))) * 57.2957795;
+		// 뒤를 잡혔다 = 상대가 나를 겨눔(15도) + 근거리 + 나는 상대를 못 겨눔(60도 초과)
+		if (eAta < 15.0 && dist < 1500.0 && ataDeg > 60.0)
+		{
+			// 조준점을 아래로 끌어내린다. 상대를 향한 방향(X,Y)은 건드리지 않는다.
+			double drop = 600.0;                      // 한 틱 목표 하강량
+			if (predicted.Z > MyLocation.Z - drop)
+				predicted.Z = MyLocation.Z - drop;
+			DUTY_sixdive[__ti]++;
+		}
+	}
+
 	if (predicted.Z < AIM_FLOOR) predicted.Z = AIM_FLOOR;   // v18: 3500 -> 1500
 	// v22c: LeadPredict 내부 고도 안전망은 제거. 고도<1800이면 ClimbOut이 최우선으로
 	//  잡아 LeadPredict가 실행조차 안 되므로(트리 구조) 여기 안전망은 죽은 코드였다.
@@ -715,6 +748,14 @@ NodeStatus Action::Task_LeadPredict::tick()
 	if (needThrReset[__ti]) { lastThr[__ti] = 1.0f; needThrReset[__ti] = false; }
 	float cur = lastThr[__ti];
 	// 재가속은 항상 빠르게(에너지 회복이 늦으면 감속이 독이 된다 — 과거 실패의 교훈)
+	// ★★ 2026-08-19 "fastthr" — 스로틀 변화율 제한을 푼다(절제 플래그, 기본 꺼짐).
+	//  [제약의 정체] 기본 stepUse=0.008/틱. 10Hz면 0.08/s로 **0->1에 12.5초**가 걸린다.
+	//    200초 경기에서 스로틀을 한 번 끝까지 내리는 데 12.5초다. 급격한 변조가 구조적으로 불가능하다.
+	//  [검증 필요] 중력을 제거하고 잰 추력-항력 성분은 우리가 기준모델보다 오히려 크다
+	//    (|변화| 95% 6.82 vs 6.24, 부호전환 6.6% vs 3.7%). 즉 **제한이 실제로 병목인지 불확실**하다.
+	//    엔진 반응이 느리면 명령을 급격히 줘도 뭉개진다 -> 그러면 이 플래그는 무동작이어야 한다.
+	//    **무동작이면 "제한이 병목이 아니다"가 증명되고, 달라지면 병목이었다는 뜻이다.**
+	if (Ablation::sel("fastthr")) stepUse = 1.0f;      // 한 틱에 전 구간 이동 = 사실상 무제한
 	float stepUp = (stepUse > 0.008f) ? stepUse : 0.030f;
 	if (target > cur) { cur += stepUp;  if (cur > target) cur = target; }
 	else              { cur -= stepUse; if (cur < target) cur = target; }

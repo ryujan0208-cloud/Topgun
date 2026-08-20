@@ -7,3 +7,57 @@ SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-76.39
 SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-82.43
 [seed 11] reward=   -72.50 ownHP=1.0000 tgtHP=1.0000 max time out
 SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-72.50
+[seed 14] reward=  -101.82 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-101.82
+[seed 17] reward=  -103.93 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-103.93
+[seed 20] reward=  -111.54 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-111.54
+[seed 23] reward=     6.44 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=6.44
+[seed 26] reward=   169.60 ownHP=0.9741 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0259 mean_reward=169.60
+[seed 29] reward=   -33.01 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-33.01
+[seed 32] reward=   194.37 ownHP=0.9799 tgtHP=0.8934 max time out
+SUMMARY dealt=0.1066 taken=0.0201 mean_reward=194.37
+[seed 35] reward=   260.27 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=260.27
+[seed 38] reward=   156.64 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=156.64
+[seed 41] reward=    10.74 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=10.74
+[seed 44] reward=    -0.44 ownHP=0.4906 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.5094 mean_reward=-0.44
+########## mergeslow :: AIP_yuno.dll ##########
+[seed 2] reward=   -43.77 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-43.77
+[seed 5] reward=   -82.11 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-82.11
+[seed 8] reward=   -82.43 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-82.43
+[seed 11] reward=   -30.91 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-30.91
+[seed 14] reward=  -101.82 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-101.82
+[seed 17] reward=  -103.93 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-103.93
+[seed 20] reward=  -111.54 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-111.54
+[seed 23] reward=     6.44 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=6.44
+[seed 26] reward=    91.90 ownHP=0.8934 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.1066 mean_reward=91.90
+[seed 29] reward=   -33.01 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-33.01
+[seed 32] reward=   -12.05 ownHP=0.9868 tgtHP=0.7891 max time out
+SUMMARY dealt=0.2109 taken=0.0132 mean_reward=-12.05
+[seed 35] reward=   260.27 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=260.27
+[seed 38] reward=   -56.20 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-56.20
+[seed 41] reward=    10.74 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=10.74
+[seed 44] reward=    -0.44 ownHP=0.4906 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.5094 mean_reward=-0.44
+########## DONE ##########
