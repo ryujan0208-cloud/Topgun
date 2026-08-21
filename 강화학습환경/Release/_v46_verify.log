@@ -1,0 +1,94 @@
+########## v46제출 :: AIP_yuno.dll ##########
+[seed 1] reward=   107.75 ownHP=0.9619 tgtHP=0.7886 max time out
+SUMMARY dealt=0.2114 taken=0.0381 mean_reward=107.75
+[seed 4] reward=   -44.68 ownHP=0.9867 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0133 mean_reward=-44.68
+[seed 7] reward=   -20.51 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-20.51
+[seed 10] reward=   282.44 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=282.44
+[seed 13] reward=    37.24 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=37.24
+[seed 16] reward=   -82.13 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-82.13
+[seed 19] reward=   187.31 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=187.31
+[seed 22] reward=   -79.12 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-79.12
+[seed 25] reward=    39.00 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=39.00
+[seed 28] reward=   114.13 ownHP=0.9744 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0256 mean_reward=114.13
+[seed 31] reward=   -32.19 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-32.19
+[seed 34] reward=   105.85 ownHP=0.9764 tgtHP=0.9358 max time out
+SUMMARY dealt=0.0642 taken=0.0236 mean_reward=105.85
+[seed 37] reward=   390.45 ownHP=0.9837 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0163 mean_reward=390.45
+[seed 40] reward=    95.20 ownHP=1.0000 tgtHP=1.0000 max time out
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=95.20
+[seed 43] reward=     6.11 ownHP=0.9873 tgtHP=0.8289 max time out
+SUMMARY dealt=0.1711 taken=0.0127 mean_reward=6.11
+########## v46제출 :: AIP_jung.dll ##########
+[seed 1] reward=   616.17 ownHP=1.0000 tgtHP=-0.0029 target destroyed
+SUMMARY dealt=1.0029 taken=0.0000 mean_reward=616.17
+[seed 4] reward=   -21.80 ownHP=1.0000 tgtHP=1.0000 target altitude below min
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-21.80
+[seed 7] reward=   765.55 ownHP=1.0000 tgtHP=-0.0007 target destroyed
+SUMMARY dealt=1.0007 taken=0.0000 mean_reward=765.55
+[seed 10] reward=  1052.21 ownHP=1.0000 tgtHP=-0.0014 target destroyed
+SUMMARY dealt=1.0014 taken=0.0000 mean_reward=1052.21
+[seed 13] reward=  1370.10 ownHP=1.0000 tgtHP=-0.0001 target destroyed
+SUMMARY dealt=1.0001 taken=0.0000 mean_reward=1370.10
+[seed 16] reward=   742.90 ownHP=1.0000 tgtHP=-0.0117 target destroyed
+SUMMARY dealt=1.0117 taken=0.0000 mean_reward=742.90
+[seed 19] reward=   960.86 ownHP=1.0000 tgtHP=-0.0025 target destroyed
+SUMMARY dealt=1.0025 taken=0.0000 mean_reward=960.86
+[seed 22] reward=  1086.86 ownHP=1.0000 tgtHP=0.2545 max time out
+SUMMARY dealt=0.7455 taken=0.0000 mean_reward=1086.86
+[seed 25] reward=  1014.62 ownHP=1.0000 tgtHP=-0.0002 target destroyed
+SUMMARY dealt=1.0002 taken=0.0000 mean_reward=1014.62
+[seed 28] reward=   787.97 ownHP=1.0000 tgtHP=-0.0019 target destroyed
+SUMMARY dealt=1.0019 taken=0.0000 mean_reward=787.97
+[seed 31] reward=  1011.91 ownHP=1.0000 tgtHP=0.2355 max time out
+SUMMARY dealt=0.7645 taken=0.0000 mean_reward=1011.91
+[seed 34] reward=   532.85 ownHP=1.0000 tgtHP=-0.0024 target destroyed
+SUMMARY dealt=1.0024 taken=0.0000 mean_reward=532.85
+[seed 37] reward=   914.66 ownHP=1.0000 tgtHP=-0.0049 target destroyed
+SUMMARY dealt=1.0049 taken=0.0000 mean_reward=914.66
+[seed 40] reward=   755.40 ownHP=1.0000 tgtHP=-0.0009 target destroyed
+SUMMARY dealt=1.0009 taken=0.0000 mean_reward=755.40
+[seed 43] reward=   430.70 ownHP=1.0000 tgtHP=0.4985 max time out
+SUMMARY dealt=0.5015 taken=0.0000 mean_reward=430.70
+########## v46제출 :: AIP_jh2.dll ##########
+[seed 1] reward=   865.95 ownHP=1.0000 tgtHP=-0.0027 target destroyed
+SUMMARY dealt=1.0027 taken=0.0000 mean_reward=865.95
+[seed 4] reward=   -12.27 ownHP=1.0000 tgtHP=1.0000 target altitude below min
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-12.27
+[seed 7] reward=   603.79 ownHP=1.0000 tgtHP=0.3182 target altitude below min
+SUMMARY dealt=0.6818 taken=0.0000 mean_reward=603.79
+[seed 10] reward=  1041.29 ownHP=1.0000 tgtHP=-0.0026 target destroyed
+SUMMARY dealt=1.0026 taken=0.0000 mean_reward=1041.29
+[seed 13] reward=  1213.53 ownHP=1.0000 tgtHP=-0.0007 target destroyed
+SUMMARY dealt=1.0007 taken=0.0000 mean_reward=1213.53
+[seed 16] reward=   307.69 ownHP=1.0000 tgtHP=0.9456 target altitude below min
+SUMMARY dealt=0.0544 taken=0.0000 mean_reward=307.69
+[seed 19] reward=   663.02 ownHP=1.0000 tgtHP=0.6794 target altitude below min
+SUMMARY dealt=0.3206 taken=0.0000 mean_reward=663.02
+[seed 22] reward=   -11.98 ownHP=1.0000 tgtHP=1.0000 target altitude below min
+SUMMARY dealt=0.0000 taken=0.0000 mean_reward=-11.98
+[seed 25] reward=  1435.33 ownHP=1.0000 tgtHP=0.1065 max time out
+SUMMARY dealt=0.8935 taken=0.0000 mean_reward=1435.33
+[seed 28] reward=   794.17 ownHP=1.0000 tgtHP=-0.0024 target destroyed
+SUMMARY dealt=1.0024 taken=0.0000 mean_reward=794.17
+[seed 31] reward=   900.66 ownHP=1.0000 tgtHP=-0.0066 target destroyed
+SUMMARY dealt=1.0066 taken=0.0000 mean_reward=900.66
+[seed 34] reward=  1060.90 ownHP=1.0000 tgtHP=-0.0012 target destroyed
+SUMMARY dealt=1.0012 taken=0.0000 mean_reward=1060.90
+[seed 37] reward=   819.38 ownHP=1.0000 tgtHP=-0.0003 target destroyed
+SUMMARY dealt=1.0003 taken=0.0000 mean_reward=819.38
+[seed 40] reward=   827.87 ownHP=1.0000 tgtHP=-0.0011 target destroyed
+SUMMARY dealt=1.0011 taken=0.0000 mean_reward=827.87
+[seed 43] reward=   577.78 ownHP=1.0000 tgtHP=0.5895 target altitude below min
+SUMMARY dealt=0.4105 taken=0.0000 mean_reward=577.78
+########## DONE ##########

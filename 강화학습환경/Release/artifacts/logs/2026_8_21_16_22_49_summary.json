@@ -1,0 +1,6 @@
+{
+  "end_condition": "max time out",
+  "outcome": "timeout",
+  "ownship_health": 0.49060294903544965,
+  "target_health": 1.0
+}
