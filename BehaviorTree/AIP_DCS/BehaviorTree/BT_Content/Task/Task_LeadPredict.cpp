@@ -562,14 +562,18 @@ NodeStatus Action::Task_LeadPredict::tick()
 	//  [기각 조건 — 결과 보기 전 고정] 어느 상대든 준데미지가 줄면 즉시 기각.
 	if (Ablation::sel("unlockpitch") && dist < 914.0 && ataDeg > 4.0 && ataDeg < 16.0)
 	{
-		Vector3 myUp = (*BB)->MyUpVector; myUp.normalize();
+		// ⚠ 2026-08-21 버그 수정: 수직성분은 **우리 기수(Forward)** 기준이어야 한다.
+		//   처음엔 f2를 los2에서 뽑아 썼는데 그러면 perp가 **정의상 0**이라
+		//   블록이 한 번도 실행되지 않았다(90판 전부 무동작으로 드러남).
+		//   제어기도 Proj_TV = d - (d·F)F 로 **ForwardVector** 기준으로 잡는다.
+		Vector3 myUp = (*BB)->MyUpVector;      myUp.normalize();
+		Vector3 myFwd2 = (*BB)->MyForwardVector; myFwd2.normalize();
 		Vector3 los2 = predicted - MyLocation;
 		double l2 = los2.length();
 		if (l2 > 1.0)
 		{
-			Vector3 f2 = los2 / l2;
-			// 기수축 수직성분
-			Vector3 perp = los2 - f2 * (los2.dot(f2));
+			// 기수축 수직성분 (제어기와 동일한 정의)
+			Vector3 perp = los2 - myFwd2 * (los2.dot(myFwd2));
 			double pl = perp.length();
 			if (pl > 1e-6)
 			{
